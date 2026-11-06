@@ -1,0 +1,12 @@
+{
+  "id": "matryoshka",
+  "term": "Matryoshka embeddings",
+  "def": "Embeddings trained so that prefixes of the vector are themselves usable embeddings.",
+  "practice": "Truncate dimensions to save memory with a small quality cost.",
+  "aliases": [
+    "Matryoshka representation learning"
+  ],
+  "chapters": [
+    "embeddings"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "rag",
+  "term": "Retrieval-augmented generation",
+  "def": "Retrieving relevant documents at query time and placing them in the model’s context so it answers from them.",
+  "practice": "The standard way to ground answers in private, fresh or citable data.",
+  "aliases": [
+    "RAG"
+  ],
+  "chapters": [
+    "rag-fundamentals"
+  ],
+  "abbr": "RAG"
+}

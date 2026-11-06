@@ -1,0 +1,10 @@
+{
+  "id": "incremental-indexing",
+  "term": "Incremental indexing",
+  "def": "Updating an index by re-processing only documents that changed and deleting removed ones.",
+  "practice": "Cuts indexing cost and keeps answers fresh.",
+  "aliases": [],
+  "chapters": [
+    "production-rag"
+  ]
+}

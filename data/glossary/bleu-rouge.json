@@ -1,0 +1,13 @@
+{
+  "id": "bleu-rouge",
+  "term": "BLEU and ROUGE",
+  "def": "Metrics that count n-gram overlap between an output and a reference text.",
+  "practice": "Weak signals for open-ended generation.",
+  "aliases": [
+    "BLEU",
+    "ROUGE"
+  ],
+  "chapters": [
+    "metrics-graders"
+  ]
+}

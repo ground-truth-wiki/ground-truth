@@ -1,0 +1,10 @@
+{
+  "id": "position-bias",
+  "term": "Position bias",
+  "def": "A judge’s tendency to prefer an answer because of where it appears, often first.",
+  "practice": "Run pairwise comparisons in both orders.",
+  "aliases": [],
+  "chapters": [
+    "llm-as-judge"
+  ]
+}

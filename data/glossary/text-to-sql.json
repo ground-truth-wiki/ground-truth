@@ -1,0 +1,12 @@
+{
+  "id": "text-to-sql",
+  "term": "Text-to-SQL",
+  "def": "Translating a natural-language question into a SQL query against a database schema.",
+  "practice": "Ground it in schema descriptions and a semantic layer, and run it read-only.",
+  "aliases": [
+    "text to SQL"
+  ],
+  "chapters": [
+    "structured-code-retrieval"
+  ]
+}

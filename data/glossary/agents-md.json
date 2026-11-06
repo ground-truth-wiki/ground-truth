@@ -1,0 +1,11 @@
+{
+  "id": "agents-md",
+  "term": "AGENTS.md",
+  "def": "A shared instruction file for coding agents, kept at the root of a repository.",
+  "practice": "Keep one source of truth and point other agent files to it.",
+  "aliases": [],
+  "chapters": [
+    "coding-harness-landscape",
+    "harness-anatomy"
+  ]
+}

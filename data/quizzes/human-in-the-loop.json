@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hitl-1",
+    "chapter": "human-in-the-loop",
+    "q": "What is approval fatigue?",
+    "options": [
+      "Users being too slow to approve",
+      "So many approval prompts that people approve without reading",
+      "Approvals timing out",
+      "A model refusing to act"
+    ],
+    "answer": 1,
+    "explain": "Noisy gates train people to click yes, which removes their protective value."
+  },
+  {
+    "id": "hitl-2",
+    "chapter": "human-in-the-loop",
+    "q": "Which approval prompt is better?",
+    "options": [
+      "“The agent wants to use send_email. Allow?”",
+      "“Send an email to dana@customer.example about refund 2291 for $42.10? [Send] [Edit first] [Don’t send]”",
+      "“Continue?”",
+      "“Approve all actions forever?”"
+    ],
+    "answer": 1,
+    "explain": "State the exact effect and offer a safe middle option."
+  },
+  {
+    "id": "hitl-3",
+    "chapter": "human-in-the-loop",
+    "q": "What should happen when a user denies an action?",
+    "options": [
+      "The run crashes",
+      "The denial returns to the model as information, so it can adapt",
+      "Nothing; the tool runs anyway",
+      "The agent retries immediately"
+    ],
+    "answer": 1,
+    "explain": "Denial is a result the agent should reason about."
+  }
+]

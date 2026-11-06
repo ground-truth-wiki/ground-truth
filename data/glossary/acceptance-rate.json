@@ -1,0 +1,10 @@
+{
+  "id": "acceptance-rate",
+  "term": "Acceptance rate",
+  "def": "In speculative decoding, the probability that the target model accepts a drafted token.",
+  "practice": "Decides the speedup and the best draft length.",
+  "aliases": [],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

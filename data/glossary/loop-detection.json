@@ -1,0 +1,11 @@
+{
+  "id": "loop-detection",
+  "term": "Loop detection",
+  "def": "Monitoring an agent’s trajectory for repeated calls or lack of progress, then nudging or stopping it.",
+  "practice": "Three identical consecutive calls is a common threshold.",
+  "aliases": [],
+  "chapters": [
+    "guardrails-control",
+    "agent-failure-modes"
+  ]
+}

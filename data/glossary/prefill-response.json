@@ -1,0 +1,12 @@
+{
+  "id": "prefill-response",
+  "term": "Response prefill",
+  "def": "Writing the first part of the assistant’s reply yourself so the model continues from it.",
+  "practice": "A strong way to lock output format where the API allows it.",
+  "aliases": [
+    "prefilling"
+  ],
+  "chapters": [
+    "prompting-fundamentals"
+  ]
+}

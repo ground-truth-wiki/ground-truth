@@ -1,0 +1,13 @@
+{
+  "id": "hbm",
+  "term": "High-bandwidth memory",
+  "def": "Stacked memory packaged next to an accelerator, providing the bandwidth that limits LLM decode speed.",
+  "practice": "Capacity and bandwidth are the key accelerator specs for inference.",
+  "aliases": [
+    "HBM"
+  ],
+  "chapters": [
+    "hardware"
+  ],
+  "abbr": "HBM"
+}

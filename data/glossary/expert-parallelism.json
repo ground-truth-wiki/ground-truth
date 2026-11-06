@@ -1,0 +1,11 @@
+{
+  "id": "expert-parallelism",
+  "term": "Expert parallelism",
+  "def": "Placing a mixture-of-experts model’s experts on different devices and routing tokens to them.",
+  "practice": "Communication is all-to-all.",
+  "aliases": [],
+  "chapters": [
+    "disaggregated-serving",
+    "mixture-of-experts"
+  ]
+}

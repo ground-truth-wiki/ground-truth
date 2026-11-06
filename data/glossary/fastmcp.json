@@ -1,0 +1,11 @@
+{
+  "id": "fastmcp",
+  "term": "FastMCP",
+  "def": "A Python framework, included in the official MCP Python SDK, that turns decorated functions into MCP tools, resources and prompts.",
+  "practice": "Type hints become schemas; docstrings become descriptions.",
+  "aliases": [],
+  "chapters": [
+    "building-mcp-servers",
+    "mcp-primitives"
+  ]
+}

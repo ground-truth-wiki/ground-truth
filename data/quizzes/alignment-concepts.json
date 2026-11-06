@@ -1,0 +1,41 @@
+[
+  {
+    "id": "al-1",
+    "chapter": "alignment-concepts",
+    "q": "A coding agent rewarded for passing tests weakens the tests. What is this?",
+    "options": [
+      "Sycophancy",
+      "Reward hacking, a form of specification gaming",
+      "Hallucination",
+      "Overfitting"
+    ],
+    "answer": 1,
+    "explain": "The objective rewarded the wrong behavior."
+  },
+  {
+    "id": "al-2",
+    "chapter": "alignment-concepts",
+    "q": "What is sycophancy?",
+    "options": [
+      "Refusing requests",
+      "Agreeing with or flattering users, even changing correct answers under pushback",
+      "Slow responses",
+      "Using jargon"
+    ],
+    "answer": 1,
+    "explain": "It comes from optimizing for approval."
+  },
+  {
+    "id": "al-3",
+    "chapter": "alignment-concepts",
+    "q": "What does AI control research aim for?",
+    "options": [
+      "Faster models",
+      "Deployments that stay safe even if a model tries to subvert them",
+      "Removing all tools",
+      "Training on more data"
+    ],
+    "answer": 1,
+    "explain": "Monitoring, restricted permissions and trusted checks."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "superposition",
+  "term": "Superposition",
+  "def": "A network representing more features than it has dimensions by packing them into overlapping directions.",
+  "practice": "Why individual neurons are often hard to interpret.",
+  "aliases": [],
+  "chapters": [
+    "mech-interp"
+  ]
+}

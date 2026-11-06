@@ -1,0 +1,13 @@
+{
+  "id": "write-policy",
+  "term": "Write and read policy",
+  "def": "The rules that decide what an agent stores in memory, and when and how stored memories are retrieved.",
+  "practice": "Most memory bugs are policy bugs.",
+  "aliases": [
+    "read policy",
+    "memory policy"
+  ],
+  "chapters": [
+    "agent-memory"
+  ]
+}

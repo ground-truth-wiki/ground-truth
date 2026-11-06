@@ -1,0 +1,14 @@
+{
+  "id": "aci",
+  "term": "Agent-computer interface",
+  "def": "The design of the tools, outputs and feedback an agent uses to interact with software, treated as a user interface for models.",
+  "practice": "Term from the SWE-agent paper; better interfaces beat better prompts.",
+  "aliases": [
+    "ACI"
+  ],
+  "chapters": [
+    "agent-tools",
+    "harness-engineering"
+  ],
+  "abbr": "ACI"
+}

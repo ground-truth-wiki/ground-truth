@@ -1,0 +1,10 @@
+{
+  "id": "headless-mode",
+  "term": "Headless mode",
+  "def": "Running an agent non-interactively from a script or CI job, with structured output.",
+  "practice": "Pair it with a narrow allow list of tools.",
+  "aliases": [],
+  "chapters": [
+    "claude-code"
+  ]
+}

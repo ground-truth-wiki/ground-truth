@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ent-1",
+    "chapter": "enterprise-readiness",
+    "q": "Which commitment must hold for every subprocessor, including model APIs?",
+    "options": [
+      "Uptime of 100%",
+      "Not training on customer data, where you promise it",
+      "Using one region",
+      "Open-sourcing code"
+    ],
+    "answer": 1,
+    "explain": "Your promises cover your whole chain."
+  },
+  {
+    "id": "ent-2",
+    "chapter": "enterprise-readiness",
+    "q": "What does SCIM provide?",
+    "options": [
+      "Encryption",
+      "Automated user provisioning and removal from the customer’s identity provider",
+      "Model routing",
+      "Rate limiting"
+    ],
+    "answer": 1,
+    "explain": "It keeps access in sync with HR systems."
+  },
+  {
+    "id": "ent-3",
+    "chapter": "enterprise-readiness",
+    "q": "What should audit logs include for agent products?",
+    "options": [
+      "Only logins",
+      "Admin actions, data access and every agent tool call and approval",
+      "Only errors",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Agent actions are the events reviewers care about most."
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b19-2",
+    "chapter": "test-time-scaling",
+    "q": "Where do test-time compute gains tend to flatten?",
+    "options": [
+      "On tasks with checkable answers",
+      "On tasks without a way to verify answers, and past large budgets",
+      "On math",
+      "On code"
+    ],
+    "answer": 1,
+    "explain": "Verification makes extra compute productive."
+  },
+  {
+    "id": "qts-1",
+    "chapter": "test-time-scaling",
+    "q": "When does best-of-n keep improving with more samples?",
+    "options": [
+      "Always",
+      "When a reliable verifier picks the best sample",
+      "Never",
+      "Only for short answers"
+    ],
+    "answer": 1,
+    "explain": "Weak judges pick persuasive wrong answers."
+  },
+  {
+    "id": "qts-2",
+    "chapter": "test-time-scaling",
+    "q": "What is the latency advantage of parallel sampling?",
+    "options": [
+      "None",
+      "Samples run at once, so latency stays roughly flat while cost grows",
+      "It is cheaper",
+      "It uses fewer tokens"
+    ],
+    "answer": 1,
+    "explain": "Sequential thinking adds latency instead."
+  },
+  {
+    "id": "qts-3",
+    "chapter": "test-time-scaling",
+    "q": "What did compute-optimal test-time work show?",
+    "options": [
+      "More compute never helps",
+      "Adapting the strategy to problem difficulty can rival much larger models at equal compute",
+      "Only training compute matters",
+      "Voting always wins"
+    ],
+    "answer": 1,
+    "explain": "Snell et al., 2024."
+  }
+]

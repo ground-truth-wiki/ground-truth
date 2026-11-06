@@ -1,0 +1,12 @@
+{
+  "id": "sparse-autoencoder",
+  "term": "Sparse autoencoder",
+  "def": "A model trained to reconstruct activations from a sparse set of learned features.",
+  "practice": "The main tool for extracting interpretable features.",
+  "aliases": [
+    "SAE"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

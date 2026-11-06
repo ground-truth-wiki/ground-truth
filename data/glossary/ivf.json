@@ -1,0 +1,14 @@
+{
+  "id": "ivf",
+  "term": "Inverted file index",
+  "def": "A vector index that clusters vectors and searches only the clusters nearest the query.",
+  "practice": "Tune nprobe; often combined with product quantization.",
+  "aliases": [
+    "IVF",
+    "IVF-PQ"
+  ],
+  "chapters": [
+    "vector-search"
+  ],
+  "abbr": "IVF"
+}

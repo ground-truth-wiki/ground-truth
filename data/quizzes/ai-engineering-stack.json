@@ -1,0 +1,41 @@
+[
+  {
+    "id": "stack-1",
+    "chapter": "ai-engineering-stack",
+    "q": "Users report that a feature “got worse last week”, but nobody can show an example. Which layer should you work on first?",
+    "options": [
+      "Models: switch to a stronger model",
+      "Evals and observability: collect traces and do error analysis",
+      "Inference: lower the temperature",
+      "Hardware: move to faster GPUs"
+    ],
+    "answer": 1,
+    "explain": "Without traces and evals you cannot locate the problem, let alone fix it. Start with [error analysis](#error-analysis)."
+  },
+  {
+    "id": "stack-2",
+    "chapter": "ai-engineering-stack",
+    "q": "Why does decoding speed track GPU memory bandwidth more than raw FLOPs?",
+    "options": [
+      "Because tokens are stored in GPU memory",
+      "Because each new token reads every weight from memory once, with little arithmetic per byte",
+      "Because attention is quadratic",
+      "Because the KV cache is compressed"
+    ],
+    "answer": 1,
+    "explain": "Generating one token does about two FLOPs per parameter but must stream all parameters from memory, so bandwidth is the limit. See [inference fundamentals](#inference-fundamentals)."
+  },
+  {
+    "id": "stack-3",
+    "chapter": "ai-engineering-stack",
+    "q": "Security and LLMOps are drawn as columns rather than layers because…",
+    "options": [
+      "they are optional",
+      "they only apply to the model layer",
+      "they cut across every layer, from tools to product",
+      "they are handled by the cloud provider"
+    ],
+    "answer": 2,
+    "explain": "An agent with tools inherits the attack surface of every layer, and operations spans all of them too."
+  }
+]

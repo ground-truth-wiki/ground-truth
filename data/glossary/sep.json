@@ -1,0 +1,15 @@
+{
+  "id": "sep",
+  "term": "Specification Enhancement Proposal",
+  "def": "The process document used to propose and review changes to the MCP specification.",
+  "practice": "Follow SEPs to see what is coming before it ships.",
+  "aliases": [
+    "SEP",
+    "SEPs"
+  ],
+  "chapters": [
+    "mcp-spec-history",
+    "protocol-governance"
+  ],
+  "abbr": "SEP"
+}

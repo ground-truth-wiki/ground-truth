@@ -1,0 +1,13 @@
+{
+  "id": "swe-bench-verified",
+  "term": "SWE-bench Verified",
+  "def": "A human-validated 500-task subset of SWE-bench for evaluating coding agents on real GitHub issues.",
+  "practice": "Scores depend heavily on the harness.",
+  "aliases": [
+    "SWE-bench Pro"
+  ],
+  "chapters": [
+    "coding-agents",
+    "benchmark-literacy"
+  ]
+}

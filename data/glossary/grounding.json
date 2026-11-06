@@ -1,0 +1,13 @@
+{
+  "id": "grounding",
+  "term": "Grounding",
+  "def": "Tying a model’s answer to identifiable sources rather than its memory.",
+  "practice": "Citations make grounding checkable by users.",
+  "aliases": [
+    "grounded"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "rag-fundamentals"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "constitutional-ai",
+  "term": "Constitutional AI",
+  "def": "Training with AI feedback guided by a written set of principles.",
+  "practice": "Reduces reliance on human labels for harmlessness.",
+  "aliases": [
+    "RLAIF"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "safety-character-training"
+  ]
+}

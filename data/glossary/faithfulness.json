@@ -1,0 +1,13 @@
+{
+  "id": "faithfulness",
+  "term": "Faithfulness",
+  "def": "Whether every claim in an answer is supported by the provided context.",
+  "practice": "The key generation metric for RAG; check it with a calibrated judge.",
+  "aliases": [
+    "groundedness"
+  ],
+  "chapters": [
+    "rag-evaluation",
+    "grounding-citations"
+  ]
+}

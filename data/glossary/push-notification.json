@@ -1,0 +1,13 @@
+{
+  "id": "push-notification",
+  "term": "Push notification",
+  "def": "A webhook call that tells a client an A2A task has changed, so it need not keep a connection open.",
+  "practice": "Use for tasks that run longer than a request should stay open.",
+  "aliases": [
+    "push notifications",
+    "webhook"
+  ],
+  "chapters": [
+    "a2a"
+  ]
+}

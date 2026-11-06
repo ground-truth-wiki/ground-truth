@@ -1,0 +1,10 @@
+{
+  "id": "chunked-prefill",
+  "term": "Chunked prefill",
+  "def": "Splitting a long prompt’s prefill into chunks interleaved with other sequences’ decode steps.",
+  "practice": "Protects streaming latency for running users.",
+  "aliases": [],
+  "chapters": [
+    "batching-scheduling"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multi-hop",
+  "term": "Multi-hop retrieval",
+  "def": "Answering questions that need several facts found one after another, each search informed by the last.",
+  "practice": "Agentic or iterative retrieval handles it naturally.",
+  "aliases": [
+    "multi-hop question"
+  ],
+  "chapters": [
+    "advanced-rag"
+  ]
+}

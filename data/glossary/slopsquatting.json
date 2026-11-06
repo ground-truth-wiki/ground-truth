@@ -1,0 +1,12 @@
+{
+  "id": "slopsquatting",
+  "term": "Slopsquatting",
+  "def": "Registering package names that AI models tend to hallucinate, so that agents or developers install malicious code.",
+  "practice": "Review every new dependency.",
+  "aliases": [
+    "package hallucination"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

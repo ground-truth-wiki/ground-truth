@@ -1,0 +1,12 @@
+{
+  "id": "splade",
+  "term": "SPLADE",
+  "def": "A learned sparse retrieval model that expands text into weighted vocabulary terms for inverted-index search.",
+  "practice": "Keyword speed with learned synonyms.",
+  "aliases": [
+    "learned sparse retrieval"
+  ],
+  "chapters": [
+    "hybrid-retrieval"
+  ]
+}

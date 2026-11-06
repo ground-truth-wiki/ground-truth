@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rp-1",
+    "chapter": "reasoning-prompts",
+    "q": "Self-consistency improves accuracy by…",
+    "options": [
+      "Using a bigger model",
+      "Sampling several reasoning paths and taking the majority answer",
+      "Removing reasoning",
+      "Lowering temperature to zero"
+    ],
+    "answer": 1,
+    "explain": "Voting across independent attempts reduces random errors."
+  },
+  {
+    "id": "rp-2",
+    "chapter": "reasoning-prompts",
+    "q": "How should you prompt a reasoning model for a hard problem?",
+    "options": [
+      "Script every step",
+      "State the goal and constraints, set the effort level and verify the answer",
+      "Ask it not to think",
+      "Use only examples"
+    ],
+    "answer": 1,
+    "explain": "Reasoning models plan internally; give goals and checks."
+  },
+  {
+    "id": "rp-3",
+    "chapter": "reasoning-prompts",
+    "q": "Why put reasoning in a separate section from the final answer?",
+    "options": [
+      "It looks nicer",
+      "So code can parse only the answer",
+      "It saves tokens",
+      "Models require it"
+    ],
+    "answer": 1,
+    "explain": "Separate sections keep parsing reliable."
+  }
+]

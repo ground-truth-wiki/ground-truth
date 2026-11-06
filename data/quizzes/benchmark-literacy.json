@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b4-1",
+    "chapter": "benchmark-literacy",
+    "q": "Which detail most changes an agentic benchmark score besides the model?",
+    "options": [
+      "The font",
+      "The harness, budget and number of attempts",
+      "The day of the week",
+      "The license"
+    ],
+    "answer": 1,
+    "explain": "Always ask which harness, what budget and what date."
+  },
+  {
+    "id": "qbl-1",
+    "chapter": "benchmark-literacy",
+    "q": "Two models score 94.1% and 94.8% on a saturated benchmark of a few hundred items. What can you conclude?",
+    "options": [
+      "B is clearly better",
+      "Probably nothing: the gap is within noise near the ceiling",
+      "A is better",
+      "The benchmark is broken"
+    ],
+    "answer": 1,
+    "explain": "Saturated benchmarks stop separating models."
+  },
+  {
+    "id": "qbl-2",
+    "chapter": "benchmark-literacy",
+    "q": "Why do dynamic benchmarks such as new competition problems matter?",
+    "options": [
+      "They are easier",
+      "They resist contamination from training data",
+      "They are cheaper",
+      "They need no grader"
+    ],
+    "answer": 1,
+    "explain": "Fresh items cannot have leaked."
+  },
+  {
+    "id": "qbl-3",
+    "chapter": "benchmark-literacy",
+    "q": "What must match before comparing two benchmark scores?",
+    "options": [
+      "Logos",
+      "Harness, prompts, attempts, tools, budget and grader",
+      "Release dates",
+      "Model sizes"
+    ],
+    "answer": 1,
+    "explain": "Setup changes scores."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "sim-to-real",
+  "term": "Sim-to-real gap",
+  "def": "The difference between behavior learned in simulation and behavior on real hardware.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "embodied-agents"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "straight-through-processing",
+  "term": "Straight-through processing",
+  "def": "Documents processed end to end without human review.",
+  "practice": "Report it together with the error rate of what went straight through.",
+  "aliases": [
+    "STP"
+  ],
+  "chapters": [
+    "document-extraction"
+  ]
+}

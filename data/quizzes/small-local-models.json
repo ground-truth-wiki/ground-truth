@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qsm-1",
+    "chapter": "small-local-models",
+    "q": "Where do small models shine?",
+    "options": [
+      "Open-ended research",
+      "Narrow, high-volume tasks such as classification, extraction and routing",
+      "Long-horizon agents",
+      "Broad trivia"
+    ],
+    "answer": 1,
+    "explain": "Especially after fine-tuning."
+  },
+  {
+    "id": "qsm-2",
+    "chapter": "small-local-models",
+    "q": "What is a cascade?",
+    "options": [
+      "A training method",
+      "Trying a small model first and escalating to a larger one when checks fail",
+      "A GPU",
+      "A tokenizer"
+    ],
+    "answer": 1,
+    "explain": "Cuts cost while protecting quality."
+  },
+  {
+    "id": "qsm-3",
+    "chapter": "small-local-models",
+    "q": "Why pair small models with retrieval for factual questions?",
+    "options": [
+      "Retrieval is free",
+      "Small models hold less world knowledge and hallucinate more on facts",
+      "It is faster",
+      "They cannot read"
+    ],
+    "answer": 1,
+    "explain": "Ground facts in sources."
+  }
+]

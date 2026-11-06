@@ -1,0 +1,41 @@
+[
+  {
+    "id": "lc-1",
+    "chapter": "low-code-builders",
+    "q": "What is a “shadow agent” risk with low-code tools?",
+    "options": [
+      "Agents in dark mode",
+      "Many automations built with personal credentials that nobody tracks",
+      "Slow builders",
+      "Missing icons"
+    ],
+    "answer": 1,
+    "explain": "Inventory automations and move credentials to the organization."
+  },
+  {
+    "id": "lc-2",
+    "chapter": "low-code-builders",
+    "q": "Where do low-code builders fit best?",
+    "options": [
+      "Customer-facing core products",
+      "Business automations and prototypes owned by the teams that run the process",
+      "High-volume, low-latency services",
+      "Model training"
+    ],
+    "answer": 1,
+    "explain": "Products need code, tests and CI."
+  },
+  {
+    "id": "lc-3",
+    "chapter": "low-code-builders",
+    "q": "What should sit before sending, paying or deleting in a low-code AI flow?",
+    "options": [
+      "Nothing",
+      "A human approval step",
+      "A second AI step",
+      "A delay"
+    ],
+    "answer": 1,
+    "explain": "Approvals gate risky actions."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "least-privilege",
+  "term": "Least privilege",
+  "def": "Granting each component only the permissions it needs for its task.",
+  "practice": "The most reliable injection defense: less to steal, less to break.",
+  "aliases": [],
+  "chapters": [
+    "secure-agent-design",
+    "guardrails-control"
+  ]
+}

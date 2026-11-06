@@ -1,0 +1,13 @@
+{
+  "id": "constrained-decoding",
+  "term": "Constrained decoding",
+  "def": "Masking invalid tokens at each step so output must match a grammar or schema.",
+  "practice": "Guarantees parseable output; validate meaning separately.",
+  "aliases": [
+    "grammar-constrained decoding"
+  ],
+  "chapters": [
+    "structured-outputs",
+    "decoding-sampling"
+  ]
+}

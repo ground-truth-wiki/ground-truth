@@ -1,0 +1,10 @@
+{
+  "id": "answer-relevance",
+  "term": "Answer relevance",
+  "def": "Whether a generated answer actually addresses the question asked.",
+  "practice": "Scored by a calibrated judge; independent of faithfulness.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation"
+  ]
+}

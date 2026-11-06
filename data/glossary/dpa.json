@@ -1,0 +1,13 @@
+{
+  "id": "dpa",
+  "term": "Data processing agreement",
+  "def": "A contract setting out how a vendor processes personal data on a customer’s behalf.",
+  "practice": "Lists subprocessors, including model providers.",
+  "aliases": [
+    "DPA"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ],
+  "abbr": "DPA"
+}

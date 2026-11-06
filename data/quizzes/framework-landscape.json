@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b13-3",
+    "chapter": "framework-landscape",
+    "q": "What does this Bible recommend as the starting point before adopting a framework?",
+    "options": [
+      "A low-code builder",
+      "Plain API calls",
+      "A multi-agent framework",
+      "A custom model"
+    ],
+    "answer": 1,
+    "explain": "Start simple and adopt a framework when it removes real work."
+  },
+  {
+    "id": "fl-1",
+    "chapter": "framework-landscape",
+    "q": "What is the safest first choice when you are not sure you need a framework?",
+    "options": [
+      "The most popular framework",
+      "A low-code builder",
+      "Write the small loop yourself and adopt a framework when a specific pain appears",
+      "Two frameworks at once"
+    ],
+    "answer": 2,
+    "explain": "Start simple; add abstraction for real needs."
+  },
+  {
+    "id": "fl-2",
+    "chapter": "framework-landscape",
+    "q": "Which assets stay portable across frameworks?",
+    "options": [
+      "Framework-specific chains",
+      "Prompts, tool definitions, MCP servers, eval sets and OpenTelemetry traces",
+      "Proprietary memory formats",
+      "Visual flows"
+    ],
+    "answer": 1,
+    "explain": "Invest in the portable parts."
+  },
+  {
+    "id": "fl-3",
+    "chapter": "framework-landscape",
+    "q": "What does an agent SDK package?",
+    "options": [
+      "Only model calls",
+      "A working harness: loop, tools, context management, permissions, tracing",
+      "A UI builder",
+      "A vector database"
+    ],
+    "answer": 1,
+    "explain": "More than a client library, less than a framework."
+  }
+]

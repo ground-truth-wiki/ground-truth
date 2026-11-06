@@ -1,0 +1,10 @@
+{
+  "id": "step-back",
+  "term": "Step-back prompting",
+  "def": "Asking a more general version of a question alongside the specific one to retrieve background.",
+  "practice": "Useful when answers depend on principles stated elsewhere.",
+  "aliases": [],
+  "chapters": [
+    "query-understanding"
+  ]
+}

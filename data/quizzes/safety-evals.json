@@ -1,0 +1,41 @@
+[
+  {
+    "id": "se-1",
+    "chapter": "safety-evals",
+    "q": "Which metric must always be reported next to harmful-compliance rate?",
+    "options": [
+      "Latency",
+      "Over-refusal rate on legitimate requests",
+      "Token count",
+      "Model size"
+    ],
+    "answer": 1,
+    "explain": "A system that refuses everything is not safe, just useless."
+  },
+  {
+    "id": "se-2",
+    "chapter": "safety-evals",
+    "q": "Why are attack success rates on fixed test sets a lower bound?",
+    "options": [
+      "Fixed sets are too large",
+      "Adaptive attackers keep trying new approaches and succeed more often",
+      "Models memorize them",
+      "They use old models"
+    ],
+    "answer": 1,
+    "explain": "Real attackers adapt."
+  },
+  {
+    "id": "se-3",
+    "chapter": "safety-evals",
+    "q": "How should you test an agent for prompt injection?",
+    "options": [
+      "Ask it if it is safe",
+      "Plant instructions in documents and tool results in a sandbox, then check its trajectory for forbidden actions",
+      "Read its system prompt",
+      "Count its tools"
+    ],
+    "answer": 1,
+    "explain": "Agent harm is in actions."
+  }
+]

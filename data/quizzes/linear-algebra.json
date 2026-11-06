@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b1-1",
+    "chapter": "linear-algebra",
+    "q": "Why does cosine similarity ignore vector length?",
+    "options": [
+      "It uses only the first dimension",
+      "It divides the dot product by both vectors’ lengths",
+      "It squares the vectors",
+      "It rounds to integers"
+    ],
+    "answer": 1,
+    "explain": "Normalizing by length leaves only the angle between vectors."
+  },
+  {
+    "id": "qla-1",
+    "chapter": "linear-algebra",
+    "q": "What does cosine similarity ignore that the dot product includes?",
+    "options": [
+      "Direction",
+      "Vector length",
+      "Dimension count",
+      "Sign"
+    ],
+    "answer": 1,
+    "explain": "Cosine divides out the lengths."
+  },
+  {
+    "id": "qla-2",
+    "chapter": "linear-algebra",
+    "q": "About how many FLOPs does multiplying an m × k matrix by a k × n matrix take?",
+    "options": [
+      "m + k + n",
+      "2mkn",
+      "mkn²",
+      "k²"
+    ],
+    "answer": 1,
+    "explain": "One multiply and one add per term."
+  },
+  {
+    "id": "qla-3",
+    "chapter": "linear-algebra",
+    "q": "Why does LoRA work with small ranks?",
+    "options": [
+      "Models are small",
+      "Fine-tuning updates are approximately low-rank, concentrated in a few directions",
+      "Rank does not matter",
+      "It uses more memory"
+    ],
+    "answer": 1,
+    "explain": "Singular values of updates decay quickly."
+  }
+]

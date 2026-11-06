@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qra-1",
+    "chapter": "reference-architectures",
+    "q": "What is the dominant risk of the RAG assistant blueprint?",
+    "options": [
+      "Latency only",
+      "Permission leaks and stale content",
+      "Sandbox escapes",
+      "Voice quality"
+    ],
+    "answer": 1,
+    "explain": "Filter by permissions at retrieval time and sync deletions."
+  },
+  {
+    "id": "qra-2",
+    "chapter": "reference-architectures",
+    "q": "What defines the coding-agent blueprint?",
+    "options": [
+      "A vector index",
+      "An agent loop with sandboxed tools and tests, ending in a pull request",
+      "A voice pipeline",
+      "A review queue"
+    ],
+    "answer": 1,
+    "explain": "Sandboxes and review are its safeguards."
+  },
+  {
+    "id": "qra-3",
+    "chapter": "reference-architectures",
+    "q": "What do all twelve blueprints share?",
+    "options": [
+      "The same model",
+      "A backbone of gateway, orchestrator, model gateway, observability and evals",
+      "The same tools",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "The reference architecture."
+  }
+]

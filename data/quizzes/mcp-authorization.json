@@ -1,0 +1,41 @@
+[
+  {
+    "id": "auth-1",
+    "chapter": "mcp-authorization",
+    "q": "What tells a client which authorization server an MCP server trusts?",
+    "options": [
+      "A hard-coded list in the client",
+      "The server’s protected-resource metadata, pointed to in its 401 response",
+      "The model",
+      "The tool description"
+    ],
+    "answer": 1,
+    "explain": "RFC 9728 metadata lets clients discover the authorization server."
+  },
+  {
+    "id": "auth-2",
+    "chapter": "mcp-authorization",
+    "q": "What does the resource indicator do in the authorization request?",
+    "options": [
+      "Encrypts the token",
+      "Names the MCP server, so the token is audience-bound to it",
+      "Sets the scopes",
+      "Chooses the transport"
+    ],
+    "answer": 1,
+    "explain": "RFC 8707 binds the token to the intended resource."
+  },
+  {
+    "id": "auth-3",
+    "chapter": "mcp-authorization",
+    "q": "An MCP server needs to call a CRM API. What should it do with the token it received?",
+    "options": [
+      "Forward it to the CRM",
+      "Never forward it; obtain a separate token for the CRM",
+      "Put it in the tool result",
+      "Log it"
+    ],
+    "answer": 1,
+    "explain": "Token passthrough is explicitly forbidden."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "a2a",
+  "term": "Agent2Agent",
+  "def": "An open protocol for agents to discover each other through agent cards and delegate work as tasks with a lifecycle.",
+  "practice": "1.0.0 shipped on 12 March 2026 (verified Nov 2026).",
+  "aliases": [
+    "A2A"
+  ],
+  "chapters": [
+    "a2a"
+  ],
+  "abbr": "A2A"
+}

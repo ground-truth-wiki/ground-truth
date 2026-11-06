@@ -1,0 +1,14 @@
+{
+  "id": "prompt-caching",
+  "term": "Prompt caching",
+  "def": "Reusing the processed state of a repeated prompt prefix so later requests skip that computation and cost less.",
+  "practice": "Put stable content first and keep it byte-identical to get cache hits.",
+  "aliases": [
+    "prefix caching",
+    "cached input"
+  ],
+  "chapters": [
+    "prompt-caching",
+    "batching-scheduling"
+  ]
+}

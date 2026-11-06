@@ -1,0 +1,13 @@
+{
+  "id": "attention-sink",
+  "term": "Attention sink",
+  "def": "Early tokens that receive large attention weight regardless of content.",
+  "practice": "Keep them when evicting old tokens from a cache.",
+  "aliases": [
+    "attention sinks"
+  ],
+  "chapters": [
+    "attention",
+    "long-context"
+  ]
+}

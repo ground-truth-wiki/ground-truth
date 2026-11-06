@@ -1,0 +1,10 @@
+{
+  "id": "elicitation",
+  "term": "Elicitation",
+  "def": "An MCP feature that lets a server ask the user, through the client, for structured input or confirmation.",
+  "practice": "Hosts must show who is asking and let users decline.",
+  "aliases": [],
+  "chapters": [
+    "mcp-client-features"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "lost-in-the-middle",
+  "term": "Lost in the middle",
+  "def": "The finding that models use information at the start and end of long contexts better than in the middle.",
+  "practice": "Put key documents first and the question last.",
+  "aliases": [],
+  "chapters": [
+    "long-context",
+    "context-engineering"
+  ]
+}

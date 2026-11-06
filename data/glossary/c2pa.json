@@ -1,0 +1,12 @@
+{
+  "id": "c2pa",
+  "term": "C2PA",
+  "def": "A standard for content credentials that record the origin and edits of media.",
+  "practice": "Used with watermarks such as SynthID for provenance.",
+  "aliases": [
+    "content credentials"
+  ],
+  "chapters": [
+    "image-generation"
+  ]
+}

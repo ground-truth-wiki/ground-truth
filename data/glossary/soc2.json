@@ -1,0 +1,12 @@
+{
+  "id": "soc2",
+  "term": "SOC 2",
+  "def": "An audit framework for service organizations’ security, availability, processing integrity, confidentiality and privacy controls.",
+  "practice": "Type II covers an observation period of months.",
+  "aliases": [
+    "SOC 2 Type II"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ]
+}

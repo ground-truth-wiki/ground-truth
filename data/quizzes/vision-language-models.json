@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b8-1",
+    "chapter": "vision-language-models",
+    "q": "Why might a vision-language model misread small text in an image?",
+    "options": [
+      "Images are not tokens",
+      "The image was processed at too low a resolution for the text to survive",
+      "VLMs cannot read",
+      "The text was in English"
+    ],
+    "answer": 1,
+    "explain": "Resolution and patching decide what detail reaches the model."
+  },
+  {
+    "id": "qvl-1",
+    "chapter": "vision-language-models",
+    "q": "What turns an image into something a language model can attend to?",
+    "options": [
+      "OCR only",
+      "Patches encoded by a vision encoder and projected into the model’s embedding space",
+      "A caption only",
+      "Compression"
+    ],
+    "answer": 1,
+    "explain": "Image tokens sit beside text tokens."
+  },
+  {
+    "id": "qvl-2",
+    "chapter": "vision-language-models",
+    "q": "Under Anthropic’s published approximation, about how many tokens is a 1,000 × 1,000 image?",
+    "options": [
+      "130",
+      "1,300",
+      "13,000",
+      "130,000"
+    ],
+    "answer": 1,
+    "explain": "1,000,000 ÷ 750 ≈ 1,333."
+  },
+  {
+    "id": "qvl-3",
+    "chapter": "vision-language-models",
+    "q": "What should you do with large screenshots when only one region matters?",
+    "options": [
+      "Send them at full size",
+      "Crop to the region so text stays readable and cost falls",
+      "Convert to audio",
+      "Blur them"
+    ],
+    "answer": 1,
+    "explain": "Downscaling can make small text unreadable."
+  }
+]

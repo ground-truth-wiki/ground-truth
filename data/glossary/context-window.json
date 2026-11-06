@@ -1,0 +1,14 @@
+{
+  "id": "context-window",
+  "term": "Context window",
+  "def": "The maximum number of tokens a model can take into account at once: instructions, history, documents and its own output.",
+  "practice": "Everything the model knows about your task must fit here, so budget it deliberately.",
+  "aliases": [
+    "context length",
+    "context windows"
+  ],
+  "chapters": [
+    "context-engineering",
+    "long-context"
+  ]
+}

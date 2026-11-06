@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qlc-1",
+    "chapter": "long-context",
+    "q": "What does FlashAttention change about attention?",
+    "options": [
+      "It approximates scores",
+      "It computes exact attention in tiles without storing the full score matrix",
+      "It removes softmax",
+      "It shortens contexts"
+    ],
+    "answer": 1,
+    "explain": "IO-aware tiling with an online softmax."
+  },
+  {
+    "id": "qlc-2",
+    "chapter": "long-context",
+    "q": "What does “lost in the middle” describe?",
+    "options": [
+      "A tokenizer bug",
+      "Models using information at the start and end of long inputs better than in the middle",
+      "A network error",
+      "A pricing tier"
+    ],
+    "answer": 1,
+    "explain": "Liu et al., 2023."
+  },
+  {
+    "id": "qlc-3",
+    "chapter": "long-context",
+    "q": "Which cost still grows quadratically with FlashAttention?",
+    "options": [
+      "Memory",
+      "Attention compute",
+      "Vocabulary",
+      "Parameters"
+    ],
+    "answer": 1,
+    "explain": "Memory becomes linear; compute stays quadratic."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "cache-hit-rate",
+  "term": "Cache hit rate",
+  "def": "The share of input tokens served from a prompt or prefix cache.",
+  "practice": "The first cost metric to watch for agents.",
+  "aliases": [],
+  "chapters": [
+    "prompt-caching",
+    "context-engineering"
+  ]
+}

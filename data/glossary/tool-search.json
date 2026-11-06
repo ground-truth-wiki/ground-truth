@@ -1,0 +1,14 @@
+{
+  "id": "tool-search",
+  "term": "Tool search",
+  "def": "Loading tool definitions on demand by searching for relevant tools instead of sending all of them.",
+  "practice": "Claude Code defers MCP tools past 10% of context (verified Nov 2026).",
+  "aliases": [
+    "deferred tool loading"
+  ],
+  "chapters": [
+    "mcp-at-scale",
+    "claude-code",
+    "agent-tools"
+  ]
+}

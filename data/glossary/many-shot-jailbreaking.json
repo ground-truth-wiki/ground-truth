@@ -1,0 +1,10 @@
+{
+  "id": "many-shot-jailbreaking",
+  "term": "Many-shot jailbreaking",
+  "def": "Filling a long context with fabricated examples of a model complying with harmful requests to induce compliance.",
+  "practice": "Documented by Anthropic in 2024.",
+  "aliases": [],
+  "chapters": [
+    "jailbreaks-misuse"
+  ]
+}

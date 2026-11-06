@@ -1,0 +1,41 @@
+[
+  {
+    "id": "wca-1",
+    "chapter": "working-with-coding-agents",
+    "q": "Where is the cheapest moment to fix a misunderstanding with a coding agent?",
+    "options": [
+      "After merge",
+      "During review",
+      "At the plan stage, before code is written",
+      "During testing"
+    ],
+    "answer": 2,
+    "explain": "Plans are cheap to change; implementations are not."
+  },
+  {
+    "id": "wca-2",
+    "chapter": "working-with-coding-agents",
+    "q": "When fixing a bug with an agent, what should come first?",
+    "options": [
+      "A big refactor",
+      "A failing test that reproduces the bug",
+      "Disabling the tests",
+      "A new dependency"
+    ],
+    "answer": 1,
+    "explain": "A failing test gives the agent feedback and proves the fix."
+  },
+  {
+    "id": "wca-3",
+    "chapter": "working-with-coding-agents",
+    "q": "Vibe coding is most acceptable for…",
+    "options": [
+      "Payment processing",
+      "A throwaway prototype",
+      "Authentication code",
+      "Data deletion scripts in production"
+    ],
+    "answer": 1,
+    "explain": "Review depth should scale with what the code can break."
+  }
+]

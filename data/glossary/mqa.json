@@ -1,0 +1,14 @@
+{
+  "id": "mqa",
+  "term": "Multi-query attention",
+  "def": "Attention in which all query heads share a single key-value head.",
+  "practice": "Smallest cache of the standard variants, at some quality cost.",
+  "aliases": [
+    "MQA"
+  ],
+  "chapters": [
+    "attention",
+    "kv-cache"
+  ],
+  "abbr": "MQA"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "llm-as-judge",
+  "term": "LLM-as-judge",
+  "def": "Using a model with a grading prompt to evaluate outputs.",
+  "practice": "Calibrate against human labels before trusting it.",
+  "aliases": [
+    "LLM judge",
+    "judge model"
+  ],
+  "chapters": [
+    "llm-as-judge"
+  ]
+}

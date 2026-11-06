@@ -1,0 +1,13 @@
+{
+  "id": "ai-safety-level",
+  "term": "AI Safety Level",
+  "def": "A tier in Anthropic’s Responsible Scaling Policy that pairs capability thresholds with required safeguards.",
+  "practice": "ASL-3 was activated in May 2025.",
+  "aliases": [
+    "ASL",
+    "ASL-3"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks"
+  ]
+}

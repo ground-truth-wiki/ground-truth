@@ -1,0 +1,10 @@
+{
+  "id": "min-p",
+  "term": "Min-p sampling",
+  "def": "Keeping only tokens whose probability is at least p times the top token’s probability.",
+  "practice": "Adapts to the shape of the distribution better than a fixed top-p.",
+  "aliases": [],
+  "chapters": [
+    "decoding-sampling"
+  ]
+}

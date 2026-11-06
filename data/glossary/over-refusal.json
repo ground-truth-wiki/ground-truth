@@ -1,0 +1,11 @@
+{
+  "id": "over-refusal",
+  "term": "Over-refusal",
+  "def": "A system refusing legitimate requests because they superficially resemble harmful ones.",
+  "practice": "Report it next to harmful-compliance rate.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "jailbreaks-misuse"
+  ]
+}

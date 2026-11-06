@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b10-1",
+    "chapter": "coding-agents",
+    "q": "What gives a coding agent its most reliable feedback signal?",
+    "options": [
+      "The user’s mood",
+      "Running the tests",
+      "A longer system prompt",
+      "Higher temperature"
+    ],
+    "answer": 1,
+    "explain": "Tests turn guesses into verifiable progress."
+  },
+  {
+    "id": "cod-1",
+    "chapter": "coding-agents",
+    "q": "What makes a coding agent’s “done” trustworthy?",
+    "options": [
+      "A confident message",
+      "Tests, ideally including a failing test written first, that now pass",
+      "A long diff",
+      "Speed"
+    ],
+    "answer": 1,
+    "explain": "Verification turns plausible into correct."
+  },
+  {
+    "id": "cod-2",
+    "chapter": "coding-agents",
+    "q": "Which task suits a coding agent least?",
+    "options": [
+      "A bug fix with a reproducing test",
+      "A dependency upgrade",
+      "An ambiguous architecture decision with no tests",
+      "Writing unit tests"
+    ],
+    "answer": 2,
+    "explain": "Ambiguity and no verification are the weak spots."
+  },
+  {
+    "id": "cod-3",
+    "chapter": "coding-agents",
+    "q": "What did METR’s 2025 randomized study of experienced developers find?",
+    "options": [
+      "They were much faster with AI",
+      "They took longer with AI tools on their own repositories, despite feeling faster",
+      "No measurable effect on anything",
+      "AI wrote all their code"
+    ],
+    "answer": 1,
+    "explain": "Field evidence can differ from benchmarks; measure on your work."
+  }
+]

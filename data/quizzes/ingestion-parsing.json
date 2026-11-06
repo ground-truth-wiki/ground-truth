@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ip-1",
+    "chapter": "ingestion-parsing",
+    "q": "Naive extraction of a two-column PDF often produces what problem?",
+    "options": [
+      "Too few tokens",
+      "Lines from both columns interleaved into nonsense",
+      "Duplicate pages",
+      "Images only"
+    ],
+    "answer": 1,
+    "explain": "Layout-aware parsing restores reading order."
+  },
+  {
+    "id": "ip-2",
+    "chapter": "ingestion-parsing",
+    "q": "When is a vision-language model worth its cost for parsing?",
+    "options": [
+      "For every page",
+      "For hard pages such as scans, complex tables, charts and handwriting",
+      "Never",
+      "Only for HTML"
+    ],
+    "answer": 1,
+    "explain": "Route by difficulty; use cheaper extraction elsewhere."
+  },
+  {
+    "id": "ip-3",
+    "chapter": "ingestion-parsing",
+    "q": "Why keep page numbers and section paths as metadata?",
+    "options": [
+      "To make chunks longer",
+      "For citations, filtering and placing chunks in context",
+      "For compression",
+      "They are required by vector databases"
+    ],
+    "answer": 1,
+    "explain": "Metadata makes retrieval explainable and filterable."
+  }
+]

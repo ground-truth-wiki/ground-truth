@@ -1,0 +1,13 @@
+{
+  "id": "structured-content",
+  "term": "Structured content",
+  "def": "A typed JSON result returned by an MCP tool alongside its text, described by the tool’s output schema.",
+  "practice": "Lets hosts validate and render results.",
+  "aliases": [
+    "structuredContent",
+    "outputSchema"
+  ],
+  "chapters": [
+    "mcp-primitives"
+  ]
+}

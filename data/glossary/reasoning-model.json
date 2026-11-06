@@ -1,0 +1,13 @@
+{
+  "id": "reasoning-model",
+  "term": "Reasoning model",
+  "def": "A model trained to generate an extended chain of reasoning before its final answer.",
+  "practice": "Control effort or budget; reasoning tokens are billed.",
+  "aliases": [
+    "thinking model",
+    "reasoning models"
+  ],
+  "chapters": [
+    "reasoning-models"
+  ]
+}

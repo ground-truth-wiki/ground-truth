@@ -1,0 +1,10 @@
+{
+  "id": "capacity-planning",
+  "term": "Capacity planning",
+  "def": "Sizing quotas and hardware for peak demand with headroom, from measured throughput at your latency target.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "cost-capacity"
+  ]
+}

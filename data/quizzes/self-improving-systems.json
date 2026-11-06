@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qsi-1",
+    "chapter": "self-improving-systems",
+    "q": "What decides whether an automated discovery loop finds something real?",
+    "options": [
+      "The number of GPUs",
+      "The trustworthiness of its evaluator",
+      "The prompt length",
+      "The model name"
+    ],
+    "answer": 1,
+    "explain": "Loops optimize what the evaluator measures."
+  },
+  {
+    "id": "qsi-2",
+    "chapter": "self-improving-systems",
+    "q": "What did AlphaEvolve do?",
+    "options": [
+      "Generate images",
+      "Use LLM-driven evolutionary search over code to discover improved algorithms",
+      "Translate papers",
+      "Train robots"
+    ],
+    "answer": 1,
+    "explain": "Google DeepMind, 2025."
+  },
+  {
+    "id": "qsi-3",
+    "chapter": "self-improving-systems",
+    "q": "Why do safety frameworks track automated AI R&D?",
+    "options": [
+      "It is expensive",
+      "Rapid automated improvement could accelerate risks as well as benefits",
+      "It is illegal",
+      "It uses data"
+    ],
+    "answer": 1,
+    "explain": "A tracked capability category."
+  }
+]

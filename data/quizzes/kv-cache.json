@@ -1,0 +1,41 @@
+[
+  {
+    "id": "kv-1",
+    "chapter": "kv-cache",
+    "q": "Doubling the context length of every sequence doubles the KV cache. What else doubles it?",
+    "options": [
+      "Doubling the vocabulary size",
+      "Doubling the number of concurrent sequences",
+      "Doubling the temperature",
+      "Doubling the number of query heads with fixed KV heads"
+    ],
+    "answer": 1,
+    "explain": "The cache is linear in tokens and batch size."
+  },
+  {
+    "id": "kv-2",
+    "chapter": "kv-cache",
+    "q": "Using the formula, how many bytes of KV cache does one token need with 80 layers, 8 KV heads, head dimension 128 and 2-byte values?",
+    "options": [
+      "40,960",
+      "163,840",
+      "327,680",
+      "2,621,440"
+    ],
+    "answer": 2,
+    "explain": "2 × 80 × 8 × 128 × 2 = 327,680 bytes, about 320 KiB."
+  },
+  {
+    "id": "kv-3",
+    "chapter": "kv-cache",
+    "q": "What does PagedAttention change?",
+    "options": [
+      "The attention formula",
+      "How cache memory is allocated: in fixed-size blocks, reducing fragmentation and enabling sharing",
+      "The number of layers",
+      "The tokenizer"
+    ],
+    "answer": 1,
+    "explain": "It manages KV memory like virtual memory pages."
+  }
+]

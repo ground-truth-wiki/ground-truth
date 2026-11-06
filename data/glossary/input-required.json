@@ -1,0 +1,14 @@
+{
+  "id": "input-required",
+  "term": "Multi round-trip request",
+  "def": "The MCP 2026-07-28 pattern in which a server returns resultType \"input_required\" and the client retries the request with the answers.",
+  "practice": "Replaces server-initiated requests (verified Nov 2026).",
+  "aliases": [
+    "input_required",
+    "resultType"
+  ],
+  "chapters": [
+    "mcp-client-features",
+    "mcp-architecture"
+  ]
+}

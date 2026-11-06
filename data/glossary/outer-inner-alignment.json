@@ -1,0 +1,13 @@
+{
+  "id": "outer-inner-alignment",
+  "term": "Outer and inner alignment",
+  "def": "Whether the specified objective captures intent (outer), and whether the model actually learned that objective (inner).",
+  "practice": "Two different places alignment can fail.",
+  "aliases": [
+    "outer alignment",
+    "inner alignment"
+  ],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

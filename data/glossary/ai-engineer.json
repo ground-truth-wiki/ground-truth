@@ -1,0 +1,10 @@
+{
+  "id": "ai-engineer",
+  "term": "AI engineer",
+  "def": "An engineer who builds products and systems on foundation models: context, retrieval, agents, evals, serving and safety.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "ai-engineer-role"
+  ]
+}

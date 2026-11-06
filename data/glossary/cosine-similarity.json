@@ -1,0 +1,13 @@
+{
+  "id": "cosine-similarity",
+  "term": "Cosine similarity",
+  "def": "The dot product of two vectors divided by their lengths: similarity of direction, ignoring magnitude.",
+  "practice": "The default similarity for text embeddings.",
+  "aliases": [
+    "cosine"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "embeddings"
+  ]
+}

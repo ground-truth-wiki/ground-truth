@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qco-1",
+    "chapter": "calculus-optimization",
+    "q": "What does learning-rate warmup prevent?",
+    "options": [
+      "Overfitting",
+      "Large, destabilizing steps early in training",
+      "Slow convergence at the end",
+      "Memory errors"
+    ],
+    "answer": 1,
+    "explain": "Start small, then ramp up."
+  },
+  {
+    "id": "qco-2",
+    "chapter": "calculus-optimization",
+    "q": "What does Adam add over plain SGD?",
+    "options": [
+      "Bigger batches",
+      "Per-parameter adaptive step sizes from running gradient statistics",
+      "Fewer parameters",
+      "No learning rate"
+    ],
+    "answer": 1,
+    "explain": "Robust to differing gradient scales."
+  },
+  {
+    "id": "qco-3",
+    "chapter": "calculus-optimization",
+    "q": "Loss spikes during fine-tuning. What should you try first?",
+    "options": [
+      "Raise the learning rate",
+      "Lower the learning rate and check gradient clipping",
+      "Add layers",
+      "Remove data"
+    ],
+    "answer": 1,
+    "explain": "Large steps cause spikes."
+  }
+]

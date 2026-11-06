@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sup-1",
+    "chapter": "support-agents",
+    "q": "Why measure resolution quality rather than deflection alone?",
+    "options": [
+      "Deflection is hard to count",
+      "Keeping customers from humans can raise complaints and churn without solving problems",
+      "It is cheaper",
+      "Regulators require it"
+    ],
+    "answer": 1,
+    "explain": "Resolved, satisfied customers are the goal."
+  },
+  {
+    "id": "sup-2",
+    "chapter": "support-agents",
+    "q": "Where should refund limits be enforced?",
+    "options": [
+      "In the system prompt",
+      "In the tools and code",
+      "In the knowledge base",
+      "By the customer"
+    ],
+    "answer": 1,
+    "explain": "Instructions are requests; code is enforcement."
+  },
+  {
+    "id": "sup-3",
+    "chapter": "support-agents",
+    "q": "What did Moffatt v. Air Canada (2024) establish in practice?",
+    "options": [
+      "Chatbots are not responsible for anything",
+      "A company can be held responsible for what its chatbot tells customers",
+      "Chatbots are banned",
+      "Refunds are optional"
+    ],
+    "answer": 1,
+    "explain": "The tribunal held the airline liable."
+  }
+]

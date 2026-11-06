@@ -1,0 +1,13 @@
+{
+  "id": "abstention",
+  "term": "Abstention",
+  "def": "A model declining to answer, or saying the sources do not cover something, instead of guessing.",
+  "practice": "Give explicit permission to abstain in RAG prompts.",
+  "aliases": [
+    "abstain"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "rag-fundamentals"
+  ]
+}

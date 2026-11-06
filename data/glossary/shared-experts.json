@@ -1,0 +1,10 @@
+{
+  "id": "shared-experts",
+  "term": "Shared experts",
+  "def": "Experts in an MoE layer that every token uses, alongside the routed ones.",
+  "practice": "Used in DeepSeek’s designs.",
+  "aliases": [],
+  "chapters": [
+    "mixture-of-experts"
+  ]
+}

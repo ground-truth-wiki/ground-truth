@@ -1,0 +1,13 @@
+{
+  "id": "recall-at-k",
+  "term": "Recall@k",
+  "def": "The share of relevant items that appear in the top k results.",
+  "practice": "Measure it first: if the answer is not retrieved, nothing downstream can fix it.",
+  "aliases": [
+    "recall at k"
+  ],
+  "chapters": [
+    "rag-evaluation",
+    "metrics-graders"
+  ]
+}

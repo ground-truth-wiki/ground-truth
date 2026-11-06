@@ -1,0 +1,554 @@
+{
+  "wizards": [
+    {
+      "id": "prompt-rag-finetune",
+      "title": "Prompt, RAG, long context or fine-tune?",
+      "blurb": "Four questions to pick how to give a model what it lacks.",
+      "start": "need",
+      "nodes": {
+        "need": {
+          "q": "What is missing when the model gets it wrong?",
+          "options": [
+            [
+              "Knowledge it doesn’t have: private, recent or citable facts",
+              "k1"
+            ],
+            [
+              "Behavior: format, tone or a narrow skill",
+              "b1"
+            ],
+            [
+              "Probably nothing: the instructions are unclear",
+              "r-prompt"
+            ]
+          ]
+        },
+        "k1": {
+          "q": "How big is the knowledge, and how often does it change?",
+          "options": [
+            [
+              "Small and stable: a few documents",
+              "r-longctx"
+            ],
+            [
+              "Large, or it changes often",
+              "k2"
+            ]
+          ]
+        },
+        "k2": {
+          "q": "Do answers need citations or per-user permissions, or is the corpus huge?",
+          "options": [
+            [
+              "Yes",
+              "r-rag"
+            ],
+            [
+              "No, and a few documents per question are enough",
+              "r-longctx"
+            ]
+          ]
+        },
+        "b1": {
+          "q": "Can a handful of examples in the prompt teach it?",
+          "options": [
+            [
+              "Yes",
+              "r-examples"
+            ],
+            [
+              "No, or it must run cheaply at very high volume",
+              "r-finetune"
+            ]
+          ]
+        },
+        "r-prompt": {
+          "result": "Improve the prompt first",
+          "why": "Write the task as a clear spec with examples and structure, then measure on an eval set.",
+          "links": [
+            "prompting-fundamentals",
+            "context-engineering"
+          ]
+        },
+        "r-longctx": {
+          "result": "Put the documents in context, with prompt caching",
+          "why": "A small, stable corpus fits in the window; cache it as a stable prefix and skip retrieval.",
+          "links": [
+            "context-engineering",
+            "prompt-caching",
+            "long-context"
+          ]
+        },
+        "r-rag": {
+          "result": "Build RAG",
+          "why": "Retrieve the right passages per question, filter by permissions and cite sources.",
+          "links": [
+            "rag-fundamentals",
+            "chunking",
+            "rag-evaluation"
+          ]
+        },
+        "r-examples": {
+          "result": "Few-shot prompting plus structured outputs",
+          "why": "Show diverse examples and let the API enforce the format.",
+          "links": [
+            "prompting-fundamentals",
+            "structured-outputs"
+          ]
+        },
+        "r-finetune": {
+          "result": "Fine-tune, starting with LoRA",
+          "why": "Narrow, high-volume behavior is where fine-tuning pays. Build the eval before the training set.",
+          "links": [
+            "fine-tuning-practice",
+            "eval-datasets"
+          ]
+        }
+      }
+    },
+    {
+      "id": "workflow-vs-agent",
+      "title": "Workflow or agent?",
+      "blurb": "Decide whether code or the model should choose the next step.",
+      "start": "w1",
+      "nodes": {
+        "w1": {
+          "q": "Can you write the steps down in advance?",
+          "options": [
+            [
+              "Yes",
+              "w2"
+            ],
+            [
+              "No, they depend on what we find",
+              "a1"
+            ]
+          ]
+        },
+        "w2": {
+          "q": "Do different inputs need different handling?",
+          "options": [
+            [
+              "Yes",
+              "r-routing"
+            ],
+            [
+              "No",
+              "r-chain"
+            ]
+          ]
+        },
+        "a1": {
+          "q": "Is a wrong action expensive or irreversible?",
+          "options": [
+            [
+              "Yes",
+              "r-agent-hitl"
+            ],
+            [
+              "No",
+              "r-agent"
+            ]
+          ]
+        },
+        "r-routing": {
+          "result": "A routing workflow",
+          "why": "Classify the input, then run a specialized chain per type.",
+          "links": [
+            "workflow-patterns",
+            "prompt-chaining"
+          ]
+        },
+        "r-chain": {
+          "result": "A prompt chain with code gates",
+          "why": "Fixed steps, checked by code between them.",
+          "links": [
+            "workflow-patterns",
+            "prompt-chaining"
+          ]
+        },
+        "r-agent-hitl": {
+          "result": "An agent with approvals and tight permissions",
+          "why": "Let the model choose steps, but gate side effects behind human approval and least privilege.",
+          "links": [
+            "agent-loop",
+            "human-in-the-loop",
+            "guardrails-control"
+          ]
+        },
+        "r-agent": {
+          "result": "An agent loop with budgets",
+          "why": "Give it good tools, a step and cost budget, and evals on trajectories.",
+          "links": [
+            "agent-loop",
+            "agent-tools",
+            "evaluating-agents"
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-vs-multi",
+      "title": "Single agent or multi-agent?",
+      "blurb": "Check whether splitting the work will actually help.",
+      "start": "m1",
+      "nodes": {
+        "m1": {
+          "q": "Does one agent’s context overflow or degrade on this task?",
+          "options": [
+            [
+              "Yes",
+              "m2"
+            ],
+            [
+              "No",
+              "m3"
+            ]
+          ]
+        },
+        "m3": {
+          "q": "Would independent parallel work make it much faster?",
+          "options": [
+            [
+              "Yes",
+              "m2"
+            ],
+            [
+              "No",
+              "r-single"
+            ]
+          ]
+        },
+        "m2": {
+          "q": "Are the subtasks independent and wide, or tightly coupled and deep?",
+          "options": [
+            [
+              "Independent and wide, such as broad research",
+              "r-multi"
+            ],
+            [
+              "Tightly coupled, such as one refactor",
+              "r-single-ctx"
+            ]
+          ]
+        },
+        "r-single": {
+          "result": "Stay with one agent",
+          "why": "No overflow and no parallelism to gain: extra agents add cost and coordination failures.",
+          "links": [
+            "agent-loop",
+            "context-engineering"
+          ]
+        },
+        "r-single-ctx": {
+          "result": "One agent with better context management, plus read-only helpers",
+          "why": "Keep writes in one agent; use subagents only for search or review, and compact context.",
+          "links": [
+            "context-engineering",
+            "multi-agent"
+          ]
+        },
+        "r-multi": {
+          "result": "Orchestrator and subagents",
+          "why": "Fan out with clear briefs, return summaries, budget tokens per agent and evaluate the whole system.",
+          "links": [
+            "multi-agent",
+            "deep-research"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vector-store",
+      "title": "Which vector store?",
+      "blurb": "Pick a vector store from what you already run and how much you want to operate.",
+      "start": "v1",
+      "nodes": {
+        "v1": {
+          "q": "What do you already run in production?",
+          "options": [
+            [
+              "Postgres",
+              "v2"
+            ],
+            [
+              "Elasticsearch, OpenSearch or Vespa",
+              "r-search"
+            ],
+            [
+              "Neither",
+              "v3"
+            ]
+          ]
+        },
+        "v2": {
+          "q": "Is your corpus under tens of millions of vectors with moderate query load?",
+          "options": [
+            [
+              "Yes",
+              "r-pgvector"
+            ],
+            [
+              "No, or we expect huge growth",
+              "v3"
+            ]
+          ]
+        },
+        "v3": {
+          "q": "Do you want to operate the infrastructure yourselves?",
+          "options": [
+            [
+              "No, we want a managed service",
+              "r-managed"
+            ],
+            [
+              "Yes",
+              "r-selfhost"
+            ]
+          ]
+        },
+        "r-pgvector": {
+          "result": "pgvector in your existing Postgres",
+          "why": "Least new infrastructure, transactional updates and SQL filters; benchmark recall at your size.",
+          "links": [
+            "vector-databases",
+            "vector-search"
+          ]
+        },
+        "r-search": {
+          "result": "Use your search engine’s vector support",
+          "why": "Hybrid search is natural when keyword search already lives there.",
+          "links": [
+            "hybrid-retrieval",
+            "vector-databases"
+          ]
+        },
+        "r-managed": {
+          "result": "A managed vector database",
+          "why": "Compare on filtering, hybrid search, multi-tenancy and cost model; see the matrix.",
+          "links": [
+            "vector-databases",
+            "production-rag"
+          ]
+        },
+        "r-selfhost": {
+          "result": "A self-hosted vector database",
+          "why": "Plan for backups, upgrades, sharding and monitoring; see the matrix.",
+          "links": [
+            "vector-databases",
+            "vector-search"
+          ]
+        }
+      }
+    },
+    {
+      "id": "api-vs-selfhost",
+      "title": "API or self-hosting?",
+      "blurb": "Decide where your model should run.",
+      "start": "s1",
+      "nodes": {
+        "s1": {
+          "q": "Must data stay inside your own environment?",
+          "options": [
+            [
+              "Yes",
+              "s2"
+            ],
+            [
+              "No",
+              "s3"
+            ]
+          ]
+        },
+        "s3": {
+          "q": "Is traffic high and steady enough to keep GPUs busy most of the day?",
+          "options": [
+            [
+              "Yes",
+              "s2"
+            ],
+            [
+              "No, it is bursty or modest",
+              "r-api"
+            ]
+          ]
+        },
+        "s2": {
+          "q": "Does an open-weight model pass your eval?",
+          "options": [
+            [
+              "Yes",
+              "r-selfhost"
+            ],
+            [
+              "No",
+              "r-private"
+            ]
+          ]
+        },
+        "r-api": {
+          "result": "Use an API",
+          "why": "Pay per token, keep a second provider ready and use caching and batch discounts.",
+          "links": [
+            "cost-engineering",
+            "gateways-routers"
+          ]
+        },
+        "r-selfhost": {
+          "result": "Self-host an open-weight model",
+          "why": "Size memory with the VRAM planner, pick a serving engine, and measure goodput against your latency target.",
+          "links": [
+            "serving-engines",
+            "memory-math",
+            "cost-engineering"
+          ]
+        },
+        "r-private": {
+          "result": "A frontier model through a private deployment",
+          "why": "Cloud platforms and zero-data-retention terms can meet residency needs when open models fall short.",
+          "links": [
+            "enterprise-readiness",
+            "model-apis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "eval-method",
+      "title": "Which eval method?",
+      "blurb": "Pick the cheapest grader that measures what you care about.",
+      "start": "e1",
+      "nodes": {
+        "e1": {
+          "q": "Can a program check the output?",
+          "options": [
+            [
+              "Yes: format, tests, exact values",
+              "r-code"
+            ],
+            [
+              "No, it needs judgment",
+              "e2"
+            ]
+          ]
+        },
+        "e2": {
+          "q": "Is the criterion specific and answerable with pass or fail?",
+          "options": [
+            [
+              "Yes",
+              "e3"
+            ],
+            [
+              "No, it is broad, like overall quality",
+              "r-split"
+            ]
+          ]
+        },
+        "e3": {
+          "q": "Do you have human labels to calibrate a judge against?",
+          "options": [
+            [
+              "Yes",
+              "r-judge"
+            ],
+            [
+              "Not yet",
+              "r-label"
+            ]
+          ]
+        },
+        "r-code": {
+          "result": "Code assertions",
+          "why": "Fast, free and exact. Use them wherever they apply.",
+          "links": [
+            "metrics-graders",
+            "eval-recipes"
+          ]
+        },
+        "r-split": {
+          "result": "Split the criterion first",
+          "why": "Use error analysis to break “quality” into specific failure modes, then grade each one.",
+          "links": [
+            "error-analysis",
+            "llm-as-judge"
+          ]
+        },
+        "r-judge": {
+          "result": "A calibrated binary LLM judge",
+          "why": "Measure its true positive and true negative rates on held-out labels before trusting it.",
+          "links": [
+            "llm-as-judge",
+            "eval-statistics"
+          ]
+        },
+        "r-label": {
+          "result": "Label 100 examples yourself first",
+          "why": "Human labels are the ground truth a judge is checked against.",
+          "links": [
+            "labeling-annotation",
+            "eval-datasets"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mcp-vs-function-vs-skill",
+      "title": "MCP server, plain function or skill?",
+      "blurb": "Choose how to give an agent a new capability or procedure.",
+      "start": "c1",
+      "nodes": {
+        "c1": {
+          "q": "Is it a capability (an action or data access) or a procedure (how to do something)?",
+          "options": [
+            [
+              "A capability",
+              "c2"
+            ],
+            [
+              "A procedure or know-how",
+              "r-skill"
+            ]
+          ]
+        },
+        "c2": {
+          "q": "Will more than one app, agent or team use it?",
+          "options": [
+            [
+              "Yes",
+              "r-mcp"
+            ],
+            [
+              "No, only this application",
+              "r-function"
+            ]
+          ]
+        },
+        "r-skill": {
+          "result": "Write a skill",
+          "why": "A folder with a SKILL.md file: instructions and scripts loaded only when relevant.",
+          "links": [
+            "skills-plugins",
+            "claude-code"
+          ]
+        },
+        "r-mcp": {
+          "result": "Build an MCP server",
+          "why": "One server works in every compliant host, with standard discovery and auth.",
+          "links": [
+            "building-mcp-servers",
+            "mcp-primitives"
+          ]
+        },
+        "r-function": {
+          "result": "Define a plain tool in your own code",
+          "why": "No protocol needed for a single application’s own functions.",
+          "links": [
+            "agent-tools",
+            "agent-loop"
+          ]
+        }
+      }
+    }
+  ]
+}

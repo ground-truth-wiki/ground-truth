@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qsp-1",
+    "chapter": "specialist-models",
+    "q": "Which task suits a specialist rather than a general model?",
+    "options": [
+      "Writing an essay",
+      "Embedding millions of passages for retrieval",
+      "Planning a trip",
+      "Debating"
+    ],
+    "answer": 1,
+    "explain": "Specialists are cheaper and faster at narrow jobs."
+  },
+  {
+    "id": "qsp-2",
+    "chapter": "specialist-models",
+    "q": "What does a guard model do?",
+    "options": [
+      "Generates images",
+      "Screens inputs or outputs against a safety policy",
+      "Routes traffic",
+      "Translates text"
+    ],
+    "answer": 1,
+    "explain": "Llama Guard is one example."
+  },
+  {
+    "id": "qsp-3",
+    "chapter": "specialist-models",
+    "q": "What was recognized with the 2024 Nobel Prize in Chemistry?",
+    "options": [
+      "GPT-4",
+      "AlphaFold’s protein structure prediction (together with protein design work)",
+      "Whisper",
+      "BERT"
+    ],
+    "answer": 1,
+    "explain": "A scientific specialist model."
+  }
+]

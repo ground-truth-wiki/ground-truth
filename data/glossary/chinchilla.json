@@ -1,0 +1,12 @@
+{
+  "id": "chinchilla",
+  "term": "Chinchilla scaling",
+  "def": "The 2022 finding that compute-optimal training uses roughly 20 tokens per parameter.",
+  "practice": "Modern models often train past it to cut inference cost.",
+  "aliases": [
+    "compute-optimal"
+  ],
+  "chapters": [
+    "scaling-laws"
+  ]
+}

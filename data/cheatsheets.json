@@ -1,0 +1,502 @@
+{
+  "sheets": [
+    {
+      "id": "prompting",
+      "title": "Prompting",
+      "chapter": "prompting-fundamentals",
+      "items": [
+        {
+          "t": "Write a brief, not a wish.",
+          "d": "Goal, audience, context, constraints, format."
+        },
+        {
+          "t": "Show, then tell.",
+          "d": "Two or three diverse examples beat a page of rules."
+        },
+        {
+          "t": "Separate the parts.",
+          "d": "Instructions, context and data in labeled sections."
+        },
+        {
+          "t": "Say what to do.",
+          "d": "Positive instructions beat lists of don’ts."
+        },
+        {
+          "t": "Put long documents first.",
+          "d": "Then the question."
+        },
+        {
+          "t": "Ask for structure the API can enforce.",
+          "d": "Schemas beat pleading."
+        },
+        {
+          "t": "Test on a set, not a case.",
+          "d": "One good output proves nothing."
+        },
+        {
+          "t": "Version every prompt.",
+          "d": "Treat it like code."
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context engineering",
+      "chapter": "context-engineering",
+      "items": [
+        {
+          "t": "Smallest high-signal context wins.",
+          "d": "Not the fullest."
+        },
+        {
+          "t": "Stable first, variable last.",
+          "d": "For caching and clarity."
+        },
+        {
+          "t": "Bound every tool result.",
+          "d": "Say when you truncated."
+        },
+        {
+          "t": "Clear what you have used.",
+          "d": "Old tool output is dead weight."
+        },
+        {
+          "t": "Compact before the cliff.",
+          "d": "Summarize decisions, keep the why."
+        },
+        {
+          "t": "Retrieve just in time.",
+          "d": "Keep references, load on demand."
+        },
+        {
+          "t": "Isolate noisy work.",
+          "d": "Subagents return summaries."
+        },
+        {
+          "t": "Append, don’t edit.",
+          "d": "History stays coherent and cached."
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "title": "The RAG pipeline",
+      "chapter": "rag-fundamentals",
+      "items": [
+        {
+          "t": "Parse well.",
+          "d": "Garbage text poisons every later stage."
+        },
+        {
+          "t": "Chunk by structure.",
+          "d": "Self-contained pieces with headings."
+        },
+        {
+          "t": "Index twice.",
+          "d": "Keywords and vectors."
+        },
+        {
+          "t": "Retrieve wide, rerank narrow.",
+          "d": "Dozens in, a handful out."
+        },
+        {
+          "t": "Filter by permission at query time.",
+          "d": "Never after generation."
+        },
+        {
+          "t": "Cite everything.",
+          "d": "Let users click through."
+        },
+        {
+          "t": "Allow “I don’t know”.",
+          "d": "Abstaining beats inventing."
+        },
+        {
+          "t": "Measure retrieval separately.",
+          "d": "Recall@k before faithfulness."
+        }
+      ]
+    },
+    {
+      "id": "chunking",
+      "title": "Chunking",
+      "chapter": "chunking",
+      "items": [
+        {
+          "t": "Chunk for the question.",
+          "d": "Not the document."
+        },
+        {
+          "t": "Keep structure.",
+          "d": "Headings travel with their text."
+        },
+        {
+          "t": "Never split tables blindly.",
+          "d": "Repeat header rows if you must split."
+        },
+        {
+          "t": "Resolve references.",
+          "d": "Context notes fix “it” and “this”."
+        },
+        {
+          "t": "Overlap modestly.",
+          "d": "It patches boundaries, not bad ones."
+        },
+        {
+          "t": "Store metadata.",
+          "d": "Source, page, section, date, ACL."
+        },
+        {
+          "t": "Measure two or three sizes.",
+          "d": "Pick by recall, not taste."
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "Agent patterns",
+      "chapter": "workflow-patterns",
+      "items": [
+        {
+          "t": "Workflow first.",
+          "d": "If you can write the steps, code them."
+        },
+        {
+          "t": "Budget everything.",
+          "d": "Steps, tokens, dollars, minutes."
+        },
+        {
+          "t": "Errors are information.",
+          "d": "Return them to the model."
+        },
+        {
+          "t": "Read trajectories.",
+          "d": "Find the first wrong step."
+        },
+        {
+          "t": "Approve side effects.",
+          "d": "Show exactly what will happen."
+        },
+        {
+          "t": "Single agent until evals say otherwise.",
+          "d": "Then split wide work, not deep work."
+        },
+        {
+          "t": "Checkpoint long runs.",
+          "d": "Assume the process will die."
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tool design",
+      "chapter": "agent-tools",
+      "items": [
+        {
+          "t": "Name it specifically.",
+          "d": "search_tickets, not search."
+        },
+        {
+          "t": "Describe when to use it.",
+          "d": "And what comes next."
+        },
+        {
+          "t": "Constrain arguments.",
+          "d": "Enums, bounds, defaults, examples."
+        },
+        {
+          "t": "Return handles and excerpts.",
+          "d": "Let the model ask for more."
+        },
+        {
+          "t": "Paginate and truncate visibly.",
+          "d": "Never silently."
+        },
+        {
+          "t": "Write errors as instructions.",
+          "d": "What went wrong and what to try."
+        },
+        {
+          "t": "Fewer, task-shaped tools.",
+          "d": "Not one per endpoint."
+        },
+        {
+          "t": "Make side effects idempotent.",
+          "d": "Retries must be safe."
+        }
+      ]
+    },
+    {
+      "id": "mcp",
+      "title": "MCP",
+      "chapter": "mcp-architecture",
+      "items": [
+        {
+          "t": "Know the version.",
+          "d": "2026-07-28 is stateless (verified Nov 2026)."
+        },
+        {
+          "t": "One client per server.",
+          "d": "Hosts own policy."
+        },
+        {
+          "t": "Tools for actions, resources for context.",
+          "d": "Prompts for user-chosen templates."
+        },
+        {
+          "t": "Annotations are hints.",
+          "d": "Trust them only from trusted servers."
+        },
+        {
+          "t": "Keep tool order stable.",
+          "d": "Prompt caches depend on it."
+        },
+        {
+          "t": "Never pass tokens through.",
+          "d": "Get audience-bound tokens per service."
+        },
+        {
+          "t": "Treat servers as third-party code.",
+          "d": "Pin, review, sandbox."
+        }
+      ]
+    },
+    {
+      "id": "a2a",
+      "title": "A2A",
+      "chapter": "a2a",
+      "items": [
+        {
+          "t": "Tool or colleague?",
+          "d": "MCP for tools, A2A for peers."
+        },
+        {
+          "t": "Publish an agent card.",
+          "d": "Skills, endpoint, auth."
+        },
+        {
+          "t": "Model work as tasks.",
+          "d": "With explicit states."
+        },
+        {
+          "t": "Stream or notify.",
+          "d": "Long tasks report progress."
+        },
+        {
+          "t": "Return artifacts.",
+          "d": "Typed results, not chat."
+        },
+        {
+          "t": "Check the 1.0 spec.",
+          "d": "Breaking changes shipped in March 2026 (verified Nov 2026)."
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "title": "Evals",
+      "chapter": "why-evals",
+      "items": [
+        {
+          "t": "Read 100 traces first.",
+          "d": "Then choose metrics."
+        },
+        {
+          "t": "Code checks before judges.",
+          "d": "Judges before humans, humans on a sample forever."
+        },
+        {
+          "t": "One criterion per grader.",
+          "d": "Binary where possible."
+        },
+        {
+          "t": "Grow evals from failures.",
+          "d": "Every bug becomes a case."
+        },
+        {
+          "t": "Report intervals.",
+          "d": "Small gains on small sets are noise."
+        },
+        {
+          "t": "Gate releases on evals.",
+          "d": "Prompts and models are code."
+        },
+        {
+          "t": "Re-run on every model upgrade.",
+          "d": "Regressions hide in averages."
+        }
+      ]
+    },
+    {
+      "id": "judges",
+      "title": "LLM-as-judge rubrics",
+      "chapter": "llm-as-judge",
+      "items": [
+        {
+          "t": "One specific criterion.",
+          "d": "From error analysis."
+        },
+        {
+          "t": "Critique, then verdict.",
+          "d": "PASS or FAIL on its own line."
+        },
+        {
+          "t": "Give fail examples.",
+          "d": "Judges are too lenient by default."
+        },
+        {
+          "t": "Calibrate on 100+ labels.",
+          "d": "Report TPR and TNR."
+        },
+        {
+          "t": "Hold out a test split.",
+          "d": "Don’t report on what you tuned on."
+        },
+        {
+          "t": "Run pairwise both ways.",
+          "d": "Disagreement means tie."
+        },
+        {
+          "t": "Recalibrate after any change.",
+          "d": "Judge model, prompt or system."
+        }
+      ]
+    },
+    {
+      "id": "inference",
+      "title": "Inference math",
+      "chapter": "numbers-to-know",
+      "items": [
+        {
+          "t": "4 characters per token.",
+          "d": "English, roughly."
+        },
+        {
+          "t": "2 bytes per parameter at 16-bit.",
+          "d": "0.5 at 4-bit."
+        },
+        {
+          "t": "2N FLOPs per token to run.",
+          "d": "6N to train."
+        },
+        {
+          "t": "Decode reads all weights per step.",
+          "d": "Bandwidth sets speed."
+        },
+        {
+          "t": "KV = 2·L·H_kv·d·b·T·B.",
+          "d": "Multiply by concurrency."
+        },
+        {
+          "t": "Latency = TTFT + tokens × TPOT.",
+          "d": "Per agent step."
+        },
+        {
+          "t": "Use active parameters for MoE FLOPs.",
+          "d": "Total for memory."
+        }
+      ]
+    },
+    {
+      "id": "finetuning",
+      "title": "Fine-tuning decisions",
+      "chapter": "fine-tuning-practice",
+      "items": [
+        {
+          "t": "Prompt, then retrieve, then fine-tune.",
+          "d": "In that order."
+        },
+        {
+          "t": "Fine-tune behavior, not facts.",
+          "d": "Facts change; retrieval updates."
+        },
+        {
+          "t": "Build the eval before the dataset.",
+          "d": "And score the base model."
+        },
+        {
+          "t": "Start with LoRA.",
+          "d": "Rank 8 to 64 is a common range."
+        },
+        {
+          "t": "Match the chat template.",
+          "d": "Train as you serve."
+        },
+        {
+          "t": "Check for forgetting.",
+          "d": "General capability evals too."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "chapter": "prompt-injection",
+      "items": [
+        {
+          "t": "Assume the model is compromised.",
+          "d": "Design the blast radius."
+        },
+        {
+          "t": "Break the trifecta.",
+          "d": "Private data, untrusted input, a way out: pick two."
+        },
+        {
+          "t": "Default-deny egress.",
+          "d": "Every URL is a channel."
+        },
+        {
+          "t": "Least privilege per task.",
+          "d": "No send tools for summarizers."
+        },
+        {
+          "t": "Approve side effects.",
+          "d": "Rarely, specifically, meaningfully."
+        },
+        {
+          "t": "Treat tool output as untrusted.",
+          "d": "Including MCP servers and skills."
+        },
+        {
+          "t": "Keep an injection suite.",
+          "d": "Run it on every release."
+        }
+      ]
+    },
+    {
+      "id": "production",
+      "title": "Production readiness",
+      "chapter": "reference-architecture",
+      "items": [
+        {
+          "t": "Trace every call.",
+          "d": "Model, tool, retrieval."
+        },
+        {
+          "t": "Gateway in front.",
+          "d": "Failover, budgets, logs."
+        },
+        {
+          "t": "Timeouts and jittered retries.",
+          "d": "Idempotency keys for side effects."
+        },
+        {
+          "t": "Eval gates in CI.",
+          "d": "Canary, then roll out."
+        },
+        {
+          "t": "Budgets per user and feature.",
+          "d": "Alerts before invoices."
+        },
+        {
+          "t": "A kill switch.",
+          "d": "Tested before launch."
+        },
+        {
+          "t": "Runbooks for regressions and outages.",
+          "d": "Postmortems become eval cases."
+        }
+      ]
+    }
+  ]
+}

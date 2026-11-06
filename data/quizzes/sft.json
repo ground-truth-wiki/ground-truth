@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qsf-1",
+    "chapter": "sft",
+    "q": "Why compute the loss only on assistant tokens in SFT?",
+    "options": [
+      "It is faster",
+      "So the model learns to answer, not to imitate user messages",
+      "It saves memory",
+      "Templates require it"
+    ],
+    "answer": 1,
+    "explain": "Loss masking focuses learning."
+  },
+  {
+    "id": "qsf-2",
+    "chapter": "sft",
+    "q": "What did LIMA show?",
+    "options": [
+      "Millions of examples are required",
+      "About a thousand carefully chosen examples can produce a capable assistant from a strong base model",
+      "SFT is unnecessary",
+      "Templates do not matter"
+    ],
+    "answer": 1,
+    "explain": "Quality over quantity."
+  },
+  {
+    "id": "qsf-3",
+    "chapter": "sft",
+    "q": "What is SFT bad at?",
+    "options": [
+      "Format",
+      "Reliably adding lots of new factual knowledge",
+      "Style",
+      "Tone"
+    ],
+    "answer": 1,
+    "explain": "Use retrieval for knowledge."
+  }
+]

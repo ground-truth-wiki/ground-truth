@@ -1,0 +1,10 @@
+{
+  "id": "proxy-buffering",
+  "term": "Proxy buffering",
+  "def": "A proxy collecting a response before forwarding it, which breaks streaming.",
+  "practice": "Disable it for streaming routes.",
+  "aliases": [],
+  "chapters": [
+    "streaming"
+  ]
+}

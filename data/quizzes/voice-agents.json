@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b10-3",
+    "chapter": "voice-agents",
+    "q": "What is barge-in?",
+    "options": [
+      "A billing error",
+      "The user interrupting while the agent speaks, which should stop the agent",
+      "A type of microphone",
+      "A latency metric"
+    ],
+    "answer": 1,
+    "explain": "Good voice agents stop immediately and discard the rest of the reply."
+  },
+  {
+    "id": "voi-1",
+    "chapter": "voice-agents",
+    "q": "Which stage usually contributes the most to latency in a cascaded voice pipeline?",
+    "options": [
+      "Network",
+      "The language model’s time to first token",
+      "Microphone",
+      "Playback"
+    ],
+    "answer": 1,
+    "explain": "Short prompts and fast models help."
+  },
+  {
+    "id": "voi-2",
+    "chapter": "voice-agents",
+    "q": "What must happen when a user interrupts a voice agent?",
+    "options": [
+      "Finish the sentence",
+      "Stop playback immediately and listen",
+      "Raise the volume",
+      "Hang up"
+    ],
+    "answer": 1,
+    "explain": "Barge-in handling is essential."
+  },
+  {
+    "id": "voi-3",
+    "chapter": "voice-agents",
+    "q": "What is a trade-off of speech-to-speech models versus cascades?",
+    "options": [
+      "They are slower",
+      "Lower latency and tone preserved, but harder to inspect, constrain and evaluate",
+      "They cannot hear",
+      "They need no audio"
+    ],
+    "answer": 1,
+    "explain": "Control versus naturalness."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "data-leakage",
+  "term": "Data leakage",
+  "def": "Information from evaluation data reaching training or tuning, making results look better than they are.",
+  "practice": "Benchmark contamination is leakage at internet scale.",
+  "aliases": [
+    "leakage",
+    "contamination"
+  ],
+  "chapters": [
+    "classical-ml",
+    "benchmark-literacy"
+  ]
+}

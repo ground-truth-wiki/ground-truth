@@ -1,0 +1,10 @@
+{
+  "id": "hit-rate",
+  "term": "Hit rate",
+  "def": "The share of queries with at least one relevant result in the top k.",
+  "practice": "A simple retrieval metric when one passage is enough.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation"
+  ]
+}

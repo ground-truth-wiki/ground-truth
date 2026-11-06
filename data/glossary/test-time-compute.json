@@ -1,0 +1,13 @@
+{
+  "id": "test-time-compute",
+  "term": "Test-time compute",
+  "def": "Compute spent at inference, through longer reasoning, more samples or search, to improve answers.",
+  "practice": "A second scaling axis alongside training compute.",
+  "aliases": [
+    "inference-time compute"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "reasoning-models"
+  ]
+}

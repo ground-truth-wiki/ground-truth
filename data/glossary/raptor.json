@@ -1,0 +1,10 @@
+{
+  "id": "raptor",
+  "term": "RAPTOR",
+  "def": "Recursively clustering and summarizing chunks into a tree so broad questions can retrieve high-level summaries.",
+  "practice": "Precomputed; refresh as documents change.",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag"
+  ]
+}

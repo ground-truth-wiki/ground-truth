@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qhu-1",
+    "chapter": "how-to-use",
+    "q": "What does a “volatile” stability badge tell you?",
+    "options": [
+      "The chapter is wrong",
+      "The chapter is a dated snapshot; check its review date before relying on it",
+      "The chapter is short",
+      "The chapter is advanced"
+    ],
+    "answer": 1,
+    "explain": "Volatile facts change quickly."
+  },
+  {
+    "id": "qhu-2",
+    "chapter": "how-to-use",
+    "q": "What does a visual’s “formula” badge mean?",
+    "options": [
+      "It is decorative",
+      "Its numbers are computed from stated formulas and inputs",
+      "It shows measured data",
+      "It is a guess"
+    ],
+    "answer": 1,
+    "explain": "Illustrative, formula and real data are labeled."
+  },
+  {
+    "id": "qhu-3",
+    "chapter": "how-to-use",
+    "q": "What is the fastest way to find anything in the Bible?",
+    "options": [
+      "Scroll",
+      "Search with Ctrl K or Cmd K",
+      "Print it",
+      "Ask a friend"
+    ],
+    "answer": 1,
+    "explain": "Search covers chapters, terms and tools."
+  }
+]

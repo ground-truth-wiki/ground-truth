@@ -1,0 +1,12 @@
+{
+  "id": "speculative-decoding",
+  "term": "Speculative decoding",
+  "def": "Drafting several tokens cheaply and verifying them in one pass of the target model, keeping its output distribution.",
+  "practice": "Speedups depend on how often drafts are accepted.",
+  "aliases": [
+    "speculative sampling"
+  ],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

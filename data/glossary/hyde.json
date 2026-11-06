@@ -1,0 +1,10 @@
+{
+  "id": "hyde",
+  "term": "HyDE",
+  "def": "Hypothetical document embeddings: generating a hypothetical answer and searching with its embedding.",
+  "practice": "Helps when questions and answers are phrased very differently.",
+  "aliases": [],
+  "chapters": [
+    "query-understanding"
+  ]
+}

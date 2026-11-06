@@ -1,0 +1,12 @@
+{
+  "id": "resource-link",
+  "term": "Resource link",
+  "def": "An MCP tool-result item that points to a resource the client can fetch later instead of inlining it.",
+  "practice": "Keeps large data out of the context until needed.",
+  "aliases": [
+    "resource links"
+  ],
+  "chapters": [
+    "mcp-primitives"
+  ]
+}

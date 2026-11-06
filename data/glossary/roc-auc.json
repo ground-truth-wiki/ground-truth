@@ -1,0 +1,12 @@
+{
+  "id": "roc-auc",
+  "term": "ROC AUC",
+  "def": "The area under the curve of true-positive rate against false-positive rate across thresholds.",
+  "practice": "0.5 is random ranking.",
+  "aliases": [
+    "AUC"
+  ],
+  "chapters": [
+    "classical-ml"
+  ]
+}

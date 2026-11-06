@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qds-1",
+    "chapter": "decoding-sampling",
+    "q": "What does a temperature below 1 do?",
+    "options": [
+      "Flattens the distribution",
+      "Sharpens it toward the most likely tokens",
+      "Removes tokens",
+      "Adds tokens"
+    ],
+    "answer": 1,
+    "explain": "Lower temperature means less randomness."
+  },
+  {
+    "id": "qds-2",
+    "chapter": "decoding-sampling",
+    "q": "What does top-p sampling keep?",
+    "options": [
+      "The single best token",
+      "The smallest set of tokens whose probabilities sum to p",
+      "Exactly p tokens",
+      "All tokens"
+    ],
+    "answer": 1,
+    "explain": "Nucleus sampling cuts the long tail."
+  },
+  {
+    "id": "qds-3",
+    "chapter": "decoding-sampling",
+    "q": "Which settings suit invoice extraction?",
+    "options": [
+      "Temperature 1.5",
+      "Low temperature with structured outputs",
+      "High top-k",
+      "Repetition penalties"
+    ],
+    "answer": 1,
+    "explain": "Consistency matters more than variety."
+  }
+]

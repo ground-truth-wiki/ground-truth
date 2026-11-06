@@ -1,0 +1,10 @@
+{
+  "id": "ndcg",
+  "term": "nDCG",
+  "def": "Normalized discounted cumulative gain: a ranking metric that rewards relevant results more when they appear near the top.",
+  "practice": "The standard metric for graded relevance.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation"
+  ]
+}

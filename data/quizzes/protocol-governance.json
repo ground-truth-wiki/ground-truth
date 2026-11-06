@@ -1,0 +1,41 @@
+[
+  {
+    "id": "gov-1",
+    "chapter": "protocol-governance",
+    "q": "Why does it matter who stewards a protocol?",
+    "options": [
+      "It changes the license fee",
+      "It decides who can change the protocol and how, which affects the risk of building on it",
+      "It sets the model price",
+      "It has no effect"
+    ],
+    "answer": 1,
+    "explain": "Governance tells you how stable and neutral a standard is."
+  },
+  {
+    "id": "gov-2",
+    "chapter": "protocol-governance",
+    "q": "In MCP, what is a SEP?",
+    "options": [
+      "A security patch",
+      "A Specification Enhancement Proposal for changing the spec",
+      "A server error",
+      "A sampling endpoint"
+    ],
+    "answer": 1,
+    "explain": "SEPs are how changes are proposed and reviewed."
+  },
+  {
+    "id": "gov-3",
+    "chapter": "protocol-governance",
+    "q": "Which step usually surfaces problems no design review catches?",
+    "options": [
+      "Drafting",
+      "Implementation in reference SDKs and servers",
+      "Voting",
+      "Announcing"
+    ],
+    "answer": 1,
+    "explain": "Building it exposes edge cases."
+  }
+]

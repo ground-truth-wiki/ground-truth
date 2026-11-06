@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b13-2",
+    "chapter": "gateways-routers",
+    "q": "Which job is an AI gateway best placed to do?",
+    "options": [
+      "Train models",
+      "Fail over between providers and enforce spend limits",
+      "Chunk documents",
+      "Label data"
+    ],
+    "answer": 1,
+    "explain": "Gateways centralize routing, failover, logging and budgets."
+  },
+  {
+    "id": "qgw-1",
+    "chapter": "gateways-routers",
+    "q": "Why should services call logical model names through a gateway?",
+    "options": [
+      "It is faster",
+      "Mappings to providers and versions can change centrally, with evals, without touching every service",
+      "Providers require it",
+      "It removes tokens"
+    ],
+    "answer": 1,
+    "explain": "One place to route, fall back and pin versions."
+  },
+  {
+    "id": "qgw-2",
+    "chapter": "gateways-routers",
+    "q": "What must every fallback route have before it is enabled?",
+    "options": [
+      "A logo",
+      "Eval evidence that its model handles the route’s prompts and formats",
+      "A larger context window",
+      "A lower price only"
+    ],
+    "answer": 1,
+    "explain": "Untested fallbacks turn outages into correctness incidents."
+  },
+  {
+    "id": "qgw-3",
+    "chapter": "gateways-routers",
+    "q": "What does a learned router such as RouteLLM predict?",
+    "options": [
+      "Token prices",
+      "Whether a cheaper model will answer a request well enough",
+      "Network latency",
+      "User intent only"
+    ],
+    "answer": 1,
+    "explain": "It routes easy requests to cheaper models."
+  }
+]

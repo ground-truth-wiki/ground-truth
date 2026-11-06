@@ -1,0 +1,10 @@
+{
+  "id": "prompt-lookup",
+  "term": "Prompt lookup decoding",
+  "def": "Speculative decoding that drafts tokens by copying likely continuations from the prompt.",
+  "practice": "Cheap and strong for RAG and code editing.",
+  "aliases": [],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

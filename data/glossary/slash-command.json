@@ -1,0 +1,12 @@
+{
+  "id": "slash-command",
+  "term": "Slash command",
+  "def": "A command typed with a leading slash that controls an agent session or runs a saved prompt.",
+  "practice": "Custom commands are shareable Markdown prompts.",
+  "aliases": [
+    "slash commands"
+  ],
+  "chapters": [
+    "claude-code"
+  ]
+}

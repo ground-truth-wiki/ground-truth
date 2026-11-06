@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qcg-1",
+    "chapter": "commandments-guide",
+    "q": "What makes a commandment more useful than a bare rule?",
+    "options": [
+      "Brevity",
+      "A reason and a link to the evidence, so you know when it applies",
+      "Bold text",
+      "Numbering"
+    ],
+    "answer": 1,
+    "explain": "Rules have exceptions."
+  },
+  {
+    "id": "qcg-2",
+    "chapter": "commandments-guide",
+    "q": "How many Commandments sheets are there?",
+    "options": [
+      "5",
+      "10",
+      "14",
+      "50"
+    ],
+    "answer": 2,
+    "explain": "Fourteen one-page sheets."
+  },
+  {
+    "id": "qcg-3",
+    "chapter": "commandments-guide",
+    "q": "What should you do when you disagree with a commandment?",
+    "options": [
+      "Ignore it",
+      "Read its chapter and test the disagreement on evidence",
+      "Delete it",
+      "Follow it anyway"
+    ],
+    "answer": 1,
+    "explain": "Argue with them on evidence."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "pickle-deserialization",
+  "term": "Pickle deserialization",
+  "def": "Loading Python pickle files, which can execute arbitrary code embedded in the file.",
+  "practice": "Use weights_only=True or safetensors.",
+  "aliases": [
+    "pickle"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

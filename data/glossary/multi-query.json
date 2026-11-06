@@ -1,0 +1,12 @@
+{
+  "id": "multi-query",
+  "term": "Multi-query retrieval",
+  "def": "Searching with several paraphrases of a question and merging the results.",
+  "practice": "Three to five variants capture most of the benefit.",
+  "aliases": [
+    "query expansion"
+  ],
+  "chapters": [
+    "query-understanding"
+  ]
+}

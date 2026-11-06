@@ -1,0 +1,12 @@
+{
+  "id": "query-condensation",
+  "term": "Query condensation",
+  "def": "Rewriting a conversational follow-up into a standalone search query using the chat history.",
+  "practice": "Almost every chat RAG system needs it.",
+  "aliases": [
+    "standalone question"
+  ],
+  "chapters": [
+    "query-understanding"
+  ]
+}

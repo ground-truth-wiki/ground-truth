@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qpu-1",
+    "chapter": "ai-product-ux",
+    "q": "Why does fluent output create a trust problem?",
+    "options": [
+      "It is slow",
+      "Users trust it similarly whether it is right or wrong",
+      "It costs more",
+      "It is hard to read"
+    ],
+    "answer": 1,
+    "explain": "Design must calibrate trust."
+  },
+  {
+    "id": "qpu-2",
+    "chapter": "ai-product-ux",
+    "q": "What should you design first for an AI feature?",
+    "options": [
+      "The logo",
+      "What happens when the model is wrong and how the user will notice",
+      "The pricing page",
+      "Animations"
+    ],
+    "answer": 1,
+    "explain": "Design the error experience."
+  },
+  {
+    "id": "qpu-3",
+    "chapter": "ai-product-ux",
+    "q": "Which presentation invites checked trust?",
+    "options": [
+      "Confident text without sources",
+      "Claims linked to sources, with unsupported points flagged",
+      "Longer answers",
+      "More emojis"
+    ],
+    "answer": 1,
+    "explain": "One click to verify."
+  }
+]

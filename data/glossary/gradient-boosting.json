@@ -1,0 +1,13 @@
+{
+  "id": "gradient-boosting",
+  "term": "Gradient boosting",
+  "def": "An ensemble of decision trees trained sequentially to correct each other’s errors.",
+  "practice": "Strong on tabular data.",
+  "aliases": [
+    "XGBoost",
+    "LightGBM"
+  ],
+  "chapters": [
+    "classical-ml"
+  ]
+}

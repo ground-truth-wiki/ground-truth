@@ -1,0 +1,14 @@
+{
+  "id": "rollout",
+  "term": "Rollout",
+  "def": "One complete trajectory of a policy acting in an environment, from reset to the end of the episode.",
+  "practice": "Agentic RL needs thousands per training step.",
+  "aliases": [
+    "rollouts",
+    "episode"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "agentic-rl"
+  ]
+}

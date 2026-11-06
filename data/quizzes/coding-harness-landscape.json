@@ -1,0 +1,41 @@
+[
+  {
+    "id": "land-1",
+    "chapter": "coding-harness-landscape",
+    "q": "Which surface moves human review to the pull request?",
+    "options": [
+      "Terminal agents",
+      "Editor agents",
+      "Cloud or background agents",
+      "None"
+    ],
+    "answer": 2,
+    "explain": "Cloud agents work remotely and return pull requests."
+  },
+  {
+    "id": "land-2",
+    "chapter": "coding-harness-landscape",
+    "q": "What is the best way to choose between coding agents?",
+    "options": [
+      "Benchmark headlines",
+      "Run candidates on a handful of real tasks from your own repository and read the transcripts",
+      "Popularity",
+      "Price only"
+    ],
+    "answer": 1,
+    "explain": "Your code and conventions decide what works."
+  },
+  {
+    "id": "land-3",
+    "chapter": "coding-harness-landscape",
+    "q": "Why keep one source of truth for agent instructions?",
+    "options": [
+      "It saves disk space",
+      "Different rules files for different agents produce inconsistent code",
+      "It is required by law",
+      "Agents cannot read files"
+    ],
+    "answer": 1,
+    "explain": "Point CLAUDE.md, GEMINI.md and rules files at one AGENTS.md or shared doc."
+  }
+]

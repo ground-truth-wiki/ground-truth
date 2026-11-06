@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qmm2-1",
+    "chapter": "mental-models",
+    "q": "What does “context is the program” mean?",
+    "options": [
+      "Code does not matter",
+      "What the model sees largely decides what it does",
+      "Contexts are short",
+      "Programs are prompts"
+    ],
+    "answer": 1,
+    "explain": "Most quality work is context work."
+  },
+  {
+    "id": "qmm2-2",
+    "chapter": "mental-models",
+    "q": "What did Sutton’s “Bitter Lesson” argue?",
+    "options": [
+      "Hand-engineered knowledge always wins",
+      "General methods that scale with computation eventually beat hand-engineered ones",
+      "Compute is irrelevant",
+      "Small models win"
+    ],
+    "answer": 1,
+    "explain": "Sutton, 2019."
+  },
+  {
+    "id": "qmm2-3",
+    "chapter": "mental-models",
+    "q": "Which four factors trade off in most AI design decisions?",
+    "options": [
+      "Color, font, size, speed",
+      "Quality, cost, latency and risk",
+      "Tokens, words, lines, pages",
+      "Users, servers, disks, logs"
+    ],
+    "answer": 1,
+    "explain": "The triangle plus risk."
+  }
+]

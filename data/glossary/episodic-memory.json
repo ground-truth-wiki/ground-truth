@@ -1,0 +1,10 @@
+{
+  "id": "episodic-memory",
+  "term": "Episodic memory",
+  "def": "Stored records of what happened in past interactions, retrieved when relevant.",
+  "practice": "Pair with semantic memory for facts and preferences.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory"
+  ]
+}

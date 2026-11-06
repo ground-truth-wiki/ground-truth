@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mm-4",
+    "chapter": "memory-math",
+    "q": "How much KV cache does one 8K-token sequence need on a Llama-3-8B-like model in BF16?",
+    "options": [
+      "About 10 MB",
+      "About 1 GB",
+      "About 16 GB",
+      "About 100 GB"
+    ],
+    "answer": 1,
+    "explain": "128 KiB per token × 8,192 tokens ≈ 1 GiB."
+  },
+  {
+    "id": "mm-5",
+    "chapter": "memory-math",
+    "q": "What memory must fit for a mixture-of-experts model?",
+    "options": [
+      "Only the active experts",
+      "All parameters, including every expert",
+      "Only the router",
+      "Half the parameters"
+    ],
+    "answer": 1,
+    "explain": "Every expert must be resident even though each token uses few."
+  },
+  {
+    "id": "mm-6",
+    "chapter": "memory-math",
+    "q": "Which change cuts KV cache per token the most in the chart?",
+    "options": [
+      "Fewer layers",
+      "Grouped-query attention with fewer KV heads, plus FP8 KV",
+      "Longer prompts",
+      "More GPUs"
+    ],
+    "answer": 1,
+    "explain": "GQA cut 4×; FP8 halved it again."
+  }
+]

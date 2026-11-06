@@ -1,0 +1,12 @@
+{
+  "id": "nxm-problem",
+  "term": "N×M integration problem",
+  "def": "Without a shared standard, N applications each need a custom integration for each of M services.",
+  "practice": "A protocol reduces the work to N + M implementations.",
+  "aliases": [
+    "N×M problem"
+  ],
+  "chapters": [
+    "why-protocols"
+  ]
+}

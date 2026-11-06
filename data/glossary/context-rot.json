@@ -1,0 +1,11 @@
+{
+  "id": "context-rot",
+  "term": "Context rot",
+  "def": "The tendency of model performance to degrade as the input grows longer, even on simple tasks.",
+  "practice": "Keep contexts small and relevant rather than full.",
+  "aliases": [],
+  "chapters": [
+    "context-engineering",
+    "long-context"
+  ]
+}

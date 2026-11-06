@@ -1,0 +1,10 @@
+{
+  "id": "scalable-oversight",
+  "term": "Scalable oversight",
+  "def": "Methods for supervising AI systems on tasks too hard for humans to check directly.",
+  "practice": "Debate and weak-to-strong generalization are examples.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

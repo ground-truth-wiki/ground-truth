@@ -1,0 +1,10 @@
+{
+  "id": "logical-model-name",
+  "term": "Logical model name",
+  "def": "A stable name such as “default-large” that a gateway maps to a specific provider and dated model version.",
+  "practice": "Lets you change models without touching services.",
+  "aliases": [],
+  "chapters": [
+    "gateways-routers"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "step-budget",
+  "term": "Step budget",
+  "def": "A hard limit on how many iterations an agent loop may run.",
+  "practice": "Every production agent needs one, enforced in code.",
+  "aliases": [],
+  "chapters": [
+    "agent-loop",
+    "guardrails-control"
+  ]
+}

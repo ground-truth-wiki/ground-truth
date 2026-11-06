@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b7-3",
+    "chapter": "data-governance",
+    "q": "What does data lineage let you do?",
+    "options": [
+      "Speed up training",
+      "Trace which data versions a model was trained on",
+      "Compress datasets",
+      "Remove PII automatically"
+    ],
+    "answer": 1,
+    "explain": "Lineage links models to the exact data that produced them."
+  },
+  {
+    "id": "qgo-1",
+    "chapter": "data-governance",
+    "q": "What does data lineage let you do?",
+    "options": [
+      "Train faster",
+      "Trace every dataset, index, eval and model derived from a source",
+      "Compress data",
+      "Label data"
+    ],
+    "answer": 1,
+    "explain": "Essential for deletions and audits."
+  },
+  {
+    "id": "qgo-2",
+    "chapter": "data-governance",
+    "q": "What should you check before training on a dataset?",
+    "options": [
+      "Its size only",
+      "Its consent basis, license and contractual limits",
+      "Its format",
+      "Its age"
+    ],
+    "answer": 1,
+    "explain": "Permitted use first."
+  },
+  {
+    "id": "qgo-3",
+    "chapter": "data-governance",
+    "q": "How often should end-to-end deletion be tested?",
+    "options": [
+      "Never",
+      "Regularly, for example quarterly on a sample record",
+      "Only after incidents",
+      "Once at launch"
+    ],
+    "answer": 1,
+    "explain": "Copies spread quietly."
+  }
+]

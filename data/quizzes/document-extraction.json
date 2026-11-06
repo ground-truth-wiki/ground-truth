@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dex-1",
+    "chapter": "document-extraction",
+    "q": "An invoice has net 1,250, VAT 250 and total 1,520. What should the pipeline do?",
+    "options": [
+      "Accept it",
+      "Flag the total and route the document to review",
+      "Delete it",
+      "Change the VAT"
+    ],
+    "answer": 1,
+    "explain": "Cross-field validation catches misreads."
+  },
+  {
+    "id": "dex-2",
+    "chapter": "document-extraction",
+    "q": "With 20,000 documents a month, 80% straight-through and 4 minutes per review, how many review hours are needed?",
+    "options": [
+      "about 67",
+      "about 267",
+      "about 1,333",
+      "about 4,000"
+    ],
+    "answer": 1,
+    "explain": "20,000 × 0.2 × 4 ÷ 60 ≈ 267."
+  },
+  {
+    "id": "dex-3",
+    "chapter": "document-extraction",
+    "q": "Why record each extracted value’s page and location?",
+    "options": [
+      "For style",
+      "So reviewers can verify it quickly against the page image",
+      "To save tokens",
+      "It is required by OCR"
+    ],
+    "answer": 1,
+    "explain": "Fast review keeps costs down."
+  }
+]

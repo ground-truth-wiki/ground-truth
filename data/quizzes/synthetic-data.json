@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b7-2",
+    "chapter": "synthetic-data",
+    "q": "What protects against bland, repetitive synthetic eval data?",
+    "options": [
+      "Generating more of it",
+      "Seeding generation with explicit dimensions such as persona, task and difficulty, then filtering",
+      "Using temperature 0",
+      "Skipping review"
+    ],
+    "answer": 1,
+    "explain": "Structured variety plus filtering beats free-form generation."
+  },
+  {
+    "id": "qsy-1",
+    "chapter": "synthetic-data",
+    "q": "What keeps synthetic data from teaching errors?",
+    "options": [
+      "Generating more",
+      "Verification, deduplication and filtering, plus mixing with real data",
+      "A higher temperature",
+      "Shorter outputs"
+    ],
+    "answer": 1,
+    "explain": "Keep only what passes checks."
+  },
+  {
+    "id": "qsy-2",
+    "chapter": "synthetic-data",
+    "q": "What is model collapse?",
+    "options": [
+      "A GPU failure",
+      "Degradation from training repeatedly on model-generated data, narrowing the distribution",
+      "A tokenizer bug",
+      "A licensing issue"
+    ],
+    "answer": 1,
+    "explain": "Shumailov et al., 2024."
+  },
+  {
+    "id": "qsy-3",
+    "chapter": "synthetic-data",
+    "q": "Where must synthetic-data models always be evaluated?",
+    "options": [
+      "On more synthetic data",
+      "On real held-out data the generator never saw",
+      "On the training set",
+      "Nowhere"
+    ],
+    "answer": 1,
+    "explain": "Otherwise the score flatters the generator’s style."
+  }
+]

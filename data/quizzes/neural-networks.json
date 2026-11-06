@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qnn-1",
+    "chapter": "neural-networks",
+    "q": "Why do networks need nonlinear activations?",
+    "options": [
+      "To speed training",
+      "Without them, stacked linear layers collapse into a single linear map",
+      "To reduce memory",
+      "To add parameters"
+    ],
+    "answer": 1,
+    "explain": "Nonlinearity gives depth its power."
+  },
+  {
+    "id": "qnn-2",
+    "chapter": "neural-networks",
+    "q": "What does backpropagation compute?",
+    "options": [
+      "Predictions",
+      "Gradients of the loss for every parameter, using the chain rule",
+      "The learning rate",
+      "The dataset"
+    ],
+    "answer": 1,
+    "explain": "In roughly twice the cost of a forward pass."
+  },
+  {
+    "id": "qnn-3",
+    "chapter": "neural-networks",
+    "q": "What made very deep networks trainable?",
+    "options": [
+      "Bigger datasets only",
+      "Residual connections, normalization and careful initialization",
+      "Smaller learning rates only",
+      "More GPUs"
+    ],
+    "answer": 1,
+    "explain": "Gradients can flow through deep stacks."
+  }
+]

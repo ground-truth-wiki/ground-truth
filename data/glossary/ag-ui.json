@@ -1,0 +1,10 @@
+{
+  "id": "ag-ui",
+  "term": "AG-UI",
+  "def": "An event protocol for streaming agent state, messages and tool activity to user interfaces.",
+  "practice": "Decouples agent back ends from front ends.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup"
+  ]
+}

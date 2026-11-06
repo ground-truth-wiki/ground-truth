@@ -1,0 +1,41 @@
+[
+  {
+    "id": "em-1",
+    "chapter": "embeddings",
+    "q": "What do Matryoshka embeddings let you do?",
+    "options": [
+      "Embed images",
+      "Truncate vectors to fewer dimensions with only gradual quality loss",
+      "Skip indexing",
+      "Avoid quantization"
+    ],
+    "answer": 1,
+    "explain": "Their leading dimensions already form a usable embedding."
+  },
+  {
+    "id": "em-2",
+    "chapter": "embeddings",
+    "q": "How many bytes does a 1,024-dimension binary embedding take?",
+    "options": [
+      "1,024",
+      "4,096",
+      "128",
+      "32"
+    ],
+    "answer": 2,
+    "explain": "1,024 bits is 128 bytes, 32 times smaller than float32."
+  },
+  {
+    "id": "em-3",
+    "chapter": "embeddings",
+    "q": "Why must you re-embed the whole corpus when switching embedding models?",
+    "options": [
+      "To save money",
+      "Vectors from different models are not comparable",
+      "The index needs defragmenting",
+      "Licenses require it"
+    ],
+    "answer": 1,
+    "explain": "Each model defines its own space."
+  }
+]

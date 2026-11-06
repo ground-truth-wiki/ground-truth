@@ -1,0 +1,12 @@
+{
+  "id": "accessibility-tree",
+  "term": "Accessibility tree",
+  "def": "A structured representation of a user interface’s elements, used by assistive technology and by browser agents.",
+  "practice": "More precise and cheaper than screenshots where it exists.",
+  "aliases": [
+    "DOM agent"
+  ],
+  "chapters": [
+    "computer-use-agents"
+  ]
+}

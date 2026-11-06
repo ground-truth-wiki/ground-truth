@@ -1,0 +1,13 @@
+{
+  "id": "reward-hacking",
+  "term": "Reward hacking",
+  "def": "A model exploiting flaws in its reward to score well without doing the intended task.",
+  "practice": "Audit verifiers and read rollouts.",
+  "aliases": [
+    "specification gaming"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "rlvr-reasoning"
+  ]
+}

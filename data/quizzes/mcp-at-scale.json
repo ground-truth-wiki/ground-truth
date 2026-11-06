@@ -1,0 +1,41 @@
+[
+  {
+    "id": "scale-1",
+    "chapter": "mcp-at-scale",
+    "q": "Why use code execution against MCP tools for data-heavy tasks?",
+    "options": [
+      "It is always faster",
+      "Large intermediate results stay in the sandbox and only the final answer enters the context",
+      "It needs no sandbox",
+      "It removes authorization"
+    ],
+    "answer": 1,
+    "explain": "Code keeps bulky data out of the model’s context."
+  },
+  {
+    "id": "scale-2",
+    "chapter": "mcp-at-scale",
+    "q": "With 8 tools per server at about 400 tokens each, roughly how many servers fill 10% of a 200,000-token window?",
+    "options": [
+      "About 2",
+      "About 6",
+      "About 25",
+      "About 60"
+    ],
+    "answer": 1,
+    "explain": "Each server costs about 3,200 tokens; six servers are about 19,200 tokens, close to 10%."
+  },
+  {
+    "id": "scale-3",
+    "chapter": "mcp-at-scale",
+    "q": "What is a key benefit of an MCP gateway?",
+    "options": [
+      "It trains models",
+      "Central authentication, allowlists, credential injection and audit logs",
+      "It removes the need for servers",
+      "It increases context length"
+    ],
+    "answer": 1,
+    "explain": "Gateways put policy and credentials in one place."
+  }
+]

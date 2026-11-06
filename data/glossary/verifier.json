@@ -1,0 +1,13 @@
+{
+  "id": "verifier",
+  "term": "Verifier",
+  "def": "A program that checks an outcome, such as running tests or comparing answers, and turns it into a reward or a grade.",
+  "practice": "What it fails to check, the policy learns to exploit.",
+  "aliases": [
+    "verifiers"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "rlvr-reasoning"
+  ]
+}

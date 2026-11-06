@@ -1,0 +1,11 @@
+{
+  "id": "sycophancy",
+  "term": "Sycophancy",
+  "def": "A model telling users what they want to hear instead of what is true.",
+  "practice": "A known side effect of preference training; evaluate for it.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts",
+    "preference-optimization"
+  ]
+}

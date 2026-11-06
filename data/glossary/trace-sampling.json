@@ -1,0 +1,10 @@
+{
+  "id": "trace-sampling",
+  "term": "Trace sampling",
+  "def": "Storing full payloads for only a share of requests, plus all errors and flagged sessions.",
+  "practice": "Balances insight, cost and privacy.",
+  "aliases": [],
+  "chapters": [
+    "observability-tracing"
+  ]
+}

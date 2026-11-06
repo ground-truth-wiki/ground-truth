@@ -1,0 +1,12 @@
+{
+  "id": "cross-encoder-model",
+  "term": "Cross-encoder",
+  "def": "A model that reads a query and a passage together and outputs a relevance score.",
+  "practice": "Too slow for whole corpora, ideal for reranking dozens of candidates.",
+  "aliases": [
+    "cross-encoders"
+  ],
+  "chapters": [
+    "reranking"
+  ]
+}

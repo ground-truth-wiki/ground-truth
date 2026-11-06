@@ -1,0 +1,13 @@
+{
+  "id": "world-model",
+  "term": "World model",
+  "def": "A model that predicts how an environment evolves, often in response to actions.",
+  "practice": "Used to plan and to train agents in simulation.",
+  "aliases": [
+    "world models"
+  ],
+  "chapters": [
+    "video-world-models",
+    "embodied-agents"
+  ]
+}

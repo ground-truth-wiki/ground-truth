@@ -1,0 +1,13 @@
+{
+  "id": "reranker",
+  "term": "Reranker",
+  "def": "A model that rescores candidate passages with the query, usually more accurately than first-stage retrieval.",
+  "practice": "Retrieve for recall, rerank for precision.",
+  "aliases": [
+    "reranking",
+    "cross-encoder"
+  ],
+  "chapters": [
+    "reranking"
+  ]
+}

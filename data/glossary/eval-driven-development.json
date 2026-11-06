@@ -1,0 +1,10 @@
+{
+  "id": "eval-driven-development",
+  "term": "Eval-driven development",
+  "def": "Defining success as eval cases with checks before building, then measuring every change against them.",
+  "practice": "Test-driven development adapted to probabilistic systems.",
+  "aliases": [],
+  "chapters": [
+    "why-evals"
+  ]
+}

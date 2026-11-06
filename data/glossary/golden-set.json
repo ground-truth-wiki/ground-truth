@@ -1,0 +1,12 @@
+{
+  "id": "golden-set",
+  "term": "Golden set",
+  "def": "A small, carefully labeled eval set that the team trusts.",
+  "practice": "Version it and grow it from real failures.",
+  "aliases": [
+    "golden dataset"
+  ],
+  "chapters": [
+    "eval-datasets"
+  ]
+}

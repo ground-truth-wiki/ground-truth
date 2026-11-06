@@ -1,0 +1,41 @@
+[
+  {
+    "id": "prim-1",
+    "chapter": "mcp-primitives",
+    "q": "Which MCP primitive is controlled by the application rather than the model or the user?",
+    "options": [
+      "Tools",
+      "Resources",
+      "Prompts",
+      "Notifications"
+    ],
+    "answer": 1,
+    "explain": "Tools are model-controlled, resources application-controlled and prompts user-controlled."
+  },
+  {
+    "id": "prim-2",
+    "chapter": "mcp-primitives",
+    "q": "A server marks a tool with readOnlyHint true. How should a host treat this from an unknown server?",
+    "options": [
+      "As a guarantee that the tool is safe",
+      "As a hint that cannot be trusted on its own",
+      "As a reason to skip user consent entirely",
+      "As an error"
+    ],
+    "answer": 1,
+    "explain": "Annotations are hints from the server; a malicious server can mislabel tools."
+  },
+  {
+    "id": "prim-3",
+    "chapter": "mcp-primitives",
+    "q": "What does a resource link in a tool result let the client do?",
+    "options": [
+      "Run the tool again",
+      "Fetch the referenced resource later instead of having it inlined",
+      "Skip authorization",
+      "Change the tool’s schema"
+    ],
+    "answer": 1,
+    "explain": "Resource links keep large data out of context until it is needed."
+  }
+]

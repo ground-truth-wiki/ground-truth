@@ -1,0 +1,12 @@
+{
+  "id": "continued-pretraining",
+  "term": "Continued pretraining",
+  "def": "Further pretraining a model on new, often domain-specific, unlabeled data.",
+  "practice": "Replay general data to avoid forgetting.",
+  "aliases": [
+    "domain-adaptive pretraining"
+  ],
+  "chapters": [
+    "mid-training"
+  ]
+}

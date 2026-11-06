@@ -1,0 +1,13 @@
+{
+  "id": "attack-success-rate",
+  "term": "Attack success rate",
+  "def": "The share of attack attempts that achieve the attacker’s goal against a system.",
+  "practice": "Fixed test sets give a lower bound against adaptive attackers.",
+  "aliases": [
+    "ASR"
+  ],
+  "chapters": [
+    "safety-evals",
+    "red-teaming"
+  ]
+}

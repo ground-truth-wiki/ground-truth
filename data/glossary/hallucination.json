@@ -1,0 +1,13 @@
+{
+  "id": "hallucination",
+  "term": "Hallucination",
+  "def": "Output that is fluent and confident but unsupported or false.",
+  "practice": "Reduce with retrieval, permission to abstain and verification; it never reaches zero.",
+  "aliases": [
+    "hallucinations",
+    "confabulation"
+  ],
+  "chapters": [
+    "grounding-citations"
+  ]
+}

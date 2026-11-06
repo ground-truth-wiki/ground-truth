@@ -1,0 +1,12 @@
+{
+  "id": "low-rank",
+  "term": "Low-rank approximation",
+  "def": "Representing a matrix with a product of two thinner matrices that capture its main directions.",
+  "practice": "The idea behind LoRA.",
+  "aliases": [
+    "SVD"
+  ],
+  "chapters": [
+    "linear-algebra"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "edit-format",
+  "term": "Edit format",
+  "def": "The way an agent expresses code changes: whole-file rewrites, search-and-replace blocks, unified diffs or patch formats.",
+  "practice": "Which format works best depends on the model; measure it.",
+  "aliases": [
+    "edit formats",
+    "search-and-replace"
+  ],
+  "chapters": [
+    "harness-engineering",
+    "coding-agents"
+  ]
+}

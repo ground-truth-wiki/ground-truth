@@ -1,0 +1,12 @@
+{
+  "id": "audit-log",
+  "term": "Audit log",
+  "def": "A tamper-resistant record of who did what and when, including admin actions, data access and agent actions.",
+  "practice": "Customers will want to export it.",
+  "aliases": [
+    "audit logs"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ]
+}

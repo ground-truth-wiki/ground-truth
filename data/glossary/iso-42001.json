@@ -1,0 +1,11 @@
+{
+  "id": "iso-42001",
+  "term": "ISO/IEC 42001",
+  "def": "A certifiable international standard for AI management systems, published in December 2023.",
+  "practice": "Increasingly requested by enterprise buyers.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "enterprise-readiness"
+  ]
+}

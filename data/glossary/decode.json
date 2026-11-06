@@ -1,0 +1,13 @@
+{
+  "id": "decode",
+  "term": "Decode",
+  "def": "The inference phase that generates one token per step per sequence, reading all weights and the cache each step.",
+  "practice": "Memory-bandwidth-bound; batching is how you raise its throughput.",
+  "aliases": [
+    "decoding phase"
+  ],
+  "chapters": [
+    "inference-fundamentals",
+    "kv-cache"
+  ]
+}

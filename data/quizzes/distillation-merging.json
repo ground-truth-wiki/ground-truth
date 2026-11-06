@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qdm-1",
+    "chapter": "distillation-merging",
+    "q": "What does a student learn from in distillation?",
+    "options": [
+      "Only labels",
+      "The teacher’s outputs or probability distributions",
+      "Random data",
+      "The tokenizer"
+    ],
+    "answer": 1,
+    "explain": "Soft labels carry more information."
+  },
+  {
+    "id": "qdm-2",
+    "chapter": "distillation-merging",
+    "q": "Which models can usually be merged successfully?",
+    "options": [
+      "Any two models",
+      "Models fine-tuned from the same base",
+      "Models with different tokenizers",
+      "Models of different sizes"
+    ],
+    "answer": 1,
+    "explain": "Merging relies on a shared starting point."
+  },
+  {
+    "id": "qdm-3",
+    "chapter": "distillation-merging",
+    "q": "What should you check before distilling from a provider’s API?",
+    "options": [
+      "Its logo",
+      "Its terms of use regarding training on outputs",
+      "Its latency",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Many terms restrict training competing models."
+  }
+]

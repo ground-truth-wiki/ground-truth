@@ -1,0 +1,14 @@
+{
+  "id": "mfu",
+  "term": "Model FLOP utilization",
+  "def": "The fraction of an accelerator’s peak FLOPs a training or inference job actually uses.",
+  "practice": "Large training runs often reach 30% to 50%.",
+  "aliases": [
+    "MFU"
+  ],
+  "chapters": [
+    "distributed-training",
+    "numbers-to-know"
+  ],
+  "abbr": "MFU"
+}

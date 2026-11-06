@@ -1,0 +1,1421 @@
+{
+  "matrices": [
+    {
+      "id": "agent-frameworks",
+      "title": "Agent frameworks and SDKs",
+      "chapter": "orchestration-frameworks",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Framework"
+        },
+        {
+          "id": "k",
+          "label": "Kind"
+        },
+        {
+          "id": "l",
+          "label": "Language"
+        },
+        {
+          "id": "s",
+          "label": "Style"
+        },
+        {
+          "id": "g",
+          "label": "Good for"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Claude Agent SDK",
+          "k": "Agent SDK",
+          "l": "Python, TypeScript",
+          "s": "Harness with tools, permissions, subagents",
+          "g": "Agents built on Claude Code’s harness"
+        },
+        {
+          "n": "OpenAI Agents SDK",
+          "k": "Agent SDK",
+          "l": "Python, TypeScript",
+          "s": "Agents, handoffs, guardrails, tracing",
+          "g": "Multi-agent apps on OpenAI models"
+        },
+        {
+          "n": "Google ADK",
+          "k": "Agent SDK",
+          "l": "Python and others",
+          "s": "Agents and multi-agent composition",
+          "g": "Gemini and Google Cloud deployments"
+        },
+        {
+          "n": "LangGraph",
+          "k": "Orchestration",
+          "l": "Python, TypeScript",
+          "s": "Stateful graphs with checkpoints",
+          "g": "Durable, inspectable agent workflows"
+        },
+        {
+          "n": "LlamaIndex",
+          "k": "Orchestration",
+          "l": "Python, TypeScript",
+          "s": "Data connectors and retrieval",
+          "g": "RAG-heavy applications"
+        },
+        {
+          "n": "CrewAI",
+          "k": "Orchestration",
+          "l": "Python",
+          "s": "Role-based crews of agents",
+          "g": "Quick multi-agent prototypes"
+        },
+        {
+          "n": "PydanticAI",
+          "k": "Orchestration",
+          "l": "Python",
+          "s": "Typed agents and outputs",
+          "g": "Type-safe Python services"
+        },
+        {
+          "n": "smolagents",
+          "k": "Orchestration",
+          "l": "Python",
+          "s": "Minimal, code-as-action agents",
+          "g": "Small, readable agents"
+        },
+        {
+          "n": "Mastra",
+          "k": "Orchestration",
+          "l": "TypeScript",
+          "s": "Agents, workflows and RAG",
+          "g": "TypeScript product teams"
+        },
+        {
+          "n": "DSPy",
+          "k": "Programming model",
+          "l": "Python",
+          "s": "Compiled prompts from modules",
+          "g": "Optimizing pipelines against metrics"
+        }
+      ]
+    },
+    {
+      "id": "coding-harnesses",
+      "title": "Coding-agent harnesses",
+      "chapter": "coding-harness-landscape",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Harness"
+        },
+        {
+          "id": "s",
+          "label": "Surface"
+        },
+        {
+          "id": "o",
+          "label": "Openness"
+        },
+        {
+          "id": "i",
+          "label": "Instruction file"
+        },
+        {
+          "id": "x",
+          "label": "Extensions"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Claude Code",
+          "s": "CLI, IDE, desktop, web",
+          "o": "Proprietary",
+          "i": "CLAUDE.md",
+          "x": "Skills, hooks, plugins, MCP"
+        },
+        {
+          "n": "Codex",
+          "s": "CLI and cloud",
+          "o": "CLI open source",
+          "i": "AGENTS.md",
+          "x": "MCP"
+        },
+        {
+          "n": "Gemini CLI",
+          "s": "CLI",
+          "o": "Open source",
+          "i": "GEMINI.md",
+          "x": "Extensions, MCP"
+        },
+        {
+          "n": "Cursor",
+          "s": "IDE",
+          "o": "Proprietary",
+          "i": "Rules files, AGENTS.md",
+          "x": "Plugins, MCP"
+        },
+        {
+          "n": "GitHub Copilot",
+          "s": "IDE and cloud agent",
+          "o": "Proprietary",
+          "i": "Instruction files",
+          "x": "MCP"
+        },
+        {
+          "n": "Aider",
+          "s": "CLI",
+          "o": "Open source",
+          "i": "Conventions file",
+          "x": "Model-agnostic"
+        },
+        {
+          "n": "Cline and Roo Code",
+          "s": "IDE extension",
+          "o": "Open source",
+          "i": "Rules files",
+          "x": "MCP"
+        },
+        {
+          "n": "OpenHands",
+          "s": "Web and CLI",
+          "o": "Open source",
+          "i": "Microagents",
+          "x": "Research and benchmarking"
+        },
+        {
+          "n": "mini-SWE-agent",
+          "s": "CLI",
+          "o": "Open source",
+          "i": "None",
+          "x": "Deliberately minimal"
+        },
+        {
+          "n": "Devin and Jules",
+          "s": "Cloud agents",
+          "o": "Proprietary",
+          "i": "Varies",
+          "x": "Asynchronous pull requests"
+        }
+      ]
+    },
+    {
+      "id": "vector-dbs",
+      "title": "Vector databases and search engines",
+      "chapter": "vector-databases",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Store"
+        },
+        {
+          "id": "t",
+          "label": "Type"
+        },
+        {
+          "id": "h",
+          "label": "Hosting"
+        },
+        {
+          "id": "y",
+          "label": "Hybrid search"
+        },
+        {
+          "id": "g",
+          "label": "Good for"
+        }
+      ],
+      "rows": [
+        {
+          "n": "pgvector",
+          "t": "Postgres extension",
+          "h": "Self-hosted or managed Postgres",
+          "y": "With Postgres full-text search",
+          "g": "Teams already on Postgres"
+        },
+        {
+          "n": "Pinecone",
+          "t": "Vector database",
+          "h": "Managed",
+          "y": "Supported",
+          "g": "Managed scale without operations"
+        },
+        {
+          "n": "Weaviate",
+          "t": "Vector database",
+          "h": "Open source or managed",
+          "y": "Built in",
+          "g": "Hybrid search with modules"
+        },
+        {
+          "n": "Qdrant",
+          "t": "Vector database",
+          "h": "Open source or managed",
+          "y": "Supported",
+          "g": "Filtering-heavy workloads"
+        },
+        {
+          "n": "Milvus",
+          "t": "Vector database",
+          "h": "Open source or managed",
+          "y": "Supported",
+          "g": "Very large corpora"
+        },
+        {
+          "n": "Chroma",
+          "t": "Vector database",
+          "h": "Open source, embedded or hosted",
+          "y": "Basic",
+          "g": "Prototypes and local apps"
+        },
+        {
+          "n": "LanceDB",
+          "t": "Embedded columnar store",
+          "h": "Embedded or managed",
+          "y": "Supported",
+          "g": "Multimodal data on object storage"
+        },
+        {
+          "n": "Elasticsearch and OpenSearch",
+          "t": "Search engine",
+          "h": "Self-hosted or managed",
+          "y": "Mature keyword plus vectors",
+          "g": "Hybrid search at scale"
+        },
+        {
+          "n": "Vespa",
+          "t": "Search engine",
+          "h": "Open source or managed",
+          "y": "Mature, with ranking",
+          "g": "Complex ranking pipelines"
+        },
+        {
+          "n": "turbopuffer",
+          "t": "Vector search on object storage",
+          "h": "Managed",
+          "y": "Supported",
+          "g": "Large, cost-sensitive indexes"
+        }
+      ]
+    },
+    {
+      "id": "serving-engines",
+      "title": "Serving engines",
+      "chapter": "serving-engines",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Engine"
+        },
+        {
+          "id": "t",
+          "label": "Target"
+        },
+        {
+          "id": "s",
+          "label": "Strengths"
+        },
+        {
+          "id": "u",
+          "label": "Typical use"
+        }
+      ],
+      "rows": [
+        {
+          "n": "vLLM",
+          "t": "Data-center GPUs",
+          "s": "PagedAttention, continuous batching, broad support",
+          "u": "General open-model serving"
+        },
+        {
+          "n": "SGLang",
+          "t": "Data-center GPUs",
+          "s": "RadixAttention prefix caching, structured output",
+          "u": "Agentic and repeated-prefix workloads"
+        },
+        {
+          "n": "TensorRT-LLM",
+          "t": "NVIDIA GPUs",
+          "s": "Highly optimized kernels",
+          "u": "Maximum performance on NVIDIA"
+        },
+        {
+          "n": "LMDeploy",
+          "t": "GPUs",
+          "s": "Efficient quantized serving",
+          "u": "Cost-focused deployments"
+        },
+        {
+          "n": "llama.cpp",
+          "t": "CPUs, GPUs, Apple silicon",
+          "s": "GGUF quantization, portability",
+          "u": "Local and edge inference"
+        },
+        {
+          "n": "Ollama",
+          "t": "Desktops and servers",
+          "s": "One-command local models",
+          "u": "Developer machines"
+        },
+        {
+          "n": "LM Studio",
+          "t": "Desktops",
+          "s": "Graphical local model runner",
+          "u": "Trying models locally"
+        },
+        {
+          "n": "MLX",
+          "t": "Apple silicon",
+          "s": "Unified-memory arrays",
+          "u": "Mac-based inference and fine-tuning"
+        }
+      ]
+    },
+    {
+      "id": "eval-tools",
+      "title": "Eval and observability tools",
+      "chapter": "eval-tooling",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Tool"
+        },
+        {
+          "id": "f",
+          "label": "Focus"
+        },
+        {
+          "id": "o",
+          "label": "Openness"
+        },
+        {
+          "id": "g",
+          "label": "Good for"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Inspect",
+          "f": "Eval framework",
+          "o": "Open source",
+          "g": "Model and agent evals with sandboxes"
+        },
+        {
+          "n": "promptfoo",
+          "f": "Eval and red-team CLI",
+          "o": "Open source",
+          "g": "CI tests for prompts and attacks"
+        },
+        {
+          "n": "DeepEval",
+          "f": "Eval framework",
+          "o": "Open source",
+          "g": "Pytest-style LLM tests"
+        },
+        {
+          "n": "RAGAS",
+          "f": "RAG metrics",
+          "o": "Open source",
+          "g": "Faithfulness and context metrics"
+        },
+        {
+          "n": "Braintrust",
+          "f": "Eval and tracing platform",
+          "o": "Hosted",
+          "g": "Experiments and datasets"
+        },
+        {
+          "n": "LangSmith",
+          "f": "Tracing and eval platform",
+          "o": "Hosted",
+          "g": "LangChain and LangGraph teams"
+        },
+        {
+          "n": "Langfuse",
+          "f": "Tracing and eval platform",
+          "o": "Open source or hosted",
+          "g": "Self-hostable observability"
+        },
+        {
+          "n": "Arize Phoenix",
+          "f": "Tracing and eval",
+          "o": "Open source",
+          "g": "OpenInference traces"
+        },
+        {
+          "n": "W&B Weave",
+          "f": "Tracing and eval",
+          "o": "Hosted",
+          "g": "Teams on Weights & Biases"
+        },
+        {
+          "n": "Opik",
+          "f": "Tracing and eval",
+          "o": "Open source or hosted",
+          "g": "Open-source observability"
+        }
+      ]
+    },
+    {
+      "id": "mcp-versions",
+      "title": "MCP features by specification version",
+      "chapter": "mcp-spec-history",
+      "asof": "November 2026 (verify)",
+      "note": "Headline changes only, from each version’s changelog; 2026-07-28 verified Nov 2026, items marked verify should be checked.",
+      "columns": [
+        {
+          "id": "f",
+          "label": "Area"
+        },
+        {
+          "id": "v1",
+          "label": "2024-11-05"
+        },
+        {
+          "id": "v2",
+          "label": "2025-03-26"
+        },
+        {
+          "id": "v3",
+          "label": "2025-06-18"
+        },
+        {
+          "id": "v4",
+          "label": "2025-11-25"
+        },
+        {
+          "id": "v5",
+          "label": "2026-07-28"
+        }
+      ],
+      "rows": [
+        {
+          "f": "Lifecycle",
+          "v1": "initialize handshake, capability negotiation",
+          "v2": "—",
+          "v3": "lifecycle requirements tightened",
+          "v4": "—",
+          "v5": "stateless: no handshake; _meta on every request; server/discover"
+        },
+        {
+          "f": "Transports",
+          "v1": "stdio and HTTP+SSE",
+          "v2": "Streamable HTTP added",
+          "v3": "MCP-Protocol-Version header required",
+          "v4": "—",
+          "v5": "no sessions or resumability; HTTP+SSE formally deprecated"
+        },
+        {
+          "f": "Authorization",
+          "v1": "—",
+          "v2": "OAuth 2.1-based framework",
+          "v3": "resource-server model, protected-resource metadata, resource indicators",
+          "v4": "client ID metadata documents (verify)",
+          "v5": "issuer validation, credentials bound to their server"
+        },
+        {
+          "f": "Tools",
+          "v1": "tools",
+          "v2": "tool annotations",
+          "v3": "structured output, output schemas, resource links",
+          "v4": "icons (verify)",
+          "v5": "any JSON Schema 2020-12 keyword; deterministic order"
+        },
+        {
+          "f": "Asking the client",
+          "v1": "sampling and roots",
+          "v2": "—",
+          "v3": "elicitation",
+          "v4": "URL-mode elicitation; tools in sampling (verify)",
+          "v5": "multi round-trip requests; roots and sampling deprecated"
+        },
+        {
+          "f": "Long-running work",
+          "v1": "progress and cancellation",
+          "v2": "—",
+          "v3": "—",
+          "v4": "tasks (experimental)",
+          "v5": "tasks extension, polled with tasks/get"
+        },
+        {
+          "f": "Subscriptions",
+          "v1": "resource subscribe",
+          "v2": "—",
+          "v3": "—",
+          "v4": "—",
+          "v5": "subscriptions/listen"
+        },
+        {
+          "f": "Batching",
+          "v1": "—",
+          "v2": "JSON-RPC batching added",
+          "v3": "batching removed",
+          "v4": "—",
+          "v5": "—"
+        },
+        {
+          "f": "Utilities",
+          "v1": "ping, logging, completion",
+          "v2": "completions capability, audio content",
+          "v3": "_meta and title fields broadened",
+          "v4": "—",
+          "v5": "ping and logging/setLevel removed; logging deprecated; list cache hints"
+        }
+      ]
+    },
+    {
+      "id": "sandbox-isolation",
+      "title": "Sandbox isolation options",
+      "chapter": "sandboxes",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative; strength depends heavily on configuration, especially egress and secrets policy.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Option"
+        },
+        {
+          "id": "b",
+          "label": "Boundary"
+        },
+        {
+          "id": "s",
+          "label": "Startup"
+        },
+        {
+          "id": "w",
+          "label": "Watch out for"
+        },
+        {
+          "id": "g",
+          "label": "Good for"
+        }
+      ],
+      "rows": [
+        {
+          "n": "OS-level sandbox",
+          "b": "Process restrictions on files and network, no container",
+          "s": "Instant",
+          "w": "Policy gaps; same kernel and user",
+          "g": "Local coding agents and their commands"
+        },
+        {
+          "n": "Container",
+          "b": "Namespaces and cgroups; shared host kernel",
+          "s": "Fast",
+          "w": "Kernel exploits; broad default mounts",
+          "g": "Development and CI with trusted code"
+        },
+        {
+          "n": "gVisor",
+          "b": "User-space kernel intercepting system calls",
+          "s": "Fast",
+          "w": "Compatibility and some overhead",
+          "g": "Multi-tenant container workloads"
+        },
+        {
+          "n": "MicroVM",
+          "b": "Lightweight VM with its own kernel",
+          "s": "Well under a second",
+          "w": "Image and network setup",
+          "g": "Hosted sandboxes for untrusted code"
+        },
+        {
+          "n": "Full VM",
+          "b": "Hardware virtualization, full OS",
+          "s": "Seconds to minutes",
+          "w": "Cost and startup time",
+          "g": "Long-lived, high-isolation environments"
+        },
+        {
+          "n": "WebAssembly",
+          "b": "Capability-based runtime",
+          "s": "Instant",
+          "w": "Limited languages and system interfaces",
+          "g": "Narrow, well-defined functions"
+        }
+      ]
+    },
+    {
+      "id": "model-prompting",
+      "title": "Prompting conventions by model family",
+      "chapter": "model-specific-notes",
+      "asof": "November 2026 (verify)",
+      "note": "Dated snapshot from providers’ published guidance; verify against current documentation before relying on it.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Family"
+        },
+        {
+          "id": "s",
+          "label": "Structure"
+        },
+        {
+          "id": "l",
+          "label": "Long documents"
+        },
+        {
+          "id": "r",
+          "label": "Reasoning controls"
+        },
+        {
+          "id": "p",
+          "label": "Prefill"
+        },
+        {
+          "id": "x",
+          "label": "Notes"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Claude (Anthropic)",
+          "s": "XML tags recommended in the docs",
+          "l": "Documents before the question",
+          "r": "Extended thinking with its own parameters (check current API)",
+          "p": "Assistant prefill supported; check compatibility with extended thinking",
+          "x": "Follows instructions precisely; be explicit"
+        },
+        {
+          "n": "GPT (OpenAI)",
+          "s": "Markdown or XML, per the model’s guide",
+          "l": "Instructions at start and end for very long contexts (verify)",
+          "r": "Reasoning effort on reasoning models",
+          "p": "Use structured outputs instead",
+          "x": "Model-specific prompting guides are published"
+        },
+        {
+          "n": "Gemini (Google)",
+          "s": "System instructions; Markdown or XML",
+          "l": "Query after the long context",
+          "r": "Thinking budget on thinking models (check names)",
+          "p": "Check current API",
+          "x": "Strong long-context and multimodal input"
+        },
+        {
+          "n": "Open-weight models",
+          "s": "The model’s exact chat template",
+          "l": "Varies by model; test",
+          "r": "Some toggle thinking via template flags",
+          "p": "Possible by starting the assistant turn",
+          "x": "Template mismatches degrade quality silently"
+        }
+      ]
+    },
+    {
+      "id": "eval-recipes",
+      "title": "Evaluation recipes by system type",
+      "chapter": "eval-recipes",
+      "asof": "November 2026 (verify)",
+      "note": "Starting points; adapt each with error analysis on your own outputs.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "System"
+        },
+        {
+          "id": "m",
+          "label": "What to measure"
+        },
+        {
+          "id": "g",
+          "label": "How to grade"
+        },
+        {
+          "id": "d",
+          "label": "Data source"
+        },
+        {
+          "id": "t",
+          "label": "Classic trap"
+        }
+      ],
+      "rows": [
+        {
+          "n": "RAG",
+          "m": "Retrieval recall@k and nDCG; faithfulness; answer relevance",
+          "g": "Relevance labels; calibrated judge",
+          "d": "Real questions with labeled passages",
+          "t": "One end-to-end score"
+        },
+        {
+          "n": "Agents",
+          "m": "Final-state success; forbidden actions; pass^k; cost per task",
+          "g": "State checks in sandboxes; trajectory rules and judge",
+          "d": "Real tasks with checkable outcomes",
+          "t": "Grading the agent’s own report"
+        },
+        {
+          "n": "Extraction",
+          "m": "Field-level precision and recall; schema validity",
+          "g": "Exact match after normalization; schema checks",
+          "d": "Labeled documents by type",
+          "t": "Averages hiding weak fields"
+        },
+        {
+          "n": "Summarization",
+          "m": "Key-point coverage; faithfulness; length",
+          "g": "Key-point checks; faithfulness judge",
+          "d": "Real documents with human key points",
+          "t": "ROUGE against one reference"
+        },
+        {
+          "n": "Classification and routing",
+          "m": "Per-class precision and recall; confusion matrix",
+          "g": "Exact match",
+          "d": "Stratified production samples",
+          "t": "Accuracy dominated by the common class"
+        },
+        {
+          "n": "Chat assistants",
+          "m": "Helpfulness, correctness, tone; refusals and over-refusals",
+          "g": "Rubric judges; human review sample",
+          "d": "Real multi-turn conversations",
+          "t": "Single-turn cases only"
+        },
+        {
+          "n": "Code generation",
+          "m": "Tests pass; lint and security clean",
+          "g": "Execution",
+          "d": "Real tasks with hidden tests",
+          "t": "Visible tests the model can target"
+        },
+        {
+          "n": "Voice agents",
+          "m": "Task success; latency to first audio; interruption handling",
+          "g": "State checks; timing; transcript review",
+          "d": "Real recordings with noise and accents",
+          "t": "Clean studio audio only"
+        }
+      ]
+    },
+    {
+      "id": "stride-ai",
+      "title": "STRIDE for AI systems",
+      "chapter": "threat-modeling",
+      "asof": "November 2026 (verify)",
+      "note": "A checklist to walk through for each data-flow diagram.",
+      "columns": [
+        {
+          "id": "c",
+          "label": "Category"
+        },
+        {
+          "id": "t",
+          "label": "AI-specific threat"
+        },
+        {
+          "id": "e",
+          "label": "Example"
+        },
+        {
+          "id": "d",
+          "label": "First defenses"
+        }
+      ],
+      "rows": [
+        {
+          "c": "Spoofing",
+          "t": "Impersonated users, agents or tools",
+          "e": "A malicious MCP server named like the official one",
+          "d": "Provenance checks, pinned and reviewed servers, authenticated agent identities"
+        },
+        {
+          "c": "Tampering",
+          "t": "Poisoned training, retrieval or memory data",
+          "e": "A planted document that steers answers",
+          "d": "Write controls on indexes and memory, provenance, anomaly checks"
+        },
+        {
+          "c": "Repudiation",
+          "t": "Agent actions with no attributable record",
+          "e": "A refund issued with no log of who approved it",
+          "d": "Audit logs of every tool call and approval"
+        },
+        {
+          "c": "Information disclosure",
+          "t": "Exfiltration via injection; leaked prompts and personal data",
+          "e": "An email that makes the agent send data to an attacker",
+          "d": "Break the lethal trifecta, egress limits, output filtering"
+        },
+        {
+          "c": "Denial of service",
+          "t": "Runaway loops, token and cost exhaustion",
+          "e": "A document that triggers endless tool calls",
+          "d": "Budgets, rate limits, loop detection"
+        },
+        {
+          "c": "Elevation of privilege",
+          "t": "Confused deputies; injection borrowing the agent’s tools",
+          "e": "A web page that makes a coding agent push to main",
+          "d": "Least privilege, approvals, dual LLM patterns"
+        }
+      ]
+    },
+    {
+      "id": "safety-frameworks",
+      "title": "Frontier safety frameworks",
+      "chapter": "frontier-safety-frameworks",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative summaries of public documents as of November 2026; each is revised regularly, so check the current version.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Framework"
+        },
+        {
+          "id": "l",
+          "label": "Thresholds"
+        },
+        {
+          "id": "c",
+          "label": "Risk categories"
+        },
+        {
+          "id": "s",
+          "label": "Safeguards"
+        },
+        {
+          "id": "d",
+          "label": "First published"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Anthropic Responsible Scaling Policy",
+          "l": "AI Safety Levels (ASL-2, ASL-3 and up)",
+          "c": "CBRN weapons, autonomous AI R&D and others (check current)",
+          "s": "Deployment and security standards per level; ASL-3 activated May 2025",
+          "d": "September 2023"
+        },
+        {
+          "n": "OpenAI Preparedness Framework",
+          "l": "High and Critical per tracked category",
+          "c": "Biological and chemical, cybersecurity, AI self-improvement",
+          "s": "Safeguards required before deploying above High; advisory group review",
+          "d": "December 2023 (updated April 2025)"
+        },
+        {
+          "n": "Google DeepMind Frontier Safety Framework",
+          "l": "Critical Capability Levels",
+          "c": "CBRN, cyber, machine-learning R&D, harmful manipulation",
+          "s": "Security and deployment mitigations per level",
+          "d": "May 2024 (revised 2025)"
+        }
+      ]
+    },
+    {
+      "id": "model-families",
+      "title": "Major model families",
+      "chapter": "frontier-families",
+      "asof": "November 2026 (verify)",
+      "note": "Dated snapshot as of November 2026; only Anthropic’s current names are verified here. Lineups change every few months.",
+      "columns": [
+        {
+          "id": "d",
+          "label": "Developer"
+        },
+        {
+          "id": "f",
+          "label": "Family"
+        },
+        {
+          "id": "t",
+          "label": "Tiers and lines"
+        },
+        {
+          "id": "o",
+          "label": "Openness"
+        },
+        {
+          "id": "x",
+          "label": "Notes"
+        }
+      ],
+      "rows": [
+        {
+          "d": "Anthropic",
+          "f": "Claude",
+          "t": "Opus, Sonnet, Haiku; Mythos tier",
+          "o": "Closed, API and apps",
+          "x": "Public: Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1; Mythos Preview restricted (verified Nov 2026)"
+        },
+        {
+          "d": "OpenAI",
+          "f": "GPT",
+          "t": "Flagship, mini and nano sizes; reasoning built in",
+          "o": "Closed API; open-weight gpt-oss (2025)",
+          "x": "Check current lineup"
+        },
+        {
+          "d": "Google DeepMind",
+          "f": "Gemini and Gemma",
+          "t": "Pro, Flash and lighter tiers; Gemma open models",
+          "o": "Closed API plus open Gemma",
+          "x": "Strong multimodal and long context; check current lineup"
+        },
+        {
+          "d": "Meta",
+          "f": "Llama",
+          "t": "Several sizes, dense and MoE (Llama 4, 2025)",
+          "o": "Open weights with a custom license",
+          "x": "Check license terms"
+        },
+        {
+          "d": "DeepSeek",
+          "f": "DeepSeek V and R series",
+          "t": "Large MoE models, reasoning models",
+          "o": "Open weights",
+          "x": "Open technical reports"
+        },
+        {
+          "d": "Alibaba",
+          "f": "Qwen",
+          "t": "Many sizes, dense and MoE",
+          "o": "Mostly open weights",
+          "x": "Broad multilingual coverage"
+        },
+        {
+          "d": "Mistral",
+          "f": "Mistral",
+          "t": "Large, medium and small; code models",
+          "o": "Mix of open weights and API",
+          "x": "European provider"
+        },
+        {
+          "d": "xAI",
+          "f": "Grok",
+          "t": "Flagship and fast models",
+          "o": "API; some older weights released",
+          "x": "Check current lineup"
+        },
+        {
+          "d": "Others",
+          "f": "Kimi, GLM, Phi, Nemotron, Command and more",
+          "t": "Varied",
+          "o": "Mostly open weights",
+          "x": "Fast-moving; verify before relying on any"
+        }
+      ]
+    },
+    {
+      "id": "public-lessons",
+      "title": "Influential public write-ups",
+      "chapter": "public-writeups",
+      "asof": "November 2026 (verify)",
+      "note": "Read the originals for context; lessons reflect each team’s product and models at the time.",
+      "columns": [
+        {
+          "id": "s",
+          "label": "Source"
+        },
+        {
+          "id": "y",
+          "label": "Year"
+        },
+        {
+          "id": "t",
+          "label": "Topic"
+        },
+        {
+          "id": "k",
+          "label": "Key lesson"
+        }
+      ],
+      "rows": [
+        {
+          "s": "Honeycomb, “All the hard stuff nobody talks about when building products with LLMs”",
+          "y": "2023",
+          "t": "Product",
+          "k": "Context limits, latency, and prompt injection dominate real product work"
+        },
+        {
+          "s": "Anthropic, “Building effective agents”",
+          "y": "2024",
+          "t": "Agents",
+          "k": "Start with simple, composable patterns; use agents only when the task needs them"
+        },
+        {
+          "s": "Hamel Husain, “Your AI product needs evals”",
+          "y": "2024",
+          "t": "Evals",
+          "k": "Look at your data and build evals from real failures"
+        },
+        {
+          "s": "Yan, Bischof, Frye, Husain, Liu and Shankar, “What we learned from a year of building with LLMs”",
+          "y": "2024",
+          "t": "Practice",
+          "k": "Tactical, operational and strategic lessons from many production teams"
+        },
+        {
+          "s": "LinkedIn, “Musings on building a Generative AI product”",
+          "y": "2024",
+          "t": "Product",
+          "k": "Consistent quality and evaluation were the hardest parts"
+        },
+        {
+          "s": "OpenAI, “A practical guide to building agents”",
+          "y": "2025",
+          "t": "Agents",
+          "k": "Model, tools and instructions with guardrails; start with a single agent"
+        },
+        {
+          "s": "Anthropic, “How we built our multi-agent research system”",
+          "y": "2025",
+          "t": "Multi-agent",
+          "k": "Parallel subagents help breadth-first research, at much higher token cost"
+        },
+        {
+          "s": "Cognition, “Don’t build multi-agents”",
+          "y": "2025",
+          "t": "Multi-agent",
+          "k": "Agents acting on partial context make conflicting decisions; share full context"
+        },
+        {
+          "s": "Manus, “Context engineering for AI agents”",
+          "y": "2025",
+          "t": "Context",
+          "k": "Keep prefixes stable for caching, use files as memory, keep errors in context"
+        },
+        {
+          "s": "Simon Willison, “The lethal trifecta for AI agents”",
+          "y": "2025",
+          "t": "Security",
+          "k": "Private data, untrusted content and outbound communication together enable exfiltration"
+        },
+        {
+          "s": "Anthropic, “Writing effective tools for agents”",
+          "y": "2025",
+          "t": "Tools",
+          "k": "Design tools for models: clear descriptions, focused outputs and helpful errors"
+        }
+      ]
+    },
+    {
+      "id": "protocols",
+      "title": "Agent protocols",
+      "chapter": "why-protocols",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Protocol"
+        },
+        {
+          "id": "c",
+          "label": "Connects"
+        },
+        {
+          "id": "s",
+          "label": "Status"
+        }
+      ],
+      "rows": [
+        {
+          "n": "MCP",
+          "c": "Hosts to tool and data servers",
+          "s": "Spec 2026-07-28, stateless (verified Nov 2026)"
+        },
+        {
+          "n": "A2A",
+          "c": "Agents to agents",
+          "s": "1.0.1, May 2026 (verified Nov 2026)"
+        },
+        {
+          "n": "AG-UI",
+          "c": "Agents to user interfaces",
+          "s": "Young; check current spec"
+        },
+        {
+          "n": "Agent Client Protocol",
+          "c": "Editors to coding agents",
+          "s": "Young; check current spec"
+        },
+        {
+          "n": "MCP Apps",
+          "c": "Servers to host UIs",
+          "s": "MCP extension"
+        },
+        {
+          "n": "AGENTS.md",
+          "c": "Repositories to coding agents",
+          "s": "Convention file"
+        },
+        {
+          "n": "Agent Skills",
+          "c": "Know-how to agents",
+          "s": "Open format (verified Nov 2026)"
+        },
+        {
+          "n": "llms.txt",
+          "c": "Websites to models",
+          "s": "Proposal"
+        }
+      ]
+    },
+    {
+      "id": "mcp-transports",
+      "title": "MCP transports",
+      "chapter": "mcp-transports",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Transport"
+        },
+        {
+          "id": "w",
+          "label": "Where"
+        },
+        {
+          "id": "s",
+          "label": "Sessions"
+        },
+        {
+          "id": "a",
+          "label": "Auth"
+        },
+        {
+          "id": "x",
+          "label": "Status"
+        }
+      ],
+      "rows": [
+        {
+          "n": "stdio",
+          "w": "Local subprocess",
+          "s": "None at protocol level",
+          "a": "Inherits the user’s environment",
+          "x": "Current"
+        },
+        {
+          "n": "Streamable HTTP",
+          "w": "Remote service",
+          "s": "Removed in 2026-07-28",
+          "a": "OAuth 2.1 with PKCE",
+          "x": "Current"
+        },
+        {
+          "n": "HTTP+SSE",
+          "w": "Remote service",
+          "s": "Per connection",
+          "a": "Varied",
+          "x": "Formally deprecated"
+        }
+      ]
+    },
+    {
+      "id": "fine-tuning-methods",
+      "title": "Fine-tuning methods",
+      "chapter": "fine-tuning-practice",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Method"
+        },
+        {
+          "id": "p",
+          "label": "Trainable parameters"
+        },
+        {
+          "id": "m",
+          "label": "Memory"
+        },
+        {
+          "id": "w",
+          "label": "When"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Full fine-tuning",
+          "p": "All",
+          "m": "Highest",
+          "w": "Large shifts with ample compute"
+        },
+        {
+          "n": "LoRA",
+          "p": "Small adapters",
+          "m": "Low",
+          "w": "Default parameter-efficient choice"
+        },
+        {
+          "n": "QLoRA",
+          "p": "Adapters on a 4-bit base",
+          "m": "Lowest",
+          "w": "Single-GPU fine-tuning of big models"
+        },
+        {
+          "n": "DoRA",
+          "p": "Magnitude and direction adapters",
+          "m": "Low",
+          "w": "When LoRA underfits"
+        },
+        {
+          "n": "Preference tuning (DPO and variants)",
+          "p": "Adapters or all",
+          "m": "Medium",
+          "w": "Aligning to preferences"
+        },
+        {
+          "n": "Reinforcement fine-tuning",
+          "p": "Adapters or all",
+          "m": "High",
+          "w": "Behaviors with verifiable rewards"
+        }
+      ]
+    },
+    {
+      "id": "chunking-strategies",
+      "title": "Chunking strategies",
+      "chapter": "chunking",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Strategy"
+        },
+        {
+          "id": "h",
+          "label": "How"
+        },
+        {
+          "id": "p",
+          "label": "Pros"
+        },
+        {
+          "id": "c",
+          "label": "Cons"
+        }
+      ],
+      "rows": [
+        {
+          "n": "Fixed size",
+          "h": "Every N tokens with overlap",
+          "p": "Simple, predictable",
+          "c": "Cuts through meaning"
+        },
+        {
+          "n": "Recursive",
+          "h": "Split on paragraphs, sentences, words",
+          "p": "Respects natural boundaries",
+          "c": "Ignores document semantics"
+        },
+        {
+          "n": "Document structure",
+          "h": "Sections, tables and code units",
+          "p": "Self-contained chunks",
+          "c": "Needs good parsing"
+        },
+        {
+          "n": "Semantic",
+          "h": "Split where similarity drops",
+          "p": "Topic-coherent",
+          "c": "Costly, unpredictable sizes"
+        },
+        {
+          "n": "Small-to-big",
+          "h": "Match small, return parent",
+          "p": "Precision and context",
+          "c": "Two-level index"
+        },
+        {
+          "n": "Propositions",
+          "h": "Atomic factual statements",
+          "p": "Very precise",
+          "c": "Expensive to build"
+        },
+        {
+          "n": "Late chunking",
+          "h": "Pool token embeddings per chunk",
+          "p": "Context-aware vectors",
+          "c": "Needs long-context embedder"
+        },
+        {
+          "n": "Contextual retrieval",
+          "h": "Prepend a generated context note",
+          "p": "Resolves references",
+          "c": "Indexing cost"
+        }
+      ]
+    },
+    {
+      "id": "retrieval-methods",
+      "title": "Retrieval methods",
+      "chapter": "hybrid-retrieval",
+      "asof": "November 2026 (verify)",
+      "note": "Qualitative cells; check each project’s current documentation.",
+      "columns": [
+        {
+          "id": "n",
+          "label": "Method"
+        },
+        {
+          "id": "s",
+          "label": "Strength"
+        },
+        {
+          "id": "w",
+          "label": "Weakness"
+        },
+        {
+          "id": "u",
+          "label": "Use when"
+        }
+      ],
+      "rows": [
+        {
+          "n": "BM25",
+          "s": "Exact terms, ids, rare words",
+          "w": "Misses paraphrases",
+          "u": "Always, as a baseline and in hybrids"
+        },
+        {
+          "n": "Dense embeddings",
+          "s": "Paraphrase and meaning",
+          "w": "Blurs exact identifiers",
+          "u": "Natural-language questions"
+        },
+        {
+          "n": "Learned sparse (SPLADE)",
+          "s": "Expansion with keyword speed",
+          "w": "Training and tooling",
+          "u": "When BM25 misses synonyms"
+        },
+        {
+          "n": "Hybrid with RRF",
+          "s": "Robust across query types",
+          "w": "Two indexes",
+          "u": "Most production RAG"
+        },
+        {
+          "n": "Cross-encoder reranking",
+          "s": "High precision on top results",
+          "w": "Latency per candidate",
+          "u": "After first-stage retrieval"
+        },
+        {
+          "n": "Agentic search",
+          "s": "Iterative, multi-hop",
+          "w": "Cost and latency",
+          "u": "Code and research tasks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "generative-ui",
+  "term": "Generative UI",
+  "def": "Interfaces in which an agent renders forms, tables or small apps instead of plain text.",
+  "practice": "Protocols such as AG-UI and MCP Apps carry it to front ends.",
+  "aliases": [],
+  "chapters": [
+    "agent-ux"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sec-1",
+    "chapter": "mcp-security",
+    "q": "Why can a poisoned tool description attack an agent even if the tool is never called?",
+    "options": [
+      "It runs code on install",
+      "Hosts put every loaded tool description in the model’s context on each request",
+      "It changes the model weights",
+      "It blocks other tools"
+    ],
+    "answer": 1,
+    "explain": "The description itself is the attack."
+  },
+  {
+    "id": "sec-2",
+    "chapter": "mcp-security",
+    "q": "A server changes its tool definitions after approval. What is this, and what defends against it?",
+    "options": [
+      "Shadowing; sandboxing",
+      "A rug pull; version pinning with alerts and re-approval on change",
+      "Injection; a classifier",
+      "Drift; recalibration"
+    ],
+    "answer": 1,
+    "explain": "Pin, hash and diff tool definitions."
+  },
+  {
+    "id": "sec-3",
+    "chapter": "mcp-security",
+    "q": "Which is the clearest red flag in a tool description?",
+    "options": [
+      "A short description",
+      "Instructions about other tools combined with secrecy, such as “do not mention this to the user”",
+      "An enum parameter",
+      "A date format"
+    ],
+    "answer": 1,
+    "explain": "Cross-tool instructions and secrecy signal poisoning or shadowing."
+  }
+]

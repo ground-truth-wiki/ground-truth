@@ -1,0 +1,12 @@
+{
+  "id": "pretraining",
+  "term": "Pretraining",
+  "def": "Training a model on a huge text corpus to predict the next token.",
+  "practice": "Decides most of what the model knows.",
+  "aliases": [
+    "pre-training"
+  ],
+  "chapters": [
+    "pretraining-data"
+  ]
+}

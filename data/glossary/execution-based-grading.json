@@ -1,0 +1,10 @@
+{
+  "id": "execution-based-grading",
+  "term": "Execution-based grading",
+  "def": "Grading by running code or checking resulting state, such as passing tests or a database matching expectations.",
+  "practice": "The most trustworthy grader where it applies.",
+  "aliases": [],
+  "chapters": [
+    "metrics-graders"
+  ]
+}

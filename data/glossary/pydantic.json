@@ -1,0 +1,10 @@
+{
+  "id": "pydantic",
+  "term": "Pydantic",
+  "def": "A Python library for typed data models with validation, often used to define and parse structured outputs.",
+  "practice": "Define the schema once and generate JSON Schema from it.",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs"
+  ]
+}

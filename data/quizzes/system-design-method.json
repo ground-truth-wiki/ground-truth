@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b18-1",
+    "chapter": "system-design-method",
+    "q": "In the design method, what should be stated before the architecture?",
+    "options": [
+      "The framework",
+      "The eval plan that defines success",
+      "The logo",
+      "The model’s parameter count"
+    ],
+    "answer": 1,
+    "explain": "Evals define what “working” means."
+  },
+  {
+    "id": "qsd-1",
+    "chapter": "system-design-method",
+    "q": "What comes first in the AI system design method?",
+    "options": [
+      "Choosing a model",
+      "Clarifying users, tasks, volume and the cost of errors",
+      "Drawing components",
+      "Picking a framework"
+    ],
+    "answer": 1,
+    "explain": "Requirements first."
+  },
+  {
+    "id": "qsd-2",
+    "chapter": "system-design-method",
+    "q": "Which architecture should you try first?",
+    "options": [
+      "Multi-agent",
+      "The simplest that meets the quality bar: single call, chain, workflow, then agent",
+      "Fine-tuning",
+      "The newest"
+    ],
+    "answer": 1,
+    "explain": "Add complexity only with evidence."
+  },
+  {
+    "id": "qsd-3",
+    "chapter": "system-design-method",
+    "q": "What is the most important element missing from many AI design diagrams?",
+    "options": [
+      "Colors",
+      "The eval plan",
+      "The logo",
+      "A database"
+    ],
+    "answer": 1,
+    "explain": "Without it nobody knows if the design works."
+  }
+]

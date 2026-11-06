@@ -1,0 +1,12 @@
+{
+  "id": "plan-and-execute",
+  "term": "Plan-and-execute",
+  "def": "An agent strategy that writes a multi-step plan, executes it step by step, and re-plans when a step fails.",
+  "practice": "Keeps long tasks on track and lets users approve the plan first.",
+  "aliases": [
+    "re-planning"
+  ],
+  "chapters": [
+    "planning-reasoning"
+  ]
+}

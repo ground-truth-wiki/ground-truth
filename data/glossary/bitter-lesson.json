@@ -1,0 +1,10 @@
+{
+  "id": "bitter-lesson",
+  "term": "The bitter lesson",
+  "def": "Richard Sutton’s 2019 argument that general methods leveraging computation beat hand-engineered knowledge over time.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "mental-models"
+  ]
+}

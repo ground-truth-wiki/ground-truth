@@ -1,0 +1,10 @@
+{
+  "id": "meta-prompting",
+  "term": "Meta-prompting",
+  "def": "Using a model to write or refine prompts for another step.",
+  "practice": "Evaluate generated prompts like any other prompt.",
+  "aliases": [],
+  "chapters": [
+    "prompt-chaining"
+  ]
+}

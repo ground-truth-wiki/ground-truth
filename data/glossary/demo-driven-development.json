@@ -1,0 +1,10 @@
+{
+  "id": "demo-driven-development",
+  "term": "Demo-driven development",
+  "def": "Building and judging an AI system by a few impressive examples instead of an eval set.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "anti-patterns"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "reconciliation",
+  "term": "Reconciliation",
+  "def": "Checking computed figures against a trusted independent source.",
+  "practice": "A cheap, strong sanity check for analyst agents.",
+  "aliases": [],
+  "chapters": [
+    "research-analyst-agents"
+  ]
+}

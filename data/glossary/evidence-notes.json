@@ -1,0 +1,10 @@
+{
+  "id": "evidence-notes",
+  "term": "Evidence notes",
+  "def": "Structured records of a claim, an exact quote, its source and date, gathered during research.",
+  "practice": "Write reports from notes, not raw pages.",
+  "aliases": [],
+  "chapters": [
+    "deep-research"
+  ]
+}

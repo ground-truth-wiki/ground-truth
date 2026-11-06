@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qmo-1",
+    "chapter": "mixture-of-experts",
+    "q": "What sets memory and what sets compute in an MoE model?",
+    "options": [
+      "Both by active parameters",
+      "Memory by total parameters, compute by active parameters",
+      "Both by total",
+      "Neither"
+    ],
+    "answer": 1,
+    "explain": "All experts must be resident; few run per token."
+  },
+  {
+    "id": "qmo-2",
+    "chapter": "mixture-of-experts",
+    "q": "What does load balancing prevent?",
+    "options": [
+      "Overfitting",
+      "Some experts being overloaded while others sit idle",
+      "Tokenization errors",
+      "Long contexts"
+    ],
+    "answer": 1,
+    "explain": "Auxiliary losses or bias adjustments spread tokens."
+  },
+  {
+    "id": "qmo-3",
+    "chapter": "mixture-of-experts",
+    "q": "DeepSeek-V3 has 671B total parameters. About how many are active per token?",
+    "options": [
+      "671B",
+      "370B",
+      "37B",
+      "3.7B"
+    ],
+    "answer": 2,
+    "explain": "37B active per token."
+  }
+]

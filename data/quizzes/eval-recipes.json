@@ -1,0 +1,41 @@
+[
+  {
+    "id": "er-1",
+    "chapter": "eval-recipes",
+    "q": "Which metric fits extraction tasks best?",
+    "options": [
+      "ROUGE",
+      "Field-level precision and recall against labeled documents",
+      "Thumbs-up rate",
+      "Perplexity"
+    ],
+    "answer": 1,
+    "explain": "Measure each field, sliced by document type."
+  },
+  {
+    "id": "er-2",
+    "chapter": "eval-recipes",
+    "q": "What is the classic trap in classification evals?",
+    "options": [
+      "Too many classes",
+      "Accuracy dominated by the common class hides failures on rare ones",
+      "Slow graders",
+      "Using labels"
+    ],
+    "answer": 1,
+    "explain": "Report per-class precision and recall."
+  },
+  {
+    "id": "er-3",
+    "chapter": "eval-recipes",
+    "q": "What should you do after picking a recipe?",
+    "options": [
+      "Use it unchanged",
+      "Run error analysis on real outputs and adapt the recipe to failures you find",
+      "Publish it",
+      "Delete the data"
+    ],
+    "answer": 1,
+    "explain": "Recipes are starting points."
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ed-1",
+    "chapter": "eval-datasets",
+    "q": "Why mix real inputs with synthetic cases?",
+    "options": [
+      "Synthetic cases are illegal",
+      "Synthetic cases skew toward document-like phrasing and flatter systems built on the same documents",
+      "Real inputs are too short",
+      "It is faster"
+    ],
+    "answer": 1,
+    "explain": "Real inputs keep the set honest."
+  },
+  {
+    "id": "ed-2",
+    "chapter": "eval-datasets",
+    "q": "What does a coverage grid with empty cells tell you?",
+    "options": [
+      "The eval is complete",
+      "Some slices have no cases, so regressions there go unnoticed",
+      "The model is perfect",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Fill gaps with expert-written or filtered synthetic cases."
+  },
+  {
+    "id": "ed-3",
+    "chapter": "eval-datasets",
+    "q": "Why keep a held-out set you never tune on?",
+    "options": [
+      "To save storage",
+      "Tuning on the reporting set makes its score stop measuring generalization",
+      "It is required by law",
+      "To share publicly"
+    ],
+    "answer": 1,
+    "explain": "Contamination by tuning is still contamination."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "chunking",
+  "term": "Chunking",
+  "def": "Splitting documents into the pieces that retrieval indexes and returns.",
+  "practice": "Chunk for the question, keep structure, and measure recall.",
+  "aliases": [
+    "chunks",
+    "chunk"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

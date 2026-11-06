@@ -1,0 +1,13 @@
+{
+  "id": "opentelemetry",
+  "term": "OpenTelemetry",
+  "def": "An open standard for traces, metrics and logs, with semantic conventions for generative AI.",
+  "practice": "Emit standard spans so you can switch observability tools.",
+  "aliases": [
+    "OTel",
+    "GenAI semantic conventions"
+  ],
+  "chapters": [
+    "observability-tracing"
+  ]
+}

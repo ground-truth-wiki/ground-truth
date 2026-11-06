@@ -1,0 +1,13 @@
+{
+  "id": "kl-divergence",
+  "term": "KL divergence",
+  "def": "A measure of how one probability distribution differs from a reference distribution.",
+  "practice": "Used as a penalty to keep fine-tuned models close to their starting point.",
+  "aliases": [
+    "Kullback-Leibler divergence"
+  ],
+  "chapters": [
+    "probability-information",
+    "preference-optimization"
+  ]
+}

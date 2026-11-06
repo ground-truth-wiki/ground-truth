@@ -1,0 +1,10 @@
+{
+  "id": "rules-of-engagement",
+  "term": "Rules of engagement",
+  "def": "The agreed scope, targets, methods and limits of a red-team exercise.",
+  "practice": "Set them before testing begins.",
+  "aliases": [],
+  "chapters": [
+    "red-teaming"
+  ]
+}

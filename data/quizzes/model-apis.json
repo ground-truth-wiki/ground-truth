@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qma-1",
+    "chapter": "model-apis",
+    "q": "Why must you check the stop reason on every response?",
+    "options": [
+      "For billing",
+      "A response cut off by the token limit looks finished unless you check",
+      "It contains the answer",
+      "It is required by law"
+    ],
+    "answer": 1,
+    "explain": "Handle every stop reason."
+  },
+  {
+    "id": "qma-2",
+    "chapter": "model-apis",
+    "q": "Why do long conversations cost more per turn with stateless APIs?",
+    "options": [
+      "Prices rise",
+      "The full history is resent with every request",
+      "Models slow down",
+      "Tokens expire"
+    ],
+    "answer": 1,
+    "explain": "Caching helps."
+  },
+  {
+    "id": "qma-3",
+    "chapter": "model-apis",
+    "q": "What should be logged for every API call?",
+    "options": [
+      "Nothing",
+      "Request id, model version, stop reason and token usage by type",
+      "Only errors",
+      "The API key"
+    ],
+    "answer": 1,
+    "explain": "For debugging and cost attribution."
+  }
+]

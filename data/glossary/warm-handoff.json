@@ -1,0 +1,10 @@
+{
+  "id": "warm-handoff",
+  "term": "Warm handoff",
+  "def": "An escalation that passes the full context and summary to the human taking over.",
+  "practice": "Customers should not have to repeat themselves.",
+  "aliases": [],
+  "chapters": [
+    "support-agents"
+  ]
+}

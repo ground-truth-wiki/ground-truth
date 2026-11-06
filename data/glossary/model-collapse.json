@@ -1,0 +1,10 @@
+{
+  "id": "model-collapse",
+  "term": "Model collapse",
+  "def": "Degradation of models trained repeatedly on generated data without fresh real data.",
+  "practice": "A reason to keep provenance on every dataset.",
+  "aliases": [],
+  "chapters": [
+    "synthetic-data"
+  ]
+}

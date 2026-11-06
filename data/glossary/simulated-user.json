@@ -1,0 +1,12 @@
+{
+  "id": "simulated-user",
+  "term": "Simulated user",
+  "def": "A model playing a user with a hidden goal and persona, used to test multi-turn agents repeatably.",
+  "practice": "Introduced at scale by τ-bench.",
+  "aliases": [
+    "user simulator"
+  ],
+  "chapters": [
+    "evaluating-agents"
+  ]
+}

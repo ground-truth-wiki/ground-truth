@@ -1,0 +1,14 @@
+{
+  "id": "canary-release",
+  "term": "Canary release",
+  "def": "Sending a small share of traffic to a new version and rolling back automatically if metrics degrade.",
+  "practice": "Catches regressions before most users see them.",
+  "aliases": [
+    "canary",
+    "canaries"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "ci-cd-for-ai"
+  ]
+}

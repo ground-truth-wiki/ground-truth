@@ -1,0 +1,41 @@
+[
+  {
+    "id": "soup-1",
+    "chapter": "protocol-soup",
+    "q": "What does AG-UI standardize?",
+    "options": [
+      "Agent-to-agent tasks",
+      "Streaming agent events such as text, tool calls and state to user interfaces",
+      "Payments",
+      "Model training"
+    ],
+    "answer": 1,
+    "explain": "It lets one front end follow agents built on different frameworks."
+  },
+  {
+    "id": "soup-2",
+    "chapter": "protocol-soup",
+    "q": "Someone says “ACP” about connecting a code editor to a coding agent. What do they most likely mean?",
+    "options": [
+      "Agent Communication Protocol",
+      "Agent Client Protocol",
+      "An agentic commerce protocol",
+      "Access Control Policy"
+    ],
+    "answer": 1,
+    "explain": "Always expand the acronym; for editors it is usually the Agent Client Protocol."
+  },
+  {
+    "id": "soup-3",
+    "chapter": "protocol-soup",
+    "q": "What is a good rule before adopting a young protocol?",
+    "options": [
+      "Adopt it everywhere at once",
+      "Isolate it behind an interface so a replacement touches one module",
+      "Avoid all protocols",
+      "Fork it"
+    ],
+    "answer": 1,
+    "explain": "Young standards change; contain the blast radius of change."
+  }
+]

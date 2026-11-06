@@ -1,0 +1,12 @@
+{
+  "id": "activation-checkpointing",
+  "term": "Activation checkpointing",
+  "def": "Recomputing activations during the backward pass instead of storing them, trading compute for memory.",
+  "practice": "",
+  "aliases": [
+    "gradient checkpointing"
+  ],
+  "chapters": [
+    "distributed-training"
+  ]
+}

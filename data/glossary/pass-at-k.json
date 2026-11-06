@@ -1,0 +1,13 @@
+{
+  "id": "pass-at-k",
+  "term": "pass@k",
+  "def": "The probability that at least one of k attempts succeeds.",
+  "practice": "Report pass^k too for agents users rely on.",
+  "aliases": [
+    "pass^k"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "evaluating-agents"
+  ]
+}

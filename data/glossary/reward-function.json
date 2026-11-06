@@ -1,0 +1,11 @@
+{
+  "id": "reward-function",
+  "term": "Reward function",
+  "def": "The rule that assigns a numeric reward to an outcome or trajectory in reinforcement learning.",
+  "practice": "Most RL bugs are reward bugs.",
+  "aliases": [],
+  "chapters": [
+    "rl-environment-harnesses",
+    "rl-primer"
+  ]
+}

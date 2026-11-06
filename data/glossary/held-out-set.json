@@ -1,0 +1,13 @@
+{
+  "id": "held-out-set",
+  "term": "Held-out set",
+  "def": "Eval cases kept out of all tuning, used only to report final performance.",
+  "practice": "Protects against overfitting prompts and models to your own eval.",
+  "aliases": [
+    "held-out data"
+  ],
+  "chapters": [
+    "eval-datasets",
+    "prompt-optimization"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "repository-map",
+  "term": "Repository map",
+  "def": "A compact summary of a codebase’s files and key symbols given to a model for orientation.",
+  "practice": "Cheap context for coding agents before they search.",
+  "aliases": [
+    "repo map"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "coding-agents"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "vlm",
+  "term": "Vision-language model",
+  "def": "A model that takes images and text as input and produces text.",
+  "practice": "Resolution and image-token cost decide what it can read.",
+  "aliases": [
+    "VLM",
+    "multimodal model"
+  ],
+  "chapters": [
+    "vision-language-models"
+  ],
+  "abbr": "VLM"
+}

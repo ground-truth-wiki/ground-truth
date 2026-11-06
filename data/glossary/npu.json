@@ -1,0 +1,13 @@
+{
+  "id": "npu",
+  "term": "Neural processing unit",
+  "def": "A dedicated accelerator for neural network inference in phones and PCs.",
+  "practice": "Efficient for on-device models.",
+  "aliases": [
+    "NPU"
+  ],
+  "chapters": [
+    "edge-on-device"
+  ],
+  "abbr": "NPU"
+}

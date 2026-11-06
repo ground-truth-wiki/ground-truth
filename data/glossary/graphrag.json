@@ -1,0 +1,10 @@
+{
+  "id": "graphrag",
+  "term": "GraphRAG",
+  "def": "Retrieval over an entity graph extracted from documents, with community summaries for global questions.",
+  "practice": "Use for themes and multi-hop questions, not simple lookups.",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag"
+  ]
+}

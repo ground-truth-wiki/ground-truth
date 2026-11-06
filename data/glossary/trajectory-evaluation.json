@@ -1,0 +1,12 @@
+{
+  "id": "trajectory-evaluation",
+  "term": "Trajectory evaluation",
+  "def": "Grading the sequence of an agent’s steps for safety, efficiency and judgment, not just its outcome.",
+  "practice": "Catches dangerous paths that reach the right result.",
+  "aliases": [
+    "process evaluation"
+  ],
+  "chapters": [
+    "evaluating-agents"
+  ]
+}

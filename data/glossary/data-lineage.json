@@ -1,0 +1,12 @@
+{
+  "id": "data-lineage",
+  "term": "Data lineage",
+  "def": "A record of where data came from and every dataset, index, eval and model derived from it.",
+  "practice": "",
+  "aliases": [
+    "lineage"
+  ],
+  "chapters": [
+    "data-governance"
+  ]
+}

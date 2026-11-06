@@ -1,0 +1,10 @@
+{
+  "id": "llms-txt",
+  "term": "llms.txt",
+  "def": "A proposed Markdown file at a website’s root that tells language models what the site contains and where to find it.",
+  "practice": "Cheap to add; support varies.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup"
+  ]
+}

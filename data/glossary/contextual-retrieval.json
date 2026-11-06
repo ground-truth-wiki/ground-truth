@@ -1,0 +1,12 @@
+{
+  "id": "contextual-retrieval",
+  "term": "Contextual retrieval",
+  "def": "Prepending a short, generated note that situates each chunk in its document before embedding and indexing it.",
+  "practice": "Anthropic reported large reductions in failed retrievals in 2024.",
+  "aliases": [
+    "contextual embeddings"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

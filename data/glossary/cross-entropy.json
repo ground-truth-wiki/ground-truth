@@ -1,0 +1,12 @@
+{
+  "id": "cross-entropy",
+  "term": "Cross-entropy",
+  "def": "The expected cost, in bits or nats, of encoding data from one distribution using another.",
+  "practice": "The training loss of language models.",
+  "aliases": [
+    "cross-entropy loss"
+  ],
+  "chapters": [
+    "probability-information"
+  ]
+}

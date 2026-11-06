@@ -1,0 +1,11 @@
+{
+  "id": "query-key-value",
+  "term": "Query, key and value",
+  "def": "The three projections of each token in attention: what it looks for, what it offers to be matched, and the content it contributes.",
+  "practice": "Only keys and values are cached during generation.",
+  "aliases": [],
+  "chapters": [
+    "attention",
+    "kv-cache"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "precision-recall",
+  "term": "Precision and recall",
+  "def": "Precision: the share of predicted positives that are correct. Recall: the share of actual positives that were found.",
+  "practice": "Report both; F1 combines them.",
+  "aliases": [
+    "precision",
+    "recall",
+    "F1"
+  ],
+  "chapters": [
+    "classical-ml",
+    "metrics-graders"
+  ]
+}

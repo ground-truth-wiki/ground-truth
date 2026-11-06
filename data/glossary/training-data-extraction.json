@@ -1,0 +1,12 @@
+{
+  "id": "training-data-extraction",
+  "term": "Training-data extraction",
+  "def": "Attacks that make a model reproduce memorized training text.",
+  "practice": "A reason not to train on raw personal data.",
+  "aliases": [
+    "memorization"
+  ],
+  "chapters": [
+    "privacy"
+  ]
+}

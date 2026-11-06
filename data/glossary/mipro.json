@@ -1,0 +1,10 @@
+{
+  "id": "mipro",
+  "term": "MIPROv2",
+  "def": "A DSPy optimizer that jointly searches over instructions and few-shot demonstrations.",
+  "practice": "Needs a validated metric and labeled examples.",
+  "aliases": [],
+  "chapters": [
+    "prompt-optimization"
+  ]
+}

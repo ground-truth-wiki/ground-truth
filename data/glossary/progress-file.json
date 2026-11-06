@@ -1,0 +1,13 @@
+{
+  "id": "progress-file",
+  "term": "Progress file",
+  "def": "A file where an agent records goals, decisions and next steps so a new session can continue.",
+  "practice": "A cheap, human-readable form of agent memory.",
+  "aliases": [
+    "notes file"
+  ],
+  "chapters": [
+    "long-running-agents",
+    "context-engineering"
+  ]
+}

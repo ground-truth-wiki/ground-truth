@@ -1,0 +1,14 @@
+{
+  "id": "eval-slice",
+  "term": "Eval slice",
+  "def": "A subset of eval cases sharing a property, such as task type, difficulty or language, reported separately.",
+  "practice": "Slices find regressions averages hide.",
+  "aliases": [
+    "slices",
+    "eval slices"
+  ],
+  "chapters": [
+    "eval-datasets",
+    "why-evals"
+  ]
+}

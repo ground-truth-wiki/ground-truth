@@ -1,0 +1,10 @@
+{
+  "id": "best-of-n",
+  "term": "Best-of-n",
+  "def": "Sampling several outputs and choosing one with a verifier or reward model.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "test-time-scaling"
+  ]
+}

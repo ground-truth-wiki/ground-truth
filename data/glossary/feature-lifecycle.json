@@ -1,0 +1,13 @@
+{
+  "id": "feature-lifecycle",
+  "term": "Feature lifecycle",
+  "def": "A protocol policy that marks features deprecated before removing them, giving implementers a migration window.",
+  "practice": "MCP formalized one in 2026-07-28 (verified Nov 2026).",
+  "aliases": [
+    "deprecation policy"
+  ],
+  "chapters": [
+    "mcp-spec-history",
+    "protocol-governance"
+  ]
+}

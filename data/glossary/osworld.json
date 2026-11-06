@@ -1,0 +1,10 @@
+{
+  "id": "osworld",
+  "term": "OSWorld",
+  "def": "A benchmark of computer-use tasks in real desktop environments.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "computer-use-agents"
+  ]
+}

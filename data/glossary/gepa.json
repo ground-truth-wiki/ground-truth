@@ -1,0 +1,10 @@
+{
+  "id": "gepa",
+  "term": "GEPA",
+  "def": "A prompt optimizer that uses model reflection on failures to evolve prompts (Agrawal et al., 2025).",
+  "practice": "One of DSPy’s optimizers.",
+  "aliases": [],
+  "chapters": [
+    "prompt-optimization"
+  ]
+}

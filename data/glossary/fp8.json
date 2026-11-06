@@ -1,0 +1,13 @@
+{
+  "id": "fp8",
+  "term": "FP8",
+  "def": "Eight-bit floating-point formats supported natively on recent accelerators for training and inference.",
+  "practice": "Halves memory versus 16-bit with small quality loss when done carefully.",
+  "aliases": [
+    "8-bit floating point"
+  ],
+  "chapters": [
+    "quantization",
+    "hardware"
+  ]
+}

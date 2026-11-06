@@ -1,0 +1,10 @@
+{
+  "id": "cross-field-validation",
+  "term": "Cross-field validation",
+  "def": "Checking extracted values against each other, such as net plus tax equaling the total.",
+  "practice": "Catches plausible misreads.",
+  "aliases": [],
+  "chapters": [
+    "document-extraction"
+  ]
+}

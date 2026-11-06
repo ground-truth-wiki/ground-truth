@@ -1,0 +1,12 @@
+{
+  "id": "blameless-postmortem",
+  "term": "Blameless postmortem",
+  "def": "An incident review that looks for causes in systems and processes rather than individuals.",
+  "practice": "End it with eval cases and gate changes.",
+  "aliases": [
+    "postmortem"
+  ],
+  "chapters": [
+    "incidents-on-call"
+  ]
+}

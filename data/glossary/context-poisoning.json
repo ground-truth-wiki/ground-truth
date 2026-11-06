@@ -1,0 +1,10 @@
+{
+  "id": "context-poisoning",
+  "term": "Context poisoning",
+  "def": "An early wrong belief or bad result in an agent’s context steering all later steps.",
+  "practice": "Verify key facts with tools and compact away disproven claims.",
+  "aliases": [],
+  "chapters": [
+    "agent-failure-modes"
+  ]
+}

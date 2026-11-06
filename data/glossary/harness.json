@@ -1,0 +1,15 @@
+{
+  "id": "harness",
+  "term": "Harness",
+  "def": "The software around a model that runs the agent loop: prompts, tools, context management, permissions, sandboxing and telemetry.",
+  "practice": "Model plus harness equals product; the same model scores differently in different harnesses.",
+  "aliases": [
+    "agent harness",
+    "scaffold",
+    "scaffolding"
+  ],
+  "chapters": [
+    "what-is-a-harness",
+    "harness-anatomy"
+  ]
+}

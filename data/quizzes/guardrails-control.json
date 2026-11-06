@@ -1,0 +1,41 @@
+[
+  {
+    "id": "guard-1",
+    "chapter": "guardrails-control",
+    "q": "Which guardrail is hardest for a manipulated model to defeat?",
+    "options": [
+      "A rule in the system prompt",
+      "An input classifier",
+      "A sandbox with default-deny network egress",
+      "A polite warning"
+    ],
+    "answer": 2,
+    "explain": "Infrastructure limits do not respond to persuasion."
+  },
+  {
+    "id": "guard-2",
+    "chapter": "guardrails-control",
+    "q": "With a 50-step limit, 20,000 input and 500 output tokens per step, and illustrative prices of $3 and $15 per million, what is the worst-case cost of one run?",
+    "options": [
+      "$0.34",
+      "$1.50",
+      "$3.38",
+      "$33.75"
+    ],
+    "answer": 2,
+    "explain": "50 × (20,000 × 3 + 500 × 15) ÷ 1,000,000 = $3.375."
+  },
+  {
+    "id": "guard-3",
+    "chapter": "guardrails-control",
+    "q": "What should a blocked tool call return to the model?",
+    "options": [
+      "Nothing",
+      "A clear reason, so the model can try a different approach",
+      "The original output",
+      "A random error code"
+    ],
+    "answer": 1,
+    "explain": "Silent blocks leave the model guessing and looping."
+  }
+]

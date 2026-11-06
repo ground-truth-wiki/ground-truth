@@ -1,0 +1,10 @@
+{
+  "id": "mcp-gateway",
+  "term": "MCP gateway",
+  "def": "A proxy between hosts and MCP servers that handles authentication, allowlists, credentials, logging and inspection.",
+  "practice": "Puts policy and credentials in one place at scale.",
+  "aliases": [],
+  "chapters": [
+    "mcp-at-scale"
+  ]
+}

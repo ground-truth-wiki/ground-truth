@@ -1,0 +1,10 @@
+{
+  "id": "cost-per-correct-answer",
+  "term": "Cost per correct answer",
+  "def": "The cost of a model call plus failure handling, divided by accuracy.",
+  "practice": "A better comparison than price per token.",
+  "aliases": [],
+  "chapters": [
+    "choosing-a-model"
+  ]
+}

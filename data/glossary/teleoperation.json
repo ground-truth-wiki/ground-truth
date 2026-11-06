@@ -1,0 +1,10 @@
+{
+  "id": "teleoperation",
+  "term": "Teleoperation",
+  "def": "People remotely controlling robots to record demonstrations for training.",
+  "practice": "Accurate, slow and expensive data.",
+  "aliases": [],
+  "chapters": [
+    "embodied-agents"
+  ]
+}

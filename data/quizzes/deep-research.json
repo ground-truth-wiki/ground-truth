@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dr-1",
+    "chapter": "deep-research",
+    "q": "What does the reflection step in a deep research loop do?",
+    "options": [
+      "Formats the report",
+      "Checks coverage and conflicts, then plans further searches or stops",
+      "Deletes sources",
+      "Translates text"
+    ],
+    "answer": 1,
+    "explain": "It is what separates deep research from one-shot retrieval."
+  },
+  {
+    "id": "dr-2",
+    "chapter": "deep-research",
+    "q": "Why write the report from evidence notes rather than raw pages?",
+    "options": [
+      "Notes are prettier",
+      "Notes carry exact quotes and sources, which keep citations checkable and the context small",
+      "Pages are copyrighted",
+      "Notes are shorter to type"
+    ],
+    "answer": 1,
+    "explain": "Evidence notes are the audit trail."
+  },
+  {
+    "id": "dr-3",
+    "chapter": "deep-research",
+    "q": "What should research agents be judged on first?",
+    "options": [
+      "Report length",
+      "Citation accuracy, coverage and treatment of disagreement",
+      "Number of pages read",
+      "Speed"
+    ],
+    "answer": 1,
+    "explain": "Polish and length can hide weak sourcing."
+  }
+]

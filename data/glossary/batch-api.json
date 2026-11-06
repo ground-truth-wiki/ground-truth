@@ -1,0 +1,10 @@
+{
+  "id": "batch-api",
+  "term": "Batch API",
+  "def": "A provider interface that processes many requests asynchronously at a discount, with results returned later.",
+  "practice": "Use for offline work.",
+  "aliases": [],
+  "chapters": [
+    "cost-engineering"
+  ]
+}

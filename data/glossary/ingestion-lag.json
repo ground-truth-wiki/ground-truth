@@ -1,0 +1,12 @@
+{
+  "id": "ingestion-lag",
+  "term": "Ingestion lag",
+  "def": "The time from a change in a source system to that change being searchable.",
+  "practice": "Set a freshness target per source and monitor it.",
+  "aliases": [
+    "freshness"
+  ],
+  "chapters": [
+    "production-rag"
+  ]
+}

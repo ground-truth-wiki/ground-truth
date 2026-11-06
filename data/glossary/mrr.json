@@ -1,0 +1,13 @@
+{
+  "id": "mrr",
+  "term": "Mean reciprocal rank",
+  "def": "The average of 1 ÷ rank of the first relevant result across queries.",
+  "practice": "Good when one right answer is enough.",
+  "aliases": [
+    "MRR"
+  ],
+  "chapters": [
+    "rag-evaluation"
+  ],
+  "abbr": "MRR"
+}

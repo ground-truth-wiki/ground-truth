@@ -1,0 +1,296 @@
+{
+  "tools": [
+    {
+      "id": "sampling",
+      "kind": "playground",
+      "title": "Sampling playground",
+      "blurb": "Temperature, top-k, top-p and min-p on a toy next-token distribution.",
+      "chapter": "decoding-sampling",
+      "viz": "sampling-explorer"
+    },
+    {
+      "id": "bpe",
+      "kind": "playground",
+      "title": "BPE tokenizer",
+      "blurb": "Train a toy byte-pair tokenizer on your own text and watch merges form tokens.",
+      "chapter": "tokenization",
+      "viz": "bpe-playground"
+    },
+    {
+      "id": "attention",
+      "kind": "playground",
+      "title": "Attention heatmap",
+      "blurb": "Type a sentence and see toy attention weights per head, with and without the causal mask.",
+      "chapter": "attention",
+      "viz": "attention-playground"
+    },
+    {
+      "id": "embeddings",
+      "kind": "playground",
+      "title": "Embedding explorer",
+      "blurb": "Drag a query among embedded phrases and compare cosine, dot product and Euclidean neighbors.",
+      "chapter": "embeddings",
+      "viz": "embedding-explorer"
+    },
+    {
+      "id": "chunking",
+      "kind": "playground",
+      "title": "Chunking playground",
+      "blurb": "Chunk your own text with adjustable size, overlap and strategy.",
+      "chapter": "chunking",
+      "viz": "chunking-explorer"
+    },
+    {
+      "id": "rrf",
+      "kind": "playground",
+      "title": "Hybrid search fusion",
+      "blurb": "Fuse keyword and vector rankings with reciprocal rank fusion and tune k and weights.",
+      "chapter": "hybrid-retrieval",
+      "viz": "rrf-explorer"
+    },
+    {
+      "id": "agent-loop",
+      "kind": "playground",
+      "title": "Agent-loop step-through",
+      "blurb": "Step through a five-turn agent run and watch the context grow against its budget.",
+      "chapter": "agent-loop",
+      "viz": "agent-loop-stepper"
+    },
+    {
+      "id": "context-budget",
+      "kind": "playground",
+      "title": "Context-budget planner",
+      "blurb": "Split a context window between instructions, tools, documents, history, memory and output.",
+      "chapter": "context-engineering",
+      "viz": "context-budget-planner"
+    },
+    {
+      "id": "kv-cache",
+      "kind": "calculator",
+      "title": "KV-cache calculator",
+      "blurb": "Cache memory from layers, KV heads, head size, precision, tokens and batch size.",
+      "chapter": "kv-cache",
+      "viz": "kv-cache-calculator"
+    },
+    {
+      "id": "vram",
+      "kind": "calculator",
+      "title": "VRAM planner",
+      "blurb": "Weights plus KV cache plus overhead, and how many GPUs that needs.",
+      "chapter": "numbers-to-know",
+      "viz": "vram-calculator"
+    },
+    {
+      "id": "latency",
+      "kind": "calculator",
+      "title": "Latency calculator",
+      "blurb": "Time to first token plus output tokens times time per token, across agent steps.",
+      "chapter": "latency-throughput",
+      "viz": "latency-calculator"
+    },
+    {
+      "id": "training-compute",
+      "kind": "calculator",
+      "title": "Training compute calculator",
+      "blurb": "6 × parameters × tokens, converted into GPU-hours and days.",
+      "chapter": "numbers-to-know",
+      "viz": "training-compute-calculator"
+    },
+    {
+      "id": "token-cost",
+      "kind": "calculator",
+      "title": "Tokens and cost calculator",
+      "blurb": "Daily and monthly spend from your traffic, token counts, cache share and the prices you enter.",
+      "chapter": "cost-engineering",
+      "spec": {
+        "id": "token-cost-calculator",
+        "component": "calculator",
+        "title": "Output tokens and uncached input usually dominate the bill",
+        "caption": "Prices are illustrative placeholders: enter your provider’s current prices. Watch how the cached share changes the daily total.",
+        "alt": "Calculator for cost per request, per day and per month from token counts, cache share and prices.",
+        "data": "formula",
+        "outputs": [
+          {
+            "id": "per_req",
+            "label": "Cost per request",
+            "expr": "(in_tokens * (1 - cached_share) * price_in + in_tokens * cached_share * price_cached + out_tokens * price_out) / 1000000",
+            "unit": "usd"
+          },
+          {
+            "id": "per_day",
+            "label": "Cost per day",
+            "expr": "per_req * requests_per_day",
+            "unit": "usd",
+            "main": true
+          },
+          {
+            "id": "per_month",
+            "label": "Cost per 30-day month",
+            "expr": "per_day * 30",
+            "unit": "usd"
+          }
+        ],
+        "inputs": {
+          "requests_per_day": 10000,
+          "in_tokens": 3000,
+          "out_tokens": 500,
+          "cached_share": 0.6,
+          "price_in": 3,
+          "price_cached": 0.3,
+          "price_out": 15
+        },
+        "input_meta": {
+          "requests_per_day": {
+            "label": "Requests per day"
+          },
+          "in_tokens": {
+            "label": "Input tokens per request"
+          },
+          "out_tokens": {
+            "label": "Output tokens per request"
+          },
+          "cached_share": {
+            "label": "Share of input cached",
+            "unit": "0 to 1"
+          },
+          "price_in": {
+            "label": "Input price",
+            "unit": "$ per million, illustrative"
+          },
+          "price_cached": {
+            "label": "Cached input price",
+            "unit": "$ per million, illustrative"
+          },
+          "price_out": {
+            "label": "Output price",
+            "unit": "$ per million, illustrative"
+          }
+        },
+        "assumptions": [
+          "Reasoning tokens, if any, are billed as output: add them to output tokens.",
+          "Ignores cache-write surcharges and batch discounts."
+        ],
+        "tests": [
+          {
+            "inputs": {},
+            "expect": {
+              "per_req": 0.01164,
+              "per_day": 116.4
+            }
+          },
+          {
+            "inputs": {
+              "cached_share": 0
+            },
+            "expect": {
+              "per_req": 0.0165,
+              "per_day": 165
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "rag-index",
+      "kind": "calculator",
+      "title": "RAG index size calculator",
+      "blurb": "Vector count and index memory from documents, chunks, dimensions and precision.",
+      "chapter": "vector-search",
+      "spec": {
+        "id": "rag-index-calculator",
+        "component": "calculator",
+        "title": "Dimensions and precision decide index memory: binary vectors are 32 times smaller",
+        "caption": "Formula view. The overhead factor stands in for graph links, metadata and replicas; measure your engine’s real overhead.",
+        "alt": "Calculator for vector count, raw vector bytes and total index memory.",
+        "data": "formula",
+        "outputs": [
+          {
+            "id": "vectors",
+            "label": "Vectors",
+            "expr": "docs * chunks_per_doc",
+            "unit": "count"
+          },
+          {
+            "id": "raw",
+            "label": "Raw vector memory",
+            "expr": "vectors * dims * bytes_per_dim",
+            "unit": "bytes"
+          },
+          {
+            "id": "total",
+            "label": "Index memory with overhead",
+            "expr": "raw * overhead",
+            "unit": "bytes",
+            "main": true
+          }
+        ],
+        "inputs": {
+          "docs": 100000,
+          "chunks_per_doc": 20,
+          "dims": 1024,
+          "bytes_per_dim": 4,
+          "overhead": 1.5
+        },
+        "input_meta": {
+          "docs": {
+            "label": "Documents"
+          },
+          "chunks_per_doc": {
+            "label": "Chunks per document"
+          },
+          "dims": {
+            "label": "Embedding dimensions"
+          },
+          "bytes_per_dim": {
+            "label": "Precision",
+            "options": [
+              [
+                "float32, 4 bytes",
+                4
+              ],
+              [
+                "float16, 2 bytes",
+                2
+              ],
+              [
+                "int8, 1 byte",
+                1
+              ],
+              [
+                "binary, 1 bit",
+                0.125
+              ]
+            ]
+          },
+          "overhead": {
+            "label": "Overhead factor",
+            "unit": "graph, metadata"
+          }
+        },
+        "assumptions": [
+          "Text and metadata stored outside the vector index are not included.",
+          "One vector per chunk."
+        ],
+        "tests": [
+          {
+            "inputs": {},
+            "expect": {
+              "vectors": 2000000,
+              "raw": 8192000000,
+              "total": 12288000000
+            }
+          },
+          {
+            "inputs": {
+              "bytes_per_dim": 0.125
+            },
+            "expect": {
+              "raw": 256000000,
+              "total": 384000000
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

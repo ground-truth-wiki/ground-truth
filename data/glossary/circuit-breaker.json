@@ -1,0 +1,10 @@
+{
+  "id": "circuit-breaker",
+  "term": "Circuit breaker",
+  "def": "A pattern that stops calling a failing dependency for a time, then probes before resuming.",
+  "practice": "Prevents retry storms during provider outages.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

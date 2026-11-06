@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bs-1",
+    "chapter": "batching-scheduling",
+    "q": "What does continuous batching change?",
+    "options": [
+      "Model weights",
+      "Sequences join and leave the batch at every decode step instead of waiting for the whole batch",
+      "The tokenizer",
+      "Prompt formats"
+    ],
+    "answer": 1,
+    "explain": "Freed slots are refilled immediately."
+  },
+  {
+    "id": "bs-2",
+    "chapter": "batching-scheduling",
+    "q": "Why use chunked prefill?",
+    "options": [
+      "To save disk",
+      "So long prompts do not stall other users’ streaming",
+      "To raise precision",
+      "To skip attention"
+    ],
+    "answer": 1,
+    "explain": "Prefill chunks interleave with decode steps."
+  },
+  {
+    "id": "bs-3",
+    "chapter": "batching-scheduling",
+    "q": "What defeats prefix caching?",
+    "options": [
+      "Long prompts",
+      "Content that varies at the start of the prompt, such as timestamps",
+      "Many users",
+      "Fast GPUs"
+    ],
+    "answer": 1,
+    "explain": "Caches match from the first token."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "eval-gate",
+  "term": "Eval gate",
+  "def": "A CI step that blocks a change unless the eval suite passes its thresholds.",
+  "practice": "Treat prompt and model changes like code changes.",
+  "aliases": [
+    "eval gates"
+  ],
+  "chapters": [
+    "ci-cd-for-ai"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "workflow",
+  "term": "Workflow",
+  "def": "An LLM application whose steps are fixed in code, with model calls at defined points.",
+  "practice": "Prefer a workflow whenever you can write the steps down.",
+  "aliases": [
+    "workflows"
+  ],
+  "chapters": [
+    "workflow-patterns",
+    "what-is-an-agent"
+  ]
+}

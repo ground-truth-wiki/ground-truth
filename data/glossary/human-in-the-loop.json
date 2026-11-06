@@ -1,0 +1,14 @@
+{
+  "id": "human-in-the-loop",
+  "term": "Human in the loop",
+  "def": "Designing points where a person approves, corrects or takes over from an AI system.",
+  "practice": "Put humans where the blast radius is large, not everywhere.",
+  "aliases": [
+    "HITL",
+    "approval gate"
+  ],
+  "chapters": [
+    "human-in-the-loop"
+  ],
+  "abbr": "HITL"
+}

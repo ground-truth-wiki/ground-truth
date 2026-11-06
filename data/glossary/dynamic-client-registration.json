@@ -1,0 +1,12 @@
+{
+  "id": "dynamic-client-registration",
+  "term": "Dynamic client registration",
+  "def": "An OAuth mechanism (RFC 7591) for clients to register with an authorization server at runtime.",
+  "practice": "One of several registration options in MCP authorization.",
+  "aliases": [
+    "DCR"
+  ],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

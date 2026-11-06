@@ -1,0 +1,12 @@
+{
+  "id": "tokenizer",
+  "term": "Tokenizer",
+  "def": "The component that maps text to token ids and back.",
+  "practice": "Mismatched tokenizers or chat templates are a classic source of silent bugs.",
+  "aliases": [
+    "tokenizers"
+  ],
+  "chapters": [
+    "tokenization"
+  ]
+}

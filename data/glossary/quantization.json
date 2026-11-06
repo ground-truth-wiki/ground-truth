@@ -1,0 +1,13 @@
+{
+  "id": "quantization",
+  "term": "Quantization",
+  "def": "Representing weights, activations or caches with fewer bits to save memory and bandwidth.",
+  "practice": "Re-run evals after quantizing; quality loss depends on method and task.",
+  "aliases": [
+    "quantized"
+  ],
+  "chapters": [
+    "quantization",
+    "memory-math"
+  ]
+}

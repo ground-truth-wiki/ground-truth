@@ -1,0 +1,13 @@
+{
+  "id": "data-flywheel",
+  "term": "Data flywheel",
+  "def": "The loop in which usage produces data that improves the product, which attracts more usage.",
+  "practice": "It only turns if someone curates what comes back.",
+  "aliases": [
+    "flywheel"
+  ],
+  "chapters": [
+    "data-flywheel",
+    "data-strategy"
+  ]
+}

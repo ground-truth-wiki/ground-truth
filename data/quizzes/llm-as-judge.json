@@ -1,0 +1,41 @@
+[
+  {
+    "id": "judge-1",
+    "chapter": "llm-as-judge",
+    "q": "Which judge design is easiest to calibrate and act on?",
+    "options": [
+      "A 1-to-10 overall-quality score",
+      "A binary pass or fail on one specific criterion, after a short critique",
+      "A free-form essay",
+      "Majority vote of three random prompts"
+    ],
+    "answer": 1,
+    "explain": "Binary verdicts on one criterion can be checked against human labels and acted on."
+  },
+  {
+    "id": "judge-2",
+    "chapter": "llm-as-judge",
+    "q": "A pairwise judge prefers whichever answer is shown first. What is this called, and how do you counter it?",
+    "options": [
+      "Verbosity bias; shorten answers",
+      "Position bias; run both orders and count only agreements",
+      "Self-preference; switch models",
+      "Drift; recalibrate monthly"
+    ],
+    "answer": 1,
+    "explain": "Swap orders and treat disagreements as ties."
+  },
+  {
+    "id": "judge-3",
+    "chapter": "llm-as-judge",
+    "q": "On a set with 90% passing answers, a judge that passes everything has 90% raw agreement. Which metric exposes it?",
+    "options": [
+      "Raw agreement",
+      "True negative rate or Cohen’s kappa",
+      "Average score",
+      "Latency"
+    ],
+    "answer": 1,
+    "explain": "It never catches failures: its true negative rate is zero and kappa is zero."
+  }
+]

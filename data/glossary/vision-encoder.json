@@ -1,0 +1,12 @@
+{
+  "id": "vision-encoder",
+  "term": "Vision encoder",
+  "def": "The network, often a vision transformer, that turns image patches into vectors for a multimodal model.",
+  "practice": "",
+  "aliases": [
+    "ViT"
+  ],
+  "chapters": [
+    "vision-language-models"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "diskann",
+  "term": "DiskANN",
+  "def": "A graph-based approximate nearest-neighbor index designed to live mostly on SSD for very large corpora.",
+  "practice": "Billion-scale search on modest memory.",
+  "aliases": [],
+  "chapters": [
+    "vector-search"
+  ]
+}

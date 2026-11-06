@@ -1,0 +1,13 @@
+{
+  "id": "bm25",
+  "term": "BM25",
+  "def": "A classic lexical ranking function based on term frequency, inverse document frequency and length normalization.",
+  "practice": "Still the baseline to beat for exact terms, ids and rare words.",
+  "aliases": [
+    "Okapi BM25",
+    "keyword search"
+  ],
+  "chapters": [
+    "hybrid-retrieval"
+  ]
+}

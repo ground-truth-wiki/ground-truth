@@ -1,0 +1,10 @@
+{
+  "id": "infonce",
+  "term": "InfoNCE",
+  "def": "A contrastive loss that scores the true pair against negatives in a batch.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "representation-learning"
+  ]
+}

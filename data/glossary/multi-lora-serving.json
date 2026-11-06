@@ -1,0 +1,11 @@
+{
+  "id": "multi-lora-serving",
+  "term": "Multi-LoRA serving",
+  "def": "Serving many LoRA adapters on one base model, selecting the adapter per request.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "fine-tuning-practice",
+    "serving-engines"
+  ]
+}

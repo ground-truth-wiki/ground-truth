@@ -1,0 +1,13 @@
+{
+  "id": "idempotency-key",
+  "term": "Idempotency key",
+  "def": "A unique key sent with a request so retries do not repeat its side effects.",
+  "practice": "Required for any retried action that changes the world.",
+  "aliases": [
+    "idempotent"
+  ],
+  "chapters": [
+    "reliability-engineering",
+    "agent-tools"
+  ]
+}

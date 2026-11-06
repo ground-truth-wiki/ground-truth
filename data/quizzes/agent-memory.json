@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mem-1",
+    "chapter": "agent-memory",
+    "q": "A memory system stores “the user seems to be a beginner” as a fact. What is wrong?",
+    "options": [
+      "Nothing",
+      "It stores an inference as a fact, which will quietly shape future answers",
+      "It is too short",
+      "It should be in the system prompt"
+    ],
+    "answer": 1,
+    "explain": "Store what users state or what you verified, with sources."
+  },
+  {
+    "id": "mem-2",
+    "chapter": "agent-memory",
+    "q": "Which kind of memory is a project CLAUDE.md or AGENTS.md file?",
+    "options": [
+      "Episodic",
+      "Semantic",
+      "Procedural",
+      "Working"
+    ],
+    "answer": 2,
+    "explain": "It encodes how to do things in this project: procedural memory."
+  },
+  {
+    "id": "mem-3",
+    "chapter": "agent-memory",
+    "q": "Why must memory be tested across sessions?",
+    "options": [
+      "Memory bugs only appear when facts are written in one session and read, or contradicted, in another",
+      "Single sessions are too long",
+      "It is cheaper",
+      "Models forget within a session"
+    ],
+    "answer": 0,
+    "explain": "Write, read and update paths only show up in multi-session tests."
+  }
+]

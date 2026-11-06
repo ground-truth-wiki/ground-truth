@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qac-1",
+    "chapter": "acronym-decoder",
+    "q": "Why expand acronyms on first use?",
+    "options": [
+      "Tradition",
+      "Many collide; ACP alone has several meanings",
+      "To add words",
+      "It is required"
+    ],
+    "answer": 1,
+    "explain": "Ambiguity causes real confusion."
+  },
+  {
+    "id": "qac-2",
+    "chapter": "acronym-decoder",
+    "q": "How is the decoder kept complete?",
+    "options": [
+      "Manually",
+      "It is generated from Lexicon terms that have abbreviations",
+      "From search logs",
+      "It is not"
+    ],
+    "answer": 1,
+    "explain": "Adding a term adds its acronym."
+  },
+  {
+    "id": "qac-3",
+    "chapter": "acronym-decoder",
+    "q": "What does SSE usually mean in AI streaming?",
+    "options": [
+      "Single sign-on",
+      "Server-Sent Events",
+      "Sparse sampling engine",
+      "Search service"
+    ],
+    "answer": 1,
+    "explain": "The format most model APIs stream in."
+  }
+]

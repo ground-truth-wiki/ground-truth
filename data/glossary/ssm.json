@@ -1,0 +1,15 @@
+{
+  "id": "ssm",
+  "term": "State-space model",
+  "def": "A sequence model that updates a fixed-size state per step, giving linear-time processing.",
+  "practice": "Mamba is the best-known family; hybrids pair it with attention.",
+  "aliases": [
+    "SSM",
+    "Mamba"
+  ],
+  "chapters": [
+    "beyond-transformers",
+    "new-architectures"
+  ],
+  "abbr": "SSM"
+}

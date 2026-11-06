@@ -1,0 +1,13 @@
+{
+  "id": "six-nd",
+  "term": "6ND",
+  "def": "The rule of thumb that training compute is about 6 × parameters × tokens FLOPs.",
+  "practice": "The first estimate in any training budget.",
+  "aliases": [
+    "6 × N × D"
+  ],
+  "chapters": [
+    "numbers-to-know",
+    "scaling-laws"
+  ]
+}

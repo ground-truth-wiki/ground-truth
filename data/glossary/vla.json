@@ -1,0 +1,13 @@
+{
+  "id": "vla",
+  "term": "Vision-language-action model",
+  "def": "A model that maps camera input and instructions to robot actions.",
+  "practice": "Robot data is the main bottleneck.",
+  "aliases": [
+    "VLA"
+  ],
+  "chapters": [
+    "embodied-agents"
+  ],
+  "abbr": "VLA"
+}

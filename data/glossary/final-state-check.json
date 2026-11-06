@@ -1,0 +1,10 @@
+{
+  "id": "final-state-check",
+  "term": "Final-state check",
+  "def": "Verifying an agent’s result by inspecting the resulting system state rather than its own report.",
+  "practice": "Agents claim success they did not achieve.",
+  "aliases": [],
+  "chapters": [
+    "evaluating-agents"
+  ]
+}

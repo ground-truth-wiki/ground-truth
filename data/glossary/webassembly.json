@@ -1,0 +1,12 @@
+{
+  "id": "webassembly",
+  "term": "WebAssembly",
+  "def": "A portable runtime that runs code with only the capabilities it is explicitly granted.",
+  "practice": "Strong isolation for narrow functions in supported languages.",
+  "aliases": [
+    "Wasm"
+  ],
+  "chapters": [
+    "sandboxes"
+  ]
+}

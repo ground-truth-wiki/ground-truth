@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qsc-1",
+    "chapter": "safety-character-training",
+    "q": "What is a “safe completion”?",
+    "options": [
+      "Refusing everything sensitive",
+      "The most helpful answer that stays within safety limits",
+      "A shorter answer",
+      "A hidden answer"
+    ],
+    "answer": 1,
+    "explain": "Helpful within limits rather than blanket refusal."
+  },
+  {
+    "id": "qsc-2",
+    "chapter": "safety-character-training",
+    "q": "What does Constitutional AI use to guide feedback?",
+    "options": [
+      "Random labels",
+      "Written principles that guide AI critiques and comparisons",
+      "Only human ratings",
+      "Benchmarks"
+    ],
+    "answer": 1,
+    "explain": "Bai et al., 2022."
+  },
+  {
+    "id": "qsc-3",
+    "chapter": "safety-character-training",
+    "q": "Why keep application guardrails even with a well-trained model?",
+    "options": [
+      "Models are untrained",
+      "Model training does not know your data, tools or users",
+      "It is required by law everywhere",
+      "To slow responses"
+    ],
+    "answer": 1,
+    "explain": "Application risks are yours to cover."
+  }
+]

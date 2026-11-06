@@ -1,0 +1,13 @@
+{
+  "id": "microscaling",
+  "term": "Microscaling formats",
+  "def": "Low-bit number formats, such as MXFP4 and NVFP4, that store small blocks of values with a shared scale.",
+  "practice": "Used for 4-bit weights on recent hardware.",
+  "aliases": [
+    "MXFP4",
+    "NVFP4"
+  ],
+  "chapters": [
+    "quantization"
+  ]
+}

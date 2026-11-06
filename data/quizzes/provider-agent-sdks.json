@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pas-1",
+    "chapter": "provider-agent-sdks",
+    "q": "What does the Claude Agent SDK expose?",
+    "options": [
+      "Only a chat UI",
+      "The harness behind Claude Code as a library",
+      "A vector database",
+      "A training framework"
+    ],
+    "answer": 1,
+    "explain": "Loop, tools, MCP, subagents, hooks and permissions."
+  },
+  {
+    "id": "pas-2",
+    "chapter": "provider-agent-sdks",
+    "q": "When is the raw provider SDK the better choice?",
+    "options": [
+      "Never",
+      "When you need precise control over every call, or the task is a few calls rather than an agent",
+      "Always",
+      "Only for images"
+    ],
+    "answer": 1,
+    "explain": "Less magic, more control."
+  },
+  {
+    "id": "pas-3",
+    "chapter": "provider-agent-sdks",
+    "q": "What should you check before trusting an agent SDK’s defaults?",
+    "options": [
+      "Its logo",
+      "Its default tools, permissions and context handling, and what it sends on each call",
+      "Its download count",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Defaults were chosen for general use."
+  }
+]

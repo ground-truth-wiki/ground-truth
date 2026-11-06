@@ -1,0 +1,13 @@
+{
+  "id": "resource-indicator",
+  "term": "Resource indicator",
+  "def": "An OAuth parameter (RFC 8707) naming the resource a token is for, so the token is audience-bound.",
+  "practice": "Clients send it on every MCP authorization request.",
+  "aliases": [
+    "RFC 8707",
+    "audience-bound token"
+  ],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

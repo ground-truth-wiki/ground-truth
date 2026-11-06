@@ -1,0 +1,11 @@
+{
+  "id": "yarn",
+  "term": "YaRN",
+  "def": "A method for extending a RoPE model’s context by rescaling rotation frequencies non-uniformly, usually with brief continued training.",
+  "practice": "Common in long-context releases of open models.",
+  "aliases": [],
+  "chapters": [
+    "positional-encoding",
+    "mid-training"
+  ]
+}

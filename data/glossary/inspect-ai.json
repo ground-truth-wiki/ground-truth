@@ -1,0 +1,12 @@
+{
+  "id": "inspect-ai",
+  "term": "Inspect",
+  "def": "The UK AI Security Institute’s open-source framework for model and agent evaluations, built from datasets, solvers and scorers.",
+  "practice": "Good for sandboxed agent evals with detailed logs.",
+  "aliases": [
+    "inspect_ai"
+  ],
+  "chapters": [
+    "eval-harnesses"
+  ]
+}

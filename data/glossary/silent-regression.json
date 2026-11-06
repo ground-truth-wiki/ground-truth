@@ -1,0 +1,11 @@
+{
+  "id": "silent-regression",
+  "term": "Silent regression",
+  "def": "A drop in output quality that produces no errors, such as after a model, prompt or retrieval change.",
+  "practice": "Detected by sampled quality metrics, not error rates.",
+  "aliases": [],
+  "chapters": [
+    "incidents-on-call",
+    "online-evaluation"
+  ]
+}

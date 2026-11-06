@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qft-1",
+    "chapter": "fine-tuning-practice",
+    "q": "How many trainable parameters does LoRA add per d × d matrix at rank r?",
+    "options": [
+      "r",
+      "r × 2d",
+      "d²",
+      "r²"
+    ],
+    "answer": 1,
+    "explain": "r × (d_in + d_out)."
+  },
+  {
+    "id": "qft-2",
+    "chapter": "fine-tuning-practice",
+    "q": "What should every fine-tuning project compare against?",
+    "options": [
+      "Nothing",
+      "A well-prompted baseline on a strong model, measured on the same eval",
+      "A random model",
+      "Last year’s model"
+    ],
+    "answer": 1,
+    "explain": "Many fine-tunes do not beat a good prompt."
+  },
+  {
+    "id": "qft-3",
+    "chapter": "fine-tuning-practice",
+    "q": "What does QLoRA enable?",
+    "options": [
+      "Faster inference only",
+      "Fine-tuning adapters on a 4-bit quantized base, on modest hardware",
+      "Training from scratch",
+      "Removing the base"
+    ],
+    "answer": 1,
+    "explain": "Dettmers et al., 2023."
+  }
+]

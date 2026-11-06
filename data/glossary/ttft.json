@@ -1,0 +1,13 @@
+{
+  "id": "ttft",
+  "term": "Time to first token",
+  "def": "How long a request waits before its first output token arrives: queueing plus prefill.",
+  "practice": "The latency users feel most; track its p95 and p99.",
+  "aliases": [
+    "TTFT"
+  ],
+  "chapters": [
+    "latency-throughput"
+  ],
+  "abbr": "TTFT"
+}

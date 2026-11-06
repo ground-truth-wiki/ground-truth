@@ -1,0 +1,10 @@
+{
+  "id": "adjudication",
+  "term": "Adjudication",
+  "def": "Resolving annotator disagreements and recording the decision as guidance.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "labeling-annotation"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "diarization",
+  "term": "Speaker diarization",
+  "def": "Determining who spoke when in a recording.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "speech-audio"
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b18-2",
+    "chapter": "back-of-envelope",
+    "q": "What separates a useful estimate from a guess?",
+    "options": [
+      "More decimal places",
+      "Stated assumptions that others can check and correct",
+      "A spreadsheet",
+      "A larger model"
+    ],
+    "answer": 1,
+    "explain": "Say assumptions out loud."
+  },
+  {
+    "id": "qbe-1",
+    "chapter": "back-of-envelope",
+    "q": "About how many requests per second is 1 million requests a day on average?",
+    "options": [
+      "1",
+      "12",
+      "120",
+      "1,200"
+    ],
+    "answer": 1,
+    "explain": "1,000,000 ÷ 86,400 ≈ 11.6."
+  },
+  {
+    "id": "qbe-2",
+    "chapter": "back-of-envelope",
+    "q": "Why multiply by calls per task for agents?",
+    "options": [
+      "To be conservative",
+      "One user request can trigger dozens of model calls with growing contexts",
+      "It is required",
+      "Agents are cheaper"
+    ],
+    "answer": 1,
+    "explain": "The agent multiplier."
+  },
+  {
+    "id": "qbe-3",
+    "chapter": "back-of-envelope",
+    "q": "Why size capacity for peaks rather than averages?",
+    "options": [
+      "Averages are hard to compute",
+      "Users wait when peak demand exceeds capacity",
+      "Peaks are cheaper",
+      "Providers require it"
+    ],
+    "answer": 1,
+    "explain": "Peak factors of 2 to 5 are common."
+  }
+]

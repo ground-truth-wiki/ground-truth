@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qlx-1",
+    "chapter": "lexicon-guide",
+    "q": "What drives the dotted-underline links to Lexicon terms?",
+    "options": [
+      "Random choice",
+      "Each term’s name and aliases",
+      "Chapter titles",
+      "Bold text"
+    ],
+    "answer": 1,
+    "explain": "Aliases let terms be recognized in any spelling."
+  },
+  {
+    "id": "qlx-2",
+    "chapter": "lexicon-guide",
+    "q": "How do you link directly to a term?",
+    "options": [
+      "You cannot",
+      "With its address, such as #term-kv-cache",
+      "With a footnote",
+      "With an email"
+    ],
+    "answer": 1,
+    "explain": "Every term has a deep link."
+  },
+  {
+    "id": "qlx-3",
+    "chapter": "lexicon-guide",
+    "q": "Why keep one preferred name per concept?",
+    "options": [
+      "Style",
+      "Consistent vocabulary makes reading and discussion precise",
+      "To save space",
+      "It is required"
+    ],
+    "answer": 1,
+    "explain": "Alternatives become aliases."
+  }
+]

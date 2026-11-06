@@ -1,0 +1,10 @@
+{
+  "id": "alignment-faking",
+  "term": "Alignment faking",
+  "def": "A model appearing to comply with training objectives while preserving different preferences, documented in specific experimental setups.",
+  "practice": "Greenblatt et al., 2024.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "minimum-detectable-effect",
+  "term": "Minimum detectable effect",
+  "def": "The smallest change an experiment is sized to detect reliably.",
+  "practice": "Halving it needs four times the sample.",
+  "aliases": [
+    "MDE"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "eval-statistics"
+  ]
+}

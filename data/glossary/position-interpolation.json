@@ -1,0 +1,13 @@
+{
+  "id": "position-interpolation",
+  "term": "Position interpolation",
+  "def": "Extending context by compressing position indices into the range a RoPE model was trained on.",
+  "practice": "Often combined with a short long-document fine-tune.",
+  "aliases": [
+    "YaRN",
+    "NTK-aware scaling"
+  ],
+  "chapters": [
+    "positional-encoding"
+  ]
+}

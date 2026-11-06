@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qfs-1",
+    "chapter": "framework-selection",
+    "q": "What is the best evidence for choosing a framework?",
+    "options": [
+      "Its homepage",
+      "A one-day prototype of the same realistic task in two finalists, with tracing",
+      "GitHub stars",
+      "A conference talk"
+    ],
+    "answer": 1,
+    "explain": "Prototypes reveal fit and transparency."
+  },
+  {
+    "id": "qfs-2",
+    "chapter": "framework-selection",
+    "q": "Two candidates score within a few tenths. What breaks the tie?",
+    "options": [
+      "The newer one",
+      "The one with the lower exit cost",
+      "The one with more features",
+      "Random choice"
+    ],
+    "answer": 1,
+    "explain": "Cheap exits keep future options open."
+  },
+  {
+    "id": "qfs-3",
+    "chapter": "framework-selection",
+    "q": "When should criteria and weights be written down?",
+    "options": [
+      "After choosing",
+      "Before looking at products",
+      "Never",
+      "Only for large teams"
+    ],
+    "answer": 1,
+    "explain": "Otherwise the loudest opinion wins."
+  }
+]

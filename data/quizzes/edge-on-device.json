@@ -1,0 +1,41 @@
+[
+  {
+    "id": "edg-1",
+    "chapter": "edge-on-device",
+    "q": "About how much memory does a 3B model need at 4 bits?",
+    "options": [
+      "About 0.2 GB",
+      "About 1.5 to 2 GB",
+      "About 12 GB",
+      "About 30 GB"
+    ],
+    "answer": 1,
+    "explain": "3B × 0.5 bytes ≈ 1.5 GB plus overhead."
+  },
+  {
+    "id": "edg-2",
+    "chapter": "edge-on-device",
+    "q": "Which task fits on-device models best?",
+    "options": [
+      "Long-context research",
+      "Classification, extraction, autocomplete and short summaries",
+      "Training models",
+      "Huge code refactors"
+    ],
+    "answer": 1,
+    "explain": "Simple tasks run free, fast and private on device."
+  },
+  {
+    "id": "edg-3",
+    "chapter": "edge-on-device",
+    "q": "Why test on older devices?",
+    "options": [
+      "They are faster",
+      "They have less memory and bandwidth, so the feature may be unusable for many users",
+      "They have better NPUs",
+      "They are cheaper to buy"
+    ],
+    "answer": 1,
+    "explain": "Flagship-only testing misleads."
+  }
+]

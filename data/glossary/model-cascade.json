@@ -1,0 +1,13 @@
+{
+  "id": "model-cascade",
+  "term": "Model cascade",
+  "def": "Trying a cheaper model first and escalating to a stronger one only when a check fails.",
+  "practice": "A routing pattern that cuts cost.",
+  "aliases": [
+    "cascade",
+    "cascades"
+  ],
+  "chapters": [
+    "cost-engineering"
+  ]
+}

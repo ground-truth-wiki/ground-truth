@@ -1,0 +1,10 @@
+{
+  "id": "provisioned-throughput",
+  "term": "Provisioned throughput",
+  "def": "Reserved model capacity bought for a period in exchange for guaranteed rate limits or throughput.",
+  "practice": "Trades commitment for predictability.",
+  "aliases": [],
+  "chapters": [
+    "cost-capacity"
+  ]
+}

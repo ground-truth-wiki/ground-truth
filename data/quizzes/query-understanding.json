@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qu-1",
+    "chapter": "query-understanding",
+    "q": "What does conversational condensation do?",
+    "options": [
+      "Shortens answers",
+      "Rewrites a follow-up into a standalone query using the chat history",
+      "Compresses the index",
+      "Removes stop words"
+    ],
+    "answer": 1,
+    "explain": "“What about Germany?” becomes a searchable question."
+  },
+  {
+    "id": "qu-2",
+    "chapter": "query-understanding",
+    "q": "How does HyDE improve retrieval?",
+    "options": [
+      "It deletes bad documents",
+      "It searches with the embedding of a model-written hypothetical answer, which resembles real documents",
+      "It adds filters",
+      "It reranks"
+    ],
+    "answer": 1,
+    "explain": "Answers look more like documents than questions do."
+  },
+  {
+    "id": "qu-3",
+    "chapter": "query-understanding",
+    "q": "What protects against a rewrite dropping a crucial term?",
+    "options": [
+      "Higher temperature",
+      "Always searching with the original query too",
+      "Fewer variants",
+      "Disabling filters"
+    ],
+    "answer": 1,
+    "explain": "Keep the original alongside every rewrite."
+  }
+]

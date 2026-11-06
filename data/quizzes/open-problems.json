@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qop-1",
+    "chapter": "open-problems",
+    "q": "Why is prompt injection an open problem?",
+    "options": [
+      "It is rare",
+      "Models cannot reliably separate instructions from data",
+      "It is solved by filters",
+      "It only affects chat"
+    ],
+    "answer": 1,
+    "explain": "Architecture can contain it; models have not solved it."
+  },
+  {
+    "id": "qop-2",
+    "chapter": "open-problems",
+    "q": "What is continual learning?",
+    "options": [
+      "Training once",
+      "Learning from experience after deployment without forgetting or drifting",
+      "Longer contexts",
+      "More epochs"
+    ],
+    "answer": 1,
+    "explain": "An unsolved capability."
+  },
+  {
+    "id": "qop-3",
+    "chapter": "open-problems",
+    "q": "How should open problems shape designs?",
+    "options": [
+      "Ignore them",
+      "Design around current limits with verification, approvals and evals",
+      "Wait for solutions",
+      "Avoid AI entirely"
+    ],
+    "answer": 1,
+    "explain": "Build for what models can guarantee."
+  }
+]

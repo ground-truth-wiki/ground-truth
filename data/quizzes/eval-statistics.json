@@ -1,0 +1,41 @@
+[
+  {
+    "id": "es-1",
+    "chapter": "eval-statistics",
+    "q": "At a 70% pass rate on 100 cases, roughly what is the 95% margin of error?",
+    "options": [
+      "±1 point",
+      "±9 points",
+      "±25 points",
+      "±0.1 points"
+    ],
+    "answer": 1,
+    "explain": "1.96 × √(0.21 ÷ 100) ≈ 0.09."
+  },
+  {
+    "id": "es-2",
+    "chapter": "eval-statistics",
+    "q": "Why use paired comparisons when two systems run on the same cases?",
+    "options": [
+      "They are simpler to explain",
+      "They remove variation between easy and hard cases, detecting smaller differences",
+      "They need fewer runs",
+      "They avoid bias in judges"
+    ],
+    "answer": 1,
+    "explain": "Per-case differences carry more signal."
+  },
+  {
+    "id": "es-3",
+    "chapter": "eval-statistics",
+    "q": "You test 20 prompt variants and one wins. What should you do before shipping?",
+    "options": [
+      "Ship it",
+      "Confirm the winner on held-out data or correct for multiple comparisons",
+      "Test 20 more",
+      "Lower the threshold"
+    ],
+    "answer": 1,
+    "explain": "With many comparisons, some winner is luck."
+  }
+]

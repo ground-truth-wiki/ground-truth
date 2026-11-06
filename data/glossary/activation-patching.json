@@ -1,0 +1,10 @@
+{
+  "id": "activation-patching",
+  "term": "Activation patching",
+  "def": "Replacing a component’s activations with those from another input to test its causal role.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "mech-interp"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pr-1",
+    "chapter": "production-rag",
+    "q": "Where must access control be applied in production RAG?",
+    "options": [
+      "After generation",
+      "At retrieval time, before passages reach the model",
+      "Only in the UI",
+      "In the embedding model"
+    ],
+    "answer": 1,
+    "explain": "Anything the model sees can leak into the answer."
+  },
+  {
+    "id": "pr-2",
+    "chapter": "production-rag",
+    "q": "What is the most common gap when a source document is deleted?",
+    "options": [
+      "The model forgets it immediately",
+      "Chunks or cached answers that cited it remain in indexes and caches",
+      "The vector database crashes",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Deletion must propagate to every index and cache."
+  },
+  {
+    "id": "pr-3",
+    "chapter": "production-rag",
+    "q": "Which failure point means the right passage exists but ranks too low?",
+    "options": [
+      "Missing content",
+      "Missed the top-ranked documents",
+      "Wrong format",
+      "Incomplete"
+    ],
+    "answer": 1,
+    "explain": "Fix with hybrid search, reranking and better chunking."
+  }
+]

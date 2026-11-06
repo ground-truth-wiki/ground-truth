@@ -1,0 +1,13 @@
+{
+  "id": "overfitting",
+  "term": "Overfitting",
+  "def": "Fitting the training data so closely that performance on new data gets worse.",
+  "practice": "Applies to prompts tuned on a small dev set too.",
+  "aliases": [
+    "overfit"
+  ],
+  "chapters": [
+    "classical-ml",
+    "prompt-optimization"
+  ]
+}

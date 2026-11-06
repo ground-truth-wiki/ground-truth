@@ -1,0 +1,10 @@
+{
+  "id": "provider-deployer",
+  "term": "Provider and deployer",
+  "def": "EU AI Act roles: the provider develops or places a system on the market; the deployer uses it under its authority.",
+  "practice": "Your role decides your obligations.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation"
+  ]
+}

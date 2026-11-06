@@ -1,0 +1,11 @@
+{
+  "id": "roofline",
+  "term": "Roofline model",
+  "def": "A chart of achievable performance as the minimum of peak compute and bandwidth times arithmetic intensity.",
+  "practice": "Tells you whether to buy FLOPs or bandwidth for a workload.",
+  "aliases": [],
+  "chapters": [
+    "inference-fundamentals",
+    "hardware"
+  ]
+}

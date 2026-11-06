@@ -1,0 +1,10 @@
+{
+  "id": "prompt-registry",
+  "term": "Prompt registry",
+  "def": "A versioned store of prompts and their configuration, with environments, approvals and history.",
+  "practice": "An alternative to keeping prompts only in code.",
+  "aliases": [],
+  "chapters": [
+    "prompt-config-management"
+  ]
+}

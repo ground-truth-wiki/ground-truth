@@ -1,0 +1,13 @@
+{
+  "id": "react",
+  "term": "ReAct",
+  "def": "A prompting and agent pattern that interleaves reasoning steps with actions and observations.",
+  "practice": "Most tool-using agent loops are ReAct-style even when nobody calls them that.",
+  "aliases": [
+    "reason and act"
+  ],
+  "chapters": [
+    "agent-loop",
+    "planning-reasoning"
+  ]
+}

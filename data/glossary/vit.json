@@ -1,0 +1,13 @@
+{
+  "id": "vit",
+  "term": "Vision transformer",
+  "def": "A transformer that processes an image as a sequence of patch embeddings.",
+  "practice": "The standard vision encoder in VLMs.",
+  "aliases": [
+    "ViT"
+  ],
+  "chapters": [
+    "vision-language-models"
+  ],
+  "abbr": "ViT"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "semantic-cache",
+  "term": "Semantic cache",
+  "def": "A cache that returns stored answers for queries similar in meaning to earlier ones.",
+  "practice": "Use only where slightly stale answers are acceptable.",
+  "aliases": [
+    "semantic caching"
+  ],
+  "chapters": [
+    "cost-engineering"
+  ]
+}

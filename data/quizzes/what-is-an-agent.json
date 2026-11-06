@@ -1,0 +1,41 @@
+[
+  {
+    "id": "agent-1",
+    "chapter": "what-is-an-agent",
+    "q": "What separates an agent from a workflow?",
+    "options": [
+      "Agents use bigger models",
+      "In an agent the model decides the next step; in a workflow code decides it",
+      "Workflows cannot call tools",
+      "Agents always run in the cloud"
+    ],
+    "answer": 1,
+    "explain": "The useful line is control: who chooses the next step."
+  },
+  {
+    "id": "agent-2",
+    "chapter": "what-is-an-agent",
+    "q": "Which task is the best fit for a workflow rather than an agent?",
+    "options": [
+      "Debugging an unfamiliar codebase",
+      "Researching an open question across the web",
+      "Extracting the same five fields from every invoice",
+      "Handling a support request that mixes several problems"
+    ],
+    "answer": 2,
+    "explain": "Known, repeatable steps belong in code."
+  },
+  {
+    "id": "agent-3",
+    "chapter": "what-is-an-agent",
+    "q": "Why did coding become the first domain where agents paid off?",
+    "options": [
+      "Code is short",
+      "Tests give the loop an honest feedback signal",
+      "Developers like agents",
+      "Code needs no context"
+    ],
+    "answer": 1,
+    "explain": "Running tests tells the agent whether it succeeded, so it can iterate toward a verifiable goal."
+  }
+]

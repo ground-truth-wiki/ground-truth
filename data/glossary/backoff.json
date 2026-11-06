@@ -1,0 +1,12 @@
+{
+  "id": "backoff",
+  "term": "Exponential backoff with jitter",
+  "def": "Retrying with increasing, randomized delays to avoid overwhelming a recovering service.",
+  "practice": "The default retry policy for model APIs.",
+  "aliases": [
+    "jitter"
+  ],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

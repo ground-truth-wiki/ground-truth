@@ -1,0 +1,10 @@
+{
+  "id": "differential-privacy",
+  "term": "Differential privacy",
+  "def": "A guarantee, achieved by adding calibrated noise, that any single record has limited influence on a result or model.",
+  "practice": "Strong protection at some cost in quality.",
+  "aliases": [],
+  "chapters": [
+    "privacy"
+  ]
+}

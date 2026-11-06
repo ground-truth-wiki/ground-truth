@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qww-1",
+    "chapter": "whos-who",
+    "q": "Where should you look first for facts about a model?",
+    "options": [
+      "Social media",
+      "The developer’s release notes, model card and system card",
+      "Forums",
+      "Ads"
+    ],
+    "answer": 1,
+    "explain": "Primary sources first."
+  },
+  {
+    "id": "qww-2",
+    "chapter": "whos-who",
+    "q": "What do evaluation organizations publish?",
+    "options": [
+      "Models",
+      "Benchmarks, methodologies and audits",
+      "Laws",
+      "Hardware"
+    ],
+    "answer": 1,
+    "explain": "Read their methods with the scores."
+  },
+  {
+    "id": "qww-3",
+    "chapter": "whos-who",
+    "q": "What pairs best with a structured course?",
+    "options": [
+      "More courses",
+      "Hands-on projects with evals",
+      "Certificates",
+      "Videos only"
+    ],
+    "answer": 1,
+    "explain": "Build to learn."
+  }
+]

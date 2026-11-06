@@ -1,0 +1,41 @@
+[
+  {
+    "id": "re-1",
+    "chapter": "rag-evaluation",
+    "q": "Which metric is the ceiling on RAG answer quality?",
+    "options": [
+      "Answer length",
+      "Recall@k of retrieval",
+      "Latency",
+      "Faithfulness"
+    ],
+    "answer": 1,
+    "explain": "If the right passage is not retrieved, the generator cannot use it."
+  },
+  {
+    "id": "re-2",
+    "chapter": "rag-evaluation",
+    "q": "Faithfulness compares which two things?",
+    "options": [
+      "The question and the answer",
+      "The retrieved context and the answer",
+      "The reference and the question",
+      "Two models"
+    ],
+    "answer": 1,
+    "explain": "Every claim in the answer should be supported by the context."
+  },
+  {
+    "id": "re-3",
+    "chapter": "rag-evaluation",
+    "q": "Only result 6 of 6 is relevant, then only result 1. What changes?",
+    "options": [
+      "Recall@6 changes",
+      "nDCG and MRR change; recall@6 stays the same",
+      "Nothing changes",
+      "Precision@6 changes"
+    ],
+    "answer": 1,
+    "explain": "Recall ignores order; nDCG and MRR reward higher ranks."
+  }
+]

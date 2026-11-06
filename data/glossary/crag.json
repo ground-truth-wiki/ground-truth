@@ -1,0 +1,12 @@
+{
+  "id": "crag",
+  "term": "Corrective RAG",
+  "def": "A design that grades retrieved documents and falls back to other sources or rewrites the query when they are poor.",
+  "practice": "Adds a quality check before generation.",
+  "aliases": [
+    "CRAG"
+  ],
+  "chapters": [
+    "advanced-rag"
+  ]
+}

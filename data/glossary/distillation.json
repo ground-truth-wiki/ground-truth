@@ -1,0 +1,12 @@
+{
+  "id": "distillation",
+  "term": "Distillation",
+  "def": "Training a smaller student model to imitate a larger teacher.",
+  "practice": "The student inherits skills only on the data it saw.",
+  "aliases": [
+    "knowledge distillation"
+  ],
+  "chapters": [
+    "distillation-merging"
+  ]
+}

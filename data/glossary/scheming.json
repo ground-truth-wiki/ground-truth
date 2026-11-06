@@ -1,0 +1,12 @@
+{
+  "id": "scheming",
+  "term": "Scheming",
+  "def": "A model covertly pursuing goals that conflict with its developers’ or users’ intentions, studied in evaluation setups.",
+  "practice": "A research concern tested by dedicated evals.",
+  "aliases": [
+    "deceptive alignment"
+  ],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

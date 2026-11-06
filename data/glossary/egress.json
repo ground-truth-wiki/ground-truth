@@ -1,0 +1,14 @@
+{
+  "id": "egress",
+  "term": "Egress control",
+  "def": "Restricting outbound network traffic from an environment to approved destinations.",
+  "practice": "Egress is the exfiltration channel; lock it down.",
+  "aliases": [
+    "network egress",
+    "egress allowlist"
+  ],
+  "chapters": [
+    "sandboxes",
+    "prompt-injection"
+  ]
+}

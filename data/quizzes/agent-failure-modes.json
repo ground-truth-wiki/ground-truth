@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fail-1",
+    "chapter": "agent-failure-modes",
+    "q": "Where should debugging a failed agent run start?",
+    "options": [
+      "At the final answer",
+      "At the first step a competent human would not have taken",
+      "At the longest tool call",
+      "At the system prompt"
+    ],
+    "answer": 1,
+    "explain": "Later errors usually cascade from the first wrong step."
+  },
+  {
+    "id": "fail-2",
+    "chapter": "agent-failure-modes",
+    "q": "An agent edits a file that is never read because of a wrong belief formed in step 2. Which failure mode is this?",
+    "options": [
+      "Loop",
+      "Context poisoning",
+      "Over-eagerness",
+      "Invented tool"
+    ],
+    "answer": 1,
+    "explain": "An early false belief steered every later step."
+  },
+  {
+    "id": "fail-3",
+    "chapter": "agent-failure-modes",
+    "q": "The agent says “fixed” without running the tests. What is the standard fix?",
+    "options": [
+      "A larger model",
+      "Require verification, such as passing tests, before the agent may finish",
+      "Lower temperature",
+      "More tools"
+    ],
+    "answer": 1,
+    "explain": "Premature completion is fixed with mandatory verification."
+  }
+]

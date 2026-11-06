@@ -1,0 +1,12 @@
+{
+  "id": "counterfactual-testing",
+  "term": "Counterfactual testing",
+  "def": "Changing one attribute of an input, such as a name, and checking whether outputs change when they should not.",
+  "practice": "Run many matched pairs, not one.",
+  "aliases": [
+    "matched pairs"
+  ],
+  "chapters": [
+    "responsible-ai"
+  ]
+}

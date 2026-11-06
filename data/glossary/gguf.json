@@ -1,0 +1,11 @@
+{
+  "id": "gguf",
+  "term": "GGUF",
+  "def": "The model file format used by llama.cpp, with a family of quantization schemes such as k-quants.",
+  "practice": "The usual format for running quantized models locally.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "serving-engines"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pii",
+  "term": "Personally identifiable information",
+  "def": "Data that identifies a person, such as names, emails, phone numbers and identifiers.",
+  "practice": "Detect and redact before it reaches logs and indexes.",
+  "aliases": [
+    "PII"
+  ],
+  "chapters": [
+    "privacy",
+    "data-governance"
+  ],
+  "abbr": "PII"
+}

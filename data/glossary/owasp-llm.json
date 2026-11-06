@@ -1,0 +1,12 @@
+{
+  "id": "owasp-llm",
+  "term": "OWASP Top 10 for LLM applications",
+  "def": "A ranked list of security risks for LLM applications, with prompt injection as LLM01.",
+  "practice": "A practical checklist for threat modeling.",
+  "aliases": [
+    "OWASP"
+  ],
+  "chapters": [
+    "threat-modeling"
+  ]
+}

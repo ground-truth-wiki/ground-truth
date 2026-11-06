@@ -1,0 +1,14 @@
+{
+  "id": "slm",
+  "term": "Small language model",
+  "def": "A language model small enough to run cheaply or on-device, roughly under ten billion parameters.",
+  "practice": "Fine-tuned SLMs often win narrow tasks.",
+  "aliases": [
+    "SLM",
+    "small models"
+  ],
+  "chapters": [
+    "small-local-models"
+  ],
+  "abbr": "SLM"
+}

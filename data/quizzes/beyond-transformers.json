@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qbt-1",
+    "chapter": "beyond-transformers",
+    "q": "What is the main memory advantage of state-space models?",
+    "options": [
+      "More parameters",
+      "A fixed-size state per sequence instead of a KV cache that grows with every token",
+      "Bigger vocabularies",
+      "No training needed"
+    ],
+    "answer": 1,
+    "explain": "Linear time and constant memory per sequence."
+  },
+  {
+    "id": "qbt-2",
+    "chapter": "beyond-transformers",
+    "q": "Which task is hardest for pure recurrent or state-space models?",
+    "options": [
+      "Summarization",
+      "Exact recall of a detail from far back in the context",
+      "Translation",
+      "Classification"
+    ],
+    "answer": 1,
+    "explain": "Fixed states can forget specifics."
+  },
+  {
+    "id": "qbt-3",
+    "chapter": "beyond-transformers",
+    "q": "What do hybrid architectures usually combine?",
+    "options": [
+      "CPUs and GPUs",
+      "Many cheap recurrent or sliding-window layers with a few full-attention layers",
+      "Two tokenizers",
+      "Images and text"
+    ],
+    "answer": 1,
+    "explain": "Efficiency with recall."
+  }
+]

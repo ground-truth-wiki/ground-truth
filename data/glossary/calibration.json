@@ -1,0 +1,13 @@
+{
+  "id": "calibration",
+  "term": "Calibration",
+  "def": "Whether a model’s or grader’s confidence matches how often it is right.",
+  "practice": "A calibrated judge has known error rates against human labels.",
+  "aliases": [
+    "calibrated"
+  ],
+  "chapters": [
+    "classical-ml",
+    "llm-as-judge"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "decision-record",
+  "term": "Decision record",
+  "def": "A short document stating a choice, the alternatives, the evidence and what would reopen it.",
+  "practice": "",
+  "aliases": [
+    "ADR"
+  ],
+  "chapters": [
+    "decision-guides"
+  ]
+}

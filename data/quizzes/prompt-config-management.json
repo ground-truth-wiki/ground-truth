@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pcm-1",
+    "chapter": "prompt-config-management",
+    "q": "Why avoid model aliases such as “latest” in production?",
+    "options": [
+      "They are slower",
+      "Provider updates change behavior without a deploy or eval",
+      "They cost more",
+      "They are deprecated"
+    ],
+    "answer": 1,
+    "explain": "Pin dated versions."
+  },
+  {
+    "id": "pcm-2",
+    "chapter": "prompt-config-management",
+    "q": "What should be versioned together with a prompt template?",
+    "options": [
+      "Nothing",
+      "Model choice and parameters such as temperature and max tokens",
+      "The CI runner",
+      "User data"
+    ],
+    "answer": 1,
+    "explain": "They jointly decide behavior."
+  },
+  {
+    "id": "pcm-3",
+    "chapter": "prompt-config-management",
+    "q": "How should rolling back a bad prompt work?",
+    "options": [
+      "Rewrite the prompt from memory",
+      "Point the environment back at the previous version",
+      "Restart servers",
+      "Retrain the model"
+    ],
+    "answer": 1,
+    "explain": "Rollback should be a one-line change."
+  }
+]

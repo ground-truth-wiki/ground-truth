@@ -1,0 +1,15 @@
+{
+  "id": "lora",
+  "term": "LoRA",
+  "def": "Low-rank adaptation: fine-tuning by training two small matrices whose product is added to a frozen weight matrix.",
+  "practice": "Cheap to train, store and swap; QLoRA does it on a 4-bit base.",
+  "aliases": [
+    "QLoRA",
+    "low-rank adaptation",
+    "adapters"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "linear-algebra"
+  ]
+}

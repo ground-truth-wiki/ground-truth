@@ -1,0 +1,13 @@
+{
+  "id": "tasks-extension",
+  "term": "Tasks extension",
+  "def": "The official MCP extension for long-running work, in which the client starts a task and polls it with tasks/get.",
+  "practice": "Moved out of the core in 2026-07-28 (verified Nov 2026).",
+  "aliases": [
+    "tasks/get"
+  ],
+  "chapters": [
+    "mcp-client-features",
+    "long-running-agents"
+  ]
+}

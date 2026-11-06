@@ -1,0 +1,12 @@
+{
+  "id": "handoff",
+  "term": "Handoff",
+  "def": "Transferring control of a conversation or task from one agent to another, with context.",
+  "practice": "Lossy handoffs are a top cause of multi-agent failures.",
+  "aliases": [
+    "handoffs"
+  ],
+  "chapters": [
+    "multi-agent"
+  ]
+}

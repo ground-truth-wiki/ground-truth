@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mcf-1",
+    "chapter": "mcp-client-features",
+    "q": "In MCP 2026-07-28, how does a server ask for more input during a tools/call?",
+    "options": [
+      "It sends its own request to the client",
+      "It returns a result with resultType \"input_required\", and the client retries with the answers",
+      "It opens a GET stream",
+      "It calls sampling"
+    ],
+    "answer": 1,
+    "explain": "Multi round-trip requests replace server-initiated requests (verified Nov 2026)."
+  },
+  {
+    "id": "mcf-2",
+    "chapter": "mcp-client-features",
+    "q": "Which features are deprecated in MCP 2026-07-28?",
+    "options": [
+      "Tools, resources and prompts",
+      "Roots, sampling and logging",
+      "Elicitation and pagination",
+      "Transports"
+    ],
+    "answer": 1,
+    "explain": "Roots, sampling and logging are deprecated (verified Nov 2026)."
+  },
+  {
+    "id": "mcf-3",
+    "chapter": "mcp-client-features",
+    "q": "What must hosts never let servers request through elicitation?",
+    "options": [
+      "A choice between environments",
+      "Confirmation of an action",
+      "Secrets such as passwords or tokens",
+      "A date"
+    ],
+    "answer": 2,
+    "explain": "Credentials go through the authorization flow, never elicitation."
+  }
+]

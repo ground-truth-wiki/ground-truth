@@ -1,0 +1,13 @@
+{
+  "id": "svd",
+  "term": "Singular value decomposition",
+  "def": "Factoring a matrix into rotations and scalings; truncating it gives the best low-rank approximation.",
+  "practice": "The math behind why low-rank adapters work.",
+  "aliases": [
+    "SVD"
+  ],
+  "chapters": [
+    "linear-algebra"
+  ],
+  "abbr": "SVD"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "trajectory",
+  "term": "Trajectory",
+  "def": "The full sequence of an agent’s model calls, tool calls and results for one task.",
+  "practice": "Evaluate trajectories, not just final answers.",
+  "aliases": [
+    "trajectories",
+    "transcript"
+  ],
+  "chapters": [
+    "agent-loop",
+    "evaluating-agents"
+  ]
+}

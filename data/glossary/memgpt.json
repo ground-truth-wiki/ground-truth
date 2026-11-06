@@ -1,0 +1,12 @@
+{
+  "id": "memgpt",
+  "term": "MemGPT",
+  "def": "A design that manages an agent’s context like an operating system’s memory hierarchy, paging information in and out.",
+  "practice": "Now developed as the Letta platform.",
+  "aliases": [
+    "Letta"
+  ],
+  "chapters": [
+    "agent-memory"
+  ]
+}

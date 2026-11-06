@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ch-1",
+    "chapter": "prompt-chaining",
+    "q": "What is the main benefit of chaining prompts?",
+    "options": [
+      "Fewer model calls",
+      "Each step is simpler and can be tested and validated on its own",
+      "Lower latency",
+      "No need for evals"
+    ],
+    "answer": 1,
+    "explain": "Testability and simpler steps are the point."
+  },
+  {
+    "id": "ch-2",
+    "chapter": "prompt-chaining",
+    "q": "What should sit between chained steps?",
+    "options": [
+      "Nothing",
+      "Code checks such as schema validation and allowed values",
+      "A second model only",
+      "A human always"
+    ],
+    "answer": 1,
+    "explain": "Gates stop errors from compounding."
+  },
+  {
+    "id": "ch-3",
+    "chapter": "prompt-chaining",
+    "q": "When is chaining a poor choice?",
+    "options": [
+      "For complex multi-stage tasks",
+      "For trivial tasks a strong model does reliably in one call",
+      "When steps need different models",
+      "When you need testing"
+    ],
+    "answer": 1,
+    "explain": "Extra calls add latency and cost without benefit."
+  }
+]

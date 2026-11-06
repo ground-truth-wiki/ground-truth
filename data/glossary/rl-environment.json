@@ -1,0 +1,13 @@
+{
+  "id": "rl-environment",
+  "term": "RL environment",
+  "def": "A task setup that serves observations to a policy, executes its actions and returns rewards.",
+  "practice": "Most bugs are reward bugs.",
+  "aliases": [
+    "environment hub"
+  ],
+  "chapters": [
+    "what-is-a-harness",
+    "rl-environment-harnesses"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "loss-masking",
+  "term": "Loss masking",
+  "def": "Computing the training loss only on some tokens, such as assistant responses in SFT.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "sft"
+  ]
+}

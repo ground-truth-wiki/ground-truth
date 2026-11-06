@@ -1,0 +1,10 @@
+{
+  "id": "cache-breakpoint",
+  "term": "Cache breakpoint",
+  "def": "A marker, in APIs that support it, where a prompt’s cached prefix ends.",
+  "practice": "Place it after the stable content.",
+  "aliases": [],
+  "chapters": [
+    "prompt-caching"
+  ]
+}

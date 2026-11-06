@@ -1,0 +1,13 @@
+{
+  "id": "sandbox",
+  "term": "Sandbox",
+  "def": "An isolated execution environment that limits what code can read, write and reach on the network.",
+  "practice": "Default-deny egress is the most important setting.",
+  "aliases": [
+    "sandboxing",
+    "sandboxes"
+  ],
+  "chapters": [
+    "sandboxes"
+  ]
+}

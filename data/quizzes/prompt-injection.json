@@ -1,0 +1,41 @@
+[
+  {
+    "id": "inj-1",
+    "chapter": "prompt-injection",
+    "q": "Which defense actually stops an exfiltration attack rather than only making it less likely?",
+    "options": [
+      "A system prompt telling the model to ignore instructions in documents",
+      "Spotlighting untrusted text",
+      "An egress allowlist that blocks unapproved destinations",
+      "Asking the model to be careful"
+    ],
+    "answer": 2,
+    "explain": "Removing the capability, here the way out, stops the attack regardless of what the model is persuaded to do."
+  },
+  {
+    "id": "inj-2",
+    "chapter": "prompt-injection",
+    "q": "What are the three legs of the lethal trifecta?",
+    "options": [
+      "Speed, cost and quality",
+      "Private data access, exposure to untrusted content and a way to send data out",
+      "Tools, memory and planning",
+      "Users, models and servers"
+    ],
+    "answer": 1,
+    "explain": "Remove any one and that class of data theft fails."
+  },
+  {
+    "id": "inj-3",
+    "chapter": "prompt-injection",
+    "q": "A summarization agent reads web pages. Which change best reduces its blast radius?",
+    "options": [
+      "A longer system prompt",
+      "Removing its email and HTTP-send tools, since summarizing does not need them",
+      "A larger model",
+      "Higher temperature"
+    ],
+    "answer": 1,
+    "explain": "Least privilege: a hijacked summarizer without send tools has nothing dangerous to do."
+  }
+]

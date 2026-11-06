@@ -1,0 +1,14 @@
+{
+  "id": "embedding",
+  "term": "Embedding",
+  "def": "A vector representation of text, images or other data in which similar meanings are close together.",
+  "practice": "Choose by in-domain retrieval evals, not leaderboard rank alone.",
+  "aliases": [
+    "embeddings",
+    "vector embedding"
+  ],
+  "chapters": [
+    "embeddings",
+    "representation-learning"
+  ]
+}

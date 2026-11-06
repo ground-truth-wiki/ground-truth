@@ -1,0 +1,10 @@
+{
+  "id": "goodput",
+  "term": "Goodput",
+  "def": "Throughput that meets latency targets, rather than raw tokens per second.",
+  "practice": "The honest capacity number for an SLO-bound service.",
+  "aliases": [],
+  "chapters": [
+    "latency-throughput"
+  ]
+}

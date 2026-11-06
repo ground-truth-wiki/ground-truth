@@ -1,0 +1,10 @@
+{
+  "id": "group-relative-advantage",
+  "term": "Group-relative advantage",
+  "def": "A sample’s reward compared with the mean of a group of samples for the same prompt, as in GRPO.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "rlvr-reasoning"
+  ]
+}

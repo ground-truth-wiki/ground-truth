@@ -1,0 +1,13 @@
+{
+  "id": "prefill",
+  "term": "Prefill",
+  "def": "The inference phase that processes the whole prompt in parallel and fills the KV cache.",
+  "practice": "Compute-bound; dominates time to first token for long prompts.",
+  "aliases": [
+    "prompt processing"
+  ],
+  "chapters": [
+    "inference-fundamentals",
+    "kv-cache"
+  ]
+}

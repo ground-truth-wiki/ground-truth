@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qna-1",
+    "chapter": "new-architectures",
+    "q": "About how fast did Epoch AI estimate algorithmic progress cut the compute needed for fixed performance?",
+    "options": [
+      "Halving every 8 years",
+      "Halving roughly every 8 months",
+      "Doubling yearly",
+      "No change"
+    ],
+    "answer": 1,
+    "explain": "Ho et al., 2024."
+  },
+  {
+    "id": "qna-2",
+    "chapter": "new-architectures",
+    "q": "Which is an efficiency trend in architectures?",
+    "options": [
+      "Removing attention entirely in all models",
+      "Hybrids with a few attention layers plus recurrent or windowed layers",
+      "Bigger vocabularies only",
+      "More dense layers"
+    ],
+    "answer": 1,
+    "explain": "Efficiency with recall."
+  },
+  {
+    "id": "qna-3",
+    "chapter": "new-architectures",
+    "q": "Why revisit cost-based design decisions yearly?",
+    "options": [
+      "Tradition",
+      "The cost of a given capability falls quickly",
+      "Prices rise",
+      "Regulation requires it"
+    ],
+    "answer": 1,
+    "explain": "Yesterday’s too-expensive option may be cheap now."
+  }
+]

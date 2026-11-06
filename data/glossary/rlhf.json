@@ -1,0 +1,13 @@
+{
+  "id": "rlhf",
+  "term": "Reinforcement learning from human feedback",
+  "def": "Training a reward model on human preferences and optimizing the policy against it with RL.",
+  "practice": "The technique that made assistants broadly useful.",
+  "aliases": [
+    "RLHF"
+  ],
+  "chapters": [
+    "preference-optimization"
+  ],
+  "abbr": "RLHF"
+}

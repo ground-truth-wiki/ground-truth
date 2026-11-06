@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b1-2",
+    "chapter": "probability-information",
+    "q": "Lower perplexity means a language model…",
+    "options": [
+      "generates longer text",
+      "assigns higher probability to the text being measured",
+      "uses fewer parameters",
+      "samples more randomly"
+    ],
+    "answer": 1,
+    "explain": "Perplexity is the exponential of cross-entropy on the text; lower is better on the same data and tokenizer."
+  },
+  {
+    "id": "qpi-1",
+    "chapter": "probability-information",
+    "q": "What is the entropy of a uniform choice among four outcomes?",
+    "options": [
+      "1 bit",
+      "2 bits",
+      "4 bits",
+      "0.25 bits"
+    ],
+    "answer": 1,
+    "explain": "log₂ 4 = 2."
+  },
+  {
+    "id": "qpi-2",
+    "chapter": "probability-information",
+    "q": "What does cross-entropy loss punish most?",
+    "options": [
+      "Hesitant correct answers",
+      "Confident wrong predictions",
+      "Long outputs",
+      "Rare tokens"
+    ],
+    "answer": 1,
+    "explain": "−ln p grows sharply as p falls."
+  },
+  {
+    "id": "qpi-3",
+    "chapter": "probability-information",
+    "q": "Why not compare perplexities across models with different tokenizers?",
+    "options": [
+      "They are secret",
+      "Tokens differ, so per-token perplexities measure different units",
+      "Perplexity is always equal",
+      "It is illegal"
+    ],
+    "answer": 1,
+    "explain": "Normalize by characters or bytes instead."
+  }
+]

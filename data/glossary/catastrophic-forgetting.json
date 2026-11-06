@@ -1,0 +1,10 @@
+{
+  "id": "catastrophic-forgetting",
+  "term": "Catastrophic forgetting",
+  "def": "A model losing previously learned abilities after fine-tuning on new data.",
+  "practice": "Check general capabilities after every fine-tune.",
+  "aliases": [],
+  "chapters": [
+    "fine-tuning-practice"
+  ]
+}

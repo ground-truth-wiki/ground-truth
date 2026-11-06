@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dfw-1",
+    "chapter": "data-flywheel",
+    "q": "Which feedback signal makes the best labeled example?",
+    "options": [
+      "A thumbs-up",
+      "A user’s edit or correction of the output",
+      "Session length",
+      "Page views"
+    ],
+    "answer": 1,
+    "explain": "The corrected version is a target."
+  },
+  {
+    "id": "dfw-2",
+    "chapter": "data-flywheel",
+    "q": "What stops a data flywheel from turning?",
+    "options": [
+      "Too many users",
+      "Data that is logged but never curated, labeled or used",
+      "Using evals",
+      "Shipping often"
+    ],
+    "answer": 1,
+    "explain": "Curation needs an owner."
+  },
+  {
+    "id": "dfw-3",
+    "chapter": "data-flywheel",
+    "q": "Why be careful training on your own model’s outputs?",
+    "options": [
+      "It is illegal",
+      "It can reinforce the model’s own mistakes",
+      "It is too slow",
+      "It uses no data"
+    ],
+    "answer": 1,
+    "explain": "Prefer human-corrected data and evaluate on held-out real traffic."
+  }
+]

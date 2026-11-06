@@ -1,0 +1,13 @@
+{
+  "id": "active-parameters",
+  "term": "Active parameters",
+  "def": "The parameters actually used to process one token in a sparse model such as an MoE.",
+  "practice": "Use active parameters for FLOP estimates and total parameters for memory.",
+  "aliases": [
+    "active params"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "numbers-to-know"
+  ]
+}

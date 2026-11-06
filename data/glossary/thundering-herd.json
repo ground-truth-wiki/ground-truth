@@ -1,0 +1,10 @@
+{
+  "id": "thundering-herd",
+  "term": "Thundering herd",
+  "def": "Many clients retrying or reconnecting at once and overwhelming a recovering service.",
+  "practice": "Jitter and backoff prevent it.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

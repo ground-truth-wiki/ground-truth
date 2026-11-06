@@ -1,0 +1,10 @@
+{
+  "id": "gvisor",
+  "term": "gVisor",
+  "def": "A user-space kernel that intercepts a container’s system calls, shrinking the host kernel’s attack surface.",
+  "practice": "Stronger than plain containers, lighter than VMs.",
+  "aliases": [],
+  "chapters": [
+    "sandboxes"
+  ]
+}

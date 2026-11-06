@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pf-1",
+    "chapter": "prompting-fundamentals",
+    "q": "Why separate instructions and data with tags or headings?",
+    "options": [
+      "It saves tokens",
+      "So the model can tell what to do from what to work on",
+      "It is required by all APIs",
+      "It speeds decoding"
+    ],
+    "answer": 1,
+    "explain": "Clear structure prevents material being mistaken for instructions."
+  },
+  {
+    "id": "pf-2",
+    "chapter": "prompting-fundamentals",
+    "q": "Which instruction usually works better?",
+    "options": [
+      "“Don’t use bullet points.”",
+      "“Write in flowing prose paragraphs.”",
+      "“No lists!!!”",
+      "“Avoid formatting.”"
+    ],
+    "answer": 1,
+    "explain": "Say what to do; negative instructions leave the alternative unspecified."
+  },
+  {
+    "id": "pf-3",
+    "chapter": "prompting-fundamentals",
+    "q": "How should you test a prompt change?",
+    "options": [
+      "On one input",
+      "On a set of representative inputs, comparing before and after",
+      "By intuition",
+      "Only in production"
+    ],
+    "answer": 1,
+    "explain": "Variance between inputs is the norm."
+  }
+]

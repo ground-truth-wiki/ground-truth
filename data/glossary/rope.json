@@ -1,0 +1,13 @@
+{
+  "id": "rope",
+  "term": "Rotary position embedding",
+  "def": "Encoding position by rotating query and key vectors by angles that grow with position, so their dot product reflects relative distance.",
+  "practice": "Context-extension methods such as YaRN work by rescaling its frequencies.",
+  "aliases": [
+    "RoPE"
+  ],
+  "chapters": [
+    "positional-encoding"
+  ],
+  "abbr": "RoPE"
+}

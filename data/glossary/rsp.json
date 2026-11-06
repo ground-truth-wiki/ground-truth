@@ -1,0 +1,14 @@
+{
+  "id": "rsp",
+  "term": "Responsible scaling policy",
+  "def": "A lab policy tying model capability thresholds to required safety and security measures.",
+  "practice": "Read alongside system cards for each release.",
+  "aliases": [
+    "RSP",
+    "frontier safety framework"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks"
+  ],
+  "abbr": "RSP"
+}

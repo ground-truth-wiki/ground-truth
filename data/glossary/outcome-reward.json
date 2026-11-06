@@ -1,0 +1,12 @@
+{
+  "id": "outcome-reward",
+  "term": "Outcome reward",
+  "def": "A reward given for the final result of a trajectory rather than for each step.",
+  "practice": "Simple to check, hard for credit assignment.",
+  "aliases": [
+    "process reward"
+  ],
+  "chapters": [
+    "agentic-rl"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qpe-1",
+    "chapter": "positional-encoding",
+    "q": "What does RoPE make attention scores depend on?",
+    "options": [
+      "Absolute position only",
+      "The relative distance between tokens",
+      "Token frequency",
+      "Vocabulary size"
+    ],
+    "answer": 1,
+    "explain": "Rotations make dot products depend on distance."
+  },
+  {
+    "id": "qpe-2",
+    "chapter": "positional-encoding",
+    "q": "What do Position Interpolation and YaRN do?",
+    "options": [
+      "Shrink vocabularies",
+      "Extend a model’s usable context beyond its training length by rescaling RoPE",
+      "Remove attention",
+      "Quantize weights"
+    ],
+    "answer": 1,
+    "explain": "Usually followed by a short long-document training."
+  },
+  {
+    "id": "qpe-3",
+    "chapter": "positional-encoding",
+    "q": "Why does a long advertised window not guarantee long-context quality?",
+    "options": [
+      "Windows are fake",
+      "Models may still retrieve and use information unevenly across positions",
+      "Tokens expire",
+      "Prices rise"
+    ],
+    "answer": 1,
+    "explain": "Test effective context on your tasks."
+  }
+]

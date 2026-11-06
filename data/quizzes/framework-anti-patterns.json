@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b13-1",
+    "chapter": "framework-anti-patterns",
+    "q": "What is the first test of any agent framework?",
+    "options": [
+      "Its logo",
+      "Whether you can see the exact prompt and request it sends",
+      "Its number of GitHub stars",
+      "Whether it supports every model"
+    ],
+    "answer": 1,
+    "explain": "If you cannot inspect the raw request, you cannot debug it."
+  },
+  {
+    "id": "qfa-1",
+    "chapter": "framework-anti-patterns",
+    "q": "What is the first thing to check when a framework-based agent behaves strangely?",
+    "options": [
+      "The model version only",
+      "The raw trace of what the framework actually sent to the model",
+      "The README",
+      "The CPU"
+    ],
+    "answer": 1,
+    "explain": "Hidden prompts and retries are common causes."
+  },
+  {
+    "id": "qfa-2",
+    "chapter": "framework-anti-patterns",
+    "q": "What is “multi-agent theater”?",
+    "options": [
+      "A UI theme",
+      "Several agents chatting to do a task one agent or a workflow could do",
+      "A benchmark",
+      "A pricing model"
+    ],
+    "answer": 1,
+    "explain": "Extra agents add cost and failure modes."
+  },
+  {
+    "id": "qfa-3",
+    "chapter": "framework-anti-patterns",
+    "q": "How do you keep framework exits cheap?",
+    "options": [
+      "Write prompts in framework-specific formats",
+      "Keep prompts as your own templates and wrap framework calls behind your own interfaces",
+      "Avoid tracing",
+      "Use more layers"
+    ],
+    "answer": 1,
+    "explain": "Isolation makes replacement touch one module."
+  }
+]

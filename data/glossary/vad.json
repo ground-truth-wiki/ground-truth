@@ -1,0 +1,14 @@
+{
+  "id": "vad",
+  "term": "Voice-activity detection",
+  "def": "Detecting when someone is speaking, used to decide when a turn ends.",
+  "practice": "Semantic end-of-turn models beat silence timers.",
+  "aliases": [
+    "VAD",
+    "turn-taking"
+  ],
+  "chapters": [
+    "voice-agents"
+  ],
+  "abbr": "VAD"
+}

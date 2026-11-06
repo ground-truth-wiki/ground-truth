@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rl-1",
+    "chapter": "rl-environment-harnesses",
+    "q": "What does the verifier do in an RL environment harness?",
+    "options": [
+      "Trains the model",
+      "Turns outcomes into rewards, for example by running hidden tests",
+      "Generates tasks",
+      "Serves the model"
+    ],
+    "answer": 1,
+    "explain": "Verifiers define what the policy is rewarded for."
+  },
+  {
+    "id": "rl-2",
+    "chapter": "rl-environment-harnesses",
+    "q": "A coding policy’s reward rises sharply. What should you check before celebrating?",
+    "options": [
+      "GPU temperature",
+      "High-reward rollouts, for reward hacking such as edited tests",
+      "The learning rate only",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Rising reward can mean a loophole was found."
+  },
+  {
+    "id": "rl-3",
+    "chapter": "rl-environment-harnesses",
+    "q": "Why keep verification tests hidden from the policy?",
+    "options": [
+      "To save memory",
+      "If the policy can read the tests, it can target them instead of fixing the bug",
+      "Tests are copyrighted",
+      "They are slow"
+    ],
+    "answer": 1,
+    "explain": "Hidden checks resist gaming."
+  }
+]

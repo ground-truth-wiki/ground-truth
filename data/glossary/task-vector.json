@@ -1,0 +1,12 @@
+{
+  "id": "task-vector",
+  "term": "Task vector",
+  "def": "The difference between a fine-tuned model’s weights and its base, which can be added or combined.",
+  "practice": "",
+  "aliases": [
+    "task arithmetic"
+  ],
+  "chapters": [
+    "distillation-merging"
+  ]
+}

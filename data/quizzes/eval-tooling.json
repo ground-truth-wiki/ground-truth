@@ -1,0 +1,41 @@
+[
+  {
+    "id": "et-1",
+    "chapter": "eval-tooling",
+    "q": "What is the most important workflow property of eval tooling?",
+    "options": [
+      "A dark theme",
+      "How fast a person can turn a bad trace into a new eval case and rerun",
+      "The number of charts",
+      "Vendor size"
+    ],
+    "answer": 1,
+    "explain": "Friction kills the habit."
+  },
+  {
+    "id": "et-2",
+    "chapter": "eval-tooling",
+    "q": "Why prefer OpenTelemetry for traces?",
+    "options": [
+      "It is faster",
+      "Traces stay portable between tools and vendors",
+      "It is required by APIs",
+      "It removes the need for logs"
+    ],
+    "answer": 1,
+    "explain": "Avoid lock-in to one platform’s format."
+  },
+  {
+    "id": "et-3",
+    "chapter": "eval-tooling",
+    "q": "When should a team buy an eval platform?",
+    "options": [
+      "Before reading any traces",
+      "After the workflow is clear and the friction is known",
+      "Never",
+      "Only for chatbots"
+    ],
+    "answer": 1,
+    "explain": "Tools amplify habits; they do not create them."
+  }
+]

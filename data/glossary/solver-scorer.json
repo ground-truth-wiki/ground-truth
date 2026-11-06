@@ -1,0 +1,13 @@
+{
+  "id": "solver-scorer",
+  "term": "Solver and scorer",
+  "def": "In eval harnesses, the solver produces an output for each sample (prompts, tools, agents) and the scorer grades it.",
+  "practice": "Keep them separate so you can swap graders without rerunning models.",
+  "aliases": [
+    "solver",
+    "scorer"
+  ],
+  "chapters": [
+    "eval-harnesses"
+  ]
+}

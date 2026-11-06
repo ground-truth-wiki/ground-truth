@@ -1,0 +1,11 @@
+{
+  "id": "vllm",
+  "term": "vLLM",
+  "def": "An open-source LLM serving engine built around PagedAttention and continuous batching.",
+  "practice": "A common default for self-hosting open models.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "batching-scheduling"
+  ]
+}

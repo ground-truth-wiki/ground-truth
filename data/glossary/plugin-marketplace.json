@@ -1,0 +1,14 @@
+{
+  "id": "plugin-marketplace",
+  "term": "Plugin marketplace",
+  "def": "A catalog from which a harness installs plugins that bundle skills, commands, hooks and MCP servers.",
+  "practice": "Prefer private marketplaces for sensitive work.",
+  "aliases": [
+    "plugins",
+    "plugin"
+  ],
+  "chapters": [
+    "skills-plugins",
+    "claude-code"
+  ]
+}

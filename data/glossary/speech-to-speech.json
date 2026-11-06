@@ -1,0 +1,12 @@
+{
+  "id": "speech-to-speech",
+  "term": "Speech-to-speech model",
+  "def": "A model that takes audio in and produces audio out directly, without a text step.",
+  "practice": "Lower latency and natural tone; harder to inspect.",
+  "aliases": [
+    "realtime speech model"
+  ],
+  "chapters": [
+    "voice-agents"
+  ]
+}

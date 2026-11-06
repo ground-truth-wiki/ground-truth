@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hy-1",
+    "chapter": "hybrid-retrieval",
+    "q": "Which query is most likely to need keyword search?",
+    "options": [
+      "How do I get my money back?",
+      "ERR_CONN_RESET after upgrade",
+      "What is our culture like?",
+      "Tell me about onboarding"
+    ],
+    "answer": 1,
+    "explain": "Exact identifiers are where BM25 beats embeddings."
+  },
+  {
+    "id": "hy-2",
+    "chapter": "hybrid-retrieval",
+    "q": "Why does reciprocal rank fusion not need score calibration?",
+    "options": [
+      "It ignores rankings",
+      "It uses only ranks, not raw scores",
+      "It trains a model",
+      "It uses BM25 only"
+    ],
+    "answer": 1,
+    "explain": "Ranks are comparable across retrievers; raw scores are not."
+  },
+  {
+    "id": "hy-3",
+    "chapter": "hybrid-retrieval",
+    "q": "What does a smaller k in RRF do?",
+    "options": [
+      "Rewards agreement between lists",
+      "Rewards first places more sharply",
+      "Removes documents",
+      "Has no effect"
+    ],
+    "answer": 1,
+    "explain": "With small k, rank 1 dominates the sum."
+  }
+]

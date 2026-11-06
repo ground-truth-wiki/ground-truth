@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qff-1",
+    "chapter": "frontier-families",
+    "q": "What should you compare across model families first?",
+    "options": [
+      "Flagship benchmark headlines",
+      "The tiers you would actually deploy, on your own tasks",
+      "Logos",
+      "Release dates"
+    ],
+    "answer": 1,
+    "explain": "Mid tiers often carry production traffic."
+  },
+  {
+    "id": "qff-2",
+    "chapter": "frontier-families",
+    "q": "Why pin dated model versions instead of aliases?",
+    "options": [
+      "Aliases are slower",
+      "Provider updates behind aliases change behavior without your evals",
+      "They are cheaper",
+      "Required"
+    ],
+    "answer": 1,
+    "explain": "Pin and upgrade deliberately."
+  },
+  {
+    "id": "qff-3",
+    "chapter": "frontier-families",
+    "q": "What do most families’ tiers trade off?",
+    "options": [
+      "Nothing",
+      "Capability against price and speed",
+      "Language against code",
+      "Safety against cost only"
+    ],
+    "answer": 1,
+    "explain": "Routing between tiers is a big cost lever."
+  }
+]

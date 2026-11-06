@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ana-1",
+    "chapter": "research-analyst-agents",
+    "q": "Where should every number in an analyst agent’s answer come from?",
+    "options": [
+      "The model’s memory",
+      "Executed code over the data",
+      "A search engine",
+      "The user"
+    ],
+    "answer": 1,
+    "explain": "Models make arithmetic and aggregation errors."
+  },
+  {
+    "id": "ana-2",
+    "chapter": "research-analyst-agents",
+    "q": "What is a simple, high-value sanity check?",
+    "options": [
+      "Rerunning the prompt",
+      "Reconciling totals against a trusted source such as a finance dashboard",
+      "Adding more charts",
+      "Using a bigger model"
+    ],
+    "answer": 1,
+    "explain": "Reconciliation catches many data errors."
+  },
+  {
+    "id": "ana-3",
+    "chapter": "research-analyst-agents",
+    "q": "How should an analyst agent describe a rise that coincides with a price change?",
+    "options": [
+      "As proof of causation",
+      "As a correlation, noting other possible causes",
+      "By hiding it",
+      "As noise"
+    ],
+    "answer": 1,
+    "explain": "State what the analysis can and cannot show."
+  }
+]

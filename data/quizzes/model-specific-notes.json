@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ms-1",
+    "chapter": "model-specific-notes",
+    "q": "What is the most common silent failure with open-weight models?",
+    "options": [
+      "Too many tokens",
+      "Using the wrong chat template",
+      "Missing GPUs",
+      "Wrong license"
+    ],
+    "answer": 1,
+    "explain": "Template mismatches degrade quality without errors."
+  },
+  {
+    "id": "ms-2",
+    "chapter": "model-specific-notes",
+    "q": "Before switching to a new model version, what should you do?",
+    "options": [
+      "Nothing; versions are compatible",
+      "Run your eval set with the current prompt and compare",
+      "Rewrite every prompt",
+      "Increase temperature"
+    ],
+    "answer": 1,
+    "explain": "Every upgrade can regress; measure first."
+  },
+  {
+    "id": "ms-3",
+    "chapter": "model-specific-notes",
+    "q": "Where do Anthropic’s guides recommend placing long documents?",
+    "options": [
+      "After the question",
+      "Before the question",
+      "In a separate request",
+      "In the output"
+    ],
+    "answer": 1,
+    "explain": "Documents first, then the question, is the documented pattern."
+  }
+]

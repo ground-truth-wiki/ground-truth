@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cc-1",
+    "chapter": "claude-code",
+    "q": "Where should a rule like “never read .env” live in Claude Code?",
+    "options": [
+      "Only in CLAUDE.md",
+      "In a deny permission rule or a hook, so it is enforced",
+      "In the user’s memory",
+      "In a slash command"
+    ],
+    "answer": 1,
+    "explain": "Instructions are requests; deny rules and hooks are enforcement."
+  },
+  {
+    "id": "cc-2",
+    "chapter": "claude-code",
+    "q": "What can a PreToolUse hook do?",
+    "options": [
+      "Change the model",
+      "See the exact tool call and allow it, block it with a reason, or ask the user",
+      "Increase the context window",
+      "Install plugins"
+    ],
+    "answer": 1,
+    "explain": "Hooks enforce policy at fixed lifecycle points."
+  },
+  {
+    "id": "cc-3",
+    "chapter": "claude-code",
+    "q": "When do Claude Code MCP tool definitions get deferred to tool search?",
+    "options": [
+      "Always",
+      "Once they would exceed 10% of the context window",
+      "Never",
+      "Only in headless mode"
+    ],
+    "answer": 1,
+    "explain": "Verified in the November 2026 changelog."
+  }
+]

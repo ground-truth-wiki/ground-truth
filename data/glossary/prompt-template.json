@@ -1,0 +1,13 @@
+{
+  "id": "prompt-template",
+  "term": "Prompt template",
+  "def": "A versioned prompt with named slots filled at runtime.",
+  "practice": "Keeps prompts reviewable and testable.",
+  "aliases": [
+    "templates"
+  ],
+  "chapters": [
+    "prompt-chaining",
+    "prompt-config-management"
+  ]
+}

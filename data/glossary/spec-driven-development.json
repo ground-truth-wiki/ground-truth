@@ -1,0 +1,10 @@
+{
+  "id": "spec-driven-development",
+  "term": "Spec-driven development",
+  "def": "Writing a short, testable specification of goal, constraints, scope and verification before an agent writes code.",
+  "practice": "The spec doubles as the pull request description.",
+  "aliases": [],
+  "chapters": [
+    "working-with-coding-agents"
+  ]
+}

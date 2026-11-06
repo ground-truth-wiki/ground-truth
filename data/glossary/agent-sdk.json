@@ -1,0 +1,13 @@
+{
+  "id": "agent-sdk",
+  "term": "Agent SDK",
+  "def": "A library that packages a working agent harness: loop, tools, context management, permissions and tracing.",
+  "practice": "Claude Agent SDK, OpenAI Agents SDK and Google ADK are examples.",
+  "aliases": [
+    "agent SDKs"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "framework-landscape"
+  ]
+}

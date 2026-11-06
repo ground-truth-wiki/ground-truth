@@ -1,0 +1,10 @@
+{
+  "id": "implicit-feedback",
+  "term": "Implicit feedback",
+  "def": "Behavioral signals of quality such as copying, editing, retrying, abandoning or escalating.",
+  "practice": "Richer and less biased than thumbs.",
+  "aliases": [],
+  "chapters": [
+    "online-evaluation"
+  ]
+}

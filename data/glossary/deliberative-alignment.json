@@ -1,0 +1,10 @@
+{
+  "id": "deliberative-alignment",
+  "term": "Deliberative alignment",
+  "def": "Training reasoning models to consult written safety specifications in their reasoning before answering.",
+  "practice": "OpenAI, 2024.",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training"
+  ]
+}

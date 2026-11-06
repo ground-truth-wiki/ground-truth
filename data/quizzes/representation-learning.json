@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qrl-1",
+    "chapter": "representation-learning",
+    "q": "What does contrastive learning do?",
+    "options": [
+      "Predicts labels",
+      "Pulls matching pairs together and pushes non-matching ones apart in embedding space",
+      "Compresses images",
+      "Generates text"
+    ],
+    "answer": 1,
+    "explain": "InfoNCE-style losses."
+  },
+  {
+    "id": "qrl-2",
+    "chapter": "representation-learning",
+    "q": "What did CLIP learn from?",
+    "options": [
+      "Labeled image classes",
+      "Image and caption pairs",
+      "Audio",
+      "Code"
+    ],
+    "answer": 1,
+    "explain": "Radford et al., 2021."
+  },
+  {
+    "id": "qrl-3",
+    "chapter": "representation-learning",
+    "q": "Why can embedding similarity mislead retrieval?",
+    "options": [
+      "It is random",
+      "Embeddings capture what training rewarded, such as topic, which is not always relevance to a question",
+      "It is too precise",
+      "It ignores words"
+    ],
+    "answer": 1,
+    "explain": "Similar topic is not the same as answering."
+  }
+]

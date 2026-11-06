@@ -1,0 +1,11 @@
+{
+  "id": "shadow-mode",
+  "term": "Shadow mode",
+  "def": "Running a new version silently alongside production to compare outputs without affecting users.",
+  "practice": "Safe first step before a canary.",
+  "aliases": [],
+  "chapters": [
+    "online-evaluation",
+    "ci-cd-for-ai"
+  ]
+}
