@@ -333,6 +333,24 @@ if (D.aliases) for (const [from, to] of Object.entries(aliases)) {
   if (!chapterIds.has(to) && !engine.pages.includes(to)) err('data/aliases.json', line, `alias "${from}" points to "${to}", which does not exist`);
 }
 
+// ----- Coverage map -----
+// docs/COVERAGE_MAP.md lists every chapter with its status; planned topics
+// have no file yet. Warn when the map and the frontmatter drift apart.
+if (exists('docs/COVERAGE_MAP.md')) {
+  const MAP = 'docs/COVERAGE_MAP.md';
+  const mapped = new Map();
+  readText(MAP).split('\n').forEach((l, i) => {
+    const m = l.match(/^\| ([0-9.]+) \| (?:\[[^\]]*\]\(\.\.\/content\/[^/]+\/([a-z0-9-]+)\.md\)|[^|]*\(`([a-z0-9-]+)`\)) \| (full|seed|planned) \|/);
+    if (m) mapped.set(m[2] || m[3], { status: m[4], line: i + 1, order: m[1] });
+  });
+  for (const c of chapters) {
+    const row = mapped.get(c.meta.id);
+    if (!row) warn(MAP, 1, `chapter "${c.meta.id}" (${c.file}) is not in the coverage map`, 'coverage map');
+    else if (row.status !== c.meta.status) warn(MAP, row.line, `"${c.meta.id}" is ${row.status} in the map but ${c.meta.status} in its frontmatter`, 'coverage map');
+  }
+  for (const [id, row] of mapped) if (row.status !== 'planned' && !chapterIds.has(id)) warn(MAP, row.line, `"${id}" is in the map as ${row.status}, but no such chapter exists`, 'coverage map');
+}
+
 // ----- The built page -----
 if (!errors.length) {
   try { renderPage(loadProject(), { mode: 'cdn' }); }
