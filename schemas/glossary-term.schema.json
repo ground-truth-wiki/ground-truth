@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary-term.schema.json",
+  "title": "data/glossary/<id>.json",
+  "description": "One glossary term. The file name is the id.",
+  "type": "object",
+  "required": ["id", "term", "def", "practice", "aliases", "chapters"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "#/$defs/id" },
+    "term": { "$ref": "#/$defs/text" },
+    "def": { "$ref": "#/$defs/text", "description": "One-line definition." },
+    "practice": { "type": "string", "description": "One line on what it means in practice. Empty is allowed but reported by the validator." },
+    "aliases": { "type": "array", "items": { "$ref": "#/$defs/text" }, "uniqueItems": true, "description": "Other spellings the engine links automatically." },
+    "chapters": { "$ref": "#/$defs/ids", "description": "Chapters that use the term." },
+    "abbr": { "$ref": "#/$defs/text", "description": "The acronym, if the term has one. Feeds the acronym decoder." }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

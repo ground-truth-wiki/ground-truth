@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "timeline.schema.json",
+  "title": "data/timeline.json",
+  "description": "The Timeline page: eras, tracks and dated events.",
+  "type": "object",
+  "required": ["eras", "tracks", "events"],
+  "additionalProperties": false,
+  "properties": {
+    "eras": { "type": "array", "items": { "type": "object", "required": ["id", "title", "from", "to", "blurb", "chapters"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "from": { "$ref": "#/$defs/text" }, "to": { "$ref": "#/$defs/text" }, "blurb": { "$ref": "#/$defs/text" }, "chapters": { "$ref": "#/$defs/ids" } } } },
+    "tracks": { "type": "array", "items": { "type": "object", "required": ["id", "label"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/text" } } } },
+    "events": { "type": "array", "items": { "type": "object", "required": ["id", "date", "approx", "track", "title", "text", "chapters", "canon"], "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "date": { "type": "string", "pattern": "^[0-9]{4}(-(0[1-9]|1[0-2]))?(-[0-3][0-9])?$", "description": "YYYY, YYYY-MM or YYYY-MM-DD." },
+        "approx": { "type": "boolean", "description": "true when the date is uncertain." },
+        "track": { "$ref": "#/$defs/id" },
+        "title": { "$ref": "#/$defs/text" },
+        "text": { "$ref": "#/$defs/text" },
+        "chapters": { "$ref": "#/$defs/ids" },
+        "canon": { "type": "boolean", "description": "Part of the Canon of landmark papers." },
+        "ref": { "$ref": "#/$defs/text", "description": "The citation, for Canon entries." }
+      } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

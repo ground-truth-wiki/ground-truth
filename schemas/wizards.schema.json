@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wizards.schema.json",
+  "title": "data/wizards.json",
+  "description": "Decision wizards: question nodes with options that lead to other nodes, and result nodes.",
+  "type": "object",
+  "required": ["wizards"],
+  "additionalProperties": false,
+  "properties": {
+    "wizards": { "type": "array", "items": { "type": "object", "required": ["id", "title", "blurb", "start", "nodes"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "blurb": { "$ref": "#/$defs/text" }, "start": { "type": "string", "minLength": 1 },
+        "nodes": { "type": "object", "minProperties": 1, "additionalProperties": { "oneOf": [
+          { "type": "object", "required": ["q", "options"], "additionalProperties": false, "properties": { "q": { "$ref": "#/$defs/text" },
+            "options": { "type": "array", "minItems": 2, "items": { "type": "array", "prefixItems": [{ "$ref": "#/$defs/text" }, { "type": "string", "minLength": 1 }], "minItems": 2, "maxItems": 2, "description": "[label, next node id]" } } } },
+          { "type": "object", "required": ["result", "why"], "additionalProperties": false, "properties": { "result": { "$ref": "#/$defs/text" }, "why": { "$ref": "#/$defs/text" }, "links": { "$ref": "#/$defs/ids" } } }
+        ] } } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "didyouknow.schema.json",
+  "title": "data/didyouknow.json",
+  "description": "Short facts for the home page, each linked to its chapter.",
+  "type": "object",
+  "required": ["facts"],
+  "additionalProperties": false,
+  "properties": {
+    "facts": { "type": "array", "items": { "type": "object", "required": ["text", "chapter"], "additionalProperties": false,
+      "properties": { "text": { "$ref": "#/$defs/text" }, "chapter": { "$ref": "#/$defs/id" } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

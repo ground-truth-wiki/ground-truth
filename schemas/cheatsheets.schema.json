@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cheatsheets.schema.json",
+  "title": "data/cheatsheets.json",
+  "description": "Cheat sheets: one-screen lists of principles, each with its reason.",
+  "type": "object",
+  "required": ["sheets"],
+  "additionalProperties": false,
+  "properties": {
+    "sheets": { "type": "array", "items": { "type": "object", "required": ["id", "title", "chapter", "items"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "chapter": { "$ref": "#/$defs/id" },
+        "items": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["t", "d"], "additionalProperties": false, "properties": { "t": { "$ref": "#/$defs/text", "description": "The principle." }, "d": { "$ref": "#/$defs/text", "description": "Its reason." } } } } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

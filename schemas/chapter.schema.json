@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chapter.schema.json",
+  "title": "Chapter frontmatter",
+  "description": "The YAML frontmatter at the top of every file in content/. Each field becomes a data-* attribute the engine reads.",
+  "type": "object",
+  "required": ["id", "book", "order", "title", "level", "stability", "reviewed", "status", "tags", "visuals"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "#/$defs/id", "description": "Permanent, lowercase, hyphenated. Also the file name and the URL. Never change it; if you must, add the old id to data/aliases.json." },
+    "book": { "type": "integer", "minimum": 0, "description": "Book number, as in data/books.json." },
+    "order": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$", "description": "Position inside the book, such as \"9.2\". A quoted string, so \"9.10\" stays 9.10. Insert between two chapters with a third part, such as \"9.2.1\"." },
+    "title": { "type": "string", "minLength": 1 },
+    "level": { "enum": ["foundation", "practitioner", "expert", "frontier"] },
+    "stability": { "enum": ["evergreen", "moving", "volatile"], "description": "How fast the facts go stale. Sets the review schedule: volatile after 3 months, moving after 6, evergreen after 12." },
+    "reviewed": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$", "description": "Year and month of the last full review, quoted, such as \"2026-11\"." },
+    "status": { "enum": ["full", "seed"], "description": "seed: TL;DR, key ideas and planned visuals only. full: the complete chapter template." },
+    "tags": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+    "visuals": {
+      "type": "array",
+      "uniqueItems": true,
+      "description": "Every visual in the body, as \"visual-id:form\". The form is the viz component, or the Mermaid diagram type (flowchart, sequence, state and so on).",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$" }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  }
+}
