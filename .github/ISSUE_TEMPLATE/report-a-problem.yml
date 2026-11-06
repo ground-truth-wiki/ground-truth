@@ -1,0 +1,42 @@
+name: Report a problem
+description: Something on a page is wrong, unclear or out of date.
+title: "Problem: "
+labels: [needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A precise report with a source is the fastest way to get a page fixed. Security problems go to the private report instead (see the issue menu).
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The chapter link or id, such as https://…/agent-loop/ or "agent-loop".
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the sentence, number or visual, and say what is wrong with it.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A source a reader can check, such as a paper (title, first author, year), official documentation or release notes. If you don't have one, say so.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - Incorrect
+        - Out of date
+        - Unclear or misleading
+        - Missing something important
+        - Broken link, visual or quiz
+    validations:
+      required: true
