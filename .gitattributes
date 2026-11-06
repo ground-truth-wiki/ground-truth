@@ -1,0 +1,7 @@
+# Normalize line endings so builds are byte-identical on every OS
+* text=auto eol=lf
+# Never touch the original source files
+source/** -text
+*.png binary
+*.jpg binary
+*.woff2 binary
