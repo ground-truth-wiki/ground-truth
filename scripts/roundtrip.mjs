@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 // Builds the page and compares it with source/bible-v2.0.0.html.
 //
-// The goal is a byte-identical page. If the bytes differ, a structural
-// comparison prints every difference: chapter set, attributes and bodies,
-// data (deep-equal), styles, engine and segment order.
+// The goal is a byte-identical page. Approved changes since the migration
+// (the rename, marked engine changes) are listed in
+// build/roundtrip-allowlist.json: each entry is an exact "from" -> "to"
+// replacement inside one scope, with the number of times it must apply. The
+// expected page is the source with those replacements, so any other
+// difference still fails.
+//
+// If the bytes differ, a structural comparison prints every difference:
+// chapter set, attributes and bodies, data (deep-equal), styles, engine and
+// segment order.
 //
 //   node scripts/roundtrip.mjs
 import crypto from 'node:crypto';
 import fs from 'node:fs';
-import { abs, readJSON, writeText, fail } from './lib/fsutil.mjs';
+import { abs, exists, readJSON, writeText, fail } from './lib/fsutil.mjs';
 import { loadProject } from './lib/project.mjs';
 import { renderPage } from './lib/page.mjs';
 import { scanSegments, isChapter, isData, isEngine } from './lib/segments.mjs';
@@ -24,10 +31,36 @@ try {
 writeText('dist/ground-truth.html', built);
 
 const manifest = readJSON('build/manifest.json');
-const expected = fs.readFileSync(abs(manifest.source.file), 'utf8');
+const source = fs.readFileSync(abs(manifest.source.file), 'utf8');
+const ALLOWLIST = 'build/roundtrip-allowlist.json';
+const entries = exists(ALLOWLIST) ? readJSON(ALLOWLIST).entries : [];
+
+const scopeOf = (s) => isChapter(s) ? ['chapters', `chapter:${s.attrs['data-id']}`]
+  : isData(s) ? ['data', `data:${s.attrs.id}`]
+  : isEngine(s) ? ['engine'] : s.kind === 'style' ? ['styles'] : ['shell'];
+
+function applyAllowlist(html) {
+  const segs = scanSegments(html).map((s) => ({ scopes: scopeOf(s), text: html.slice(s.start, s.end) }));
+  const problems = [];
+  entries.forEach((e, i) => {
+    let n = 0;
+    for (const s of segs) {
+      if (!s.scopes.includes(e.scope)) continue;
+      const parts = s.text.split(e.from);
+      n += parts.length - 1;
+      s.text = parts.join(e.to);
+    }
+    if (n !== e.count) problems.push(`allowlist entry ${i + 1} (${e.scope}): expected ${e.count} occurrence(s) of ${JSON.stringify(e.from.slice(0, 60))}, found ${n}`);
+  });
+  if (problems.length) fail(`${ALLOWLIST} no longer matches the source:\n  ${problems.join('\n  ')}`);
+  return segs.map((s) => s.text).join('');
+}
+const expected = applyAllowlist(source);
+const changes = entries.reduce((a, e) => a + e.count, 0);
+const versus = entries.length ? `the source plus ${changes} approved replacement(s) from ${entries.length} allowlist entries` : 'the source';
 
 if (built === expected) {
-  console.log(`round trip: byte-identical (${Buffer.byteLength(built)} bytes, sha256 ${sha(built)})`);
+  console.log(`round trip: byte-identical to ${versus} (${Buffer.byteLength(built)} bytes, sha256 ${sha(built)})`);
   process.exit(0);
 }
 
@@ -75,6 +108,6 @@ const htmlA = A.filter((s) => s.kind === 'html').map((s) => s.text).join('\u0000
 const htmlB = B.filter((s) => s.kind === 'html').map((s) => s.text).join('\u0000');
 if (htmlA !== htmlB) note('static HTML between elements differs');
 
-console.log(`round trip: NOT byte-identical (expected ${Buffer.byteLength(expected)} bytes, built ${Buffer.byteLength(built)})`);
+console.log(`round trip: NOT byte-identical to ${versus} (expected ${Buffer.byteLength(expected)} bytes, built ${Buffer.byteLength(built)})`);
 console.log(diffs.length ? diffs.map((d) => '  - ' + d).join('\n') : '  - no structural difference found; the bytes differ only in whitespace or ordering outside elements');
 process.exit(1);
