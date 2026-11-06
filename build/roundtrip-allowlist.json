@@ -840,6 +840,13 @@
       "to": "apocrypha: 'Debates'",
       "count": 1,
       "change": "engine: debates name"
+    },
+    {
+      "scope": "engine",
+      "from": "const LIBS = {\n  mathjax:",
+      "to": "const LIBS = W.GT_LIBS || { /* gt: self-hosted copies when the build provides them */\n  mathjax:",
+      "count": 1,
+      "change": "engine: self-hosted MathJax and Mermaid"
     }
   ]
 }

@@ -24,11 +24,11 @@ const sha = (s) => crypto.createHash('sha256').update(s).digest('hex');
 
 let built;
 try {
-  built = renderPage(loadProject());
+  built = renderPage(loadProject(), { mode: 'cdn' });
 } catch (e) {
   fail(e.message);
 }
-writeText('dist/ground-truth.html', built);
+writeText('dist/ground-truth-cdn.html', built);
 
 const manifest = readJSON('build/manifest.json');
 const source = fs.readFileSync(abs(manifest.source.file), 'utf8');

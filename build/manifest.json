@@ -9,7 +9,11 @@
     "styles": "<!-- @styles -->",
     "chapters": "<!-- @chapters -->",
     "data": "<!-- @data -->",
-    "engine": "<!-- @engine -->"
+    "engine": "<!-- @engine -->",
+    "fonts": "<!-- @fonts -->",
+    "marked": "<!-- @lib:marked -->",
+    "highlight": "<!-- @lib:highlight -->",
+    "lazy": "<!-- @lib:lazy -->"
   },
   "styles": {
     "file": "engine/styles.css",
@@ -120,5 +124,11 @@
         "file": "data/aliases.json"
       }
     ]
+  },
+  "cdn": {
+    "note": "The original CDN tags, emitted by \"--cdn\" builds so the round trip can compare with the source.",
+    "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&display=swap\">",
+    "marked": "<script src=\"https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js\"></script>",
+    "highlight": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js\"></script>"
   }
 }
