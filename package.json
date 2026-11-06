@@ -12,7 +12,8 @@
     "build": "node scripts/build.mjs",
     "build:cdn": "node scripts/build.mjs --cdn",
     "roundtrip": "node scripts/roundtrip.mjs",
-    "dev": "node scripts/dev.mjs"
+    "dev": "node scripts/dev.mjs",
+    "validate": "node scripts/validate.mjs"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "5.3.0",
