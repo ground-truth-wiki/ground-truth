@@ -22,13 +22,13 @@ Interviews, design reviews and conference conversations reward precise framing a
 Talking shop is a jam session: you need the standard tunes (the hard questions), your own phrasing (the framing), and the confidence to say “I don’t know, but here is how I would find out”.
 
 ```viz
-{"id":"debate-map","component":"graph","title":"Live debates and how they connect","caption":"Each node is a debate the Bible covers with arguments on both sides. Click to read it.","alt":"Graph of connected AI debates: scaling, reasoning, agents versus workflows, RAG versus long context, open versus closed, and safety frameworks.","data":"illustrative","per_row":3,"node_w":180,"nodes":[{"id":"scale","label":"Does scaling continue?","link":"#scaling-laws"},{"id":"reason","label":"Do models really reason?","link":"#reasoning-models"},{"id":"agents","label":"Agents or workflows?","link":"#what-is-an-agent"},{"id":"rag","label":"RAG or long context?","link":"#long-context"},{"id":"open","label":"Open or closed?","link":"#open-weight-frontier"},{"id":"safety","label":"Voluntary or legal safety rules?","link":"#frontier-safety-frameworks"}],"edges":[["scale","reason"],["reason","agents"],["scale","open"],["open","safety"],["agents","rag"]]}
+{"id":"debate-map","component":"graph","title":"Live debates and how they connect","caption":"Each node is a debate Ground Truth covers with arguments on both sides. Click to read it.","alt":"Graph of connected AI debates: scaling, reasoning, agents versus workflows, RAG versus long context, open versus closed, and safety frameworks.","data":"illustrative","per_row":3,"node_w":180,"nodes":[{"id":"scale","label":"Does scaling continue?","link":"#scaling-laws"},{"id":"reason","label":"Do models really reason?","link":"#reasoning-models"},{"id":"agents","label":"Agents or workflows?","link":"#what-is-an-agent"},{"id":"rag","label":"RAG or long context?","link":"#long-context"},{"id":"open","label":"Open or closed?","link":"#open-weight-frontier"},{"id":"safety","label":"Voluntary or legal safety rules?","link":"#frontier-safety-frameworks"}],"edges":[["scale","reason"],["reason","agents"],["scale","open"],["open","safety"],["agents","rag"]]}
 ```
 
 ## How it works
 **How experts frame problems.** Which layer is this? What is the eval? What does it cost and how fast is it? What is in the context when it fails? What can a manipulated model reach?
 
-**Hot takes with counterarguments.** Every chapter ends with one; the [Apocrypha](#apocrypha) collects them.
+**Hot takes with counterarguments.** Every chapter ends with one; the [Debates](#apocrypha) page collects them.
 
 **Red flags of shallow knowledge.**
 
@@ -118,11 +118,11 @@ talking-shop
 ```
 
 ## Go deeper
-- The [Apocrypha](#apocrypha) and every chapter’s “Talk like an expert” section.
+- The [Debates](#apocrypha) page and every chapter’s “Talk like an expert” section.
 
 ## Related
 - [Interview prep](#interview-prep)
-- [Lexicon](#lexicon-guide)
+- [Glossary](#lexicon-guide)
 - [The Canon](#the-canon)
 - [Open problems and big debates](#open-problems)
 - [Decision guides](#decision-guides)

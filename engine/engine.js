@@ -339,7 +339,7 @@ function showPop(a) {
   const p = el('div', { class: 'pop', role: 'tooltip', id: 'term-pop' },
     el('h4', { text: t.term }), el('p', { text: t.def }),
     t.practice ? el('p', {}, el('span', { class: 'k', text: 'In practice: ' }), t.practice) : null,
-    el('a', { href: '#term-' + t.id, class: 'small' }, 'Open in the Lexicon'));
+    el('a', { href: '#term-' + t.id, class: 'small' }, 'Open in the Glossary'));
   p.addEventListener('mouseenter', () => clearTimeout(Pop.t));
   p.addEventListener('mouseleave', () => { Pop.t = setTimeout(hidePop, 250); });
   D.body.append(p);
@@ -454,9 +454,9 @@ function buildIndex() {
   PRESETS.forEach(p => add({ type: 'tool', title: p.title, href: '#tool-' + p.id, sub: p.blurb, body: p.blurb || '' }));
   WIZARDS.forEach(w => add({ type: 'tool', title: w.title, href: '#tool-' + w.id, sub: w.blurb, body: w.blurb || '' }));
   MATRICES.forEach(m => add({ type: 'tool', title: m.title, href: '#matrix-' + m.id, sub: 'Comparison matrix', body: (m.note || '') + ' ' + (m.rows || []).map(r => Object.values(r).join(' ')).join(' ') }));
-  SHEETS.forEach(s => add({ type: 'sheet', title: s.title, href: '#cmd-' + s.id, sub: 'Commandments', body: (s.items || []).map(i => i.t + ' ' + (i.d || '')).join(' ') }));
+  SHEETS.forEach(s => add({ type: 'sheet', title: s.title, href: '#cmd-' + s.id, sub: 'Cheat sheets', body: (s.items || []).map(i => i.t + ' ' + (i.d || '')).join(' ') }));
   (TIMELINE.events || []).forEach(e => add({ type: 'event', title: e.date.slice(0, 4) + ': ' + e.title, href: '#genesis', scroll: 'ev-' + e.id, sub: e.text, body: e.text }));
-  const pages = [['Home', 'home'], ['Lexicon', 'lexicon'], ['Flashcards', 'flashcards'], ['Genesis timeline', 'genesis'], ['Learning paths', 'paths'], ['Quizzes', 'quizzes'], ['Workshop: playgrounds, calculators and wizards', 'workshop'], ['Comparison matrices', 'matrices'], ['The Commandments', 'commandments'], ['The Apocrypha', 'apocrypha'], ["What's new", 'whats-new'], ['Extend me', 'extend-me'], ['Preferences', 'prefs'], ['Your progress', 'progress'], ['Visuals gallery', 'visuals'], ['Visual legend', 'visual-legend']];
+  const pages = [['Home', 'home'], ['Glossary', 'lexicon'], ['Flashcards', 'flashcards'], ['Timeline', 'genesis'], ['Learning paths', 'paths'], ['Quizzes', 'quizzes'], ['Workshop: playgrounds, calculators and wizards', 'workshop'], ['Comparison matrices', 'matrices'], ['Cheat sheets', 'commandments'], ['Debates', 'apocrypha'], ["What's new", 'whats-new'], ['Extend me', 'extend-me'], ['Preferences', 'prefs'], ['Your progress', 'progress'], ['Visuals gallery', 'visuals'], ['Visual legend', 'visual-legend']];
   pages.forEach(p => add({ type: 'page', title: p[0], href: '#' + p[1], sub: 'Page', body: '' }));
   return IDX;
 }
@@ -1660,7 +1660,7 @@ function buildNav() {
   nav.append(el('div', { class: 'row only-mobile-row', style: 'justify-content:space-between;padding:0 4px 6px' }, el('b', { class: 'small', text: 'Contents' }), el('button', { class: 'icon-btn only-mobile', type: 'button', 'aria-label': 'Close contents', onclick: closeDrawers }, icon('ic-x'))));
   const f = el('input', { type: 'search', placeholder: 'Filter chapters', 'aria-label': 'Filter chapters' });
   nav.append(el('div', { class: 'nav-filter' }, f));
-  const links = [['Home', 'home'], ['Lexicon', 'lexicon'], ['Genesis', 'genesis'], ['Paths', 'paths'], ['Workshop', 'workshop'], ['Visuals', 'visuals'], ['Quizzes', 'quizzes']];
+  const links = [['Home', 'home'], ['Glossary', 'lexicon'], ['Timeline', 'genesis'], ['Paths', 'paths'], ['Workshop', 'workshop'], ['Visuals', 'visuals'], ['Quizzes', 'quizzes']];
   nav.append(el('div', { class: 'nav-links' }, ...links.map(l => el('a', { href: '#' + l[1], 'data-page': l[1], text: l[0] }))));
   PARTS.forEach(p => {
     const tid = uid('pt');
@@ -1775,11 +1775,11 @@ function renderResults() {
     const rec = Store.s.recent || [];
     if (rec.length) { list.append(el('div', { class: 'pal-group', role: 'presentation', text: 'Recent searches' })); rec.slice(0, 6).forEach(r => addOpt(list, { type: 'recent', title: r, sub: 'Search again', run: () => { $('#pal-input').value = r; renderResults(); } }, [])); }
     list.append(el('div', { class: 'pal-group', role: 'presentation', text: 'Jump to' }));
-    [['Start here', '#' + (CH[0] ? CH[0].id : 'home')], ['Lexicon', '#lexicon'], ['Genesis timeline', '#genesis'], ['Workshop', '#workshop'], ['Random chapter', null]].forEach(p => addOpt(list, { type: 'page', title: p[0], href: p[1], run: p[1] ? null : randomChapter }, []));
+    [['Start here', '#' + (CH[0] ? CH[0].id : 'home')], ['Glossary', '#lexicon'], ['Timeline', '#genesis'], ['Workshop', '#workshop'], ['Random chapter', null]].forEach(p => addOpt(list, { type: 'page', title: p[0], href: p[1], run: p[1] ? null : randomChapter }, []));
     markSel(); return;
   }
   const res = searchIndex(q);
-  const groups = [['chapter', 'Chapters'], ['term', 'Lexicon'], ['tool', 'Tools and matrices'], ['sheet', 'Commandments'], ['event', 'Genesis'], ['page', 'Pages']];
+  const groups = [['chapter', 'Chapters'], ['term', 'Glossary'], ['tool', 'Tools and matrices'], ['sheet', 'Cheat sheets'], ['event', 'Timeline'], ['page', 'Pages']];
   let n = 0;
   groups.forEach(([t, label]) => {
     const g = res.filter(r => r.it.type === t).slice(0, t === 'chapter' ? 8 : 5);
@@ -1787,7 +1787,7 @@ function renderResults() {
     list.append(el('div', { class: 'pal-group', role: 'presentation', text: label }));
     g.forEach(r => { addOpt(list, r.it, toks); n++; });
   });
-  if (!n) list.append(el('p', { class: 'empty', text: 'Nothing matches “' + q + '”. Try a shorter word, or browse the Lexicon.' }));
+  if (!n) list.append(el('p', { class: 'empty', text: 'Nothing matches “' + q + '”. Try a shorter word, or browse the Glossary.' }));
   markSel();
 }
 function addOpt(list, it, toks) {
@@ -2015,16 +2015,16 @@ function renderWidget(name) {
   } else if (name === 'canon') {
     const evs = (TIMELINE.events || []).filter(e => e.canon).sort((a, b) => a.date.localeCompare(b.date));
     w.append(el('ol', { class: 'tl' }, ...evs.map(e => el('li', { class: 'tl-ev' }, el('div', { class: 'd', text: e.date.slice(0, 4) }), el('div', {}, el('h3', { text: e.ref || e.title }), el('p', {}, el('b', { text: 'Why it matters: ' }), e.text), el('div', { class: 'row' }, ...(e.chapters || []).filter(id => CHMAP[id]).slice(0, 3).map(id => el('a', { class: 'chip', href: '#' + id, text: CHMAP[id].order + ' ' + CHMAP[id].title }))))))));
-    w.append(el('p', { class: 'small muted', text: evs.length + ' entries, drawn from Genesis items marked as canon. Citations are from memory, so check titles and years before you cite them.' }));
+    w.append(el('p', { class: 'small muted', text: evs.length + ' entries, drawn from Timeline items marked as canon. Citations are from memory, so check titles and years before you cite them.' }));
   } else if (name === 'paths') {
     w.append(el('div', { class: 'grid' }, ...PATHS.map(p => el('a', { class: 'tile', href: '#path-' + p.id }, el('h3', { text: p.title }), el('p', { text: p.blurb + ' ' + p.steps.length + ' chapters.' })))));
   } else if (name === 'ladder') {
     const L = (readJSON('data-paths', {}).ladder) || [];
     w.append(el('ol', { class: 'tl' }, ...L.map((x, i) => el('li', { class: 'tl-ev' }, el('div', { class: 'd', text: 'Rung ' + (i + 1) }), el('div', {}, el('h3', { text: x.title }), el('p', { text: x.desc }), el('div', { class: 'row' }, ...(x.chapters || []).filter(id => CHMAP[id]).map(id => el('a', { class: 'chip', href: '#' + id, text: CHMAP[id].order + ' ' + CHMAP[id].title }))))))));
   } else if (name === 'commandments') {
-    w.append(el('div', { class: 'grid' }, ...SHEETS.map(s => el('a', { class: 'tile', href: '#cmd-' + s.id }, el('h3', { text: s.title }), el('p', { text: (s.items || []).length + ' commandments' })))));
+    w.append(el('div', { class: 'grid' }, ...SHEETS.map(s => el('a', { class: 'tile', href: '#cmd-' + s.id }, el('h3', { text: s.title }), el('p', { text: (s.items || []).length + ' principles' })))));
   } else if (name === 'lexicon') {
-    w.append(el('p', {}, 'The Lexicon holds ', el('b', { text: GLOSS.length + ' terms' }), '. ', el('a', { href: '#lexicon', text: 'Open the Lexicon' }), ' or ', el('a', { href: '#flashcards', text: 'study it as flashcards' }), '.'));
+    w.append(el('p', {}, 'The Glossary holds ', el('b', { text: GLOSS.length + ' terms' }), '. ', el('a', { href: '#lexicon', text: 'Open the Glossary' }), ' or ', el('a', { href: '#flashcards', text: 'study it as flashcards' }), '.'));
   } else if (name === 'changelog') {
     w.append(el('ul', {}, ...CHANGELOG.map(e => el('li', {}, el('b', { text: e.version + ' (' + e.date + '): ' }), e.summary))));
   } else w.append(el('p', { class: 'viz-err', text: 'Unknown widget ' + name }));
@@ -2085,7 +2085,7 @@ function pageHome(main) {
   const fact = DYK.length ? DYK[Math.floor(Date.now() / 864e5) % DYK.length] : null;
   const L = levelOf(s.xp);
   main.append(el('div', { class: 'home-row' },
-    el('section', { class: 'home-card' }, el('h2', { text: 'Start here' }), first ? el('a', { class: 'big', href: '#' + first.id, text: first.order + ' ' + first.title }) : null, el('p', { class: 'small muted', text: 'Four short chapters on what the job is, the stack, the mental models, and how to use this Bible.' })),
+    el('section', { class: 'home-card' }, el('h2', { text: 'Start here' }), first ? el('a', { class: 'big', href: '#' + first.id, text: first.order + ' ' + first.title }) : null, el('p', { class: 'small muted', text: 'Four short chapters on what the job is, the stack, the mental models, and how to use ' + META.title + '.' }) /* gt: site name */),
     el('section', { class: 'home-card' }, el('h2', { text: 'Continue reading' }), last ? el('a', { class: 'big', href: '#' + last.id, text: last.order + ' ' + last.title }) : el('p', { class: 'small', text: 'Nothing yet. Your place is saved as you read.' }), el('div', { class: 'row' }, el('button', { class: 'btn sm', type: 'button', onclick: () => openPalette() }, icon('ic-search', 'sm'), 'Search'), el('button', { class: 'btn sm', type: 'button', onclick: randomChapter }, icon('ic-dice', 'sm'), 'Random chapter'))),
     fact ? el('section', { class: 'home-card' }, el('h2', { text: 'Did you know?' }), el('p', { style: 'margin:0 0 6px', html: inlineMD(fact.text) }), fact.chapter && CHMAP[fact.chapter] ? el('a', { class: 'small', href: '#' + fact.chapter, text: 'Read ' + CHMAP[fact.chapter].order + ' ' + CHMAP[fact.chapter].title }) : null) : null,
     el('section', { class: 'home-card' }, el('h2', { text: 'Your progress' }), el('a', { class: 'big', href: '#progress', text: L.name }), el('p', { class: 'small muted', text: fmtInt(s.xp) + ' XP. ' + Object.keys(s.read).length + ' of ' + CH.length + ' chapters read. Streak: ' + streak() + (streak() === 1 ? ' day.' : ' days.') }), L.next ? el('div', { class: 'bar' }, el('i', { style: 'width:' + Math.round((s.xp - L.floor) / (L.next - L.floor) * 100) + '%' })) : null)));
@@ -2131,7 +2131,7 @@ function pageBook(arg, main) {
 /* ----- Lexicon and flashcards ----- */
 function termBooks(t) { return [...new Set((t.chapters || []).filter(id => CHMAP[id]).map(id => CHMAP[id].book))]; }
 function pageLexicon(main, focus) {
-  main.append(el('h1', { class: 'page-h', text: 'The Lexicon' }), el('p', { class: 'lede', text: GLOSS.length + ' terms, each with a one-line definition, what it means in practice, and the chapters that use it.' }));
+  main.append(el('h1', { class: 'page-h', text: 'Glossary' }), el('p', { class: 'lede', text: GLOSS.length + ' terms, each with a one-line definition, what it means in practice, and the chapters that use it.' }));
   let letter = '', book = '', q = '';
   const sorted = GLOSS.slice().sort((a, b) => a.term.localeCompare(b.term, 'en', { sensitivity: 'base' }));
   const fl = t => { const c = t.term[0].toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; };
@@ -2155,9 +2155,9 @@ function pageLexicon(main, focus) {
   draw();
   if (focus) { const n = D.getElementById('term-' + focus); if (n) { n.classList.add('flash'); setTimeout(() => n.scrollIntoView({ block: 'center' }), 30); } }
 }
-function pageTerm(arg, main) { if (!TERMMAP[arg]) return false; pageLexicon(main, arg); D.title = TERMMAP[arg].term + ' · Lexicon'; }
+function pageTerm(arg, main) { if (!TERMMAP[arg]) return false; pageLexicon(main, arg); D.title = TERMMAP[arg].term + ' · Glossary'; }
 function pageFlashcards(main) {
-  main.append(crumbs([['Home', '#home'], ['Lexicon', '#lexicon'], ['Flashcards', null]]), el('h1', { class: 'page-h', text: 'Flashcards' }), el('p', { class: 'lede', text: 'See the term, recall the meaning, then flip. Each card reviewed earns 1 XP per day.' }));
+  main.append(crumbs([['Home', '#home'], ['Glossary', '#lexicon'], ['Flashcards', null]]), el('h1', { class: 'page-h', text: 'Flashcards' }), el('p', { class: 'lede', text: 'See the term, recall the meaning, then flip. Each card reviewed earns 1 XP per day.' }));
   let deck = GLOSS.slice().sort(() => Math.random() - 0.5), i = 0, flipped = false, book = '';
   const card = el('div', { class: 'flashcard', role: 'button', tabindex: '0', 'aria-live': 'polite' });
   const pos = el('p', { class: 'small muted' });
@@ -2174,14 +2174,14 @@ function pageFlashcards(main) {
   card.addEventListener('click', flip);
   card.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flip(); } });
   const next = (known) => { const t = deck[i]; if (t) { Store.s.flash = (Store.s.flash || 0) + 1; awardXP('flash:' + t.id + ':' + todayStr(), 1); } if (!known && t) deck.push(t); i = Math.min(deck.length - 1, i + 1); flipped = false; draw(); };
-  main.append(bs, card, pos, el('div', { class: 'row' }, el('button', { class: 'btn', type: 'button', onclick: () => next(false) }, 'Again later'), el('button', { class: 'btn primary', type: 'button', onclick: () => next(true) }, icon('ic-check', 'sm'), 'Got it'), el('a', { class: 'btn quiet', href: '#lexicon', text: 'Back to the Lexicon' })));
+  main.append(bs, card, pos, el('div', { class: 'row' }, el('button', { class: 'btn', type: 'button', onclick: () => next(false) }, 'Again later'), el('button', { class: 'btn primary', type: 'button', onclick: () => next(true) }, icon('ic-check', 'sm'), 'Got it'), el('a', { class: 'btn quiet', href: '#lexicon', text: 'Back to the Glossary' })));
   draw();
 }
 
 /* ----- Genesis ----- */
 function pageGenesis(main) {
   const T = TIMELINE, eras = T.eras || [], tracks = T.tracks || [];
-  main.append(el('h1', { class: 'page-h', text: 'Genesis' }), el('p', { class: 'lede', text: 'A timeline of AI from 1943 to today: ' + (T.events || []).length + ' events across ' + tracks.length + ' tracks. Pick an era or a track to zoom in; “approx.” marks uncertain dates.' }));
+  main.append(el('h1', { class: 'page-h', text: 'Timeline' }), el('p', { class: 'lede', text: 'A timeline of AI from 1943 to today: ' + (T.events || []).length + ' events across ' + tracks.length + ' tracks. Pick an era or a track to zoom in; “approx.” marks uncertain dates.' }));
   let era = '', on = new Set(tracks.map(t => t.id));
   const rib = el('div', { class: 'era-ribbon', role: 'group', 'aria-label': 'Eras' });
   const eb = [{ id: '', title: 'All eras', from: '', to: '' }].concat(eras).map(e => { const b = el('button', { type: 'button', 'aria-pressed': String(e.id === '') }, el('b', { text: e.title }), e.from ? e.from + '–' + (e.to || 'now') : 'Everything'); b.addEventListener('click', () => { era = e.id; eb.forEach(x => x.setAttribute('aria-pressed', String(x === b))); draw(); }); return b; });
@@ -2210,7 +2210,7 @@ function pageGenesis(main) {
 
 /* ----- Paths ----- */
 function pagePaths(main) {
-  main.append(el('h1', { class: 'page-h', text: 'Learning paths' }), el('p', { class: 'lede', text: 'Curated routes through the Bible. Progress fills in as you read; the next unread chapter is always one click away.' }));
+  main.append(el('h1', { class: 'page-h', text: 'Learning paths' }), el('p', { class: 'lede', text: /* gt: site name */ 'Curated routes through ' + META.title + '. Progress fills in as you read; the next unread chapter is always one click away.' }));
   const s = Store.s;
   main.append(el('div', { class: 'grid' }, ...PATHS.map(p => { const done = p.steps.filter(id => s.read[id]).length; return el('a', { class: 'tile', href: '#path-' + p.id }, el('h3', { text: p.title }), el('p', { text: p.blurb }), el('p', { class: 'small', style: 'margin-top:6px', text: done + ' of ' + p.steps.length + ' read' }), el('div', { class: 'bar', style: 'margin-top:6px' }, el('i', { style: 'width:' + Math.round(done / p.steps.length * 100) + '%' }))); })));
   const L = (readJSON('data-paths', {}).ladder) || [];
@@ -2238,7 +2238,7 @@ function pageWorkshop(main) {
   sec('Calculators', PRESETS.filter(p => p.kind === 'calculator').map(p => el('a', { class: 'tile', href: '#tool-' + p.id }, el('h3', { text: p.title }), el('p', { text: p.blurb }))));
   sec('Decision wizards', WIZARDS.map(w => el('a', { class: 'tile', href: '#tool-' + w.id }, el('h3', { text: w.title }), el('p', { text: w.blurb }))));
   sec('Comparison matrices', MATRICES.map(m => el('a', { class: 'tile', href: '#matrix-' + m.id }, el('h3', { text: m.title }), el('p', { text: (m.rows || []).length + ' rows. As of ' + (m.asof || '?') + '.' }))));
-  sec('The Commandments', SHEETS.map(s => el('a', { class: 'tile', href: '#cmd-' + s.id }, el('h3', { text: s.title }), el('p', { text: (s.items || []).length + ' rules on one screen' }))));
+  sec('Cheat sheets', SHEETS.map(s => el('a', { class: 'tile', href: '#cmd-' + s.id }, el('h3', { text: s.title }), el('p', { text: (s.items || []).length + ' rules on one screen' }))));
 }
 function pageTool(arg, main) {
   const w = WIZARDS.find(x => x.id === arg);
@@ -2253,15 +2253,15 @@ function pageTool(arg, main) {
 }
 function pageMatrices(main) { main.append(el('h1', { class: 'page-h', text: 'Comparison matrices' }), el('p', { class: 'lede', text: 'Sortable, filterable, dated. Cells are qualitative unless a fact is certain; check the date before you decide.' }), el('div', { class: 'grid' }, ...MATRICES.map(m => el('a', { class: 'tile', href: '#matrix-' + m.id }, el('h3', { text: m.title }), el('p', { text: (m.rows || []).length + ' rows. As of ' + (m.asof || '?') + '.' }))))); }
 function pageMatrix(arg, main) { const m = MATRICES.find(x => x.id === arg); if (!m) return false; main.append(crumbs([['Home', '#home'], ['Matrices', '#matrices'], [m.title, null]]), el('h1', { class: 'page-h', text: m.title }), m.chapter && CHMAP[m.chapter] ? el('p', {}, 'Background: ', el('a', { href: '#' + m.chapter, text: CHMAP[m.chapter].order + ' ' + CHMAP[m.chapter].title })) : null, matrixEl(m)); D.title = m.title; }
-function pageCommandments(main) { main.append(el('h1', { class: 'page-h', text: 'The Commandments' }), el('p', { class: 'lede', text: 'One-screen, printable cheat sheets. Each rule is short enough to remember and links back to the chapter that earns it.' }), renderWidget('commandments')); }
+function pageCommandments(main) { main.append(el('h1', { class: 'page-h', text: 'Cheat sheets' }), el('p', { class: 'lede', text: 'One-screen, printable cheat sheets. Each rule is short enough to remember and links back to the chapter that earns it.' }), renderWidget('commandments')); }
 function pageCmd(arg, main) {
   const s = SHEETS.find(x => x.id === arg); if (!s) return false;
-  main.append(crumbs([['Home', '#home'], ['Commandments', '#commandments'], [s.title, null]]));
+  main.append(crumbs([['Home', '#home'], ['Cheat sheets', '#commandments'], [s.title, null]]));
   main.append(el('article', { class: 'sheet' }, el('h2', { text: s.title }), s.chapter && CHMAP[s.chapter] ? el('p', { class: 'small muted' }, 'From ', el('a', { href: '#' + s.chapter, text: CHMAP[s.chapter].order + ' ' + CHMAP[s.chapter].title })) : null, el('ol', {}, ...(s.items || []).map(i => el('li', {}, el('b', { text: i.t }), i.d || '')))), el('div', { class: 'row', style: 'margin-top:12px' }, el('button', { class: 'btn', type: 'button', onclick: () => { try { W.print(); } catch (e) { toast('Printing is blocked here. Open the page on its own to print.'); } } }, icon('ic-print', 'sm'), 'Print this sheet'), copyBtn(() => s.title + '\n\n' + (s.items || []).map((i, k) => (k + 1) + '. ' + i.t + (i.d ? ' ' + i.d : '')).join('\n'), 'Copy as text')));
   D.title = s.title;
 }
 function pageApocrypha(main) {
-  main.append(el('h1', { class: 'page-h', text: 'The Apocrypha' }), el('p', { class: 'lede', text: 'Hot takes, contested ideas and open debates. Each one comes with its strongest counterargument, because a take you cannot argue against is a take you do not understand.' }));
+  main.append(el('h1', { class: 'page-h', text: 'Debates' }), el('p', { class: 'lede', text: 'Hot takes, contested ideas and open debates. Each one comes with its strongest counterargument, because a take you cannot argue against is a take you do not understand.' }));
   TAKES.forEach(t => main.append(el('article', { class: 'take', id: 'take-' + t.id }, el('h3', { text: t.take }), el('div', { class: 'two' }, el('div', {}, el('b', { text: 'The case for' }), t.for), el('div', {}, el('b', { text: 'The strongest counterargument' }), t.against)), (t.chapters || []).length ? el('div', { class: 'row', style: 'margin-top:8px' }, ...t.chapters.filter(id => CHMAP[id]).map(id => el('a', { class: 'chip', href: '#' + id, text: CHMAP[id].order + ' ' + CHMAP[id].title }))) : null)));
 }
 function monthsSince(ym) { const m = /^(\d{4})-(\d{2})$/.exec(ym || ''); if (!m) return 999; const d = new Date(); return (d.getFullYear() - +m[1]) * 12 + (d.getMonth() + 1 - +m[2]); }
@@ -2294,13 +2294,13 @@ function pageWhatsNew(main) {
   main.append(el('h2', { class: 'sec-h', text: 'Volatile chapters due a review' }), stale.length ? el('ul', {}, ...stale.map(c => el('li', {}, el('a', { href: '#' + c.id, text: c.order + ' ' + c.title }), ' (reviewed ' + c.reviewed + ')'))) : el('p', { class: 'muted', text: 'None. Every volatile chapter was reviewed within the last 90 days. Say “refresh” to run a freshness pass anyway.' }));
 }
 function pageExtend(main) {
-  main.append(el('h1', { class: 'page-h', text: 'Extend me' }), el('p', { class: 'lede', text: 'This Bible is one HTML file built to grow. Content lives in plain-text blocks; the engine reads them. Give the artifact link and one of these commands in a new session.' }));
-  const cmds = [['continue', 'Add missing features and visual components first, then deepen the next 10 to 15 seed chapters in the planned order, each with its visuals, and republish.'], ['deepen <chapter id or Book number>', 'Deepen just that chapter or Book: replace the seed body, set data-status to full, add visuals, quiz questions and terms.'], ['add: <topic, paper, link or notes>', 'Integrate new material everywhere it belongs: chapters, Lexicon, Genesis, quizzes. Unplaced research goes to Book 19.'], ['refresh', 'Run a freshness pass over volatile chapters (with web search if available) and update their review dates.'], ['audit', 'Review accuracy and consistency, fix what turns up, and report.'], ['status', 'Report coverage, visuals built and planned, and what comes next.'], ['visualize <chapter id or Book number>', 'Build the planned visuals, replace weak ones, add an interactive visual for each core mechanism, and report.']];
+  main.append(el('h1', { class: 'page-h', text: 'Extend me' }), el('p', { class: 'lede', text: /* gt: site name */ META.title + ' is one HTML file built to grow. Content lives in plain-text blocks; the engine reads them. Give the artifact link and one of these commands in a new session.' }));
+  const cmds = [['continue', 'Add missing features and visual components first, then deepen the next 10 to 15 seed chapters in the planned order, each with its visuals, and republish.'], ['deepen <chapter id or Book number>', 'Deepen just that chapter or Book: replace the seed body, set data-status to full, add visuals, quiz questions and terms.'], ['add: <topic, paper, link or notes>', 'Integrate new material everywhere it belongs: chapters, Glossary, Timeline, quizzes. Unplaced research goes to Book 19.'], ['refresh', 'Run a freshness pass over volatile chapters (with web search if available) and update their review dates.'], ['audit', 'Review accuracy and consistency, fix what turns up, and report.'], ['status', 'Report coverage, visuals built and planned, and what comes next.'], ['visualize <chapter id or Book number>', 'Build the planned visuals, replace weak ones, add an interactive visual for each core mechanism, and report.']];
   main.append(el('h2', { class: 'sec-h', text: 'Commands' }), ...cmds.map(c => el('div', {}, el('div', { class: 'cmdbox' }, el('code', { text: c[0] }), copyBtn(() => c[0], 'Copy command')), el('p', { class: 'small', style: 'margin:2px 0 12px', text: c[1] }))));
   const schema = '<script type="text/markdown"\n  data-id="mcp-transports"        permanent, lowercase, hyphenated\n  data-book="12"\n  data-order="12.5"              insert between with a third part, e.g. 12.5.1\n  data-title="MCP transports"\n  data-level="practitioner"      foundation | practitioner | expert | frontier\n  data-stability="moving"        evergreen | moving | volatile\n  data-reviewed="2026-11"        YYYY-MM\n  data-status="seed"             seed | full\n  data-tags="mcp,transports"\n  data-visuals="stdio-vs-http:compare">\n…Markdown…  (write <\\/script> for a literal closing script tag)\n<\/script>';
   main.append(el('h2', { class: 'sec-h', text: 'Chapter blocks' }), codeBlock('text', schema));
   main.append(el('p', { text: 'Each Book’s chapters sit between comments such as BOOK 12 START and BOOK 12 END, so a new chapter goes in with one exact text edit. Old ids that change map to new ones in the data-aliases block.' }));
-  main.append(el('h2', { class: 'sec-h', text: 'Inside the Markdown' }), codeBlock('text', '> [!tldr]           TL;DR card (first block of a chapter)\n> [!insight] Title  callouts: insight, pitfall, expert, hottake, try, number, history\n[[KV cache]]        explicit Lexicon link; [[shown text|term-id]] also works\n[text](#chapter-id) internal link (also #book-9, #term-x, #tool-x, #matrix-x, #cmd-x, #path-x)\n\\( x^2 \\)           inline math;  ```math  block math (TeX, rendered with MathJax SVG)\n```viz              JSON spec for an engine component (see below)\n```mermaid id=… title="…" caption="…" alt="…"\n```svg id=… title="…"   hand-drawn SVG using the glyphs and role colors\n```quiz             this chapter’s questions from data-quizzes\n```widget           acronyms | canon | paths | ladder | commandments | lexicon | changelog'));
+  main.append(el('h2', { class: 'sec-h', text: 'Inside the Markdown' }), codeBlock('text', '> [!tldr]           TL;DR card (first block of a chapter)\n> [!insight] Title  callouts: insight, pitfall, expert, hottake, try, number, history\n[[KV cache]]        explicit glossary link; [[shown text|term-id]] also works\n[text](#chapter-id) internal link (also #book-9, #term-x, #tool-x, #matrix-x, #cmd-x, #path-x)\n\\( x^2 \\)           inline math;  ```math  block math (TeX, rendered with MathJax SVG)\n```viz              JSON spec for an engine component (see below)\n```mermaid id=… title="…" caption="…" alt="…"\n```svg id=… title="…"   hand-drawn SVG using the glyphs and role colors\n```quiz             this chapter’s questions from data-quizzes\n```widget           acronyms | canon | paths | ladder | commandments | lexicon | changelog'));
   main.append(el('h2', { class: 'sec-h', text: 'Visual specs' }), el('p', {}, 'Components: ', el('code', { text: VIZ_KNOWN.join(', ') }), '. Explorer models: ', el('code', { text: Object.keys(MODELS).join(', ') }), '.'), codeBlock('json', JSON.stringify({ id: 'unique-id', component: 'calculator', title: 'States the takeaway', caption: 'What to notice', alt: 'Text description', data: 'formula | real | illustrative', source: 'for real data', asof: 'for real data', try: 'one suggested first move', formula: '2 × layers × kv_heads × head_dim × bytes_per_value × tokens × batch', inputs: { layers: 80 }, tests: [{ inputs: { tokens: 1 }, expect_bytes: 327680 }] }, null, 2)));
   main.append(el('h2', { class: 'sec-h', text: 'Data blocks' }), el('p', { text: 'JSON blocks with these ids: data-meta, data-books, data-glossary, data-timeline, data-quizzes, data-paths, data-matrices, data-cheatsheets, data-presets, data-wizards, data-apocrypha, data-didyouknow, data-changelog, data-aliases. Every update bumps the version (minor for content, patch for fixes), adds a changelog entry, and updates data-reviewed on the chapters it touched.' }));
 }
@@ -2361,7 +2361,7 @@ function pageVisuals(main) {
   draw();
 }
 function pageLegend(main) {
-  main.append(el('h1', { class: 'page-h', text: 'Visual legend' }), el('p', { class: 'lede', text: 'Every diagram in the Bible speaks one language. The same thing always looks the same: each role has a glyph, a color and a label, and color never carries meaning alone.' }));
+  main.append(el('h1', { class: 'page-h', text: 'Visual legend' }), el('p', { class: 'lede', text: /* gt: site name */ 'Every diagram in ' + META.title + ' speaks one language. The same thing always looks the same: each role has a glyph, a color and a label, and color never carries meaning alone.' }));
   main.append(el('h2', { class: 'sec-h', text: 'Roles' }));
   main.append(el('div', { class: 'legend-grid' }, ...ROLES.map(r => { const s = sv('svg', { viewBox: '0 0 52 40', 'aria-hidden': 'true' }); const g = sv('g', { class: 'role-' + r }); g.append(sv('rect', { class: 'n-box', x: 2, y: 4, width: 48, height: 32, rx: 8 })); if (r === 'untrusted') g.append(sv('rect', { class: 'n-hatch', x: 2, y: 4, width: 48, height: 32, rx: 8 })); g.append(sv('use', { href: '#g-' + r, class: 'n-glyph', x: 16, y: 10, width: 20, height: 20 })); s.append(g); return el('div', { class: 'lg' }, s, el('div', {}, el('b', { text: ROLE_TXT[r] }), el('div', { class: 'small muted', text: { model: 'A language model or other learned model.', context: 'The window of tokens a model sees.', token: 'A unit of text as the model sees it.', tool: 'A function or capability an agent can call.', data: 'A database, index, file store or cache.', agent: 'A loop that lets a model act over many steps.', human: 'A person: user, reviewer or operator.', external: 'A third-party API or service.', untrusted: 'Content an attacker could control. Always hatched.' }[r] }))); })));
   main.append(el('h2', { class: 'sec-h', text: 'Data kinds' }), el('ul', {}, el('li', {}, el('b', { text: 'Formula. ' }), 'Computed live from the inputs; calculators ship tested examples.'), el('li', {}, el('b', { text: 'Real data. ' }), 'Carries a source and an as-of date.'), el('li', {}, el('b', { text: 'Illustrative. ' }), 'Shapes are realistic, numbers are invented, and the caption says so.'), el('li', {}, el('b', { text: 'Concept diagram. ' }), 'Structure only, no numbers.')));
@@ -2372,7 +2372,7 @@ function pageLegend(main) {
   main.append(el('h2', { class: 'sec-h', text: 'Controls' }), el('p', { text: 'Steppers and sequence players share one control bar: first, previous, play or pause, next, and a scrub slider. Arrow keys step when the bar has focus. Explorers redraw as you move a slider. Every visual has a “Read as text” toggle with a written description, plus the data table for charts.' }));
 }
 const PAGEFN = { home: pageHome, lexicon: m => pageLexicon(m), flashcards: pageFlashcards, genesis: pageGenesis, paths: pagePaths, quizzes: pageQuizzes, workshop: pageWorkshop, matrices: pageMatrices, commandments: pageCommandments, apocrypha: pageApocrypha, 'whats-new': pageWhatsNew, 'extend-me': pageExtend, prefs: pagePrefs, progress: pageProgress, visuals: pageVisuals, 'visual-legend': pageLegend };
-const PAGE_TITLES = { lexicon: 'Lexicon', flashcards: 'Flashcards', genesis: 'Genesis', paths: 'Learning paths', quizzes: 'Quizzes', workshop: 'Workshop', matrices: 'Matrices', commandments: 'Commandments', apocrypha: 'Apocrypha', 'whats-new': 'What’s new', 'extend-me': 'Extend me', prefs: 'Preferences', progress: 'Progress', visuals: 'Visuals', 'visual-legend': 'Visual legend' };
+const PAGE_TITLES = { lexicon: 'Glossary', flashcards: 'Flashcards', genesis: 'Timeline', paths: 'Learning paths', quizzes: 'Quizzes', workshop: 'Workshop', matrices: 'Matrices', commandments: 'Cheat sheets', apocrypha: 'Debates', 'whats-new': 'What’s new', 'extend-me': 'Extend me', prefs: 'Preferences', progress: 'Progress', visuals: 'Visuals', 'visual-legend': 'Visual legend' };
 const PREFIXFN = { 'book-': pageBook, 'term-': pageTerm, 'tool-': pageTool, 'path-': pagePath, 'boss-': pageBoss, 'matrix-': pageMatrix, 'cmd-': pageCmd };
 
 /* ----- Init ----- */

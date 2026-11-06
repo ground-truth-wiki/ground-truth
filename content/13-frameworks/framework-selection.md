@@ -78,7 +78,7 @@ framework-selection
 ```
 
 ## Go deeper
-- This Bible’s [landscape map](#framework-landscape) and [orchestration frameworks](#orchestration-frameworks) chapters.
+- The [landscape map](#framework-landscape) and [orchestration frameworks](#orchestration-frameworks) chapters.
 
 ## Related
 - [The landscape map](#framework-landscape)

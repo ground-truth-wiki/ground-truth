@@ -16,7 +16,7 @@ visuals:
 > Eight learning paths and a ladder of portfolio projects, from chat with a PDF to a multi-agent system you can defend. Each rung builds on the last and links to the chapters it needs; each project should ship with an eval, traces and a cost estimate.
 
 ## Why it matters
-Reading builds understanding; projects build skill and proof. A ladder of increasingly demanding projects turns this Bible into a curriculum and gives you work to show.
+Reading builds understanding; projects build skill and proof. A ladder of increasingly demanding projects turns Ground Truth into a curriculum and gives you work to show.
 
 ## Intuition
 The ladder is a climbing gym’s graded routes: start on the easy wall, and each new grade uses the moves you learned on the last.
@@ -75,7 +75,7 @@ project-ladder
 - [Build your own harness](#build-your-own-harness) for a capstone.
 
 ## Related
-- [How to use this Bible](#how-to-use)
+- [How to use Ground Truth](#how-to-use)
 - [Interview prep](#interview-prep)
 - [Build your own harness](#build-your-own-harness)
 - [Changelog and how to extend](#changelog-extend)

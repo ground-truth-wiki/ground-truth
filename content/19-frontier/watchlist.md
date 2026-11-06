@@ -49,7 +49,7 @@ A watchlist is a news diet: a few nutritious sources, eaten regularly, beat endl
 ## In practice
 - Subscribe to changelogs of everything in your stack.
 - Keep a team watchlist document with owners per area.
-- Treat volatile chapters of this Bible as dated; check their review dates.
+- Treat volatile chapters of Ground Truth as dated; check their review dates.
 
 ## Numbers to know
 > [!number]
@@ -71,7 +71,7 @@ watchlist
 ```
 
 ## Go deeper
-- This Bible’s [What’s new](#whats-new) page and changelog.
+- The [What’s new](#whats-new) page and changelog.
 
 ## Related
 - [State-of-the-art snapshot](#sota-snapshot)

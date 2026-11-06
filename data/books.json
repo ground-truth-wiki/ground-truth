@@ -57,7 +57,7 @@
       "n": 0,
       "id": "book-0",
       "title": "Start here",
-      "blurb": "What the job is, the whole stack on one page, the mental models that matter, and how to use this Bible.",
+      "blurb": "What the job is, the whole stack on one page, the mental models that matter, and how to use Ground Truth.",
       "hue": 22,
       "stability": null
     },
@@ -217,7 +217,7 @@
       "n": 20,
       "id": "book-20",
       "title": "Reference and career",
-      "blurb": "The Lexicon, acronyms, numbers to know, the Canon, cheat sheets, interview prep and the project ladder.",
+      "blurb": "The Glossary, acronyms, numbers to know, the Canon, cheat sheets, interview prep and the project ladder.",
       "hue": 252,
       "stability": null
     }

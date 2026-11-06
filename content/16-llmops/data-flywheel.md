@@ -89,7 +89,7 @@ data-flywheel
 ```
 
 ## Go deeper
-- This Bible’s [error analysis](#error-analysis) and [fine-tuning in practice](#fine-tuning-practice) chapters.
+- The [error analysis](#error-analysis) and [fine-tuning in practice](#fine-tuning-practice) chapters.
 - Writing on building data flywheels for AI products from practitioners and vendors, read critically.
 
 ## Related

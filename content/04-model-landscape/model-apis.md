@@ -36,7 +36,7 @@ An API call is a letter with attachments: instructions on top, the conversation 
 **Response.** Content blocks (text, tool calls, thinking), a stop reason (finished, tool use, length limit, refusal), and usage by token type. Stateless APIs need the full history on every call; some providers also offer stateful conversation or response APIs.
 
 ```viz
-{"id":"api-features","component":"tree","title":"Eight features around the core call worth knowing on every provider","caption":"Expand a feature for what it does and where this Bible covers it. Names and availability differ by provider.","alt":"Tree of model API features: streaming, tool use, structured outputs, prompt caching, batch, files, citations and rate limits.","data":"illustrative","open":1,"root":{"label":"API features","children":[
+{"id":"api-features","component":"tree","title":"Eight features around the core call worth knowing on every provider","caption":"Expand a feature for what it does and where Ground Truth covers it. Names and availability differ by provider.","alt":"Tree of model API features: streaming, tool use, structured outputs, prompt caching, batch, files, citations and rate limits.","data":"illustrative","open":1,"root":{"label":"API features","children":[
 {"label":"Streaming","children":[{"label":"Server-Sent Events with typed deltas","link":"#streaming"}]},
 {"label":"Tool use","children":[{"label":"Tool definitions, tool calls, results; forced tool choice","link":"#agent-tools"}]},
 {"label":"Structured outputs","children":[{"label":"JSON mode or schema-constrained output","link":"#structured-outputs"}]},
@@ -81,7 +81,7 @@ model-apis
 
 ## Go deeper
 - Your providers’ API references and changelogs, for exact fields and features.
-- This Bible’s [agent loop](#agent-loop) chapter for building on the core call.
+- The [agent loop](#agent-loop) chapter for building on the core call.
 
 ## Related
 - [The agent loop](#agent-loop)

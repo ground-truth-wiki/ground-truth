@@ -85,7 +85,7 @@ eval-recipes
 ```
 
 ## Go deeper
-- This Bible’s Book 14 chapters linked from each row of the recipe matrix.
+- The Book 14 chapters linked from each row of the recipe matrix.
 - Published evaluation guides from model providers and eval-tool vendors, read critically.
 
 ## Related

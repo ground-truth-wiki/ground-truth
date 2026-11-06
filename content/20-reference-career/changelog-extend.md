@@ -13,7 +13,7 @@ visuals:
   - extend-tree:tree
 ---
 > [!tldr]
-> Every version of the Bible is recorded with the chapters it changed. Extending it follows fixed rules: chapter ids are permanent, updates never delete content, deepened chapters replace their seed bodies, and every update bumps the version, adds a changelog entry and updates review dates. Full instructions live on the [Extend me](#extend-me) page.
+> Every version of Ground Truth is recorded with the chapters it changed. Extending it follows fixed rules: chapter ids are permanent, updates never delete content, deepened chapters replace their seed bodies, and every update bumps the version, adds a changelog entry and updates review dates. Full instructions live on the [Extend me](#extend-me) page.
 
 ## Why it matters
 A reference meant to last for years needs a disciplined way to grow and stay current. Clear rules keep links stable, content trustworthy and history visible.
@@ -30,7 +30,7 @@ changelog
 ```viz
 {"id":"update-stepper","component":"stepper","title":"How an update is made and checked","caption":"The process every version follows.","alt":"Stepper of the update process: plan, write, validate, test, record and publish.","data":"illustrative","frames":[
 {"label":"Plan","caption":"Choose chapters to add or deepen, in the documented order, or respond to a request."},
-{"label":"Write","caption":"Replace seed bodies with full chapters, with visuals, quizzes, Lexicon terms and links."},
+{"label":"Write","caption":"Replace seed bodies with full chapters, with visuals, quizzes, glossary terms and links."},
 {"label":"Validate","caption":"Check structure, links, visual specs, calculator tests, quiz ids and inbound links."},
 {"label":"Test","caption":"Load every route in a headless browser and check for errors."},
 {"label":"Record","caption":"Bump the version, add a changelog entry and update review dates."},
@@ -38,7 +38,7 @@ changelog
 ```
 
 ```viz
-{"id":"extend-tree","component":"tree","title":"Ways to extend the Bible","caption":"Expand each kind of request. The Extend me page has the exact formats.","alt":"Tree of ways to extend the Bible: continue, deepen, add, refresh and fix.","data":"illustrative","open":1,"root":{"label":"Extension requests","children":[
+{"id":"extend-tree","component":"tree","title":"Ways to extend Ground Truth","caption":"Expand each kind of request. The Extend me page has the exact formats.","alt":"Tree of ways to extend Ground Truth: continue, deepen, add, refresh and fix.","data":"illustrative","open":1,"root":{"label":"Extension requests","children":[
 {"label":"Continue","children":[{"label":"Work through the next planned improvements in order"}]},
 {"label":"Deepen a chapter","children":[{"label":"Expand a chapter with more depth, visuals or questions"}]},
 {"label":"Add a topic","children":[{"label":"A new chapter, term, timeline event or tool, inserted without renumbering"}]},
@@ -76,7 +76,7 @@ changelog-extend
 
 ## Related
 - [What’s new](#whats-new)
-- [Lexicon](#lexicon-guide)
-- [How to use this Bible](#how-to-use)
+- [Glossary](#lexicon-guide)
+- [How to use Ground Truth](#how-to-use)
 - [Learning paths and the project ladder](#project-ladder)
 - [Watchlist](#watchlist)

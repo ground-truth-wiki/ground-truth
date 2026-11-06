@@ -104,7 +104,7 @@ long-running-agents
 
 ## Go deeper
 - Documentation for Temporal, Restate, Inngest and DBOS on durable execution and workflows.
-- This Bible’s [reliability engineering](#reliability-engineering) chapter for retries and idempotency.
+- The [reliability engineering](#reliability-engineering) chapter for retries and idempotency.
 
 ## Related
 - [The agent loop](#agent-loop)

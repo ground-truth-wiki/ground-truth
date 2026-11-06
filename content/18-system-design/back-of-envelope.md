@@ -73,7 +73,7 @@ back-of-envelope
 ```
 
 ## Go deeper
-- This Bible’s [numbers to know](#numbers-to-know) and [cost and capacity](#cost-capacity) chapters.
+- The [numbers to know](#numbers-to-know) and [cost and capacity](#cost-capacity) chapters.
 
 ## Related
 - [Numbers every AI engineer should know](#numbers-to-know)

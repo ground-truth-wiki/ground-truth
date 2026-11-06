@@ -86,7 +86,7 @@ document-extraction
 ```
 
 ## Go deeper
-- This Bible’s [ingestion and parsing](#ingestion-parsing) and [structured outputs](#structured-outputs) chapters.
+- The [ingestion and parsing](#ingestion-parsing) and [structured outputs](#structured-outputs) chapters.
 - Documentation for document-AI services from cloud providers, for comparison with general models.
 
 ## Related

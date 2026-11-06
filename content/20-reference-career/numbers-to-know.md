@@ -94,4 +94,4 @@ numbers-to-know
 - [Cost engineering](#cost-engineering)
 - [Inference fundamentals](#inference-fundamentals)
 - [Acronym decoder](#acronym-decoder)
-- [The Commandments](#commandments-guide)
+- [Cheat sheets](#commandments-guide)

@@ -70,7 +70,7 @@ whos-who
 ```
 
 ## Go deeper
-- This Bible’s [Watchlist](#watchlist) for what to follow weekly.
+- The [Watchlist](#watchlist) for what to follow weekly.
 
 ## Related
 - [Watchlist](#watchlist)

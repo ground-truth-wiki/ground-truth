@@ -68,7 +68,7 @@ small-local-models
 
 ## Go deeper
 - Model cards for Phi, Gemma, small Llama and Qwen models, and SmolLM.
-- This Bible’s [edge and on-device AI](#edge-on-device) chapter.
+- The [edge and on-device AI](#edge-on-device) chapter.
 
 ## Related
 - [Specialist models](#specialist-models)

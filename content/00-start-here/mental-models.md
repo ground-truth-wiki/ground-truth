@@ -72,7 +72,7 @@ mental-models
 
 ## Go deeper
 - Sutton, “The Bitter Lesson” (2019).
-- This Bible’s [Commandments](#commandments-guide) for one-screen summaries.
+- The [Cheat sheets](#commandments-guide) for one-screen summaries.
 
 ## Related
 - [What an AI engineer is](#ai-engineer-role)

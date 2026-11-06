@@ -2,7 +2,7 @@
   {
     "id": "qce-1",
     "chapter": "changelog-extend",
-    "q": "Which rule keeps links working as the Bible grows?",
+    "q": "Which rule keeps links working as Ground Truth grows?",
     "options": [
       "Renumbering chapters",
       "Chapter ids are permanent and renamed ids map through aliases",

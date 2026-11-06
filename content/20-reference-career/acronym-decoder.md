@@ -13,7 +13,7 @@ visuals:
   - acronym-families:diagram
 ---
 > [!tldr]
-> Every acronym in the Bible, expanded and linked to its Lexicon entry, generated from the Lexicon so it stays complete as terms are added. Watch for collisions: the same letters often mean different things in different corners of the field.
+> Every acronym in Ground Truth, expanded and linked to its glossary entry, generated from the Glossary so it stays complete as terms are added. Watch for collisions: the same letters often mean different things in different corners of the field.
 
 ## Why it matters
 Acronyms speed up expert conversation and lock out everyone else. Misreading one, such as ACP or RAG versus RAGAS, leads to real confusion in design reviews and documentation.
@@ -45,7 +45,7 @@ acronyms
 "edges":[]}
 ```
 
-**Generated.** The decoder is built from Lexicon entries that have an abbreviation, so adding a term with an acronym adds it here automatically.
+**Generated.** The decoder is built from glossary entries that have an abbreviation, so adding a term with an acronym adds it here automatically.
 
 ## In practice
 - Expand acronyms on first use in documents and slides.
@@ -53,7 +53,7 @@ acronyms
 
 ## Numbers to know
 > [!number]
-> Fact: the decoder lists every Lexicon term with an abbreviation; the count grows with the Lexicon.
+> Fact: the decoder lists every glossary term with an abbreviation; the count grows with the Glossary.
 
 ## Pitfalls and anti-patterns
 > [!pitfall] Inventing new acronyms in internal docs
@@ -71,11 +71,11 @@ acronym-decoder
 ```
 
 ## Go deeper
-- The [Lexicon](#lexicon) page.
+- The [Glossary](#lexicon) page.
 
 ## Related
-- [Lexicon](#lexicon-guide)
+- [Glossary](#lexicon-guide)
 - [The rest of the alphabet soup](#protocol-soup)
 - [Talking shop](#talking-shop)
-- [How to use this Bible](#how-to-use)
+- [How to use Ground Truth](#how-to-use)
 - [Numbers every AI engineer should know](#numbers-to-know)

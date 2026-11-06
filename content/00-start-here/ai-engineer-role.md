@@ -31,7 +31,7 @@ If machine learning engineers build engines, AI engineers build cars: they choos
 **The skill map.**
 
 ```viz
-{"id":"skills-map","component":"graph","title":"The AI engineer’s skill map, from foundations to production","caption":"Each node is a Book of this Bible. Follow the edges for a sensible learning order.","alt":"Graph of AI engineering skills linking foundations, models, prompting, retrieval, agents, evals, serving, security and production.","data":"illustrative","per_row":3,"node_w":170,"nodes":[{"id":"found","label":"Foundations","link":"#linear-algebra"},{"id":"models","label":"How models work","link":"#transformer-block"},{"id":"prompt","label":"Prompting and context","link":"#prompting-fundamentals"},{"id":"rag","label":"Retrieval","link":"#rag-fundamentals"},{"id":"agents","label":"Agents and tools","link":"#agent-loop"},{"id":"evals","label":"Evaluation","link":"#why-evals"},{"id":"serve","label":"Serving and cost","link":"#inference-fundamentals"},{"id":"sec","label":"Security and safety","link":"#prompt-injection"},{"id":"prod","label":"Production","link":"#reference-architecture"}],"edges":[["found","models"],["models","prompt"],["prompt","rag"],["prompt","agents"],["rag","evals"],["agents","evals"],["evals","prod"],["serve","prod"],["sec","prod"]]}
+{"id":"skills-map","component":"graph","title":"The AI engineer’s skill map, from foundations to production","caption":"Each node is a Book of Ground Truth. Follow the edges for a sensible learning order.","alt":"Graph of AI engineering skills linking foundations, models, prompting, retrieval, agents, evals, serving, security and production.","data":"illustrative","per_row":3,"node_w":170,"nodes":[{"id":"found","label":"Foundations","link":"#linear-algebra"},{"id":"models","label":"How models work","link":"#transformer-block"},{"id":"prompt","label":"Prompting and context","link":"#prompting-fundamentals"},{"id":"rag","label":"Retrieval","link":"#rag-fundamentals"},{"id":"agents","label":"Agents and tools","link":"#agent-loop"},{"id":"evals","label":"Evaluation","link":"#why-evals"},{"id":"serve","label":"Serving and cost","link":"#inference-fundamentals"},{"id":"sec","label":"Security and safety","link":"#prompt-injection"},{"id":"prod","label":"Production","link":"#reference-architecture"}],"edges":[["found","models"],["models","prompt"],["prompt","rag"],["prompt","agents"],["rag","evals"],["agents","evals"],["evals","prod"],["serve","prod"],["sec","prod"]]}
 ```
 
 **What good looks like.** Builds evals before features; understands cost and latency; designs for failure; knows when not to use AI; and communicates uncertainty clearly. See [interview prep](#interview-prep).
@@ -66,6 +66,6 @@ ai-engineer-role
 ## Related
 - [The AI engineering stack](#ai-engineering-stack)
 - [Mental models that matter](#mental-models)
-- [How to use this Bible](#how-to-use)
+- [How to use Ground Truth](#how-to-use)
 - [Interview prep](#interview-prep)
 - [Learning paths and the project ladder](#project-ladder)

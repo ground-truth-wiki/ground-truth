@@ -29,7 +29,7 @@ These write-ups are expedition logs. Each team mapped part of the territory; rea
 **Recurring lessons.**
 
 ```viz
-{"id":"lessons-tree","component":"tree","title":"Five lessons that recur across write-ups, and one open disagreement","caption":"Expand a lesson for where it appears and where this Bible covers it.","alt":"Tree of recurring lessons from public AI engineering write-ups.","data":"illustrative","open":1,"root":{"label":"What practitioners keep finding","children":[
+{"id":"lessons-tree","component":"tree","title":"Five lessons that recur across write-ups, and one open disagreement","caption":"Expand a lesson for where it appears and where Ground Truth covers it.","alt":"Tree of recurring lessons from public AI engineering write-ups.","data":"illustrative","open":1,"root":{"label":"What practitioners keep finding","children":[
 {"label":"Start simple","children":[{"label":"Workflows and single agents before frameworks and multi-agent systems","link":"#workflow-patterns"}]},
 {"label":"Evals from real failures","children":[{"label":"Read traces, name failure modes, build cases","link":"#error-analysis"}]},
 {"label":"Context is the product","children":[{"label":"What enters the window decides quality and cost","link":"#context-engineering"}]},

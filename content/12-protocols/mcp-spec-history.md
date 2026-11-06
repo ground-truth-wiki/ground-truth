@@ -23,7 +23,7 @@ MCP moved fast. A blog post from early 2025 describes a transport that is now de
 Think of MCP versions like editions of a building code. Each edition keeps most of the rules, tightens a few, and retires some old practices. An inspector who knows which edition a building was designed under knows exactly where to look.
 
 ```viz
-{"id":"mcp-versions","component":"timeline","title":"Five specification versions in under two years, plus a move to a foundation","caption":"Dated events from Genesis that concern MCP. Each links to the chapter it most affects.","alt":"Vertical timeline of MCP specification releases from 2024-11-05 to 2026-07-28 and its governance move.","data":"illustrative","depicts":"MCP versions through 2026-07-28 (verified Nov 2026)","events":["mcp-launch","mcp-2025-03","mcp-2025-06","mcp-2025-11","mcp-foundation","mcp-2026"]}
+{"id":"mcp-versions","component":"timeline","title":"Five specification versions in under two years, plus a move to a foundation","caption":"Dated events from the Timeline that concern MCP. Each links to the chapter it most affects.","alt":"Vertical timeline of MCP specification releases from 2024-11-05 to 2026-07-28 and its governance move.","data":"illustrative","depicts":"MCP versions through 2026-07-28 (verified Nov 2026)","events":["mcp-launch","mcp-2025-03","mcp-2025-06","mcp-2025-11","mcp-foundation","mcp-2026"]}
 ```
 
 ## How it works
