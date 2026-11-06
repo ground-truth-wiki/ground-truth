@@ -13,9 +13,6 @@ visuals: []
 > [!tldr]
 > TODO: Two or three sentences. What it is, why it matters, and the one thing to remember.
 
-> [!seed]
-> This chapter is a seed: the key ideas are here, the full chapter is still to be written. To grow it, follow the full template in templates/chapter.md (maintainers: "deepen {{id}}").
-
 ## Key ideas
 
 - TODO: Four to six key ideas, one line each, each with a source the reader can check.

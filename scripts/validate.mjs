@@ -209,7 +209,13 @@ for (const c of chapters) {
   for (const m of prose.matchAll(/^>\s*\[!([A-Za-z]+)\]/gm)) if (!engine.callouts.includes(m[1].toLowerCase())) err(file, lineAt(m.index), `unknown callout "[!${m[1]}]" (the engine has ${engine.callouts.join(', ')})`);
   if (!/^\s*>\s*\[!tldr\]/i.test(body)) err(file, bodyLine, 'the chapter must open with a > [!tldr] callout');
   const own = questions.filter((q) => q.chapter === meta.id);
-  if (meta.status === 'full') {
+  const type = meta.type || 'chapter';
+  const book = books.books.find((x) => x.n === meta.book);
+  if (book && book.type && type !== book.type) err(file, c.fmLine('/type'), `pages in book ${meta.book} must have type: ${book.type}`);
+  if (type !== 'chapter' && (!book || book.type !== type)) err(file, c.fmLine('/type'), `type ${type} belongs in the book whose type is ${type} (data/books.json)`);
+  if (type !== 'chapter' && meta.status === 'full') for (const k of ['industry', 'use_case', 'outcome', 'measured_how']) if (!meta[k]) err(file, 1, `a full ${type} needs "${k}" in its frontmatter`);
+  (meta.prerequisites || []).forEach((id) => { const r = resolveRoute(id); if (r === 'wanted') warn(file, c.fmLine('/prerequisites'), `prerequisite "${id}" is a wanted page`, 'wanted page link'); else if (!isChapterId(id)) err(file, c.fmLine('/prerequisites'), `prerequisite "${id}" is not a chapter`); });
+  if (meta.status === 'full' && type === 'chapter') {
     if (!blocks.some((b) => b.lang === 'quiz')) err(file, bodyLine, 'a full chapter needs a ```quiz block');
     if (own.length < 2) err(file, bodyLine, `a full chapter needs 2 to 4 quiz questions in data/quizzes/${meta.id}.json (has ${own.length})`);
     else if (own.length > 4) warn(file, bodyLine, `${own.length} quiz questions; the template asks for 2 to 4`, 'quiz length');
