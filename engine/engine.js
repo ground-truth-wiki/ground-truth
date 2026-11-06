@@ -69,6 +69,7 @@ const Store = (() => {
 
 /* ----- Data ----- */
 function readJSON(id, fb) {
+  if (W.GT_CONTENT && W.GT_CONTENT.data && W.GT_CONTENT.data[id] !== undefined) return W.GT_CONTENT.data[id]; /* gt: site pages load content from a shared file */
   const n = D.getElementById(id);
   if (!n) return fb;
   try { return JSON.parse(n.textContent); } catch (e) { console.warn('[bible] data block "' + id + '" did not parse: ' + e.message); return fb; }
@@ -87,11 +88,12 @@ const TAKES = (readJSON('data-apocrypha', {}).takes) || [];
 const DYK = (readJSON('data-didyouknow', {}).facts) || [];
 const CHANGELOG = (readJSON('data-changelog', {}).entries) || [];
 const ALIASES = readJSON('data-aliases', {}) || {};
+const SITE = readJSON('data-site', null); /* gt: repository links and credits, when the build provides them */
 
 const orderKey = o => String(o).split('.').map(n => parseInt(n, 10) || 0);
 function cmpOrder(a, b) { const x = orderKey(a), y = orderKey(b); for (let i = 0; i < Math.max(x.length, y.length); i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d; } return 0; }
 const CH = [], CHMAP = {};
-$$('script[type="text/markdown"]').forEach(n => {
+(W.GT_CONTENT ? W.GT_CONTENT.chapters : $$('script[type="text/markdown"]')).forEach(n => { /* gt: site pages load content from a shared file */
   const d = n.dataset;
   if (!d.id) return;
   if (CHMAP[d.id]) { console.warn('[bible] duplicate chapter id ' + d.id); return; }
@@ -1820,7 +1822,7 @@ function palKeys(e) {
 }
 
 /* ----- Router ----- */
-function currentHash() { let h = location.hash.replace(/^#/, ''); try { h = decodeURIComponent(h); } catch (e) { } return h; }
+function currentHash() { let h = location.hash.replace(/^#/, '') || W.GT_ROUTE || ''; /* gt: chapter pages live at /<id>/ */ try { h = decodeURIComponent(h); } catch (e) { } return h; }
 function go(id) { if (currentHash() === id) route(); else location.hash = id; }
 function randomChapter() { const c = CH[Math.floor(Math.random() * CH.length)]; if (c) go(c.id); }
 function isRoute(id) { return !!(CHMAP[id] || ROUTE_PAGES.includes(id) || ROUTE_PREFIXES.some(p => id.startsWith(p)) || ALIASES[id]); }
@@ -1859,11 +1861,13 @@ function route() {
 function page404(main, id) {
   main.append(el('h1', { class: 'page-h', text: 'No page called “' + id + '”' }), el('p', { class: 'lede', text: 'The link may be old or mistyped. Search for what you wanted, or start from the contents.' }), el('div', { class: 'row' }, el('button', { class: 'btn primary', type: 'button', onclick: () => openPalette(id.replace(/-/g, ' ')) }, icon('ic-search', 'sm'), 'Search for it'), el('a', { class: 'btn', href: '#home', text: 'Home' })));
 }
+/* gt: contributor and legal links in the footer, when the build provides them */
+function footerSiteLinks() { return SITE && SITE.links ? SITE.links.flatMap(l => [' · ', el('a', { href: l.href, text: l.text })]) : []; }
 function footer() {
   const m = META;
   return el('footer', { class: 'footer' },
     el('p', {}, /* gt: site name from data-meta */ (m.title || '') + ', version ' + (m.version || '0') + ', updated ' + (m.updated || '') + '. Written from knowledge through ' + (m.cutoff || 'an unstated date') + ', plus freshness notes ' + (m.verified || '') + '.'),
-    el('p', { class: 'np' }, el('a', { href: '#whats-new', text: 'What’s new' }), ' · ', el('a', { href: '#extend-me', text: 'Extend me' }), ' · ', el('a', { href: '#visual-legend', text: 'Visual legend' }), ' · ', el('a', { href: '#prefs', text: 'Preferences' })),
+    el('p', { class: 'np' }, el('a', { href: '#whats-new', text: 'What’s new' }), ' · ', el('a', { href: '#extend-me', text: 'Extend me' }), ' · ', el('a', { href: '#visual-legend', text: 'Visual legend' }), ' · ', el('a', { href: '#prefs', text: 'Preferences' }), ...footerSiteLinks()), /* gt: contributor and legal links */
     el('p', { text: 'Fast-moving facts carry dates; verify anything volatile before you rely on it. Legal and regulatory content is information, not legal advice.' }));
 }
 function crumbs(parts) { const n = el('nav', { class: 'crumbs', 'aria-label': 'Breadcrumbs' }); parts.forEach((p, i) => { if (i) n.append(el('span', { class: 'sep', 'aria-hidden': 'true', text: '/' })); n.append(p[1] ? el('a', { href: p[1], text: p[0] }) : el('span', { text: p[0] })); }); return n; }
@@ -1879,6 +1883,21 @@ function linkIndex() {
 }
 function relatedOf(c) { const md = mdOf(c); const i = md.search(/^## Related/m); if (i < 0) return []; return [...new Set((md.slice(i).match(/\]\(#([a-z0-9-]+)\)/g) || []).map(m => m.slice(3, -1)).filter(id => CHMAP[id]))]; }
 function maybeAutoRead(c) { if (c && !Store.s.read[c.id]) markRead(c.id); }
+/* gt: "Edit on GitHub", "Improve with your agent" and the credits of a chapter */
+function siteBox(c) {
+  const file = SITE.files && SITE.files[c.id];
+  const who = (SITE.credits && SITE.credits[c.id]) || [];
+  const repo = SITE.repository || '';
+  const prompt = 'Contribute to ' + (META.title || '') + ': ' + repo.replace(/^https:\/\//, '') + '. Read AGENTS.md first and follow it exactly. What I want to contribute: an improvement to the chapter “' + c.title + '” (' + c.id + (file ? ', ' + file : '') + '): …';
+  const ext = { target: '_blank', rel: 'noopener noreferrer' };
+  const names = who.flatMap((p, i) => [i ? (i === who.length - 1 ? ' and ' : ', ') : '', p.handle ? el('a', Object.assign({ href: 'https://github.com/' + p.handle, text: '@' + p.handle }, ext)) : p.name]);
+  return el('section', { class: 'ch-site', 'aria-label': 'Improve this chapter', style: 'margin-top:22px' },
+    el('div', { class: 'row' },
+      file ? el('a', Object.assign({ class: 'btn sm', href: repo + '/edit/main/' + file }, ext), icon('ic-md', 'sm'), 'Edit on GitHub') : null,
+      el('button', { class: 'btn sm', type: 'button', onclick: () => copyText(prompt, 'Prompt copied. Paste it into your coding agent.') }, icon('ic-copy', 'sm'), 'Improve with your agent'),
+      SITE.contributing ? el('a', Object.assign({ class: 'small', href: SITE.contributing, text: 'How contributing works' }, ext)) : null),
+    who.length ? el('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'Written and reviewed by ', ...names, '. ', SITE.contributors ? el('a', { href: SITE.contributors, text: 'All contributors' }) : null) : null);
+}
 function pageChapter(c, main, rail) {
   curChapter = c;
   const b = BOOKMAP[c.book] || { n: c.book, title: 'Book ' + c.book, hue: 262 };
@@ -1928,6 +1947,7 @@ function pageChapter(c, main, rail) {
     el('div', { class: 'pn' }, prev ? el('a', { href: '#' + prev.id }, el('span', { class: 'k', text: 'Previous' }), prev.order + ' ' + prev.title) : el('span'), next ? el('a', { class: 'next', href: '#' + next.id }, el('span', { class: 'k', text: 'Next' }), next.order + ' ' + next.title) : null),
     el('div', { class: 'notes' }, el('label', { for: 'notes-' + c.id, class: 'small', style: 'font-weight:650;display:block;margin-bottom:4px', text: 'Your notes' }), notes),
     back.length ? el('div', {}, el('p', { class: 'small', style: 'font-weight:650;margin:0 0 6px', text: 'Chapters that link here' }), el('div', { class: 'tag-row' }, ...back.map(id => el('a', { class: 'chip', href: '#' + id, text: CHMAP[id].order + ' ' + CHMAP[id].title })))) : null));
+  if (SITE) main.append(siteBox(c)); /* gt: edit link, agent prompt and credits */
   const sentinel = el('div', { 'aria-hidden': 'true' });
   main.append(sentinel);
   if ('IntersectionObserver' in W) { const io = new IntersectionObserver(es => { if (es[0].isIntersecting && Date.now() - routeStart > 15000 && curChapter === c) { io.disconnect(); maybeAutoRead(c); syncRead(); } }, {}); io.observe(sentinel); }
@@ -2293,16 +2313,20 @@ function pageWhatsNew(main) {
   const stale = CH.filter(c => c.stability === 'volatile' && monthsSince(c.reviewed) >= 3);
   main.append(el('h2', { class: 'sec-h', text: 'Volatile chapters due a review' }), stale.length ? el('ul', {}, ...stale.map(c => el('li', {}, el('a', { href: '#' + c.id, text: c.order + ' ' + c.title }), ' (reviewed ' + c.reviewed + ')'))) : el('p', { class: 'muted', text: 'None. Every volatile chapter was reviewed within the last 90 days. Say “refresh” to run a freshness pass anyway.' }));
 }
-function pageExtend(main) {
-  main.append(el('h1', { class: 'page-h', text: 'Extend me' }), el('p', { class: 'lede', text: /* gt: site name */ META.title + ' is one HTML file built to grow. Content lives in plain-text blocks; the engine reads them. Give the artifact link and one of these commands in a new session.' }));
-  const cmds = [['continue', 'Add missing features and visual components first, then deepen the next 10 to 15 seed chapters in the planned order, each with its visuals, and republish.'], ['deepen <chapter id or Book number>', 'Deepen just that chapter or Book: replace the seed body, set data-status to full, add visuals, quiz questions and terms.'], ['add: <topic, paper, link or notes>', 'Integrate new material everywhere it belongs: chapters, Glossary, Timeline, quizzes. Unplaced research goes to Book 19.'], ['refresh', 'Run a freshness pass over volatile chapters (with web search if available) and update their review dates.'], ['audit', 'Review accuracy and consistency, fix what turns up, and report.'], ['status', 'Report coverage, visuals built and planned, and what comes next.'], ['visualize <chapter id or Book number>', 'Build the planned visuals, replace weak ones, add an interactive visual for each core mechanism, and report.']];
-  main.append(el('h2', { class: 'sec-h', text: 'Commands' }), ...cmds.map(c => el('div', {}, el('div', { class: 'cmdbox' }, el('code', { text: c[0] }), copyBtn(() => c[0], 'Copy command')), el('p', { class: 'small', style: 'margin:2px 0 12px', text: c[1] }))));
-  const schema = '<script type="text/markdown"\n  data-id="mcp-transports"        permanent, lowercase, hyphenated\n  data-book="12"\n  data-order="12.5"              insert between with a third part, e.g. 12.5.1\n  data-title="MCP transports"\n  data-level="practitioner"      foundation | practitioner | expert | frontier\n  data-stability="moving"        evergreen | moving | volatile\n  data-reviewed="2026-11"        YYYY-MM\n  data-status="seed"             seed | full\n  data-tags="mcp,transports"\n  data-visuals="stdio-vs-http:compare">\n…Markdown…  (write <\\/script> for a literal closing script tag)\n<\/script>';
-  main.append(el('h2', { class: 'sec-h', text: 'Chapter blocks' }), codeBlock('text', schema));
-  main.append(el('p', { text: 'Each Book’s chapters sit between comments such as BOOK 12 START and BOOK 12 END, so a new chapter goes in with one exact text edit. Old ids that change map to new ones in the data-aliases block.' }));
+function pageExtend(main) { /* gt: the repository workflow replaces the single-file artifact workflow */
+  const repo = (SITE && SITE.repository) || '';
+  const ext = { target: '_blank', rel: 'noopener noreferrer' };
+  main.append(el('h1', { class: 'page-h', text: 'Extend me' }), el('p', { class: 'lede', text: (META.title || '') + ' is written in public on GitHub. Anyone can improve it with a coding agent: the agent reads AGENTS.md, writes the change, runs the checks and opens a pull request, and a human reviewer decides.' }));
+  if (repo) main.append(el('p', {}, el('a', Object.assign({ href: repo + '/blob/main/CONTRIBUTING.md', text: 'How to contribute' }, ext)), ' · ', el('a', Object.assign({ href: repo, text: 'The repository' }, ext))));
+  const prompt = 'Contribute to ' + (META.title || '') + ': ' + (repo ? repo.replace(/^https:\/\//, '') : 'its GitHub repository') + '. Read AGENTS.md first and follow it exactly. What I want to contribute: …';
+  main.append(el('h2', { class: 'sec-h', text: 'Contribute with your coding agent' }), el('p', { class: 'small', text: 'Paste this into Claude Code, Codex, Cursor or a similar agent, and finish the last sentence.' }), el('div', { class: 'cmdbox' }, el('code', { text: prompt }), copyBtn(() => prompt, 'Copy prompt')));
+  const cmds = [['status', 'Coverage by book, the freshness backlog and the pull requests waiting for review.'], ['continue', 'The next 10 to 15 chapters: those due for review first, then seed chapters and planned topics from the coverage map, one pull request per book.'], ['deepen <book number or chapter id>', 'Bring one book or chapter to the full template, with visuals, quiz questions and glossary terms.'], ['visualize <book number or chapter id>', 'Build planned visuals, replace weak ones, and add an interactive visual for each core mechanism.'], ['add: <paper, link, release notes or notes>', 'File new material everywhere it belongs, with sources: chapters, Glossary, Timeline and quizzes.'], ['refresh', 'Check the chapters due for review against their primary sources and update them.'], ['audit', 'Check accuracy and consistency against the rulebook and the style guide, fix what is clearly wrong, and report the rest.']];
+  main.append(el('h2', { class: 'sec-h', text: 'Maintainer commands' }), el('p', { class: 'small', text: 'For maintainers working with a coding agent inside the repository. Every command works on a branch and ends in pull requests that a human reviews.' }), ...cmds.map(c => el('div', {}, el('div', { class: 'cmdbox' }, el('code', { text: c[0] }), copyBtn(() => c[0], 'Copy command')), el('p', { class: 'small', style: 'margin:2px 0 12px', text: c[1] }))));
+  const schema = '---\nid: mcp-transports          permanent, lowercase, hyphenated; also the file name\nbook: 12\norder: "12.5"               quoted; insert between with a third part, such as "12.5.1"\ntitle: MCP transports\nlevel: practitioner         foundation | practitioner | expert | frontier\nstability: moving           evergreen | moving | volatile\nreviewed: "2026-11"         month of the last full review\nstatus: full                seed | full\ntags: [mcp, transports]\nvisuals:                    every visual in the body, as id:form\n  - transport-compare:compare\n---\n> [!tldr]\n> Two or three sentences …';
+  main.append(el('h2', { class: 'sec-h', text: 'Chapter files' }), el('p', { text: 'Each chapter is a Markdown file, content/<NN>-<book>/<id>.md, that starts with this frontmatter. An id that has to change maps to its new id in data/aliases.json, so links never break.' }), codeBlock('text', schema));
   main.append(el('h2', { class: 'sec-h', text: 'Inside the Markdown' }), codeBlock('text', '> [!tldr]           TL;DR card (first block of a chapter)\n> [!insight] Title  callouts: insight, pitfall, expert, hottake, try, number, history\n[[KV cache]]        explicit glossary link; [[shown text|term-id]] also works\n[text](#chapter-id) internal link (also #book-9, #term-x, #tool-x, #matrix-x, #cmd-x, #path-x)\n\\( x^2 \\)           inline math;  ```math  block math (TeX, rendered with MathJax SVG)\n```viz              JSON spec for an engine component (see below)\n```mermaid id=… title="…" caption="…" alt="…"\n```svg id=… title="…"   hand-drawn SVG using the glyphs and role colors\n```quiz             this chapter’s questions from data-quizzes\n```widget           acronyms | canon | paths | ladder | commandments | lexicon | changelog'));
   main.append(el('h2', { class: 'sec-h', text: 'Visual specs' }), el('p', {}, 'Components: ', el('code', { text: VIZ_KNOWN.join(', ') }), '. Explorer models: ', el('code', { text: Object.keys(MODELS).join(', ') }), '.'), codeBlock('json', JSON.stringify({ id: 'unique-id', component: 'calculator', title: 'States the takeaway', caption: 'What to notice', alt: 'Text description', data: 'formula | real | illustrative', source: 'for real data', asof: 'for real data', try: 'one suggested first move', formula: '2 × layers × kv_heads × head_dim × bytes_per_value × tokens × batch', inputs: { layers: 80 }, tests: [{ inputs: { tokens: 1 }, expect_bytes: 327680 }] }, null, 2)));
-  main.append(el('h2', { class: 'sec-h', text: 'Data blocks' }), el('p', { text: 'JSON blocks with these ids: data-meta, data-books, data-glossary, data-timeline, data-quizzes, data-paths, data-matrices, data-cheatsheets, data-presets, data-wizards, data-apocrypha, data-didyouknow, data-changelog, data-aliases. Every update bumps the version (minor for content, patch for fixes), adds a changelog entry, and updates data-reviewed on the chapters it touched.' }));
+  main.append(el('h2', { class: 'sec-h', text: 'Data files' }), el('p', { text: 'Glossary terms live in data/glossary/<id>.json, quiz questions in data/quizzes/<chapter-id>.json, and the books, timeline, paths, matrices, cheat sheets, tools, wizards, debates and changelog in data/*.json. Maintainers bump the version and add a changelog entry when they tag a release.' }));
 }
 function pagePrefs(main) {
   const p = prefs();
