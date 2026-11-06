@@ -33,15 +33,9 @@ export function loadChapters() {
   return chapters;
 }
 
-// Chapter order inside the page. The manifest records the source order;
-// chapters that are not in it follow, sorted by book and order.
-export function orderChapters(chapters, manifest) {
-  const byId = new Map(chapters.map((c) => [c.meta.id, c]));
-  const listed = [];
-  for (const ids of Object.values(manifest.chapters.order)) for (const id of ids) if (byId.has(id)) listed.push(byId.get(id));
-  const rest = chapters.filter((c) => !listed.includes(c)).sort(compareChapters);
-  return [...listed, ...rest].sort((a, b) => a.meta.book - b.meta.book);
-}
+// Chapter order inside the page: by book, then by order compared numerically
+// part by part ("9.10" after "9.9"), exactly as the engine sorts them.
+export const orderChapters = (chapters) => chapters.slice().sort(compareChapters);
 
 function loadSplit(block, chapterOrder) {
   const files = listFiles(block.dir, '.json').filter((f) => !f.endsWith('/_index.json'));
@@ -90,7 +84,7 @@ export function loadData(manifest, chapters) {
 export function loadProject() {
   const site = loadSite();
   const manifest = readJSON('build/manifest.json');
-  const chapters = orderChapters(loadChapters(), manifest);
+  const chapters = orderChapters(loadChapters());
   const data = loadData(manifest, chapters);
   const meta = data.find((d) => d.id === 'data-meta');
   if (meta && meta.value.title !== site.name) {

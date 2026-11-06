@@ -167,8 +167,7 @@ const manifest = {
     bodyLead: '\n',
     separator: '\n',
     bookStart: '<!-- BOOK {n} START -->',
-    bookEnd: '<!-- BOOK {n} END -->',
-    order
+    bookEnd: '<!-- BOOK {n} END -->'
   },
   data: { separator: '\n', blocks: dataManifest }
 };
