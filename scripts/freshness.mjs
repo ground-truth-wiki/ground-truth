@@ -7,8 +7,7 @@
 import { fail } from './lib/fsutil.mjs';
 import { loadChapters, orderChapters } from './lib/project.mjs';
 import { loadSite } from './lib/site.mjs';
-
-const REVIEW_MONTHS = { volatile: 3, moving: 6, evergreen: 12 };
+import { REVIEW_MONTHS, reviewSchedule, ym } from './lib/freshness.mjs';
 
 const args = process.argv.slice(2);
 const opt = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
@@ -17,18 +16,11 @@ const today = todayArg ? new Date(`${todayArg}T00:00:00Z`) : new Date();
 if (Number.isNaN(today.getTime())) fail('--today must be a date such as 2027-02-01');
 const soon = Number(opt('--soon', 1));
 
-const monthIndex = (ym) => { const [y, m] = ym.split('-').map(Number); return y * 12 + (m - 1); };
-const nowIndex = today.getUTCFullYear() * 12 + today.getUTCMonth();
-const ym = (i) => `${Math.floor(i / 12)}-${String((i % 12) + 1).padStart(2, '0')}`;
 
 let chapters, site;
 try { chapters = orderChapters(loadChapters()); site = loadSite(); } catch (e) { fail(e.message); }
 
-const rows = chapters.map((c) => {
-  const every = REVIEW_MONTHS[c.meta.stability];
-  const due = monthIndex(c.meta.reviewed) + every;
-  return { c, every, due, overdue: nowIndex - due };
-});
+const rows = reviewSchedule(chapters, today).map((r) => ({ c: r.chapter, due: r.due, overdue: r.overdue }));
 const dueNow = rows.filter((r) => r.overdue >= 0).sort((a, b) => b.overdue - a.overdue || a.c.meta.book - b.c.meta.book);
 const dueSoon = rows.filter((r) => r.overdue < 0 && r.overdue >= -soon).sort((a, b) => a.due - b.due);
 
