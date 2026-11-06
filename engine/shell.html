@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The AI Engineer’s Bible</title>
+<meta name="description" content="A course, a reference and a playground for becoming a state-of-the-art AI engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&display=swap">
+<!-- @styles -->
+</head>
+<body>
+<svg class="glyphs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0v7" style="stroke:var(--r-untrusted)" stroke-width="1.6" opacity=".5"/></pattern>
+<pattern id="hatch-mask" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0v6" style="stroke:var(--muted)" stroke-width="1.4" opacity=".55"/></pattern>
+</defs>
+<symbol id="g-model" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><circle cx="12" cy="12" r="3.2"/></symbol>
+<symbol id="g-context" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H4v17h3M17 3.5h3v17h-3"/><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4.5"/></symbol>
+<symbol id="g-token" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.5" width="19" height="9" rx="4.5"/><path d="M9.5 7.5v9"/></symbol>
+<symbol id="g-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 5.3a4.2 4.2 0 0 0-5.4 5.4L3.8 16.2l4 4 5.5-5.5a4.2 4.2 0 0 0 5.4-5.4l-2.6 2.6-2.7-.6-.6-2.7z"/></symbol>
+<symbol id="g-data" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.8" rx="7.2" ry="2.8"/><path d="M4.8 5.8v12.4c0 1.5 3.2 2.8 7.2 2.8s7.2-1.3 7.2-2.8V5.8"/><path d="M4.8 12c0 1.5 3.2 2.8 7.2 2.8s7.2-1.3 7.2-2.8"/></symbol>
+<symbol id="g-agent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.5v4h-4"/><circle cx="12" cy="12" r="2.3"/></symbol>
+<symbol id="g-human" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7.3" r="3.6"/><path d="M4.8 20.5c.8-4.1 3.7-6.3 7.2-6.3s6.4 2.2 7.2 6.3"/></symbol>
+<symbol id="g-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10.2a4.2 4.2 0 0 0 .5-8.4 5.7 5.7 0 0 0-10.9-.9A4.7 4.7 0 0 0 7 18.5z"/></symbol>
+<symbol id="g-untrusted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 21.3 19.8H2.7z"/><path d="M12 9.5v4.6M12 17.1h.01"/></symbol>
+<symbol id="ic-insight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="ic-pitfall" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.2 3h7.6L21 8.2v7.6L15.8 21H8.2L3 15.8V8.2z"/><path d="M12 7.8v5.2M12 16.4h.01"/></symbol>
+<symbol id="ic-expert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v11.5H9.5L4 20.5z"/><path d="M8 8.8h8M8 12h5"/></symbol>
+<symbol id="ic-hottake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4 0 7-2.7 7-6.5 0-3.4-2.4-5.3-3.6-8.5-1.6 1.6-2.2 3.2-2.2 4.6C11.7 9 10.4 6.4 10.6 3 7 5.6 5 9.6 5 14.5 5 18.3 8 21 12 21z"/></symbol>
+<symbol id="ic-try" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.3l5.6 3.7-5.6 3.7z"/></symbol>
+<symbol id="ic-number" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h15M4 15h15M10 3.5 8 20.5M16 3.5l-2 17"/></symbol>
+<symbol id="ic-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 12a8.4 8.4 0 1 0 2.5-6"/><path d="M3 3.8v4.3h4.3"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="ic-tldr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h9"/></symbol>
+<symbol id="ic-seed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 8-7 0 5-3 7-8 7z"/><path d="M12 14.5c0-3-2.2-5-6-5 0 3.8 2.2 5 6 5z"/></symbol>
+<symbol id="ic-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19.5 8.5a2.1 2.1 0 0 0-4-4L4 16z"/></symbol>
+<symbol id="ic-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+<symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+<symbol id="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5z"/></symbol>
+<symbol id="ic-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6.5 3.5h11v17L12 16.5l-5.5 4z"/></symbol>
+<symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+<symbol id="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></symbol>
+<symbol id="ic-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M7.5 5v14l11.5-7z"/></symbol>
+<symbol id="ic-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8.5 5.5v13M15.5 5.5v13"/></symbol>
+<symbol id="ic-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></symbol>
+<symbol id="ic-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+<symbol id="ic-first" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6v12M17 6l-6 6 6 6"/></symbol>
+<symbol id="ic-last" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 6v12M7 6l6 6-6 6"/></symbol>
+<symbol id="ic-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="ic-rail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+<symbol id="ic-focus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+<symbol id="ic-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M5 6h14M5 10h14M5 14h14M5 18h9"/></symbol>
+<symbol id="ic-dice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M8.5 8.5h.01M15.5 8.5h.01M12 12h.01M8.5 15.5h.01M15.5 15.5h.01" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ic-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 6 6 6-6 6"/></symbol>
+<symbol id="ic-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.6 13.8-1.6 7.2 5-3 5 3-1.6-7.2"/></symbol>
+<symbol id="ic-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M7 8V3.5h10V8M7 17H4.5V9.5A1.5 1.5 0 0 1 6 8h12a1.5 1.5 0 0 1 1.5 1.5V17H17"/><rect x="7" y="14" width="10" height="6.5"/></symbol>
+<symbol id="ic-font" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 19 8.5 5l5 14M5.4 14h6.2M15 19l3-8 3 8M15.9 16.5h4.2"/></symbol>
+<symbol id="ic-width" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></symbol>
+<symbol id="ic-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M6 15V9l2.5 3L11 9v6M16.5 9v6M14.5 13l2 2 2-2"/></symbol>
+<symbol id="ic-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v16H6.5A1.5 1.5 0 0 0 5 20.5zM5 20.5A1.5 1.5 0 0 0 6.5 22H19"/></symbol>
+<symbol id="ic-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="ic-cards" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="6.5" width="13" height="14" rx="2"/><path d="M7.5 6.5V5A1.5 1.5 0 0 1 9 3.5h10A1.5 1.5 0 0 1 20.5 5v12A1.5 1.5 0 0 1 19 18.5h-2.5"/></symbol>
+<symbol id="ic-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21c4 0 7-2.7 7-6.5 0-3.4-2.4-5.3-3.6-8.5-1.6 1.6-2.2 3.2-2.2 4.6C11.7 9 10.4 6.4 10.6 3 7 5.6 5 9.6 5 14.5 5 18.3 8 21 12 21z"/></symbol>
+<symbol id="ic-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+<symbol id="bk-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1z"/></symbol>
+<symbol id="bk-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 5H6.5l6 7-6 7h11"/></symbol>
+<symbol id="bk-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.8h17M9.2 3.5v17M14.8 3.5v17"/><path d="M3.8 3.8h5.2v5.2H3.8zM9.4 9.4h5.2v5.2H9.4zM15 15h5.2v5.2H15z" fill="currentColor" stroke="none" opacity=".35"/></symbol>
+<symbol id="bk-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3 9 4.5-9 4.5-9-4.5z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></symbol>
+<symbol id="bk-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+<symbol id="bk-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="m7 10 3 2.5-3 2.5M12.5 15H17"/></symbol>
+<symbol id="bk-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 3H5.5v18h6.5"/><path d="M13.5 3l4.5 4.5V10"/><circle cx="16" cy="15.5" r="3.3"/><path d="m18.5 18 2.5 2.5"/></symbol>
+<symbol id="bk-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 4h17l-6.5 8.5v6l-4 2v-8z"/></symbol>
+<symbol id="bk-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="bk-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.3-4.3M4 13a8 8 0 0 0 14.3 4.3"/><path d="M5.5 2.8v4h4M18.5 21.2v-4h-4"/></symbol>
+<symbol id="bk-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11.5" rx="3"/><path d="M12 4.5V8M9.5 13h.01M14.5 13h.01M9.5 16.3h5"/><circle cx="12" cy="3.6" r="1.1"/></symbol>
+<symbol id="bk-11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3.3"/><path d="M12 2.5v3.2M12 18.3v3.2M2.5 12h3.2M18.3 12h3.2M5.3 5.3l2.2 2.2M16.5 16.5l2.2 2.2M5.3 18.7l2.2-2.2M16.5 7.5l2.2-2.2"/></symbol>
+<symbol id="bk-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5M15 3v5M6.5 8h11v3a5.5 5.5 0 0 1-11 0zM12 16.5V21"/></symbol>
+<symbol id="bk-13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5"/><rect x="8.25" y="3.5" width="7.5" height="7.5" rx="1.5"/></symbol>
+<symbol id="bk-14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
+<symbol id="bk-15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13.2 2.5 5 13.5h6.2l-1 8 8.3-11h-6.3z"/></symbol>
+<symbol id="bk-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="7" rx="1.5"/><rect x="4" y="13" width="16" height="7" rx="1.5"/><path d="M8 7.5h.01M8 16.5h.01M12 7.5h5M12 16.5h5"/></symbol>
+<symbol id="bk-17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="bk-18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.5 6.5 21M12 7.5 17.5 21M8.4 16.2h7.2"/><circle cx="12" cy="5.5" r="2"/></symbol>
+<symbol id="bk-19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3c.8 4.7 4.3 8.2 9 9-4.7.8-8.2 4.3-9 9-.8-4.7-4.3-8.2-9-9 4.7-.8 8.2-4.3 9-9z"/></symbol>
+<symbol id="bk-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v16H6.5A1.5 1.5 0 0 0 5 20.5zM5 20.5A1.5 1.5 0 0 0 6.5 22H19"/><path d="M9 7.5h6"/></symbol>
+</svg>
+
+<a class="skip" href="#home">Skip to content</a>
+<header class="top">
+  <button class="icon-btn only-mobile" id="nav-btn" type="button" aria-label="Open contents" aria-expanded="false" aria-controls="nav"><svg class="ic" aria-hidden="true"><use href="#ic-menu"/></svg></button>
+  <a class="brand" href="#home" aria-label="The AI Engineer’s Bible, home">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="18" width="12" height="9" rx="4.5" fill="none" style="stroke:var(--ink)" stroke-width="2"/><rect x="18" y="18" width="12" height="9" rx="4.5" style="fill:var(--ink)"/><path d="M8 15.5C8 5.5 24 5.5 24 15.5" fill="none" style="stroke:var(--ui)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="15.5" r="2.2" style="fill:var(--ui)"/></svg>
+    <span>The AI Engineer’s Bible</span>
+  </a>
+  <button class="top-search" id="search-btn" type="button" aria-label="Search the Bible"><svg class="ic" aria-hidden="true"><use href="#ic-search"/></svg><span class="lbl">Search chapters, terms and tools</span><kbd class="hint">Ctrl K</kbd></button>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch theme"><svg class="ic" aria-hidden="true"><use href="#ic-moon"/></svg></button>
+  <a class="lvl-chip" id="lvl-chip" href="#progress">Progress</a>
+</header>
+<div class="layout" id="layout">
+  <nav class="nav" id="nav" aria-label="Contents"></nav>
+  <main id="main" tabindex="-1"><noscript><p>The AI Engineer’s Bible needs JavaScript to render its chapters.</p></noscript></main>
+  <aside class="rail" id="rail" aria-label="On this page"></aside>
+</div>
+<div class="pal-wrap" id="pal" hidden>
+  <div class="pal-scrim"></div>
+  <div class="pal" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="pal-in"><svg class="ic" aria-hidden="true"><use href="#ic-search"/></svg><input id="pal-input" type="text" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search chapters, terms, tools, timeline…" aria-label="Search"><kbd>Esc</kbd></div>
+    <div class="pal-list" id="pal-list" role="listbox" aria-label="Results"></div>
+    <div class="pal-foot"><span>↑ ↓ to move</span><span>Enter to open</span><span>Esc to close</span><span>/ or Ctrl K to search from anywhere</span></div>
+  </div>
+</div>
+<!-- ===== CONTENT: one Markdown block per chapter, grouped by Book ===== -->
+<!-- @chapters -->
+<!-- ===== DATA: structured JSON blocks ===== -->
+<!-- @data -->
+<!-- ===== ENGINE ===== -->
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- @engine -->
+</body>
+</html>
