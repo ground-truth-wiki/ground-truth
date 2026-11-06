@@ -1,0 +1,71 @@
+# /claim and /unclaim on issues labeled "wanted", and the release of claims
+# that have no linked pull request after 14 days. Reads only issue metadata;
+# never checks out or runs pull request code.
+name: Claims
+
+on:
+  issue_comment:
+    types: [created]
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: claims
+
+jobs:
+  command:
+    if: github.event_name == 'issue_comment' && !github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const text = context.payload.comment.body.trim().toLowerCase();
+            const command = (text.match(/^\/(claim|unclaim)\b/) || [])[1];
+            if (!command) return;
+            const issue = context.payload.issue;
+            const user = context.payload.comment.user.login;
+            const reply = (body) => github.rest.issues.createComment({ ...context.repo, issue_number: issue.number, body });
+            const holders = issue.assignees.map((a) => a.login);
+            if (command === 'unclaim') {
+              if (!holders.includes(user)) return reply(`@${user} you don't hold a claim on this issue.`);
+              await github.rest.issues.removeAssignees({ ...context.repo, issue_number: issue.number, assignees: [user] });
+              return reply(`@${user} released. Thank you for letting others know, so someone else can pick it up.`);
+            }
+            if (!issue.labels.some((l) => l.name === 'wanted')) return reply(`@${user} only issues labeled \`wanted\` can be claimed.`);
+            if (holders.length) return reply(`@${user} this is already claimed by @${holders[0]}. Comment there if you want to help, or pick another wanted page.`);
+            const mine = await github.paginate(github.rest.issues.listForRepo, { ...context.repo, state: 'open', labels: 'wanted', assignee: user, per_page: 100 });
+            if (mine.length >= 2) return reply(`@${user} you already hold 2 claims (${mine.map((i) => `#${i.number}`).join(', ')}), the most at one time. Finish one, or comment \`/unclaim\` on it, then claim this one.`);
+            await github.rest.issues.addAssignees({ ...context.repo, issue_number: issue.number, assignees: [user] });
+            const after = (await github.rest.issues.get({ ...context.repo, issue_number: issue.number })).data;
+            if (!after.assignees.some((a) => a.login === user)) return reply(`@${user} I could not assign this to you. A maintainer will help.`);
+            return reply(`@${user} it's yours. Open a pull request within 14 days and write "Closes #${issue.number}" in its description; claims without a linked pull request are released after 14 days so others can pick them up. Comment \`/unclaim\` to release it yourself.`);
+
+  release:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const DAYS = 14;
+            const cutoff = Date.now() - DAYS * 24 * 3600 * 1000;
+            const issues = await github.paginate(github.rest.issues.listForRepo, { ...context.repo, state: 'open', labels: 'wanted', assignee: '*', per_page: 100 });
+            for (const issue of issues) {
+              const events = await github.paginate(github.rest.issues.listEventsForTimeline, { ...context.repo, issue_number: issue.number, per_page: 100 });
+              const assigned = events.filter((e) => e.event === 'assigned').map((e) => Date.parse(e.created_at)).pop();
+              if (!assigned || assigned > cutoff) continue;
+              const linked = events.some((e) => (e.event === 'cross-referenced' && e.source && e.source.issue && e.source.issue.pull_request && e.source.issue.state === 'open') || e.event === 'connected');
+              if (linked) continue;
+              const users = issue.assignees.map((a) => a.login);
+              await github.rest.issues.removeAssignees({ ...context.repo, issue_number: issue.number, assignees: users });
+              await github.rest.issues.createComment({ ...context.repo, issue_number: issue.number, body: `${users.map((u) => '@' + u).join(' ')} this claim had no linked pull request after ${DAYS} days, so I released it and anyone can claim it again. You are welcome to claim it again when you are ready.` });
+              core.info(`released #${issue.number} from ${users.join(', ')}`);
+            }

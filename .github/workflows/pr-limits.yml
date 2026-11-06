@@ -1,0 +1,47 @@
+# Keeps the number of open pull requests per contributor reviewable:
+# 2 for authors with fewer than 3 merged pull requests, 5 otherwise.
+# pull_request_target has a write token, so this workflow never checks out
+# or runs pull request code. It only reads metadata through the API.
+name: Pull request limits
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  limits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+            // Maintainers and stewards are organization members; their large
+            // runs are split into many pull requests on purpose.
+            if (pr.user.type === 'Bot' || ['OWNER', 'MEMBER'].includes(pr.author_association)) {
+              core.info(`${author} is exempt (${pr.author_association})`);
+              return;
+            }
+            const open = (await github.paginate(github.rest.pulls.list, { ...context.repo, state: 'open', per_page: 100 }))
+              .filter((p) => p.user.login === author && !p.draft);
+            const merged = (await github.rest.search.issuesAndPullRequests({
+              q: `repo:${context.repo.owner}/${context.repo.repo} is:pr is:merged author:${author}`, per_page: 1
+            })).data.total_count;
+            const limit = merged >= 3 ? 5 : 2;
+            core.info(`${author}: ${open.length} open, ${merged} merged, limit ${limit}`);
+            if (open.length <= limit) return;
+            await github.graphql('mutation($id: ID!) { convertPullRequestToDraft(input: { pullRequestId: $id }) { pullRequest { isDraft } } }', { id: pr.node_id });
+            const others = open.filter((p) => p.number !== pr.number).map((p) => `#${p.number}`).join(', ');
+            await github.rest.issues.createComment({ ...context.repo, issue_number: pr.number, body: [
+              `Thank you, @${author}! You have ${open.length} open pull requests (${others} and this one), and the limit is ${limit} at a time${merged >= 3 ? '' : ' until 3 of yours are merged'}.`,
+              '',
+              'I turned this one into a draft so reviewers can focus. Once one of the others is merged or closed, click **Ready for review** and it rejoins the queue.',
+              '',
+              `The limit keeps reviews fast and makes sure every page has a person standing behind it; see [CONTRIBUTING.md](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md#limits-and-why-they-exist).`
+            ].join('\n') });
