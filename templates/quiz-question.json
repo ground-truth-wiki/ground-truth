@@ -1,0 +1,13 @@
+{
+  "id": "{{id}}-1",
+  "chapter": "{{id}}",
+  "q": "TODO: A question that checks understanding, not recall of a sentence.",
+  "options": [
+    "TODO: the correct answer",
+    "TODO: a plausible wrong answer",
+    "TODO: a plausible wrong answer",
+    "TODO: a plausible wrong answer"
+  ],
+  "answer": 0,
+  "explain": "TODO: Why the answer is right, and what the most tempting wrong answer gets wrong."
+}

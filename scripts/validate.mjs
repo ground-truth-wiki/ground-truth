@@ -240,6 +240,11 @@ for (const c of chapters) {
   if (n < 2) warn(c.file, 1, `linked from ${n} other chapter(s); every chapter should be reachable from at least two`, 'inbound links');
 }
 
+// ----- Template text left behind -----
+for (const file of [...chapters.map((c) => c.file), ...glossaryFiles.map((g) => g.file), ...quizFiles.map((q) => q.file)]) {
+  readText(file).split('\n').forEach((l, i) => { if (/\bTODO:/.test(l)) err(file, i + 1, 'template text "TODO:" is still here; replace it with real content'); });
+}
+
 // ----- Data cross-references -----
 const refCheck = (file, lineOf, ptr, id, what = 'chapter') => { if (!isChapterId(id) && !wantedIds.has(id)) err(file, lineOf(ptr), `${what} "${id}" does not exist`); };
 const unique = (file, lineOf, list, ptrOf, label) => { const seen = new Set(); list.forEach((x, i) => { if (seen.has(x.id)) err(file, lineOf(ptrOf(i)), `duplicate ${label} id "${x.id}"`); seen.add(x.id); }); };
