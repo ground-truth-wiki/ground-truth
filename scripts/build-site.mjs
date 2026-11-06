@@ -6,7 +6,7 @@
 //                            canonical URL, link-preview tags and pre-rendered
 //                            text; it loads the same shared engine and content
 //   404.html                 the app, routing unknown and old addresses
-//   impressum/, privacy/, contributors/
+//   contributors/, wanted/, legal/impressum/, legal/privacy/
 //   assets/, vendor/         shared, content-hashed and versioned files
 //   sitemap.xml, robots.txt, llms.txt, llms-full.txt, og.png, _headers, _redirects
 //   ground-truth.html        the offline single file
@@ -34,7 +34,13 @@ const GITHUB = process.argv.includes('--github');
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const hash = (s) => crypto.createHash('sha256').update(s).digest('hex').slice(0, 10);
 let written = 0;
-const put = (rel, data) => { const p = path.join(abs(OUT), ...rel.split('/')); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, data); written++; };
+const seen = new Set();
+const put = (rel, data) => {
+  // Two things at one address would silently replace each other.
+  if (seen.has(rel)) fail(`${OUT}/${rel} would be written twice; a chapter id probably collides with a site path`);
+  seen.add(rel);
+  const p = path.join(abs(OUT), ...rel.split('/')); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, data); written++;
+};
 const copy = (rel, from) => put(rel, fs.readFileSync(from));
 
 let project;
@@ -77,8 +83,9 @@ const siteData = (linkBase) => ({
   credits,
   links: [
     { text: 'Contributors', href: `${linkBase}/contributors/` },
-    { text: 'Impressum', href: `${linkBase}/impressum/` },
-    { text: 'Privacy', href: `${linkBase}/privacy/` },
+    { text: 'Wanted pages', href: `${linkBase}/wanted/` },
+    { text: 'Impressum', href: `${linkBase}/legal/impressum/` },
+    { text: 'Privacy', href: `${linkBase}/legal/privacy/` },
     { text: 'GitHub', href: repo }
   ]
 });
@@ -145,7 +152,7 @@ function staticPage(rel, { title, description, bodyHTML, robots }) {
 }
 for (const name of ['impressum', 'privacy']) {
   const { meta, body } = parseChapterFile(readText(`content/legal/${name}.md`), `content/legal/${name}.md`);
-  staticPage(`${name}/`, { title: meta.title, description: meta.description, bodyHTML: `<article class="prose">${marked.parse(body)}</article>` });
+  staticPage(`legal/${name}/`, { title: meta.title, description: meta.description, bodyHTML: `<article class="prose">${marked.parse(body)}</article>` });
 }
 const people = [...pagesByPerson.entries()].map(([k, ids]) => ({ ...JSON.parse(k), pages: ids.size }))
   .sort((a, b) => b.pages - a.pages || (a.handle || a.name).localeCompare(b.handle || b.name));
@@ -158,9 +165,20 @@ staticPage('contributors/', {
     + `<p><a href="${esc(repo)}/blob/main/CONTRIBUTING.md">Become a contributor</a>.</p></article>`
 });
 
+const wanted = JSON.parse(fs.readFileSync(abs('data/wanted.json'), 'utf8')).pages || [];
+staticPage('wanted/', {
+  title: 'Wanted pages',
+  description: `Planned pages of ${site.name} that nobody has written yet. Claim one and write it.`,
+  bodyHTML: '<article class="prose"><h1>Wanted pages</h1>'
+    + (wanted.length
+      ? `<p>Planned pages nobody has written yet. Claim one by commenting <code>/claim</code> on its issue, then follow the <a href="${esc(repo)}/blob/main/CONTRIBUTING.md">contributing guide</a>.</p><ul>${wanted.map((w) => `<li><strong>${esc(w.title)}</strong> (Book ${w.book}): ${esc(w.covers)}${w.issue ? ` <a href="${esc(repo)}/issues/${w.issue}">Claim it (#${w.issue})</a>` : ''}</li>`).join('')}</ul>`
+      : `<p>There are no wanted pages right now: every planned chapter in the <a href="${esc(repo)}/blob/main/docs/COVERAGE_MAP.md">coverage map</a> is written. To propose a new topic, start a proposal in <a href="${esc(repo)}/discussions">Discussions</a>; once it is accepted, it appears here with an issue you can claim. Playbooks and field notes are always welcome without a plan.</p>`)
+    + '</article>'
+});
+
 // ----- For search engines and language models -----
 const chapterURL = (c) => `${base}/${c.meta.id}/`;
-const extraPages = ['contributors/', 'impressum/', 'privacy/'];
+const extraPages = ['contributors/', 'wanted/', 'legal/impressum/', 'legal/privacy/'];
 put('sitemap.xml', ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   `  <url><loc>${esc(base)}/</loc></url>`,
   ...chapters.map((c) => `  <url><loc>${esc(chapterURL(c))}</loc>${updated[c.meta.id] ? `<lastmod>${updated[c.meta.id]}</lastmod>` : ''}</url>`),
@@ -195,4 +213,4 @@ put('_headers', [
 ].join('\n'));
 
 const size = (dir) => fs.readdirSync(dir, { withFileTypes: true }).reduce((a, e) => a + (e.isDirectory() ? size(path.join(dir, e.name)) : fs.statSync(path.join(dir, e.name)).size), 0);
-console.log(`built ${OUT}: ${chapters.length + 1} app pages, 3 static pages, ${written} files, ${(size(abs(OUT)) / 1e6).toFixed(1)} MB${history.available ? '' : ' (no git history: credits omitted)'}`);
+console.log(`built ${OUT}: ${chapters.length + 1} app pages, 4 static pages, ${written} files, ${(size(abs(OUT)) / 1e6).toFixed(1)} MB${history.available ? '' : ' (no git history: credits omitted)'}`);

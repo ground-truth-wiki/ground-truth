@@ -20,7 +20,8 @@
     "new": "node scripts/new.mjs",
     "status": "node scripts/status.mjs",
     "stats": "node scripts/stats.mjs",
-    "setup-labels": "node scripts/setup-labels.mjs"
+    "setup-labels": "node scripts/setup-labels.mjs",
+    "wanted": "node scripts/wanted.mjs"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "5.3.0",

@@ -125,6 +125,7 @@ These commands are for the owner, maintainers and stewards working in Claude Cod
 - **Nothing is deleted** without the owner's approval. Deepening a chapter replaces its seed body and sets `status: full`.
 - **Releases, not version bumps.** Pull requests do not touch the version or the changelog; maintainers do that when they tag a release (GOVERNANCE.md).
 - **New research goes where it belongs,** with glossary terms, a timeline event and quiz questions.
+- **Planned topics become wanted pages.** After a proposal is accepted, add a `planned` row to docs/COVERAGE_MAP.md and run `npm run wanted -- --sync` in the same pull request. Once it is merged, `npm run wanted -- --issues` opens the issues people can claim.
 - **The engine changes rarely.** A change goes in its own pull request, is as small as possible, carries a `gt:` comment, and is added to `build/roundtrip-allowlist.json` (see [engine/README.md](engine/README.md)).
 
 ### Never

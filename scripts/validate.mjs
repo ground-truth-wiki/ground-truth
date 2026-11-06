@@ -78,6 +78,7 @@ const terms = glossaryFiles.map((g) => ({ ...g.value, _file: g.file, _line: 1 })
 const questions = quizFiles.flatMap((q) => (Array.isArray(q.value) ? q.value : []).map((x, i) => ({ ...x, _file: q.file, _line: q.lineOf(`/${i}`) })));
 const wanted = exists('data/wanted.json') ? loadJSONFile('data/wanted.json', 'wanted.schema.json') : null;
 const wantedIds = new Set(((wanted && wanted.value && wanted.value.pages) || []).map((w) => w.id));
+const wantedFile = wanted;
 
 // ----- Chapters -----
 const chapters = [];
@@ -91,8 +92,12 @@ for (const file of listFiles('content', '.md')) {
   if (!schemaCheck('chapter.schema.json', parsed.meta, file, fmLine)) continue;
   chapters.push({ file, text, ...parsed, fmLine });
 }
+// Paths the site build uses for itself; a chapter with one of these ids
+// would collide with them (dist/site/<id>/).
+const RESERVED = new Set(['assets', 'vendor', 'legal', 'contributors', 'wanted', 'index', '404', 'sitemap', 'robots', 'llms', 'llms-full', 'og', 'ground-truth']);
 const chapterIds = new Map();
 for (const c of chapters) {
+  if (RESERVED.has(c.meta.id)) err(c.file, c.fmLine('/id'), `"${c.meta.id}" is reserved for a path of the site; choose another id`);
   if (chapterIds.has(c.meta.id)) err(c.file, c.fmLine('/id'), `duplicate chapter id "${c.meta.id}" (also ${chapterIds.get(c.meta.id).file})`);
   else chapterIds.set(c.meta.id, c);
 }
@@ -245,6 +250,12 @@ for (const c of chapters) {
   const n = inbound.get(c.meta.id) || 0;
   if (n < 2) warn(c.file, 1, `linked from ${n} other chapter(s); every chapter should be reachable from at least two`, 'inbound links');
 }
+
+// ----- Wanted pages -----
+if (wantedFile && wantedFile.value) (wantedFile.value.pages || []).forEach((w, i) => {
+  if (chapterIds.has(w.id)) err('data/wanted.json', wantedFile.lineOf(`/pages/${i}`), `"${w.id}" exists now; remove it from the wanted pages and the coverage map's planned rows`);
+  if (!bookNums.has(w.book)) err('data/wanted.json', wantedFile.lineOf(`/pages/${i}/book`), `book ${w.book} does not exist`);
+});
 
 // ----- Template text left behind -----
 for (const file of [...chapters.map((c) => c.file), ...glossaryFiles.map((g) => g.file), ...quizFiles.map((q) => q.file)]) {
