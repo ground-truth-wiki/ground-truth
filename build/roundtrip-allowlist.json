@@ -1,0 +1,89 @@
+{
+  "note": "Approved differences between the build and source/bible-v2.0.0.html. Each entry is an exact replacement inside one scope, applied in order, with the number of times it must apply. See docs/migration/RENAME_PLAN.md.",
+  "entries": [
+    {
+      "scope": "styles",
+      "from": "/* ===== The AI Engineer's Bible: engine styles ===== */",
+      "to": "/* ===== Ground Truth Wiki: engine styles ===== */",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<title>The AI Engineer’s Bible</title>",
+      "to": "<title>Ground Truth Wiki</title>",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<meta name=\"description\" content=\"A course, a reference and a playground for becoming a state-of-the-art AI engineer.\">",
+      "to": "<meta name=\"description\" content=\"An open, community-reviewed course, reference and playground for AI engineering.\">",
+      "count": 1,
+      "change": "site description"
+    },
+    {
+      "scope": "shell",
+      "from": "aria-label=\"The AI Engineer’s Bible, home\"",
+      "to": "aria-label=\"Ground Truth Wiki, home\"",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<span>The AI Engineer’s Bible</span>",
+      "to": "<span>Ground Truth Wiki</span>",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<noscript><p>The AI Engineer’s Bible needs JavaScript",
+      "to": "<noscript><p>Ground Truth Wiki needs JavaScript",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "data:data-meta",
+      "from": "\"title\": \"The AI Engineer’s Bible\"",
+      "to": "\"title\": \"Ground Truth Wiki\"",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "engine",
+      "from": "/* ===== The AI Engineer's Bible: engine core ===== */",
+      "to": "/* ===== Ground Truth Wiki: engine core ===== */",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "engine",
+      "from": "let hasRail = false, title = 'The AI Engineer’s Bible';",
+      "to": "let hasRail = false, title = META.title || ''; /* gt: site name from data-meta */",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "el('p', {}, 'The AI Engineer’s Bible, version ' + (m.version",
+      "to": "el('p', {}, /* gt: site name from data-meta */ (m.title || '') + ', version ' + (m.version",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "const toks = ['The', ' AI', ' Engineer', '’s', ' Bible'];\n  const sal = [0.3, 1.5, 1.7, 0.4, 1.6];",
+      "to": "/* gt: the hero tokens come from the site name in data-meta */\n  const toks = String(META.title || '').split(/(?= )/);\n  const sal = toks.map((t, i) => [1.2, 1.7, 0.9, 1.5, 0.6][i % 5]);",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "'aria-label': 'The AI Engineer’s Bible' });",
+      "to": "'aria-label': META.title || '' }); /* gt: site name from data-meta */",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    }
+  ]
+}

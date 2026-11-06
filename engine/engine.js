@@ -1,5 +1,5 @@
 (function () {
-/* ===== The AI Engineer's Bible: engine core ===== */
+/* ===== Ground Truth Wiki: engine core ===== */
 'use strict';
 const D = document, W = window;
 const $ = (s, r) => (r || D).querySelector(s);
@@ -1833,7 +1833,7 @@ function route() {
   const main = $('#main'), rail = $('#rail'), layout = $('#layout');
   main.replaceChildren(); rail.replaceChildren();
   D.documentElement.style.removeProperty('--acc-h');
-  let hasRail = false, title = 'The AI Engineer’s Bible';
+  let hasRail = false, title = META.title || ''; /* gt: site name from data-meta */
   try {
     if (CHMAP[id]) { pageChapter(CHMAP[id], main, rail); hasRail = true; title = CHMAP[id].title + ' · ' + title; }
     else if (id === 'home') pageHome(main);
@@ -1862,7 +1862,7 @@ function page404(main, id) {
 function footer() {
   const m = META;
   return el('footer', { class: 'footer' },
-    el('p', {}, 'The AI Engineer’s Bible, version ' + (m.version || '0') + ', updated ' + (m.updated || '') + '. Written from knowledge through ' + (m.cutoff || 'an unstated date') + ', plus freshness notes ' + (m.verified || '') + '.'),
+    el('p', {}, /* gt: site name from data-meta */ (m.title || '') + ', version ' + (m.version || '0') + ', updated ' + (m.updated || '') + '. Written from knowledge through ' + (m.cutoff || 'an unstated date') + ', plus freshness notes ' + (m.verified || '') + '.'),
     el('p', { class: 'np' }, el('a', { href: '#whats-new', text: 'What’s new' }), ' · ', el('a', { href: '#extend-me', text: 'Extend me' }), ' · ', el('a', { href: '#visual-legend', text: 'Visual legend' }), ' · ', el('a', { href: '#prefs', text: 'Preferences' })),
     el('p', { text: 'Fast-moving facts carry dates; verify anything volatile before you rely on it. Legal and regulatory content is information, not legal advice.' }));
 }
@@ -2033,8 +2033,9 @@ function renderWidget(name) {
 
 /* ----- Home ----- */
 function hero() {
-  const toks = ['The', ' AI', ' Engineer', '’s', ' Bible'];
-  const sal = [0.3, 1.5, 1.7, 0.4, 1.6];
+  /* gt: the hero tokens come from the site name in data-meta */
+  const toks = String(META.title || '').split(/(?= )/);
+  const sal = toks.map((t, i) => [1.2, 1.7, 0.9, 1.5, 0.6][i % 5]);
   const STEPS = [
     [[':', 3.2], [' for', 1.9], ['.', 1.7], [' of', 1.2], [' study', 0.9]],
     [[' everything', 3.0], [' all', 1.6], [' the', 1.4], [' a', 1.2], [' vibes', 0.4]],
@@ -2047,7 +2048,7 @@ function hero() {
     [['.', 3.6], ['!', 1.4], [' people', 1.0], [' love', 0.6], ['…', 0.6]]
   ];
   let T = 0.6, gen = [], sel = toks.length - 1, timer = null;
-  const h1 = el('h1', { class: 'hero-title', 'aria-label': 'The AI Engineer’s Bible' });
+  const h1 = el('h1', { class: 'hero-title', 'aria-label': META.title || '' }); /* gt: site name from data-meta */
   const genP = el('p', { class: 'hero-gen', 'aria-live': 'polite' });
   const dist = el('div'), info = el('p', { class: 'small muted', style: 'margin:6px 0 0' });
   const all = () => toks.concat(gen.map(g => g.t));

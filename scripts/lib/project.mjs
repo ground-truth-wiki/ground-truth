@@ -3,6 +3,7 @@
 import path from 'node:path';
 import { readText, readJSON, listFiles, exists } from './fsutil.mjs';
 import { parseChapterFile } from './chapters.mjs';
+import { loadSite, fillSiteTokens } from './site.mjs';
 
 const orderKey = (o) => String(o).split('.').map((n) => Number.parseInt(n, 10) || 0);
 export function compareOrder(a, b) {
@@ -87,13 +88,20 @@ export function loadData(manifest, chapters) {
 }
 
 export function loadProject() {
+  const site = loadSite();
   const manifest = readJSON('build/manifest.json');
   const chapters = orderChapters(loadChapters(), manifest);
+  const data = loadData(manifest, chapters);
+  const meta = data.find((d) => d.id === 'data-meta');
+  if (meta && meta.value.title !== site.name) {
+    throw new Error(`${meta.file}: "title" is "${meta.value.title}" but site.config.json names the site "${site.name}"; they must match`);
+  }
   return {
+    site,
     manifest,
     chapters,
-    data: loadData(manifest, chapters),
-    shell: readText('engine/shell.html'),
+    data,
+    shell: fillSiteTokens(readText('engine/shell.html'), site, 'engine/shell.html'),
     styles: readText(manifest.styles.file),
     engine: readText(manifest.engine.file)
   };

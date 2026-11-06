@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The AI Engineer’s Bible</title>
-<meta name="description" content="A course, a reference and a playground for becoming a state-of-the-art AI engineer.">
+<title>{{site.name}}</title>
+<meta name="description" content="{{site.description}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&display=swap">
@@ -90,9 +90,9 @@
 <a class="skip" href="#home">Skip to content</a>
 <header class="top">
   <button class="icon-btn only-mobile" id="nav-btn" type="button" aria-label="Open contents" aria-expanded="false" aria-controls="nav"><svg class="ic" aria-hidden="true"><use href="#ic-menu"/></svg></button>
-  <a class="brand" href="#home" aria-label="The AI Engineer’s Bible, home">
+  <a class="brand" href="#home" aria-label="{{site.name}}, home">
     <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="18" width="12" height="9" rx="4.5" fill="none" style="stroke:var(--ink)" stroke-width="2"/><rect x="18" y="18" width="12" height="9" rx="4.5" style="fill:var(--ink)"/><path d="M8 15.5C8 5.5 24 5.5 24 15.5" fill="none" style="stroke:var(--ui)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="15.5" r="2.2" style="fill:var(--ui)"/></svg>
-    <span>The AI Engineer’s Bible</span>
+    <span>{{site.name}}</span>
   </a>
   <button class="top-search" id="search-btn" type="button" aria-label="Search the Bible"><svg class="ic" aria-hidden="true"><use href="#ic-search"/></svg><span class="lbl">Search chapters, terms and tools</span><kbd class="hint">Ctrl K</kbd></button>
   <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch theme"><svg class="ic" aria-hidden="true"><use href="#ic-moon"/></svg></button>
@@ -100,7 +100,7 @@
 </header>
 <div class="layout" id="layout">
   <nav class="nav" id="nav" aria-label="Contents"></nav>
-  <main id="main" tabindex="-1"><noscript><p>The AI Engineer’s Bible needs JavaScript to render its chapters.</p></noscript></main>
+  <main id="main" tabindex="-1"><noscript><p>{{site.name}} needs JavaScript to render its chapters.</p></noscript></main>
   <aside class="rail" id="rail" aria-label="On this page"></aside>
 </div>
 <div class="pal-wrap" id="pal" hidden>
