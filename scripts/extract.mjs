@@ -51,7 +51,8 @@ const DATA_LAYOUT = {
 
 const PLACEHOLDER = {
   styles: '<!-- @styles -->', chapters: '<!-- @chapters -->', data: '<!-- @data -->', engine: '<!-- @engine -->',
-  fonts: '<!-- @fonts -->', marked: '<!-- @lib:marked -->', highlight: '<!-- @lib:highlight -->', lazy: '<!-- @lib:lazy -->'
+  fonts: '<!-- @fonts -->', marked: '<!-- @lib:marked -->', highlight: '<!-- @lib:highlight -->', lazy: '<!-- @lib:lazy -->',
+  head: '<!-- @head -->', main: '<!-- @main -->'
 };
 
 const assert = (cond, message) => { if (!cond) fail(message); };
@@ -178,6 +179,11 @@ for (const [s, e, ph] of cut) {
   at = e;
 }
 shell += html.slice(at);
+// Two insertion points for site pages: extra head tags after the description,
+// and pre-rendered content at the start of <main>. Empty in single-file builds.
+const insertAfter = (s, needle, ph) => { assert(s.split(needle).length === 2, `shell: expected one ${needle}`); return s.replace(needle, () => needle + ph); };
+shell = insertAfter(shell, shell.match(/<meta name="description" content="[^"]*">/)[0], PLACEHOLDER.head);
+shell = insertAfter(shell, '<main id="main" tabindex="-1">', PLACEHOLDER.main);
 files.set('engine/shell.html', shell);
 
 // ----- Manifest -----

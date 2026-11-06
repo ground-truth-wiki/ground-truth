@@ -3,7 +3,7 @@
 import path from 'node:path';
 import { readText, readJSON, listFiles, exists } from './fsutil.mjs';
 import { parseChapterFile } from './chapters.mjs';
-import { loadSite, fillSiteTokens } from './site.mjs';
+import { loadSite } from './site.mjs';
 
 const orderKey = (o) => String(o).split('.').map((n) => Number.parseInt(n, 10) || 0);
 export function compareOrder(a, b) {
@@ -95,7 +95,7 @@ export function loadProject() {
     manifest,
     chapters,
     data,
-    shell: fillSiteTokens(readText('engine/shell.html'), site, 'engine/shell.html'),
+    shell: readText('engine/shell.html'),
     styles: readText(manifest.styles.file),
     engine: readText(manifest.engine.file)
   };

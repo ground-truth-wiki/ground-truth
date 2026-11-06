@@ -23,11 +23,12 @@ export const hasSiteAddress = (site) => !/\.example(?::\d+)?$/i.test(new URL(sit
 
 const escapeHTML = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-// Replaces {{site.<key>}} tokens in a template. Unknown keys are an error,
-// so a typo never reaches a published page.
-export function fillSiteTokens(template, site, file) {
-  return template.replace(/\{\{site\.([a-zA-Z]+)\}\}/g, (m, key) => {
-    if (typeof site[key] !== 'string') throw new Error(`${file}: unknown token ${m}`);
-    return escapeHTML(site[key]);
+// Replaces {{site.<key>}} and {{page.<key>}} tokens in a template. Unknown
+// keys are an error, so a typo never reaches a published page.
+export function fillTokens(template, values, file) {
+  return template.replace(/\{\{(site|page)\.([a-zA-Z]+)\}\}/g, (m, scope, key) => {
+    const v = values[scope] && values[scope][key];
+    if (typeof v !== 'string') throw new Error(`${file}: unknown token ${m}`);
+    return escapeHTML(v);
   });
 }

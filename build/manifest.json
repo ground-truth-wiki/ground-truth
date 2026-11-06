@@ -13,7 +13,9 @@
     "fonts": "<!-- @fonts -->",
     "marked": "<!-- @lib:marked -->",
     "highlight": "<!-- @lib:highlight -->",
-    "lazy": "<!-- @lib:lazy -->"
+    "lazy": "<!-- @lib:lazy -->",
+    "head": "<!-- @head -->",
+    "main": "<!-- @main -->"
   },
   "styles": {
     "file": "engine/styles.css",
