@@ -106,7 +106,7 @@ Design a harness by answering one question per part, in writing, before you buil
 
 ## Pitfalls and anti-patterns
 > [!pitfall] Policy in the prompt instead of in code
-> “Never delete files outside the project” in the system prompt is a request. A hook or sandbox that blocks it is a guarantee.
+> “Never delete files outside the project” in the system prompt is a request. A sandbox that blocks it is a guarantee; a hook enforces it in code, but in Claude Code a hook that crashes or times out lets the action through unless it is set to block on failure (as of November 2026).
 
 - **Too many tools by default.** Load narrowly and defer the rest.
 - **No telemetry.** Without traces you will debug agents by guessing.

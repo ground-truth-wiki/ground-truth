@@ -36,7 +36,7 @@ Low-code builders are a well-stocked workshop with jigs and templates. Anyone ca
 
 **LLM application builders.** Dify, Flowise and Langflow build RAG apps, chatbots and agents visually, often exporting APIs; several are open source.
 
-**Provider and enterprise builders.** OpenAI’s Agent Builder (part of AgentKit, 2025), Microsoft Copilot Studio and Google’s enterprise agent platforms build agents inside their ecosystems, with connectors to company data and admin controls.
+**Provider and enterprise builders.** Microsoft Copilot Studio and Google’s enterprise agent platforms build agents inside their ecosystems, with connectors to company data and admin controls. As of November 2026, OpenAI’s Agent Builder (part of AgentKit, 2025) is scheduled to shut down on 30 November 2026, and OpenAI points users to its Agents SDK or ChatGPT Workspace Agents.
 
 **Strengths.** Speed to a working automation, integrations that would take engineers weeks, and ownership by the people who know the process.
 
@@ -84,7 +84,7 @@ low-code-builders
 
 ## Go deeper
 - Documentation for n8n, Zapier, Make, Dify, Flowise and Langflow.
-- OpenAI AgentKit and Microsoft Copilot Studio documentation for provider and enterprise builders.
+- Microsoft Copilot Studio documentation for provider and enterprise builders; OpenAI’s “Migrate from Agent Builder” guide for existing Agent Builder flows.
 
 ## Related
 - [The landscape map](#framework-landscape)

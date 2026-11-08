@@ -66,11 +66,11 @@ Start single-agent. Move to multi-agent when evals show one of three signals: th
 - **Budget per agent and in total.** Token multipliers compound.
 
 > [!insight] Both sides of the debate are right
-> In June 2025 Anthropic published how its multi-agent research system beat a single agent on broad research tasks. Days later, Cognition published “Don’t Build Multi-Agents”, arguing that subagents lose context and make conflicting decisions in coding. The tasks differ: research is wide and parallel; coding is deep and coupled.
+> In June 2025 Anthropic published how its multi-agent research system beat a single agent on broad research tasks. A day earlier, Cognition published “Don’t Build Multi-Agents”, arguing that subagents lose context and make conflicting decisions in coding. The tasks differ: research is wide and parallel; coding is deep and coupled.
 
 ## Numbers to know
 > [!number]
-> From the Anthropic write-up above: agents used about 4 times the tokens of chat, and the multi-agent system about 15 times. Treat those as an order of magnitude for your own budget, not a constant. Two to five subagents is a common range; past that, coordination overhead tends to dominate.
+> From the Anthropic write-up above: agents used about 4 times the tokens of chat, and the multi-agent system about 15 times. Treat those as an order of magnitude for your own budget, not a constant. Its prompts also scale effort to the query: one agent with 3 to 10 tool calls for simple fact-finding, 2 to 4 subagents for direct comparisons, and more than 10 subagents for complex research.
 
 ## Pitfalls and anti-patterns
 > [!pitfall] Premature multi-agent

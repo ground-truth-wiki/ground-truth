@@ -22,24 +22,24 @@ When you build on a protocol, you inherit its governance: who can change it, how
 Building on a protocol is like building a house on land: you want to know who owns the land, what the zoning rules are, and how they get changed. Foundations are the public land registry; SEPs are the planning applications.
 
 ```viz
-{"id":"steward-map","component":"diagram","title":"Most major agent protocols now sit with foundations or open projects rather than single companies","caption":"A dated snapshot. Origins are well documented; current stewardship changes, so items marked verify should be checked before you rely on them.","alt":"Diagram mapping MCP, A2A, AGENTS.md, Agent Skills, AG-UI and the Agent Client Protocol to where each originated and who stewards it.","data":"illustrative","depicts":"As of November 2026","w":600,"h":300,"nodes":[
+{"id":"steward-map","component":"diagram","title":"Most major agent protocols now sit with foundations or open projects rather than single companies","caption":"A dated snapshot. Origins are well documented; current stewardship changes, so check each project before you rely on it.","alt":"Diagram mapping MCP, A2A, AGENTS.md, Agent Skills, AG-UI and the Agent Client Protocol to where each originated and who stewards it.","data":"illustrative","depicts":"As of November 2026","w":600,"h":300,"nodes":[
 {"id":"mcp","label":"MCP","sub":"from Anthropic, Nov 2024","role":"tool","x":0,"y":0,"w":200,"h":52,"link":"#mcp-spec-history"},
 {"id":"a2a","label":"A2A","sub":"from Google, Apr 2025","role":"agent","x":0,"y":82,"w":200,"h":52,"link":"#a2a"},
 {"id":"agentsmd","label":"AGENTS.md","sub":"cross-vendor, 2025","role":"data","x":0,"y":164,"w":200,"h":52,"link":"#coding-harness-landscape"},
 {"id":"skills","label":"Agent Skills","sub":"from Anthropic, Oct 2025","role":"data","x":0,"y":246,"w":200,"h":52,"link":"#skills-plugins"},
-{"id":"lf","label":"Linux Foundation projects","sub":"neutral home (verify details)","x":330,"y":40,"w":270,"h":60},
+{"id":"lf","label":"Agentic AI Foundation","sub":"Linux Foundation (verified Nov 2026)","x":330,"y":40,"w":270,"h":60},
 {"id":"open","label":"Open repositories","sub":"agentskills/agentskills (verified Nov 2026)","x":330,"y":200,"w":270,"h":60}],
-"edges":[{"from":"mcp","to":"lf","label":"Dec 2025 (verify)"},{"from":"a2a","to":"lf","label":"mid-2025"},{"from":"agentsmd","to":"lf","style":"dashed","label":"verify"},{"from":"skills","to":"open"}]}
+"edges":[{"from":"mcp","to":"lf","label":"Dec 2025"},{"from":"a2a","to":"lf","label":"Aug 2026"},{"from":"agentsmd","to":"lf","label":"Dec 2025"},{"from":"skills","to":"lf","label":"Oct 2026"},{"from":"skills","to":"open"}]}
 ```
 
 ## How it works
-**MCP.** Created by Anthropic and open-sourced in November 2024. In December 2025 it was contributed to a Linux Foundation effort for agentic AI, alongside other agent projects (verify the current name and structure). Changes go through SEPs on GitHub, with maintainers and working groups for areas such as transports, authorization and extensions. The 2026-07-28 release formalized a feature lifecycle with deprecation before removal (verified Nov 2026).
+**MCP.** Created by Anthropic and open-sourced in November 2024. On 9 December 2025 Anthropic contributed it to the Agentic AI Foundation (AAIF) under the Linux Foundation, alongside goose and AGENTS.md as founding projects; MCP keeps its own lead and core maintainers (verified Nov 2026). Changes go through SEPs on GitHub, with maintainers and working groups for areas such as transports, authorization and extensions. The 2026-07-28 release formalized a feature lifecycle with deprecation before removal (verified Nov 2026).
 
-**A2A.** Introduced by Google in April 2025 with many launch partners and moved to the Linux Foundation in mid-2025. Version 1.0.0 shipped on 12 March 2026 and 1.0.1 on 26 May 2026 (verified Nov 2026).
+**A2A.** Introduced by Google in April 2025 with many launch partners, moved to the Linux Foundation in mid-2025, and joined the AAIF as a Growth Stage project on 27 August 2026. Version 1.0.0 shipped on 12 March 2026 and 1.0.1 on 26 May 2026 (verified Nov 2026).
 
-**AGENTS.md.** Emerged in 2025 as a shared, vendor-neutral convention for coding-agent instructions, adopted by many agents; verify where it is stewarded today.
+**AGENTS.md.** Emerged in 2025 as a shared, vendor-neutral convention for coding-agent instructions, adopted by many agents; since December 2025 it has been stewarded by the AAIF as one of its three founding projects (verified Nov 2026).
 
-**Agent Skills.** Introduced by Anthropic in October 2025 and published as an open format, maintained in the `agentskills/agentskills` repository (verified Nov 2026).
+**Agent Skills.** Introduced by Anthropic in October 2025 and published as an open format, maintained in the `agentskills/agentskills` repository; Anthropic contributed it to the AAIF on 22 October 2026 (verified Nov 2026).
 
 **AG-UI and the Agent Client Protocol.** Both came from companies building agent front ends and editors respectively, and both are developed in the open; check each project’s governance page.
 

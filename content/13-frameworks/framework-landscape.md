@@ -36,7 +36,7 @@ Think of building a house. You can buy bricks (raw APIs), a prefabricated wall s
 
 **Orchestration frameworks.** General frameworks for building workflows, graphs, RAG pipelines and multi-agent systems across providers: LangGraph and LangChain, LlamaIndex, CrewAI, Microsoft’s Agent Framework (the successor to AutoGen and Semantic Kernel), Pydantic AI, Mastra and the Vercel AI SDK in TypeScript, Haystack, DSPy, smolagents and others. See [orchestration frameworks](#orchestration-frameworks).
 
-**Low-code builders.** Visual tools such as n8n, Zapier, Make, Dify, Flowise, Langflow, OpenAI’s Agent Builder and Microsoft Copilot Studio, for workflows assembled from blocks. See [low-code builders](#low-code-builders).
+**Low-code builders.** Visual tools such as n8n, Zapier, Make, Dify, Flowise, Langflow and Microsoft Copilot Studio, for workflows assembled from blocks. See [low-code builders](#low-code-builders).
 
 **Alongside every layer.** Model gateways and routers, eval and observability platforms, vector stores, sandboxes and MCP servers. See [gateways](#gateways-routers) and [eval tooling](#eval-tooling).
 

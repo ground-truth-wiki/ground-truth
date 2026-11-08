@@ -39,15 +39,15 @@ Think of Claude Code as a capable engineer who joins your team with a laptop. `C
 ## How it works
 **Memory: `CLAUDE.md`.** Markdown files of instructions loaded into context: one in your user directory for personal preferences, one in the project root checked into the repository, and others in subdirectories for local rules. They can import other files. `/init` drafts one by exploring the codebase. Keep them short and specific: build commands, conventions, gotchas.
 
-**Slash commands.** Built-in commands such as `/compact`, `/clear`, `/mcp`, `/agents`, `/hooks` and `/permissions` control the session; custom commands are Markdown prompts stored in `.claude/commands/` and shared with the team.
+**Slash commands.** Built-in commands such as `/compact`, `/clear`, `/mcp`, `/agents`, `/hooks` and `/permissions` control the session; custom commands are now skills, folders in `.claude/skills/` shared with the team, though older Markdown prompts in `.claude/commands/` still work (verified Nov 2026).
 
 **Subagents and agent teams.** Subagents are defined in `.claude/agents/` with their own system prompt, tools and model, and run in a fresh context, returning a summary. Use them for searching, reviewing and other noisy side work. Agent teams, a research preview, let several Claude instances collaborate on one task (verified Nov 2026). See [multi-agent systems](#multi-agent).
 
-**Hooks.** Shell commands configured in settings that run at lifecycle events, receive the event as JSON on standard input, and can block or modify actions. Hooks enforce policy deterministically. See [harness anatomy](#harness-anatomy).
+**Hooks.** Handlers configured in settings, usually shell commands but also HTTP endpoints, MCP tools, prompts or agents, that run at lifecycle events, receive the event as JSON, and can block or modify actions. Hooks fire deterministically, but on most events a hook that fails or times out lets the action proceed unless it sets `onFailure` to `block`, so keep hard rules in deny rules (verified Nov 2026). See [harness anatomy](#harness-anatomy).
 
 **Skills, plugins and marketplaces.** Skills are folders with a `SKILL.md` file, loaded only when relevant. Plugins bundle commands, subagents, skills, hooks and MCP servers for distribution through marketplaces (verified Nov 2026). See [skills and plugins](#skills-plugins).
 
-**MCP and tool search.** MCP servers add tools and resources. Once their definitions would exceed 10% of the context window, tool search defers them and loads matching definitions on demand (verified Nov 2026). See [MCP at scale](#mcp-at-scale).
+**MCP and tool search.** MCP servers add tools and resources. Tool search is on by default: it defers their definitions and loads matching ones on demand, while `ENABLE_TOOL_SEARCH=auto` loads them up front until they would exceed 10% of the context window (verified Nov 2026). See [MCP at scale](#mcp-at-scale).
 
 **Permissions and sandboxing.** Rules in settings allow or deny specific tools and patterns, and permission modes set the default stance. An auto mode backed by a safety check reduces prompts for routine work (verified Nov 2026). OS-level sandboxing through Anthropic’s sandbox runtime limits filesystem and network access without a container (verified Nov 2026). See [sandboxes](#sandboxes).
 
@@ -97,7 +97,7 @@ Habits that pay off:
 
 ## Numbers to know
 > [!number]
-> Facts (verified Nov 2026): version 2.1.317 in early November 2026; MCP tool search defers definitions past 10% of the context window. Rules of thumb: a skill’s metadata costs tens of tokens; keep each `SKILL.md` body to a few thousand tokens and move detail into referenced files.
+> Facts (verified Nov 2026): version 2.1.317 in early November 2026; MCP tool search defers tool definitions by default; `ENABLE_TOOL_SEARCH=auto` switches to a 10%-of-context threshold. Rules of thumb: a skill’s metadata costs tens of tokens; keep each `SKILL.md` body to a few thousand tokens and move detail into referenced files.
 
 ## Pitfalls and anti-patterns
 > [!pitfall] A thousand-line CLAUDE.md

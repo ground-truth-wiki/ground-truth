@@ -5,12 +5,12 @@
     "q": "Which harness part turns a policy such as “never run rm -rf” into a guarantee rather than a request?",
     "options": [
       "The system prompt",
-      "A hook or sandbox rule enforced in code",
+      "A sandbox, permission rule or fail-closed hook enforced in code",
       "The model choice",
       "The interface"
     ],
     "answer": 1,
-    "explain": "Prompts ask; hooks, permissions and sandboxes enforce."
+    "explain": "Prompts ask; sandboxes, permissions and hooks that block on failure enforce. A hook that crashes or times out can fail open."
   },
   {
     "id": "har-2",

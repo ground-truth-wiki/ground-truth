@@ -63,7 +63,7 @@ stateDiagram-v2
 
 **Authentication.** Cards declare security schemes (OAuth 2.0, API keys, mutual TLS and others); the client authenticates as it would to any API. Agents should act with delegated, scoped authority, not borrowed user credentials. See [MCP authorization](#mcp-authorization) for the same principles.
 
-**History.** Google introduced A2A in April 2025; it moved to the Linux Foundation in mid-2025 (verify current governance). Version 1.0.0 shipped on 12 March 2026 with breaking specification changes, and 1.0.1 followed on 26 May 2026 (verified Nov 2026). See [governance](#protocol-governance).
+**History.** Google introduced A2A in April 2025; it moved to the Linux Foundation in mid-2025 and became a Growth Stage project of the Linux Foundation's Agentic AI Foundation (AAIF) in August 2026 (verified Nov 2026). Version 1.0.0 shipped on 12 March 2026 with breaking specification changes, and 1.0.1 followed on 26 May 2026 (verified Nov 2026). See [governance](#protocol-governance).
 
 ## In practice
 When should the other side be an MCP tool and when an A2A agent?
