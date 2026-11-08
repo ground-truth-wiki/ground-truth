@@ -1,0 +1,41 @@
+[
+  {
+    "id": "autonomy-and-oversight-1",
+    "chapter": "autonomy-and-oversight",
+    "q": "A coding agent can use a shell, edit files and reach the network, but it asks the user before every single action. Using the distinctions of Feng, McDonald and Zhang, how do you describe it?",
+    "options": [
+      "High autonomy, because it has many tools",
+      "Low capability, because it keeps asking",
+      "High agency, low autonomy",
+      "Fully autonomous, because nothing in its action space is blocked"
+    ],
+    "answer": 2,
+    "explain": "Autonomy is how much the agent is designed to operate without user involvement, so an agent that asks before every action has low autonomy whatever it can touch. Its broad tool access is high agency. The tempting answer, high autonomy, mixes up what the agent may touch with how often it checks in; the two are set independently."
+  },
+  {
+    "id": "autonomy-and-oversight-2",
+    "chapter": "autonomy-and-oversight",
+    "q": "An email agent’s outgoing messages become recallable for a minute, so an unwanted send now costs much less to fix. Asking the user still costs the same. In Horvitz’s act, ask or wait framework, what happens to the confidence the agent needs before it sends without asking?",
+    "options": [
+      "It rises, because cheaper mistakes make people pay less attention",
+      "It falls, so the agent should ask less often",
+      "It stays the same, because only the agent’s own confidence matters",
+      "It drops to zero, so the agent should never ask"
+    ],
+    "answer": 1,
+    "explain": "Horvitz shows that making an unwanted action less costly lowers the threshold for acting. In this chapter's simplified version, the act-alone threshold is 1 minus the cost of asking divided by the cost of an unwanted action, so a cheaper mistake lowers it and the agent can act without asking more often. The tempting answer, that only confidence matters, misses that confidence is compared against a threshold set by costs. The threshold only reaches zero if an unwanted action costs no more than asking."
+  },
+  {
+    "id": "autonomy-and-oversight-3",
+    "chapter": "autonomy-and-oversight",
+    "q": "A team puts an approval prompt on every tool call of its agent and reports that a human approves every action. A harmful action still gets approved. What change is best supported by the evidence on automation bias?",
+    "options": [
+      "Train the reviewers and instruct them to read every prompt carefully",
+      "Add a second approval prompt for every action",
+      "Remove all approvals and rely on reading the logs afterwards",
+      "Gate only consequential or irreversible actions, word those prompts precisely, and seed known-bad items to measure whether reviewers catch them"
+    ],
+    "answer": 3,
+    "explain": "Volume turns approvals into rubber stamps: in a controlled study Anthropic reported in August 2026, testers blocked about 17% of dangerous commands early in a session and about 5% after 50 or more prior prompts. Fewer, precise gates and seeded checks address that. Training is tempting, but Parasuraman and Manzey's review concluded that training and instructions do not prevent automation bias. Logs alone suit only reversible actions, because review after the fact cannot undo an irreversible one."
+  }
+]
