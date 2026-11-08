@@ -1,0 +1,18 @@
+{
+  "id": "dimensionality-reduction",
+  "term": "Dimensionality reduction",
+  "def": "Mapping data to fewer features while keeping the structure that matters, by projection such as PCA, by feature selection, or by nonlinear embedding such as t-SNE or UMAP.",
+  "practice": "Shrinks embeddings for cheaper storage and faster search and makes high-dimensional data plottable; Matryoshka embeddings build truncation into training instead.",
+  "aliases": [
+    "dimension reduction"
+  ],
+  "chapters": [
+    "classical-ml",
+    "embeddings",
+    "linear-algebra",
+    "eigenvectors-svd-pca",
+    "feature-engineering",
+    "clustering-dimensionality-reduction",
+    "word-embeddings"
+  ]
+}

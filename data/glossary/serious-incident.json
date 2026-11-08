@@ -1,0 +1,15 @@
+{
+  "id": "serious-incident",
+  "term": "Serious incident (EU AI Act)",
+  "def": "In the EU AI Act, an AI incident or malfunction leading, directly or indirectly, to death or serious health harm, serious irreversible critical-infrastructure disruption, fundamental-rights infringement, or serious property or environmental harm.",
+  "practice": "Article 73 makes providers of high-risk systems report to market surveillance authorities within 15 days of becoming aware, 10 days for a death and 2 days for widespread infringements or critical-infrastructure disruption, so runbooks need the legal clock; information, not legal advice.",
+  "aliases": [
+    "serious incident",
+    "serious incidents"
+  ],
+  "chapters": [
+    "incidents-on-call",
+    "governance-regulation",
+    "eu-ai-act"
+  ]
+}

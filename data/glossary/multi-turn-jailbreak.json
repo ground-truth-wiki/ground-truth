@@ -1,0 +1,16 @@
+{
+  "id": "multi-turn-jailbreak",
+  "term": "Multi-turn jailbreak",
+  "def": "A jailbreak spread over a conversation that starts benign and escalates step by step, often by pointing back to the model's own earlier answers.",
+  "practice": "Crescendo (Russinovich et al., 2024) is the best-known example and has an automated version; filters that judge single messages miss it, so monitor whole conversations.",
+  "aliases": [
+    "multi-turn escalation",
+    "Crescendo"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "safety-evals",
+    "red-teaming",
+    "jailbreak-techniques"
+  ]
+}

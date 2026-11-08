@@ -1,0 +1,20 @@
+{
+  "id": "long-term-memory",
+  "term": "Long-term memory",
+  "def": "Memory that persists beyond one session or context window and can be recalled in later conversations; usually divided into episodic, semantic and procedural kinds.",
+  "practice": "Implemented as files, vector stores, graphs or tables with explicit write and read policies; its bugs often show only in multi-session evals.",
+  "aliases": [
+    "cross-session memory",
+    "persistent memory"
+  ],
+  "chapters": [
+    "agent-memory",
+    "personal-assistants",
+    "privacy",
+    "reference-architecture",
+    "kv-cache-compression",
+    "graph-rag",
+    "feature-stores",
+    "agent-research-lineage"
+  ]
+}

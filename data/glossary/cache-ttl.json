@@ -1,0 +1,17 @@
+{
+  "id": "cache-ttl",
+  "term": "Cache time to live",
+  "def": "How long a cached prompt prefix stays reusable after it was written or last read before the provider evicts it.",
+  "practice": "As of November 2026, Anthropic defaults to 5 minutes, refreshed on each hit, with a 1-hour option, and OpenAI offers retention from minutes up to 24 hours depending on model and setting.",
+  "aliases": [
+    "cache TTL",
+    "prompt cache retention"
+  ],
+  "chapters": [
+    "prompt-caching",
+    "cost-engineering",
+    "feature-engineering",
+    "feature-stores"
+  ],
+  "abbr": "TTL"
+}

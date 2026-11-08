@@ -111,3 +111,13 @@ llm-as-judge
 - [Statistics for evals](#eval-statistics)
 - [Labeling and annotation](#labeling-annotation)
 - [Evaluating RAG](#rag-evaluation)
+- [Classification and regression metrics](#classification-metrics)
+- [Arenas and leaderboards](#arenas-leaderboards)
+- [Label quality: agreement, aggregation and label errors](#label-quality)
+- [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Judge models, juries and meta-evaluation](#judge-models-meta-evaluation)

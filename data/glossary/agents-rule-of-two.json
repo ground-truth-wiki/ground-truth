@@ -1,0 +1,15 @@
+{
+  "id": "agents-rule-of-two",
+  "term": "Agents Rule of Two",
+  "def": "Meta guideline that, until prompt injection can be reliably stopped, an agent session should combine at most two of: untrusted input, sensitive data or systems, and external communication or state changes.",
+  "practice": "A session that needs all three should not run autonomously and needs human approval or another reliable check; it extends the lethal trifecta to state-changing actions.",
+  "aliases": [
+    "Rule of Two"
+  ],
+  "chapters": [
+    "secure-agent-design",
+    "prompt-injection",
+    "human-in-the-loop",
+    "prompt-injection-techniques"
+  ]
+}

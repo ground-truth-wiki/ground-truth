@@ -1,0 +1,14 @@
+{
+  "id": "authorization-server-metadata",
+  "term": "Authorization server metadata",
+  "def": "A JSON document at a well-known URL, defined by RFC 8414 or OpenID Connect Discovery, that lists an authorization server's issuer, endpoints and supported features.",
+  "practice": "MCP clients reach it from the authorization_servers list in protected-resource metadata and must support both formats; it also advertises whether client ID metadata documents are accepted.",
+  "aliases": [
+    "RFC 8414",
+    "OAuth authorization server metadata"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "protocol-building-blocks"
+  ]
+}

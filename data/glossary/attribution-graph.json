@@ -1,0 +1,16 @@
+{
+  "id": "attribution-graph",
+  "term": "Attribution graph",
+  "def": "A graph of the features, input tokens and error terms that contributed to one output on one prompt, computed on a replacement model whose MLPs are swapped for transcoders.",
+  "practice": "The output of circuit tracing; Anthropic open-sourced tools in May 2025 that generate them for open models such as Gemma 2 2B and Llama 3.2 1B, explorable on Neuronpedia.",
+  "aliases": [
+    "circuit tracing"
+  ],
+  "chapters": [
+    "mech-interp",
+    "autoencoders-latent-spaces",
+    "transformer-overview",
+    "sae-circuit-tracing",
+    "probes-and-steering"
+  ]
+}

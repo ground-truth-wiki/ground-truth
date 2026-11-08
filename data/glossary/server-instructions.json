@@ -1,0 +1,14 @@
+{
+  "id": "server-instructions",
+  "term": "Server instructions",
+  "def": "An optional natural-language field in which an MCP server tells the model how to use its tools, resources and prompts effectively, returned by server/discover and earlier by initialize.",
+  "practice": "Hosts may place it in the system prompt, so keep it short and focused on how the tools fit together, and treat it as untrusted server text like any tool description.",
+  "aliases": [
+    "MCP server instructions"
+  ],
+  "chapters": [
+    "building-mcp-servers",
+    "mcp-architecture",
+    "mcp-primitives"
+  ]
+}

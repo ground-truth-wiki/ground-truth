@@ -1,0 +1,13 @@
+{
+  "id": "semantic-chunking",
+  "term": "Semantic chunking",
+  "def": "Starting a new chunk wherever the embedding similarity between adjacent sentences or sentence groups drops below a threshold, which is taken as a topic shift.",
+  "practice": "Adds embedding cost at indexing time and a breakpoint threshold to tune per corpus; it helps most on long, unstructured text without clear headings.",
+  "aliases": [
+    "semantic splitting",
+    "embedding-based chunking"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

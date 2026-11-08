@@ -1,0 +1,12 @@
+{
+  "id": "garak",
+  "term": "garak",
+  "def": "An NVIDIA-led open-source LLM vulnerability scanner that sends probes to a model and checks the responses with detectors, modeled on network security scanners such as Nmap.",
+  "practice": "Run it for broad, repeatable coverage of known attack classes such as jailbreaks, prompt injection and data leakage before human red teaming.",
+  "aliases": [
+    "Generative AI Red-teaming and Assessment Kit"
+  ],
+  "chapters": [
+    "red-teaming"
+  ]
+}

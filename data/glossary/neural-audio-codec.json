@@ -1,0 +1,16 @@
+{
+  "id": "neural-audio-codec",
+  "term": "Neural audio codec",
+  "def": "A learned encoder, quantizer and decoder that compresses audio into a low-bitrate stream of discrete tokens and reconstructs the waveform from them.",
+  "practice": "SoundStream, EnCodec and DAC use residual vector quantization and serve as tokenizers for codec-based TTS, speech-to-speech and music models; SoundStream at 3 kbps beat Opus at 12 kbps in listening tests.",
+  "aliases": [
+    "audio tokenizer"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "autoencoders-latent-spaces",
+    "speech-synthesis",
+    "audio-codecs-tokens"
+  ]
+}

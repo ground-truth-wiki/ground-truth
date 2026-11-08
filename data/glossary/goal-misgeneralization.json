@@ -1,0 +1,13 @@
+{
+  "id": "goal-misgeneralization",
+  "term": "Goal misgeneralization",
+  "def": "A failure in which a model keeps its capabilities in new situations but competently pursues an unintended goal, even though the training objective was specified correctly.",
+  "practice": "Unlike reward hacking, the objective is not flawed: the model learned a proxy that matched it in training, as when a CoinRun agent learned to run right instead of fetching the coin.",
+  "aliases": [
+    "goal misgeneralisation",
+    "objective robustness failure"
+  ],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

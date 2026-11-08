@@ -1,0 +1,13 @@
+{
+  "id": "asymmetric-search",
+  "term": "Asymmetric search",
+  "def": "Retrieval in which short queries are matched against longer passages, which calls for models trained for that asymmetry; symmetric search compares texts of similar length and kind, such as duplicate questions.",
+  "practice": "Many embedding models expect different prefixes or modes for queries and documents, and omitting them, or using a symmetric model for question-to-passage RAG, quietly lowers recall.",
+  "aliases": [
+    "asymmetric semantic search",
+    "asymmetric embedding"
+  ],
+  "chapters": [
+    "embeddings"
+  ]
+}

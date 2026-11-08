@@ -1,0 +1,13 @@
+{
+  "id": "label-aggregation",
+  "term": "Label aggregation",
+  "def": "Combining several annotators’ labels for the same item into one estimated true label, from majority vote to models of annotator reliability such as Dawid-Skene.",
+  "practice": "Needed whenever items get redundant labels; weighting annotators by estimated skill, or by their accuracy on gold questions with known answers, is the usual step beyond majority vote.",
+  "aliases": [
+    "truth inference",
+    "answer aggregation"
+  ],
+  "chapters": [
+    "labeling-annotation"
+  ]
+}

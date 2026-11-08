@@ -1,0 +1,10 @@
+{
+  "id": "diffusion-policy",
+  "term": "Diffusion Policy",
+  "def": "A robot policy that generates actions by iterative denoising, modeling visuomotor control as a conditional diffusion process over action sequences (Chi et al., 2023).",
+  "practice": "Handles demonstrations with several valid ways to do a task better than plain regression; diffusion and flow-matching action heads now sit under many VLAs, such as GR00T N1’s diffusion transformer.",
+  "aliases": [],
+  "chapters": [
+    "embodied-agents"
+  ]
+}

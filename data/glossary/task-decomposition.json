@@ -1,0 +1,18 @@
+{
+  "id": "task-decomposition",
+  "term": "Task decomposition",
+  "def": "Breaking a goal into smaller subtasks that can be planned, executed, delegated or checked separately, either up front or recursively when a step proves too hard.",
+  "practice": "The core move of planners, orchestrators and deep-research agents; decompose only as far as the executor needs, as ADaPT does by splitting a step only when it fails.",
+  "aliases": [
+    "subgoal decomposition",
+    "problem decomposition"
+  ],
+  "chapters": [
+    "planning-reasoning",
+    "workflow-patterns",
+    "multi-agent",
+    "deep-research",
+    "prompt-chaining",
+    "ai-for-mathematics"
+  ]
+}

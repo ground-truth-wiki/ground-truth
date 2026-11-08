@@ -1,0 +1,15 @@
+{
+  "id": "model-capacity",
+  "term": "Model capacity",
+  "def": "The range and complexity of functions a model can represent and fit, which grows with its parameter count and depends on its architecture.",
+  "practice": "Too little capacity for the task underfits and too much for the data overfits; it explains why small models need narrow tasks or distillation and why larger models memorize more.",
+  "aliases": [
+    "model complexity"
+  ],
+  "chapters": [
+    "classical-ml",
+    "scaling-laws",
+    "small-local-models",
+    "distillation-merging"
+  ]
+}

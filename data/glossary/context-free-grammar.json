@@ -1,0 +1,11 @@
+{
+  "id": "context-free-grammar",
+  "term": "Context-free grammar",
+  "def": "A formal grammar of recursive production rules that defines which strings are valid; constrained decoding uses one to force output into code, DSLs or formats a JSON Schema cannot express.",
+  "practice": "OpenAI custom tools accept Lark grammars, llama.cpp uses its BNF-based GBNF, and engines such as XGrammar and llguidance compile grammars into token masks; spell it out, since CFG also means classifier-free guidance.",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs",
+    "decoding-sampling"
+  ]
+}

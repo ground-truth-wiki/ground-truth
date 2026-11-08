@@ -1,0 +1,14 @@
+{
+  "id": "humanitys-last-exam",
+  "term": "Humanity's Last Exam",
+  "def": "A benchmark of 2,500 expert-written multiple-choice and short-answer questions, some with images, across dozens of subjects, built to stay hard after MMLU-style tests saturated.",
+  "practice": "A standard hard-knowledge number in launch tables; compare scores with and without tools separately, and note the variant, such as the 1,000-question HLE-Diamond subset.",
+  "aliases": [
+    "HLE"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "benchmark-catalog"
+  ],
+  "abbr": "HLE"
+}

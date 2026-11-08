@@ -1,0 +1,23 @@
+{
+  "id": "true-false-positive-rate",
+  "term": "True and false positive rates",
+  "def": "The share of actual positives a classifier flags (true positive rate, or recall) and the share of actual negatives it wrongly flags (false positive rate); one minus the latter is the true negative rate.",
+  "practice": "ROC curves plot one against the other across thresholds; for LLM judges, report true positive and true negative rates, because raw agreement hides failures on the rarer class.",
+  "aliases": [
+    "true positive rate",
+    "false positive rate",
+    "true negative rate",
+    "TPR",
+    "FPR",
+    "TNR"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "classical-ml",
+    "classification-metrics",
+    "judge-models-meta-evaluation",
+    "online-experiments",
+    "guard-models-moderation",
+    "fairness-bias"
+  ]
+}

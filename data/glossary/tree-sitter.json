@@ -1,0 +1,14 @@
+{
+  "id": "tree-sitter",
+  "term": "Tree-sitter",
+  "def": "A parser generator and incremental parsing library that builds concrete syntax trees for source code in many languages and updates them quickly on edits, even when the code has errors.",
+  "practice": "The usual way coding tools extract definitions and references for code navigation, for example Aider’s repository map, which has been built with it since 2023.",
+  "aliases": [
+    "treesitter"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "coding-agents",
+    "coding-agent-internals"
+  ]
+}

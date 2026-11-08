@@ -1,0 +1,14 @@
+{
+  "id": "derivative",
+  "term": "Derivative",
+  "def": "The rate at which a function's output changes as its input changes, the slope of its tangent line; a partial derivative measures this for one input while holding the others fixed.",
+  "practice": "Every gradient in training is built from derivatives of simple operations combined by the chain rule, and autodiff frameworks compute them so they are rarely derived by hand.",
+  "aliases": [
+    "partial derivative"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "neural-networks",
+    "model-licenses"
+  ]
+}

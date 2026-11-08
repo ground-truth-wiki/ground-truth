@@ -1,0 +1,17 @@
+{
+  "id": "compounding-error",
+  "term": "Compounding error",
+  "def": "The way a mistake early in a multi-step run feeds into later steps, so errors pile up and the chance of a clean run falls as tasks get longer.",
+  "practice": "If steps fail independently, 95% per-step reliability gives about 36% success over 20 steps; hence verification gates, checkpoints and debugging from the first wrong step.",
+  "aliases": [
+    "error cascade",
+    "cascading errors"
+  ],
+  "chapters": [
+    "agent-failure-modes",
+    "long-horizon-autonomy",
+    "what-is-an-agent",
+    "imitation-offline-rl",
+    "world-models"
+  ]
+}

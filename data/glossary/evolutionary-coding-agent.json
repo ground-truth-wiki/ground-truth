@@ -1,0 +1,17 @@
+{
+  "id": "evolutionary-coding-agent",
+  "term": "Evolutionary coding agent",
+  "def": "A system that evolves programs: an LLM proposes code changes, automated evaluators score the results, and the best programs are kept in a population for further changes.",
+  "practice": "Works wherever a cheap, reliable automatic score exists, such as kernels or scheduling heuristics; AlphaEvolve is the best-known example, and OpenEvolve and ShinkaEvolve are open implementations.",
+  "aliases": [
+    "LLM-guided evolutionary search",
+    "evolutionary program search"
+  ],
+  "chapters": [
+    "self-improving-systems",
+    "ai-for-science",
+    "evolutionary-program-search",
+    "ai-scientist-agents",
+    "ai-for-mathematics"
+  ]
+}

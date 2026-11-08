@@ -112,3 +112,13 @@ long-running-agents
 - [Context engineering](#context-engineering)
 - [Reliability engineering](#reliability-engineering)
 - [Case study: Claude Code](#claude-code)
+- [Compaction, context editing and reasoning state](#context-compaction)
+- [Cloud agents, CI and review bots](#cloud-and-ci-coding-agents)
+- [Graph workflow runtimes: state, super-steps and checkpoints](#graph-workflow-runtimes)
+- [Asynchronous and batch AI workloads](#async-batch-workloads)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Durable execution for agents in depth](#durable-agent-execution)

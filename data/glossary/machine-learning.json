@@ -1,0 +1,20 @@
+{
+  "id": "machine-learning",
+  "term": "Machine learning",
+  "def": "Building systems that improve at a task from data rather than from hand-written rules, by fitting a model’s parameters to optimize an objective on examples.",
+  "practice": "Every training job, from a logistic regression to an LLM, combines the same four ingredients: data, a model, an objective and an optimization algorithm.",
+  "aliases": [
+    "ML"
+  ],
+  "chapters": [
+    "classical-ml",
+    "ai-engineer-role",
+    "neural-networks",
+    "calculus-optimization",
+    "tensors-and-shapes",
+    "eigenvectors-svd-pca",
+    "distributions-and-estimation",
+    "automatic-differentiation"
+  ],
+  "abbr": "ML"
+}

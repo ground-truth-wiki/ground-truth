@@ -1,0 +1,16 @@
+{
+  "id": "seatbelt",
+  "term": "Seatbelt",
+  "def": "Apple's built-in macOS sandboxing framework, driven by profiles through sandbox-exec, that restricts which files, network connections and system services a process may use.",
+  "practice": "Claude Code, Codex and Gemini CLI use it for local sandboxing on macOS; Apple marks the sandbox-exec command deprecated, but it still works on current macOS (as of November 2026).",
+  "aliases": [
+    "sandbox-exec",
+    "macOS Seatbelt",
+    "Seatbelt profile"
+  ],
+  "chapters": [
+    "sandboxes",
+    "claude-code",
+    "os-level-sandboxing"
+  ]
+}

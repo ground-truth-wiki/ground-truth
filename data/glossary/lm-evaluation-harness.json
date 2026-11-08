@@ -1,0 +1,19 @@
+{
+  "id": "lm-evaluation-harness",
+  "term": "lm-evaluation-harness",
+  "def": "EleutherAI's open-source framework (lm-eval) for running language models on standard benchmarks with fixed prompts, few-shot settings, answer-extraction filters and metrics.",
+  "practice": "It served as the backend of Hugging Face's Open LLM Leaderboard and is a common baseline for open-model comparisons; Biderman et al. (2024) document how small setup choices shift scores.",
+  "aliases": [
+    "lm-eval",
+    "lm-eval-harness",
+    "Language Model Evaluation Harness"
+  ],
+  "chapters": [
+    "eval-harnesses",
+    "what-is-a-harness",
+    "benchmark-literacy",
+    "eval-tooling",
+    "information-theory-for-llms",
+    "open-model-communities"
+  ]
+}

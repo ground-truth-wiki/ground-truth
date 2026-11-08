@@ -1,0 +1,16 @@
+{
+  "id": "length-bias",
+  "term": "Length bias",
+  "def": "The tendency of human raters, LLM judges and reward models to prefer longer responses regardless of quality, which preference training then amplifies.",
+  "practice": "Balance lengths in preference pairs, watch average response length during training, and report length-controlled win rates, as AlpacaEval 2 does.",
+  "aliases": [
+    "verbosity bias"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "llm-as-judge",
+    "benchmark-literacy",
+    "arenas-leaderboards",
+    "judge-models-meta-evaluation"
+  ]
+}

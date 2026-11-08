@@ -1,0 +1,11 @@
+{
+  "id": "associative-recall",
+  "term": "Associative recall",
+  "def": "Retrieving the value paired with a key that appeared earlier in the context, such as recalling a phone number given a name.",
+  "practice": "Synthetic multi-query associative recall (MQAR) tasks from the Zoology study (Arora et al., 2023) expose where fixed-state recurrent models fall short of attention.",
+  "aliases": [],
+  "chapters": [
+    "beyond-transformers",
+    "linear-attention-hybrids"
+  ]
+}

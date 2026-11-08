@@ -1,0 +1,21 @@
+{
+  "id": "label-noise",
+  "term": "Label noise",
+  "def": "Errors in a dataset’s labels, from annotator mistakes, ambiguous guidelines or automatic labeling, which distort both training and evaluation.",
+  "practice": "Even famous test sets carry it: one audit estimated at least 3.3% label errors on average across ten popular test sets and at least 6% in ImageNet’s validation set, enough to reorder model rankings.",
+  "aliases": [
+    "noisy labels",
+    "label errors",
+    "mislabeled data"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "eval-datasets",
+    "benchmark-literacy",
+    "dpo-and-relatives",
+    "benchmark-catalog",
+    "benchmark-validity",
+    "label-quality",
+    "active-learning-weak-supervision"
+  ]
+}

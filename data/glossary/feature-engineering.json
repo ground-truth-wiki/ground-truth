@@ -1,0 +1,17 @@
+{
+  "id": "feature-engineering",
+  "term": "Feature engineering",
+  "def": "Designing and transforming raw data into model inputs, such as encodings, scaled values, aggregates and feature crosses, so a model can learn the task more easily.",
+  "practice": "Often the biggest lever on tabular problems; Google's Rules of ML treats it as the second phase of a production system, once a simple end-to-end pipeline works.",
+  "aliases": [
+    "featurization"
+  ],
+  "chapters": [
+    "classical-ml",
+    "validation-tuning",
+    "feature-engineering",
+    "linear-and-kernel-models",
+    "trees-and-ensembles",
+    "feature-stores"
+  ]
+}

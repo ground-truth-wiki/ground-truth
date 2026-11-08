@@ -1,0 +1,15 @@
+{
+  "id": "key-information-extraction",
+  "term": "Key information extraction",
+  "def": "Extracting specified fields, such as invoice number, date or total, from documents into key-value pairs.",
+  "practice": "Benchmarked on forms and receipts such as FUNSD, SROIE and CORD; validate extracted values against a schema and business rules before using them.",
+  "aliases": [
+    "KIE",
+    "key-value extraction"
+  ],
+  "chapters": [
+    "document-screen-understanding",
+    "document-extraction"
+  ],
+  "abbr": "KIE"
+}

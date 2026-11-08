@@ -1,0 +1,16 @@
+{
+  "id": "bedrock-agentcore",
+  "term": "Amazon Bedrock AgentCore",
+  "def": "AWS's modular, framework-agnostic platform for production agents: a serverless runtime with isolated sessions, a managed harness, memory, an MCP tool gateway, identity, code and browser sandboxes, observability and evaluations.",
+  "practice": "Generally available since 13 October 2025; its services work independently, for example Gateway alone to expose internal APIs and Lambda functions as MCP tools.",
+  "aliases": [
+    "AgentCore"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "framework-landscape",
+    "sandboxes",
+    "mcp-at-scale",
+    "managed-agent-platforms"
+  ]
+}

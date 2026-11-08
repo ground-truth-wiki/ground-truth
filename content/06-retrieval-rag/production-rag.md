@@ -117,3 +117,10 @@ production-rag
 - [Privacy](#privacy)
 - [Enterprise readiness](#enterprise-readiness)
 - [Evaluating RAG](#rag-evaluation)
+- [Pipeline orchestration and processing engines](#data-pipeline-orchestration)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [RAG security: poisoning, inversion and leakage](#rag-security)

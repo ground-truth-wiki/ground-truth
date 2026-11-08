@@ -1,0 +1,16 @@
+{
+  "id": "feature-attribution",
+  "term": "Feature attribution",
+  "def": "Methods that score how much each input feature or token contributed to a model’s output, such as gradient saliency, integrated gradients and Shapley-value methods like SHAP.",
+  "practice": "Used to explain single predictions and spot spurious features; methods often disagree, and integrated gradients (Sundararajan et al., 2017) was built to satisfy axioms that plain gradients violate.",
+  "aliases": [
+    "attribution methods",
+    "input attribution",
+    "saliency map"
+  ],
+  "chapters": [
+    "mech-interp",
+    "responsible-ai",
+    "data-selection-attribution"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "machine-translation",
+  "term": "Machine translation",
+  "def": "Automatically translating text from one human language into another; neural machine translation with attention (Bahdanau et al., 2014) led directly to the transformer.",
+  "practice": "LLMs now translate well between high-resource languages; evaluate with learned metrics such as COMET or chrF plus native-speaker review, not BLEU alone.",
+  "aliases": [
+    "neural machine translation",
+    "NMT"
+  ],
+  "chapters": [
+    "tokenization",
+    "metrics-graders",
+    "speech-audio",
+    "attention",
+    "specialist-models",
+    "history-of-ai",
+    "recurrent-networks",
+    "tokenizers-in-practice"
+  ],
+  "abbr": "MT"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tamper-resistant-safeguards",
+  "term": "Tamper-resistant safeguards",
+  "def": "Safeguards for open-weight models designed to survive adversarial fine-tuning, such as tamper-resistant training or filtering hazardous knowledge out of the pretraining data.",
+  "practice": "Ordinary refusal training can be removed with a few fine-tuning steps; Deep Ignorance's filtered 6.9B models resisted up to 10,000 steps of biothreat fine-tuning but could still use dangerous facts supplied in context.",
+  "aliases": [
+    "tamper resistance"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "supply-chain-security",
+    "safety-character-training"
+  ]
+}

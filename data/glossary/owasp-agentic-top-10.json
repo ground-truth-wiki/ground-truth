@@ -1,0 +1,17 @@
+{
+  "id": "owasp-agentic-top-10",
+  "term": "OWASP Top 10 for Agentic Applications",
+  "def": "OWASP's ranked list of security risks specific to autonomous AI agents, published in December 2025 as the 2026 edition, from ASI01 agent goal hijack to ASI10 rogue agents.",
+  "practice": "Use it alongside the LLM Top 10 when threat-modeling agents; entries include tool misuse, identity and privilege abuse, memory and context poisoning, and cascading failures.",
+  "aliases": [
+    "OWASP Agentic Top 10",
+    "OWASP Top 10 for Agentic AI"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "secure-agent-design",
+    "mcp-security",
+    "ai-security-frameworks",
+    "ai-failure-casebook"
+  ]
+}

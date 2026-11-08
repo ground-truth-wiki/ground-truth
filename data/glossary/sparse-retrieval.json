@@ -1,0 +1,17 @@
+{
+  "id": "sparse-retrieval",
+  "term": "Sparse retrieval",
+  "def": "Retrieval with high-dimensional sparse vectors whose dimensions are vocabulary terms, served from an inverted index; it covers BM25 and learned sparse models such as SPLADE.",
+  "practice": "The keyword side of hybrid search: exact on ids, codes and rare terms with inspectable term weights, while learned sparse models add expansion terms to narrow the vocabulary gap.",
+  "aliases": [
+    "lexical retrieval",
+    "lexical search",
+    "term-based retrieval"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "embeddings",
+    "vector-databases",
+    "ir-foundations"
+  ]
+}

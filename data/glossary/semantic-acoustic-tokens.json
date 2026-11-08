@@ -1,0 +1,16 @@
+{
+  "id": "semantic-acoustic-tokens",
+  "term": "Semantic and acoustic tokens",
+  "def": "Two kinds of discrete audio tokens: semantic tokens from a self-supervised speech model capture content and structure, acoustic tokens from a neural codec capture voice, timbre and recording detail.",
+  "practice": "Audio language models such as AudioLM generate semantic tokens first and acoustic tokens second, which keeps long-range coherence as well as speaker identity and prosody.",
+  "aliases": [
+    "semantic tokens",
+    "acoustic tokens"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "speech-synthesis",
+    "audio-codecs-tokens"
+  ]
+}

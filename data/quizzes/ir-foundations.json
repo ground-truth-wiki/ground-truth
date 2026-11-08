@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ir-foundations-1",
+    "chapter": "ir-foundations",
+    "q": "Documents were indexed with an analyzer that lowercases and stems English. A new search service sends queries through a lowercase-only analyzer. Which query no longer finds a document containing “Refunds are processed in five days”?",
+    "options": [
+      "refund",
+      "REFUND",
+      "refunds",
+      "Refund"
+    ],
+    "answer": 2,
+    "explain": "The index stores the stemmed term “refund”. The query side no longer stems, so “refunds” looks up a term the index never stored and matches nothing. “REFUND” is the tempting wrong answer because it looks the most different, but lowercasing still runs on both sides, so it becomes “refund” and matches. The fix is one analyzer for indexing and querying."
+  },
+  {
+    "id": "ir-foundations-2",
+    "chapter": "ir-foundations",
+    "q": "BM25 with k1 = 1.2 and b = 0.75. Documents A and B both contain the query term 3 times. A has 100 terms, B has 1,000, and the average is 300. How do their scores for this term compare?",
+    "options": [
+      "A scores higher: the same three occurrences are denser evidence in a shorter document",
+      "They tie: BM25 uses only the term frequency and the IDF, which are the same for both",
+      "B scores higher: a longer document covers more of the topic",
+      "They tie unless b is set above 1"
+    ],
+    "answer": 0,
+    "explain": "Length normalization multiplies k1 by (1 − b) + b × length / average: 0.5 for A and 2.75 for B, so A’s saturated term frequency is about 1.83 and B’s about 1.05. The tempting tie forgets this factor; it would hold only with b = 0. At equal term frequency, BM25 never rewards a document for being longer; at most, with b = 0, it stops penalizing length."
+  },
+  {
+    "id": "ir-foundations-3",
+    "chapter": "ir-foundations",
+    "q": "A system uses pseudo-relevance feedback: it adds frequent terms from the top 10 results to the query and searches again. For “copper mines”, most of the top 10 results happen to be about mines in Chile. What is the most likely effect?",
+    "options": [
+      "Recall rises with no downside, because expansion only ever adds matching documents",
+      "Nothing changes, because the added terms already appear in the top results",
+      "Precision rises, because the expanded query is longer and more specific",
+      "The query drifts toward Chile and starts ranking Chilean documents that are not about copper"
+    ],
+    "answer": 3,
+    "explain": "Pseudo-relevance feedback assumes the top results are relevant. Here they share a topic the user did not ask for, so terms about Chile enter the query and pull in documents about Chile: query drift. The tempting answer, that recall rises for free, ignores that the added terms also change the ranking and can push the documents about copper down."
+  }
+]

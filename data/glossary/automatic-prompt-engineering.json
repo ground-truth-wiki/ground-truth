@@ -1,0 +1,15 @@
+{
+  "id": "automatic-prompt-engineering",
+  "term": "Automatic prompt engineering",
+  "def": "Using a model to propose candidate prompts, scoring each against a metric on a dataset and keeping the best; also the name of an early method, Automatic Prompt Engineer (Zhou et al., 2022).",
+  "practice": "APE’s instructions matched or beat human-written ones on 19 of 24 tasks; any such search overfits its dataset without a held-out set.",
+  "aliases": [
+    "APE",
+    "Automatic Prompt Engineer",
+    "automatic prompt optimization"
+  ],
+  "chapters": [
+    "prompt-optimization"
+  ],
+  "abbr": "APE"
+}

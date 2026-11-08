@@ -1,0 +1,19 @@
+{
+  "id": "google-adk",
+  "term": "Agent Development Kit",
+  "def": "Google's open-source, model-agnostic framework for building, evaluating and deploying single- and multi-agent systems, available in Python, TypeScript, Go, Java and Kotlin.",
+  "practice": "ADK 2.0 adds graph and dynamic workflows that supersede its sequential, loop and parallel workflow agents in Python and Go (as of November 2026); deploy targets include Agent Runtime, Cloud Run and GKE.",
+  "aliases": [
+    "ADK",
+    "Google ADK"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "framework-landscape",
+    "multi-agent",
+    "agent-sdk-primitives",
+    "frameworks-beyond-python",
+    "managed-agent-platforms"
+  ],
+  "abbr": "ADK"
+}

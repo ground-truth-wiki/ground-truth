@@ -1,0 +1,12 @@
+{
+  "id": "scaling-hypothesis",
+  "term": "Scaling hypothesis",
+  "def": "The view that training ever larger models on more data and compute, with general architectures, will keep producing more capable and more general behavior.",
+  "practice": "The bet behind frontier investment, popularized in Gwern's 2020 essay; critics argue that new ideas, not more scale, are now the bottleneck.",
+  "aliases": [],
+  "chapters": [
+    "scaling-laws",
+    "open-problems",
+    "mental-models"
+  ]
+}

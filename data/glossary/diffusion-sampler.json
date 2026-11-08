@@ -1,0 +1,10 @@
+{
+  "id": "diffusion-sampler",
+  "term": "Diffusion sampler",
+  "def": "The numerical ODE or SDE solver that turns a trained diffusion or flow model's predictions into an output over a chosen number of steps; Hugging Face Diffusers calls it a scheduler.",
+  "practice": "Euler, DPM-Solver++ (shown as DPM++ 2M in some UIs) and UniPC are common; swapping samplers trades speed, determinism and detail without retraining.",
+  "aliases": [],
+  "chapters": [
+    "image-generation"
+  ]
+}

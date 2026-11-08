@@ -1,0 +1,12 @@
+{
+  "id": "confident-learning",
+  "term": "Confident learning",
+  "def": "A family of methods that estimate the joint distribution of noisy and true labels from a model’s out-of-sample predicted probabilities, then find and rank likely label errors.",
+  "practice": "Implemented in the open-source cleanlab library: get out-of-sample predictions by cross-validation, run it, and review the top-ranked suspected errors by hand before relabeling or pruning.",
+  "aliases": [],
+  "chapters": [
+    "labeling-annotation",
+    "eval-datasets",
+    "label-quality"
+  ]
+}

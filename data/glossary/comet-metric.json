@@ -1,0 +1,12 @@
+{
+  "id": "comet-metric",
+  "term": "COMET",
+  "def": "A learned machine-translation metric: a model built on a pretrained cross-lingual encoder reads the source, the translation and a reference translation and predicts a human quality score.",
+  "practice": "Trained on human judgments such as Direct Assessments and MQM annotations; Rei et al. (2020) reported state-of-the-art correlation with humans on the WMT 2019 metrics task, so prefer it to BLEU for translation.",
+  "aliases": [],
+  "chapters": [
+    "metrics-graders",
+    "browser-automation-stack",
+    "text-generation-metrics"
+  ]
+}

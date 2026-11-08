@@ -1,0 +1,20 @@
+{
+  "id": "variance",
+  "term": "Variance and standard deviation",
+  "def": "Variance is the expected squared deviation of a random variable from its mean; the standard deviation is its square root, in the same units as the variable.",
+  "practice": "Run-to-run variance in eval scores and in gradient estimates decides how many samples are needed, and the bias–variance trade-off frames under- and overfitting.",
+  "aliases": [
+    "variance",
+    "standard deviation"
+  ],
+  "chapters": [
+    "probability-information",
+    "eval-statistics",
+    "classical-ml",
+    "rlvr-reasoning",
+    "mech-interp",
+    "prompting-fundamentals",
+    "eigenvectors-svd-pca",
+    "distributions-and-estimation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "apply-patch",
+  "term": "apply_patch",
+  "def": "OpenAI's V4A patch format and the tool built on it, in which a patch creates, updates or deletes files and locates each change by context lines instead of line numbers.",
+  "practice": "Patches sit between *** Begin Patch and *** End Patch, and OpenAI says GPT-4.1 was extensively trained on the format; with the Responses API apply_patch tool the model emits operations that your own harness applies.",
+  "aliases": [
+    "V4A",
+    "V4A diff"
+  ],
+  "chapters": [
+    "harness-engineering",
+    "coding-agents",
+    "agent-tools",
+    "build-your-own-harness"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "tabular-foundation-model",
+  "term": "Tabular foundation model",
+  "def": "A transformer pretrained, often on synthetic datasets, that predicts on a new table in one forward pass, reading the training rows as context instead of fitting a model per dataset.",
+  "practice": "TabPFN (Nature, January 2025) and its successors match or beat tuned gradient-boosted trees on many smaller tables in published benchmarks, while trees remain strong contenders (as of November 2026; volatile).",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "trees-and-ensembles"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "sigmoid-function",
+  "term": "Sigmoid function",
+  "def": "The logistic function σ(x) = 1 / (1 + e^(−x)), which maps any real number into the interval (0, 1).",
+  "practice": "Turns a single logit into a probability in binary classifiers, reward models and gating units; it equals a two-class softmax and saturates, which is why hidden layers moved to ReLU-like activations.",
+  "aliases": [
+    "logistic function",
+    "sigmoid",
+    "logistic sigmoid"
+  ],
+  "chapters": [
+    "neural-networks",
+    "classical-ml",
+    "probability-information",
+    "loss-functions",
+    "classification-metrics",
+    "trainable-deep-networks",
+    "recurrent-networks",
+    "self-supervised-methods"
+  ]
+}

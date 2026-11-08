@@ -1,0 +1,13 @@
+{
+  "id": "memory-wall",
+  "term": "Memory wall",
+  "def": "The growing gap between how fast processors compute and how fast memory can deliver data to them, which leaves compute units idle in bandwidth-bound workloads.",
+  "practice": "Gholami et al. (2024) estimate peak server FLOPS grew about 3.0 times every two years against 1.6 times for DRAM bandwidth, which is why LLM decode is memory-bound.",
+  "aliases": [],
+  "chapters": [
+    "inference-fundamentals",
+    "hardware",
+    "compute-governance",
+    "scaling-trends-limits"
+  ]
+}

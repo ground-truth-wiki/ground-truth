@@ -1,0 +1,14 @@
+{
+  "id": "l1-l2-regularization",
+  "term": "L1 and L2 regularization",
+  "def": "Adding a penalty to the loss proportional to the sum of absolute weights (L1) or of squared weights (L2) to discourage large weights; L1 can drive some weights exactly to zero.",
+  "practice": "L2-regularized linear regression is ridge regression and L1 gives the lasso; in deep learning L2 usually appears as weight decay, which AdamW decouples from the gradient update.",
+  "aliases": [
+    "ridge regularization"
+  ],
+  "chapters": [
+    "classical-ml",
+    "calculus-optimization",
+    "neural-networks"
+  ]
+}

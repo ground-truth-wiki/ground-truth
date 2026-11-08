@@ -1,0 +1,16 @@
+{
+  "id": "visual-question-answering",
+  "term": "Visual question answering",
+  "def": "Answering a natural-language question about an image; also the name of the 2015 benchmark that popularized the task.",
+  "practice": "The umbrella task behind many VLM benchmarks such as DocVQA and ChartQA; short-answer exact-match scoring can penalize correct paraphrases.",
+  "aliases": [
+    "VQA"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "document-screen-understanding",
+    "document-ocr-models",
+    "multimodal-evaluation"
+  ],
+  "abbr": "VQA"
+}

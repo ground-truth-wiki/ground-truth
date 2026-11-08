@@ -1,0 +1,21 @@
+{
+  "id": "overflow-underflow",
+  "term": "Overflow and underflow",
+  "def": "Overflow is a result too large in magnitude for the format, which becomes infinity or the largest value; underflow is a nonzero result too small, which becomes subnormal or zero.",
+  "practice": "FP16 gradients underflow without loss scaling, softmax exponentials overflow unless the maximum is subtracted first, and products of many token probabilities underflow, so log-probabilities are summed instead.",
+  "aliases": [
+    "underflow",
+    "numerical overflow",
+    "numerical underflow"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "probability-information",
+    "distributed-training",
+    "quantization",
+    "training-neural-networks",
+    "floating-point-formats",
+    "language-modeling",
+    "security-agents"
+  ]
+}

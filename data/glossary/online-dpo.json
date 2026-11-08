@@ -1,0 +1,15 @@
+{
+  "id": "online-dpo",
+  "term": "Online DPO",
+  "def": "Direct preference optimization on response pairs freshly sampled from the current policy during training and labeled on the spot by a judge model or reward model.",
+  "practice": "Keeps preference data on-policy and beat offline DPO and RLHF in human evaluations by Guo et al. (2024), at the cost of sampling and judging during training.",
+  "aliases": [
+    "OAIF"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "post-training-overview",
+    "dpo-and-relatives",
+    "llm-policy-gradients"
+  ]
+}

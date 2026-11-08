@@ -1,0 +1,41 @@
+[
+  {
+    "id": "post-training-overview-1",
+    "chapter": "post-training-overview",
+    "q": "A team decontaminates its prompts against IFEval, then runs RLVR on precise instruction-following prompts. Their IFEval score jumps, but on a held-out set built the same way with different constraints the score barely moves. What is the most likely explanation?",
+    "options": [
+      "The RL run was too short; training longer will lift the held-out set too",
+      "The model learned the constraints it was tuned toward rather than the general skill, which is why recipes are judged on an unseen suite",
+      "IFEval test items leaked into the training prompts, and decontamination alone will close the gap",
+      "The verifier is broken, so every reward during training was noise"
+    ],
+    "answer": 1,
+    "explain": "Tülu 3 found that every model it tested scored far lower on IFEval-OOD, a version with new constraints, than on IFEval: a sign of overfitting to the constraint set people tune on. That is why recipes keep an unseen suite nobody tunes toward. Contamination is the tempting answer, but it is a different failure: the team already decontaminated, Tülu 3 decontaminated its own training data and still saw the gap, and the gap comes from tuning toward one family of constraints, which decontamination does not remove. A broken verifier would not have raised IFEval in the first place."
+  },
+  {
+    "id": "post-training-overview-2",
+    "chapter": "post-training-overview",
+    "q": "You want a strong 7B reasoning model and can sample from a much larger open reasoning model. Based on the DeepSeek-R1 results, which plan is the best first bet?",
+    "options": [
+      "Run large-scale RL with verifiable rewards on the 7B base model, as DeepSeek-R1-Zero did",
+      "Train a 7B reward model on human preferences, then optimize against it with PPO",
+      "Fine-tune the 7B base model on filtered reasoning traces sampled from the large model, and evaluate before adding any RL",
+      "Merge the weights of the large model into the 7B model"
+    ],
+    "answer": 2,
+    "explain": "DeepSeek-R1 found that distilling R1's outputs into a 32B base beat running large-scale RL on that same base, and its six distilled students were trained with SFT only. RL on the small base is the tempting answer because RL produced R1-Zero's reasoning, but that happened on a very large base; on the 32B base, imitating a strong teacher's traces worked better than RL. A preference reward model teaches style more than reasoning, and weight merging needs models of the same shape, usually fine-tuned from one base."
+  },
+  {
+    "id": "post-training-overview-3",
+    "chapter": "post-training-overview",
+    "q": "A lab trains separate RL specialists for coding, math and search from one SFT checkpoint. Why combine them with multi-teacher on-policy distillation instead of training one model on each domain in sequence?",
+    "options": [
+      "Sequential training tends to erode earlier skills; in on-policy distillation the student learns on its own samples, with token-level signals from each domain's teacher",
+      "On-policy distillation removes the need to train the teachers with RL",
+      "Distillation guarantees that the student beats every teacher in every domain",
+      "Sequential RL cannot use verifiable rewards, so math and code need a teacher"
+    ],
+    "answer": 0,
+    "explain": "The MiMo-V2-Flash report introduced multi-teacher on-policy distillation against the see-saw effect, where improving one skill regresses another, and GLM-5 ends with on-policy distillation from its earlier stage checkpoints to recover skills lost during sequential RL. Because the student trains on its own samples, it gets feedback on the mistakes it actually makes rather than on a fixed dataset. The guarantee is the tempting wrong answer: the method aims to keep each teacher's best skill, but in the MiMo report the student stayed below its best teacher on BrowseComp. MiMo-V2-Flash trains its specialist teachers with RL before distilling them, so the method builds on RL rather than removing it."
+  }
+]

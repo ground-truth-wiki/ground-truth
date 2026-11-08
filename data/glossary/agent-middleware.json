@@ -1,0 +1,13 @@
+{
+  "id": "agent-middleware",
+  "term": "Agent middleware",
+  "def": "Code that wraps the model and tool calls inside an agent loop to inspect or modify requests and responses, for example to summarize history, redact personal data, retry or switch models.",
+  "practice": "LangChain 1.0 and Microsoft Agent Framework expose middleware hooks; they keep cross-cutting policy out of prompts, but every layer adds behavior you have to find in traces.",
+  "aliases": [],
+  "chapters": [
+    "provider-agent-sdks",
+    "orchestration-frameworks",
+    "guardrails-control",
+    "framework-anti-patterns"
+  ]
+}

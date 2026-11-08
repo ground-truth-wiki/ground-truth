@@ -1,0 +1,12 @@
+{
+  "id": "evol-instruct",
+  "term": "Evol-Instruct",
+  "def": "A synthetic-data method in which an LLM repeatedly rewrites seed instructions into harder or broader variants, yielding instruction data across a range of difficulty.",
+  "practice": "Behind the WizardLM and WizardCoder models; useful when seed prompts are too easy, with filtering needed because evolved prompts can become unanswerable.",
+  "aliases": [],
+  "chapters": [
+    "synthetic-data",
+    "sft",
+    "synthetic-data-recipes"
+  ]
+}

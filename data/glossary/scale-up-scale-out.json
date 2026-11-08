@@ -1,0 +1,16 @@
+{
+  "id": "scale-up-scale-out",
+  "term": "Scale-up and scale-out networks",
+  "def": "Two network tiers: scale-up links a small group of accelerators so tightly they act almost as one device (NVLink, TPU ICI); scale-out joins many such groups over InfiniBand or Ethernet.",
+  "practice": "Keep tensor and expert parallelism inside the scale-up domain, which NVL72 racks grew to 72 GPUs; data and pipeline parallelism tolerate the slower scale-out network.",
+  "aliases": [
+    "scale-up network",
+    "scale-out network",
+    "scale-up domain"
+  ],
+  "chapters": [
+    "hardware",
+    "distributed-training",
+    "disaggregated-serving"
+  ]
+}

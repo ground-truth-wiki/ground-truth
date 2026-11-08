@@ -1,0 +1,17 @@
+{
+  "id": "cascaded-voice-pipeline",
+  "term": "Cascaded voice pipeline",
+  "def": "A voice-agent architecture that chains streaming speech recognition, a text language model and text-to-speech as separate, replaceable components.",
+  "practice": "Easier to log, test and constrain than a speech-to-speech model, for example with a policy check on the text before speaking, at the cost of latency added across stages and lost tone of voice.",
+  "aliases": [
+    "cascaded pipeline",
+    "chained voice pipeline",
+    "chained architecture",
+    "STT-LLM-TTS pipeline"
+  ],
+  "chapters": [
+    "voice-agents",
+    "speech-audio",
+    "model-types"
+  ]
+}

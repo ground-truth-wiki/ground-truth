@@ -1,0 +1,14 @@
+{
+  "id": "feature-importance",
+  "term": "Feature importance",
+  "def": "A score of how much each input feature contributes to a model's predictions or accuracy, computed from the model's structure or by perturbing the feature.",
+  "practice": "Prefer permutation importance on held-out data, because impurity-based scores in trees favor high-cardinality features; correlated features split or mask each other's importance either way.",
+  "aliases": [
+    "variable importance"
+  ],
+  "chapters": [
+    "classical-ml",
+    "responsible-ai",
+    "model-interpretability"
+  ]
+}

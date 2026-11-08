@@ -1,0 +1,14 @@
+{
+  "id": "fgsm",
+  "term": "Fast gradient sign method",
+  "def": "A one-step attack that shifts every input feature by a small fixed amount, epsilon, in the direction of the sign of the loss gradient.",
+  "practice": "A cheap baseline from Goodfellow et al. (2014), who also used it for adversarial training; too weak on its own to show that a defense works.",
+  "aliases": [
+    "FGSM"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "adversarial-ml"
+  ],
+  "abbr": "FGSM"
+}

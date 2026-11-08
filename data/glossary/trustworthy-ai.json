@@ -1,0 +1,13 @@
+{
+  "id": "trustworthy-ai",
+  "term": "Trustworthy AI",
+  "def": "AI that meets a set of required properties; NIST lists valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.",
+  "practice": "The vocabulary of governance frameworks and procurement questionnaires, along with the EU expert group’s 2019 guidelines (lawful, ethical, robust); map each property to concrete evals and controls.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "enterprise-readiness",
+    "ai-risk-management"
+  ]
+}

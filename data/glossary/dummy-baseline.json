@@ -1,0 +1,14 @@
+{
+  "id": "dummy-baseline",
+  "term": "Dummy baseline",
+  "def": "A trivial reference predictor, such as always predicting the most frequent class or the mean, that a real model must beat to be worth deploying.",
+  "practice": "Report it next to every metric: 99% accuracy means little if 99% of examples belong to one class; scikit-learn provides DummyClassifier and DummyRegressor.",
+  "aliases": [
+    "dummy classifier",
+    "majority-class baseline"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes"
+  ]
+}

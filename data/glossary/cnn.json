@@ -1,0 +1,20 @@
+{
+  "id": "cnn",
+  "term": "Convolutional neural network",
+  "def": "A network built from convolutional layers that slide small learned filters across a grid such as an image, reusing the same weights at every position.",
+  "practice": "Dominated computer vision from AlexNet in 2012 until vision transformers arrived around 2020; still common where efficiency matters and inside the U-Nets of earlier diffusion models.",
+  "aliases": [
+    "CNN",
+    "ConvNet",
+    "convolutional network"
+  ],
+  "chapters": [
+    "neural-networks",
+    "vision-language-models",
+    "image-generation",
+    "history-of-ai",
+    "convolutional-networks",
+    "graph-neural-networks"
+  ],
+  "abbr": "CNN"
+}

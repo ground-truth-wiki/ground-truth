@@ -1,0 +1,19 @@
+{
+  "id": "zero-shot-prompting",
+  "term": "Zero-shot prompting",
+  "def": "Prompting with only an instruction or task description and no worked examples.",
+  "practice": "The usual starting point for instruction-tuned models; add examples when format, tone or judgment drifts.",
+  "aliases": [
+    "zero-shot"
+  ],
+  "chapters": [
+    "in-context-learning",
+    "prompting-fundamentals",
+    "reasoning-prompts",
+    "query-understanding",
+    "training-hyperparameters",
+    "trainable-deep-networks",
+    "self-supervised-methods",
+    "time-series-forecasting"
+  ]
+}

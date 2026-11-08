@@ -1,0 +1,14 @@
+{
+  "id": "selective-scan",
+  "term": "Selective scan",
+  "def": "Mamba's state update, in which the state-space parameters (step size and input and output projections) depend on the current input, computed with a hardware-aware parallel scan.",
+  "practice": "Input dependence lets the model choose what to keep or forget in its fixed-size state, which earlier time-invariant models such as S4 cannot; the Mamba paper calls these layers S6.",
+  "aliases": [
+    "selective SSM",
+    "selective state space model",
+    "S6"
+  ],
+  "chapters": [
+    "beyond-transformers"
+  ]
+}

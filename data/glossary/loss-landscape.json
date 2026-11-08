@@ -1,0 +1,15 @@
+{
+  "id": "loss-landscape",
+  "term": "Loss landscape",
+  "def": "The loss viewed as a surface over the space of a model's parameters, with its minima, valleys, plateaus and saddle points.",
+  "practice": "Low-dimensional visualizations suggest that skip connections make landscapes smoother and easier to train, though a 2D slice through billions of dimensions shows only part of the picture.",
+  "aliases": [
+    "loss surface"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "eigenvectors-svd-pca",
+    "optimizers",
+    "trainable-deep-networks"
+  ]
+}

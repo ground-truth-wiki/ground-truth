@@ -76,3 +76,13 @@ open-weight-frontier
 - [Supply chain and model security](#supply-chain-security)
 - [New architectures and efficiency](#new-architectures)
 - [Serving engines](#serving-engines)
+- [Open pretraining datasets](#open-pretraining-datasets)
+- [Model merging methods](#model-merging-methods)
+- [Model licenses and openness definitions](#model-licenses)
+- [Compute governance: chips, supply chains and export controls](#compute-governance)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Open models: history, communities and the release debate](#open-model-communities)

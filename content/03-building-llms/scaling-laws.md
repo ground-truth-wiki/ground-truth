@@ -81,3 +81,14 @@ scaling-laws
 - [Reasoning models and test-time compute](#reasoning-models)
 - [Numbers every AI engineer should know](#numbers-to-know)
 - [Reasoning and test-time scaling](#test-time-scaling)
+- [Learning rate, batch size and schedules](#training-hyperparameters)
+- [The pretraining run, end to end](#pretraining-run)
+- [Data mixtures, repetition and curricula](#data-mixing)
+- [Evaluating models during pretraining](#base-model-evaluation)
+- [Scaling trends and limits: compute, cost, data and power](#scaling-trends-limits)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Compute accounting: FLOP, GPU-hours and utilization](#compute-accounting)

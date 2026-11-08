@@ -1,0 +1,14 @@
+{
+  "id": "data-replay",
+  "term": "Data replay",
+  "def": "Mixing a share of earlier training data into continued training on new data, so the model keeps what it learned before.",
+  "practice": "Ibrahim et al. (2024) showed that learning-rate re-warming and re-decay plus replay let continued pretraining match retraining from scratch at a fraction of the compute.",
+  "aliases": [
+    "rehearsal",
+    "replay data"
+  ],
+  "chapters": [
+    "mid-training",
+    "fine-tuning-practice"
+  ]
+}

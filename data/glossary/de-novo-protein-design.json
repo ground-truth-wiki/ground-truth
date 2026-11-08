@@ -1,0 +1,16 @@
+{
+  "id": "de-novo-protein-design",
+  "term": "De novo protein design",
+  "def": "Designing new protein sequences and structures for a desired function, rather than modifying natural proteins, today mostly with generative models.",
+  "practice": "RFdiffusion designs binders, symmetric assemblies and enzyme scaffolds that are then tested in the lab; David Baker shared the 2024 Nobel Prize in Chemistry for computational protein design.",
+  "aliases": [
+    "computational protein design",
+    "generative protein design"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "specialist-models",
+    "history-of-ai",
+    "ai-for-biology"
+  ]
+}

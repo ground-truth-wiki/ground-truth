@@ -1,0 +1,24 @@
+{
+  "id": "claude",
+  "term": "Claude",
+  "def": "Anthropic's family of large language models, offered in Haiku, Sonnet and Opus tiers plus Fable, a higher tier for the most demanding reasoning and long-horizon agentic work.",
+  "practice": "As of November 2026 the current models are Claude Fable 5.1, Opus 5.5, Sonnet 5.5 and Haiku 5.5, with Mythos 5.1 limited to verified organizations; every model ID is a pinned snapshot.",
+  "aliases": [
+    "Claude models",
+    "Claude Opus",
+    "Claude Sonnet",
+    "Claude Haiku",
+    "Claude Fable",
+    "Claude Mythos"
+  ],
+  "chapters": [
+    "frontier-families",
+    "model-specific-notes",
+    "sota-snapshot",
+    "reasoning-models",
+    "prompting-fundamentals",
+    "function-calling-training",
+    "model-specs-instruction-hierarchy",
+    "fine-tuning-and-safety"
+  ]
+}

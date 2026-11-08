@@ -1,0 +1,13 @@
+{
+  "id": "zero-code-instrumentation",
+  "term": "Zero-code instrumentation",
+  "def": "Adding telemetry to an application without editing its source, usually through an agent that hooks into the libraries it uses, such as HTTP clients, databases and model SDKs.",
+  "practice": "It gives model-call spans in minutes but sees libraries, not your logic; add code-based spans for agent steps, retrieval and business context.",
+  "aliases": [
+    "auto-instrumentation",
+    "automatic instrumentation"
+  ],
+  "chapters": [
+    "observability-tracing"
+  ]
+}

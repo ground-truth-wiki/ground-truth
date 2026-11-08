@@ -1,0 +1,20 @@
+{
+  "id": "admt",
+  "term": "Automated decision-making technology",
+  "def": "Technology that processes personal data and uses computation to make, or substantially replace human judgment in, decisions about people, such as hiring, lending, housing or health care.",
+  "practice": "Triggers notice, opt-out, access, explanation or human review rights under GDPR Article 22, California's CCPA regulations (effective January 2026) and Colorado's 2026 law.",
+  "aliases": [
+    "ADMT",
+    "automated decision-making",
+    "ADM"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "privacy",
+    "human-in-the-loop",
+    "us-ai-law",
+    "ai-risk-management"
+  ],
+  "abbr": "ADMT"
+}

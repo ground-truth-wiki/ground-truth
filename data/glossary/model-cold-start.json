@@ -1,0 +1,19 @@
+{
+  "id": "model-cold-start",
+  "term": "Model cold start",
+  "def": "The delay before a newly started model-server replica can serve traffic: provisioning, pulling the container image, downloading weights, loading them into GPU memory and warming up.",
+  "practice": "It can take minutes for large models, so teams keep minimum warm replicas, cache or stream weights from fast storage, and treat it as the main cost of scaling to zero.",
+  "aliases": [
+    "cold start",
+    "cold-start latency"
+  ],
+  "chapters": [
+    "serving-engines",
+    "cost-capacity",
+    "recommender-systems",
+    "reasoning-training-recipes",
+    "post-training-overview",
+    "active-learning-weak-supervision",
+    "inference-fleet-scaling"
+  ]
+}

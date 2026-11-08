@@ -1,0 +1,12 @@
+{
+  "id": "data-augmentation",
+  "term": "Data augmentation",
+  "def": "Creating extra training examples by transforming existing ones while keeping their labels valid, such as crops and flips for images or back-translation and synonym swaps for text.",
+  "practice": "Standard in vision and speech and most useful for small labeled sets; in LLM work it shades into synthetic generation, with the same need to check that labels still hold.",
+  "aliases": [],
+  "chapters": [
+    "data-strategy",
+    "synthetic-data",
+    "training-neural-networks"
+  ]
+}

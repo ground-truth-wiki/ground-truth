@@ -1,0 +1,18 @@
+{
+  "id": "visual-grounding",
+  "term": "Visual grounding",
+  "def": "Linking words to the image regions they describe, by returning the box, mask or point for a referring phrase or a described object.",
+  "practice": "VLMs increasingly output boxes or points directly, usually in the coordinates of the resized image they processed, so rescale to the original and verify before acting on them.",
+  "aliases": [
+    "referring expression comprehension",
+    "phrase grounding"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "computer-use-agents",
+    "document-screen-understanding",
+    "vlm-architectures",
+    "visual-grounding",
+    "computer-use-benchmarks"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "function-tool",
+  "term": "Function tool",
+  "def": "A tool defined by decorating or registering an ordinary function, whose name, parameter schema and description the framework generates from its signature, type hints and docstring.",
+  "practice": "The default way to add tools in most agent SDKs; the docstring becomes part of the prompt, so write it for the model and inspect the generated schema.",
+  "aliases": [
+    "tool decorator",
+    "FunctionTool"
+  ],
+  "chapters": [
+    "agent-tools",
+    "provider-agent-sdks",
+    "build-your-own-harness",
+    "chat-templates",
+    "agent-sdk-primitives"
+  ]
+}

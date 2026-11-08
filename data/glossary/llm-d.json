@@ -1,0 +1,14 @@
+{
+  "id": "llm-d",
+  "term": "llm-d",
+  "def": "Open-source, Kubernetes-native distributed inference stack, a CNCF Sandbox project as of November 2026, that pairs vLLM with cache-aware routing, prefill-decode disaggregation, wide expert parallelism and tiered prefix caching.",
+  "practice": "Its router conforms to the Kubernetes Gateway API Inference Extension, with an endpoint picker that scores pods by load and KV-cache affinity; SGLang and TensorRT-LLM are also supported.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "disaggregated-serving",
+    "batching-scheduling",
+    "moe-serving",
+    "inference-fleet-scaling"
+  ]
+}

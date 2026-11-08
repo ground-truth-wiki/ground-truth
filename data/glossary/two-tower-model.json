@@ -1,0 +1,21 @@
+{
+  "id": "two-tower-model",
+  "term": "Two-tower model",
+  "def": "A retrieval model with separate encoders (towers) for queries and items whose output embeddings are compared by dot product, so item embeddings can be precomputed and searched with an ANN index.",
+  "practice": "The standard candidate-generation model in recommenders and the same design as bi-encoder embedding retrieval in RAG; a cross-encoder reranker then reorders its top results.",
+  "aliases": [
+    "two-tower",
+    "bi-encoder",
+    "dual encoder"
+  ],
+  "chapters": [
+    "embeddings",
+    "reranking",
+    "vector-search",
+    "representation-learning",
+    "recommender-systems",
+    "retrieval-augmented-lms",
+    "training-retrievers",
+    "knowledge-graphs"
+  ]
+}

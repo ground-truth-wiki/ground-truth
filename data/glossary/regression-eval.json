@@ -1,0 +1,20 @@
+{
+  "id": "regression-eval",
+  "term": "Regression eval",
+  "def": "An eval suite of tasks the system already handles, run on every change to catch lost behavior; unlike a capability eval, it should pass at nearly 100%.",
+  "practice": "When a capability eval nears a full score, its tasks can graduate into the regression suite; keep the suite fast and mostly deterministic so it runs in CI.",
+  "aliases": [
+    "regression suite",
+    "regression test"
+  ],
+  "chapters": [
+    "why-evals",
+    "ci-cd-for-ai",
+    "evaluating-agents",
+    "eval-datasets",
+    "red-teaming",
+    "unstructured-pipelines",
+    "agent-eval-metrics",
+    "prompt-injection-techniques"
+  ]
+}

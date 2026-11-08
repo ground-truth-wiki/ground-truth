@@ -1,0 +1,41 @@
+[
+  {
+    "id": "adversarial-ml-1",
+    "chapter": "adversarial-ml",
+    "q": "A paper reports a new defense with 70% robust accuracy under white-box PGD at ε = 8/255. Your team then crafts examples on an undefended surrogate model and transfers them, and they fool the defended model more often than white-box PGD did. What is the most likely explanation?",
+    "options": [
+      "Transfer attacks are simply stronger than white-box attacks, so the defense is fine against white-box attackers",
+      "The surrogate happened to be more accurate than the defended model, which makes its examples harder",
+      "The defense masks or obfuscates its gradients, so PGD fails for the wrong reason; it needs an adaptive attack, such as BPDA or Expectation over Transformation, before anyone can call it robust",
+      "The ε budget was too small for PGD to find adversarial examples, so the evaluation should simply use a larger ε"
+    ],
+    "answer": 2,
+    "explain": "A white-box attacker knows everything a black-box attacker knows and more, so a transfer attack should not beat it. When it does, the gradients PGD follows are broken, and Athalye et al. list this as a sign of obfuscated gradients. The tempting reading, that transfer attacks are just stronger, gets it backwards: the defense only looks robust because PGD cannot climb its loss surface. An attack built for the defense, which approximates or averages away the gradient problem, is what decides the matter."
+  },
+  {
+    "id": "adversarial-ml-2",
+    "chapter": "adversarial-ml",
+    "q": "An attacker edits a public wiki page. A week later your RAG assistant retrieves it while answering a user, and starts recommending a scam link. The model's weights were never updated. In NIST AI 100-2 terms, which capability did the attacker use, and which goal did they reach?",
+    "options": [
+      "Training data control, causing an availability breakdown",
+      "Resource control, causing an integrity violation",
+      "Query access, causing a privacy compromise",
+      "Model control, causing misuse enablement"
+    ],
+    "answer": 1,
+    "explain": "NIST defines resource control as modifying documents or web pages that a generative AI system ingests at runtime, and ties it to indirect prompt injection, including poisoned RAG knowledge bases. Forcing the system to produce the attacker's output instead of the intended one is an integrity violation; NIST names recommending fraudulent services and redirecting users to malicious sites as examples. Training data control is the tempting answer, because the page looks like poisoned data, but the attacker never touched the training set: nothing was learned, the text simply reached the context window at inference time. That difference matters for defenses, because cleaning the training set does nothing against text that arrives at inference time."
+  },
+  {
+    "id": "adversarial-ml-3",
+    "chapter": "adversarial-ml",
+    "q": "Your image classifier is fine-tuned on data from an open submission portal. Every label is checked by trusted annotators before training. A teammate says this rules out poisoning. Which attack still works, and why?",
+    "options": [
+      "None: poisoning requires mislabeled examples, and the annotators would catch them",
+      "Only availability poisoning, because it degrades all classes at once",
+      "Model extraction, because the fine-tuned weights can be copied through the API",
+      "Clean-label poisoning: correctly labeled inputs with crafted features can still move the decision on a chosen target input, and Shafahi et al. needed a single such image under transfer learning"
+    ],
+    "answer": 3,
+    "explain": "In clean-label attacks the attacker controls the inputs but not their labels, which NIST captures as the label limit. The poisons look normal and carry the right label, so checking labels cannot catch them; they work by shifting the model's features so that a chosen target input lands on the wrong side of the boundary. The tempting answer, that verified labels stop poisoning, only rules out label flipping. Availability poisoning is also possible in principle, but it degrades metrics visibly, so it is the attack the checks would most likely notice, not the one that survives them."
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "id": "frontier-model",
+  "term": "Frontier model",
+  "def": "A general-purpose model at or near the state of the art; in safety policy, one of the most capable models, which could have dangerous capabilities.",
+  "practice": "Frontier status is relative and shifts with every release generation; safety frameworks and some laws attach extra obligations to frontier models, sometimes defined by a training-compute threshold.",
+  "aliases": [
+    "frontier AI model",
+    "frontier AI"
+  ],
+  "chapters": [
+    "frontier-families",
+    "frontier-safety-frameworks",
+    "sota-snapshot",
+    "open-weight-frontier",
+    "governance-regulation",
+    "model-types",
+    "model-licenses",
+    "model-documentation"
+  ]
+}

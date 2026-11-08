@@ -77,3 +77,11 @@ new-architectures
 - [Quantization](#quantization)
 - [Hardware](#hardware)
 - [Cost engineering](#cost-engineering)
+- [Linear attention and hybrid models](#linear-attention-hybrids)
+- [Scaling trends and limits: compute, cost, data and power](#scaling-trends-limits)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Latent reasoning and recurrent depth](#latent-reasoning)

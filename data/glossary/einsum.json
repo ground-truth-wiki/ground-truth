@@ -1,0 +1,16 @@
+{
+  "id": "einsum",
+  "term": "Einstein summation",
+  "def": "A notation that writes tensor operations as index strings, such as ij,jk->ik for matrix multiplication, summing over every index that does not appear in the output.",
+  "practice": "torch.einsum, numpy.einsum and jnp.einsum use it to write attention scores and batched projections in one line; the einops library extends the idea to reshapes and repeats.",
+  "aliases": [
+    "einsum",
+    "Einstein notation",
+    "Einstein summation convention"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "attention",
+    "tensors-and-shapes"
+  ]
+}

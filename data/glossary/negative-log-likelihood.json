@@ -1,0 +1,21 @@
+{
+  "id": "negative-log-likelihood",
+  "term": "Negative log-likelihood",
+  "def": "The negative logarithm of the probability a model assigns to observed data; minimizing it is maximum-likelihood estimation.",
+  "practice": "A language model's training loss is the mean NLL of the true next tokens, which equals cross-entropy against one-hot targets, and its exponential is perplexity.",
+  "aliases": [
+    "NLL",
+    "NLL loss"
+  ],
+  "chapters": [
+    "probability-information",
+    "neural-networks",
+    "distributions-and-estimation",
+    "information-theory-for-llms",
+    "loss-functions",
+    "language-modeling",
+    "deep-generative-models",
+    "base-model-evaluation"
+  ],
+  "abbr": "NLL"
+}

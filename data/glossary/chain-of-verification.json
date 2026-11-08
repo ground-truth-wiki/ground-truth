@@ -1,0 +1,16 @@
+{
+  "id": "chain-of-verification",
+  "term": "Chain-of-verification",
+  "def": "A self-checking method in which the model drafts an answer, plans verification questions, answers them independently of the draft and then writes a revised answer.",
+  "practice": "Dhuliawala et al. (2023) used it to reduce hallucinations in list questions and long-form text; answering the checks without seeing the draft is the key detail.",
+  "aliases": [
+    "CoVe"
+  ],
+  "chapters": [
+    "reasoning-prompts",
+    "grounding-citations",
+    "prompting-techniques",
+    "hallucination-factuality"
+  ],
+  "abbr": "CoVe"
+}

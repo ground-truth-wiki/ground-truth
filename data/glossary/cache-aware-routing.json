@@ -1,0 +1,20 @@
+{
+  "id": "cache-aware-routing",
+  "term": "Cache-aware routing",
+  "def": "Load balancing that sends each request to the replica most likely to already hold its prompt prefix in the KV cache, weighed against that replica's current load.",
+  "practice": "Raises prefix-cache hit rates and cuts time to first token for chat and agent traffic with shared prefixes; random or round-robin balancing scatters those hits across replicas.",
+  "aliases": [
+    "prefix-aware routing",
+    "KV-aware routing",
+    "KV-cache-aware routing",
+    "prefix-cache-aware routing",
+    "prefix-aware load balancing"
+  ],
+  "chapters": [
+    "batching-scheduling",
+    "disaggregated-serving",
+    "prompt-caching",
+    "serving-engines",
+    "inference-fleet-scaling"
+  ]
+}

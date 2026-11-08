@@ -1,0 +1,22 @@
+{
+  "id": "nvidia-blackwell",
+  "term": "NVIDIA Blackwell",
+  "def": "NVIDIA's GPU architecture announced in 2024, behind the B200 and GB200 and the Blackwell Ultra B300 and GB300, with FP4 tensor cores and fifth-generation NVLink at 1.8 TB/s per GPU.",
+  "practice": "GB200 and GB300 NVL72 racks put 72 GPUs in one NVLink domain, and Blackwell Ultra GPUs carry 288 GB of HBM3e.",
+  "aliases": [
+    "Blackwell",
+    "B200",
+    "GB200",
+    "B300",
+    "GB300",
+    "Blackwell Ultra"
+  ],
+  "chapters": [
+    "hardware",
+    "long-context",
+    "floating-point-formats",
+    "parallelism-strategies",
+    "low-precision-training",
+    "privacy-preserving-ml"
+  ]
+}

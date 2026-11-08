@@ -1,0 +1,14 @@
+{
+  "id": "sociotechnical-evaluation",
+  "term": "Sociotechnical evaluation",
+  "def": "Evaluating an AI system's safety in its context of use at three layers: model capabilities, human interaction and systemic impact on society.",
+  "practice": "Proposed by Weidinger et al. (2023), who found most safety evaluations cover only the capability layer, missing how people use a system and what it does at scale.",
+  "aliases": [
+    "sociotechnical safety evaluation"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals",
+    "ai-risk-management"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cublas-cudnn",
+  "term": "cuBLAS and cuDNN",
+  "def": "NVIDIA's libraries of tuned GPU routines: cuBLAS for dense linear algebra such as matrix multiplication, cuDNN for deep learning primitives such as convolution, normalization and attention.",
+  "practice": "Frameworks such as PyTorch call them under the hood, so a custom matrix-multiplication kernel has to beat cuBLAS to be worth writing.",
+  "aliases": [
+    "cuBLAS",
+    "cuDNN"
+  ],
+  "chapters": [
+    "hardware",
+    "llm-pruning",
+    "gpu-kernels-compilers"
+  ]
+}

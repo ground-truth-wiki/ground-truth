@@ -1,0 +1,15 @@
+{
+  "id": "time-series-cross-validation",
+  "term": "Time-series cross-validation",
+  "def": "Evaluating forecasts on a rolling origin: each test point or window is predicted by a model trained only on observations from before it.",
+  "practice": "The honest backtest for demand and capacity forecasts; random shuffling lets the future leak into training and makes errors look smaller.",
+  "aliases": [
+    "rolling-origin evaluation",
+    "backtesting"
+  ],
+  "chapters": [
+    "classical-ml",
+    "cost-capacity",
+    "time-series-forecasting"
+  ]
+}

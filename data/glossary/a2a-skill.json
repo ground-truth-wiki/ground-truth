@@ -1,0 +1,14 @@
+{
+  "id": "a2a-skill",
+  "term": "Agent skill (A2A)",
+  "def": "An entry in an A2A agent card (AgentSkill) describing one capability the agent offers, with an id, name, description and tags, plus optional examples and input and output modes.",
+  "practice": "Clients choose agents by matching tasks against card skills, so write descriptions for routing; not to be confused with Agent Skills, the SKILL.md folder format.",
+  "aliases": [
+    "AgentSkill",
+    "A2A skill"
+  ],
+  "chapters": [
+    "a2a",
+    "skills-plugins"
+  ]
+}

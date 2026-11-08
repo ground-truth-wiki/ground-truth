@@ -1,0 +1,16 @@
+{
+  "id": "sequence-packing",
+  "term": "Sequence packing",
+  "def": "Concatenating several tokenized examples into each fixed-length training sequence, separated by end-of-sequence tokens, so little compute is spent on padding.",
+  "practice": "Standard in pretraining and common in SFT; without per-example attention masks the examples can attend to each other, and naive splitting truncates documents, which best-fit packing reduces.",
+  "aliases": [
+    "example packing",
+    "document packing"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "sft",
+    "fine-tuning-practice",
+    "pretraining-data"
+  ]
+}

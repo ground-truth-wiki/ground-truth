@@ -1,0 +1,16 @@
+{
+  "id": "greedy-decoding",
+  "term": "Greedy decoding",
+  "def": "Generating text by always picking the single most probable next token at each step.",
+  "practice": "Engines treat temperature 0 as greedy; it suits short, well-defined outputs but tends to repeat on long ones, and hosted APIs can still vary slightly because of batching and floating-point effects.",
+  "aliases": [
+    "greedy search",
+    "argmax decoding"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "recurrent-networks",
+    "inference-nondeterminism",
+    "test-time-search"
+  ]
+}

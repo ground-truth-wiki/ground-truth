@@ -1,0 +1,19 @@
+{
+  "id": "browser-agent",
+  "term": "Browser agent",
+  "def": "An agent that completes tasks in a web browser, perceiving pages through their structure (DOM or accessibility tree), screenshots or both, and acting through a browser automation library or protocol.",
+  "practice": "Usually cheaper and more precise than screenshot-only agents on well-built pages; libraries such as Browser Use and Stagehand and the Playwright MCP server supply the actions, and every page it reads is untrusted input.",
+  "aliases": [
+    "web agent"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "prompt-injection",
+    "document-screen-understanding",
+    "vision-language-models",
+    "mcp-server-catalog",
+    "multi-agent-patterns",
+    "browser-automation-stack",
+    "computer-use-benchmarks"
+  ]
+}

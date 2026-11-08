@@ -1,0 +1,17 @@
+{
+  "id": "data-residency",
+  "term": "Data residency",
+  "def": "Control over the geography where data is stored at rest and where it is processed, including where model inference runs.",
+  "practice": "Providers increasingly control the two separately: Anthropic has a per-request inference_geo, with US-only inference at 1.1 times standard price, and a separate workspace storage geo (as of November 2026); check that traces, caches and backups follow the same rules.",
+  "aliases": [
+    "regional processing"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "privacy",
+    "decision-guides",
+    "eval-tooling",
+    "choosing-a-model",
+    "cloud-ai-platforms"
+  ]
+}

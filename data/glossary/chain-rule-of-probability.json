@@ -1,0 +1,16 @@
+{
+  "id": "chain-rule-of-probability",
+  "term": "Chain rule of probability",
+  "def": "The identity that a joint probability factors into a product of conditionals: P(x₁, …, x_T) = P(x₁) · P(x₂ | x₁) ⋯ P(x_T | x₁, …, x_{T−1}).",
+  "practice": "The basis of autoregressive language models: a sequence’s log-probability is the sum of its tokens’ conditional log-probabilities.",
+  "aliases": [
+    "chain rule of conditional probabilities",
+    "general product rule",
+    "autoregressive factorization"
+  ],
+  "chapters": [
+    "probability-information",
+    "decoding-sampling",
+    "distributions-and-estimation"
+  ]
+}

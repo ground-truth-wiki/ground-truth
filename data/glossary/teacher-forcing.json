@@ -1,0 +1,13 @@
+{
+  "id": "teacher-forcing",
+  "term": "Teacher forcing",
+  "def": "Training a sequence generator by feeding it the ground-truth previous tokens as input at each step, rather than its own earlier predictions.",
+  "practice": "Next-token training of language models works this way, which lets all positions train in parallel; the mismatch with generating from its own outputs is called exposure bias.",
+  "aliases": [],
+  "chapters": [
+    "transformer-block",
+    "neural-networks",
+    "recurrent-networks",
+    "transformer-overview"
+  ]
+}

@@ -116,3 +116,13 @@ secure-agent-design
 - [Guardrails and control](#guardrails-control)
 - [Sandboxes and execution environments](#sandboxes)
 - [Human in the loop](#human-in-the-loop)
+- [Securing coding agents](#coding-agent-security)
+- [Agent identity and delegated authorization](#agent-identity-delegation)
+- [Prompt injection attacks and defenses in depth](#prompt-injection-techniques)
+- [AI control: protocols, monitors and control evaluations](#ai-control)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Guard models and content moderation](#guard-models-moderation)

@@ -1,0 +1,21 @@
+{
+  "id": "agentic-loop",
+  "term": "Agent loop",
+  "def": "The core cycle of an agent: call the model, run the tools it requests, append the results to the context and repeat until it returns a final answer or hits a limit.",
+  "practice": "Every agent SDK and harness packages one; when debugging, first find where the loop decides to stop and which turn or budget limits apply.",
+  "aliases": [
+    "agentic loop",
+    "tool loop",
+    "tool-use loop"
+  ],
+  "chapters": [
+    "agent-loop",
+    "what-is-an-agent",
+    "harness-anatomy",
+    "build-your-own-harness",
+    "provider-agent-sdks",
+    "framework-landscape",
+    "graph-rag",
+    "agent-research-lineage"
+  ]
+}

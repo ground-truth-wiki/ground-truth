@@ -1,0 +1,13 @@
+{
+  "id": "hessian",
+  "term": "Hessian",
+  "def": "The square matrix of second-order partial derivatives of a scalar function, which describes the curvature of a loss surface.",
+  "practice": "With one row and one column per parameter it is far too large to form for neural networks, so second-order methods and sharpness measures use approximations or Hessian-vector products.",
+  "aliases": [
+    "Hessian matrix"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "eigenvectors-svd-pca"
+  ]
+}

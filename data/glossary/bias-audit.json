@@ -1,0 +1,14 @@
+{
+  "id": "bias-audit",
+  "term": "Bias audit",
+  "def": "An evaluation of whether an automated decision tool's outcomes, such as selection rates, differ across demographic groups; New York City requires an independent one for hiring tools.",
+  "practice": "Under NYC Local Law 144, enforced since 5 July 2023, employers need an audit within a year before using a hiring tool, a public summary of results and notice to candidates 10 business days ahead.",
+  "aliases": [
+    "AEDT bias audit"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "us-ai-law"
+  ]
+}

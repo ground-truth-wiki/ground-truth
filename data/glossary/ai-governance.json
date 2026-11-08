@@ -1,0 +1,15 @@
+{
+  "id": "ai-governance",
+  "term": "AI governance",
+  "def": "The policies, roles, processes and controls an organization or government uses to direct, oversee and account for how AI is developed and used.",
+  "practice": "Inside a company it means an AI inventory, risk reviews per use case, approval gates, incident handling and named owners; NIST’s AI RMF makes Govern a cross-cutting function over Map, Measure and Manage.",
+  "aliases": [],
+  "chapters": [
+    "enterprise-readiness",
+    "governance-regulation",
+    "responsible-ai",
+    "data-governance",
+    "global-ai-governance",
+    "scaling-trends-limits"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "batch-normalization",
+  "term": "Batch normalization",
+  "def": "A layer that normalizes each feature using the mean and variance of the current mini-batch, then applies a learned scale and shift.",
+  "practice": "Standard in convolutional networks, but it uses batch statistics in training and running averages at inference, a classic bug source; transformers use layer normalization or RMSNorm instead.",
+  "aliases": [
+    "BatchNorm",
+    "batch norm"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "trainable-deep-networks",
+    "convolutional-networks",
+    "training-neural-networks"
+  ]
+}

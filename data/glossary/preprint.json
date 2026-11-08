@@ -1,0 +1,16 @@
+{
+  "id": "preprint",
+  "term": "Preprint",
+  "def": "A research paper made public before, or without, formal peer review, usually on a server such as arXiv.",
+  "practice": "Much AI research appears first, and sometimes only, as arXiv preprints; check whether and where a paper was later accepted, and weigh unreviewed claims accordingly.",
+  "aliases": [
+    "working paper"
+  ],
+  "chapters": [
+    "the-canon",
+    "watchlist",
+    "benchmark-literacy",
+    "measuring-ai-impact",
+    "ai-research-publishing"
+  ]
+}

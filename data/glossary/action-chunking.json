@@ -1,0 +1,13 @@
+{
+  "id": "action-chunking",
+  "term": "Action chunking",
+  "def": "Having a robot policy predict a short sequence of future actions at each step instead of a single action, then executing part or all of it before predicting again.",
+  "practice": "Introduced with Action Chunking with Transformers (ACT, Zhao et al., 2023) to reduce compounding errors in imitation learning, and now widely used by diffusion policies and VLAs that output action chunks.",
+  "aliases": [
+    "action chunk"
+  ],
+  "chapters": [
+    "embodied-agents",
+    "vla-models"
+  ]
+}

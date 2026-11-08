@@ -86,3 +86,6 @@ memory-math
 - [Inference fundamentals](#inference-fundamentals)
 - [Hardware](#hardware)
 - [Numbers every AI engineer should know](#numbers-to-know)
+- [Floating-point formats and numerical precision](#floating-point-formats)
+- [KV-cache compression, eviction and offloading](#kv-cache-compression)
+- [Quantization methods in depth](#quantization-methods)

@@ -1,0 +1,14 @@
+{
+  "id": "attribution",
+  "term": "Source attribution",
+  "def": "Linking each claim in a generated answer to the source passage that supports it, so a reader or checker can confirm that the source actually says it.",
+  "practice": "What citation features and groundedness checks measure; the AIS framework (Rashkin et al., 2021) and the ALCE benchmark score whether cited sources truly support each statement.",
+  "aliases": [
+    "Attributable to Identified Sources"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "rag-evaluation",
+    "deep-research"
+  ]
+}

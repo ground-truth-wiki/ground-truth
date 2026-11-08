@@ -1,0 +1,15 @@
+{
+  "id": "http-sse-transport",
+  "term": "HTTP+SSE transport",
+  "def": "MCP's original remote transport from protocol version 2024-11-05: a long-lived SSE stream carries server messages, and the client posts its messages to a separate endpoint.",
+  "practice": "Replaced by Streamable HTTP in 2025-03-26 and formally Deprecated under the feature lifecycle in 2026-07-28; migrate servers that still offer it.",
+  "aliases": [
+    "HTTP with SSE transport",
+    "legacy SSE transport"
+  ],
+  "chapters": [
+    "mcp-transports",
+    "mcp-spec-history",
+    "protocol-governance"
+  ]
+}

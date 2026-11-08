@@ -75,3 +75,11 @@ long-horizon-autonomy
 - [Agent failure modes](#agent-failure-modes)
 - [State-of-the-art snapshot](#sota-snapshot)
 - [Agentic RL and environments](#agentic-rl)
+- [Measuring AI's economic impact](#economic-impact-evidence)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Measuring time horizons and AI R&D capability](#measuring-time-horizons)
+- [Continual learning and test-time adaptation](#continual-learning)

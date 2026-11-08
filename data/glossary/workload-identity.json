@@ -1,0 +1,17 @@
+{
+  "id": "workload-identity",
+  "term": "Workload identity",
+  "def": "A verifiable identity for software, such as a service, job or agent, rather than a person, issued and rotated by its platform, as in SPIFFE IDs and IETF WIMSE work.",
+  "practice": "Lets agents authenticate as themselves without static API keys; MCP's roadmap ties agent identity work to workload identity federation and the IETF WIMSE working group.",
+  "aliases": [
+    "workload identities"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "secure-agent-design",
+    "mcp-authorization",
+    "cloud-and-ci-coding-agents",
+    "coding-agent-security",
+    "agent-identity-delegation"
+  ]
+}

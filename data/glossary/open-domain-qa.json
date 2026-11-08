@@ -1,0 +1,17 @@
+{
+  "id": "open-domain-qa",
+  "term": "Open-domain question answering",
+  "def": "Answering factual questions from a large document collection, such as all of Wikipedia, rather than from a single passage supplied with the question.",
+  "practice": "The research task on which retriever-reader systems, DPR, REALM, RAG and Fusion-in-Decoder were developed, with Natural Questions as a standard benchmark.",
+  "aliases": [
+    "ODQA",
+    "open-domain QA"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "ir-foundations",
+    "retrieval-augmented-lms",
+    "training-retrievers"
+  ],
+  "abbr": "ODQA"
+}

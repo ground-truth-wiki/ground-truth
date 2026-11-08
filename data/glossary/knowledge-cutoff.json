@@ -1,0 +1,22 @@
+{
+  "id": "knowledge-cutoff",
+  "term": "Knowledge cutoff",
+  "def": "The date up to which a model's training data reliably covers the world; the model knows nothing later unless that information is supplied in context.",
+  "practice": "Published per model, sometimes as two dates (Anthropic lists a reliable knowledge cutoff and a broader training data cutoff); use retrieval or web search for anything newer.",
+  "aliases": [
+    "knowledge cut-off",
+    "training cutoff",
+    "data cutoff",
+    "training data cutoff",
+    "reliable knowledge cutoff"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "frontier-families",
+    "choosing-a-model",
+    "rag-fundamentals",
+    "model-types",
+    "model-documentation",
+    "benchmark-catalog"
+  ]
+}

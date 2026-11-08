@@ -1,0 +1,14 @@
+{
+  "id": "open-x-embodiment",
+  "term": "Open X-Embodiment",
+  "def": "A pooled robot-learning dataset from 22 robot types and 21 institutions, covering 527 skills (160,266 tasks) in a standardized format, released in 2023 with the RT-X models.",
+  "practice": "A common pretraining mix for open generalist policies; Octo, for example, was trained on 800,000 of its trajectories.",
+  "aliases": [
+    "OXE"
+  ],
+  "chapters": [
+    "embodied-agents",
+    "vla-models"
+  ],
+  "abbr": "OXE"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "reproducibility-crisis",
+  "term": "Reproducibility crisis in machine learning",
+  "def": "The finding that many published machine-learning results cannot be reproduced, often because of data leakage, missing code, or unreported tuning and evaluation choices.",
+  "practice": "Kapoor and Narayanan catalogued leakage errors affecting 329 papers across 17 fields, and NeurIPS introduced a code policy and reproducibility checklist in 2019; the same discipline applies to your own evals.",
+  "aliases": [
+    "reproducibility crisis",
+    "ML reproducibility crisis"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "benchmark-literacy",
+    "classical-ml",
+    "eval-harnesses",
+    "ai-research-publishing"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "loss-function",
+  "term": "Loss function",
+  "def": "A function that scores how far a model's outputs are from the targets; training adjusts the parameters to minimize its average over the data.",
+  "practice": "Language models minimize next-token cross-entropy and regression uses mean squared error; the loss you optimize is often not the metric you report.",
+  "aliases": [
+    "objective function",
+    "cost function",
+    "training objective"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "probability-information",
+    "sft",
+    "scaling-laws",
+    "preference-optimization",
+    "loss-functions",
+    "training-neural-networks"
+  ]
+}

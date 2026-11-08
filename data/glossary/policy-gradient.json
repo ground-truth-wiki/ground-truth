@@ -1,0 +1,14 @@
+{
+  "id": "policy-gradient",
+  "term": "Policy gradient",
+  "def": "RL methods that adjust a parameterized policy directly by gradient ascent on expected return, estimating the gradient from sampled trajectories via the policy-gradient theorem.",
+  "practice": "The basis of REINFORCE, actor–critic methods, PPO and GRPO, and therefore of RLHF and reasoning-model training.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization",
+    "agentic-rl",
+    "policy-gradient-methods"
+  ]
+}

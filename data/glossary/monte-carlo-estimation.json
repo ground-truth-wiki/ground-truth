@@ -1,0 +1,16 @@
+{
+  "id": "monte-carlo-estimation",
+  "term": "Monte Carlo estimation",
+  "def": "Approximating an expectation, integral or probability by averaging a function’s values over random samples.",
+  "practice": "Eval scores, pass@k estimates and policy-gradient losses are Monte Carlo estimates, whose standard error shrinks only as 1/√n with n samples.",
+  "aliases": [
+    "Monte Carlo method",
+    "Monte Carlo sampling"
+  ],
+  "chapters": [
+    "probability-information",
+    "rl-primer",
+    "eval-statistics",
+    "distributions-and-estimation"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "systolic-array",
+  "term": "Systolic array",
+  "def": "A grid of multiply-accumulate units in which each unit passes data directly to its neighbors, so a matrix multiplication flows through the grid with few memory reads.",
+  "practice": "The core of Google TPU matrix units (MXUs): 128 x 128 on TPU v5p and earlier, 256 x 256 on v6e (Trillium) and TPU7x (Ironwood).",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "accelerator-architecture"
+  ]
+}

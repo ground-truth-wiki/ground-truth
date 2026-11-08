@@ -1,0 +1,17 @@
+{
+  "id": "ai-safety",
+  "term": "AI safety",
+  "def": "The field that works to prevent accidents, misuse and other harmful outcomes from AI systems, spanning alignment, robustness, monitoring, evaluation and governance.",
+  "practice": "It ranges from lab safety teams to government AI safety and security institutes; 'Concrete Problems in AI Safety' (Amodei et al., 2016) set an early technical agenda, and how to weigh catastrophic against present harms is debated.",
+  "aliases": [],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "alignment-concepts",
+    "safety-evals",
+    "governance-regulation",
+    "open-problems",
+    "whos-who",
+    "fine-tuning-and-safety",
+    "scheming-evaluations"
+  ]
+}

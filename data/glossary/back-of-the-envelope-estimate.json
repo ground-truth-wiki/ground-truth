@@ -1,0 +1,21 @@
+{
+  "id": "back-of-the-envelope-estimate",
+  "term": "Back-of-the-envelope estimate",
+  "def": "A quick order-of-magnitude calculation from a few stated assumptions, used to judge whether a design is viable before anything is built or measured.",
+  "practice": "In AI system design: users times requests times tokens times price for monthly cost, and peak tokens per second divided by measured per-GPU throughput for GPU count; also called a Fermi estimate.",
+  "aliases": [
+    "back-of-the-envelope calculation",
+    "back-of-envelope estimate",
+    "Fermi estimate",
+    "napkin math"
+  ],
+  "chapters": [
+    "back-of-envelope",
+    "system-design-method",
+    "numbers-to-know",
+    "interview-prep",
+    "cost-capacity",
+    "reference-architectures",
+    "ai-use-case-scoping"
+  ]
+}

@@ -98,3 +98,16 @@ alignment-concepts
 - [Mechanistic interpretability](#mech-interp)
 - [RL environment harnesses](#rl-environment-harnesses)
 - [Frontier safety frameworks](#frontier-safety-frameworks)
+- [Sparse autoencoders, transcoders and circuit tracing](#sae-circuit-tracing)
+- [Probes, lenses and steering](#probes-and-steering)
+- [Dangerous-capability evaluations](#dangerous-capability-evals)
+- [Safety cases for frontier AI](#safety-cases)
+- [AGI, timelines and the catastrophic-risk debate](#agi-timelines-risk)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Scheming, sandbagging and evaluation awareness](#scheming-evaluations)
+- [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
+- [AI control: protocols, monitors and control evaluations](#ai-control)

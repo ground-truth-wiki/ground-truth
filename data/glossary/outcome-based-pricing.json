@@ -1,0 +1,16 @@
+{
+  "id": "outcome-based-pricing",
+  "term": "Outcome-based pricing",
+  "def": "Charging per successful result, such as a resolved support conversation, rather than per seat or per unit of compute.",
+  "practice": "Common for customer-support agents as of November 2026 (Intercom Fin at $0.99 per outcome, Zendesk per automated resolution); it needs a precise, auditable definition of success that evals can track.",
+  "aliases": [
+    "outcome pricing",
+    "per-resolution pricing"
+  ],
+  "chapters": [
+    "support-agents",
+    "cost-engineering",
+    "cost-capacity",
+    "ai-pricing-unit-economics"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "criteria-drift",
+  "term": "Criteria drift",
+  "def": "The tendency of evaluators to refine or change their idea of a good output as they grade more outputs, so that criteria and grades shape each other.",
+  "practice": "Named by Shankar et al. (2024); read and label outputs before fixing a rubric, and expect to revise judge prompts as labels accumulate.",
+  "aliases": [],
+  "chapters": [
+    "llm-as-judge",
+    "error-analysis"
+  ]
+}

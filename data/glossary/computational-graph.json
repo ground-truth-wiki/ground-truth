@@ -1,0 +1,16 @@
+{
+  "id": "computational-graph",
+  "term": "Computational graph",
+  "def": "A directed acyclic graph of the operations and intermediate tensors that produced a result, which automatic differentiation traverses backward to compute gradients.",
+  "practice": "PyTorch records it on the fly as code runs, while graph compilers such as torch.compile and XLA capture it whole to fuse and optimize operations.",
+  "aliases": [
+    "computation graph",
+    "compute graph",
+    "autograd graph"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "distributed-training"
+  ]
+}

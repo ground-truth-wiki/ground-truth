@@ -1,0 +1,18 @@
+{
+  "id": "model-as-a-service",
+  "term": "Model-as-a-Service",
+  "def": "Serverless, pay-per-token API access to a model hosted and operated by a platform, as opposed to deploying the weights on compute you provision.",
+  "practice": "Cloud catalogs offer many models both ways: MaaS for convenience, self-deployed or managed endpoints for control and dedicated capacity.",
+  "aliases": [
+    "MaaS",
+    "serverless API deployment"
+  ],
+  "chapters": [
+    "model-apis",
+    "serving-engines",
+    "cost-engineering",
+    "cloud-ai-platforms",
+    "hugging-face-ecosystem"
+  ],
+  "abbr": "MaaS"
+}

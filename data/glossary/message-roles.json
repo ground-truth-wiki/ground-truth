@@ -1,0 +1,17 @@
+{
+  "id": "message-roles",
+  "term": "Message roles",
+  "def": "The labels (system or developer, user, assistant and tool) that mark who authored each message in a chat-formatted prompt and that models are trained to weigh differently.",
+  "practice": "Put durable rules in the system or developer message and end-user input in user messages; OpenAI’s Harmony format ranks system above developer, user, assistant and tool.",
+  "aliases": [
+    "chat roles"
+  ],
+  "chapters": [
+    "prompting-fundamentals",
+    "model-apis",
+    "model-specific-notes",
+    "sft",
+    "model-specs-instruction-hierarchy",
+    "post-training-overview"
+  ]
+}

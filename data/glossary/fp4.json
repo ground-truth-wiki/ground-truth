@@ -1,0 +1,20 @@
+{
+  "id": "fp4",
+  "term": "FP4",
+  "def": "A 4-bit floating-point encoding, E2M1 (1 sign, 2 exponent and 1 mantissa bit), with only eight magnitudes from 0 to 6, used in practice with shared block scale factors.",
+  "practice": "The element type of MXFP4 and NVFP4; NVIDIA’s 2025 NVFP4 pretraining paper reports 2× FP8 math throughput on GB200 and 3× on GB300, and trains a 12B model on 10T tokens.",
+  "aliases": [
+    "E2M1",
+    "4-bit floating point"
+  ],
+  "chapters": [
+    "quantization",
+    "hardware",
+    "serving-engines",
+    "new-architectures",
+    "distributed-training",
+    "floating-point-formats",
+    "kv-cache-compression",
+    "low-precision-training"
+  ]
+}

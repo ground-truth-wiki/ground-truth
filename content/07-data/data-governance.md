@@ -77,3 +77,16 @@ data-governance
 - [Unstructured data pipelines](#unstructured-pipelines)
 - [Production RAG](#production-rag)
 - [Governance and regulation](#governance-regulation)
+- [Building a web-scale text pipeline](#web-data-pipeline)
+- [Data lakes, warehouses and lakehouses](#data-lakehouses)
+- [Copyright and AI: training, outputs and litigation](#ai-copyright)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Data licensing, copyright and consent](#data-licensing-consent)
+- [Dataset documentation: datasheets, data cards and Croissant](#dataset-documentation)
+- [Dataset versioning and lineage](#dataset-versioning-lineage)
+- [Data validation, drift and skew](#data-validation-drift)
+- [Deduplication and decontamination](#deduplication-decontamination)

@@ -1,0 +1,12 @@
+{
+  "id": "prompt-compression",
+  "term": "Prompt compression",
+  "def": "Shortening a prompt before inference while preserving task performance, either by deleting or paraphrasing low-information tokens (hard) or by encoding it into a few learned vectors (soft).",
+  "practice": "Hard methods such as LLMLingua work with black-box APIs, while soft methods need model access; measure the quality loss on your own tasks before relying on it.",
+  "aliases": [],
+  "chapters": [
+    "context-engineering",
+    "cost-engineering",
+    "context-compaction"
+  ]
+}

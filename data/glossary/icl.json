@@ -1,0 +1,20 @@
+{
+  "id": "icl",
+  "term": "In-context learning",
+  "def": "A model’s ability to perform a task from instructions or examples given in the prompt at inference time, without any weight update.",
+  "practice": "Few-shot and many-shot prompting rely on it; it changes in seconds rather than needing fine-tuning, but every example is paid for on each call unless cached.",
+  "aliases": [
+    "ICL"
+  ],
+  "chapters": [
+    "in-context-learning",
+    "prompting-fundamentals",
+    "mech-interp",
+    "beyond-transformers",
+    "the-canon",
+    "fine-tuning-practice",
+    "linear-attention-hybrids",
+    "model-types"
+  ],
+  "abbr": "ICL"
+}

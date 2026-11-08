@@ -1,0 +1,15 @@
+{
+  "id": "step-distillation",
+  "term": "Diffusion step distillation",
+  "def": "Training a student generator to match a many-step diffusion teacher in a handful of steps, using progressive halving, consistency objectives, adversarial losses or guidance distillation.",
+  "practice": "Behind turbo-style checkpoints that sample in 1 to 4 steps instead of tens; expect less diversity and different guidance settings, often no classifier-free guidance at all.",
+  "aliases": [
+    "few-step distillation",
+    "diffusion distillation"
+  ],
+  "chapters": [
+    "image-generation",
+    "deep-generative-models",
+    "diffusion-flow-matching"
+  ]
+}

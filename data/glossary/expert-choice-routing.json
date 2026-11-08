@@ -1,0 +1,10 @@
+{
+  "id": "expert-choice-routing",
+  "term": "Expert-choice routing",
+  "def": "MoE routing in which each expert selects its highest-scoring tokens up to a fixed capacity, instead of each token selecting its experts.",
+  "practice": "Balances load by construction, but a token may get several experts or none, and selection looks across the batch, which complicates autoregressive decoding; most production MoEs use top-k routing.",
+  "aliases": [],
+  "chapters": [
+    "mixture-of-experts"
+  ]
+}

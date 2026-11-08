@@ -1,0 +1,15 @@
+{
+  "id": "fused-linear-cross-entropy",
+  "term": "Fused linear cross-entropy",
+  "def": "Computing the output projection and the cross-entropy loss together, chunk by chunk, so the full tokens-by-vocabulary logit matrix is never held in memory at once.",
+  "practice": "With large vocabularies the logits can dominate training memory, especially in small models; Liger Kernel, Cut Cross-Entropy and PyTorch’s LinearCrossEntropyLoss implement versions of it.",
+  "aliases": [
+    "chunked cross-entropy",
+    "linear cross-entropy"
+  ],
+  "chapters": [
+    "distributed-training",
+    "fine-tuning-practice",
+    "loss-functions"
+  ]
+}

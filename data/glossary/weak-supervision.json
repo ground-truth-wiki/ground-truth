@@ -1,0 +1,20 @@
+{
+  "id": "weak-supervision",
+  "term": "Weak supervision",
+  "def": "Training with labels from noisy, cheaper sources such as heuristics, knowledge bases, other models or loosely matched web data, instead of hand-labeling every example.",
+  "practice": "Labeling functions (rules, regexes, lookups or LLM prompts) vote on each example, a label model combines the noisy votes, and an end model trains on the result; check it against a hand-labeled sample.",
+  "aliases": [
+    "weakly supervised learning",
+    "programmatic labeling"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "synthetic-data",
+    "speech-audio",
+    "multimodal-rag",
+    "label-quality",
+    "active-learning-weak-supervision",
+    "speech-recognition",
+    "multimodal-evaluation"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "open-vocabulary-detection",
+  "term": "Open-vocabulary object detection",
+  "def": "Detecting objects named by arbitrary text queries rather than a fixed label set, by matching image-region features against text embeddings.",
+  "practice": "Finds new object types from a text prompt without retraining (OWL-ViT and Grounding DINO are well-known examples), and is a lighter, faster way to get boxes than asking a general VLM.",
+  "aliases": [
+    "open-vocabulary detection"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "visual-grounding"
+  ]
+}

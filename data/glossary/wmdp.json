@@ -1,0 +1,16 @@
+{
+  "id": "wmdp",
+  "term": "WMDP",
+  "def": "Weapons of Mass Destruction Proxy: 3,668 multiple-choice questions on biosecurity, cybersecurity and chemical security that proxy hazardous knowledge, filtered of sensitive information before release.",
+  "practice": "A proxy, not a direct weapons test; widely used to evaluate unlearning methods such as RMU, which lower WMDP accuracy while keeping general capabilities, and as a held-out test in sandbagging studies.",
+  "aliases": [
+    "Weapons of Mass Destruction Proxy"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "fine-tuning-and-safety",
+    "scheming-evaluations",
+    "dangerous-capability-evals"
+  ]
+}

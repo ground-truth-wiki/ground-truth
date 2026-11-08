@@ -1,0 +1,21 @@
+{
+  "id": "request-concurrency",
+  "term": "Request concurrency",
+  "def": "The number of requests in flight at the same time on a server or in a load test.",
+  "practice": "Load tests either fix concurrency, sending a new request as each one finishes, or fix the arrival rate; the two give different latency curves, and each in-flight request holds KV-cache memory.",
+  "aliases": [
+    "concurrency",
+    "in-flight requests",
+    "concurrent requests"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "memory-math",
+    "serving-engines",
+    "back-of-envelope",
+    "kv-cache",
+    "inference-fundamentals",
+    "inference-nondeterminism",
+    "data-lakehouses"
+  ]
+}

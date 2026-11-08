@@ -1,0 +1,16 @@
+{
+  "id": "verifier-guided-search",
+  "term": "Verifier-guided search",
+  "def": "Decoding that builds solutions step by step and keeps the partial candidates that a verifier, usually a process reward model, scores highest, as in step-level beam search or lookahead search.",
+  "practice": "Strongest on math and code with good step-level verifiers; at high budgets it can over-optimize the verifier, and Snell et al. found plain best-of-n competitive on easier problems.",
+  "aliases": [
+    "PRM-guided search",
+    "reward-guided search",
+    "step-level beam search"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "rlvr-reasoning",
+    "decoding-sampling"
+  ]
+}

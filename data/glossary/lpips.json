@@ -1,0 +1,16 @@
+{
+  "id": "lpips",
+  "term": "Learned perceptual image patch similarity",
+  "def": "A distance between two images computed from deep-network features and calibrated against human judgments of perceptual similarity; lower means more alike.",
+  "practice": "Used where a reference image exists, as in editing fidelity, reconstruction, super-resolution and novel-view synthesis; it tracks perception better than pixel metrics such as PSNR.",
+  "aliases": [
+    "LPIPS"
+  ],
+  "chapters": [
+    "image-generation",
+    "video-world-models",
+    "three-d-generation",
+    "multimodal-evaluation"
+  ],
+  "abbr": "LPIPS"
+}

@@ -100,3 +100,5 @@ mcp-authorization
 - [Secure agent design](#secure-agent-design)
 - [Enterprise readiness](#enterprise-readiness)
 - [Prompt injection](#prompt-injection)
+- [Protocol building blocks: JSON-RPC, JSON Schema, HTTP streams and OAuth](#protocol-building-blocks)
+- [Agent identity and delegated authorization](#agent-identity-delegation)

@@ -1,0 +1,12 @@
+{
+  "id": "federated-learning",
+  "term": "Federated learning",
+  "def": "Training a shared model across many devices or organizations that keep their data local and send only model updates to a coordinating server.",
+  "practice": "Federated averaging (FedAvg) combines locally trained updates; updates can still leak data and be poisoned, so it is paired with secure aggregation and differential privacy.",
+  "aliases": [],
+  "chapters": [
+    "privacy",
+    "privacy-preserving-ml"
+  ],
+  "abbr": "FL"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "layer-offloading",
+  "term": "Layer offloading",
+  "def": "Splitting a model between GPU memory and system RAM so that the layers, or mixture-of-experts expert weights, that do not fit in VRAM run on the CPU side.",
+  "practice": "llama.cpp sets the number of GPU layers with -ngl and can keep MoE expert weights in system RAM; offloaded parts run at CPU memory bandwidth, so speed falls quickly.",
+  "aliases": [
+    "partial offload",
+    "n-gpu-layers",
+    "expert offloading",
+    "CPU+GPU hybrid inference"
+  ],
+  "chapters": [
+    "edge-on-device",
+    "small-local-models",
+    "memory-math",
+    "local-inference"
+  ]
+}

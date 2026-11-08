@@ -1,0 +1,13 @@
+{
+  "id": "epsilon-greedy",
+  "term": "Epsilon-greedy",
+  "def": "An action-selection rule that takes the best-known action with probability 1 − ε and a uniformly random action with probability ε.",
+  "practice": "The simplest exploration strategy, used in DQN with ε decayed during training, and a common baseline for bandit algorithms.",
+  "aliases": [
+    "ε-greedy"
+  ],
+  "chapters": [
+    "rl-primer",
+    "bandits"
+  ]
+}

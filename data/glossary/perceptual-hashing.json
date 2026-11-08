@@ -1,0 +1,15 @@
+{
+  "id": "perceptual-hashing",
+  "term": "Perceptual hashing",
+  "def": "Computing a compact fingerprint of an image or video that stays similar under resizing, compression and small edits, so near-duplicates can be matched by hash distance.",
+  "practice": "Used to match known harmful or copyrighted content at scale (Meta's open-source PDQ suggests a Hamming distance of 31 or less as a starting threshold) and as a C2PA soft binding.",
+  "aliases": [
+    "perceptual hash",
+    "image fingerprinting"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "image-generation",
+    "synthetic-media-provenance"
+  ]
+}

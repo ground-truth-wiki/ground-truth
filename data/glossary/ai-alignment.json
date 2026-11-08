@@ -1,0 +1,21 @@
+{
+  "id": "ai-alignment",
+  "term": "AI alignment",
+  "def": "Making AI systems pursue the goals, preferences or principles their developers and users actually intend; a misaligned system pursues unintended objectives.",
+  "practice": "The word covers both everyday post-training of assistants and the open research problem of keeping more capable systems aligned, so check which one a speaker means.",
+  "aliases": [
+    "alignment",
+    "alignment problem",
+    "value alignment"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "preference-optimization",
+    "safety-character-training",
+    "frontier-safety-frameworks",
+    "open-problems",
+    "the-canon",
+    "sae-circuit-tracing",
+    "probes-and-steering"
+  ]
+}

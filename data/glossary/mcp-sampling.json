@@ -1,0 +1,13 @@
+{
+  "id": "mcp-sampling",
+  "term": "Sampling (MCP)",
+  "def": "An MCP client feature that lets a server ask the client to generate a completion with the host's model (sampling/createMessage); deprecated in the 2026-07-28 specification.",
+  "practice": "New servers should call model provider APIs directly instead; deprecated MCP features stay usable for at least twelve months under the feature lifecycle policy before removal.",
+  "aliases": [
+    "MCP sampling"
+  ],
+  "chapters": [
+    "mcp-client-features",
+    "mcp-spec-history"
+  ]
+}

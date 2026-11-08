@@ -1,0 +1,14 @@
+{
+  "id": "playwright",
+  "term": "Playwright",
+  "def": "Microsoft’s open-source browser automation and end-to-end testing framework that drives Chromium, Firefox and WebKit through one API and waits for elements to be ready before acting.",
+  "practice": "A common substrate for browser agents; its MCP server, Playwright MCP, gives models accessibility-tree snapshots with element references so they can act without screenshots.",
+  "aliases": [],
+  "chapters": [
+    "computer-use-agents",
+    "mcp-server-catalog",
+    "browser-automation-stack",
+    "computer-use-benchmarks",
+    "agent-facing-web"
+  ]
+}

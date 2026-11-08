@@ -1,0 +1,16 @@
+{
+  "id": "deepfake",
+  "term": "Deepfake",
+  "def": "AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear authentic or truthful (the EU AI Act definition).",
+  "practice": "Under EU AI Act Article 50, deployers must disclose deepfakes from 2 August 2026, with lighter duties for evidently artistic, satirical or fictional work.",
+  "aliases": [
+    "deep fake"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "video-world-models",
+    "speech-audio",
+    "synthetic-media-provenance"
+  ]
+}

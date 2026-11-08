@@ -1,0 +1,11 @@
+{
+  "id": "pipecat",
+  "term": "Pipecat",
+  "def": "An open-source (BSD-2-Clause) Python framework, maintained by Daily and its community, for building real-time voice and multimodal agents from pipelines of transport, speech, model and synthesis services.",
+  "practice": "Swappable provider services make it a common base for cascaded voice pipelines, its team maintains the open Smart Turn end-of-turn model, and the Voice AI and Voice Agents guide uses it for its code.",
+  "aliases": [],
+  "chapters": [
+    "voice-agents",
+    "voice-turn-taking"
+  ]
+}

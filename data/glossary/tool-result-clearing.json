@@ -1,0 +1,16 @@
+{
+  "id": "tool-result-clearing",
+  "term": "Tool-result clearing",
+  "def": "Replacing old tool outputs in an agent’s history with short placeholders once they have been used, while keeping the tool calls and the rest of the conversation.",
+  "practice": "Lindenbauer et al. (2025) found this observation masking matched LLM summarization on SWE-bench Verified while halving cost versus the raw agent; Anthropic’s API offers it as a context-editing strategy.",
+  "aliases": [
+    "observation masking"
+  ],
+  "chapters": [
+    "context-engineering",
+    "agent-failure-modes",
+    "build-your-own-harness",
+    "long-running-agents",
+    "context-compaction"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "vector-space-model",
+  "term": "Vector space model",
+  "def": "A retrieval model that represents documents and queries as vectors of term weights, typically TF-IDF, and ranks documents by the cosine similarity between query and document vectors.",
+  "practice": "Lucene still offers it as a ranking option beside BM25, and dense retrieval keeps its central idea of ranking by vector angle, with learned embeddings in place of term weights.",
+  "aliases": [
+    "VSM",
+    "vector space retrieval"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "embeddings",
+    "ir-foundations"
+  ],
+  "abbr": "VSM"
+}

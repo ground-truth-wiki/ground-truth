@@ -1,0 +1,14 @@
+{
+  "id": "ai-impact-assessment",
+  "term": "AI impact assessment",
+  "def": "A structured review, before deployment and after significant changes, of who an AI system could affect, how, and which mitigations and oversight apply.",
+  "practice": "Some regimes mandate one, such as the EU fundamental rights impact assessment and Canada's Algorithmic Impact Assessment, which sorts federal automated-decision systems into impact levels I to IV.",
+  "aliases": [
+    "algorithmic impact assessment"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "ai-risk-management"
+  ]
+}

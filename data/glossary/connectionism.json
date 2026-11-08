@@ -1,0 +1,15 @@
+{
+  "id": "connectionism",
+  "term": "Connectionism",
+  "def": "The approach that models intelligence as networks of simple interconnected units whose behavior emerges from learned connection weights; the tradition modern neural networks grew out of.",
+  "practice": "Its 1980s revival, with the Parallel Distributed Processing volumes and backpropagation, and its long debate with symbolic AI still frame arguments over whether LLMs need explicit rules or symbols.",
+  "aliases": [
+    "connectionist AI",
+    "connectionist"
+  ],
+  "chapters": [
+    "neural-networks",
+    "mental-models",
+    "history-of-ai"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "beam-search",
+  "term": "Beam search",
+  "def": "Decoding that keeps the k most probable partial sequences (beams) at each step and returns the highest-scoring complete one.",
+  "practice": "Suits input-grounded tasks such as translation, speech recognition or captioning; rarely used for chat because it favors bland, repetitive text and multiplies compute by the beam width.",
+  "aliases": [
+    "beam decoding"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "recurrent-networks",
+    "speech-recognition",
+    "test-time-search",
+    "system-design-interview-answers"
+  ]
+}

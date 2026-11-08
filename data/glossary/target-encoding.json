@@ -1,0 +1,14 @@
+{
+  "id": "target-encoding",
+  "term": "Target encoding",
+  "def": "Replacing each category of a feature with a smoothed mean of the target over training examples in that category, shrunk toward the global mean for rare categories.",
+  "practice": "Compact for high-cardinality features such as postal codes or product IDs, but it leaks the label unless computed out of fold, as scikit-learn's TargetEncoder does with cross fitting.",
+  "aliases": [
+    "mean encoding",
+    "target mean encoding"
+  ],
+  "chapters": [
+    "classical-ml",
+    "feature-engineering"
+  ]
+}

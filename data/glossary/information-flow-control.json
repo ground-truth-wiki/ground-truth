@@ -1,0 +1,15 @@
+{
+  "id": "information-flow-control",
+  "term": "Information-flow control",
+  "def": "Tracking confidentiality and integrity labels on data as it moves through a system, and blocking flows that break a policy, such as untrusted text choosing an email recipient.",
+  "practice": "Agent designs such as CaMeL and Microsoft's FIDES planner enforce it outside the model, so policies hold even when injected text fools the model; taint tracking is its dynamic form.",
+  "aliases": [
+    "taint tracking"
+  ],
+  "chapters": [
+    "secure-agent-design",
+    "prompt-injection",
+    "prompt-injection-techniques"
+  ],
+  "abbr": "IFC"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bubblewrap",
+  "term": "bubblewrap",
+  "def": "An unprivileged Linux sandboxing tool (bwrap) that runs a program in new namespaces with an empty root filesystem, populated only by the bind mounts its caller chooses.",
+  "practice": "Flatpak builds on it, and the Linux sandboxes of Claude Code and Codex use it (as of November 2026); it has no policy of its own, so safety depends entirely on the arguments it is given.",
+  "aliases": [
+    "bwrap"
+  ],
+  "chapters": [
+    "sandboxes",
+    "claude-code",
+    "os-level-sandboxing"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "best-of-n-jailbreaking",
+  "term": "Best-of-N jailbreaking",
+  "def": "A black-box attack that samples many random variations of a harmful prompt, such as shuffled characters or random capitalization, until one draws a harmful answer.",
+  "practice": "Success rises predictably with the number of attempts, reaching 89% on GPT-4o at 10,000 samples in Hughes et al. (2024), and it also works on image and audio inputs.",
+  "aliases": [
+    "BoN jailbreaking"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "safety-evals",
+    "jailbreak-techniques"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bias-mitigation",
+  "term": "Bias mitigation",
+  "def": "Techniques that reduce unfair disparities: before training by reweighing or resampling data, during training with fairness constraints or adversarial debiasing, or after training by adjusting thresholds per group.",
+  "practice": "Each method trades some accuracy for a chosen fairness criterion; re-measure every criterion afterwards, since fixing one can worsen another.",
+  "aliases": [
+    "debiasing"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "word-embeddings",
+    "bandits",
+    "learning-to-rank",
+    "fairness-bias"
+  ]
+}

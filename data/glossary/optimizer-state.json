@@ -1,0 +1,20 @@
+{
+  "id": "optimizer-state",
+  "term": "Optimizer state",
+  "def": "The per-parameter values an optimizer keeps between steps, such as momentum or Adam's running averages of gradients and squared gradients.",
+  "practice": "Adam's two FP32 moments add 8 bytes per parameter, half of the roughly 16 bytes per parameter of mixed-precision training, which is why ZeRO and FSDP shard optimizer state first.",
+  "aliases": [
+    "Adam moments",
+    "optimizer moments"
+  ],
+  "chapters": [
+    "distributed-training",
+    "memory-math",
+    "calculus-optimization",
+    "optimizers",
+    "training-neural-networks",
+    "floating-point-formats",
+    "dl-frameworks",
+    "pretraining-run"
+  ]
+}

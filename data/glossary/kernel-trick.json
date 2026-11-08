@@ -1,0 +1,12 @@
+{
+  "id": "kernel-trick",
+  "term": "Kernel trick",
+  "def": "Computing inner products in a high- or infinite-dimensional feature space implicitly through a kernel function, so a linear method can learn nonlinear boundaries.",
+  "practice": "Behind kernel SVMs, kernel PCA and Gaussian processes; for the RBF kernel, gamma sets how far a single training example's influence reaches.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "linear-algebra",
+    "linear-and-kernel-models"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "automatic-differentiation",
+  "term": "Automatic differentiation",
+  "def": "Computing exact derivatives of a program by applying the chain rule to its elementary operations, rather than by symbolic algebra or finite differences.",
+  "practice": "PyTorch autograd and JAX grad compute every training gradient this way; backpropagation is its reverse mode applied to a scalar loss, so you write only the forward computation.",
+  "aliases": [
+    "autodiff",
+    "autograd"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "automatic-differentiation",
+    "policy-gradient-methods",
+    "training-neural-networks",
+    "dl-frameworks",
+    "gpu-kernels-compilers",
+    "adversarial-ml"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "jepa",
+  "term": "Joint-embedding predictive architecture",
+  "def": "A self-supervised learning design that predicts the representation of masked or future parts of an input from the visible parts, instead of reconstructing pixels or tokens.",
+  "practice": "I-JEPA applies it to images and V-JEPA 2 to video, where an action-conditioned variant plans robot actions; it is the main representation-space alternative to pixel-generating world models.",
+  "aliases": [
+    "JEPA"
+  ],
+  "chapters": [
+    "representation-learning",
+    "video-world-models",
+    "embodied-agents",
+    "self-supervised-methods",
+    "world-models"
+  ],
+  "abbr": "JEPA"
+}

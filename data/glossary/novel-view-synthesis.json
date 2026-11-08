@@ -1,0 +1,13 @@
+{
+  "id": "novel-view-synthesis",
+  "term": "Novel view synthesis",
+  "def": "Rendering a scene or object from camera viewpoints that were not among the input images.",
+  "practice": "The core task of NeRF and Gaussian splatting, evaluated on held-out views; single-image versions rely on diffusion priors to invent unseen parts.",
+  "aliases": [
+    "view synthesis"
+  ],
+  "chapters": [
+    "video-world-models",
+    "three-d-generation"
+  ]
+}

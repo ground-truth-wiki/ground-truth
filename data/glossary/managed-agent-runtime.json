@@ -1,0 +1,21 @@
+{
+  "id": "managed-agent-runtime",
+  "term": "Managed agent runtime",
+  "def": "A hosted service that runs agents for you, typically with an isolated sandbox per session, persistent sessions, memory, identity and tracing, for your own agent code or a provider-supplied harness.",
+  "practice": "Examples as of November 2026 include Amazon Bedrock AgentCore, Claude Managed Agents and Google's Agent Runtime; check data retention, zero-data-retention eligibility and how hard memory and identity are to move.",
+  "aliases": [
+    "managed agent platform",
+    "managed agents",
+    "hosted agents"
+  ],
+  "chapters": [
+    "framework-landscape",
+    "provider-agent-sdks",
+    "sandboxes",
+    "long-running-agents",
+    "reference-architecture",
+    "model-apis",
+    "embedded-agent-harnesses",
+    "managed-agent-platforms"
+  ]
+}

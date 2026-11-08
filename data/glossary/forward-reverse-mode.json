@@ -1,0 +1,16 @@
+{
+  "id": "forward-reverse-mode",
+  "term": "Forward-mode and reverse-mode differentiation",
+  "def": "The two ways automatic differentiation applies the chain rule: forward mode carries derivatives from inputs to outputs as Jacobian-vector products, reverse mode from outputs back to inputs as vector-Jacobian products.",
+  "practice": "Reverse mode, which is what backpropagation does, gets the gradient of one scalar loss for billions of parameters in a single backward pass, at the cost of storing intermediate activations.",
+  "aliases": [
+    "reverse-mode autodiff",
+    "forward-mode autodiff",
+    "reverse-mode differentiation",
+    "forward-mode differentiation"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "neural-networks"
+  ]
+}

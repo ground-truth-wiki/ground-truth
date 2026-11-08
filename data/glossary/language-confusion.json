@@ -1,0 +1,12 @@
+{
+  "id": "language-confusion",
+  "term": "Language confusion",
+  "def": "A model’s failure to answer consistently in the user’s desired language, either replying in the wrong language or switching languages within a response (Marchisio et al., 2024).",
+  "practice": "Worse in base and English-centric models, with complex prompts and high temperatures; few-shot examples and multilingual fine-tuning reduce it, so test every target language.",
+  "aliases": [],
+  "chapters": [
+    "model-specific-notes",
+    "eval-recipes",
+    "multilingual-models"
+  ]
+}

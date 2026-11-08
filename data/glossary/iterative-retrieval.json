@@ -1,0 +1,15 @@
+{
+  "id": "iterative-retrieval",
+  "term": "Iterative retrieval",
+  "def": "Retrieval interleaved with generation or reasoning, where each new query is formed from what has been generated or found so far, as in IRCoT, Self-Ask and FLARE.",
+  "practice": "The bridge between single-shot RAG and agentic RAG and the usual answer to multi-hop questions; cap the number of rounds and log every intermediate query.",
+  "aliases": [
+    "interleaved retrieval",
+    "active retrieval"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "deep-research",
+    "query-understanding"
+  ]
+}

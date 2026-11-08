@@ -1,0 +1,20 @@
+{
+  "id": "state-of-the-art",
+  "term": "State of the art",
+  "def": "The best reported result on a given task or benchmark at a given time, or a system that achieves it.",
+  "practice": "Papers routinely claim new SOTA, but rankings can flip when the benchmark or setup changes (the 'benchmark lottery'), so read every SOTA claim as benchmark-specific and dated.",
+  "aliases": [
+    "SOTA"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "sota-snapshot",
+    "frontier-families",
+    "long-horizon-autonomy",
+    "watchlist",
+    "how-to-use",
+    "document-ocr-models",
+    "ai-for-physical-sciences"
+  ],
+  "abbr": "SOTA"
+}

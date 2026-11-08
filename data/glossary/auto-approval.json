@@ -1,0 +1,19 @@
+{
+  "id": "auto-approval",
+  "term": "Automated approval",
+  "def": "A permission setting in which a model-based reviewer, instead of the user, approves or blocks an agent's risky actions before they run.",
+  "practice": "Claude Code's auto mode uses a background classifier and Codex's auto_review routes eligible approval requests to a reviewer agent (as of November 2026); it cuts prompts and approval fatigue but is a probabilistic check, so keep deny rules and a sandbox underneath.",
+  "aliases": [
+    "auto mode",
+    "auto review",
+    "auto_review"
+  ],
+  "chapters": [
+    "claude-code",
+    "human-in-the-loop",
+    "guardrails-control",
+    "harness-anatomy",
+    "autonomy-and-oversight",
+    "harness-permissions-hooks"
+  ]
+}

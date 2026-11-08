@@ -1,0 +1,20 @@
+{
+  "id": "on-policy-distillation",
+  "term": "On-policy distillation",
+  "def": "Distillation in which the student generates its own outputs and the teacher scores each token, commonly by minimizing reverse KL, so the student learns on the states it actually reaches.",
+  "practice": "Gives a dense per-token signal instead of RL's single reward per episode, but needs teacher log-probabilities on the student's tokens, so usually a shared tokenizer.",
+  "aliases": [
+    "OPD",
+    "on-policy KD"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "post-training-overview",
+    "rlvr-reasoning",
+    "small-local-models",
+    "information-theory-for-llms",
+    "llm-distillation",
+    "model-merging-methods"
+  ],
+  "abbr": "OPD"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "improper-output-handling",
+  "term": "Improper output handling",
+  "def": "Passing model output to browsers, shells, databases or other systems without validation or escaping, so prompt-controlled text becomes cross-site scripting, SQL injection or code execution.",
+  "practice": "LLM02 in 2023 (as insecure output handling), LLM05 in 2025 and LLM10 in 2026; treat every model output as untrusted user input.",
+  "aliases": [
+    "insecure output handling"
+  ],
+  "chapters": [
+    "secure-agent-design",
+    "threat-modeling",
+    "guardrails-control",
+    "ai-security-frameworks"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "adaptive-thinking",
+  "term": "Adaptive thinking",
+  "def": "A reasoning mode in which the model decides per request whether and how long to think, steered by an effort setting rather than a fixed thinking-token budget.",
+  "practice": "As of November 2026, Claude 4.6 and later models use it (newer ones reject manual budgets), and Gemini models think dynamically by default; tune effort, not a token budget.",
+  "aliases": [
+    "dynamic thinking"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "model-specific-notes",
+    "reasoning-prompts",
+    "model-types",
+    "api-shapes"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hyperparameter",
+  "term": "Hyperparameter",
+  "def": "A setting fixed outside training rather than learned from the data, such as the learning rate, batch size, regularization strength or tree depth.",
+  "practice": "Tune on validation data or with cross-validation, never on the test set; the learning rate is usually the first to tune.",
+  "aliases": [
+    "hyper-parameter"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "self-improving-systems",
+    "classical-ml",
+    "fine-tuning-practice",
+    "training-hyperparameters",
+    "validation-tuning",
+    "trainable-deep-networks",
+    "bandits"
+  ]
+}

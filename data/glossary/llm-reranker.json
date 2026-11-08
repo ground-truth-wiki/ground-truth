@@ -1,0 +1,13 @@
+{
+  "id": "llm-reranker",
+  "term": "LLM reranker",
+  "def": "A large language model used as a reranker: it scores each candidate, compares pairs, or reorders a list of passages inside a prompt, as RankGPT does with sliding windows.",
+  "practice": "Can follow instructions such as 'prefer the newest policy' but is slower and costlier than a cross-encoder; control candidate order, because listwise prompts show position bias.",
+  "aliases": [
+    "LLM-based reranking",
+    "LLM reranking"
+  ],
+  "chapters": [
+    "reranking"
+  ]
+}

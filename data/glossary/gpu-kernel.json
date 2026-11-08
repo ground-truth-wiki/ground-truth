@@ -1,0 +1,18 @@
+{
+  "id": "gpu-kernel",
+  "term": "GPU kernel",
+  "def": "A function that runs on the GPU, launched over a grid of many threads that each execute it on a different part of the data.",
+  "practice": "Every framework operation becomes one or more kernel launches, so whether fast kernels exist for a chip, precision or attention variant decides whether a feature actually speeds things up.",
+  "aliases": [
+    "CUDA kernel",
+    "compute kernel"
+  ],
+  "chapters": [
+    "hardware",
+    "quantization",
+    "attention",
+    "inference-fundamentals",
+    "batching-scheduling",
+    "distributed-training"
+  ]
+}

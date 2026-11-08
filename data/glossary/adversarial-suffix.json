@@ -1,0 +1,15 @@
+{
+  "id": "adversarial-suffix",
+  "term": "Adversarial suffix",
+  "def": "A string of often odd-looking tokens, found by optimization and appended to a request so that a safety-trained model complies instead of refusing.",
+  "practice": "GCG (Zou et al., 2023) finds suffixes by gradient-guided token search; some transferred to closed models, and perplexity filters catch the unreadable ones.",
+  "aliases": [
+    "GCG",
+    "Greedy Coordinate Gradient"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "safety-evals",
+    "jailbreak-techniques"
+  ]
+}

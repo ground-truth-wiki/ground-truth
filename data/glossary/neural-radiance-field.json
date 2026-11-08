@@ -1,0 +1,15 @@
+{
+  "id": "neural-radiance-field",
+  "term": "Neural radiance field",
+  "def": "A scene representation in which a neural network maps a 3D position and viewing direction to color and density, rendered into images by volume rendering along camera rays.",
+  "practice": "Optimized per scene from posed photos and slow to render; Gaussian splatting reaches real-time radiance-field rendering and is now often preferred for interactive use.",
+  "aliases": [
+    "NeRF"
+  ],
+  "chapters": [
+    "video-world-models",
+    "three-d-generation",
+    "multimodal-evaluation"
+  ],
+  "abbr": "NeRF"
+}

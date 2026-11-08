@@ -1,0 +1,19 @@
+{
+  "id": "post-training",
+  "term": "Post-training",
+  "def": "All training applied after pretraining that turns a base model into an instruct or reasoning model: supervised fine-tuning, preference optimization, reinforcement learning and distillation.",
+  "practice": "Sets most of what users notice, such as format, tone, refusals, long reasoning and tool use; the Tülu 3 and Olmo 3 reports publish complete open recipes.",
+  "aliases": [
+    "post-trained"
+  ],
+  "chapters": [
+    "post-training-overview",
+    "sft",
+    "preference-optimization",
+    "rlvr-reasoning",
+    "mid-training",
+    "synthetic-data",
+    "llm-uncertainty",
+    "value-based-rl"
+  ]
+}

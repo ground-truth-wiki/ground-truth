@@ -1,0 +1,14 @@
+{
+  "id": "excessive-agency",
+  "term": "Excessive agency",
+  "def": "OWASP's risk that an LLM system can take damaging actions because it has more functionality, permissions or autonomy than its task needs.",
+  "practice": "LLM06 in the 2025 list and LLM03 in the 2026 edition, so quote IDs with their year; remove unneeded tools, narrow permissions and require approval for high-impact actions.",
+  "aliases": [],
+  "chapters": [
+    "threat-modeling",
+    "guardrails-control",
+    "secure-agent-design",
+    "safety-evals",
+    "ai-security-frameworks"
+  ]
+}

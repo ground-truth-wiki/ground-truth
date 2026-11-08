@@ -1,0 +1,14 @@
+{
+  "id": "codec-language-model",
+  "term": "Codec language model",
+  "def": "A language model trained to predict neural-codec audio tokens, turning speech or music generation into next-token prediction.",
+  "practice": "VALL-E cloned unseen voices from a 3-second prompt this way, and MusicGen applies the idea to music with interleaved codebook streams.",
+  "aliases": [
+    "neural codec language model"
+  ],
+  "chapters": [
+    "speech-audio",
+    "speech-synthesis",
+    "music-generation"
+  ]
+}

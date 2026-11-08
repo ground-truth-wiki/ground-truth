@@ -1,0 +1,20 @@
+{
+  "id": "olmo",
+  "term": "OLMo",
+  "def": "The Allen Institute for AI's family of fully open language models, released with weights, training data, training code, intermediate checkpoints and evaluation tools.",
+  "practice": "The usual reference for research that needs the whole training pipeline, such as data-mix or mid-training studies, rather than weights alone.",
+  "aliases": [
+    "OLMo 2",
+    "Olmo 3"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "mid-training",
+    "pretraining-run",
+    "pretraining-data",
+    "post-training-overview",
+    "architecture-choices",
+    "data-mixing",
+    "open-pretraining-datasets"
+  ]
+}

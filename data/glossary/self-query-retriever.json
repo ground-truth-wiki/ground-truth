@@ -1,0 +1,14 @@
+{
+  "id": "self-query-retriever",
+  "term": "Self-querying retrieval",
+  "def": "Retrieval in which an LLM turns a natural-language request into a search string plus structured metadata filters, which are then translated into the vector store's own filter syntax.",
+  "practice": "Turns 'policies from 2024 about Germany' into a filtered search; validate generated filters against allowed fields and values, because a wrong filter silently hides the answer.",
+  "aliases": [
+    "self-query retriever",
+    "self-querying retriever"
+  ],
+  "chapters": [
+    "query-understanding",
+    "vector-databases"
+  ]
+}

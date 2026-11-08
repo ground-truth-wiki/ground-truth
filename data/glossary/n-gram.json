@@ -1,0 +1,19 @@
+{
+  "id": "n-gram",
+  "term": "N-gram",
+  "def": "A contiguous sequence of n tokens or words, such as a bigram (n = 2) or trigram (n = 3); also the classic language model that predicts the next word from n-gram counts.",
+  "practice": "Still common in LLM work: BLEU and ROUGE count n-gram overlap, decontamination checks look for long n-gram matches, and prompt lookup decoding drafts tokens by copying n-grams from the prompt.",
+  "aliases": [
+    "ngram"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "speculative-decoding",
+    "pretraining-data",
+    "probability-information",
+    "language-modeling",
+    "web-data-pipeline",
+    "deduplication-decontamination",
+    "data-selection-attribution"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "l2-regularization",
+  "term": "L2 regularization",
+  "def": "Adding a penalty proportional to the sum of the squared weights to the loss, which shrinks weights toward zero without making them exactly zero.",
+  "practice": "Used in ridge regression and by default in scikit-learn's LogisticRegression, it stabilizes fits with correlated features; weight decay is the neural-network counterpart, equivalent under plain SGD but not under Adam, hence AdamW.",
+  "aliases": [
+    "L2 penalty",
+    "ridge regression",
+    "Tikhonov regularization"
+  ],
+  "chapters": [
+    "classical-ml",
+    "calculus-optimization",
+    "neural-networks",
+    "distributions-and-estimation",
+    "optimizers"
+  ]
+}

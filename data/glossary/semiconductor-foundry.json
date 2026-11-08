@@ -1,0 +1,14 @@
+{
+  "id": "semiconductor-foundry",
+  "term": "Semiconductor foundry",
+  "def": "A company that manufactures chips designed by other firms; fabless designers such as NVIDIA, AMD and Apple rely on foundries, above all TSMC, for leading-edge production.",
+  "practice": "TSMC held about 70% of the foundry market as of early 2026 and makes most leading AI accelerators, so its capacity and Taiwan's geopolitics are a shared dependency for the industry.",
+  "aliases": [
+    "chip foundry",
+    "pure-play foundry"
+  ],
+  "chapters": [
+    "hardware",
+    "governance-regulation"
+  ]
+}

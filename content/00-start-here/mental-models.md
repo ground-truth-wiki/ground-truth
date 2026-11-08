@@ -80,3 +80,5 @@ mental-models
 - [Decision guides](#decision-guides)
 - [Why evals are the core skill](#why-evals)
 - [Context engineering](#context-engineering)
+- [A short history of AI](#history-of-ai)
+- [What a language model is: from n-grams to neural networks](#language-modeling)

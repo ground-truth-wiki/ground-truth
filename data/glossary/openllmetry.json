@@ -1,0 +1,12 @@
+{
+  "id": "openllmetry",
+  "term": "OpenLLMetry",
+  "def": "Traceloop's open-source set of OpenTelemetry extensions and auto-instrumentations for LLM providers, vector databases and agent frameworks.",
+  "practice": "It emits standard OpenTelemetry data, so traces can go to general tools such as Datadog, Grafana or Honeycomb as well as LLM-specific platforms.",
+  "aliases": [],
+  "chapters": [
+    "observability-tracing",
+    "eval-tooling",
+    "agent-sdk-primitives"
+  ]
+}

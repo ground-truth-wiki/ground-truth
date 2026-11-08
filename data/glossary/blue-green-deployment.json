@@ -1,0 +1,11 @@
+{
+  "id": "blue-green-deployment",
+  "term": "Blue-green deployment",
+  "def": "A release technique with two production environments kept as identical as possible: one serves traffic while the other receives the new version, then traffic switches over, and switching back is the rollback.",
+  "practice": "Fits self-hosted model servers and gateways, where the previous model stays warm; for prompt or routing changes, canaries and feature flags are usually cheaper.",
+  "aliases": [],
+  "chapters": [
+    "ci-cd-for-ai",
+    "incidents-on-call"
+  ]
+}

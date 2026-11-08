@@ -1,0 +1,17 @@
+{
+  "id": "generative-model",
+  "term": "Generative model",
+  "def": "A model of the data distribution itself, p(x) or p(x | condition), from which new samples can be drawn, as opposed to a discriminative model of p(label | x).",
+  "practice": "LLMs, diffusion models, VAEs, GANs and normalizing flows are all generative models; they differ in how they represent the distribution and how fast and faithfully they sample from it.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "representation-learning",
+    "deep-generative-models",
+    "encoders-and-decoders",
+    "world-models",
+    "music-generation",
+    "multimodal-evaluation",
+    "vla-models"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "kto",
+  "term": "Kahneman-Tversky Optimization",
+  "def": "A preference-optimization loss based on prospect theory that learns from single responses labeled desirable or undesirable, rather than from paired comparisons.",
+  "practice": "Fits thumbs-up and thumbs-down feedback, which is cheaper to collect than pairs; its authors report it matching or beating pairwise methods from 1B to 30B parameters.",
+  "aliases": [
+    "KTO"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "dpo-and-relatives"
+  ],
+  "abbr": "KTO"
+}

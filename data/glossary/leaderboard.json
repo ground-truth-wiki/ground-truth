@@ -1,0 +1,17 @@
+{
+  "id": "leaderboard",
+  "term": "Leaderboard",
+  "def": "A public ranking of models by their scores on one or more benchmarks or by aggregated human preference votes.",
+  "practice": "Ranks depend on methodology version, submission rules and private pre-release testing, so read the methodology and date before quoting a position.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "watchlist",
+    "eval-harnesses",
+    "open-weight-frontier",
+    "model-types",
+    "trees-and-ensembles",
+    "function-calling-training",
+    "model-merging-methods"
+  ]
+}

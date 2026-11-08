@@ -99,3 +99,12 @@ coding-harness-landscape
 - [Skills, plugins and extension ecosystems](#skills-plugins)
 - [Working effectively with coding agents](#working-with-coding-agents)
 - [Harness engineering](#harness-engineering)
+- [Inside coding agents: localization, editing and verification](#coding-agent-internals)
+- [The Agent Client Protocol](#agent-client-protocol)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)
+- [Cloud agents, CI and review bots](#cloud-and-ci-coding-agents)

@@ -1,0 +1,21 @@
+{
+  "id": "serving-engine",
+  "term": "Serving engine",
+  "def": "Software that loads model weights, schedules and batches requests, manages the KV cache, runs optimized kernels and exposes an inference API, usually over HTTP.",
+  "practice": "vLLM, SGLang, TensorRT-LLM and llama.cpp are examples; engine and configuration choices change throughput and latency on the same hardware substantially, so benchmark on your own traffic.",
+  "aliases": [
+    "inference engine",
+    "inference server",
+    "model server"
+  ],
+  "chapters": [
+    "serving-engines",
+    "batching-scheduling",
+    "latency-throughput",
+    "edge-on-device",
+    "quantization",
+    "ai-engineering-stack",
+    "rope-scaling",
+    "linear-attention-hybrids"
+  ]
+}

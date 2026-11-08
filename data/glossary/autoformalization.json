@@ -1,0 +1,11 @@
+{
+  "id": "autoformalization",
+  "term": "Autoformalization",
+  "def": "Automatically translating informal mathematics, such as natural-language statements and proofs, into a formal language such as Lean or Isabelle.",
+  "practice": "LLMs translated 25.3% of competition problems perfectly into Isabelle in 2022; AlphaProof autoformalized about a million problems for training, yet its IMO 2024 problems were formalized by hand.",
+  "aliases": [],
+  "chapters": [
+    "ai-for-science",
+    "ai-for-mathematics"
+  ]
+}

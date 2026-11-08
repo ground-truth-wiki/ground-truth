@@ -1,0 +1,14 @@
+{
+  "id": "equalized-odds",
+  "term": "Equalized odds",
+  "def": "The fairness criterion that true-positive and false-positive rates are equal across groups, that is, predictions are independent of group given the true label (Hardt et al., 2016).",
+  "practice": "Fits decisions where both missed positives and false alarms harm people; equal opportunity, which equalizes only the true-positive rate, is the weaker choice when only missed positives matter.",
+  "aliases": [
+    "error rate balance"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "eval-statistics",
+    "fairness-bias"
+  ]
+}

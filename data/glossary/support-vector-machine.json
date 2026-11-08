@@ -1,0 +1,15 @@
+{
+  "id": "support-vector-machine",
+  "term": "Support vector machine",
+  "def": "A classifier that finds the separating boundary with the largest margin to the nearest training points (the support vectors), optionally in a feature space defined by a kernel.",
+  "practice": "Effective on high-dimensional data such as text features, but it needs scaled inputs and kernel versions get slow as the number of training samples grows.",
+  "aliases": [
+    "SVM"
+  ],
+  "chapters": [
+    "classical-ml",
+    "linear-and-kernel-models",
+    "anomaly-drift-detection"
+  ],
+  "abbr": "SVM"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dropout",
+  "term": "Dropout",
+  "def": "A regularizer that randomly zeroes a fraction of activations at each training step, so the network cannot rely on any single unit.",
+  "practice": "Switched off at inference by putting the model in evaluation mode, which is easy to forget; the original transformer used a rate of 0.1.",
+  "aliases": [],
+  "chapters": [
+    "neural-networks",
+    "classical-ml",
+    "llm-uncertainty",
+    "trainable-deep-networks",
+    "autoencoders-latent-spaces",
+    "training-neural-networks",
+    "architecture-choices",
+    "audio-codecs-tokens"
+  ]
+}

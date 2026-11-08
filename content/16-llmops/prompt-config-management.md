@@ -88,3 +88,6 @@ prompt-config-management
 - [Prompting fundamentals](#prompting-fundamentals)
 - [Online evaluation](#online-evaluation)
 - [Model-specific notes](#model-specific-notes)
+- [Model versions, previews and deprecations](#model-lifecycle)
+- [Prompt sensitivity and robust prompt testing](#prompt-robustness)
+- [MLOps and LLMOps foundations](#mlops-foundations)

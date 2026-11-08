@@ -1,0 +1,12 @@
+{
+  "id": "retry-budget",
+  "term": "Retry budget",
+  "def": "A cap on retries per request (Google's SRE book allows up to three attempts) and per client (retries under about 10% of requests), so retries cannot multiply load on a struggling dependency.",
+  "practice": "Retry only at the layer directly above the one that failed: SDKs, gateways and agent loops that each retry can turn one provider error into dozens of calls.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering",
+    "gateways-routers",
+    "rate-limits-overload"
+  ]
+}

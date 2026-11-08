@@ -1,0 +1,15 @@
+{
+  "id": "browsecomp",
+  "term": "BrowseComp",
+  "def": "OpenAI's benchmark of 1,266 questions whose short, easily verified answers are hard to find and require persistent, creative web browsing.",
+  "practice": "A standard number for deep-research and browsing agents; easy grading makes it cheap to run, but it does not test long-form report quality.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "deep-research",
+    "evaluating-agents",
+    "research-analyst-agents",
+    "post-training-overview",
+    "benchmark-catalog"
+  ]
+}

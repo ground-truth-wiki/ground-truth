@@ -1,0 +1,13 @@
+{
+  "id": "truthfulqa",
+  "term": "TruthfulQA",
+  "def": "A benchmark of 817 questions in 38 categories, such as health, law and politics, written so that answers imitating common human misconceptions are false.",
+  "practice": "The original paper found the largest models generally least truthful (inverse scaling), a reminder that imitating human text is not truthfulness; it still appears in model cards and eval suites.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "benchmark-literacy",
+    "alignment-concepts",
+    "hallucination-factuality"
+  ]
+}

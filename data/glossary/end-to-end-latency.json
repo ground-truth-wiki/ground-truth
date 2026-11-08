@@ -1,0 +1,17 @@
+{
+  "id": "end-to-end-latency",
+  "term": "End-to-end latency",
+  "def": "Time from sending a request to receiving its last output token, roughly time to first token plus the number of output tokens times time per output token.",
+  "practice": "It decides how long agent steps and batch jobs take; an agent pays it on every model call, so it compounds over many steps.",
+  "aliases": [
+    "E2E latency",
+    "E2EL",
+    "request latency"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "inference-fundamentals",
+    "llm-pruning",
+    "inference-benchmarking"
+  ]
+}

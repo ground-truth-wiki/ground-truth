@@ -1,0 +1,14 @@
+{
+  "id": "inference-scaling-law",
+  "term": "Inference scaling law",
+  "def": "An empirical relation between inference compute, such as samples, generated tokens or search, and task performance; the test-time counterpart of training scaling laws.",
+  "practice": "Used to choose between a bigger model and more sampling or search at a fixed budget; Wu et al. (2024) found Llemma-7B with tree search beat Llemma-34B on MATH across all strategies tested.",
+  "aliases": [
+    "test-time scaling law",
+    "inference-time scaling law"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "scaling-laws"
+  ]
+}

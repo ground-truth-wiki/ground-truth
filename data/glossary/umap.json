@@ -1,0 +1,15 @@
+{
+  "id": "umap",
+  "term": "UMAP",
+  "def": "Uniform Manifold Approximation and Projection: a nonlinear dimensionality reduction built on a nearest-neighbor graph, used for plotting like t-SNE and as a general reduction step.",
+  "practice": "Usually faster than t-SNE and, its authors argue, better at keeping global structure; results depend on the neighborhood-size and minimum-distance settings, so distances in the plot still need care.",
+  "aliases": [
+    "uniform manifold approximation and projection"
+  ],
+  "chapters": [
+    "embeddings",
+    "representation-learning",
+    "eigenvectors-svd-pca",
+    "clustering-dimensionality-reduction"
+  ]
+}

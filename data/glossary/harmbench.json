@@ -1,0 +1,13 @@
+{
+  "id": "harmbench",
+  "term": "HarmBench",
+  "def": "A standardized evaluation framework of harmful behaviors for comparing automated red-teaming attacks and refusal defenses under one protocol.",
+  "practice": "Its release compared 18 attack methods against 33 target models and defenses (Mazeika et al., 2024); start from it, then add cases for your own policies.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "red-teaming",
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ]
+}

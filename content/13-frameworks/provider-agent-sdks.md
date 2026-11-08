@@ -91,3 +91,12 @@ provider-agent-sdks
 - [The agent loop](#agent-loop)
 - [The landscape map](#framework-landscape)
 - [Orchestration frameworks](#orchestration-frameworks)
+- [AI frameworks beyond Python: TypeScript, Java, .NET and Go](#frameworks-beyond-python)
+- [Managed agent platforms and hosted harnesses](#managed-agent-platforms)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Agent SDK primitives: runners, tools, guardrails, sessions and tracing](#agent-sdk-primitives)
+- [Embedding agent harnesses in your application](#embedded-agent-harnesses)

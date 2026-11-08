@@ -1,0 +1,14 @@
+{
+  "id": "alphago",
+  "term": "AlphaGo",
+  "def": "DeepMind's Go program that combined policy and value neural networks with Monte Carlo tree search, trained first on human games and then by self-play.",
+  "practice": "It beat Fan Hui 5-0 in 2015 and Lee Sedol 4-1 in 2016; its successors AlphaGo Zero and AlphaZero dropped human data, and the line is the standard example of learning combined with search.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "test-time-scaling",
+    "planning-reasoning",
+    "history-of-ai",
+    "planning-mcts"
+  ]
+}

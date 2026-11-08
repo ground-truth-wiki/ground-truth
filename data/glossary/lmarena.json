@@ -1,0 +1,18 @@
+{
+  "id": "lmarena",
+  "term": "LMArena",
+  "def": "A crowdsourced platform, launched as Chatbot Arena and now branded Arena, where users vote between two anonymous models' answers and the votes are fitted into a ranking.",
+  "practice": "Ranks reflect user preference, including style and length, not task accuracy; as of November 2026 it runs separate text, WebDev, vision, search, image and video leaderboards at arena.ai.",
+  "aliases": [
+    "Chatbot Arena",
+    "LMSYS Chatbot Arena"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "llm-as-judge",
+    "watchlist",
+    "model-types",
+    "arenas-leaderboards",
+    "judge-models-meta-evaluation"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "membership-inference",
+  "term": "Membership inference attack",
+  "def": "An attack that determines whether a specific record was in a model's training data or, for a RAG system, in its retrieval database.",
+  "practice": "Against RAG, crafted prompts can reveal whether a document is in the index, which matters for confidential or regulated corpora even when its content is never shown.",
+  "aliases": [
+    "membership inference",
+    "MIA"
+  ],
+  "chapters": [
+    "privacy",
+    "production-rag",
+    "rag-security",
+    "coding-agent-benchmarks",
+    "adversarial-ml"
+  ],
+  "abbr": "MIA"
+}

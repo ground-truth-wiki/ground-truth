@@ -1,0 +1,14 @@
+{
+  "id": "verl",
+  "term": "veRL",
+  "def": "An open-source reinforcement-learning library for LLM post-training, started by ByteDance's Seed team, that implements the HybridFlow design (Sheng et al., 2024).",
+  "practice": "It supports PPO, GRPO, DAPO and other algorithms, generates rollouts with vLLM or SGLang, trains with FSDP or Megatron-LM, and handles multi-turn tool-calling rollouts.",
+  "aliases": [
+    "HybridFlow"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "agentic-rl",
+    "rlvr-reasoning"
+  ]
+}

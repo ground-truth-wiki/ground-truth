@@ -1,0 +1,10 @@
+{
+  "id": "sigstore",
+  "term": "Sigstore",
+  "def": "An open-source project for signing software artifacts with short-lived certificates tied to an OpenID Connect identity and recording each signature in a public transparency log.",
+  "practice": "It underlies OpenSSF model signing and npm and PyPI provenance; verifiers check the signer's identity and its identity provider instead of managing long-lived keys.",
+  "aliases": [],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "out-of-distribution",
+  "term": "Out-of-distribution",
+  "def": "Describes inputs drawn from a different distribution than the training data, such as new topics, formats or languages, on which a model’s behavior is less reliable.",
+  "practice": "Production traffic drifts out of distribution over time; detect such inputs to route or abstain, and keep out-of-distribution slices in eval sets.",
+  "aliases": [
+    "OOD"
+  ],
+  "chapters": [
+    "small-local-models",
+    "classical-ml",
+    "eval-datasets",
+    "online-evaluation",
+    "data-flywheel",
+    "anomaly-drift-detection",
+    "imitation-offline-rl",
+    "scheming-evaluations"
+  ],
+  "abbr": "OOD"
+}

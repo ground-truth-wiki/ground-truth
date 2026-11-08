@@ -1,0 +1,19 @@
+{
+  "id": "mcpb",
+  "term": "MCP Bundle",
+  "def": "A zip archive (.mcpb) containing a local MCP server and a manifest.json, so desktop hosts can install it in one click; formerly called Desktop Extensions (DXT).",
+  "practice": "Also a package type in the MCP Registry; a bundle runs with the user's permissions, so review it like any local server before installing.",
+  "aliases": [
+    "MCPB",
+    ".mcpb",
+    "Desktop Extensions",
+    "DXT"
+  ],
+  "chapters": [
+    "building-mcp-servers",
+    "mcp-server-catalog",
+    "supply-chain-security",
+    "mcp-registry-and-packaging"
+  ],
+  "abbr": "MCPB"
+}

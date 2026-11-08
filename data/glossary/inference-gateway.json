@@ -1,0 +1,14 @@
+{
+  "id": "inference-gateway",
+  "term": "Inference gateway",
+  "def": "A load balancer for self-hosted model servers that picks a replica per request from live signals such as queue depth, KV-cache use, prefix-cache matches and loaded LoRA adapters.",
+  "practice": "On Kubernetes this is the Gateway API Inference Extension, with an InferencePool of model-server pods and an endpoint picker; unlike an AI gateway, it balances your own replicas rather than providers.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "disaggregated-serving",
+    "batching-scheduling",
+    "gateways-routers",
+    "inference-fleet-scaling"
+  ]
+}

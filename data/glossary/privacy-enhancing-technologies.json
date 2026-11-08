@@ -1,0 +1,15 @@
+{
+  "id": "privacy-enhancing-technologies",
+  "term": "Privacy-enhancing technologies",
+  "def": "Techniques that let systems compute on or share data while revealing less personal information, such as differential privacy, federated learning, trusted execution environments, secure multiparty computation and homomorphic encryption.",
+  "practice": "NIST’s AI RMF notes they can cost accuracy under some conditions, such as sparse data; choose by threat model, since each one protects against a different party.",
+  "aliases": [
+    "PETs",
+    "privacy-enhancing technology"
+  ],
+  "chapters": [
+    "privacy",
+    "data-governance"
+  ],
+  "abbr": "PETs"
+}

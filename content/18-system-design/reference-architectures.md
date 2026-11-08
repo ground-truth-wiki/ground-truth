@@ -79,3 +79,5 @@ reference-architectures
 - [Decision guides](#decision-guides)
 - [Back-of-the-envelope estimation](#back-of-envelope)
 - [Lessons from public engineering write-ups](#public-writeups)
+- [Guard models and content moderation](#guard-models-moderation)
+- [Worked AI system design interview answers](#system-design-interview-answers)

@@ -1,0 +1,13 @@
+{
+  "id": "equal-opportunity-fairness",
+  "term": "Equal opportunity (fairness)",
+  "def": "A group-fairness criterion requiring equal true-positive rates across groups, so people who merit the positive outcome are selected at the same rate; a relaxation of equalized odds.",
+  "practice": "Fits cases where missing qualified people is the main harm, as in hiring or lending, but ignores gaps in false-positive rates (Hardt, Price and Srebro, 2016).",
+  "aliases": [
+    "equality of opportunity",
+    "true positive rate parity"
+  ],
+  "chapters": [
+    "responsible-ai"
+  ]
+}

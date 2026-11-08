@@ -1,0 +1,12 @@
+{
+  "id": "model-inversion",
+  "term": "Model inversion",
+  "def": "A privacy attack that reconstructs sensitive training data, or the typical features of a class such as a person's face, from a model's outputs or confidence scores.",
+  "practice": "Fredrikson et al. (2015) recovered recognizable faces from a face-recognition model given only a name and its confidence scores; returning only rounded scores was one countermeasure they tested.",
+  "aliases": [],
+  "chapters": [
+    "privacy",
+    "threat-modeling",
+    "adversarial-ml"
+  ]
+}

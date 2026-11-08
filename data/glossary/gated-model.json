@@ -1,0 +1,15 @@
+{
+  "id": "gated-model",
+  "term": "Gated model",
+  "def": "A model repository on the Hugging Face Hub whose files can be downloaded only after a logged-in user submits an access request, approved automatically or manually by the authors.",
+  "practice": "Common for models released under license conditions; scripts then need an access token, and authors can revoke access at any time or block users in EU countries.",
+  "aliases": [
+    "gated repository",
+    "gated repo"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "supply-chain-security",
+    "model-licenses"
+  ]
+}

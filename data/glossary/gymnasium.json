@@ -1,0 +1,13 @@
+{
+  "id": "gymnasium",
+  "term": "Gymnasium",
+  "def": "The Farama Foundation's maintained fork of OpenAI Gym, defining the standard Python API for RL environments: reset, step (observation, reward, terminated, truncated, info) and action and observation spaces.",
+  "practice": "The reference for the Gym-style reset and step interface that many RL environment harnesses, including ones for LLM agents, follow or adapt.",
+  "aliases": [
+    "Gym API"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "rl-primer"
+  ]
+}

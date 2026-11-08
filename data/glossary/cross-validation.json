@@ -1,0 +1,18 @@
+{
+  "id": "cross-validation",
+  "term": "Cross-validation",
+  "def": "Estimating generalization by splitting data into k folds, training on k - 1 of them and scoring on the remaining one, rotating through all folds and averaging.",
+  "practice": "Five or ten folds are typical; use stratified folds for imbalanced classes, group folds when examples share a source, and time-ordered splits for time series.",
+  "aliases": [
+    "k-fold cross-validation",
+    "k-fold"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-datasets",
+    "validation-tuning",
+    "linear-and-kernel-models",
+    "time-series-forecasting",
+    "deduplication-decontamination"
+  ]
+}

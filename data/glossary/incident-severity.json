@@ -1,0 +1,13 @@
+{
+  "id": "incident-severity",
+  "term": "Severity level",
+  "def": "A ranked classification of an incident's impact, for example from SEV-1 (critical, needing public notice) to SEV-5 (cosmetic), that sets who is paged, how fast and who must be told.",
+  "practice": "Rate AI incidents by harm and breadth, not just uptime: a confidently wrong policy answer shown to every user can be SEV-1 with zero errors; when unsure, pick the higher level.",
+  "aliases": [
+    "SEV level",
+    "incident severity"
+  ],
+  "chapters": [
+    "incidents-on-call"
+  ]
+}

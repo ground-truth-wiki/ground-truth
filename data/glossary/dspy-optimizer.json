@@ -1,0 +1,13 @@
+{
+  "id": "dspy-optimizer",
+  "term": "DSPy optimizer",
+  "def": "An algorithm in DSPy that tunes a program’s prompts (instructions and few-shot demonstrations), its model weights or both to maximize a metric on training examples.",
+  "practice": "Formerly called teleprompters; DSPy’s docs suggest BootstrapFewShot for about 10 examples and MIPROv2 for longer runs with 200 or more.",
+  "aliases": [
+    "teleprompter",
+    "DSPy teleprompter"
+  ],
+  "chapters": [
+    "prompt-optimization"
+  ]
+}

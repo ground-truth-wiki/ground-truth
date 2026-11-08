@@ -1,0 +1,20 @@
+{
+  "id": "kimi",
+  "term": "Kimi",
+  "def": "Moonshot AI's family of large language models and its chatbot, with open-weight releases such as Kimi K2 (2025), a mixture-of-experts model with about 1T total and 32B active parameters.",
+  "practice": "Known for agentic coding and tool use; K2 weights use a modified MIT license that requires showing 'Kimi K2' in products above 100 million monthly users or $20 million monthly revenue.",
+  "aliases": [
+    "Moonshot Kimi",
+    "Kimi K2"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "optimizers",
+    "sparse-and-local-attention",
+    "linear-attention-hybrids",
+    "training-stability",
+    "reasoning-training-recipes",
+    "cloud-ai-platforms"
+  ]
+}

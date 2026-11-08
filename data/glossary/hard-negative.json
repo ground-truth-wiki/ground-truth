@@ -1,0 +1,16 @@
+{
+  "id": "hard-negative",
+  "term": "Hard negative",
+  "def": "A negative training example that closely resembles the positive, such as a passage on the right topic that does not answer the query.",
+  "practice": "Mining hard negatives from BM25 or embedding top hits is a major lever when fine-tuning an embedder, but some mined negatives are unlabeled positives, so filter them, often with a cross-encoder.",
+  "aliases": [
+    "hard negative mining",
+    "negative mining"
+  ],
+  "chapters": [
+    "representation-learning",
+    "embeddings",
+    "reranking",
+    "training-retrievers"
+  ]
+}

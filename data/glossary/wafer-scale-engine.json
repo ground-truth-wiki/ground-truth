@@ -1,0 +1,16 @@
+{
+  "id": "wafer-scale-engine",
+  "term": "Wafer-scale engine",
+  "def": "Cerebras's processor built from an entire silicon wafer instead of being cut into separate chips; the WSE-3 generation has about 4 trillion transistors and 900,000 cores.",
+  "practice": "Usually reached through Cerebras's hosted inference API, which offers very high per-user output speed; Cerebras also sells CS-series systems built around it.",
+  "aliases": [
+    "WSE",
+    "WSE-3",
+    "Cerebras WSE"
+  ],
+  "chapters": [
+    "hardware",
+    "accelerator-architecture"
+  ],
+  "abbr": "WSE"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "agentic-ai-foundation",
+  "term": "Agentic AI Foundation",
+  "def": "A Linux Foundation foundation for open agent standards, launched in December 2025 with MCP, goose and AGENTS.md as founding projects.",
+  "practice": "Hosting gives neutral governance without merging projects: MCP keeps its own maintainers and SEP process. As of November 2026 it hosts ten projects, including A2A, Agent Skills and Open Responses.",
+  "aliases": [
+    "AAIF"
+  ],
+  "chapters": [
+    "protocol-governance",
+    "why-protocols",
+    "a2a",
+    "agent-instruction-files",
+    "a2a-in-depth"
+  ],
+  "abbr": "AAIF"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "capability-negotiation",
+  "term": "Capability negotiation",
+  "def": "The exchange in which protocol peers declare which optional features they support, so each side uses only what both understand.",
+  "practice": "MCP through 2025-11-25 negotiated once in initialize; since 2026-07-28 clients send capabilities on every request and servers advertise theirs via server/discover. A2A agent cards carry capability flags.",
+  "aliases": [],
+  "chapters": [
+    "mcp-architecture",
+    "mcp-spec-history",
+    "mcp-transports",
+    "why-protocols",
+    "a2a"
+  ]
+}

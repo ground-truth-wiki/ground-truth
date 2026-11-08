@@ -1,0 +1,19 @@
+{
+  "id": "matrix",
+  "term": "Matrix",
+  "def": "A rectangular array of numbers arranged in rows and columns; multiplying a vector by a matrix applies a linear map, which is what every linear layer computes.",
+  "practice": "A linear layer's weights form a matrix whose two dimensions, input size and output size, multiply to its weight count, the starting point of every parameter and memory estimate.",
+  "aliases": [
+    "matrices"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "attention",
+    "transformer-block",
+    "fine-tuning-practice",
+    "memory-math",
+    "tensors-and-shapes",
+    "eigenvectors-svd-pca",
+    "optimizers"
+  ]
+}

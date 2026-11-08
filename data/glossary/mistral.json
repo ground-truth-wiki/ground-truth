@@ -1,0 +1,21 @@
+{
+  "id": "mistral",
+  "term": "Mistral",
+  "def": "The model family of French company Mistral AI, mixing open-weight releases with commercial Premier models offered through its platform.",
+  "practice": "Licenses differ within the family (as of November 2026, Apache 2.0 for Mistral Small 4 and Ministral 3, the Mistral Ecosystem Open Weight License for Mistral Large 4), so check each model.",
+  "aliases": [
+    "Mistral AI",
+    "Mistral models",
+    "Ministral"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "small-local-models",
+    "long-context",
+    "sparse-and-local-attention",
+    "chat-templates",
+    "latent-reasoning",
+    "ai-industry-map"
+  ]
+}

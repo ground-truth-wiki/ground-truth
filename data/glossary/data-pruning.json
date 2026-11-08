@@ -1,0 +1,14 @@
+{
+  "id": "data-pruning",
+  "term": "Data pruning",
+  "def": "Removing redundant or low-value examples from a training set, ranked by a quality, difficulty or redundancy metric, to train faster or better on less data.",
+  "practice": "With a good pruning metric, test error can fall faster than the usual power law in dataset size (Sorscher et al., 2022); semantic deduplication is one widely used pruning step.",
+  "aliases": [
+    "dataset pruning"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "scaling-laws",
+    "data-selection-attribution"
+  ]
+}

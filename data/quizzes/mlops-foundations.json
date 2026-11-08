@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mlops-foundations-1",
+    "chapter": "mlops-foundations",
+    "q": "A fraud model was trained once in a notebook and handed to engineers as a model file. Six months later its precision has quietly fallen as fraud patterns changed. Which change addresses the cause, in the terms of Google's maturity model?",
+    "options": [
+      "Deploy the training pipeline, with data and model validation, so it retrains on fresh data when a schedule or quality trigger fires",
+      "Retrain the model once in the notebook on recent data and hand over the new file",
+      "Add automated builds and unit tests for the application code that calls the model",
+      "Replace the model with a larger one that generalizes better"
+    ],
+    "answer": 0,
+    "explain": "The world keeps changing, so a model deployed once decays. Moving from level 0 to level 1 means deploying the pipeline that produces models, which gives continuous training with triggers and validation. Retraining once by hand is tempting, but it fixes today and rebuilds the same problem for next quarter, with no record of how the new model was made."
+  },
+  {
+    "id": "mlops-foundations-2",
+    "chapter": "mlops-foundations",
+    "q": "Using the ML Test Score of Breck et al. (2017), a system totals 6 points for features and data, 6.5 for model development, 5 for ML infrastructure and 1.5 for monitoring. What is its score, and where should the team invest next?",
+    "options": [
+      "4.75, the average, so improve all four areas evenly",
+      "1.5, so automate monitoring tests first",
+      "19, the sum, which puts it in the exceptional band",
+      "6.5, the best area, so keep strengthening model development"
+    ],
+    "answer": 1,
+    "explain": "The final score is the minimum of the four area totals, chosen so no area can be skipped. Here it is 1.5, and only monitoring work raises it. The average is tempting, but it treats the areas as interchangeable, which the rubric rejects on purpose: excellent model tests do not make up for not knowing when production quality drops."
+  },
+  {
+    "id": "mlops-foundations-3",
+    "chapter": "mlops-foundations",
+    "q": "A team edits a support assistant's system prompt for a friendlier tone. The change passes their eval suite. A day later refunds stop: a billing service nobody told the team about was parsing a tag in the assistant's replies, and the new prompt changed the tag. Which debt from Sculley et al. explains why the eval suite could not catch this?",
+    "options": [
+      "A hidden feedback loop between the assistant and the billing service",
+      "Configuration debt from keeping the prompt outside version control",
+      "An undeclared consumer that silently depends on the model's output",
+      "A change in the external world that made the model's data stale"
+    ],
+    "answer": 2,
+    "explain": "The billing service used the assistant's output as its input without declaring it, so its cases were never in the eval suite. Sculley et al. suggest guarding against undeclared consumers with access restrictions or strict service-level agreements; here that means an explicit output contract, such as a structured schema, plus the consumer's cases in the gate. A feedback loop is tempting, but nothing flows back into the assistant's own future inputs or training data; the dependency runs one way and was simply invisible."
+  }
+]

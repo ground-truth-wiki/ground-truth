@@ -1,0 +1,13 @@
+{
+  "id": "convex-function",
+  "term": "Convex function",
+  "def": "A function whose graph lies on or below the straight line between any two of its points, so any local minimum is also a global minimum.",
+  "practice": "Neural-network losses are not convex, so convex guarantees do not carry over, but much optimizer theory starts from the convex case, and models such as logistic regression have convex losses.",
+  "aliases": [
+    "convexity"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "classical-ml"
+  ]
+}

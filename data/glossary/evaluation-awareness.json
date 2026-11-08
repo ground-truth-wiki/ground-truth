@@ -1,0 +1,18 @@
+{
+  "id": "evaluation-awareness",
+  "term": "Evaluation awareness",
+  "def": "A model's ability to tell that it is being evaluated rather than deployed, from cues in the prompt, transcript or environment, which can change how it behaves.",
+  "practice": "Needham et al. (2025) found frontier models classify evaluation transcripts well above chance (Gemini 2.5 Pro AUC 0.83 versus 0.92 for humans), so safety results can look better than deployed behavior; labs now measure it and make test environments more realistic.",
+  "aliases": [
+    "eval awareness"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "alignment-concepts",
+    "scheming-evaluations",
+    "ai-control",
+    "dangerous-capability-evals",
+    "safety-cases"
+  ]
+}

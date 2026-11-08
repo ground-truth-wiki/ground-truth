@@ -137,3 +137,4 @@ mcp-client-features
 - [Human in the loop](#human-in-the-loop)
 - [MCP spec history](#mcp-spec-history)
 - [Long-running and durable agents](#long-running-agents)
+- [MCP extensions: the framework and the official extensions](#mcp-extensions)

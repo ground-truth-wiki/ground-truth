@@ -1,0 +1,20 @@
+{
+  "id": "tpu",
+  "term": "Tensor Processing Unit",
+  "def": "Google's custom accelerator for neural networks, built around large systolic matrix-multiply units and high-bandwidth memory, with chips linked by a dedicated interconnect into slices and pods.",
+  "practice": "Programmed through the XLA compiler, mostly from JAX, and rented through Google Cloud; Google trains its Gemini models on them.",
+  "aliases": [
+    "TPU"
+  ],
+  "chapters": [
+    "hardware",
+    "distributed-training",
+    "training-neural-networks",
+    "floating-point-formats",
+    "dl-frameworks",
+    "world-models",
+    "accelerator-architecture",
+    "gpu-kernels-compilers"
+  ],
+  "abbr": "TPU"
+}

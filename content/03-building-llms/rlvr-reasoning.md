@@ -80,3 +80,15 @@ rlvr-reasoning
 - [RL environment harnesses](#rl-environment-harnesses)
 - [Preference optimization](#preference-optimization)
 - [Reinforcement learning primer](#rl-primer)
+- [Policy gradients, actor-critic and PPO](#policy-gradient-methods)
+- [Reward models and preference data](#reward-modeling)
+- [Post-training: from base model to assistant](#post-training-overview)
+- [AI for mathematics and formal theorem proving](#ai-for-mathematics)
+- [Do language models reason? The evidence on both sides](#reasoning-debate)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Policy-gradient algorithms for LLMs: from REINFORCE to GRPO and beyond](#llm-policy-gradients)
+- [Training reasoning models: cold starts, distillation and length control](#reasoning-training-recipes)

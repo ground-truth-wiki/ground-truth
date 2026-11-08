@@ -86,3 +86,15 @@ responsible-ai
 - [Governance and regulation](#governance-regulation)
 - [AI product and UX](#ai-product-ux)
 - [Privacy](#privacy)
+- [Explaining model predictions](#model-interpretability)
+- [Reading model cards and system cards](#model-documentation)
+- [Dataset documentation: datasheets, data cards and Croissant](#dataset-documentation)
+- [Synthetic media, provenance and deepfakes](#synthetic-media-provenance)
+- [The EU AI Act in depth](#eu-ai-act)
+- [AI risk management and impact assessments](#ai-risk-management)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Fairness metrics and bias measurement](#fairness-bias)

@@ -1,0 +1,15 @@
+{
+  "id": "intermediate-size",
+  "term": "Intermediate size",
+  "def": "The inner width of a transformer's feed-forward layer: the size of the hidden layer between its up projection and its down projection.",
+  "practice": "Listed as intermediate_size in configs; conventionally about 4 × hidden size, or about 8/3 × in gated (GLU) layers to keep the parameter count, though many models pick other ratios.",
+  "aliases": [
+    "d_ff",
+    "FFN dimension"
+  ],
+  "chapters": [
+    "transformer-block",
+    "mixture-of-experts",
+    "architecture-choices"
+  ]
+}

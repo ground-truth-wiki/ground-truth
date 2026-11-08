@@ -1,0 +1,14 @@
+{
+  "id": "subprocessor",
+  "term": "Subprocessor",
+  "def": "A third party that a processor engages to process personal data on a controller's behalf; GDPR Article 28 requires the controller's prior authorization and passes the processor's data-protection obligations down to it.",
+  "practice": "For AI vendors, model APIs, vector databases and observability tools are typically subprocessors: list them publicly and notify customers before adding one.",
+  "aliases": [
+    "sub-processor",
+    "sub-processors"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "privacy"
+  ]
+}

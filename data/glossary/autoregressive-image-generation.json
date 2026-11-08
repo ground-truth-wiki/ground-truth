@@ -1,0 +1,14 @@
+{
+  "id": "autoregressive-image-generation",
+  "term": "Autoregressive image generation",
+  "def": "Generating an image as a sequence of visual tokens, one after another, with a model trained on next-token prediction, then decoding the tokens to pixels.",
+  "practice": "Used by DALL-E (2021) and Parti, and inside natively multimodal models, where one transformer can both read and draw images within a conversation.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "vision-language-models",
+    "diffusion-flow-matching",
+    "video-generation",
+    "audio-codecs-tokens"
+  ]
+}

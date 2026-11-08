@@ -1,0 +1,16 @@
+{
+  "id": "model-spec",
+  "term": "Model spec",
+  "def": "A public document in which a model developer states how its models should behave, including how to rank conflicting instructions, default behaviors and hard limits, to guide training and evaluation.",
+  "practice": "OpenAI's Model Spec, first published in 2024, ranks instructions in a chain of command (root, system, developer, user); reading a provider's spec helps predict refusals and conflicts.",
+  "aliases": [
+    "behavior specification"
+  ],
+  "chapters": [
+    "post-training-overview",
+    "safety-character-training",
+    "alignment-concepts",
+    "model-specs-instruction-hierarchy",
+    "chat-templates"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "fairness-through-unawareness",
+  "term": "Fairness through unawareness",
+  "def": "Trying to make a model fair by leaving the sensitive attribute out of its inputs, which usually fails because other features act as proxies that encode it.",
+  "practice": "Postal codes, names and writing style can leak group membership, so measure outcomes per group instead of assuming that removing the attribute works.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "fairness-bias"
+  ]
+}

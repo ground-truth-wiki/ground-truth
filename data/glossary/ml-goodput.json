@@ -1,0 +1,17 @@
+{
+  "id": "ml-goodput",
+  "term": "ML goodput",
+  "def": "The share of a training job's time and hardware capability that turns into useful forward progress, after losses to resource waits, failures, restarts and inefficient code.",
+  "practice": "Google splits it into scheduling, runtime and program goodput, the last essentially MFU; Llama 3 reported over 90% effective training time despite frequent interruptions.",
+  "aliases": [
+    "training goodput",
+    "ML productivity goodput",
+    "effective training time ratio",
+    "ETTR"
+  ],
+  "chapters": [
+    "distributed-training",
+    "pretraining-run",
+    "training-reliability"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "training-content-summary",
+  "term": "Public summary of training content",
+  "def": "The summary of the content used to train a general-purpose AI model that providers must publish under Article 53(1)(d) of the EU AI Act, using the AI Office’s template.",
+  "practice": "The Commission published the template on 24 July 2025; teams that release general-purpose models, or modify one heavily, should check whether they count as providers (as of November 2026; not legal advice).",
+  "aliases": [
+    "training-data summary",
+    "training data summary",
+    "training-content summary"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "data-governance",
+    "data-licensing-consent",
+    "dataset-documentation",
+    "ai-copyright"
+  ]
+}

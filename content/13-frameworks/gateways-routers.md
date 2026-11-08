@@ -91,3 +91,12 @@ gateways-routers
 - [Cost engineering](#cost-engineering)
 - [MCP at scale](#mcp-at-scale)
 - [Model APIs in practice](#model-apis)
+- [Multi-armed and contextual bandits](#bandits)
+- [Cloud AI platforms and inference providers](#cloud-ai-platforms)
+- [Rate limits, quotas and overload control](#rate-limits-overload)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Gateway keys, routing and failover in depth](#gateway-routing-in-depth)

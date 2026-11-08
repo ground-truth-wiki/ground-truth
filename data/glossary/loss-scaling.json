@@ -1,0 +1,17 @@
+{
+  "id": "loss-scaling",
+  "term": "Loss scaling",
+  "def": "Multiplying the loss by a large factor before backpropagation so small FP16 gradients do not underflow to zero, then dividing the gradients by it before the update.",
+  "practice": "Dynamic loss scaling lowers the factor and skips the step when gradients overflow; BF16 training usually does not need it because its range matches FP32.",
+  "aliases": [
+    "dynamic loss scaling",
+    "GradScaler",
+    "gradient scaling"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "training-neural-networks",
+    "floating-point-formats"
+  ]
+}

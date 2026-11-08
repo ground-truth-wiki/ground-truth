@@ -1,0 +1,13 @@
+{
+  "id": "right-to-explanation",
+  "term": "Right to explanation",
+  "def": "A person's legal entitlement to meaningful information about how an automated or AI-assisted decision that significantly affects them was made, usually paired with a right to contest it.",
+  "practice": "Grounded in the GDPR (Articles 13 to 15 and 22) and in EU AI Act Article 86 for Annex III high-risk systems, so deployers must be able to state the AI's role and the main factors.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "privacy",
+    "human-in-the-loop"
+  ]
+}

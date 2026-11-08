@@ -1,0 +1,15 @@
+{
+  "id": "hybrid-architecture",
+  "term": "Hybrid architecture",
+  "def": "A model that interleaves a few full-attention layers with many cheaper layers (state-space, linear-attention or sliding-window) to keep long-range recall at lower memory and compute cost.",
+  "practice": "Qwen3-Next and Kimi Linear use three linear-attention layers per full-attention layer, while Jamba and NVIDIA's Nemotron-H mix Mamba layers with attention.",
+  "aliases": [
+    "attention-SSM hybrid"
+  ],
+  "chapters": [
+    "beyond-transformers",
+    "new-architectures",
+    "transformer-overview",
+    "long-context"
+  ]
+}

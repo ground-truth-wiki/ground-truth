@@ -92,3 +92,13 @@ coding-agents
 - [The coding-harness landscape](#coding-harness-landscape)
 - [Structured data and code retrieval](#structured-code-retrieval)
 - [Evaluating agents](#evaluating-agents)
+- [Security and vulnerability-research agents](#security-agents)
+- [Cloud agents, CI and review bots](#cloud-and-ci-coding-agents)
+- [Training environments for coding agents](#swe-training-environments)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Inside coding agents: localization, editing and verification](#coding-agent-internals)
+- [Coding-agent benchmarks: SWE-bench, Terminal-Bench and their harnesses](#coding-agent-benchmarks)

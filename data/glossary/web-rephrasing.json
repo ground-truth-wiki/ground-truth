@@ -1,0 +1,19 @@
+{
+  "id": "web-rephrasing",
+  "term": "Web rephrasing",
+  "def": "Using an instruction-tuned model to rewrite web documents into cleaner styles, such as encyclopedic prose or question-and-answer, then pretraining on the rewrites alongside the originals.",
+  "practice": "WRAP (Maini et al., 2024) reported about 3x faster pretraining on C4; Nemotron-CC uses rephrasing to keep more of a crawl than strict quality filters would.",
+  "aliases": [
+    "rephrasing the web",
+    "WRAP",
+    "synthetic rephrasing"
+  ],
+  "chapters": [
+    "synthetic-data",
+    "pretraining-data",
+    "web-data-pipeline",
+    "data-mixing",
+    "agent-sdk-primitives",
+    "frameworks-beyond-python"
+  ]
+}

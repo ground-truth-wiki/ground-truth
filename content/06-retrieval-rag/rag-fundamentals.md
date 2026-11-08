@@ -120,3 +120,11 @@ rag-fundamentals
 - [Reranking](#reranking)
 - [Evaluating RAG](#rag-evaluation)
 - [Context engineering](#context-engineering)
+- [Information retrieval foundations](#ir-foundations)
+- [Web search and hosted retrieval services](#web-search-hosted-retrieval)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Retrieval-augmented language models: the research lineage](#retrieval-augmented-lms)

@@ -1,0 +1,19 @@
+{
+  "id": "mid-training-2",
+  "term": "Mid-training",
+  "def": "A training stage between main pretraining and post-training that continues next-token training on curated high-quality, domain-specific or long-context data, usually while the learning rate decays.",
+  "practice": "OLMo 2 spends 5 to 10% of training FLOPs here; Olmo 3 splits it into a 100B-token midtraining mix and a separate long-context extension stage.",
+  "aliases": [
+    "midtraining"
+  ],
+  "chapters": [
+    "mid-training",
+    "pretraining-run",
+    "pretraining-data",
+    "positional-encoding",
+    "sft",
+    "post-training-overview",
+    "rope-scaling",
+    "data-mixing"
+  ]
+}

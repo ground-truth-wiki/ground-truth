@@ -1,0 +1,16 @@
+{
+  "id": "intent-classification",
+  "term": "Intent classification",
+  "def": "Assigning a user utterance to one of a fixed set of intents, what the user wants to do, so a dialogue system can route it to the right flow.",
+  "practice": "The front door of classic chatbots and IVRs, such as Dialogflow intents with training phrases and a no-match threshold; in LLM systems it survives as routing, often on a small model.",
+  "aliases": [
+    "intent detection",
+    "intent recognition"
+  ],
+  "chapters": [
+    "support-agents",
+    "workflow-patterns",
+    "small-local-models",
+    "dialogue-systems"
+  ]
+}

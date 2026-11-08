@@ -1,0 +1,20 @@
+{
+  "id": "neural-network",
+  "term": "Neural network",
+  "def": "A parameterized function built from layers of weighted sums followed by nonlinear activation functions, whose weights are learned from data.",
+  "practice": "Transformers, convolutional networks and recurrent networks are all neural networks that differ in how layers share and route information.",
+  "aliases": [
+    "artificial neural network",
+    "neural net"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "classical-ml",
+    "representation-learning",
+    "distillation-merging",
+    "optimizers",
+    "trainable-deep-networks",
+    "convolutional-networks"
+  ]
+}

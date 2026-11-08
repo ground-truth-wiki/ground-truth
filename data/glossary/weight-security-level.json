@@ -1,0 +1,14 @@
+{
+  "id": "weight-security-level",
+  "term": "Weight security level",
+  "def": "One of five levels, SL1 to SL5, in RAND's 2024 framework for securing model weights, each defined by the attacker class it should withstand, from opportunistic criminals to top nation-state operations.",
+  "practice": "Used to state how hard a model's weights should be to steal; the report counts 38 distinct attack vectors and recommends measures such as confidential computing.",
+  "aliases": [
+    "RAND security levels"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "supply-chain-security",
+    "threat-modeling"
+  ]
+}

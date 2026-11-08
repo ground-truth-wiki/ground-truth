@@ -1,0 +1,19 @@
+{
+  "id": "langgraph",
+  "term": "LangGraph",
+  "def": "LangChain's open-source, low-level orchestration framework and runtime for long-running, stateful agents, built as graphs of nodes over shared state with checkpointing, interrupts, streaming and memory.",
+  "practice": "Reach for it when runs must survive restarts, pause for human approval or follow explicit control flow; it can be used without LangChain.",
+  "aliases": [
+    "LangGraph.js"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "human-in-the-loop",
+    "long-running-agents",
+    "multi-agent-patterns",
+    "durable-agent-execution",
+    "graph-workflow-runtimes",
+    "managed-agent-platforms"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "shortcut-learning",
+  "term": "Shortcut learning",
+  "def": "A model learning a decision rule, such as a spurious correlation or surface heuristic, that works on its training and benchmark data but fails to transfer to harder or real-world conditions.",
+  "practice": "High benchmark scores paired with poor real-world behavior often signal shortcuts; probe with counterfactual, adversarial and out-of-distribution test slices.",
+  "aliases": [
+    "Clever Hans effect"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "eval-datasets",
+    "alignment-concepts",
+    "classical-ml"
+  ]
+}

@@ -80,3 +80,9 @@ interview-prep
 - [Learning paths and the project ladder](#project-ladder)
 - [Build your own harness](#build-your-own-harness)
 - [What an AI engineer is](#ai-engineer-role)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Worked AI system design interview answers](#system-design-interview-answers)

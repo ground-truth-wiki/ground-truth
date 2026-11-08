@@ -1,0 +1,14 @@
+{
+  "id": "in-batch-negatives",
+  "term": "In-batch negatives",
+  "def": "In contrastive training of retrievers, treating the positive documents of the other queries in a batch as negatives for each query, which yields many negatives at no extra encoding cost.",
+  "practice": "It is why larger batches tend to train better embedding models and why gradient-caching tricks exist; Sentence Transformers implements it as MultipleNegativesRankingLoss.",
+  "aliases": [
+    "in-batch negative sampling"
+  ],
+  "chapters": [
+    "embeddings",
+    "representation-learning",
+    "training-retrievers"
+  ]
+}

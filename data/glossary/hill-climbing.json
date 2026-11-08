@@ -1,0 +1,15 @@
+{
+  "id": "hill-climbing",
+  "term": "Hill climbing",
+  "def": "Iteratively improving a solution by making small changes and keeping those that raise a chosen metric; in AI engineering, repeatedly tuning a system against an eval.",
+  "practice": "Climb on capability evals but guard with regression evals and a held-out set, or you end up overfitting the very eval you are climbing.",
+  "aliases": [
+    "hill-climb"
+  ],
+  "chapters": [
+    "why-evals",
+    "eval-recipes",
+    "prompt-optimization",
+    "eval-datasets"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "webdataset",
+  "term": "WebDataset",
+  "def": "A dataset format and Python library that stores samples in tar archives, grouping each sample's files by a shared basename, so training reads shards sequentially at high throughput.",
+  "practice": "Common for image-text and audio corpora, where millions of small files would overwhelm a file system or object store.",
+  "aliases": [],
+  "chapters": [
+    "pretraining-data",
+    "image-generation",
+    "vision-language-models",
+    "data-formats"
+  ]
+}

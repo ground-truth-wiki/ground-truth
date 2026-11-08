@@ -1,0 +1,15 @@
+{
+  "id": "tdm-exception",
+  "term": "Text and data mining exception",
+  "def": "A copyright exception permitting automated analysis of works; in EU law, Article 3 of Directive 2019/790 covers scientific research, and Article 4 covers anyone unless rightholders reserve their rights.",
+  "practice": "The legal basis most EU training-data collection relies on; the AI Act requires general-purpose model providers to honor Article 4(3) reservations (as of November 2026; not legal advice).",
+  "aliases": [
+    "TDM exception"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "data-governance",
+    "pretraining-data",
+    "data-licensing-consent"
+  ]
+}

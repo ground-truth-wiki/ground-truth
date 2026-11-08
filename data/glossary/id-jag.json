@@ -1,0 +1,18 @@
+{
+  "id": "id-jag",
+  "term": "Identity Assertion JWT Authorization Grant",
+  "def": "An IETF OAuth draft where a client trades a user's identity assertion at the IdP for a signed JWT (the ID-JAG) that another app's authorization server redeems for an access token.",
+  "practice": "The pattern behind Cross App Access and MCP's Enterprise-Managed Authorization, combining RFC 8693 token exchange with the RFC 7523 JWT bearer grant; still a draft (revision -06) as of November 2026.",
+  "aliases": [
+    "ID-JAG",
+    "Cross App Access",
+    "Cross-App Access",
+    "XAA"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "enterprise-readiness",
+    "agent-identity-delegation"
+  ],
+  "abbr": "ID-JAG"
+}

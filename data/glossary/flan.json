@@ -1,0 +1,14 @@
+{
+  "id": "flan",
+  "term": "FLAN",
+  "def": "Google's instruction-tuning work (Wei et al., 2021) that fine-tuned a 137B-parameter model on over 60 NLP tasks phrased as instructions; the name later covered Flan-T5 and Flan-PaLM.",
+  "practice": "It showed that instruction tuning improves zero-shot performance on unseen tasks, the idea behind today's SFT stage; Flan-T5 checkpoints are common small baselines.",
+  "aliases": [
+    "Finetuned Language Net",
+    "Flan-T5"
+  ],
+  "chapters": [
+    "sft",
+    "post-training-overview"
+  ]
+}

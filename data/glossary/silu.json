@@ -1,0 +1,15 @@
+{
+  "id": "silu",
+  "term": "SiLU",
+  "def": "The sigmoid linear unit, x·σ(x) with σ the logistic sigmoid: a smooth activation close to ReLU for large inputs, identical to Swish with β = 1.",
+  "practice": "It supplies the gate in SwiGLU, the feed-forward variant used by the Llama family and many other recent open models.",
+  "aliases": [
+    "Swish",
+    "sigmoid linear unit"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "trainable-deep-networks"
+  ]
+}

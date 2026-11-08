@@ -1,0 +1,15 @@
+{
+  "id": "alignment-auditing",
+  "term": "Alignment auditing",
+  "def": "Investigating whether a model has hidden objectives or undesired dispositions, using behavioral probing, interpretability and training-data analysis.",
+  "practice": "Validated with auditing games on models trained with a known hidden goal (Marks et al., 2025); Anthropic used LLM auditing agents in the alignment assessment of Claude Opus 4 (2025).",
+  "aliases": [
+    "alignment audit",
+    "alignment audits"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "mech-interp",
+    "safety-evals"
+  ]
+}

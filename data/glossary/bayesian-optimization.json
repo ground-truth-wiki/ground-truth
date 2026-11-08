@@ -1,0 +1,13 @@
+{
+  "id": "bayesian-optimization",
+  "term": "Bayesian optimization",
+  "def": "Optimizing an expensive black-box function by fitting a probabilistic surrogate, often a Gaussian process, to past evaluations and using it to choose the next point to try.",
+  "practice": "Worth it when each evaluation is costly, such as a training run; DSPy's MIPROv2 uses it to search combinations of instructions and few-shot examples.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "prompt-optimization",
+    "validation-tuning",
+    "linear-and-kernel-models"
+  ]
+}

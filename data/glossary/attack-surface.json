@@ -1,0 +1,17 @@
+{
+  "id": "attack-surface",
+  "term": "Attack surface",
+  "def": "The set of points on a system's boundary where an attacker could try to enter, cause an effect, or extract data.",
+  "practice": "For AI systems it includes every channel that puts text into a model's context, every tool with side effects and every loader of model files.",
+  "aliases": [],
+  "chapters": [
+    "threat-modeling",
+    "mcp-security",
+    "sandboxes",
+    "jailbreaks-misuse",
+    "ai-engineering-stack",
+    "mcp-server-catalog",
+    "rag-security",
+    "coding-agent-security"
+  ]
+}

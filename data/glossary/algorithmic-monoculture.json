@@ -1,0 +1,12 @@
+{
+  "id": "algorithmic-monoculture",
+  "term": "Algorithmic monoculture",
+  "def": "The situation in which many decision-makers rely on the same model, or on models sharing components such as training data, so their errors become correlated.",
+  "practice": "With many products built on a few foundation models, one model’s blind spots repeat across all of them; NIST’s generative AI profile calls such models potential single points of failure.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "choosing-a-model",
+    "open-problems"
+  ]
+}

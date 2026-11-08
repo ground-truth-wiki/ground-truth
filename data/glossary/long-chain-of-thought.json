@@ -1,0 +1,16 @@
+{
+  "id": "long-chain-of-thought",
+  "term": "Long chain of thought",
+  "def": "A reasoning trace thousands of tokens long, with planning, self-verification and backtracking, of the kind RL-trained reasoning models produce before answering.",
+  "practice": "Drives both the accuracy and the cost of reasoning models; it can be distilled into smaller models or shortened with long-to-short methods such as Kimi k1.5's.",
+  "aliases": [
+    "long CoT",
+    "long-CoT"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "reasoning-models",
+    "post-training-overview",
+    "test-time-scaling"
+  ]
+}

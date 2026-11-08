@@ -1,0 +1,16 @@
+{
+  "id": "hfu",
+  "term": "Hardware FLOP utilization",
+  "def": "The share of an accelerator's peak FLOP/s a job executes, counting all operations including activation recomputation, so it exceeds MFU for the same run.",
+  "practice": "PaLM 540B reported 46.2% MFU but 57.8% HFU; compare runs by MFU, since recomputation raises HFU without speeding up training.",
+  "aliases": [
+    "HFU",
+    "hardware FLOPs utilization"
+  ],
+  "chapters": [
+    "distributed-training",
+    "pretraining-run",
+    "compute-accounting"
+  ],
+  "abbr": "HFU"
+}

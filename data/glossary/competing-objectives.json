@@ -1,0 +1,15 @@
+{
+  "id": "competing-objectives",
+  "term": "Competing objectives and mismatched generalization",
+  "def": "Wei et al.'s (2023) two explanations of jailbreaks: safety goals that conflict with helpfulness or instruction following, and safety training that misses inputs the model can still understand.",
+  "practice": "Prefix injection and refusal suppression exploit the first; Base64, ciphers and low-resource languages exploit the second.",
+  "aliases": [
+    "competing objectives",
+    "mismatched generalization"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "safety-character-training",
+    "jailbreak-techniques"
+  ]
+}

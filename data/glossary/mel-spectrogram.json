@@ -1,0 +1,14 @@
+{
+  "id": "mel-spectrogram",
+  "term": "Mel spectrogram",
+  "def": "A time-frequency representation of audio whose frequency axis is warped to the perceptual mel scale, usually log-compressed, used as the standard input to speech models.",
+  "practice": "Whisper and most ASR models consume log-mel spectrograms and many TTS models predict them; feature settings (bins, window, log type) must match what the model was trained on.",
+  "aliases": [
+    "log-mel spectrogram"
+  ],
+  "chapters": [
+    "speech-audio",
+    "speech-recognition",
+    "speech-synthesis"
+  ]
+}

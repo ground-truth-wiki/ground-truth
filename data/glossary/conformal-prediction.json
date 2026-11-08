@@ -1,0 +1,12 @@
+{
+  "id": "conformal-prediction",
+  "term": "Conformal prediction",
+  "def": "A distribution-free method that turns any model's scores into prediction sets or intervals containing the true answer at a chosen rate, using a held-out calibration set.",
+  "practice": "The coverage guarantee holds on average over examples and assumes calibration and test data are exchangeable, so it weakens under distribution shift; larger sets signal an unsure model.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "classical-ml",
+    "classification-metrics"
+  ]
+}

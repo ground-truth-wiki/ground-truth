@@ -105,3 +105,12 @@ sandboxes
 - [Case study: Claude Code](#claude-code)
 - [Prompt injection](#prompt-injection)
 - [Anatomy of an agent harness](#harness-anatomy)
+- [Browser automation for agents: Playwright, CDP and agent libraries](#browser-automation-stack)
+- [Data-analysis and notebook agents](#data-analysis-agents)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [OS-level sandboxing for agents](#os-level-sandboxing)
+- [Securing coding agents](#coding-agent-security)

@@ -1,0 +1,16 @@
+{
+  "id": "nccl",
+  "term": "NCCL",
+  "def": "NVIDIA's topology-aware library of collective operations, such as all-reduce, all-gather, reduce-scatter and all-to-all, plus point-to-point send and receive between GPUs.",
+  "practice": "The usual GPU backend of PyTorch's distributed package on NVIDIA hardware, running over NVLink, PCIe, InfiniBand or sockets; a stalled collective, often from one failing GPU, surfaces as an NCCL timeout.",
+  "aliases": [
+    "NVIDIA Collective Communications Library"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "hardware",
+    "parallelism-strategies",
+    "training-reliability"
+  ]
+}

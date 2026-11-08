@@ -1,0 +1,16 @@
+{
+  "id": "citation-precision-recall",
+  "term": "Citation precision and recall",
+  "def": "Metrics for answers with citations: citation recall asks whether each statement is fully supported by the passages it cites, and citation precision whether each citation is actually needed.",
+  "practice": "Usually scored with an entailment model or calibrated LLM judge; definitions differ between benchmarks and vendors (ALCE uses the ones above), so state which you report.",
+  "aliases": [
+    "citation precision",
+    "citation recall"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "rag-evaluation",
+    "deep-research",
+    "metrics-graders"
+  ]
+}

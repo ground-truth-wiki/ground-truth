@@ -79,3 +79,11 @@ self-improving-systems
 - [Frontier safety frameworks](#frontier-safety-frameworks)
 - [Synthetic data](#synthetic-data)
 - [Open problems and big debates](#open-problems)
+- [AGI, timelines and the catastrophic-risk debate](#agi-timelines-risk)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Evolutionary program search with LLMs](#evolutionary-program-search)
+- [AI scientist agents and autonomous labs](#ai-scientist-agents)

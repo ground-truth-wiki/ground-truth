@@ -1,0 +1,18 @@
+{
+  "id": "rag-poisoning",
+  "term": "RAG poisoning",
+  "def": "Planting crafted passages in a retrieval corpus so that they are retrieved for targeted queries and steer the model's answers.",
+  "practice": "PoisonedRAG (Zou et al., 2024) reported about 90% attack success with five injected texts per target question in a corpus of millions; vet sources, track provenance and restrict who can write to the index.",
+  "aliases": [
+    "corpus poisoning",
+    "knowledge poisoning",
+    "knowledge corruption"
+  ],
+  "chapters": [
+    "production-rag",
+    "prompt-injection",
+    "supply-chain-security",
+    "threat-modeling",
+    "rag-security"
+  ]
+}

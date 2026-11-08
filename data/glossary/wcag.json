@@ -1,0 +1,15 @@
+{
+  "id": "wcag",
+  "term": "Web Content Accessibility Guidelines",
+  "def": "The W3C's testable success criteria for accessible web content, organized under four principles (perceivable, operable, understandable, robust) at conformance levels A, AA and AAA.",
+  "practice": "Version 2.2 is current as of November 2026 and level AA is the usual legal and procurement target; it applies to AI interfaces too, including streaming chat output read by screen readers.",
+  "aliases": [
+    "WCAG",
+    "WCAG 2.2"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "ai-product-ux"
+  ],
+  "abbr": "WCAG"
+}

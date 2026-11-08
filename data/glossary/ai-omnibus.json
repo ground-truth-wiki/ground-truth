@@ -1,0 +1,17 @@
+{
+  "id": "ai-omnibus",
+  "term": "AI Omnibus",
+  "def": "Regulation (EU) 2026/1744, which amended the EU AI Act to postpone high-risk obligations, add a prohibition, soften the AI literacy duty and extend SME relief to small mid-caps.",
+  "practice": "Published 24 July 2026 and in force since 27 July 2026; Annex III high-risk duties now apply from 2 December 2027 and those for AI in regulated products from 2 August 2028.",
+  "aliases": [
+    "Digital Omnibus on AI",
+    "AI Omnibus Regulation",
+    "Regulation (EU) 2026/1744"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "synthetic-media-provenance",
+    "eu-ai-act",
+    "fairness-bias"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "cbrn",
+  "term": "Chemical, biological, radiological and nuclear",
+  "def": "The four classes of mass-casualty weapons that frontier safety frameworks and dangerous-capability evaluations treat as a core misuse risk domain.",
+  "practice": "The domain behind most topic-specific safety classifiers on frontier models; Anthropic's ASL-3 deployment measures, for example, focus on blocking CBRN-weapons tasks.",
+  "aliases": [
+    "CBRN"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "safety-evals",
+    "jailbreaks-misuse",
+    "jailbreak-techniques",
+    "dangerous-capability-evals",
+    "ai-for-biology"
+  ],
+  "abbr": "CBRN"
+}

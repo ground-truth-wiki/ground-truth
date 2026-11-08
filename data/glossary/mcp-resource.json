@@ -1,0 +1,12 @@
+{
+  "id": "mcp-resource",
+  "term": "MCP resource",
+  "def": "Data an MCP server exposes under a URI (file://, https:// or a custom scheme) for clients to read with resources/read; application-driven, so the host decides when it enters context.",
+  "practice": "Use resources for context the application controls and tools for actions the model takes; host support for resources is less uniform than for tools, so check it first.",
+  "aliases": [],
+  "chapters": [
+    "mcp-primitives",
+    "mcp-architecture",
+    "building-mcp-servers"
+  ]
+}

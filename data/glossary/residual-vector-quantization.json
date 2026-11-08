@@ -1,0 +1,16 @@
+{
+  "id": "residual-vector-quantization",
+  "term": "Residual vector quantization",
+  "def": "Quantizing a vector with a cascade of codebooks in which each codebook encodes the residual error left by the previous ones.",
+  "practice": "The core of neural audio codecs such as SoundStream and EnCodec: more levels raise fidelity and bitrate, and speech models must generate several token streams per time step.",
+  "aliases": [
+    "RVQ",
+    "residual quantizer"
+  ],
+  "chapters": [
+    "speech-audio",
+    "autoencoders-latent-spaces",
+    "audio-codecs-tokens"
+  ],
+  "abbr": "RVQ"
+}

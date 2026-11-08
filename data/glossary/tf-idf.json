@@ -1,0 +1,19 @@
+{
+  "id": "tf-idf",
+  "term": "Term frequency–inverse document frequency",
+  "def": "A word weight that multiplies the word's frequency in a document by the log of the inverse share of documents containing it, so words common in one document but rare overall score highest.",
+  "practice": "A cheap, strong baseline for keyword search and text classification; BM25 refines it with term-frequency saturation and document-length normalization.",
+  "aliases": [
+    "TF-IDF"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "classical-ml",
+    "feature-engineering",
+    "clustering-dimensionality-reduction",
+    "ir-foundations",
+    "retrieval-augmented-lms",
+    "data-selection-attribution"
+  ],
+  "abbr": "TF-IDF"
+}

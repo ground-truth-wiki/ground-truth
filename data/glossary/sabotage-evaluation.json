@@ -1,0 +1,15 @@
+{
+  "id": "sabotage-evaluation",
+  "term": "Sabotage evaluation",
+  "def": "An evaluation of whether a model could covertly undermine oversight, for example by sandbagging capability tests, inserting bugs into code, evading monitoring or misleading human decisions.",
+  "practice": "Introduced for frontier models by Benton et al. (2024); Anthropic's Responsible Scaling Policy version 3.0 (February 2026) added high-stakes sabotage as a risk category.",
+  "aliases": [
+    "sabotage evals",
+    "sabotage eval"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "safety-evals",
+    "frontier-safety-frameworks"
+  ]
+}

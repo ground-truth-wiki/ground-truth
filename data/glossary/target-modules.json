@@ -1,0 +1,11 @@
+{
+  "id": "target-modules",
+  "term": "Target modules",
+  "def": "The weight matrices of a model that receive LoRA adapters, such as the attention query and value projections, the MLP layers, or all linear layers.",
+  "practice": "Defaults often cover only attention projections, but applying LoRA to all layers, especially MLP and MoE layers, performs clearly better (Thinking Machines, 2025).",
+  "aliases": [],
+  "chapters": [
+    "fine-tuning-practice",
+    "peft-methods"
+  ]
+}

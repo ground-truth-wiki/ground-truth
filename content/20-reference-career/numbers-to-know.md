@@ -95,3 +95,4 @@ numbers-to-know
 - [Inference fundamentals](#inference-fundamentals)
 - [Acronym decoder](#acronym-decoder)
 - [Cheat sheets](#commandments-guide)
+- [Compute accounting: FLOP, GPU-hours and utilization](#compute-accounting)

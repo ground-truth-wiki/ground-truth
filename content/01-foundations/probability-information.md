@@ -78,3 +78,13 @@ probability-information
 - [Preference optimization](#preference-optimization)
 - [Linear algebra for AI](#linear-algebra)
 - [Calculus and optimization](#calculus-optimization)
+- [What a language model is: from n-grams to neural networks](#language-modeling)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Distributions, estimation and sampling](#distributions-and-estimation)
+- [Information theory for language models](#information-theory-for-llms)
+- [Loss functions](#loss-functions)
+- [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)

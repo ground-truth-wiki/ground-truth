@@ -1,0 +1,17 @@
+{
+  "id": "asic",
+  "term": "Application-specific integrated circuit",
+  "def": "A chip designed for one class of workloads rather than general computing; AI examples include Google's TPU and AWS Trainium and Inferentia.",
+  "practice": "ASICs can beat GPUs on cost and power for the models they support, but they depend on the vendor's software stack and are often available only through one cloud.",
+  "aliases": [
+    "ASIC",
+    "ASICs",
+    "custom silicon"
+  ],
+  "chapters": [
+    "hardware",
+    "edge-on-device",
+    "ai-industry-map"
+  ],
+  "abbr": "ASIC"
+}

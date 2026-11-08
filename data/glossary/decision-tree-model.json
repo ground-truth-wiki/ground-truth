@@ -1,0 +1,21 @@
+{
+  "id": "decision-tree-model",
+  "term": "Decision tree (model)",
+  "def": "A model that predicts by applying a sequence of feature tests from the root to a leaf, grown greedily by choosing at each node the split that most reduces impurity.",
+  "practice": "Interpretable and needs little preprocessing, but a single tree overfits and changes a lot with small changes in the data; random forests and gradient boosting fix both.",
+  "aliases": [
+    "decision trees",
+    "CART",
+    "classification and regression tree"
+  ],
+  "chapters": [
+    "classical-ml",
+    "feature-engineering",
+    "linear-and-kernel-models",
+    "trees-and-ensembles",
+    "model-interpretability",
+    "time-series-forecasting",
+    "agentic-commerce-protocols",
+    "guard-models-moderation"
+  ]
+}

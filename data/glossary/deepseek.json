@@ -1,0 +1,21 @@
+{
+  "id": "deepseek",
+  "term": "DeepSeek",
+  "def": "The Chinese lab DeepSeek's family of open-weight models, notably the V-series mixture-of-experts models and the R1 reasoning model (January 2025), released with detailed technical reports.",
+  "practice": "R1 ships under the MIT License, which permits commercial use and distillation, and its reinforcement-learning recipe shaped many later open reasoning models; later releases such as V4.1 Flash are also MIT-licensed.",
+  "aliases": [
+    "DeepSeek-R1",
+    "DeepSeek-V3",
+    "DeepSeek V4"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "rlvr-reasoning",
+    "mixture-of-experts",
+    "reasoning-models",
+    "distillation-merging",
+    "encoders-and-decoders",
+    "moe-routing"
+  ]
+}

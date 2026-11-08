@@ -1,0 +1,13 @@
+{
+  "id": "loss-spike",
+  "term": "Loss spike",
+  "def": "A sudden jump in training loss that either recovers on its own or grows into divergence.",
+  "practice": "Large runs counter them with lower learning rates, clipping, QK-norm, z-loss and better initialization, or, as PaLM did, restart from an earlier checkpoint and skip the batches around the spike.",
+  "aliases": [],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "pretraining-run",
+    "training-stability"
+  ]
+}

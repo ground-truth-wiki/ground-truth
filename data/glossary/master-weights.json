@@ -1,0 +1,17 @@
+{
+  "id": "master-weights",
+  "term": "Master weights",
+  "def": "A full-precision (FP32) copy of the parameters that receives the optimizer updates, from which low-precision working copies are made for the forward and backward passes.",
+  "practice": "Without it, updates far smaller than a weight’s rounding step would be lost; it accounts for 4 of the roughly 16 bytes per parameter of mixed-precision Adam training.",
+  "aliases": [
+    "FP32 master copy",
+    "master copy of the weights"
+  ],
+  "chapters": [
+    "distributed-training",
+    "memory-math",
+    "optimizers",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

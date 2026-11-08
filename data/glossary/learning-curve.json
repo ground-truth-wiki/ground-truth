@@ -1,0 +1,11 @@
+{
+  "id": "learning-curve",
+  "term": "Learning curve",
+  "def": "A plot of training and validation scores against training-set size, used to tell whether more data would help and whether errors come from bias or variance.",
+  "practice": "Curves converging at a poor score mean more data will not help (high bias), a persistent gap means it may (high variance); in deep learning the name often means loss over training steps.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "validation-tuning"
+  ]
+}

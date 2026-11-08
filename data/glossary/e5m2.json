@@ -1,0 +1,17 @@
+{
+  "id": "e5m2",
+  "term": "E5M2",
+  "def": "An 8-bit floating-point encoding with 1 sign bit, 5 exponent bits and 2 mantissa bits that keeps IEEE-style infinities and NaN; its largest magnitude is 57,344.",
+  "practice": "Its wider range suits gradients, so the common hybrid FP8 recipe uses E4M3 in the forward pass and E5M2 in the backward pass; PyTorch calls it float8_e5m2.",
+  "aliases": [
+    "float8_e5m2",
+    "FP8 E5M2"
+  ],
+  "chapters": [
+    "quantization",
+    "hardware",
+    "distributed-training",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

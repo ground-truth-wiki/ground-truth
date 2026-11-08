@@ -1,0 +1,13 @@
+{
+  "id": "simpsons-paradox",
+  "term": "Simpson’s paradox",
+  "def": "A statistical effect in which an association seen in a whole population disappears or reverses within its subgroups, usually because of a confounding variable such as unequal group mix.",
+  "practice": "An aggregate eval score can favor a different model than every slice does when slice sizes differ; report slices with their sizes and compare like with like.",
+  "aliases": [],
+  "chapters": [
+    "eval-statistics",
+    "online-evaluation",
+    "responsible-ai",
+    "error-analysis"
+  ]
+}

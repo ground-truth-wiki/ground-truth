@@ -1,0 +1,20 @@
+{
+  "id": "glu",
+  "term": "Gated linear unit",
+  "def": "A layer that multiplies, elementwise, an activated linear projection of its input by a second linear projection; the original uses a sigmoid, GeGLU uses GELU and SwiGLU uses Swish.",
+  "practice": "Gated feed-forward layers are standard in modern LLMs; with three weight matrices instead of two, their intermediate size is usually cut to about two thirds to keep the parameter count.",
+  "aliases": [
+    "GLU",
+    "GeGLU",
+    "ReGLU",
+    "gated feed-forward"
+  ],
+  "chapters": [
+    "transformer-block",
+    "neural-networks",
+    "trainable-deep-networks",
+    "encoders-and-decoders",
+    "architecture-choices"
+  ],
+  "abbr": "GLU"
+}

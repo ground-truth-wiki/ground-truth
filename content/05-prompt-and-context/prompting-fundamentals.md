@@ -100,3 +100,12 @@ prompting-fundamentals
 - [Structured outputs](#structured-outputs)
 - [Model-specific notes](#model-specific-notes)
 - [Prompt optimization](#prompt-optimization)
+- [Model specs, constitutions and the instruction hierarchy](#model-specs-instruction-hierarchy)
+- [A field guide to prompting techniques](#prompting-techniques)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [In-context learning and example design](#in-context-learning)
+- [Prompt sensitivity and robust prompt testing](#prompt-robustness)

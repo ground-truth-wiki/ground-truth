@@ -1,0 +1,15 @@
+{
+  "id": "emotion-recognition-system",
+  "term": "Emotion recognition system",
+  "def": "Under the EU AI Act, an AI system that identifies or infers people’s emotions or intentions from their biometric data, such as facial expressions or voice.",
+  "practice": "Banned in workplaces and education except for medical or safety reasons (Article 5(1)(f)), high-risk elsewhere and subject to a duty to inform people exposed (Article 50(3)), so voice and video sentiment features need legal review.",
+  "aliases": [
+    "emotion recognition"
+  ],
+  "chapters": [
+    "voice-agents",
+    "speech-audio",
+    "governance-regulation",
+    "eu-ai-act"
+  ]
+}

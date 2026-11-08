@@ -1,0 +1,20 @@
+{
+  "id": "generative-ai",
+  "term": "Generative AI",
+  "def": "AI systems that produce new content, such as text, images, audio, video or code, by sampling from a learned model of their training data rather than only classifying inputs.",
+  "practice": "The everyday umbrella for LLM, image and speech generation; NIST’s Generative AI Profile (NIST AI 600-1) applies its AI Risk Management Framework to these systems.",
+  "aliases": [
+    "GenAI",
+    "generative artificial intelligence"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "ai-engineer-role",
+    "image-generation",
+    "observability-tracing",
+    "prompt-injection",
+    "eval-tooling",
+    "model-licenses",
+    "nlp-tasks"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "factuality",
+  "term": "Factuality",
+  "def": "Whether a model’s output is true about the world, judged against world knowledge or trusted sources; distinct from faithfulness, which asks whether output is supported by the given context.",
+  "practice": "An answer can be faithful to a wrong document, or correct without support in its context, so measure the two separately; SimpleQA is one short-form factuality benchmark.",
+  "aliases": [
+    "factual accuracy",
+    "factual correctness"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "metrics-graders",
+    "rag-evaluation",
+    "multi-agent",
+    "benchmark-literacy",
+    "llm-uncertainty",
+    "benchmark-catalog",
+    "multi-agent-patterns"
+  ]
+}

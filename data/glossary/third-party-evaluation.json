@@ -1,0 +1,15 @@
+{
+  "id": "third-party-evaluation",
+  "term": "Third-party evaluation",
+  "def": "Assessment of a model's capabilities or safeguards by an organization independent of its developer, such as a government institute or a nonprofit evaluator.",
+  "practice": "Usually done before release under an access agreement, with results summarized in system cards or the evaluator's own reports; its value depends on the access, time and independence granted.",
+  "aliases": [
+    "external evaluation",
+    "independent evaluation"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "safety-evals",
+    "open-problems"
+  ]
+}

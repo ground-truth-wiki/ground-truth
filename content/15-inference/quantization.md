@@ -97,3 +97,16 @@ quantization
 - [Hardware](#hardware)
 - [Edge and on-device AI](#edge-on-device)
 - [Fine-tuning in practice](#fine-tuning-practice)
+- [Eigenvectors, SVD and PCA](#eigenvectors-svd-pca)
+- [Automatic differentiation](#automatic-differentiation)
+- [Floating-point formats and numerical precision](#floating-point-formats)
+- [Mixed and low-precision training](#low-precision-training)
+- [Pruning and structured compression](#llm-pruning)
+- [How GPUs and accelerators run neural networks](#accelerator-architecture)
+- [GPU kernels and ML compilers](#gpu-kernels-compilers)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Quantization methods in depth](#quantization-methods)

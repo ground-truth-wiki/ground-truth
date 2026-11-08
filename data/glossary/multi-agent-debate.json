@@ -1,0 +1,16 @@
+{
+  "id": "multi-agent-debate",
+  "term": "Multi-agent debate",
+  "def": "A method in which several model instances answer, read and critique each other's answers over several rounds, and converge on a final answer, sometimes decided by a judge.",
+  "practice": "Reported to improve factuality and reasoning in research settings; it costs several calls per round, so compare it with self-consistency at equal cost.",
+  "aliases": [
+    "multiagent debate",
+    "MAD"
+  ],
+  "chapters": [
+    "multi-agent",
+    "reasoning-prompts",
+    "multi-agent-patterns"
+  ],
+  "abbr": "MAD"
+}

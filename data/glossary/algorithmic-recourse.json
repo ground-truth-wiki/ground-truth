@@ -1,0 +1,16 @@
+{
+  "id": "algorithmic-recourse",
+  "term": "Algorithmic recourse",
+  "def": "A person’s ability to change an automated decision about them by changing inputs they can act on, such as income, rather than fixed traits such as age (Ustun et al., 2019).",
+  "practice": "A design requirement for consequential decisions: report which actionable changes would flip a denial, and where none exist, offer human review as the way to contest it.",
+  "aliases": [
+    "recourse",
+    "actionable recourse"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "human-in-the-loop",
+    "governance-regulation",
+    "fairness-bias"
+  ]
+}

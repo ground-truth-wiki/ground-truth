@@ -1,0 +1,16 @@
+{
+  "id": "beir",
+  "term": "BEIR",
+  "def": "A zero-shot retrieval benchmark (Thakur et al., 2021) of 18 public datasets across varied tasks and domains, used to test how well retrievers generalize beyond their training data.",
+  "practice": "It showed BM25 to be a robust zero-shot baseline that many dense retrievers failed to beat; most of its datasets now also make up MTEB's retrieval tasks.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation",
+    "embeddings",
+    "hybrid-retrieval",
+    "ir-foundations",
+    "training-retrievers",
+    "learning-to-rank",
+    "retrieval-test-collections"
+  ]
+}

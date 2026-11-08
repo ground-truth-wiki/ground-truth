@@ -1,0 +1,21 @@
+{
+  "id": "distribution-shift",
+  "term": "Distribution shift",
+  "def": "A difference between the data a model was trained or evaluated on and the data it meets in use; common types are covariate shift (inputs change) and label shift (class frequencies change).",
+  "practice": "The main reason offline eval scores stop predicting production quality; monitor input, prediction and embedding distributions over time and refresh the eval set when they move.",
+  "aliases": [
+    "dataset shift",
+    "data drift",
+    "distribution drift"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "eval-datasets",
+    "data-governance",
+    "observability-tracing",
+    "classical-ml",
+    "anomaly-drift-detection",
+    "imitation-offline-rl",
+    "time-series-forecasting"
+  ]
+}

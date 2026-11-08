@@ -1,0 +1,15 @@
+{
+  "id": "streaming-multiprocessor",
+  "term": "Streaming multiprocessor",
+  "def": "The basic compute unit of an NVIDIA GPU, holding CUDA cores, tensor cores, warp schedulers, registers and on-chip shared memory; an A100 has 108 and an H100 SXM 132.",
+  "practice": "Thread blocks are scheduled onto SMs, so a launch with too few blocks to fill every SM leaves compute idle; AMD calls the equivalent unit a compute unit.",
+  "aliases": [
+    "SM"
+  ],
+  "chapters": [
+    "hardware",
+    "accelerator-architecture",
+    "gpu-kernels-compilers"
+  ],
+  "abbr": "SM"
+}

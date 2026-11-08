@@ -1,0 +1,23 @@
+{
+  "id": "queries-per-second",
+  "term": "Queries per second",
+  "def": "The rate at which requests arrive at or are completed by a service, counted per second.",
+  "practice": "Multiply by average latency, per Little's law, to get concurrency, and size fleets for peak QPS rather than the average.",
+  "aliases": [
+    "QPS",
+    "requests per second",
+    "RPS",
+    "request rate"
+  ],
+  "chapters": [
+    "back-of-envelope",
+    "latency-throughput",
+    "cost-capacity",
+    "high-dimensional-geometry",
+    "vector-index-internals",
+    "inference-benchmarking",
+    "rate-limits-overload",
+    "slos-error-budgets"
+  ],
+  "abbr": "QPS"
+}

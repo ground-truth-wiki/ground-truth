@@ -1,0 +1,20 @@
+{
+  "id": "mechanistic-interpretability",
+  "term": "Mechanistic interpretability",
+  "def": "Research that reverse-engineers a neural network’s internal computations into human-understandable features and circuits, rather than only relating its inputs to its outputs.",
+  "practice": "Tools such as sparse autoencoders, activation patching and attribution graphs find and audit safety-relevant features, but as of November 2026 they explain only part of any frontier model’s computation.",
+  "aliases": [
+    "mech interp",
+    "mechinterp"
+  ],
+  "chapters": [
+    "mech-interp",
+    "alignment-concepts",
+    "open-problems",
+    "high-dimensional-geometry",
+    "autoencoders-latent-spaces",
+    "model-interpretability",
+    "transformer-overview",
+    "sae-circuit-tracing"
+  ]
+}

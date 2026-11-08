@@ -1,0 +1,17 @@
+{
+  "id": "t-sne",
+  "term": "t-SNE",
+  "def": "t-distributed stochastic neighbor embedding: a nonlinear method that maps high-dimensional points to two or three dimensions while preserving local neighborhoods, by minimizing a KL divergence.",
+  "practice": "Good for eyeballing clusters in embeddings, not for measuring them: cluster sizes and gaps between clusters can be meaningless, and the picture changes with the perplexity setting and random seed.",
+  "aliases": [
+    "t-distributed stochastic neighbor embedding",
+    "tSNE"
+  ],
+  "chapters": [
+    "embeddings",
+    "representation-learning",
+    "eigenvectors-svd-pca",
+    "clustering-dimensionality-reduction",
+    "word-embeddings"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "rights-reservation",
+  "term": "Rights reservation",
+  "def": "A rightholder’s statement, for online content in machine-readable form, that excludes their works from the EU’s general text-and-data-mining exception under Article 4(3) of Directive 2019/790.",
+  "practice": "Expressed through robots.txt rules, metadata, terms of service or protocols such as TDMRep; crawlers gathering training data for the EU market need to detect and record these opt-outs.",
+  "aliases": [
+    "TDM opt-out",
+    "TDM reservation"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "data-governance",
+    "pretraining-data",
+    "data-licensing-consent",
+    "ai-copyright"
+  ]
+}

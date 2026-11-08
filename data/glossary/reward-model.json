@@ -1,0 +1,21 @@
+{
+  "id": "reward-model",
+  "term": "Reward model",
+  "def": "A model, usually a language model with a scalar output head, trained on human or AI preference comparisons to score how good a response is.",
+  "practice": "The optimization target in RLHF and the scorer in best-of-n; optimized against too hard, its errors get exploited and real quality falls.",
+  "aliases": [
+    "RM",
+    "preference model"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "post-training-overview",
+    "rlvr-reasoning",
+    "test-time-scaling",
+    "rl-primer",
+    "loss-functions",
+    "bandits",
+    "imitation-offline-rl"
+  ],
+  "abbr": "RM"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "loss-of-control",
+  "term": "Loss of control",
+  "def": "A risk scenario in which one or more AI systems come to operate outside anyone's effective control, with no clear path to regaining it.",
+  "practice": "The 2026 International AI Safety Report files it under malfunction risks, alongside reliability failures; it motivates research on corrigibility, monitoring and AI control.",
+  "aliases": [
+    "loss-of-control risk"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "open-problems",
+    "frontier-safety-frameworks",
+    "agi-timelines-risk"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mup",
+  "term": "Maximal update parametrization",
+  "def": "A rule for scaling initialization and per-layer learning rates with model width so that the best hyperparameters stay roughly constant as the model grows.",
+  "practice": "It enables μTransfer, tuning a small proxy and reusing the settings at full scale; its authors beat published GPT-3 6.7B results from a 40M-parameter proxy at about 7% of pretraining cost.",
+  "aliases": [
+    "μP",
+    "muP",
+    "maximal update parameterization"
+  ],
+  "chapters": [
+    "scaling-laws",
+    "calculus-optimization",
+    "training-hyperparameters",
+    "trainable-deep-networks",
+    "training-stability"
+  ],
+  "abbr": "μP"
+}

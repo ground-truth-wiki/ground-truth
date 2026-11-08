@@ -1,0 +1,19 @@
+{
+  "id": "retriever",
+  "term": "Retriever",
+  "def": "The component of a search or RAG system that takes a query and returns a ranked set of candidate documents or chunks from one or more indexes.",
+  "practice": "Measure it on its own with recall@k before blaming the generator; in agentic systems it is usually exposed to the model as a search tool.",
+  "aliases": [
+    "first-stage retriever"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "hybrid-retrieval",
+    "embeddings",
+    "reranking",
+    "query-understanding",
+    "chunking",
+    "function-calling-training",
+    "ir-foundations"
+  ]
+}

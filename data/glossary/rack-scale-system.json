@@ -1,0 +1,13 @@
+{
+  "id": "rack-scale-system",
+  "term": "Rack-scale system",
+  "def": "An accelerator system designed and sold as a whole rack whose chips share one scale-up network, such as NVIDIA's GB200 and GB300 NVL72 with 72 GPUs in one NVLink domain.",
+  "practice": "Large mixture-of-experts serving and prefill-decode disaggregation increasingly treat the rack, not the server, as the unit of deployment.",
+  "aliases": [
+    "rack-scale architecture"
+  ],
+  "chapters": [
+    "hardware",
+    "disaggregated-serving"
+  ]
+}

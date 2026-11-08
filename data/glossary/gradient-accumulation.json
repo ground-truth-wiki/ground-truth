@@ -1,0 +1,18 @@
+{
+  "id": "gradient-accumulation",
+  "term": "Gradient accumulation",
+  "def": "Summing gradients over several micro-batches before a single optimizer step, to train with an effective batch larger than fits in memory.",
+  "practice": "Effective batch equals per-device batch times accumulation steps times devices; normalize the loss over all tokens of the accumulated batch, not per micro-batch, or variable-length data skews it.",
+  "aliases": [
+    "gradient accumulation steps"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "distributed-training",
+    "calculus-optimization",
+    "loss-functions",
+    "training-neural-networks",
+    "pretraining-run",
+    "parallelism-strategies"
+  ]
+}

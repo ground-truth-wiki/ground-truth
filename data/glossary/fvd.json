@@ -1,0 +1,15 @@
+{
+  "id": "fvd",
+  "term": "Fréchet Video Distance",
+  "def": "A video-generation metric: the Fréchet distance between feature statistics of real and generated clips, using a pretrained action-recognition network (I3D) so motion counts; the video analogue of FID.",
+  "practice": "Common in video-generation papers; it folds quality, motion and diversity into one number, so multi-dimensional suites such as VBench, with 16 dimensions, complement it.",
+  "aliases": [
+    "FVD"
+  ],
+  "chapters": [
+    "video-world-models",
+    "video-generation",
+    "multimodal-evaluation"
+  ],
+  "abbr": "FVD"
+}

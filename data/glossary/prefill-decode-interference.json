@@ -1,0 +1,15 @@
+{
+  "id": "prefill-decode-interference",
+  "term": "Prefill-decode interference",
+  "def": "Slowdown of in-progress decode steps when long prefills are batched on the same GPU, raising inter-token latency for every running stream.",
+  "practice": "Chunked prefill limits it within one pool, and prefill-decode disaggregation removes it by running the two phases on separate GPUs.",
+  "aliases": [
+    "prefill interference",
+    "prefill-decoding interference"
+  ],
+  "chapters": [
+    "batching-scheduling",
+    "disaggregated-serving",
+    "latency-throughput"
+  ]
+}

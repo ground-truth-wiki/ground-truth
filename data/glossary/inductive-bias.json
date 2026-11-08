@@ -1,0 +1,13 @@
+{
+  "id": "inductive-bias",
+  "term": "Inductive bias",
+  "def": "The assumptions a model architecture or learning algorithm builds in about which solutions to prefer, beyond what the training data alone determines.",
+  "practice": "Convolutions build in locality and translation equivariance; vision transformers build in less and need more pretraining data to match them, a recurring trade of built-in priors against scale.",
+  "aliases": [],
+  "chapters": [
+    "neural-networks",
+    "vision-language-models",
+    "beyond-transformers",
+    "convolutional-networks"
+  ]
+}

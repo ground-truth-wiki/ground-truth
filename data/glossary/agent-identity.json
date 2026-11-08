@@ -1,0 +1,19 @@
+{
+  "id": "agent-identity",
+  "term": "Agent identity",
+  "def": "The verifiable identity of an AI agent as a software principal, distinct from the user it acts for, used to authenticate it, authorize its actions and attribute them in audit logs.",
+  "practice": "An active standards area as of November 2026: a NIST NCCoE concept paper, an OpenID Foundation whitepaper, IETF drafts and a planned MCP Agent Identity Working Group.",
+  "aliases": [
+    "AI agent identity"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "secure-agent-design",
+    "enterprise-readiness",
+    "mcp-authorization",
+    "protocol-building-blocks",
+    "a2a-in-depth",
+    "agent-identity-delegation",
+    "agent-facing-web"
+  ]
+}

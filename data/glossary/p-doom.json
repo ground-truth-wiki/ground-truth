@@ -1,0 +1,13 @@
+{
+  "id": "p-doom",
+  "term": "p(doom)",
+  "def": "Informal shorthand for someone's subjective probability that AI causes an existential catastrophe, such as human extinction or permanent loss of human control.",
+  "practice": "Stated values range from near zero to near certainty; in a 2023 survey of AI researchers the mean answer was 14.4% and the median 5%, so treat any figure as opinion, not measurement.",
+  "aliases": [
+    "probability of doom"
+  ],
+  "chapters": [
+    "open-problems",
+    "alignment-concepts"
+  ]
+}

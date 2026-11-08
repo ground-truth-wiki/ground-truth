@@ -1,0 +1,20 @@
+{
+  "id": "natural-language-processing",
+  "term": "Natural language processing",
+  "def": "The field that builds systems to analyze, understand and generate human language, spanning understanding tasks such as classification and extraction and generation tasks such as summarization and translation.",
+  "practice": "Pre-LLM NLP supplied many task names, datasets and metrics that LLM evals still use, such as named-entity recognition, natural language inference, BLEU and ROUGE.",
+  "aliases": [
+    "NLP"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "whos-who",
+    "representation-learning",
+    "tokenization",
+    "metrics-graders",
+    "word-embeddings",
+    "encoders-and-decoders",
+    "peft-methods"
+  ],
+  "abbr": "NLP"
+}

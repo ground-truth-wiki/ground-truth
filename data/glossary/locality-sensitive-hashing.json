@@ -1,0 +1,17 @@
+{
+  "id": "locality-sensitive-hashing",
+  "term": "Locality-sensitive hashing",
+  "def": "A family of hash functions under which similar items collide with high probability, so candidate near neighbors come from bucket lookups instead of comparing every pair.",
+  "practice": "With MinHash, signatures split into bands and items sharing any band become candidates; FineWeb used 112 hashes in 14 buckets of 8 to catch documents at least 75% similar.",
+  "aliases": [
+    "LSH",
+    "MinHash LSH"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "vector-search",
+    "vector-index-internals",
+    "deduplication-decontamination"
+  ],
+  "abbr": "LSH"
+}

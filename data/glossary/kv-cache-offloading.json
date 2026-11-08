@@ -1,0 +1,15 @@
+{
+  "id": "kv-cache-offloading",
+  "term": "KV-cache offloading",
+  "def": "Moving KV-cache blocks from GPU memory to CPU memory, local disk or remote storage, and loading them back when a request needs them.",
+  "practice": "Trades transfer time for recomputation, raising prefix-cache hit rates across requests and instances; LMCache provides it for vLLM and other engines, and SGLang has HiCache.",
+  "aliases": [
+    "KV offloading",
+    "tiered KV cache"
+  ],
+  "chapters": [
+    "kv-cache",
+    "disaggregated-serving",
+    "prompt-caching"
+  ]
+}

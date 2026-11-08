@@ -1,0 +1,15 @@
+{
+  "id": "realtime-api",
+  "term": "Realtime API",
+  "def": "A streaming model API that holds a stateful, bidirectional connection over WebRTC or WebSockets for low-latency audio input and spoken output, with built-in turn detection, interruptions and tool calls.",
+  "practice": "OpenAI’s Realtime API and Google’s Gemini Live API are the main examples as of November 2026; they power speech-to-speech agents without separate recognition and synthesis services to orchestrate.",
+  "aliases": [
+    "Live API"
+  ],
+  "chapters": [
+    "voice-agents",
+    "streaming",
+    "speech-audio",
+    "audio-codecs-tokens"
+  ]
+}

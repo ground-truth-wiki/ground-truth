@@ -1,0 +1,19 @@
+{
+  "id": "hf-transformers",
+  "term": "Transformers library",
+  "def": "Hugging Face's open-source Python library of model definitions for text, vision, audio and multimodal models, with pretrained-weight loading, Auto classes, pipelines, generation and training utilities.",
+  "practice": "Version 5, which followed a December 2025 release candidate, dropped TensorFlow and Flax to support only PyTorch and aims to interoperate with engines such as vLLM, SGLang, llama.cpp and MLX (as of November 2026).",
+  "aliases": [
+    "Hugging Face Transformers"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "model-specific-notes",
+    "serving-engines",
+    "supply-chain-security",
+    "dl-frameworks",
+    "transformer-overview",
+    "tokenizers-in-practice",
+    "rope-scaling"
+  ]
+}

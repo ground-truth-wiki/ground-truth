@@ -1,0 +1,41 @@
+[
+  {
+    "id": "transformer-overview-1",
+    "chapter": "transformer-overview",
+    "q": "A decoder-only model is trained on one 1,000-token sequence, with the labels set to the inputs shifted by one. How many next-token predictions enter the loss, and how many forward passes produce them?",
+    "options": [
+      "999 predictions, all from one forward pass",
+      "999 predictions, from 999 forward passes, one per position",
+      "1 prediction, for the token after the last one, from one forward pass",
+      "1,000 predictions from one forward pass, including one for the token after the end"
+    ],
+    "answer": 0,
+    "explain": "Each of the first 999 positions is scored on the real token that follows it, and the causal mask keeps every position from seeing its own answer, so all 999 predictions come out of one parallel pass. One pass per position is how generation works, but in training every next token is already known, so there is nothing to wait for. The last position has no label inside the sequence, so it adds no prediction to the loss."
+  },
+  {
+    "id": "transformer-overview-2",
+    "chapter": "transformer-overview",
+    "q": "A request sends a 2,000-token prompt and gets a 200-token answer. Profiling shows that producing the answer takes much longer than reading the prompt. What is the main reason?",
+    "options": [
+      "Output tokens pass through more blocks than prompt tokens",
+      "The prompt is processed in one parallel prefill pass, while each output token needs its own decode step that must wait for the previous token",
+      "Softmax over the vocabulary is computed only for output tokens, and it dominates the cost",
+      "The tokenizer has to re-tokenize the whole text after every output token"
+    ],
+    "answer": 1,
+    "explain": "Prefill runs all prompt tokens through the stack at once, but decode cannot start the next token until the previous one has been chosen, so 200 output tokens mean about 200 sequential passes. The tempting answer about blocks is wrong: every token, prompt or output, goes through the same N blocks. The answer is slow because its steps are sequential, not because each token does more work."
+  },
+  {
+    "id": "transformer-overview-3",
+    "chapter": "transformer-overview",
+    "q": "A team needs vectors for 10 million support tickets to power search, and separately needs a model that drafts replies. Which choice follows from how the three families are built?",
+    "options": [
+      "A decoder-only model for both, because a causal mask gives each token more context than a bidirectional one",
+      "An encoder-only model for both, because seeing left and right context also lets it write replies left to right",
+      "An encoder-only model for the ticket vectors, because every token sees the whole ticket; a decoder-only model for the replies, because it is trained to continue text one token at a time",
+      "An encoder-decoder model for the ticket vectors, because cross-attention is what produces one vector per token"
+    ],
+    "answer": 2,
+    "explain": "An encoder sees the whole input in both directions and outputs a vector per token, which is what search and classification need, cheaply. A decoder is trained on next-token prediction under a causal mask, which is what writing text needs. The first option gets the masks backwards: a causal mask shows each token less context, not more. Encoder-only models are not trained to generate left to right, and cross-attention only connects a decoder to an encoder."
+  }
+]

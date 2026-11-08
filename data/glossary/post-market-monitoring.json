@@ -1,0 +1,15 @@
+{
+  "id": "post-market-monitoring",
+  "term": "Post-market monitoring",
+  "def": "Under the EU AI Act, a provider's systematic collection and review of experience from its AI systems in use, to identify needed corrective or preventive actions, documented in a post-market monitoring plan.",
+  "practice": "Mandatory for high-risk systems, with the plan part of the technical documentation; in engineering terms it is production monitoring, online evaluation and incident intake, kept as evidence over the system's lifetime.",
+  "aliases": [
+    "post-market monitoring system",
+    "post-market monitoring plan"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "online-evaluation",
+    "incidents-on-call"
+  ]
+}

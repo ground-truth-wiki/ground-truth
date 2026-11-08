@@ -1,0 +1,15 @@
+{
+  "id": "fad",
+  "term": "Fréchet Audio Distance",
+  "def": "The Fréchet distance between embedding statistics of a reference audio set and generated or processed audio, computed with a pretrained audio classifier; the audio analogue of FID.",
+  "practice": "Widely used for music and sound generation; it needs a reference set but no paired reference per clip, and scores depend on the embedding model, so compare only like with like.",
+  "aliases": [
+    "FAD"
+  ],
+  "chapters": [
+    "speech-audio",
+    "music-generation",
+    "multimodal-evaluation"
+  ],
+  "abbr": "FAD"
+}

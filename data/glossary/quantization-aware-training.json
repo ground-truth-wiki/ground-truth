@@ -1,0 +1,15 @@
+{
+  "id": "quantization-aware-training",
+  "term": "Quantization-aware training",
+  "def": "Training or fine-tuning with simulated quantization in the forward pass, so the model learns to tolerate rounding error, while gradients still update full-precision weights.",
+  "practice": "Usually gives the best accuracy at very low bit widths, at the cost of a training run; BitNet models are trained this way with 1.58-bit weights.",
+  "aliases": [
+    "QAT"
+  ],
+  "chapters": [
+    "quantization",
+    "fine-tuning-practice",
+    "quantization-methods"
+  ],
+  "abbr": "QAT"
+}

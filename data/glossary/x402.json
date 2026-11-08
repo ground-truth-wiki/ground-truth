@@ -1,0 +1,13 @@
+{
+  "id": "x402",
+  "term": "x402",
+  "def": "An open payment protocol built on HTTP 402 Payment Required: the server returns payment requirements, the client retries with a signed payment, and a facilitator verifies and settles it.",
+  "practice": "Designed for per-request payments by agents and APIs, mostly in stablecoins such as USDC; Coinbase contributed it to the x402 Foundation, launched at the Linux Foundation in April 2026.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup",
+    "protocol-building-blocks",
+    "agent-facing-web",
+    "agentic-commerce-protocols"
+  ]
+}

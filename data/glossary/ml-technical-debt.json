@@ -1,0 +1,16 @@
+{
+  "id": "ml-technical-debt",
+  "term": "ML technical debt",
+  "def": "The long-term maintenance cost ML systems accrue beyond ordinary code debt, through entanglement, hidden feedback loops, undeclared consumers, unstable data dependencies, configuration sprawl, glue code and pipeline jungles.",
+  "practice": "Named in Sculley et al.'s 'Hidden Technical Debt in Machine Learning Systems' (NIPS 2015); LLM systems repeat it as tangled prompts, undeclared consumers of model output and unversioned eval data.",
+  "aliases": [
+    "hidden technical debt",
+    "machine learning technical debt"
+  ],
+  "chapters": [
+    "anti-patterns",
+    "reference-architecture",
+    "prompt-config-management",
+    "mlops-foundations"
+  ]
+}

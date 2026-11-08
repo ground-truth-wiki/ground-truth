@@ -93,3 +93,12 @@ orchestration-frameworks
 - [Multi-agent systems](#multi-agent)
 - [Long-running and durable agents](#long-running-agents)
 - [Selection guide and matrix](#framework-selection)
+- [Multi-agent orchestration patterns](#multi-agent-patterns)
+- [Agent SDK primitives: runners, tools, guardrails, sessions and tracing](#agent-sdk-primitives)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Graph workflow runtimes: state, super-steps and checkpoints](#graph-workflow-runtimes)
+- [AI frameworks beyond Python: TypeScript, Java, .NET and Go](#frameworks-beyond-python)

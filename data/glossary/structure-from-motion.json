@@ -1,0 +1,14 @@
+{
+  "id": "structure-from-motion",
+  "term": "Structure from motion",
+  "def": "Recovering camera poses and a sparse 3D point cloud from overlapping photos by matching features across images.",
+  "practice": "The usual first step of NeRF and Gaussian-splatting pipelines, commonly run with COLMAP; Gaussian splatting initializes its Gaussians from the sparse points.",
+  "aliases": [
+    "SfM"
+  ],
+  "chapters": [
+    "video-world-models",
+    "three-d-generation"
+  ],
+  "abbr": "SfM"
+}

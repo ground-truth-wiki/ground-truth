@@ -1,0 +1,19 @@
+{
+  "id": "task-oriented-dialogue",
+  "term": "Task-oriented dialogue",
+  "def": "Conversational systems built to complete a specific task with the user, such as a booking, traditionally a pipeline of language understanding, dialogue state tracking, dialogue policy and response generation.",
+  "practice": "The research lineage behind support and voice agents; datasets such as MultiWOZ shaped how state tracking and task success are measured, and τ-bench carries the idea to LLM agents with policies and simulated users.",
+  "aliases": [
+    "TOD",
+    "task-oriented dialog",
+    "goal-oriented dialogue"
+  ],
+  "chapters": [
+    "support-agents",
+    "voice-agents",
+    "evaluating-agents",
+    "voice-telephony",
+    "dialogue-systems"
+  ],
+  "abbr": "TOD"
+}

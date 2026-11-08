@@ -1,0 +1,22 @@
+{
+  "id": "ai-accelerator",
+  "term": "AI accelerator",
+  "def": "A processor specialized for neural-network math, trading generality for throughput and efficiency through massive parallelism, low-precision arithmetic and high memory bandwidth.",
+  "practice": "GPUs, TPUs, Trainium and other ASICs, and on-device NPUs all count; a 2020 CSET report estimates such chips are tens to thousands of times faster and more efficient than CPUs for AI work.",
+  "aliases": [
+    "accelerator",
+    "accelerators",
+    "AI chip",
+    "AI chips"
+  ],
+  "chapters": [
+    "hardware",
+    "ai-engineering-stack",
+    "distributed-training",
+    "inference-fundamentals",
+    "quantization",
+    "edge-on-device",
+    "dl-frameworks",
+    "quantization-methods"
+  ]
+}

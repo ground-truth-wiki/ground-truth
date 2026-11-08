@@ -1,0 +1,16 @@
+{
+  "id": "append-only-context",
+  "term": "Append-only context",
+  "def": "Building each request by appending new messages to an unchanged earlier history, never editing, reordering or re-rendering earlier turns, the system prompt or the tool list.",
+  "practice": "It keeps prompt-cache hits high in agent loops; summarizing, truncating or compacting history changes the prefix and resets reuse, so do it rarely and deliberately.",
+  "aliases": [
+    "append-only history"
+  ],
+  "chapters": [
+    "context-engineering",
+    "prompt-caching",
+    "agent-loop",
+    "build-your-own-harness",
+    "context-compaction"
+  ]
+}

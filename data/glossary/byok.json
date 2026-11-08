@@ -1,0 +1,15 @@
+{
+  "id": "byok",
+  "term": "Bring your own key",
+  "def": "Using your own provider account credentials through a third-party gateway or platform, so requests are billed and rate-limited on your provider account rather than the platform's shared capacity.",
+  "practice": "OpenRouter and Vercel AI Gateway offer it and can fall back to their own credentials when your key fails; check that setting and whether spend budgets cover BYOK traffic.",
+  "aliases": [
+    "BYOK"
+  ],
+  "chapters": [
+    "gateways-routers",
+    "cost-capacity",
+    "gateway-routing-in-depth"
+  ],
+  "abbr": "BYOK"
+}

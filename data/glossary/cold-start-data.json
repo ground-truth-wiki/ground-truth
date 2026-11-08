@@ -1,0 +1,15 @@
+{
+  "id": "cold-start-data",
+  "term": "Cold-start data",
+  "def": "A small curated set of long chain-of-thought examples used for supervised fine-tuning before large-scale reasoning RL, to stabilize early training and keep reasoning readable.",
+  "practice": "DeepSeek-R1's main change from R1-Zero: thousands of examples gathered by prompting and from readable R1-Zero outputs, then refined by human annotators.",
+  "aliases": [
+    "cold-start SFT"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "post-training-overview",
+    "reasoning-models",
+    "reasoning-training-recipes"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rdf",
+  "term": "Resource Description Framework",
+  "def": "The W3C graph data model in which every fact is a subject-predicate-object triple built from IRIs, literals and blank nodes.",
+  "practice": "The base of the semantic-web stack, stored in triplestores and queried with SPARQL, as in Wikidata and many enterprise knowledge graphs; the main alternative to the property-graph model.",
+  "aliases": [
+    "RDF"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "knowledge-graphs"
+  ],
+  "abbr": "RDF"
+}

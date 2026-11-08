@@ -87,3 +87,5 @@ vector-databases
 - [Production RAG](#production-rag)
 - [Decision guides](#decision-guides)
 - [Embeddings](#embeddings)
+- [Information retrieval foundations](#ir-foundations)
+- [Vector index internals](#vector-index-internals)

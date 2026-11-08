@@ -1,0 +1,16 @@
+{
+  "id": "ivr",
+  "term": "Interactive voice response",
+  "def": "An automated telephone system that answers calls and steers callers through menus using keypad tones (DTMF) or speech recognition.",
+  "practice": "The incumbent that voice agents replace or sit behind; conversational IVR swaps fixed menus for natural-language understanding of what the caller wants.",
+  "aliases": [
+    "IVR",
+    "phone tree"
+  ],
+  "chapters": [
+    "voice-agents",
+    "support-agents",
+    "dialogue-systems"
+  ],
+  "abbr": "IVR"
+}

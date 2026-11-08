@@ -1,0 +1,23 @@
+{
+  "id": "instruction-file",
+  "term": "Instruction file",
+  "def": "A plain-text file, usually Markdown, that a coding harness loads into the agent's context to give it standing project, team or personal instructions.",
+  "practice": "AGENTS.md, CLAUDE.md, GEMINI.md, .cursor/rules and .github/copilot-instructions.md are examples; keep them short and specific, because they load every session and guide the model rather than enforce anything.",
+  "aliases": [
+    "context file",
+    "rules file",
+    "project instructions",
+    "copilot-instructions.md",
+    "GEMINI.md"
+  ],
+  "chapters": [
+    "working-with-coding-agents",
+    "coding-harness-landscape",
+    "harness-anatomy",
+    "claude-code",
+    "coding-agents",
+    "agent-memory",
+    "agent-instruction-files",
+    "cloud-and-ci-coding-agents"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "routing-pattern",
+  "term": "Routing pattern",
+  "def": "A workflow pattern in which a classifier, model call or rule sends each input to one of several specialized prompts, tools, models or agents.",
+  "practice": "Evaluate the router on its own and give it a safe default route; routing by difficulty to cheaper models is the special case called model routing.",
+  "aliases": [
+    "router pattern",
+    "intent routing"
+  ],
+  "chapters": [
+    "workflow-patterns",
+    "prompt-chaining",
+    "support-agents",
+    "gateways-routers"
+  ]
+}

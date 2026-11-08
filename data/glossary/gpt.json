@@ -1,0 +1,19 @@
+{
+  "id": "gpt",
+  "term": "GPT",
+  "def": "OpenAI's family of generative pre-trained transformer models, from GPT-1 (2018) to the current generation, offered in tiers from flagship to fast and inexpensive.",
+  "practice": "As of November 2026 the API flagships are GPT-6 Astra, GPT-6.1 Sol, GPT-6.1 Terra and GPT-6 Luna, roughly from most capable to most efficient; open-weight models ship separately as gpt-oss.",
+  "aliases": [
+    "GPT models",
+    "generative pre-trained transformer"
+  ],
+  "chapters": [
+    "frontier-families",
+    "model-specific-notes",
+    "the-canon",
+    "language-modeling",
+    "probes-and-steering",
+    "fine-tuning-services",
+    "learning-resources"
+  ]
+}

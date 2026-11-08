@@ -1,0 +1,13 @@
+{
+  "id": "mt-bench",
+  "term": "MT-Bench",
+  "def": "A set of 80 multi-turn questions in eight categories, graded by a strong LLM judge, introduced in the 2023 LLM-as-a-judge study alongside Chatbot Arena.",
+  "practice": "An early, cheap proxy for human preference, now largely saturated; harder judge-graded sets such as Arena-Hard replaced it.",
+  "aliases": [],
+  "chapters": [
+    "llm-as-judge",
+    "benchmark-literacy",
+    "arenas-leaderboards",
+    "judge-models-meta-evaluation"
+  ]
+}

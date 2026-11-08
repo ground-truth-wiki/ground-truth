@@ -97,3 +97,4 @@ protocol-governance
 - [Agent2Agent (A2A)](#a2a)
 - [The rest of the alphabet soup](#protocol-soup)
 - [Watchlist](#watchlist)
+- [A2A 1.0 in depth: bindings, extensions and signed agent cards](#a2a-in-depth)

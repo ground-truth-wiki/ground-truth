@@ -1,0 +1,17 @@
+{
+  "id": "hidden-state",
+  "term": "Hidden state",
+  "def": "The internal vector a network carries forward: in an RNN the running summary of the sequence so far, in a transformer the per-token activations passed from layer to layer.",
+  "practice": "Transformer libraries can return every layer's hidden states, which feed embeddings, probes and steering experiments; the last layer's state is projected to logits.",
+  "aliases": [],
+  "chapters": [
+    "transformer-block",
+    "beyond-transformers",
+    "mech-interp",
+    "neural-networks",
+    "eigenvectors-svd-pca",
+    "recurrent-networks",
+    "planning-mcts",
+    "language-modeling"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "whisper",
+  "term": "Whisper",
+  "def": "OpenAI's open-weight encoder-decoder speech model, originally trained on 680,000 hours of weakly supervised multilingual audio, for transcription, translation into English and language identification.",
+  "practice": "A default open ASR baseline: it reads 30-second log-mel windows and comes in sizes from 39M to 1550M parameters, plus an 809M turbo variant that is not trained for translation.",
+  "aliases": [
+    "Whisper large-v3",
+    "Whisper turbo"
+  ],
+  "chapters": [
+    "speech-audio",
+    "specialist-models",
+    "multimodal-rag",
+    "voice-agents",
+    "speech-recognition",
+    "multimodal-evaluation",
+    "voice-turn-taking"
+  ]
+}

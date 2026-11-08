@@ -1,0 +1,11 @@
+{
+  "id": "intended-purpose",
+  "term": "Intended purpose",
+  "def": "The use for which a provider intends an AI system, including its context and conditions of use, as stated in its instructions, marketing material and technical documentation; an EU AI Act term.",
+  "practice": "It drives risk classification: a deployer who repurposes a system so that it becomes high-risk, for example by using it to screen job applicants, becomes its provider.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "eu-ai-act"
+  ]
+}

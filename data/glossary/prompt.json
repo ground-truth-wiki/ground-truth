@@ -1,0 +1,17 @@
+{
+  "id": "prompt",
+  "term": "Prompt",
+  "def": "The input given to a language model to condition its output, such as instructions, context, examples and the question; for chat models, the whole message history sent with a request.",
+  "practice": "Treat prompts as versioned configuration tested by evals, since many behavior changes in an LLM feature come from prompt edits rather than model changes.",
+  "aliases": [],
+  "chapters": [
+    "prompting-fundamentals",
+    "context-engineering",
+    "prompt-config-management",
+    "prompt-optimization",
+    "loss-functions",
+    "language-modeling",
+    "transformer-overview",
+    "tokenizers-in-practice"
+  ]
+}

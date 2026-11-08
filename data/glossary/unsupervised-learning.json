@@ -1,0 +1,14 @@
+{
+  "id": "unsupervised-learning",
+  "term": "Unsupervised learning",
+  "def": "Finding structure in data without target labels, such as clusters, low-dimensional representations or outliers.",
+  "practice": "Used for clustering embeddings, reducing dimensions for plots and detecting anomalies; with no labels, results need human review or a downstream task to validate them.",
+  "aliases": [
+    "unsupervised machine learning"
+  ],
+  "chapters": [
+    "classical-ml",
+    "representation-learning",
+    "embeddings"
+  ]
+}

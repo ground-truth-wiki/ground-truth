@@ -1,0 +1,12 @@
+{
+  "id": "xgrammar",
+  "term": "XGrammar",
+  "def": "An open-source structured-generation engine that compiles JSON Schemas and context-free grammars into byte-level pushdown automata and precomputes masks for context-independent tokens, keeping constrained decoding fast.",
+  "practice": "Its README calls it the default structured-generation backend of most inference engines, including vLLM, SGLang, TensorRT-LLM and MLC-LLM (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs",
+    "serving-engines",
+    "structured-generation-engines"
+  ]
+}

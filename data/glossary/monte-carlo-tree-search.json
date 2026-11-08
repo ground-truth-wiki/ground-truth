@@ -1,0 +1,20 @@
+{
+  "id": "monte-carlo-tree-search",
+  "term": "Monte Carlo tree search",
+  "def": "A search algorithm that grows a tree of possible actions by repeatedly selecting a promising path, expanding it, estimating its value by simulation or a learned evaluator, and backing that value up the tree.",
+  "practice": "The search behind AlphaGo and AlphaZero, and inside LLM methods such as LATS and RAP; worth its many model calls only with a trustworthy value signal.",
+  "aliases": [
+    "MCTS"
+  ],
+  "chapters": [
+    "planning-reasoning",
+    "test-time-scaling",
+    "rl-primer",
+    "value-based-rl",
+    "planning-mcts",
+    "world-models",
+    "llm-planning-debate",
+    "test-time-search"
+  ],
+  "abbr": "MCTS"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "executorch",
+  "term": "ExecuTorch",
+  "def": "PyTorch's open-source runtime for deploying PyTorch models on mobile, embedded and desktop devices without converting them to another format, with backends for CPUs, GPUs and NPUs.",
+  "practice": "Reached 1.0 in October 2025 with production-ready backends including XNNPACK, Core ML, Qualcomm AI Engine, Arm Ethos-U and Vulkan; Meta uses it in its apps and wearables.",
+  "aliases": [],
+  "chapters": [
+    "edge-on-device"
+  ]
+}

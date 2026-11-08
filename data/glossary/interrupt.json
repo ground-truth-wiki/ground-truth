@@ -1,0 +1,19 @@
+{
+  "id": "interrupt",
+  "term": "Interrupt",
+  "def": "A deliberate pause in an agent run, triggered by the agent, a policy or a person, that saves the run's state and waits for human input before resuming from the same point.",
+  "practice": "Needs a checkpointer and durable state, as in LangGraph's interrupt() or the OpenAI Agents SDK's interruptions; code before the pause may rerun on resume, so keep its side effects idempotent.",
+  "aliases": [
+    "interruptibility"
+  ],
+  "chapters": [
+    "human-in-the-loop",
+    "agent-ux",
+    "long-running-agents",
+    "orchestration-frameworks",
+    "harness-anatomy",
+    "agent-loop",
+    "durable-agent-execution",
+    "autonomy-and-oversight"
+  ]
+}

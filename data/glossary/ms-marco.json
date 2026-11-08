@@ -1,0 +1,15 @@
+{
+  "id": "ms-marco",
+  "term": "MS MARCO",
+  "def": "A 2016 Microsoft dataset of about one million anonymized Bing questions and 8.8 million web passages, whose passage-ranking task became a standard training set for neural retrievers and rerankers.",
+  "practice": "Many open embedding models and cross-encoders are trained on it, hence names like ms-marco-MiniLM; its web-question style can differ from enterprise or domain queries.",
+  "aliases": [
+    "MSMARCO"
+  ],
+  "chapters": [
+    "embeddings",
+    "reranking",
+    "rag-evaluation",
+    "learning-to-rank"
+  ]
+}

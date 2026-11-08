@@ -1,0 +1,14 @@
+{
+  "id": "mlx",
+  "term": "MLX",
+  "def": "Apple's open-source array framework for machine learning on Apple silicon, with a NumPy-like Python API, lazy evaluation and arrays that live in memory shared by CPU and GPU.",
+  "practice": "Runs and fine-tunes quantized open models locally on Macs, usually through the mlx-lm package, and is the main alternative to llama.cpp on Apple hardware.",
+  "aliases": [],
+  "chapters": [
+    "small-local-models",
+    "edge-on-device",
+    "serving-engines",
+    "hugging-face-ecosystem",
+    "local-inference"
+  ]
+}

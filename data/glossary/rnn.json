@@ -1,0 +1,21 @@
+{
+  "id": "rnn",
+  "term": "Recurrent neural network",
+  "def": "A network that processes a sequence one step at a time, updating a hidden state from the previous state and the current input with the same weights at every step.",
+  "practice": "Transformers replaced it for language because its steps cannot run in parallel during training; state-space and linear-attention models revive the recurrent form for constant-memory inference.",
+  "aliases": [
+    "RNN",
+    "recurrent network"
+  ],
+  "chapters": [
+    "neural-networks",
+    "beyond-transformers",
+    "long-context",
+    "new-architectures",
+    "recurrent-networks",
+    "language-modeling",
+    "linear-attention-hybrids",
+    "speech-recognition"
+  ],
+  "abbr": "RNN"
+}

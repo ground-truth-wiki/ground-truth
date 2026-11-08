@@ -1,0 +1,19 @@
+{
+  "id": "reinforce",
+  "term": "REINFORCE",
+  "def": "The basic Monte Carlo policy-gradient estimator, which scales the gradient of each sampled action's log-probability by the return it earned, usually minus a baseline.",
+  "practice": "Simpler than PPO, with no value model or clipping; Ahmadian et al. (2024) found REINFORCE-style methods such as RLOO outperformed PPO for RLHF in their experiments.",
+  "aliases": [
+    "Monte Carlo policy gradient"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization",
+    "automatic-differentiation",
+    "policy-gradient-methods",
+    "inference-nondeterminism",
+    "reward-modeling",
+    "dpo-and-relatives"
+  ]
+}

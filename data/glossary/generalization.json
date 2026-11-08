@@ -1,0 +1,17 @@
+{
+  "id": "generalization",
+  "term": "Generalization",
+  "def": "A model’s ability to perform well on new data it was not trained on; the difference between training and test performance is the generalization gap.",
+  "practice": "The question behind every eval: does the system work on the inputs users will bring, not just on the cases it was trained or tuned on?",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "calculus-optimization",
+    "eval-datasets",
+    "positional-encoding",
+    "alignment-concepts",
+    "trees-and-ensembles",
+    "autoencoders-latent-spaces",
+    "training-neural-networks"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "inverse-document-frequency",
+  "term": "Inverse document frequency",
+  "def": "A term weight equal to the logarithm of the number of documents in a collection divided by the number that contain the term: high for rare terms, near zero for common ones.",
+  "practice": "The rare-words-count-more signal inside TF-IDF and BM25, which is why an exact product code or error string makes such a strong keyword match.",
+  "aliases": [
+    "IDF"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "ir-foundations",
+    "text-generation-metrics"
+  ],
+  "abbr": "IDF"
+}

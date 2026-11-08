@@ -1,0 +1,16 @@
+{
+  "id": "reasoning-summary",
+  "term": "Reasoning summary",
+  "def": "A readable summary of a model's hidden chain of thought that some APIs return, usually on request, instead of the raw reasoning.",
+  "practice": "You pay for the full thinking tokens, not the summary; use it for UX and debugging, not as a faithful trace of what the model did.",
+  "aliases": [
+    "summarized thinking",
+    "thinking summary",
+    "thought summaries"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "model-apis",
+    "agent-ux"
+  ]
+}

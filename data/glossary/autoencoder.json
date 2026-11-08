@@ -1,0 +1,17 @@
+{
+  "id": "autoencoder",
+  "term": "Autoencoder",
+  "def": "A network trained to reconstruct its input through a narrower or otherwise constrained intermediate representation, so its encoder learns a compact code.",
+  "practice": "Autoencoders supply the latent space of latent diffusion, the discrete tokens of image and audio codecs and, in sparse form, the features of interpretability research.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "mech-interp",
+    "image-generation",
+    "speech-audio",
+    "anomaly-drift-detection",
+    "convolutional-networks",
+    "autoencoders-latent-spaces",
+    "deep-generative-models"
+  ]
+}

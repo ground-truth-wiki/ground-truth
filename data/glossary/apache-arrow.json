@@ -1,0 +1,13 @@
+{
+  "id": "apache-arrow",
+  "term": "Apache Arrow",
+  "def": "A language-agnostic columnar in-memory data format that allows zero-copy reads and copy-free hand-offs between tools such as pandas, NumPy and PyTorch.",
+  "practice": "Hugging Face Datasets keeps datasets as memory-mapped Arrow files on disk, so loading the full English Wikipedia uses about 50 MB of RAM.",
+  "aliases": [],
+  "chapters": [
+    "pretraining-data",
+    "fine-tuning-practice",
+    "hugging-face-ecosystem",
+    "data-formats"
+  ]
+}

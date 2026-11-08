@@ -1,0 +1,14 @@
+{
+  "id": "open-responses",
+  "term": "Open Responses",
+  "def": "An open specification based on the OpenAI Responses API that defines a shared schema of items, streaming events and tool calls, so one client can call many model providers.",
+  "practice": "Relevant when choosing a provider-neutral API shape for agents and gateways; OpenAI contributed it to the Agentic AI Foundation in October 2026, with vLLM, Ollama and others listed as participants.",
+  "aliases": [
+    "OpenResponses"
+  ],
+  "chapters": [
+    "model-apis",
+    "provider-agent-sdks",
+    "gateways-routers"
+  ]
+}

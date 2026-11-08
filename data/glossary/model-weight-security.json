@@ -1,0 +1,16 @@
+{
+  "id": "model-weight-security",
+  "term": "Model weight security",
+  "def": "Protecting a model's trained parameters from theft or leakage, usually graded by the strength of attacker the controls can withstand.",
+  "practice": "RAND's security levels SL1 to SL5 are the common yardstick; Anthropic's ASL-3 standard, for example, adds egress bandwidth controls to detect weight exfiltration.",
+  "aliases": [
+    "weight security"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "supply-chain-security",
+    "privacy-preserving-ml",
+    "compute-governance",
+    "adversarial-ml"
+  ]
+}

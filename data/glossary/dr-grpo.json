@@ -1,0 +1,13 @@
+{
+  "id": "dr-grpo",
+  "term": "Dr. GRPO",
+  "def": "A GRPO variant, 'GRPO done right', that removes per-response length normalization and per-group standard-deviation scaling, which bias training toward long wrong answers and toward very easy or hard questions.",
+  "practice": "Improves token efficiency at similar accuracy; TRL offers it as loss_type 'dr_grpo', which divides by a constant such as the maximum completion length.",
+  "aliases": [
+    "GRPO done right"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "llm-policy-gradients"
+  ]
+}

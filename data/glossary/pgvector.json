@@ -1,0 +1,14 @@
+{
+  "id": "pgvector",
+  "term": "pgvector",
+  "def": "An open-source Postgres extension that adds vector types (vector, halfvec, bit, sparsevec), distance operators, and HNSW and IVFFlat approximate indexes.",
+  "practice": "The default use-the-database-you-already-run option; with approximate indexes, filters apply after the index scan, so selective filters need iterative index scans (since 0.8.0) or exact search.",
+  "aliases": [
+    "pg_vector"
+  ],
+  "chapters": [
+    "vector-databases",
+    "vector-search",
+    "agent-memory"
+  ]
+}

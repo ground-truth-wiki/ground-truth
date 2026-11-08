@@ -1,0 +1,17 @@
+{
+  "id": "model-alias",
+  "term": "Model alias",
+  "def": "A convenience model ID that resolves to whichever snapshot the provider currently designates, so the model behind it can change without a code change.",
+  "practice": "Fine for prototypes; pin a fixed ID in production. Conventions differ: Anthropic's dateless IDs since the 4.6 generation are pinned snapshots, while Gemini's -latest aliases move (as of November 2026).",
+  "aliases": [
+    "model aliases",
+    "latest alias"
+  ],
+  "chapters": [
+    "prompt-config-management",
+    "ci-cd-for-ai",
+    "incidents-on-call",
+    "anti-patterns",
+    "gateway-routing-in-depth"
+  ]
+}

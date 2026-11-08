@@ -1,0 +1,19 @@
+{
+  "id": "langchain",
+  "term": "LangChain",
+  "def": "An open-source Python and JavaScript framework, launched in October 2022, with standard interfaces and integrations for models, tools and retrievers; since 1.0 (October 2025) its agents run on LangGraph.",
+  "practice": "The most common name in tutorials; much older code uses chains and other legacy APIs that moved to the langchain-classic package in 1.0, so check which era a codebase comes from before upgrading.",
+  "aliases": [
+    "LangChain.js"
+  ],
+  "chapters": [
+    "framework-landscape",
+    "orchestration-frameworks",
+    "agent-memory-architectures",
+    "multi-agent-patterns",
+    "durable-agent-execution",
+    "autonomy-and-oversight",
+    "agent-sdk-primitives",
+    "graph-workflow-runtimes"
+  ]
+}

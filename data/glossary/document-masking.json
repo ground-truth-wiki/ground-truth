@@ -1,0 +1,19 @@
+{
+  "id": "document-masking",
+  "term": "Intra-document attention masking",
+  "def": "An attention mask for packed training sequences that lets each token attend only to earlier tokens of its own document, not to unrelated documents packed before it.",
+  "practice": "Llama 3 found it mattered little in standard pretraining but was important for continued pretraining on very long sequences; Zhao et al. (2024) report clear gains from it.",
+  "aliases": [
+    "document masking",
+    "intra-document mask",
+    "intra-document causal masking",
+    "cross-document attention masking"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "pretraining-data",
+    "attention",
+    "long-context",
+    "long-context-training"
+  ]
+}

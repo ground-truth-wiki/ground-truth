@@ -1,0 +1,12 @@
+{
+  "id": "virtual-key",
+  "term": "Virtual key",
+  "def": "An API key issued by a model gateway that maps to centrally stored provider credentials and carries its own allowed models, budget and rate limits, with spend tracked per key, user or team.",
+  "practice": "Give each service or team its own virtual key so a leaked or runaway key can be capped or revoked without rotating the provider credentials behind it.",
+  "aliases": [],
+  "chapters": [
+    "gateways-routers",
+    "cost-capacity",
+    "enterprise-readiness"
+  ]
+}

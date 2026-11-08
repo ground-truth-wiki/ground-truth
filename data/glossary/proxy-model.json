@@ -1,0 +1,16 @@
+{
+  "id": "proxy-model",
+  "term": "Proxy model",
+  "def": "A small model trained to make a decision for a much larger run, such as choosing hyperparameters, a data mixture or a data filter.",
+  "practice": "DoReMi set an 8B model's domain weights with a 280M proxy; in DataDecide, rankings at 150M parameters picked the better 1B data about 80% of the time.",
+  "aliases": [
+    "small-scale proxy",
+    "proxy run"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "scaling-laws",
+    "pretraining-data",
+    "training-hyperparameters"
+  ]
+}

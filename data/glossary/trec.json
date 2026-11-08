@@ -1,0 +1,16 @@
+{
+  "id": "trec",
+  "term": "Text REtrieval Conference",
+  "def": "An evaluation campaign run by the US National Institute of Standards and Technology (NIST) since 1992 that builds shared test collections and relevance judgments for retrieval tasks.",
+  "practice": "Gave the field pooled judging, the trec_eval tool and the Deep Learning track built on MS MARCO; TREC collections are well-judged sets for testing a retriever.",
+  "aliases": [
+    "TREC"
+  ],
+  "chapters": [
+    "rag-evaluation",
+    "ir-foundations",
+    "learning-to-rank",
+    "retrieval-test-collections"
+  ],
+  "abbr": "TREC"
+}

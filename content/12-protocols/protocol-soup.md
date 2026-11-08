@@ -104,3 +104,13 @@ protocol-soup
 - [Agent UX](#agent-ux)
 - [Governance and ecosystem](#protocol-governance)
 - [Agent2Agent (A2A)](#a2a)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Agent interface protocols: AG-UI, MCP Apps and generative UI specs](#agent-ui-protocols)
+- [The Agent Client Protocol](#agent-client-protocol)
+- [Agent identity and delegated authorization](#agent-identity-delegation)
+- [The web for agents: llms.txt, NLWeb, signed agents and content preferences](#agent-facing-web)
+- [Agentic commerce and payment protocols](#agentic-commerce-protocols)

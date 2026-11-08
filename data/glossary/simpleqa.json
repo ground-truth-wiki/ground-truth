@@ -1,0 +1,13 @@
+{
+  "id": "simpleqa",
+  "term": "SimpleQA",
+  "def": "OpenAI's benchmark of 4,326 short fact-seeking questions with single indisputable answers, collected adversarially against GPT-4, used to measure factual accuracy.",
+  "practice": "It grades answers as correct, incorrect or not attempted, so it rewards abstaining over guessing, which matters more than raw accuracy for many products.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "grounding-citations",
+    "benchmark-catalog",
+    "hallucination-factuality"
+  ]
+}

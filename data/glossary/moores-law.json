@@ -1,0 +1,11 @@
+{
+  "id": "moores-law",
+  "term": "Moore's law",
+  "def": "Gordon Moore's observation that the number of components on a chip doubles at a regular interval: yearly in his 1965 paper, about every two years after his 1975 revision.",
+  "practice": "Transistor scaling has slowed and Dennard scaling ended in the mid-2000s, so AI hardware gains lean on specialization, lower precision and packaging; Epoch AI measured ML GPU price-performance doubling about every 2.1 years (2023).",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "new-architectures"
+  ]
+}

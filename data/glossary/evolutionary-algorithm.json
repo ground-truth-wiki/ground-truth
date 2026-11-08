@@ -1,0 +1,16 @@
+{
+  "id": "evolutionary-algorithm",
+  "term": "Evolutionary algorithm",
+  "def": "A population-based optimization method modeled on natural selection: candidate solutions are mutated or recombined, scored by a fitness function, and the fittest carried into the next generation.",
+  "practice": "Useful when a solution can be scored but not differentiated; FunSearch and AlphaEvolve use a language model to propose the code mutations inside this loop.",
+  "aliases": [
+    "evolutionary search"
+  ],
+  "chapters": [
+    "self-improving-systems",
+    "ai-for-science",
+    "prompt-optimization",
+    "model-merging-methods",
+    "evolutionary-program-search"
+  ]
+}

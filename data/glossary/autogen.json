@@ -1,0 +1,17 @@
+{
+  "id": "autogen",
+  "term": "AutoGen",
+  "def": "Microsoft's open-source multi-agent framework built around conversable agents and group chats, now archived in favor of Microsoft Agent Framework; AG2 continues separately as a community fork.",
+  "practice": "Expect it in papers and older code; for new work Microsoft points to Agent Framework, and AG2 uses overlapping package names, so check which project you install.",
+  "aliases": [
+    "Microsoft AutoGen"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "multi-agent",
+    "agent-research-lineage",
+    "multi-agent-patterns",
+    "frameworks-beyond-python"
+  ]
+}

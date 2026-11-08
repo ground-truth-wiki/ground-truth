@@ -1,0 +1,17 @@
+{
+  "id": "lstm",
+  "term": "Long short-term memory",
+  "def": "A recurrent cell with a separate cell state and input, forget and output gates that control what is written, kept and read, so information and gradients survive over long sequences.",
+  "practice": "The standard sequence model of the 2010s, from speech recognition to machine translation, until transformers replaced it.",
+  "aliases": [
+    "LSTM"
+  ],
+  "chapters": [
+    "neural-networks",
+    "beyond-transformers",
+    "recurrent-networks",
+    "peft-methods",
+    "system-design-interview-answers"
+  ],
+  "abbr": "LSTM"
+}

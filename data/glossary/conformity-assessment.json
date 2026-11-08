@@ -1,0 +1,14 @@
+{
+  "id": "conformity-assessment",
+  "term": "Conformity assessment",
+  "def": "Under the EU AI Act, the process of demonstrating that a high-risk AI system meets the Act's requirements before it is placed on the market or put into service.",
+  "practice": "Most Annex III systems allow self-assessment by the provider, while some biometric systems and AI in products already subject to third-party checks need a notified body; following harmonized standards makes conformity easier to show.",
+  "aliases": [
+    "conformity assessment procedure"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "eu-ai-act",
+    "ai-risk-management"
+  ]
+}

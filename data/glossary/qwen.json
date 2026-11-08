@@ -1,0 +1,20 @@
+{
+  "id": "qwen",
+  "term": "Qwen",
+  "def": "Alibaba's family of large language models, released largely as open weights in many dense and mixture-of-experts sizes, alongside API-only flagship versions.",
+  "practice": "Qwen3 (2025) spans 0.6B to 235B parameters with switchable thinking and non-thinking modes; most open releases use Apache 2.0, but check each model's license.",
+  "aliases": [
+    "Qwen models",
+    "Tongyi Qianwen"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "small-local-models",
+    "edge-on-device",
+    "rope-scaling",
+    "encoders-and-decoders",
+    "architecture-choices",
+    "moe-routing"
+  ]
+}

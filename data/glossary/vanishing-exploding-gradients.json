@@ -1,0 +1,19 @@
+{
+  "id": "vanishing-exploding-gradients",
+  "term": "Vanishing and exploding gradients",
+  "def": "Gradients that shrink toward zero or grow without bound as they are multiplied back through many layers or time steps, stalling or destabilizing training.",
+  "practice": "Residual connections, normalization layers, careful initialization, gating as in LSTMs and gradient clipping exist largely to prevent them.",
+  "aliases": [
+    "vanishing gradient",
+    "exploding gradient",
+    "vanishing gradient problem",
+    "exploding gradient problem"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "transformer-block",
+    "recurrent-networks",
+    "training-stability"
+  ]
+}

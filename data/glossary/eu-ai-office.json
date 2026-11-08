@@ -1,0 +1,16 @@
+{
+  "id": "eu-ai-office",
+  "term": "European AI Office",
+  "def": "The body within the European Commission that implements the EU AI Act, supervises general-purpose AI models, draws up codes of practice and can fine model providers.",
+  "practice": "Its powers to fine general-purpose model providers apply from 2 August 2026, and the AI Omnibus gives it exclusive competence over AI systems built on such models (as of November 2026).",
+  "aliases": [
+    "AI Office",
+    "EU AI Office"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "watchlist",
+    "data-licensing-consent",
+    "eu-ai-act"
+  ]
+}

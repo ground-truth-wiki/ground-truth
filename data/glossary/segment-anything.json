@@ -1,0 +1,18 @@
+{
+  "id": "segment-anything",
+  "term": "Segment Anything Model",
+  "def": "Meta's family of promptable segmentation models that return object masks from point, box or mask prompts; SAM 2 extends it to video and SAM 3 adds text and exemplar prompts.",
+  "practice": "Used in annotation tools, background removal and as the mask source for Set-of-Mark prompting; SAM 3 detects, segments and tracks every instance of a named concept (as of November 2026).",
+  "aliases": [
+    "SAM",
+    "SAM 2",
+    "SAM 3"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "labeling-annotation",
+    "language-modeling",
+    "visual-grounding"
+  ],
+  "abbr": "SAM"
+}

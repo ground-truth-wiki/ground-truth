@@ -75,3 +75,15 @@ representation-learning
 - [Linear algebra for AI](#linear-algebra)
 - [Neural networks](#neural-networks)
 - [Hybrid retrieval](#hybrid-retrieval)
+- [Clustering and dimensionality reduction](#clustering-dimensionality-reduction)
+- [Deep generative models: VAEs, GANs, flows and their successors](#deep-generative-models)
+- [Training and fine-tuning retrievers](#training-retrievers)
+- [Vision-language model architectures and training](#vlm-architectures)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Word embeddings: from word2vec to contextual representations](#word-embeddings)
+- [Self-supervised learning methods](#self-supervised-methods)
+- [Autoencoders and latent spaces](#autoencoders-latent-spaces)

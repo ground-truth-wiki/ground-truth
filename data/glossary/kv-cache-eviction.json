@@ -1,0 +1,16 @@
+{
+  "id": "kv-cache-eviction",
+  "term": "KV-cache eviction",
+  "def": "Permanently dropping selected past tokens' keys and values from a sequence's cache, keeping those judged important, to bound memory at long context.",
+  "practice": "StreamingLLM keeps attention-sink tokens plus a recent window, while H2O and SnapKV keep high-attention tokens; all are lossy and can discard facts that later turn out to matter.",
+  "aliases": [
+    "KV eviction",
+    "token eviction"
+  ],
+  "chapters": [
+    "kv-cache",
+    "long-context",
+    "memory-math",
+    "attention"
+  ]
+}

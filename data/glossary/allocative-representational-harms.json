@@ -1,0 +1,11 @@
+{
+  "id": "allocative-representational-harms",
+  "term": "Allocative and representational harms",
+  "def": "A taxonomy of AI harms: allocative harms withhold resources or opportunities from some groups, while representational harms demean, stereotype or erase them.",
+  "practice": "Generative systems mostly cause representational and quality-of-service harms (working worse for some groups), which classification metrics miss, so choose tests per harm.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals"
+  ]
+}

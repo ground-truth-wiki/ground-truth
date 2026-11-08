@@ -1,0 +1,13 @@
+{
+  "id": "titans",
+  "term": "Titans",
+  "def": "A family of architectures from Google Research (Behrouz et al., 2024) that pairs attention over the current window with a neural long-term memory module whose weights are updated at test time to memorize context.",
+  "practice": "A reference design for learned test-time memory: the paper reports scaling past 2M tokens of context, and the HOPE architecture from Nested Learning (NeurIPS 2025) is a variant of it.",
+  "aliases": [],
+  "chapters": [
+    "beyond-transformers",
+    "new-architectures",
+    "long-context",
+    "continual-learning"
+  ]
+}

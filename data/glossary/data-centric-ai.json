@@ -1,0 +1,15 @@
+{
+  "id": "data-centric-ai",
+  "term": "Data-centric AI",
+  "def": "An approach that improves AI systems mainly by systematically improving their data, through labels, coverage, cleaning and curation, rather than only by changing the model.",
+  "practice": "The framing behind label-error detection, dataset curation and data-quality tooling; in practice, fix labels and coverage on a fixed model before reaching for a bigger one.",
+  "aliases": [
+    "DCAI"
+  ],
+  "chapters": [
+    "data-strategy",
+    "labeling-annotation",
+    "data-governance"
+  ],
+  "abbr": "DCAI"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "parameter",
+  "term": "Model parameter",
+  "def": "A number in a model that training learns, such as one entry of a weight matrix or bias vector, as opposed to a hyperparameter set by hand.",
+  "practice": "Model sizes are quoted in parameter counts (8B means about eight billion), and weight memory is parameters times bytes per parameter: about 16 GB for 8B in BF16.",
+  "aliases": [
+    "model weights",
+    "parameter count"
+  ],
+  "chapters": [
+    "neural-networks",
+    "memory-math",
+    "scaling-laws",
+    "numbers-to-know",
+    "inference-fundamentals",
+    "distributed-training",
+    "recurrent-networks",
+    "low-precision-training"
+  ]
+}

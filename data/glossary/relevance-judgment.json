@@ -1,0 +1,18 @@
+{
+  "id": "relevance-judgment",
+  "term": "Relevance judgment",
+  "def": "A label from a human assessor or a model stating whether, or how much, a document is relevant to a query, on a binary or graded scale.",
+  "practice": "The ground truth behind recall@k, precision@k and nDCG; TREC-style tools store a set of judgments as a qrels file, and LLM-made labels should be checked against a human-labeled sample.",
+  "aliases": [
+    "relevance labels",
+    "qrels",
+    "relevance assessment"
+  ],
+  "chapters": [
+    "rag-evaluation",
+    "eval-datasets",
+    "ir-foundations",
+    "labeling-annotation",
+    "retrieval-test-collections"
+  ]
+}

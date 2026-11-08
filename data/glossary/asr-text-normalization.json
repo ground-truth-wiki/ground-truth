@@ -1,0 +1,17 @@
+{
+  "id": "asr-text-normalization",
+  "term": "Text normalization",
+  "def": "Converting text to a canonical form before processing or scoring; in speech recognition, lowercasing, stripping punctuation and standardizing numbers and spellings in transcripts and references before computing WER.",
+  "practice": "Normalized WER can be far lower than orthographic WER on the same output, so state which one you report (Whisper ships its own normalizers); in TTS the term means expanding numbers and abbreviations into words.",
+  "aliases": [
+    "WER normalization"
+  ],
+  "chapters": [
+    "speech-audio",
+    "eval-recipes",
+    "metrics-graders",
+    "speech-recognition",
+    "speech-synthesis",
+    "multimodal-evaluation"
+  ]
+}

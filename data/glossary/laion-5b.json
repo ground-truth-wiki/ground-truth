@@ -1,0 +1,16 @@
+{
+  "id": "laion-5b",
+  "term": "LAION-5B",
+  "def": "An open dataset of about 5.8 billion CLIP-filtered image-text pairs, links to web images with their alt text extracted from Common Crawl, released by the nonprofit LAION in 2022.",
+  "practice": "Withdrawn in December 2023 after researchers reported links to suspected child sexual abuse material and re-released as Re-LAION-5B in August 2024, it is the standard cautionary tale for web-scale data governance.",
+  "aliases": [
+    "Re-LAION-5B"
+  ],
+  "chapters": [
+    "image-generation",
+    "pretraining-data",
+    "data-governance",
+    "vision-language-models",
+    "open-model-communities"
+  ]
+}

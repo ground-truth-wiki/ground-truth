@@ -1,0 +1,16 @@
+{
+  "id": "overthinking",
+  "term": "Overthinking",
+  "def": "A reasoning model spending far more thinking tokens than a problem needs, raising cost and latency and sometimes lowering accuracy.",
+  "practice": "Measure tokens per correct answer by difficulty; lower effort, route easy requests to a non-thinking mode, or train with length penalties and long-to-short methods.",
+  "aliases": [
+    "over-thinking"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "test-time-scaling",
+    "cost-engineering",
+    "rlvr-reasoning",
+    "reasoning-training-recipes"
+  ]
+}

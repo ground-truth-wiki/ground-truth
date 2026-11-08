@@ -1,0 +1,15 @@
+{
+  "id": "xla",
+  "term": "XLA",
+  "def": "An open-source machine learning compiler that takes whole computation graphs from frameworks, expressed in StableHLO, and optimizes them, for example by fusing operations, for CPUs, GPUs and TPUs.",
+  "practice": "The compiler behind JAX and behind TPU programs from any framework, developed in the OpenXLA project; seeing the whole graph lets it fuse work that eager execution cannot.",
+  "aliases": [
+    "Accelerated Linear Algebra"
+  ],
+  "chapters": [
+    "hardware",
+    "dl-frameworks",
+    "accelerator-architecture",
+    "gpu-kernels-compilers"
+  ]
+}

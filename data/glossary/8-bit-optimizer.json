@@ -1,0 +1,15 @@
+{
+  "id": "8-bit-optimizer",
+  "term": "8-bit optimizer",
+  "def": "An optimizer that stores its state, such as Adam's two moment estimates, in 8-bit block-wise quantized form instead of 32-bit while matching 32-bit training results.",
+  "practice": "It cuts Adam's state from 8 bytes to about 2 bytes per parameter, which matters most for full fine-tuning on limited GPU memory; bitsandbytes provides the common implementation.",
+  "aliases": [
+    "8-bit Adam"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "memory-math",
+    "calculus-optimization",
+    "optimizers"
+  ]
+}

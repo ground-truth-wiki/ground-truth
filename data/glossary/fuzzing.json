@@ -1,0 +1,16 @@
+{
+  "id": "fuzzing",
+  "term": "Fuzzing",
+  "def": "Testing software by running it on large numbers of automatically generated or mutated inputs to uncover crashes, memory errors and other bugs.",
+  "practice": "The workhorse of automated vulnerability discovery, run continuously for open-source projects by OSS-Fuzz; LLM security agents write fuzz harnesses or find bugs fuzzing missed, like Big Sleep’s SQLite bug that survived 150 CPU-hours of AFL.",
+  "aliases": [
+    "fuzz testing",
+    "fuzzer"
+  ],
+  "chapters": [
+    "red-teaming",
+    "supply-chain-security",
+    "coding-agents",
+    "security-agents"
+  ]
+}

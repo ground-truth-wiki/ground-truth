@@ -104,3 +104,7 @@ agent-tools
 - [Harness engineering](#harness-engineering)
 - [Prompt injection](#prompt-injection)
 - [Guardrails and control](#guardrails-control)
+- [Training models for tool use and function calling](#function-calling-training)
+- [Web search and hosted retrieval services](#web-search-hosted-retrieval)
+- [Language agents: research lineage and the CoALA framework](#agent-research-lineage)
+- [Agent eval metrics and benchmark design](#agent-eval-metrics)

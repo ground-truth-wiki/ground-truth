@@ -1,0 +1,17 @@
+{
+  "id": "token-classification",
+  "term": "Token classification",
+  "def": "Assigning a label to each token of a text, as in named entity recognition and part-of-speech tagging, usually with BIO tags marking the beginning and inside of each span.",
+  "practice": "Subword tokenizers split words, so labels must be realigned to tokens, and evaluation should count whole entities (entity-level F1), not token accuracy.",
+  "aliases": [
+    "sequence labeling",
+    "sequence tagging"
+  ],
+  "chapters": [
+    "specialist-models",
+    "document-extraction",
+    "privacy",
+    "nlp-tasks",
+    "dialogue-systems"
+  ]
+}

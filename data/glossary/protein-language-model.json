@@ -1,0 +1,15 @@
+{
+  "id": "protein-language-model",
+  "term": "Protein language model",
+  "def": "A language model trained on large collections of protein sequences, whose learned representations capture information about structure and function.",
+  "practice": "ESMFold predicts structure from a single sequence an order of magnitude faster than AlphaFold 2, and ESM3 (98B parameters, with a 1.4B open version) generates sequence, structure and function together.",
+  "aliases": [
+    "pLM"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "specialist-models",
+    "representation-learning"
+  ],
+  "abbr": "pLM"
+}

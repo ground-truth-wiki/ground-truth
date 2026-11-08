@@ -1,0 +1,15 @@
+{
+  "id": "evasion-attack",
+  "term": "Evasion attack",
+  "def": "An attack at deployment time that modifies inputs so a trained model gives a wrong or attacker-chosen output, while the inputs still look normal to people.",
+  "practice": "Spam and malware filters, face recognition and content classifiers are classic targets; guard models and moderation classifiers face the same attacks.",
+  "aliases": [
+    "test-time attack",
+    "inference-time attack"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "guardrails-control",
+    "jailbreaks-misuse"
+  ]
+}

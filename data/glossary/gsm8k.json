@@ -1,0 +1,16 @@
+{
+  "id": "gsm8k",
+  "term": "GSM8K",
+  "def": "OpenAI's 2021 dataset of 8.5K grade-school math word problems, each needing two to eight steps of basic arithmetic to solve.",
+  "practice": "Saturated at the frontier; still useful for small models and quick regression checks, though its public test set invites memorization.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "web-data-pipeline",
+    "model-merging-methods",
+    "benchmark-catalog",
+    "prompting-techniques",
+    "deduplication-decontamination",
+    "latent-reasoning"
+  ]
+}

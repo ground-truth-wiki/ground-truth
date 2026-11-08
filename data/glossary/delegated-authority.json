@@ -1,0 +1,20 @@
+{
+  "id": "delegated-authority",
+  "term": "Delegated authority",
+  "def": "Permission a principal, usually a user, grants an agent to act on its behalf, limited in scope, amount and time, revocable, and kept distinct from the agent's own identity.",
+  "practice": "The idea behind token exchange, AP2 mandates and spending caps on agent payments; log who delegated what to which agent so every action can be audited.",
+  "aliases": [
+    "on-behalf-of delegation",
+    "delegated authorization"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "mcp-authorization",
+    "personal-assistants",
+    "secure-agent-design",
+    "protocol-building-blocks",
+    "a2a-in-depth",
+    "agent-identity-delegation",
+    "agent-facing-web"
+  ]
+}

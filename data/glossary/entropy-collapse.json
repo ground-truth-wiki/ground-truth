@@ -1,0 +1,14 @@
+{
+  "id": "entropy-collapse",
+  "term": "Entropy collapse",
+  "def": "A sharp early drop in the entropy of a policy's token distribution during RL, after which the model stops exploring and performance plateaus.",
+  "practice": "Log policy entropy in every RL run; clip-higher, entropy bonuses and covariance-based clipping such as Clip-Cov and KL-Cov counter it.",
+  "aliases": [
+    "policy entropy collapse"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "agentic-rl",
+    "llm-policy-gradients"
+  ]
+}

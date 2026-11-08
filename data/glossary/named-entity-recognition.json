@@ -1,0 +1,19 @@
+{
+  "id": "named-entity-recognition",
+  "term": "Named entity recognition",
+  "def": "Finding spans of text that name real-world things, such as people, organizations, places, products or dates, and labeling each span with its type.",
+  "practice": "A first step in knowledge-graph extraction, PII detection and metadata extraction for filters; LLMs do it zero-shot, while small dedicated models do it far cheaper at scale.",
+  "aliases": [
+    "NER",
+    "entity extraction"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "ingestion-parsing",
+    "privacy",
+    "document-extraction",
+    "nlp-tasks",
+    "knowledge-graphs"
+  ],
+  "abbr": "NER"
+}

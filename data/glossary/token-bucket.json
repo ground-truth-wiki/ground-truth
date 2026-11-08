@@ -1,0 +1,16 @@
+{
+  "id": "token-bucket",
+  "term": "Token bucket",
+  "def": "A rate-limiting algorithm where permits refill at a steady rate into a bucket capped at a burst size; requests spend permits and are delayed or rejected when none remain.",
+  "practice": "As of November 2026 Anthropic's API enforces its rate limits this way, so capacity refills continuously rather than resetting each minute, and short bursts can still trigger 429s.",
+  "aliases": [
+    "token-bucket algorithm",
+    "token bucket algorithm"
+  ],
+  "chapters": [
+    "cost-capacity",
+    "reliability-engineering",
+    "gateways-routers",
+    "rate-limits-overload"
+  ]
+}

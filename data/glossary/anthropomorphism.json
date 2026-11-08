@@ -1,0 +1,15 @@
+{
+  "id": "anthropomorphism",
+  "term": "Anthropomorphism",
+  "def": "Attributing human qualities such as understanding, feelings or intentions to an AI system, whether users do it spontaneously or the design invites it.",
+  "practice": "Personas, first-person language and voices make products feel intuitive but suggest human-level understanding; Google PAIR advises making clear the product is not a human and matching human-likeness to real capability.",
+  "aliases": [
+    "anthropomorphization"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "responsible-ai",
+    "personal-assistants",
+    "voice-agents"
+  ]
+}

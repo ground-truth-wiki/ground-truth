@@ -85,3 +85,17 @@ preference-optimization
 - [Alignment concepts](#alignment-concepts)
 - [Reinforcement learning primer](#rl-primer)
 - [Safety and character training](#safety-character-training)
+- [Information theory for language models](#information-theory-for-llms)
+- [Loss functions](#loss-functions)
+- [Policy gradients, actor-critic and PPO](#policy-gradient-methods)
+- [Policy-gradient algorithms for LLMs: from REINFORCE to GRPO and beyond](#llm-policy-gradients)
+- [Post-training: from base model to assistant](#post-training-overview)
+- [Judge models, juries and meta-evaluation](#judge-models-meta-evaluation)
+- [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Reward models and preference data](#reward-modeling)
+- [Direct alignment algorithms: DPO and its relatives](#dpo-and-relatives)

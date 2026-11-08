@@ -1,0 +1,11 @@
+{
+  "id": "data-orchestration",
+  "term": "Data orchestration",
+  "def": "Scheduling, ordering, retrying and monitoring the steps of data pipelines, modeled either as graphs of tasks or as graphs of the data assets they produce.",
+  "practice": "Airflow, Dagster and Prefect are the common open-source choices; event-driven queues suit near-real-time ingestion.",
+  "aliases": [],
+  "chapters": [
+    "unstructured-pipelines",
+    "data-flywheel"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "resnet",
+  "term": "ResNet",
+  "def": "A CNN family built from residual blocks whose skip connections add each block's input to its output, which made networks over a hundred layers deep trainable.",
+  "practice": "ResNet-50 remains a standard vision baseline and backbone, and the residual connection it popularized sits in every transformer block.",
+  "aliases": [
+    "residual network"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "convolutional-networks"
+  ]
+}

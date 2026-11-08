@@ -1,0 +1,15 @@
+{
+  "id": "sequential-testing",
+  "term": "Sequential testing",
+  "def": "Hypothesis testing that analyzes data as they arrive and allows stopping at any look, while keeping the false-positive rate controlled despite repeated checks.",
+  "practice": "The fix for peeking at an A/B test: methods such as always-valid p-values (Johari et al.) let teams check results continuously and stop early on a clear effect, where a fixed-sample test would inflate false positives.",
+  "aliases": [
+    "always-valid inference",
+    "sequential analysis"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "eval-statistics",
+    "online-experiments"
+  ]
+}

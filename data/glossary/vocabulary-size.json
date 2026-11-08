@@ -1,0 +1,19 @@
+{
+  "id": "vocabulary-size",
+  "term": "Vocabulary size",
+  "def": "The number of distinct tokens a tokenizer can emit, fixed before tokenizer training; it sets the rows of the embedding table and the width of the output layer.",
+  "practice": "Older monolingual models used about 30,000 to 50,000 tokens and many recent multilingual ones 100,000 to 250,000; larger vocabularies shorten sequences but grow the embedding table.",
+  "aliases": [
+    "vocab size"
+  ],
+  "chapters": [
+    "tokenization",
+    "transformer-block",
+    "transformer-overview",
+    "language-modeling",
+    "loss-functions",
+    "tokenizers-in-practice",
+    "architecture-choices",
+    "pretraining-run"
+  ]
+}

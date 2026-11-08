@@ -1,0 +1,18 @@
+{
+  "id": "macro-micro-averaging",
+  "term": "Macro and micro averaging",
+  "def": "Two ways to combine a per-class metric: macro averaging takes the unweighted mean of per-class scores, while micro averaging pools all counts before computing the metric once.",
+  "practice": "Macro exposes weak rare classes; micro is dominated by frequent classes and equals accuracy for single-label multiclass problems.",
+  "aliases": [
+    "macro-average",
+    "micro-average",
+    "macro-averaging",
+    "micro-averaging",
+    "macro F1",
+    "micro F1"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes"
+  ]
+}

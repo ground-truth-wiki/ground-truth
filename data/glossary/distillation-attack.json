@@ -1,0 +1,15 @@
+{
+  "id": "distillation-attack",
+  "term": "Distillation attack",
+  "def": "Illicitly copying a model's capabilities by training another model on its outputs, collected at scale through many accounts or proxies in breach of terms of service.",
+  "practice": "Detected by volume, coordination across accounts and repetitive, capability-focused prompts; in February 2026 Anthropic reported campaigns totaling over 16 million exchanges through about 24,000 fraudulent accounts.",
+  "aliases": [
+    "illicit distillation",
+    "unauthorized distillation"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "threat-modeling",
+    "distillation-merging"
+  ]
+}

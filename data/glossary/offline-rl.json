@@ -1,0 +1,18 @@
+{
+  "id": "offline-rl",
+  "term": "Offline reinforcement learning",
+  "def": "Learning a policy from a fixed, previously collected dataset, with no further interaction with the environment.",
+  "practice": "Attractive where exploration is costly or unsafe; the core difficulty is overrating actions the data never tried, which conservative methods such as CQL counter.",
+  "aliases": [
+    "offline RL",
+    "batch reinforcement learning",
+    "batch RL"
+  ],
+  "chapters": [
+    "rl-primer",
+    "preference-optimization",
+    "imitation-offline-rl",
+    "llm-distillation",
+    "vla-models"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai-audit",
+  "term": "AI audit",
+  "def": "A systematic, documented examination of an AI system, its data and its development process against stated criteria such as policy, law, fairness or safety requirements, done internally or independently.",
+  "practice": "Raji et al. (2020) laid out an internal audit process that runs alongside development; any audit runs on evidence such as eval results, data documentation and decision logs, so keep them from the start.",
+  "aliases": [
+    "AI auditing",
+    "algorithmic audit",
+    "algorithmic auditing"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "enterprise-readiness"
+  ]
+}

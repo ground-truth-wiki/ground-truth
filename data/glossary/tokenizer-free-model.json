@@ -1,0 +1,17 @@
+{
+  "id": "tokenizer-free-model",
+  "term": "Tokenizer-free model",
+  "def": "A language model that reads raw bytes or characters instead of subword tokens, often grouping them into learned patches or chunks to keep sequences short.",
+  "practice": "Research examples include ByT5, MEGABYTE, the Byte Latent Transformer and H-Net; they avoid tokenizer quirks such as glitch tokens but must handle far longer raw sequences.",
+  "aliases": [
+    "token-free model",
+    "byte-level model",
+    "tokenizer-free"
+  ],
+  "chapters": [
+    "tokenization",
+    "beyond-transformers",
+    "new-architectures",
+    "tokenizers-in-practice"
+  ]
+}

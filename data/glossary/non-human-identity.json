@@ -1,0 +1,15 @@
+{
+  "id": "non-human-identity",
+  "term": "Non-human identity",
+  "def": "A credentialed identity used by software rather than a person, such as a service account, API key, workload identity or AI agent.",
+  "practice": "Agents multiply them; OWASP's NHI Top 10 (2025) lists risks such as secret leakage, overprivileged identities and long-lived secrets, so prefer short-lived, narrowly scoped tokens.",
+  "aliases": [
+    "machine identity"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "secure-agent-design",
+    "ai-security-frameworks"
+  ],
+  "abbr": "NHI"
+}

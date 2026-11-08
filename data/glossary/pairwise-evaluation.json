@@ -1,0 +1,17 @@
+{
+  "id": "pairwise-evaluation",
+  "term": "Pairwise evaluation",
+  "def": "Judging two responses to the same input against each other and recording which one is better, or a tie.",
+  "practice": "Easier for raters and judges than absolute scores when comparing two systems, but it gives no absolute quality level; run both orders to cancel position bias.",
+  "aliases": [
+    "pairwise comparison",
+    "side-by-side evaluation",
+    "pairwise judging"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "benchmark-literacy",
+    "judge-models-meta-evaluation"
+  ]
+}

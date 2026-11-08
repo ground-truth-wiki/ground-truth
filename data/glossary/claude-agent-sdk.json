@@ -1,0 +1,18 @@
+{
+  "id": "claude-agent-sdk",
+  "term": "Claude Agent SDK",
+  "def": "Anthropic's Python and TypeScript library that runs Claude Code's agent loop, built-in tools, permissions, sessions, hooks, subagents and MCP support inside your own application; called the Claude Code SDK until September 2025.",
+  "practice": "Fits agents that work with files, shells and code; products built on it authenticate with API keys, since third parties may not offer claude.ai login without Anthropic's approval.",
+  "aliases": [
+    "Claude Code SDK"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "claude-code",
+    "build-your-own-harness",
+    "framework-landscape",
+    "agent-sdk-primitives",
+    "embedded-agent-harnesses",
+    "managed-agent-platforms"
+  ]
+}

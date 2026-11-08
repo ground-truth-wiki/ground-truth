@@ -1,0 +1,15 @@
+{
+  "id": "mean-average-precision",
+  "term": "Mean average precision",
+  "def": "The mean over queries of average precision: precision at the rank of each relevant item, averaged over all relevant items, with relevant items never retrieved counting as zero.",
+  "practice": "A rank-aware metric for binary relevance in search, where nDCG handles graded labels; object detection reports a class-averaged variant, written mAP.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation",
+    "metrics-graders",
+    "distributions-and-estimation",
+    "recommender-systems",
+    "retrieval-test-collections"
+  ],
+  "abbr": "MAP"
+}

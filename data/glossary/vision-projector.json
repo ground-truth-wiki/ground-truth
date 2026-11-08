@@ -1,0 +1,16 @@
+{
+  "id": "vision-projector",
+  "term": "Vision-language projector",
+  "def": "The module that maps vision-encoder outputs into a language model's embedding space, ranging from a linear layer or small MLP to a query-based resampler such as BLIP-2's Q-Former.",
+  "practice": "Usually trained first while encoder and language model stay frozen; an MLP keeps one token per patch, while a resampler compresses each image to a fixed number of tokens.",
+  "aliases": [
+    "projector",
+    "multimodal projector",
+    "MLP projector"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "self-supervised-methods",
+    "vlm-architectures"
+  ]
+}

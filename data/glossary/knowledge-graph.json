@@ -1,0 +1,18 @@
+{
+  "id": "knowledge-graph",
+  "term": "Knowledge graph",
+  "def": "A graph of entities (nodes) connected by typed relationships (edges), usually under a schema or ontology, used to store and query facts about a domain.",
+  "practice": "Behind search-engine entity panels since Google's 2012 Knowledge Graph and behind GraphRAG and temporal agent memory; worth building when questions are about relationships rather than passages.",
+  "aliases": [
+    "KG"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "agent-memory",
+    "graph-neural-networks",
+    "knowledge-graphs",
+    "graph-rag",
+    "agent-memory-architectures"
+  ],
+  "abbr": "KG"
+}

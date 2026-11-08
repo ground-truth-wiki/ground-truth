@@ -1,0 +1,13 @@
+{
+  "id": "recursive-chunking",
+  "term": "Recursive chunking",
+  "def": "Splitting text on a priority list of separators, such as paragraph breaks, then line breaks, then spaces, then single characters, until every piece fits the size limit.",
+  "practice": "LangChain's RecursiveCharacterTextSplitter, whose default separators are blank line, newline, space and character, is the common baseline for prose before structure-aware or semantic chunking.",
+  "aliases": [
+    "recursive splitting",
+    "recursive character text splitting"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

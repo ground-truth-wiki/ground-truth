@@ -1,0 +1,15 @@
+{
+  "id": "hax-guidelines",
+  "term": "Guidelines for Human-AI Interaction",
+  "def": "Eighteen design guidelines for AI-infused products from Microsoft (Amershi et al., CHI 2019), grouped by phase: initially, during interaction, when wrong and over time.",
+  "practice": "Used as a design-review checklist, with items such as 'Make clear how well the system can do what it can do' and 'Support efficient correction'; Microsoft's HAX Toolkit builds on them.",
+  "aliases": [
+    "HAX guidelines"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "agent-ux",
+    "human-in-the-loop",
+    "human-ai-interaction-guidelines"
+  ]
+}

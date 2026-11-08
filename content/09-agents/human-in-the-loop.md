@@ -96,3 +96,12 @@ human-in-the-loop
 - [Tool use and tool design](#agent-tools)
 - [Secure agent design](#secure-agent-design)
 - [Prompt injection](#prompt-injection)
+- [Durable execution for agents in depth](#durable-agent-execution)
+- [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
+- [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Autonomy levels and human oversight](#autonomy-and-oversight)

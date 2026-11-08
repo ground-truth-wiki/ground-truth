@@ -84,3 +84,4 @@ multimodal-apps
 - [Multimodal RAG](#multimodal-rag)
 - [Image generation](#image-generation)
 - [Voice and realtime agents](#voice-agents)
+- [Video understanding](#video-understanding)

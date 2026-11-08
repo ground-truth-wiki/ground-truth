@@ -1,0 +1,20 @@
+{
+  "id": "multilayer-perceptron",
+  "term": "Multilayer perceptron",
+  "def": "A feedforward neural network of fully connected layers, each a linear map followed by a nonlinear activation, with one or more hidden layers.",
+  "practice": "The simplest deep network; the feed-forward block in every transformer layer is a small per-token MLP, classically expanding the hidden width about fourfold.",
+  "aliases": [
+    "MLP",
+    "fully connected network"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "training-hyperparameters",
+    "architecture-choices",
+    "sae-circuit-tracing",
+    "vlm-architectures",
+    "three-d-generation"
+  ],
+  "abbr": "MLP"
+}

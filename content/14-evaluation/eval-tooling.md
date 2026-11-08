@@ -96,3 +96,4 @@ eval-tooling
 - [Why evals are the core skill](#why-evals)
 - [CI/CD for AI](#ci-cd-for-ai)
 - [Online evaluation](#online-evaluation)
+- [OpenTelemetry GenAI semantic conventions](#otel-genai-conventions)

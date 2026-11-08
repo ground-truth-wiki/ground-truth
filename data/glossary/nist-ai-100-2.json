@@ -1,0 +1,19 @@
+{
+  "id": "nist-ai-100-2",
+  "term": "NIST AI 100-2",
+  "def": "NIST's taxonomy and terminology of attacks on machine learning systems and their mitigations, covering predictive and generative AI; the E2025 edition was published in March 2025.",
+  "practice": "A reference vocabulary for evasion, poisoning, privacy attacks, prompt injection and misuse; use its terms in threat models and findings so others read them the same way.",
+  "aliases": [
+    "NIST AI 100-2 E2025",
+    "NIST adversarial ML taxonomy"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "red-teaming",
+    "ai-security-frameworks",
+    "prompt-injection-techniques",
+    "jailbreak-techniques",
+    "model-theft",
+    "adversarial-ml"
+  ]
+}

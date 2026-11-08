@@ -1,0 +1,14 @@
+{
+  "id": "webrtc",
+  "term": "WebRTC",
+  "def": "Web Real-Time Communication: browser APIs standardized by the W3C, with IETF protocols underneath, for sending audio, video and arbitrary data in real time between browsers, apps and servers.",
+  "practice": "The usual transport for browser and mobile voice agents because it is built for media over lossy networks, with echo cancellation; one widely read guide advises against WebSockets for client-side realtime audio in production.",
+  "aliases": [
+    "Web Real-Time Communication"
+  ],
+  "chapters": [
+    "voice-agents",
+    "streaming",
+    "voice-telephony"
+  ]
+}

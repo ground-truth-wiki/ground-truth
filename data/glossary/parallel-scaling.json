@@ -1,0 +1,19 @@
+{
+  "id": "parallel-scaling",
+  "term": "Parallel scaling",
+  "def": "Spending test-time compute on many independent attempts at the same problem and aggregating them by majority vote, a verifier or a step that combines them.",
+  "practice": "Cost grows with samples while latency stays flat; Brown et al. (2024) saw SWE-bench Lite coverage rise from 15.9% at one sample to 56% at 250, but turning that into accuracy needs a verifier.",
+  "aliases": [
+    "parallel sampling",
+    "repeated sampling",
+    "parallel thinking",
+    "parallel test-time compute"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "reasoning-models",
+    "cost-engineering",
+    "model-interpretability",
+    "test-time-search"
+  ]
+}

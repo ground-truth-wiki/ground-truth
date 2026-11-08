@@ -1,0 +1,10 @@
+{
+  "id": "consistency-model",
+  "term": "Consistency model",
+  "def": "A generative model that maps any point on a diffusion trajectory directly to its clean endpoint, enabling one- or few-step generation; trained by distilling a diffusion model or from scratch.",
+  "practice": "Latent consistency models (LCM) generate with Stable Diffusion-class models in 2 to 4 steps instead of tens, and an LCM LoRA adds this speed-up to an existing checkpoint.",
+  "aliases": [],
+  "chapters": [
+    "image-generation"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "data-constrained-scaling",
+  "term": "Data-constrained scaling",
+  "def": "The training regime in which unique high-quality data runs out before compute does, so tokens must be repeated and each repetition is worth less than fresh data.",
+  "practice": "Muennighoff et al. (2023) found up to about four epochs nearly as good as unique data, with returns decaying toward zero beyond; Nemotron-CC instead loosens filtering and rephrases text to keep more unique tokens.",
+  "aliases": [
+    "data-constrained regime"
+  ],
+  "chapters": [
+    "scaling-laws",
+    "pretraining-data",
+    "synthetic-data"
+  ]
+}

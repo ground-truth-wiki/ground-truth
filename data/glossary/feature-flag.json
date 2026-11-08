@@ -1,0 +1,16 @@
+{
+  "id": "feature-flag",
+  "term": "Feature flag",
+  "def": "A runtime switch, evaluated per request and often per user or tenant, that changes system behavior without a new deployment.",
+  "practice": "Put prompt versions, models, tools and whole AI features behind flags for gradual rollout, experiments and instant switch-off; OpenFeature, a CNCF incubating project as of November 2026, defines a vendor-neutral flag API.",
+  "aliases": [
+    "feature toggle",
+    "feature toggles"
+  ],
+  "chapters": [
+    "prompt-config-management",
+    "incidents-on-call",
+    "ci-cd-for-ai",
+    "online-evaluation"
+  ]
+}

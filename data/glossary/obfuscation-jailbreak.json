@@ -1,0 +1,17 @@
+{
+  "id": "obfuscation-jailbreak",
+  "term": "Obfuscation jailbreak",
+  "def": "A jailbreak that hides a harmful request in an encoding, cipher, character transformation or split pieces that the model can decode but its safety training did not cover.",
+  "practice": "Base64, ROT13, leetspeak, Morse code and payload splitting are standard red-team transforms; judge the decoded content, not the surface text.",
+  "aliases": [
+    "cipher jailbreak",
+    "payload splitting",
+    "token smuggling"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "red-teaming",
+    "guardrails-control",
+    "jailbreak-techniques"
+  ]
+}

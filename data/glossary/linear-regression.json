@@ -1,0 +1,15 @@
+{
+  "id": "linear-regression",
+  "term": "Linear regression",
+  "def": "A model that predicts a number as a weighted sum of input features plus an intercept, usually fit by minimizing squared error (ordinary least squares).",
+  "practice": "The first baseline for numeric prediction; with strongly correlated features the coefficients become unstable unless the fit is regularized.",
+  "aliases": [
+    "ordinary least squares",
+    "OLS",
+    "least squares regression"
+  ],
+  "chapters": [
+    "classical-ml",
+    "linear-and-kernel-models"
+  ]
+}

@@ -92,3 +92,22 @@ governance-regulation
 - [Privacy](#privacy)
 - [Enterprise readiness](#enterprise-readiness)
 - [Threat modeling](#threat-modeling)
+- [Compute accounting: FLOP, GPU-hours and utilization](#compute-accounting)
+- [Model licenses and openness definitions](#model-licenses)
+- [Data licensing, copyright and consent](#data-licensing-consent)
+- [Synthetic media, provenance and deepfakes](#synthetic-media-provenance)
+- [Autonomy levels and human oversight](#autonomy-and-oversight)
+- [AI security frameworks and standards](#ai-security-frameworks)
+- [Dangerous-capability evaluations](#dangerous-capability-evals)
+- [Safety cases for frontier AI](#safety-cases)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [The EU AI Act in depth](#eu-ai-act)
+- [US AI law and policy](#us-ai-law)
+- [AI regulation beyond the EU and US](#global-ai-governance)
+- [Copyright and AI: training, outputs and litigation](#ai-copyright)
+- [AI risk management and impact assessments](#ai-risk-management)
+- [Compute governance: chips, supply chains and export controls](#compute-governance)

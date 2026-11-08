@@ -1,0 +1,12 @@
+{
+  "id": "situational-awareness",
+  "term": "Situational awareness",
+  "def": "A model's knowledge of itself and its circumstances, such as knowing that it is an AI, which model it is, and whether it is being trained, tested or deployed.",
+  "practice": "A prerequisite for scheming and for behaving differently under evaluation; the Situational Awareness Dataset (SAD, Laine et al., 2024) measures it with over 13,000 questions.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts",
+    "safety-evals",
+    "scheming-evaluations"
+  ]
+}

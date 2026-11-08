@@ -80,3 +80,15 @@ video-world-models
 - [Multimodal applications](#multimodal-apps)
 - [Reinforcement learning primer](#rl-primer)
 - [Responsible AI in practice](#responsible-ai)
+- [Self-supervised learning methods](#self-supervised-methods)
+- [Model-based RL, planning and Monte Carlo tree search](#planning-mcts)
+- [Diffusion and flow matching](#diffusion-flow-matching)
+- [Vision-language-action models, robot data and sim-to-real](#vla-models)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Video generation models](#video-generation)
+- [World models](#world-models)
+- [3D reconstruction and generation](#three-d-generation)

@@ -1,0 +1,17 @@
+{
+  "id": "jit-compilation",
+  "term": "Just-in-time compilation",
+  "def": "Compiling a function when it is first called, specialized to the input shapes and types it actually receives, then reusing the compiled code on later calls.",
+  "practice": "jax.jit and torch.compile work this way: the first call is slow and inputs with new shapes can trigger recompilation, so padding inputs to a few fixed shapes helps.",
+  "aliases": [
+    "JIT",
+    "JIT compilation"
+  ],
+  "chapters": [
+    "hardware",
+    "serving-engines",
+    "dl-frameworks",
+    "gpu-kernels-compilers"
+  ],
+  "abbr": "JIT"
+}

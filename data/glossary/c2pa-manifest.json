@@ -1,0 +1,12 @@
+{
+  "id": "c2pa-manifest",
+  "term": "C2PA manifest",
+  "def": "The signed provenance record a C2PA-enabled tool attaches to an asset: assertions about it, a claim that references them, and a claim signature made with the signer's private key.",
+  "practice": "Embedded manifests are lost when platforms strip metadata, which is why C2PA also defines soft bindings (watermarks, fingerprints) and manifest repositories to recover them.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "responsible-ai",
+    "synthetic-media-provenance"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "allocational-representational-harms",
+  "term": "Allocational and representational harms",
+  "def": "Two kinds of algorithmic harm: allocational harms withhold opportunities or resources from a group, representational harms stereotype, demean or erase it.",
+  "practice": "Generative models mainly risk representational harms, which per-group accuracy does not capture; test them with stereotype benchmarks, counterfactual prompts and qualitative review.",
+  "aliases": [
+    "allocational harm",
+    "allocational harms",
+    "allocative harm",
+    "representational harm",
+    "representational harms"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals",
+    "image-generation",
+    "fairness-bias"
+  ]
+}

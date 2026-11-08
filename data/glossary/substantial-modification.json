@@ -1,0 +1,12 @@
+{
+  "id": "substantial-modification",
+  "term": "Substantial modification",
+  "def": "An EU AI Act term for a post-market change to an AI system, not foreseen in its original conformity assessment, that affects its compliance or changes its intended purpose.",
+  "practice": "Whoever substantially modifies a high-risk system takes on the provider's obligations, so unplanned retraining or fine-tuning of someone else's system can make you its provider.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "fine-tuning-practice",
+    "eu-ai-act"
+  ]
+}

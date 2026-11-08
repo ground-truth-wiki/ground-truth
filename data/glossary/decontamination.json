@@ -1,0 +1,20 @@
+{
+  "id": "decontamination",
+  "term": "Decontamination",
+  "def": "Removing benchmark test and development items, or text that overlaps them, from training data so scores measure generalization rather than memorization.",
+  "practice": "GPT-3 removed 13-gram matches plus a 200-character window, yet a bug left some overlaps; rephrased items slip past n-gram matching, so report the method and the residual overlap.",
+  "aliases": [
+    "benchmark decontamination",
+    "data decontamination"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "benchmark-literacy",
+    "eval-datasets",
+    "synthetic-data",
+    "web-data-pipeline",
+    "post-training-overview",
+    "benchmark-validity",
+    "synthetic-data-recipes"
+  ]
+}

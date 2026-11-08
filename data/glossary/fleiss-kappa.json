@@ -1,0 +1,12 @@
+{
+  "id": "fleiss-kappa",
+  "term": "Fleiss’ kappa",
+  "def": "A chance-corrected agreement coefficient for nominal labels when every item gets the same number of annotators, who need not be the same people for each item.",
+  "practice": "The usual choice for three or more annotators per item; like Cohen’s kappa, 0 means chance-level and 1 perfect agreement, and every item needs its full set of labels.",
+  "aliases": [
+    "Fleiss's kappa"
+  ],
+  "chapters": [
+    "labeling-annotation"
+  ]
+}

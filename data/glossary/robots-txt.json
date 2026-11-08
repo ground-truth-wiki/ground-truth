@@ -1,0 +1,22 @@
+{
+  "id": "robots-txt",
+  "term": "Robots Exclusion Protocol",
+  "def": "A convention, standardized as RFC 9309 in 2022, in which a site's /robots.txt file tells each named crawler which URL paths it may fetch; compliance is voluntary, not access control.",
+  "practice": "The main opt-out signal publishers aim at AI crawlers; the Consent in Crisis study (2024) found such restrictions rising sharply from 2023 to 2024, shrinking the openly crawlable web for training.",
+  "aliases": [
+    "robots.txt",
+    "RFC 9309",
+    "REP"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "data-governance",
+    "governance-regulation",
+    "ingestion-parsing",
+    "open-pretraining-datasets",
+    "web-search-hosted-retrieval",
+    "data-licensing-consent",
+    "agent-facing-web"
+  ],
+  "abbr": "REP"
+}

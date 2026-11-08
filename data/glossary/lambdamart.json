@@ -1,0 +1,11 @@
+{
+  "id": "lambdamart",
+  "term": "LambdaMART",
+  "def": "A learning-to-rank method that trains gradient-boosted trees with LambdaRank gradients: pairwise gradients scaled by how much swapping two documents would change a metric such as nDCG.",
+  "practice": "The classic ranker over hand-built query-document features; XGBoost's default ranking objective, rank:ndcg, is based on it.",
+  "aliases": [],
+  "chapters": [
+    "reranking",
+    "learning-to-rank"
+  ]
+}

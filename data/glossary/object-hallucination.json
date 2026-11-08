@@ -1,0 +1,15 @@
+{
+  "id": "object-hallucination",
+  "term": "Object hallucination",
+  "def": "A vision-language model describing objects, attributes or text that are not present in the image.",
+  "practice": "Measured with CHAIR on captions and POPE's yes-or-no probes; models tend to hallucinate objects that often co-occur in training data, and higher input resolution helps.",
+  "aliases": [
+    "visual hallucination"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "multimodal-apps",
+    "vlm-architectures",
+    "multimodal-evaluation"
+  ]
+}

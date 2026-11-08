@@ -1,0 +1,16 @@
+{
+  "id": "parametric-knowledge",
+  "term": "Parametric knowledge",
+  "def": "Knowledge stored in a model’s weights during training, as opposed to non-parametric knowledge supplied at inference time from an external source such as a retrieval index.",
+  "practice": "Behind ‘fine-tune or retrieve?’: parametric knowledge needs no lookup but is frozen at training time and hard to cite or update, while retrieved knowledge stays fresh and citable.",
+  "aliases": [
+    "parametric memory"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "sft",
+    "fine-tuning-practice",
+    "grounding-citations",
+    "retrieval-augmented-lms"
+  ]
+}

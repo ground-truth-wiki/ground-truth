@@ -88,3 +88,10 @@ latency-throughput
 - [Streaming](#streaming)
 - [Back-of-envelope estimation](#back-of-envelope)
 - [Cost engineering](#cost-engineering)
+- [SLOs and error budgets for AI systems](#slos-error-budgets)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Benchmarking inference servers](#inference-benchmarking)

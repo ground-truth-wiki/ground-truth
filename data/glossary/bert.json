@@ -1,0 +1,19 @@
+{
+  "id": "bert",
+  "term": "BERT",
+  "def": "An encoder-only transformer (Devlin et al., 2018) pretrained by predicting masked tokens from context on both sides, then fine-tuned for tasks such as classification or tagging.",
+  "practice": "The template for encoder models still used for classification, tagging, reranking and embeddings; ‘BERT-style’ means bidirectional and non-generative.",
+  "aliases": [
+    "Bidirectional Encoder Representations from Transformers"
+  ],
+  "chapters": [
+    "representation-learning",
+    "tokenization",
+    "reranking",
+    "embeddings",
+    "specialist-models",
+    "the-canon",
+    "history-of-ai",
+    "word-embeddings"
+  ]
+}

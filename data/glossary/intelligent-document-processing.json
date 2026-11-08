@@ -1,0 +1,15 @@
+{
+  "id": "intelligent-document-processing",
+  "term": "Intelligent document processing",
+  "def": "Automating data capture from documents end to end: classify them, extract fields with OCR and language models, validate the results, route them to business systems and learn from corrections.",
+  "practice": "The industry name for what cloud document services such as Amazon Textract and Azure Document Intelligence offer; compare them with general vision-language models on your own documents by field-level accuracy and straight-through rate.",
+  "aliases": [
+    "IDP"
+  ],
+  "chapters": [
+    "document-extraction",
+    "document-screen-understanding",
+    "ingestion-parsing"
+  ],
+  "abbr": "IDP"
+}

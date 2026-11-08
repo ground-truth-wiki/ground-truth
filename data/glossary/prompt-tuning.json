@@ -1,0 +1,18 @@
+{
+  "id": "prompt-tuning",
+  "term": "Prompt tuning",
+  "def": "Learning a few continuous embedding vectors, a soft prompt, that are prepended to the input of a frozen model and trained by gradient descent instead of written in words.",
+  "practice": "Very few parameters per task and close to full fine-tuning on billion-parameter models (Lester et al., 2021), but it needs weight access, so not closed APIs; prefix tuning is a per-layer variant.",
+  "aliases": [
+    "soft prompt tuning",
+    "soft prompt",
+    "soft prompts"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "prompt-optimization",
+    "peft-methods",
+    "model-lifecycle",
+    "graph-rag"
+  ]
+}

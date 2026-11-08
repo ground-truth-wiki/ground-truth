@@ -1,0 +1,14 @@
+{
+  "id": "proof-assistant",
+  "term": "Proof assistant",
+  "def": "Software in which proofs are written in a formal language and every step is checked mechanically, so an accepted proof is correct relative to its formal statement.",
+  "practice": "Lean, Isabelle and Rocq (formerly Coq) are widely used; they make mathematics a verifiable domain for RL and test-time search, but a wrongly formalized statement still yields a worthless proof.",
+  "aliases": [
+    "interactive theorem prover"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "rlvr-reasoning",
+    "ai-for-mathematics"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "frontiermath",
+  "term": "FrontierMath",
+  "def": "Epoch AI's benchmark of hundreds of original, unpublished, very hard mathematics problems written and vetted by expert mathematicians, with automatically verifiable answers.",
+  "practice": "Problems take specialists hours to solve and most stay unpublished to limit contamination; it tracks advanced mathematical reasoning after GSM8K and MATH saturated.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "ai-for-science",
+    "benchmark-catalog",
+    "ai-for-mathematics"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advbench",
+  "term": "AdvBench",
+  "def": "The set of harmful behaviors and harmful strings released with the GCG adversarial-suffix paper (Zou et al., 2023) and widely reused to measure jailbreak success.",
+  "practice": "Still common in papers, but it contains many duplicate behaviors, so work such as PAIR uses a curated 50-behavior subset; newer benchmarks also fix the judge.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "jailbreaks-misuse",
+    "multilingual-models",
+    "jailbreak-techniques"
+  ]
+}

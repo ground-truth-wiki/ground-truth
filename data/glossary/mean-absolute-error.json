@@ -1,0 +1,20 @@
+{
+  "id": "mean-absolute-error",
+  "term": "Mean absolute error",
+  "def": "The average absolute difference between predictions and true values, in the target's units.",
+  "practice": "Less sensitive to outliers than squared error and easy to explain; minimizing it yields median forecasts rather than mean forecasts, and as a training loss it is called L1 loss.",
+  "aliases": [
+    "MAE",
+    "L1 loss"
+  ],
+  "chapters": [
+    "classical-ml",
+    "neural-networks",
+    "loss-functions",
+    "classification-metrics",
+    "self-supervised-methods",
+    "autoencoders-latent-spaces",
+    "time-series-forecasting"
+  ],
+  "abbr": "MAE"
+}

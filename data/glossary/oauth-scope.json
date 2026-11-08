@@ -1,0 +1,17 @@
+{
+  "id": "oauth-scope",
+  "term": "OAuth scope",
+  "def": "A string naming a permission an OAuth access token grants, such as files:read; the client requests scopes, and the authorization server may grant fewer and must then say so.",
+  "practice": "MCP servers should name the scopes an operation needs in the WWW-Authenticate challenge and keep scopes_supported minimal, with clients adding scopes through step-up authorization after an insufficient_scope error.",
+  "aliases": [
+    "access token scope"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "personal-assistants",
+    "mcp-security",
+    "secure-agent-design",
+    "mcp-at-scale",
+    "mcp-server-catalog"
+  ]
+}

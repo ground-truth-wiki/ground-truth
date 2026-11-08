@@ -1,0 +1,22 @@
+{
+  "id": "sgd",
+  "term": "Stochastic gradient descent",
+  "def": "Gradient descent that estimates the gradient from a random mini-batch at each step instead of the full dataset, trading exact gradients for cheap, noisy updates.",
+  "practice": "The base algorithm that momentum, Adam and other deep learning optimizers refine; LLMs are usually trained with AdamW, while SGD with momentum remains common for convolutional networks.",
+  "aliases": [
+    "SGD",
+    "minibatch SGD",
+    "mini-batch SGD"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "privacy",
+    "distributions-and-estimation",
+    "optimizers",
+    "training-hyperparameters",
+    "linear-and-kernel-models",
+    "training-neural-networks",
+    "privacy-preserving-ml"
+  ],
+  "abbr": "SGD"
+}

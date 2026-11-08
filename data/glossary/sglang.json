@@ -1,0 +1,17 @@
+{
+  "id": "sglang",
+  "term": "SGLang",
+  "def": "Open-source LLM serving engine, introduced with a frontend language for structured LLM programs (Zheng et al., 2023), known for RadixAttention prefix caching and fast constrained decoding.",
+  "practice": "As of November 2026 a main alternative to vLLM for GPU serving, widely used for large mixture-of-experts models with expert parallelism and prefill-decode disaggregation.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "batching-scheduling",
+    "disaggregated-serving",
+    "speculative-decoding",
+    "prompt-caching",
+    "structured-outputs",
+    "kv-cache-compression",
+    "inference-nondeterminism"
+  ]
+}

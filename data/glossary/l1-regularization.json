@@ -1,0 +1,15 @@
+{
+  "id": "l1-regularization",
+  "term": "L1 regularization",
+  "def": "Adding a penalty proportional to the sum of the absolute values of the weights to the loss, which drives many weights exactly to zero.",
+  "practice": "Used in lasso regression and sparse logistic regression, where the zeroed weights double as feature selection; among strongly correlated features it tends to keep one and drop the rest.",
+  "aliases": [
+    "L1 penalty",
+    "lasso"
+  ],
+  "chapters": [
+    "classical-ml",
+    "linear-and-kernel-models",
+    "sae-circuit-tracing"
+  ]
+}

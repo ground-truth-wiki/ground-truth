@@ -104,3 +104,12 @@ advanced-rag
 - [Query understanding](#query-understanding)
 - [Planning and reasoning strategies](#planning-reasoning)
 - [The agent loop](#agent-loop)
+- [Graph neural networks](#graph-neural-networks)
+- [Retrieval-augmented language models: the research lineage](#retrieval-augmented-lms)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Knowledge graphs and ontologies](#knowledge-graphs)
+- [Graph RAG methods](#graph-rag)

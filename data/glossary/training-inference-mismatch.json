@@ -1,0 +1,15 @@
+{
+  "id": "training-inference-mismatch",
+  "term": "Training-inference mismatch",
+  "def": "The gap between token probabilities computed by the inference engine that samples rollouts and by the training engine that computes gradients, which makes nominally on-policy RL slightly off-policy.",
+  "practice": "Worsens with quantized or low-precision rollouts; corrected by weighting samples with the trainer-to-sampler probability ratio, as truncated importance sampling does.",
+  "aliases": [
+    "rollout-training mismatch"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "agentic-rl",
+    "rl-environment-harnesses",
+    "llm-policy-gradients"
+  ]
+}

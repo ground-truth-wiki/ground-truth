@@ -1,0 +1,14 @@
+{
+  "id": "universal-jailbreak",
+  "term": "Universal jailbreak",
+  "def": "A single prompting strategy that reliably bypasses a model's safeguards across many different harmful requests, not just one.",
+  "practice": "The main target of Anthropic's constitutional classifiers (2025) and its jailbreak bug bounties; GCG suffixes were an early automated form.",
+  "aliases": [],
+  "chapters": [
+    "jailbreaks-misuse",
+    "red-teaming",
+    "safety-character-training",
+    "guard-models-moderation",
+    "jailbreak-techniques"
+  ]
+}

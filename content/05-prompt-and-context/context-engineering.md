@@ -112,3 +112,11 @@ context-engineering
 - [Multi-agent systems](#multi-agent)
 - [Memory](#agent-memory)
 - [Anatomy of an agent harness](#harness-anatomy)
+- [Agent memory architectures and benchmarks](#agent-memory-architectures)
+- [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Compaction, context editing and reasoning state](#context-compaction)

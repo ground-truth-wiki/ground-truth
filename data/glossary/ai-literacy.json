@@ -1,0 +1,11 @@
+{
+  "id": "ai-literacy",
+  "term": "AI literacy",
+  "def": "The skills, knowledge and understanding that let providers, deployers and affected people use AI systems in an informed way and grasp their opportunities, risks and possible harms.",
+  "practice": "Article 4 of the EU AI Act has required organizations to act on it since 2 February 2025; the AI Omnibus softened the duty to supporting literacy, without guaranteeing any individual's level.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "eu-ai-act"
+  ]
+}

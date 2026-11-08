@@ -1,0 +1,10 @@
+{
+  "id": "lora-alpha",
+  "term": "LoRA alpha",
+  "def": "The LoRA hyperparameter that scales the adapter's update, which is multiplied by alpha divided by the rank, or by alpha over the square root of the rank in rsLoRA.",
+  "practice": "Changing the rank without adjusting alpha changes the adapter's effective learning rate, so tune the two together.",
+  "aliases": [],
+  "chapters": [
+    "fine-tuning-practice"
+  ]
+}

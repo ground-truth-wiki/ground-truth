@@ -79,3 +79,4 @@ watchlist
 - [Who’s who and where to learn](#whos-who)
 - [Decision guides](#decision-guides)
 - [Benchmark literacy](#benchmark-literacy)
+- [How AI research is published: arXiv, conferences and peer review](#ai-research-publishing)

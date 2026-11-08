@@ -1,0 +1,14 @@
+{
+  "id": "spacetime-patches",
+  "term": "Spacetime patches",
+  "def": "Video tokens made by cutting a (usually compressed) video into small blocks spanning both space and a few frames, so a transformer can handle clips of varied length, resolution and aspect ratio.",
+  "practice": "The token unit of video diffusion transformers; their count, set by resolution, duration and the autoencoder's compression, drives generation cost.",
+  "aliases": [
+    "spatio-temporal patches",
+    "tubelets"
+  ],
+  "chapters": [
+    "video-world-models",
+    "video-generation"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "average-handle-time",
+  "term": "Average handle time",
+  "def": "The average time a contact occupies an agent from start to finish, including talk time, hold time and after-contact work.",
+  "practice": "Good AI handoff summaries and agent-assist tools lower human AHT, but pushing it alone rewards rushing customers, so pair it with first contact resolution and CSAT.",
+  "aliases": [
+    "AHT",
+    "handle time"
+  ],
+  "chapters": [
+    "support-agents"
+  ],
+  "abbr": "AHT"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bitsandbytes",
+  "term": "bitsandbytes",
+  "def": "An open-source PyTorch library for 8-bit and 4-bit quantization, including the NF4 data type, that quantizes weights at load time without calibration and also provides 8-bit optimizers.",
+  "practice": "The quickest way to load a model in 4 bits in Transformers and the basis of QLoRA fine-tuning; weight-only, so it saves memory more than it speeds up serving.",
+  "aliases": [
+    "bnb"
+  ],
+  "chapters": [
+    "quantization",
+    "fine-tuning-practice",
+    "quantization-methods"
+  ]
+}

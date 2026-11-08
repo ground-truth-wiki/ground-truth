@@ -1,0 +1,17 @@
+{
+  "id": "epoch-ai",
+  "term": "Epoch AI",
+  "def": "A data-first research nonprofit that tracks the inputs and trends of AI, such as training compute, hardware, data and investment, and runs benchmarks including FrontierMath.",
+  "practice": "A standard source for compute trends (frontier training compute growing about 4 to 5x per year), data limits and model databases; check the date of any figure you cite.",
+  "aliases": [],
+  "chapters": [
+    "watchlist",
+    "new-architectures",
+    "open-weight-frontier",
+    "sota-snapshot",
+    "scaling-laws",
+    "compute-accounting",
+    "benchmark-catalog",
+    "ai-energy"
+  ]
+}

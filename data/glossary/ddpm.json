@@ -1,0 +1,14 @@
+{
+  "id": "ddpm",
+  "term": "Denoising diffusion probabilistic model",
+  "def": "The 2020 diffusion formulation that trains a network to predict the Gaussian noise added at a random step of a fixed noising process, then generates by reversing that process step by step.",
+  "practice": "Its simple noise-prediction loss is still the reference objective; the original sampler used about a thousand steps, which later samplers such as DDIM cut sharply without retraining.",
+  "aliases": [
+    "DDPM"
+  ],
+  "chapters": [
+    "image-generation",
+    "diffusion-flow-matching"
+  ],
+  "abbr": "DDPM"
+}

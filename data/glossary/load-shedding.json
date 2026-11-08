@@ -1,0 +1,15 @@
+{
+  "id": "load-shedding",
+  "term": "Load shedding",
+  "def": "Deliberately rejecting or degrading excess requests as a service nears overload, so that the work it does accept still completes within its deadlines.",
+  "practice": "Shed batch jobs and background agents before interactive traffic; Google's SRE book tags each request with a criticality and rejects lower-criticality work first.",
+  "aliases": [
+    "request shedding"
+  ],
+  "chapters": [
+    "reliability-engineering",
+    "batching-scheduling",
+    "cost-capacity",
+    "rate-limits-overload"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "masked-modeling",
+  "term": "Masked modeling",
+  "def": "Self-supervised pretraining that hides parts of the input, such as tokens or image patches, and trains the model to reconstruct them from the visible context.",
+  "practice": "BERT masks about 15% of tokens and masked autoencoders for images about 75% of patches; encoders trained this way are fine-tuned for classification, retrieval and reranking rather than open-ended generation.",
+  "aliases": [
+    "masked language modeling",
+    "MLM",
+    "masked image modeling",
+    "masked LM"
+  ],
+  "chapters": [
+    "representation-learning",
+    "embeddings",
+    "reranking",
+    "self-supervised-methods",
+    "language-modeling",
+    "ai-for-biology"
+  ]
+}

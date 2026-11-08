@@ -1,0 +1,16 @@
+{
+  "id": "boosting",
+  "term": "Boosting",
+  "def": "Building an ensemble sequentially, with each new weak model focusing on the examples or residual errors the earlier models got wrong, and summing their weighted predictions.",
+  "practice": "AdaBoost reweights misclassified examples and gradient boosting fits each new tree to the gradient of the loss; boosting mainly reduces bias, bagging mainly reduces variance.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "feature-engineering",
+    "linear-and-kernel-models",
+    "trees-and-ensembles",
+    "model-interpretability",
+    "time-series-forecasting",
+    "reward-modeling"
+  ]
+}

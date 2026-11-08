@@ -1,0 +1,11 @@
+{
+  "id": "gptq",
+  "term": "GPTQ",
+  "def": "A post-training weight quantization method (Frantar et al., 2022) that quantizes each layer one column at a time, using approximate second-order information to adjust the remaining weights for each rounding error.",
+  "practice": "A standard 4-bit weight-only format with fast kernels in vLLM and other engines; it needs a calibration dataset and commonly uses groups of 128 weights.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "quantization-methods"
+  ]
+}

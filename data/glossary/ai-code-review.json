@@ -1,0 +1,18 @@
+{
+  "id": "ai-code-review",
+  "term": "AI code review",
+  "def": "Automated pull-request review by a model or agent that posts comments and suggested fixes, triggered when a pull request opens or changes, or on request.",
+  "practice": "Examples include Copilot code review, Cursor Bugbot (guided by .cursor/BUGBOT.md) and Codex (@codex review, guided by AGENTS.md); treat it as a first pass that a human owner still reviews.",
+  "aliases": [
+    "reviewer agent",
+    "code review agent",
+    "review bot"
+  ],
+  "chapters": [
+    "working-with-coding-agents",
+    "coding-agents",
+    "coding-harness-landscape",
+    "ci-cd-for-ai",
+    "cloud-and-ci-coding-agents"
+  ]
+}

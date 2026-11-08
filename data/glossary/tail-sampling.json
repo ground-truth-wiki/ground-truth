@@ -1,0 +1,14 @@
+{
+  "id": "tail-sampling",
+  "term": "Tail sampling",
+  "def": "Deciding whether to keep a trace after all or most of its spans have arrived, so the rule can use the whole trace; head sampling instead decides when the trace starts.",
+  "practice": "Keep every failed, slow, expensive or flagged agent trace plus a small random share of the rest; it needs a stateful component with buffering capacity, such as the Collector's tail sampling processor.",
+  "aliases": [
+    "tail-based sampling"
+  ],
+  "chapters": [
+    "observability-tracing",
+    "online-evaluation",
+    "otel-genai-conventions"
+  ]
+}

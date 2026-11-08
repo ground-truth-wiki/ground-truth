@@ -1,0 +1,19 @@
+{
+  "id": "voice-cloning",
+  "term": "Voice cloning",
+  "def": "Producing synthetic speech that imitates a specific real person's voice, by fine-tuning on their recordings or by prompting a zero-shot TTS model with a sample.",
+  "practice": "Powers dubbing, accessibility voices and personalization, and also impersonation fraud; ship it with verified consent, disclosure and misuse detection, since the EU AI Act treats deceptive cloned audio as a deepfake.",
+  "aliases": [
+    "voice clone"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "responsible-ai",
+    "diffusion-flow-matching",
+    "speech-recognition",
+    "speech-synthesis",
+    "audio-codecs-tokens",
+    "multimodal-evaluation"
+  ]
+}

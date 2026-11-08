@@ -86,3 +86,27 @@ fine-tuning-practice
 - [RL with verifiable rewards](#rlvr-reasoning)
 - [Small and local models](#small-local-models)
 - [Linear algebra for AI](#linear-algebra)
+- [Eigenvectors, SVD and PCA](#eigenvectors-svd-pca)
+- [Optimizers in depth](#optimizers)
+- [Learning rate, batch size and schedules](#training-hyperparameters)
+- [Training neural networks in practice](#training-neural-networks)
+- [Deep learning frameworks: PyTorch, JAX and Keras](#dl-frameworks)
+- [Direct alignment algorithms: DPO and its relatives](#dpo-and-relatives)
+- [Model merging methods](#model-merging-methods)
+- [How fine-tuning changes safety](#fine-tuning-and-safety)
+- [Post-training: from base model to assistant](#post-training-overview)
+- [Model hubs and the Hugging Face ecosystem](#hugging-face-ecosystem)
+- [Training and fine-tuning retrievers](#training-retrievers)
+- [Data licensing, copyright and consent](#data-licensing-consent)
+- [Dataset versioning and lineage](#dataset-versioning-lineage)
+- [Data formats for AI datasets](#data-formats)
+- [Data selection and attribution](#data-selection-attribution)
+- [Image editing, control and personalization](#image-editing-control)
+- [Continual learning and test-time adaptation](#continual-learning)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Parameter-efficient fine-tuning methods](#peft-methods)
+- [Managed and reinforcement fine-tuning services](#fine-tuning-services)

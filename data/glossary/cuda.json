@@ -1,0 +1,17 @@
+{
+  "id": "cuda",
+  "term": "CUDA",
+  "def": "NVIDIA's parallel computing platform and programming model for its GPUs, comprising C++ language extensions, a compiler, runtime, driver and libraries.",
+  "practice": "The software ecosystem behind NVIDIA's lead: most deep learning kernels target it first, and AMD's HIP deliberately mirrors its API to ease porting.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "memory-math",
+    "serving-engines",
+    "training-neural-networks",
+    "floating-point-formats",
+    "kv-cache-compression",
+    "pretraining-run",
+    "moe-serving"
+  ]
+}

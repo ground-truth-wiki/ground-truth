@@ -1,0 +1,14 @@
+{
+  "id": "moe-router",
+  "term": "MoE router",
+  "def": "The small learned layer in a mixture-of-experts block that scores every expert for each token and selects which experts process it.",
+  "practice": "Usually a single linear layer with softmax or sigmoid scores followed by top-k selection; Switch Transformer computed it in float32 for stability even when the rest ran in bfloat16.",
+  "aliases": [
+    "gating network",
+    "expert router",
+    "MoE gate"
+  ],
+  "chapters": [
+    "mixture-of-experts"
+  ]
+}

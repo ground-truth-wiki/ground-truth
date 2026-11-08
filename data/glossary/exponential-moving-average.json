@@ -1,0 +1,16 @@
+{
+  "id": "exponential-moving-average",
+  "term": "Exponential moving average",
+  "def": "A running average that weights recent values more heavily, updated as m ← βm + (1 − β)x with β close to 1.",
+  "practice": "Adam's moment estimates are EMAs of the gradient, and diffusion and self-supervised models keep an EMA copy of the weights for evaluation or as a teacher.",
+  "aliases": [
+    "EMA"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "representation-learning",
+    "image-generation",
+    "self-supervised-methods"
+  ],
+  "abbr": "EMA"
+}

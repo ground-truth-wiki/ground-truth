@@ -1,0 +1,17 @@
+{
+  "id": "natural-language-inference",
+  "term": "Natural language inference",
+  "def": "The task of classifying whether a premise text entails, contradicts or is neutral toward a hypothesis text.",
+  "practice": "NLI models are cheap groundedness checkers: split an answer into claims and test each against the retrieved passages, as SummaC does; they struggle when support is spread across passages.",
+  "aliases": [
+    "NLI",
+    "textual entailment"
+  ],
+  "chapters": [
+    "grounding-citations",
+    "rag-evaluation",
+    "metrics-graders",
+    "nlp-tasks"
+  ],
+  "abbr": "NLI"
+}

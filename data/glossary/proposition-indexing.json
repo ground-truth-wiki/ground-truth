@@ -1,0 +1,13 @@
+{
+  "id": "proposition-indexing",
+  "term": "Proposition indexing",
+  "def": "Rewriting a corpus into propositions, atomic self-contained statements of one fact each, and indexing those instead of passages as the unit of retrieval.",
+  "practice": "Chen et al. (2023) found it outperformed passage-level indexing in retrieval, but it needs a model pass over the whole corpus and yields many more, smaller index entries.",
+  "aliases": [
+    "proposition retrieval",
+    "Dense X Retrieval"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

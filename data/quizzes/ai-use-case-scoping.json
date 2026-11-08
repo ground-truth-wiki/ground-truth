@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ai-use-case-scoping-1",
+    "chapter": "ai-use-case-scoping",
+    "q": "A support team routes incoming emails to five product teams with a keyword rule set. It works well, but it has grown to hundreds of rules that nobody wants to maintain. Someone proposes an LLM router. What does the scoping guidance in this chapter suggest?",
+    "options": [
+      "Keep the rules, because a heuristic always beats a model when it already works",
+      "Treat the rule set as the baseline, measure it, and test whether an AI router beats it on the same real emails; unmaintainable rules are a good reason to look",
+      "Replace the rules with the LLM right away, because language models understand email better than keywords do",
+      "Add rules until routing is perfect, because a rule set is easier to explain than a model"
+    ],
+    "answer": 1,
+    "explain": "Zinkevich’s Rule #3 says to choose machine learning over a complex heuristic once you have data, because “a complex heuristic is unmaintainable”. Google’s problem-framing guide makes the non-ML solution the benchmark any model must beat. So the rules become the baseline, and the AI router has to win on the same cases. The tempting first option misreads Rule #1: it says not to be afraid to launch without machine learning, not that heuristics always win."
+  },
+  {
+    "id": "ai-use-case-scoping-2",
+    "chapter": "ai-use-case-scoping",
+    "q": "A model flags support tickets that report a product safety problem, and flagged tickets go to urgent human review. A missed safety report is far more costly than the minute a reviewer spends dismissing a false alarm. Which operating point should the team favor?",
+    "options": [
+      "High precision, because every false alarm wastes a reviewer’s time",
+      "Whatever maximizes F1, because it balances false positives and false negatives",
+      "High recall, because misses dominate the total cost even if false alarms rise",
+      "Whatever maximizes accuracy, because accuracy counts both kinds of error"
+    ],
+    "answer": 2,
+    "explain": "When one error type costs far more than the other, the total cost is driven by that error, so the team should accept more false alarms to miss fewer real reports. That means favoring recall. The tempting F1 answer weighs both errors equally, which PAIR warns is “not likely to match the consequences in real life for users”. Accuracy is worse still: when safety reports are rare, it is dominated by the easy negatives."
+  },
+  {
+    "id": "ai-use-case-scoping-3",
+    "chapter": "ai-use-case-scoping",
+    "q": "After a model upgrade, an invoice-extraction feature’s F1 on the eval set rises clearly. Over the following month, the product metric (the share of invoices processed with no human touching them) stays flat. What is the most reasonable conclusion?",
+    "options": [
+      "The upgrade worked, so the team should keep investing in model quality until the product metric catches up",
+      "F1 is the wrong model metric, and switching to accuracy will reveal the real gain",
+      "The eval set is too small, so the team should add cases until the product metric moves",
+      "Model quality is probably not what limits the product outcome, so the team should look at the rest of the workflow before spending more on the model"
+    ],
+    "answer": 3,
+    "explain": "Success metrics and model metrics measure different things. Google’s framing guide notes that a model can have great evaluation metrics and still not move you closer to your success criteria, which indicates that even a perfect model would not meet them. A clear model gain with a flat product metric points to a bottleneck elsewhere, such as review rules or how the output is used. The tempting first option assumes the product metric is simply lagging, but a month of flat results after a clear gain is evidence against that."
+  }
+]

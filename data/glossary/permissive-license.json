@@ -1,0 +1,16 @@
+{
+  "id": "permissive-license",
+  "term": "Permissive license",
+  "def": "An open license, such as Apache 2.0 or MIT, that allows use, modification and redistribution for any purpose with few conditions beyond attribution and keeping the license text.",
+  "practice": "Apache 2.0 also grants patent rights; several leading open-weight models ship under Apache 2.0 or MIT, unlike community licenses with user-count or naming conditions.",
+  "aliases": [
+    "permissively licensed"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-families",
+    "choosing-a-model",
+    "model-licenses",
+    "data-licensing-consent"
+  ]
+}

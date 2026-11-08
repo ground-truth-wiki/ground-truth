@@ -77,3 +77,14 @@ ai-for-science
 - [Reasoning models and test-time compute](#reasoning-models)
 - [Deep research systems](#deep-research)
 - [Open problems and big debates](#open-problems)
+- [Graph neural networks](#graph-neural-networks)
+- [Evolutionary program search with LLMs](#evolutionary-program-search)
+- [AI scientist agents and autonomous labs](#ai-scientist-agents)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [AI for mathematics and formal theorem proving](#ai-for-mathematics)
+- [AI for biology: proteins, design and genomic models](#ai-for-biology)
+- [AI for weather, climate and materials](#ai-for-physical-sciences)

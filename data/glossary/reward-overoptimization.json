@@ -1,0 +1,20 @@
+{
+  "id": "reward-overoptimization",
+  "term": "Reward overoptimization",
+  "def": "Optimizing against a proxy reward, such as a learned reward model, past the point where the proxy keeps rising while true quality, judged by people or a gold reward, falls.",
+  "practice": "Track held-out human or gold-judge scores against KL distance from the start; KL penalties, reward model ensembles and early stopping limit it.",
+  "aliases": [
+    "overoptimization",
+    "over-optimization",
+    "reward model overoptimization"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "alignment-concepts",
+    "rlvr-reasoning",
+    "post-training-overview",
+    "reward-modeling",
+    "test-time-search",
+    "evolutionary-program-search"
+  ]
+}

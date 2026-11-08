@@ -1,0 +1,17 @@
+{
+  "id": "pointwise-pairwise-listwise",
+  "term": "Pointwise, pairwise and listwise ranking",
+  "def": "Three ways to train or prompt a ranker: score each candidate on its own (pointwise), decide which of two is better (pairwise), or order a whole candidate list at once (listwise).",
+  "practice": "Applies to learning-to-rank losses and LLM rerankers alike; listwise prompts capture comparisons but are order-sensitive and costly, while pointwise scores are cheap and cacheable.",
+  "aliases": [
+    "pointwise ranking",
+    "pairwise ranking",
+    "listwise ranking",
+    "listwise reranking"
+  ],
+  "chapters": [
+    "reranking",
+    "llm-as-judge",
+    "judge-models-meta-evaluation"
+  ]
+}

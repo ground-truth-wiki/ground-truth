@@ -1,0 +1,20 @@
+{
+  "id": "multi-tenancy",
+  "term": "Multi-tenancy",
+  "def": "Serving many customers (tenants), each with its own users, from shared infrastructure while keeping their data, limits and configuration separate.",
+  "practice": "AI systems leak across tenants through shared indexes, caches, memories and prompts; carry the tenant id into retrieval filters, cache keys and traces, and test with cross-tenant canary queries.",
+  "aliases": [
+    "multitenancy",
+    "multi-tenant",
+    "multitenant"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "production-rag",
+    "vector-databases",
+    "sandboxes",
+    "reference-architecture",
+    "reference-architectures",
+    "embedded-agent-harnesses"
+  ]
+}

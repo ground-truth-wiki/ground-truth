@@ -1,0 +1,21 @@
+{
+  "id": "neurips",
+  "term": "Conference on Neural Information Processing Systems",
+  "def": "An annual, multi-track machine learning conference founded in 1987 and one of the main ML research venues, alongside ICML and ICLR.",
+  "practice": "Its Datasets and Benchmarks track publishes many evaluation suites; older papers cite it as NIPS, the name used until 2018.",
+  "aliases": [
+    "NeurIPS",
+    "NIPS"
+  ],
+  "chapters": [
+    "watchlist",
+    "the-canon",
+    "history-of-ai",
+    "trees-and-ensembles",
+    "anomaly-drift-detection",
+    "convolutional-networks",
+    "deep-generative-models",
+    "reasoning-training-recipes"
+  ],
+  "abbr": "NeurIPS"
+}

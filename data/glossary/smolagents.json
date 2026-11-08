@@ -1,0 +1,14 @@
+{
+  "id": "smolagents",
+  "term": "smolagents",
+  "def": "A minimal open-source agent library from Hugging Face whose CodeAgent writes its actions as Python code, alongside a ToolCallingAgent that uses conventional JSON tool calls.",
+  "practice": "Small and readable; its local Python executor is not a security sandbox, so run code agents in E2B, Modal, Docker or similar isolation.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "agent-tools",
+    "sandboxes",
+    "autonomy-and-oversight"
+  ]
+}

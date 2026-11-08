@@ -1,0 +1,14 @@
+{
+  "id": "importance-sampling-ratio",
+  "term": "Importance sampling ratio",
+  "def": "The probability of a sampled token or sequence under the current policy divided by its probability under the policy that generated it, used to correct for slightly stale samples.",
+  "practice": "PPO-style objectives clip it per token, typically to 1 plus or minus 0.2; GSPO computes it per sequence, and fixes for training-inference mismatch apply it between sampler and trainer.",
+  "aliases": [
+    "policy ratio"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "agentic-rl"
+  ]
+}

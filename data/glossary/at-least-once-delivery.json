@@ -1,0 +1,16 @@
+{
+  "id": "at-least-once-delivery",
+  "term": "At-least-once delivery",
+  "def": "A messaging guarantee that every message is delivered one or more times, so consumers may see duplicates and must process idempotently; at-most-once delivery instead risks losing messages.",
+  "practice": "Most queues and webhook senders are at-least-once; pair them with idempotency keys so a redelivered job does not send a second email or charge a card twice.",
+  "aliases": [
+    "at-least-once",
+    "at-least-once semantics"
+  ],
+  "chapters": [
+    "reliability-engineering",
+    "long-running-agents",
+    "reference-architecture",
+    "async-batch-workloads"
+  ]
+}

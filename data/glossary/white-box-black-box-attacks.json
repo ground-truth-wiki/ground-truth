@@ -1,0 +1,17 @@
+{
+  "id": "white-box-black-box-attacks",
+  "term": "White-box and black-box attacks",
+  "def": "Attack settings classified by attacker knowledge: white-box attackers know the architecture and weights, black-box attackers only see outputs to their queries, gray-box attackers know something in between.",
+  "practice": "Report the setting with every result; publishing open weights makes white-box attacks possible against every system built on that model.",
+  "aliases": [
+    "white-box attack",
+    "black-box attack",
+    "gray-box attack",
+    "grey-box attack"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "red-teaming",
+    "jailbreaks-misuse"
+  ]
+}

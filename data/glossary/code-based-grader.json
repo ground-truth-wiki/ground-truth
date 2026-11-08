@@ -1,0 +1,18 @@
+{
+  "id": "code-based-grader",
+  "term": "Code-based grader",
+  "def": "A grader implemented as deterministic code, such as exact match, a regex, schema validation, unit tests or a check of the final state, rather than a model or a person.",
+  "practice": "The first choice whenever an objective rule can detect the failure: fast, cheap and reproducible, but brittle against valid variations of an answer.",
+  "aliases": [
+    "code-based eval",
+    "deterministic grader",
+    "programmatic grader"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "why-evals",
+    "evaluating-agents",
+    "ci-cd-for-ai",
+    "prompt-chaining"
+  ]
+}

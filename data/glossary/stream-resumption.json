@@ -1,0 +1,15 @@
+{
+  "id": "stream-resumption",
+  "term": "Stream resumption",
+  "def": "Continuing an interrupted response stream from the last received event instead of restarting it, using event ids or sequence cursors from which the server replays.",
+  "practice": "SSE clients send Last-Event-ID on reconnect and OpenAI background responses resume with starting_after and a sequence number, while MCP removed SSE resumability in its 2026-07-28 specification, so MCP clients re-issue the request (as of November 2026).",
+  "aliases": [
+    "resumable streaming",
+    "stream resumability"
+  ],
+  "chapters": [
+    "streaming",
+    "mcp-transports",
+    "mcp-spec-history"
+  ]
+}

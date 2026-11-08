@@ -1,0 +1,17 @@
+{
+  "id": "ai-index",
+  "term": "AI Index",
+  "def": "An annual report, first published in 2017 and produced as an independent initiative at Stanford HAI, that compiles data on AI research, technical performance, investment, adoption and policy.",
+  "practice": "It is widely quoted for headline trends, such as a more than 280-fold drop in the cost of GPT-3.5-level inference between November 2022 and October 2024; cite the edition and chapter.",
+  "aliases": [
+    "Stanford AI Index",
+    "AI Index Report"
+  ],
+  "chapters": [
+    "watchlist",
+    "sota-snapshot",
+    "model-licenses",
+    "scaling-trends-limits",
+    "ai-industry-map"
+  ]
+}

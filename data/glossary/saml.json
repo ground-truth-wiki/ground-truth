@@ -1,0 +1,14 @@
+{
+  "id": "saml",
+  "term": "SAML",
+  "def": "Security Assertion Markup Language: an XML-based OASIS standard for exchanging authentication and authorization assertions between an identity provider and a service, widely used for enterprise single sign-on.",
+  "practice": "Many enterprise buyers still require SAML single sign-on even when a product supports OpenID Connect, so plan to support both.",
+  "aliases": [
+    "Security Assertion Markup Language",
+    "SAML 2.0"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ],
+  "abbr": "SAML"
+}

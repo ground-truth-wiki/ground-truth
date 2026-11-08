@@ -1,0 +1,21 @@
+{
+  "id": "independence-iid",
+  "term": "Independent and identically distributed",
+  "def": "Describes samples drawn independently of each other from the same distribution, the assumption behind most standard error estimates and validation splits.",
+  "practice": "Eval cases that share a source document or template, or that come in time order, break it; use clustered standard errors and group- or time-aware splits, or intervals come out too narrow.",
+  "aliases": [
+    "i.i.d.",
+    "iid",
+    "IID"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-statistics",
+    "eval-datasets",
+    "distributions-and-estimation",
+    "classification-metrics",
+    "validation-tuning",
+    "llm-distillation"
+  ],
+  "abbr": "i.i.d."
+}

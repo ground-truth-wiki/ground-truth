@@ -1,0 +1,13 @@
+{
+  "id": "stochastic-parrot",
+  "term": "Stochastic parrot",
+  "def": "A metaphor from Bender, Gebru and colleagues (FAccT 2021) for language models as systems that stitch together linguistic forms seen in training data by probability, without reference to meaning.",
+  "practice": "Shorthand for the skeptical side of the debate over whether LLMs understand, and for the paper's concerns about the costs of scale; cited counterevidence includes world-model probes such as Othello-GPT.",
+  "aliases": [],
+  "chapters": [
+    "open-problems",
+    "mental-models",
+    "responsible-ai",
+    "reasoning-debate"
+  ]
+}

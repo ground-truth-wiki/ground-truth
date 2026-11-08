@@ -1,0 +1,14 @@
+{
+  "id": "sampling-rate",
+  "term": "Sampling rate",
+  "def": "The number of samples per second in a digital signal, in hertz; frequencies above half of it, the Nyquist frequency, cannot be represented.",
+  "practice": "Speech models commonly expect 16 kHz mono, telephony carries 8 kHz and neural codecs often run at 24 or 48 kHz, so resample input to the rate the model expects.",
+  "aliases": [
+    "sample rate"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "video-understanding"
+  ]
+}

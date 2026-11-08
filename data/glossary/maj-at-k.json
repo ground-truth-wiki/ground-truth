@@ -1,0 +1,18 @@
+{
+  "id": "maj-at-k",
+  "term": "maj@k",
+  "def": "Accuracy when k answers are sampled for each problem and the most common final answer is taken as the model’s answer.",
+  "practice": "Common on math benchmarks, for example Minerva’s maj1@k and DeepSeek-R1’s cons@64; never compare it with pass@1, which DeepSeek-R1 reports as mean correctness over k samples.",
+  "aliases": [
+    "maj1@k",
+    "cons@k",
+    "majority-vote accuracy"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "benchmark-literacy",
+    "reasoning-models",
+    "test-time-scaling",
+    "reasoning-prompts"
+  ]
+}

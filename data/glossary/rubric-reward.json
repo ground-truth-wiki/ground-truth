@@ -1,0 +1,17 @@
+{
+  "id": "rubric-reward",
+  "term": "Rubric-based reward",
+  "def": "An RL reward in which a judge model scores a response against a checklist of prompt-specific criteria, extending RL to tasks without automatic answer checks.",
+  "practice": "Used in fields like medicine and science, where Rubrics as Rewards (Gunjal et al., 2025) beat Likert-scale judge rewards; items are often weighted, and the judge can still be gamed.",
+  "aliases": [
+    "rubrics as rewards",
+    "rubric reward"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "agentic-rl",
+    "llm-as-judge",
+    "safety-character-training",
+    "reasoning-training-recipes"
+  ]
+}

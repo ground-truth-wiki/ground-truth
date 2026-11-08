@@ -1,0 +1,13 @@
+{
+  "id": "interp-circuit",
+  "term": "Circuit (interpretability)",
+  "def": "A subgraph of a model's components or features, connected through its weights, that implements a specific behavior.",
+  "practice": "Classic examples are the induction-head circuit and the indirect-object-identification circuit in GPT-2 small; claims need causal tests such as activation patching.",
+  "aliases": [
+    "circuit analysis",
+    "circuit discovery"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

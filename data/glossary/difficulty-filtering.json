@@ -1,0 +1,15 @@
+{
+  "id": "difficulty-filtering",
+  "term": "Difficulty filtering",
+  "def": "Selecting RL training prompts the starting model solves only some of the time, because groups that are all correct or all wrong give group-relative methods no learning signal.",
+  "practice": "Done offline from measured pass rates, often keeping prompts solved roughly 20 to 80 percent of the time, or online by dropping zero-signal groups, as DAPO's dynamic sampling does.",
+  "aliases": [
+    "pass-rate filtering"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "rl-environment-harnesses",
+    "agentic-rl",
+    "reasoning-training-recipes"
+  ]
+}

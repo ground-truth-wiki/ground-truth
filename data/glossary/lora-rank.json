@@ -1,0 +1,14 @@
+{
+  "id": "lora-rank",
+  "term": "LoRA rank",
+  "def": "The inner dimension r of LoRA's two low-rank matrices, which sets the adapter's number of trainable parameters and how expressive its weight update can be.",
+  "practice": "Commonly 8 to 64; large datasets can exceed a low rank's capacity, high ranks need rank-stabilized scaling, and RL fine-tuning works even at very low rank.",
+  "aliases": [
+    "adapter rank"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "linear-algebra",
+    "peft-methods"
+  ]
+}

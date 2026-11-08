@@ -1,0 +1,16 @@
+{
+  "id": "heuristic-filtering",
+  "term": "Heuristic quality filters",
+  "def": "Rule-based document filters on length, mean word length, symbol and stop-word ratios, punctuation and repeated lines or n-grams, such as the Gopher (MassiveText) and C4 rules.",
+  "practice": "A cheap first pass before model-based filtering; FineWeb applies the Gopher quality and repetition filters and the C4 rules except terminal punctuation, which alone removed about 30% of tokens.",
+  "aliases": [
+    "Gopher rules",
+    "C4 filters",
+    "rule-based filtering",
+    "heuristic filters"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline"
+  ]
+}

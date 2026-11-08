@@ -1,0 +1,41 @@
+[
+  {
+    "id": "guard-models-moderation-1",
+    "chapter": "guard-models-moderation",
+    "q": "A guard catches 95% of violations and flags 1% of benign messages. On your platform, 1 message in 1,000 violates the policy, and every flag goes to a human reviewer. Roughly what share of the flags that reviewers see are real violations?",
+    "options": [
+      "About 95%, the guard’s recall",
+      "About 50%, because the two error rates roughly balance",
+      "Under 10%",
+      "About 99%, because the false-positive rate is only 1%"
+    ],
+    "answer": 2,
+    "explain": "Per 1,000 messages the guard flags about 0.95 real violations and about 10 benign ones (1% of 999), so precision is 0.95 / 10.94, roughly 9%. The tempting answer, 95%, confuses recall (the share of violations caught) with precision (the share of flags that are right). When violations are rare, even a small false-positive rate produces far more false flags than true ones."
+  },
+  {
+    "id": "guard-models-moderation-2",
+    "chapter": "guard-models-moderation",
+    "q": "Your policy team adds a new harm category on Monday and wants it enforced by Friday. Today you run a small, fast classifier trained on a fixed taxonomy. Which plan is sound, and what does it cost?",
+    "options": [
+      "Retrain the small classifier on the new category by Friday; it will be the most accurate option at once",
+      "Write the new rule into a policy-following reasoner’s prompt and send it only the items that might match, accepting more latency and cost on that slice",
+      "Lower the existing classifier’s thresholds for every category so the new harm is caught as a side effect",
+      "Describe the new category in the main chat model’s system prompt and drop the separate guard"
+    ],
+    "answer": 1,
+    "explain": "A policy-following reasoner such as gpt-oss-safeguard reads the written policy at inference time, so a new rule needs no new training data. Its cost is latency and compute, which is why OpenAI’s guide suggests pre-filtering the traffic sent to it. The tempting answer, retraining, wins on accuracy only with enough labeled data: the guide expects trained classifiers to do better once they have thousands of examples, and you have few for a harm defined on Monday. A trained classifier can take over later, once that data exists. Lowering every threshold adds false positives without targeting the new harm, and a system-prompt rule is a request, not an enforced check."
+  },
+  {
+    "id": "guard-models-moderation-3",
+    "chapter": "guard-models-moderation",
+    "q": "After a threshold change, the share of appealed removals that reviewers overturn doubles. What does this tell you?",
+    "options": [
+      "The guard now catches more violations overall",
+      "Missed violations rose, because more users are appealing",
+      "Nothing useful, because most appeals come from bad actors protesting",
+      "Wrong removals (false positives) probably rose; it says nothing about violations the guard now misses, which need random samples to measure"
+    ],
+    "answer": 3,
+    "explain": "Appeals of removals come from people whose content was actioned, so overturns measure wrong actions: false positives. A violation the guard let through was never removed, so no removal appeal can reveal it; misses need random samples. The tempting first option reads more overturns as more catches, but overturns count decisions that were wrong, not ones that were right. Check appeal volumes too, because TSPA notes that an overturn rate is hard to read on its own. TSPA’s guide to user appeals also notes that people who appeal usually believe they did nothing wrong, and that deliberate bad actors rarely bother to appeal."
+  }
+]

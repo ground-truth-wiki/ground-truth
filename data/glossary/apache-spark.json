@@ -1,0 +1,18 @@
+{
+  "id": "apache-spark",
+  "term": "Apache Spark",
+  "def": "An open-source, multi-language engine for large-scale data engineering, data science and machine learning on single machines or clusters, covering batch and streaming data.",
+  "practice": "A common engine for filtering and deduplicating large corpora and for lakehouse tables; single-node tools such as DuckDB or Polars often suffice for data that fits on one machine.",
+  "aliases": [
+    "Spark",
+    "PySpark"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "unstructured-pipelines",
+    "dataset-versioning-lineage",
+    "data-pipeline-orchestration",
+    "feature-stores",
+    "open-model-communities"
+  ]
+}

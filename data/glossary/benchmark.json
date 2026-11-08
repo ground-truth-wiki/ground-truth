@@ -1,0 +1,17 @@
+{
+  "id": "benchmark",
+  "term": "Benchmark",
+  "def": "A fixed, shared set of tasks with a scoring rule, used to compare models or systems under stated conditions.",
+  "practice": "Scores move with setup (prompts, attempts, tools, harness, grader), so use public benchmarks to shortlist and your own eval set to decide.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "why-evals",
+    "eval-harnesses",
+    "eval-datasets",
+    "choosing-a-model",
+    "trees-and-ensembles",
+    "anomaly-drift-detection",
+    "time-series-forecasting"
+  ]
+}

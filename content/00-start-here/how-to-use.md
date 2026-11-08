@@ -83,3 +83,5 @@ how-to-use
 - [Glossary](#lexicon-guide)
 - [Learning paths and the project ladder](#project-ladder)
 - [Changelog and how to extend](#changelog-extend)
+- [A short history of AI](#history-of-ai)
+- [Courses and textbooks: a curriculum map](#learning-resources)

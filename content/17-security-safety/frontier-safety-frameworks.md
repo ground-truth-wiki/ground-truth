@@ -89,3 +89,19 @@ frontier-safety-frameworks
 - [Alignment concepts](#alignment-concepts)
 - [Frontier model families](#frontier-families)
 - [Jailbreaks and misuse](#jailbreaks-misuse)
+- [Reading model cards and system cards](#model-documentation)
+- [Security and vulnerability-research agents](#security-agents)
+- [Model theft and weight security](#model-theft)
+- [Scheming, sandbagging and evaluation awareness](#scheming-evaluations)
+- [The EU AI Act in depth](#eu-ai-act)
+- [US AI law and policy](#us-ai-law)
+- [Measuring time horizons and AI R&D capability](#measuring-time-horizons)
+- [AI for biology: proteins, design and genomic models](#ai-for-biology)
+- [AGI, timelines and the catastrophic-risk debate](#agi-timelines-risk)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Dangerous-capability evaluations](#dangerous-capability-evals)
+- [Safety cases for frontier AI](#safety-cases)

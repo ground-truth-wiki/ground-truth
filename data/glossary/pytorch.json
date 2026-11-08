@@ -1,0 +1,19 @@
+{
+  "id": "pytorch",
+  "term": "PyTorch",
+  "def": "An open-source deep learning framework with eager, Python-first execution, GPU tensors and automatic differentiation, governed by the PyTorch Foundation under the Linux Foundation since 2022.",
+  "practice": "The default framework for most open models and, as of November 2026, the only backend of Hugging Face Transformers v5; torch.compile, added in PyTorch 2.0, provides an optional compiler.",
+  "aliases": [
+    "torch"
+  ],
+  "chapters": [
+    "neural-networks",
+    "distributed-training",
+    "fine-tuning-practice",
+    "hardware",
+    "supply-chain-security",
+    "tensors-and-shapes",
+    "loss-functions",
+    "automatic-differentiation"
+  ]
+}

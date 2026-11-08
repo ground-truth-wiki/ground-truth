@@ -1,0 +1,16 @@
+{
+  "id": "max-batched-tokens",
+  "term": "Max batched tokens",
+  "def": "A serving-engine limit on how many tokens, prefill and decode combined, one scheduler step may process.",
+  "practice": "In vLLM, small values such as 2048 favor inter-token latency and values above 8192 favor time to first token and throughput; tune it together with the maximum number of sequences.",
+  "aliases": [
+    "max_num_batched_tokens",
+    "max-num-batched-tokens",
+    "maximum batched tokens",
+    "max-batch-tokens"
+  ],
+  "chapters": [
+    "batching-scheduling",
+    "serving-engines"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "validation-set",
+  "term": "Validation set",
+  "def": "Data held out from training and used to tune hyperparameters, compare models or prompts and decide when to stop, kept separate from the final test set.",
+  "practice": "Repeated tuning slowly overfits it too, which is why a separate held-out test set is scored only once at the end.",
+  "aliases": [
+    "dev set",
+    "development set",
+    "development split",
+    "validation split"
+  ],
+  "chapters": [
+    "classical-ml",
+    "prompt-optimization",
+    "llm-as-judge",
+    "eval-datasets",
+    "validation-tuning",
+    "training-neural-networks",
+    "language-modeling",
+    "base-model-evaluation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "harmonised-standard",
+  "term": "Harmonized standard",
+  "def": "A European standard written at the European Commission's request and cited in the Official Journal; complying with it gives a legal presumption of conformity with the requirements it covers.",
+  "practice": "For the EU AI Act, CEN-CENELEC JTC 21 is developing standards on risk management, quality management, trustworthiness and conformity assessment; their delay helped postpone high-risk obligations (as of November 2026).",
+  "aliases": [
+    "harmonised standard",
+    "harmonised standards"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "eu-ai-act",
+    "ai-risk-management"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "text-to-video",
+  "term": "Text-to-video generation",
+  "def": "Generating a video clip from a text prompt; the related image-to-video task starts from a given first frame or reference image.",
+  "practice": "Clips last seconds and cost far more per second than images; products add first- and last-frame control, reference images, clip extension and native audio (as of November 2026).",
+  "aliases": [
+    "video generation",
+    "image-to-video",
+    "T2V",
+    "I2V"
+  ],
+  "chapters": [
+    "video-world-models",
+    "multimodal-apps",
+    "image-generation",
+    "diffusion-flow-matching",
+    "autoregressive-image-generation",
+    "video-generation",
+    "world-models",
+    "synthetic-media-provenance"
+  ]
+}

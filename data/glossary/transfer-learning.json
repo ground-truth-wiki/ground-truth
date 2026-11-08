@@ -1,0 +1,17 @@
+{
+  "id": "transfer-learning",
+  "term": "Transfer learning",
+  "def": "Reusing the features or weights a model learned on one task or dataset as the starting point for a related task.",
+  "practice": "Train a new head on frozen pretrained features, then optionally fine-tune the whole model at a low learning rate; every fine-tune of a foundation model is transfer learning.",
+  "aliases": [],
+  "chapters": [
+    "fine-tuning-practice",
+    "representation-learning",
+    "classical-ml",
+    "transformer-overview",
+    "encoders-and-decoders",
+    "peft-methods",
+    "nlp-tasks",
+    "adversarial-ml"
+  ]
+}

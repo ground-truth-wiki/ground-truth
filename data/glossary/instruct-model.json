@@ -1,0 +1,21 @@
+{
+  "id": "instruct-model",
+  "term": "Instruct model",
+  "def": "A base model post-trained, typically with supervised fine-tuning and preference optimization, to follow instructions and converse in a chat format.",
+  "practice": "Usually the right starting point for product fine-tunes; released under suffixes such as -Instruct or -it, it expects its own chat template, and the wrong one sharply lowers quality.",
+  "aliases": [
+    "instruction-tuned model",
+    "chat model",
+    "chat models"
+  ],
+  "chapters": [
+    "sft",
+    "preference-optimization",
+    "fine-tuning-practice",
+    "model-specific-notes",
+    "rlvr-reasoning",
+    "language-modeling",
+    "probes-and-steering",
+    "fine-tuning-and-safety"
+  ]
+}

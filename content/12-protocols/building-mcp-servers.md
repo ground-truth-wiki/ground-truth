@@ -104,3 +104,9 @@ building-mcp-servers
 - [MCP transports](#mcp-transports)
 - [MCP authorization](#mcp-authorization)
 - [Learning paths and the project ladder](#project-ladder)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Publishing and discovering MCP servers: the registry, server.json and bundles](#mcp-registry-and-packaging)

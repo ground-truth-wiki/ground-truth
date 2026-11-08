@@ -1,0 +1,21 @@
+{
+  "id": "fp16",
+  "term": "FP16",
+  "def": "IEEE 754 half precision: 16 bits with 1 sign, 5 exponent and 10 mantissa bits, more precise than BF16 but with a largest finite value of only 65,504.",
+  "practice": "Its narrow range makes FP16 training need loss scaling, so BF16 replaced it where hardware allows, though a 2025 study found FP16 reduces training-inference mismatch in RL fine-tuning.",
+  "aliases": [
+    "half precision",
+    "float16",
+    "binary16"
+  ],
+  "chapters": [
+    "quantization",
+    "calculus-optimization",
+    "kv-cache",
+    "numbers-to-know",
+    "distributed-training",
+    "training-neural-networks",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

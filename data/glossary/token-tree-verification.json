@@ -1,0 +1,15 @@
+{
+  "id": "token-tree-verification",
+  "term": "Token tree verification",
+  "def": "Checking many candidate continuations, arranged as a tree, in one target-model forward pass, using an attention mask that lets each candidate token see only its own ancestors.",
+  "practice": "Accepts more tokens per pass than a single draft chain at the cost of extra verification compute; engines expose the tree's depth, branching and total draft-token budget, and it pays off most at small batch sizes.",
+  "aliases": [
+    "token tree",
+    "draft tree",
+    "tree attention",
+    "tree-based speculative decoding"
+  ],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

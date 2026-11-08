@@ -1,0 +1,20 @@
+{
+  "id": "latent-diffusion",
+  "term": "Latent diffusion model",
+  "def": "A diffusion model that denoises in the compressed latent space of a pretrained autoencoder rather than in pixel space, then decodes the final latent to pixels.",
+  "practice": "The design behind Stable Diffusion: an autoencoder with a reduction factor of 8 turns a 512 x 512 image into a 4 x 64 x 64 latent, which makes generation affordable on a single GPU.",
+  "aliases": [
+    "latent diffusion",
+    "LDM"
+  ],
+  "chapters": [
+    "image-generation",
+    "video-world-models",
+    "convolutional-networks",
+    "autoencoders-latent-spaces",
+    "deep-generative-models",
+    "diffusion-flow-matching",
+    "music-generation"
+  ],
+  "abbr": "LDM"
+}

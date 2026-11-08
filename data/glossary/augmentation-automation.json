@@ -1,0 +1,15 @@
+{
+  "id": "augmentation-automation",
+  "term": "Augmentation versus automation",
+  "def": "The distinction between AI use in which a person works iteratively with the model (augmentation) and use in which the model performs a task with little human involvement (automation).",
+  "practice": "Anthropic's first Economic Index report (February 2025) found 57% augmentation and 43% automation on Claude.ai; the split matters for product design and for claims about labor impact.",
+  "aliases": [
+    "augmentation and automation"
+  ],
+  "chapters": [
+    "open-problems",
+    "human-in-the-loop",
+    "ai-product-ux",
+    "economic-impact-evidence"
+  ]
+}

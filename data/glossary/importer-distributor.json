@@ -1,0 +1,14 @@
+{
+  "id": "importer-distributor",
+  "term": "Importer and distributor",
+  "def": "EU AI Act supply-chain roles: an importer, based in the EU, places a non-EU company’s AI system on the EU market; a distributor makes a system available without being its provider or importer.",
+  "practice": "Either one takes on the provider’s obligations for a high-risk system if it puts its own name or trademark on it, substantially modifies it or changes its intended purpose (Article 25).",
+  "aliases": [
+    "importer",
+    "distributor"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "eu-ai-act"
+  ]
+}

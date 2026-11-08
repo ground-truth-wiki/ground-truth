@@ -1,0 +1,15 @@
+{
+  "id": "image-segmentation",
+  "term": "Image segmentation",
+  "def": "Labeling images at the pixel level: a class for every pixel (semantic segmentation) or a separate mask for every object instance (instance segmentation).",
+  "practice": "Promptable models such as Segment Anything return masks from point or box prompts without task-specific training, which makes masks cheap for labeling, editing and inpainting.",
+  "aliases": [
+    "semantic segmentation",
+    "instance segmentation"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "image-generation",
+    "visual-grounding"
+  ]
+}

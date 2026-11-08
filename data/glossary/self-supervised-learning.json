@@ -1,0 +1,21 @@
+{
+  "id": "self-supervised-learning",
+  "term": "Self-supervised learning",
+  "def": "Learning representations from unlabeled data by solving tasks whose targets come from the data itself, such as predicting masked parts, the next token or which views belong together.",
+  "practice": "How foundation models are pretrained at scale; human labels are needed only afterwards, for fine-tuning, preference training and evaluation.",
+  "aliases": [
+    "self-supervised",
+    "self-supervised pretraining"
+  ],
+  "chapters": [
+    "representation-learning",
+    "pretraining-data",
+    "self-supervised-methods",
+    "function-calling-training",
+    "data-selection-attribution",
+    "vlm-architectures",
+    "world-models",
+    "speech-recognition"
+  ],
+  "abbr": "SSL"
+}

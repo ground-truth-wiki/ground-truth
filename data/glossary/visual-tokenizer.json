@@ -1,0 +1,16 @@
+{
+  "id": "visual-tokenizer",
+  "term": "Visual tokenizer",
+  "def": "A model that compresses an image or video into a shorter sequence of discrete codes or continuous latents that a transformer can read or generate, and decodes them back to pixels.",
+  "practice": "Its compression rate and reconstruction quality cap what a generator can draw; video tokenizers, as in Genie and NVIDIA Cosmos, compress time as well as space.",
+  "aliases": [
+    "image tokenizer",
+    "video tokenizer"
+  ],
+  "chapters": [
+    "image-generation",
+    "video-world-models",
+    "autoregressive-image-generation",
+    "world-models"
+  ]
+}

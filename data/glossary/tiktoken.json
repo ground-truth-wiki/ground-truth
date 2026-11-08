@@ -1,0 +1,12 @@
+{
+  "id": "tiktoken",
+  "term": "tiktoken",
+  "def": "OpenAI's open-source library for fast byte-level BPE tokenization, which ships the encodings used by OpenAI models, such as cl100k_base and o200k_base.",
+  "practice": "Use it to count tokens for OpenAI models offline before sending a request; other providers' tokenizers split the same text differently, so counts do not transfer.",
+  "aliases": [],
+  "chapters": [
+    "tokenization",
+    "cost-engineering",
+    "tokenizers-in-practice"
+  ]
+}

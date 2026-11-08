@@ -1,0 +1,17 @@
+{
+  "id": "epoch",
+  "term": "Epoch",
+  "def": "One full pass of training over every example in the training set.",
+  "practice": "Fine-tunes typically run one to three epochs, since more risks overfitting small data, while pretraining is counted in tokens and sees most data only once.",
+  "aliases": [],
+  "chapters": [
+    "sft",
+    "fine-tuning-practice",
+    "calculus-optimization",
+    "training-neural-networks",
+    "compute-accounting",
+    "reward-modeling",
+    "fine-tuning-services",
+    "benchmark-catalog"
+  ]
+}

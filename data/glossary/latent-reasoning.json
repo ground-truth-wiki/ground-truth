@@ -1,0 +1,18 @@
+{
+  "id": "latent-reasoning",
+  "term": "Latent reasoning",
+  "def": "Multi-step inference carried out in a model's continuous hidden states instead of being written out as chain-of-thought tokens.",
+  "practice": "Methods such as Coconut feed hidden states back as inputs instead of tokens; the appeal is cheaper, denser reasoning, the cost is losing the readable trace that chain-of-thought monitoring relies on.",
+  "aliases": [
+    "reasoning in latent space",
+    "implicit reasoning",
+    "continuous reasoning"
+  ],
+  "chapters": [
+    "new-architectures",
+    "reasoning-models",
+    "test-time-scaling",
+    "alignment-concepts",
+    "latent-reasoning"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "polysemanticity",
+  "term": "Polysemanticity",
+  "def": "The property of a single neuron activating for several unrelated concepts, which superposition makes common in language models.",
+  "practice": "It is why single neurons are poor units of explanation and why interpretability work decomposes activations into features with sparse autoencoders instead.",
+  "aliases": [
+    "polysemantic neuron",
+    "polysemantic"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

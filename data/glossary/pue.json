@@ -1,0 +1,14 @@
+{
+  "id": "pue",
+  "term": "Power usage effectiveness",
+  "def": "A data center's total facility energy divided by the energy delivered to its IT equipment; 1.0 would mean zero overhead for cooling and power conversion.",
+  "practice": "Uptime Institute's 2025 survey puts the global average at 1.54 and Google reports 1.09 for its fleet in 2025; PUE ignores how usefully the IT load itself works, so it is not an overall efficiency score.",
+  "aliases": [
+    "PUE"
+  ],
+  "chapters": [
+    "hardware",
+    "ai-energy"
+  ],
+  "abbr": "PUE"
+}

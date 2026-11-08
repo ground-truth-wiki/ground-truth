@@ -1,0 +1,13 @@
+{
+  "id": "openenv",
+  "term": "OpenEnv",
+  "def": "An open framework and hub from Meta's PyTorch team and Hugging Face that packages agentic RL environments as Docker images exposing Gymnasium-style reset(), step() and state() calls.",
+  "practice": "Launched on 23 October 2025 with a 0.1 spec RFC; TRL, SkyRL, Unsloth, ART and torchforge integrate with it, and it describes itself as in early development (as of November 2026).",
+  "aliases": [
+    "OpenEnv Hub"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "agentic-rl"
+  ]
+}

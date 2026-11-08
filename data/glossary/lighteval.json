@@ -1,0 +1,11 @@
+{
+  "id": "lighteval",
+  "term": "Lighteval",
+  "def": "Hugging Face's MIT-licensed toolkit for evaluating LLMs on more than 1,000 tasks across backends such as Inspect, vLLM, SGLang, Accelerate and inference endpoints, with sample-level results.",
+  "practice": "Its README recommends the Inspect backend as of November 2026; useful for running many standard benchmarks on open models and debugging them sample by sample.",
+  "aliases": [],
+  "chapters": [
+    "eval-harnesses",
+    "eval-tooling"
+  ]
+}

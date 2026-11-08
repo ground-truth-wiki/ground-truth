@@ -1,0 +1,14 @@
+{
+  "id": "oversampling-undersampling",
+  "term": "Oversampling and undersampling",
+  "def": "Rebalancing a training set by replicating or synthesizing minority-class examples (oversampling, for example SMOTE) or dropping majority-class examples (undersampling).",
+  "practice": "Shifts predicted probabilities away from real base rates; Google's ML Crash Course pairs downsampling with upweighting the downsampled class by the same factor, or you recalibrate afterward.",
+  "aliases": [
+    "oversampling",
+    "undersampling"
+  ],
+  "chapters": [
+    "classical-ml",
+    "classification-metrics"
+  ]
+}

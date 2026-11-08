@@ -1,0 +1,12 @@
+{
+  "id": "llava",
+  "term": "LLaVA",
+  "def": "Large Language and Vision Assistant: an open recipe that connects a CLIP vision encoder to a language model through a projector and trains it with visual instruction tuning.",
+  "practice": "A template for many open VLMs; LLaVA-1.5 switched to an MLP projector, and LLaVA-NeXT added AnyRes high-resolution tiling.",
+  "aliases": [],
+  "chapters": [
+    "vision-language-models",
+    "encoders-and-decoders",
+    "vlm-architectures"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "webarena",
+  "term": "WebArena",
+  "def": "A reproducible environment of self-hosted websites (shopping, forum, code hosting, content management) where web agents complete 812 natural-language tasks that are checked functionally.",
+  "practice": "Used for browser-agent evaluation; check whether a score is on the original set or a later verified or harder variant, since results are not comparable across them.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "computer-use-agents",
+    "evaluating-agents",
+    "benchmark-catalog",
+    "computer-use-benchmarks"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "cross-region-inference",
+  "term": "Cross-region inference",
+  "def": "Routing model requests to capacity in other cloud regions, within a geography or globally, through one endpoint or inference profile.",
+  "practice": "Raises available throughput, and Bedrock's global profiles cost about 10% less than geographic ones (as of November 2026); geographic options keep processing within a boundary such as the US or EU.",
+  "aliases": [
+    "CRIS",
+    "inference profile",
+    "global endpoint"
+  ],
+  "chapters": [
+    "model-apis",
+    "enterprise-readiness",
+    "reliability-engineering",
+    "privacy",
+    "cloud-ai-platforms"
+  ]
+}

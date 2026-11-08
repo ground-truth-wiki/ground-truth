@@ -1,0 +1,17 @@
+{
+  "id": "dataset-card",
+  "term": "Dataset card",
+  "def": "The README.md of a dataset repository on the Hugging Face Hub, combining YAML metadata such as license, languages and task categories with prose documentation.",
+  "practice": "The license field drives Hub filtering and display; set it from the source’s actual license and verify others’ cards against the original source, since hub license metadata is often wrong.",
+  "aliases": [
+    "HF dataset card",
+    "Hugging Face dataset card"
+  ],
+  "chapters": [
+    "data-governance",
+    "responsible-ai",
+    "open-pretraining-datasets",
+    "data-licensing-consent",
+    "dataset-documentation"
+  ]
+}

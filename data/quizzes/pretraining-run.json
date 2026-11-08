@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pretraining-run-1",
+    "chapter": "pretraining-run",
+    "q": "A run uses 8 data-parallel GPUs, micro-batches of 12 rows of 1,024 tokens and 5 gradient-accumulation steps. Half the GPUs fail and you continue on 4. What keeps the optimization the same as before?",
+    "options": [
+      "Double the gradient-accumulation steps to 10, so each optimizer step still sees 491,520 tokens",
+      "Halve the learning rate, because the batch is now half as large",
+      "Change nothing, because each GPU still processes the same micro-batch",
+      "Halve the row length to 512 tokens, so each GPU finishes its work twice as fast"
+    ],
+    "answer": 0,
+    "explain": "Tokens per step are micro-batch × row length × accumulation steps × replicas: 12 × 1,024 × 10 × 4 equals 12 × 1,024 × 5 × 8. Each step now takes about twice as long, but the update is the same. Halving the learning rate is the tempting answer, but it accepts the smaller batch and changes the optimization instead of restoring it."
+  },
+  {
+    "id": "pretraining-run-2",
+    "chapter": "pretraining-run",
+    "q": "PaLM 540B handled loss spikes by restarting about 100 steps before each spike and skipping 200 to 500 batches. When the same batches were trained from an earlier checkpoint, they caused no spike. What does that imply?",
+    "options": [
+      "The batches contained corrupt data that had to be removed from the corpus",
+      "Gradient clipping was switched off around those steps",
+      "A spike needs specific batches and a particular model state together, so changing either one avoids it",
+      "The learning rate was too low at that point in the run"
+    ],
+    "answer": 2,
+    "explain": "If the batches alone were the cause, they would have spiked from any checkpoint. PaLM's ablation showed they did not, so the spike came from the combination of data and parameters at that moment. Bad data is the tempting answer, and data can play a part (OLMo 2 often found long repeated n-grams in the batches where spikes occurred), but this experiment rules out bad data as the whole story. Clipping was on throughout."
+  },
+  {
+    "id": "pretraining-run-3",
+    "chapter": "pretraining-run",
+    "q": "You want the same model trained to three token budgets for a scaling study. Why is a warmup-stable-decay (WSD) schedule cheaper than cosine for this?",
+    "options": [
+      "WSD uses a higher peak learning rate, so every run converges in fewer steps",
+      "The stable phase is shared: you branch a short cooldown from a checkpoint for each budget, while each cosine curve depends on a total length fixed in advance",
+      "WSD needs no warmup, which saves the first few thousand steps",
+      "WSD skips the final decay, so no compute is spent on annealing"
+    ],
+    "answer": 1,
+    "explain": "A cosine run's rate at each step depends on where the run will end, so each budget needs its own run from the start. With WSD the rate is constant until the cooldown, and a cooldown can start from any checkpoint, so one long run serves every shorter budget. The 'higher peak' answer is tempting, but the saving comes from reusing the run, not from the peak. WSD keeps both warmup and decay; the decay is where much of its loss improvement appears."
+  }
+]

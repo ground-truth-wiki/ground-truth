@@ -1,0 +1,18 @@
+{
+  "id": "model-based-rl",
+  "term": "Model-based reinforcement learning",
+  "def": "RL that learns or is given a model of the environment's transitions and rewards and uses it to plan or to generate simulated experience; model-free RL learns directly from experience.",
+  "practice": "Can need far less real interaction, but agents exploit errors in a learned model; MuZero plans with a learned model, and learned world models can serve as simulators for training agents.",
+  "aliases": [
+    "model-based RL"
+  ],
+  "chapters": [
+    "rl-primer",
+    "video-world-models",
+    "embodied-agents",
+    "value-based-rl",
+    "planning-mcts",
+    "world-models",
+    "llm-planning-debate"
+  ]
+}

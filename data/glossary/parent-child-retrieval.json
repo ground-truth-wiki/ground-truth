@@ -1,0 +1,13 @@
+{
+  "id": "parent-child-retrieval",
+  "term": "Parent-child retrieval",
+  "def": "Indexing small chunks for precise matching but handing the model their larger parent section or document as context.",
+  "practice": "It separates the unit you rank from the unit you read; LangChain's ParentDocumentRetriever and LlamaIndex's AutoMergingRetriever implement it, and sentence-window retrieval is a close variant.",
+  "aliases": [
+    "small-to-big retrieval",
+    "parent document retrieval"
+  ],
+  "chapters": [
+    "chunking"
+  ]
+}

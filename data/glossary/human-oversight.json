@@ -1,0 +1,17 @@
+{
+  "id": "human-oversight",
+  "term": "Human oversight",
+  "def": "Measures that let people effectively oversee an AI system in use: understand its limits, monitor it, guard against automation bias, interpret its outputs, and override, reverse or stop it.",
+  "practice": "Article 14 of the EU AI Act requires it for high-risk systems, down to a ‘stop’ button or similar procedure; design it into the interface and workflow rather than adding a rubber-stamp approval step.",
+  "aliases": [],
+  "chapters": [
+    "human-in-the-loop",
+    "governance-regulation",
+    "responsible-ai",
+    "enterprise-readiness",
+    "model-specs-instruction-hierarchy",
+    "autonomy-and-oversight",
+    "eu-ai-act",
+    "ai-risk-management"
+  ]
+}

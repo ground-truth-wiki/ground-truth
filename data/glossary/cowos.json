@@ -1,0 +1,13 @@
+{
+  "id": "cowos",
+  "term": "CoWoS",
+  "def": "TSMC's Chip-on-Wafer-on-Substrate packaging, which places a processor die and stacks of HBM side by side on an interposer to give the dense, short links HBM needs.",
+  "practice": "Virtually all leading data-center GPUs are packaged this way, and from 2023 CoWoS capacity, together with HBM supply, was widely reported as the main limit on AI GPU output.",
+  "aliases": [
+    "Chip-on-Wafer-on-Substrate"
+  ],
+  "chapters": [
+    "hardware",
+    "compute-governance"
+  ]
+}

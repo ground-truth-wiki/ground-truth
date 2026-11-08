@@ -1,0 +1,16 @@
+{
+  "id": "data-provenance",
+  "term": "Data provenance",
+  "def": "The documented origin and history of data: its sources, creators, licenses and how it was collected and processed, used to judge trustworthiness and permitted use.",
+  "practice": "Answers “may we train on this, and can we trust it?”; an audit of 1,800+ text datasets found hosting sites omitted licenses 70%+ of the time and miscategorized them 50%+.",
+  "aliases": [
+    "dataset provenance"
+  ],
+  "chapters": [
+    "data-governance",
+    "supply-chain-security",
+    "pretraining-data",
+    "data-licensing-consent",
+    "dataset-documentation"
+  ]
+}

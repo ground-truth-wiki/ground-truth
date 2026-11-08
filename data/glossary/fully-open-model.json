@@ -1,0 +1,18 @@
+{
+  "id": "fully-open-model",
+  "term": "Fully open model",
+  "def": "A model released with its weights plus training data or detailed data information, training code and recipes, and often intermediate checkpoints and logs.",
+  "practice": "Lets researchers study data effects, reproduce training and audit contamination, which open weights alone do not; AI2's OLMo and EleutherAI's Pythia are examples.",
+  "aliases": [
+    "fully open",
+    "fully open-source model"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "pretraining-data",
+    "mid-training",
+    "post-training-overview",
+    "model-licenses",
+    "open-model-communities"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "score-distillation-sampling",
+  "term": "Score distillation sampling",
+  "def": "Optimizing a 3D representation, or another differentiable generator, so its renderings score well under a frozen 2D text-to-image diffusion model.",
+  "practice": "Made text-to-3D possible without 3D training data in DreamFusion; a related score-distillation loss reappears in few-step image distillation such as adversarial diffusion distillation.",
+  "aliases": [
+    "SDS",
+    "score distillation"
+  ],
+  "chapters": [
+    "video-world-models",
+    "image-generation",
+    "deep-generative-models",
+    "diffusion-flow-matching",
+    "three-d-generation"
+  ],
+  "abbr": "SDS"
+}

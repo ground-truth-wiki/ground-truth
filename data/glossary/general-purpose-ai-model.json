@@ -1,0 +1,20 @@
+{
+  "id": "general-purpose-ai-model",
+  "term": "General-purpose AI model",
+  "def": "Under the EU AI Act, a model, often trained with self-supervision at scale, that shows significant generality, performs a wide range of distinct tasks competently and can be built into many downstream systems.",
+  "practice": "As of November 2026, providers must keep technical documentation, adopt a copyright policy and publish a training-content summary; obligations apply since 2 August 2025, and models placed on the market earlier must comply by 2 August 2027.",
+  "aliases": [
+    "GPAI",
+    "GPAI model",
+    "GPAI models"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "compute-accounting",
+    "data-licensing-consent",
+    "dataset-documentation",
+    "eu-ai-act"
+  ],
+  "abbr": "GPAI"
+}

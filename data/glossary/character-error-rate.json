@@ -1,0 +1,17 @@
+{
+  "id": "character-error-rate",
+  "term": "Character error rate",
+  "def": "Character-level substitutions, deletions and insertions divided by the number of characters in the reference; the character-level counterpart of word error rate.",
+  "practice": "Preferred for languages written without spaces between words, such as Mandarin and Japanese, and for OCR; like WER it can exceed 100 percent and depends on text normalization.",
+  "aliases": [
+    "CER"
+  ],
+  "chapters": [
+    "speech-audio",
+    "document-screen-understanding",
+    "document-ocr-models",
+    "speech-recognition",
+    "multimodal-evaluation"
+  ],
+  "abbr": "CER"
+}

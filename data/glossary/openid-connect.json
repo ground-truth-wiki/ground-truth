@@ -1,0 +1,19 @@
+{
+  "id": "openid-connect",
+  "term": "OpenID Connect",
+  "def": "An identity layer on top of OAuth 2.0 that lets a client verify who the user is through a signed ID token, plus a userinfo endpoint and discovery metadata.",
+  "practice": "Enterprise single sign-on into agents and MCP clients commonly runs on it; MCP authorization has supported OpenID Connect Discovery for finding authorization servers since the 2025-11-25 specification.",
+  "aliases": [
+    "OIDC"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "mcp-authorization",
+    "cloud-and-ci-coding-agents",
+    "coding-agent-security",
+    "protocol-building-blocks",
+    "a2a-in-depth",
+    "agent-identity-delegation"
+  ],
+  "abbr": "OIDC"
+}

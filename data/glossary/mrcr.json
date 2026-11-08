@@ -1,0 +1,14 @@
+{
+  "id": "mrcr",
+  "term": "MRCR",
+  "def": "Multi-round co-reference resolution: a long-context test that hides several near-identical requests in a long synthetic conversation and asks the model to reproduce the response to one specific instance.",
+  "practice": "Introduced with Google's Michelangelo evaluations; OpenAI's open version uses 2, 4 or 8 needles at up to about 1 million tokens and grades by string similarity, harder than single-needle tests because needles resemble the distractors.",
+  "aliases": [
+    "multi-round co-reference resolution",
+    "OpenAI MRCR"
+  ],
+  "chapters": [
+    "long-context",
+    "benchmark-literacy"
+  ]
+}

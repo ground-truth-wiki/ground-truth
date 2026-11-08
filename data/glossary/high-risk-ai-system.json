@@ -1,0 +1,16 @@
+{
+  "id": "high-risk-ai-system",
+  "term": "High-risk AI system",
+  "def": "Under the EU AI Act, an AI system serving as a safety component of a regulated product (Annex I) or used in a listed sensitive area such as hiring or credit (Annex III).",
+  "practice": "Carries the heaviest obligations, such as risk management, documentation, human oversight and conformity assessment, which after the AI Omnibus apply from 2 December 2027 (Annex III) and 2 August 2028 (Annex I), as of November 2026.",
+  "aliases": [
+    "high-risk system"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "data-governance",
+    "autonomy-and-oversight",
+    "eu-ai-act"
+  ]
+}

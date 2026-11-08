@@ -107,3 +107,5 @@ prompt-optimization
 - [Prompt and config management](#prompt-config-management)
 - [Orchestration frameworks](#orchestration-frameworks)
 - [LLM-as-judge done right](#llm-as-judge)
+- [In-context learning and example design](#in-context-learning)
+- [Evolutionary program search with LLMs](#evolutionary-program-search)

@@ -1,0 +1,19 @@
+{
+  "id": "wsd-schedule",
+  "term": "Warmup-stable-decay schedule",
+  "def": "A learning-rate schedule that warms up, holds a constant rate for most of training, then decays quickly in a short final phase.",
+  "practice": "Any checkpoint from the stable phase can be decayed into a finished model, so runs can be extended or branched without restarting, which suits scaling studies and continued pretraining.",
+  "aliases": [
+    "WSD",
+    "warmup-stable-decay",
+    "constant learning rate with cooldown"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "mid-training",
+    "scaling-laws",
+    "training-hyperparameters",
+    "pretraining-run"
+  ],
+  "abbr": "WSD"
+}

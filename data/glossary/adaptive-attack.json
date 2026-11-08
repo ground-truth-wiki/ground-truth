@@ -1,0 +1,18 @@
+{
+  "id": "adaptive-attack",
+  "term": "Adaptive attack",
+  "def": "An attack designed with full knowledge of a specific defense, to test whether the defense holds against an attacker who targets it directly.",
+  "practice": "Defenses tested only on fixed attack sets are routinely broken: Nasr et al. (2025) bypassed 12 recent jailbreak and prompt-injection defenses, most at over 90% success.",
+  "aliases": [
+    "adaptive attacker"
+  ],
+  "chapters": [
+    "safety-evals",
+    "red-teaming",
+    "prompt-injection",
+    "jailbreaks-misuse",
+    "prompt-injection-techniques",
+    "jailbreak-techniques",
+    "adversarial-ml"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "slot-filling",
+  "term": "Slot filling",
+  "def": "Extracting the parameter values a task needs, such as dates, account numbers or destinations, from user turns into named slots, and asking for whatever is still missing.",
+  "practice": "Paired with intent classification in classic task-oriented dialogue; in LLM agents it becomes collecting the required tool arguments from the user before acting.",
+  "aliases": [],
+  "chapters": [
+    "support-agents",
+    "voice-agents",
+    "agent-tools"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "human-evaluation",
+  "term": "Human evaluation",
+  "def": "Grading model outputs by people, such as domain experts or trained raters, using a rubric, a rating scale or side-by-side preferences.",
+  "practice": "The reference that automated graders are calibrated against; it is expensive and slow, and small rating studies often lack the statistical power to detect small differences.",
+  "aliases": [
+    "human grading",
+    "human raters",
+    "human graders"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "llm-as-judge",
+    "labeling-annotation",
+    "why-evals",
+    "history-of-ai"
+  ]
+}

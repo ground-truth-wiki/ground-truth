@@ -1,0 +1,15 @@
+{
+  "id": "trusted-monitoring",
+  "term": "Trusted monitoring",
+  "def": "An AI control protocol in which a weaker but trusted model scores each output of a stronger, untrusted model for suspicion, and the most suspicious outputs are audited or replaced.",
+  "practice": "The baseline protocol in Greenblatt et al. (2023), where GPT-3.5 monitored GPT-4's code; the suspicion threshold trades safety against usefulness within a limited human audit budget.",
+  "aliases": [
+    "trusted monitor"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "guardrails-control",
+    "secure-agent-design",
+    "ai-control"
+  ]
+}

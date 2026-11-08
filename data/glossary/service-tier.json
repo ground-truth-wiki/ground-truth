@@ -1,0 +1,19 @@
+{
+  "id": "service-tier",
+  "term": "Service tier",
+  "def": "An API option that trades price against latency and availability for the same model, such as cheaper flex processing that may queue or fail, standard, and priority at a premium.",
+  "practice": "Chosen per request through a service_tier parameter on OpenAI and Amazon Bedrock; flex requests can return capacity errors under load, and Anthropic lists its service tiers as legacy (as of November 2026).",
+  "aliases": [
+    "flex processing",
+    "flex tier",
+    "priority processing",
+    "priority tier"
+  ],
+  "chapters": [
+    "cost-engineering",
+    "model-apis",
+    "cost-capacity",
+    "reliability-engineering",
+    "rate-limits-overload"
+  ]
+}

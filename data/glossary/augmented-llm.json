@@ -1,0 +1,15 @@
+{
+  "id": "augmented-llm",
+  "term": "Augmented LLM",
+  "def": "A language model extended with retrieval, tools and memory that it can use on its own initiative; the basic building block of agentic systems.",
+  "practice": "Many production features are a single augmented LLM call; design its retrieval, tool and memory interfaces well before adding a loop.",
+  "aliases": [
+    "augmented language model"
+  ],
+  "chapters": [
+    "what-is-an-agent",
+    "workflow-patterns",
+    "agent-tools",
+    "planning-reasoning"
+  ]
+}

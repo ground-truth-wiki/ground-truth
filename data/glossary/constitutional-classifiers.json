@@ -1,0 +1,14 @@
+{
+  "id": "constitutional-classifiers",
+  "term": "Constitutional classifiers",
+  "def": "Input and output classifiers trained on synthetic data generated from a natural-language constitution of allowed and disallowed content, used to block jailbreaks in high-risk domains.",
+  "practice": "Anthropic's 2025 version added 23.7 percent compute overhead; its January 2026 successor reports about 1 percent overhead and fewer false refusals.",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training",
+    "jailbreaks-misuse",
+    "guardrails-control",
+    "guard-models-moderation",
+    "jailbreak-techniques"
+  ]
+}

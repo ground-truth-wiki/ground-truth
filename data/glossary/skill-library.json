@@ -1,0 +1,11 @@
+{
+  "id": "skill-library",
+  "term": "Skill library",
+  "def": "A growing store of verified, reusable programs or procedures that an agent writes, indexes and retrieves for later tasks; a form of learned procedural memory.",
+  "practice": "Popularized for LLM agents by Voyager (Wang et al., 2023) in Minecraft; skills an agent writes for itself need review like any code.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory",
+    "skills-plugins"
+  ]
+}

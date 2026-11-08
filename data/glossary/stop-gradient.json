@@ -1,0 +1,12 @@
+{
+  "id": "stop-gradient",
+  "term": "Stop-gradient",
+  "def": "An operation that passes a value through unchanged in the forward pass but blocks gradients from flowing back through it in the backward pass.",
+  "practice": "Written .detach() in PyTorch and jax.lax.stop_gradient in JAX; it keeps targets and frozen components fixed and is the usual way to implement the straight-through estimator.",
+  "aliases": [
+    "gradient stopping"
+  ],
+  "chapters": [
+    "calculus-optimization"
+  ]
+}

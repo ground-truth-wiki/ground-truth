@@ -1,0 +1,17 @@
+{
+  "id": "dev-container",
+  "term": "Dev container",
+  "def": "A container described by the open Development Container Specification (devcontainer.json) that packages a project's tools and settings, so editors, terminals and agents run inside it instead of on the host.",
+  "practice": "Supported by VS Code, GitHub Codespaces and JetBrains IDEs; a common place to run a coding agent with prompts bypassed, paired with an egress firewall and no host secrets mounted, though anything inside it can still be exfiltrated.",
+  "aliases": [
+    "devcontainer",
+    "devcontainer.json",
+    "development container"
+  ],
+  "chapters": [
+    "sandboxes",
+    "working-with-coding-agents",
+    "claude-code",
+    "secure-agent-design"
+  ]
+}

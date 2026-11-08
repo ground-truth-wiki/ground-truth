@@ -1,0 +1,12 @@
+{
+  "id": "static-batching",
+  "term": "Static batching",
+  "def": "Running a fixed group of requests together until the longest one finishes, admitting no new requests until the whole batch is done.",
+  "practice": "Wastes slots whenever output lengths differ, so continuous batching replaced it in LLM servers; offline jobs with similar lengths can still use it.",
+  "aliases": [
+    "request-level batching"
+  ],
+  "chapters": [
+    "batching-scheduling"
+  ]
+}

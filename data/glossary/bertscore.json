@@ -1,0 +1,11 @@
+{
+  "id": "bertscore",
+  "term": "BERTScore",
+  "def": "A text-similarity metric that matches each token of a candidate to the most similar token of a reference using contextual embeddings, instead of exact n-gram overlap.",
+  "practice": "Credits paraphrases that BLEU and ROUGE miss, but it still measures closeness to one reference answer, not correctness or faithfulness.",
+  "aliases": [],
+  "chapters": [
+    "metrics-graders",
+    "text-generation-metrics"
+  ]
+}

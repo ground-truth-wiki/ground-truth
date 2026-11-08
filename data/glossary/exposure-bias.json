@@ -1,0 +1,13 @@
+{
+  "id": "exposure-bias",
+  "term": "Exposure bias",
+  "def": "The mismatch between training on ground-truth or teacher prefixes (teacher forcing) and generating from the model's own prefixes at inference, which lets early errors compound.",
+  "practice": "A main argument for on-policy distillation and RL over training only on fixed text; the term dates to Ranzato et al. (2016).",
+  "aliases": [],
+  "chapters": [
+    "transformer-overview",
+    "distillation-merging",
+    "sft",
+    "llm-distillation"
+  ]
+}

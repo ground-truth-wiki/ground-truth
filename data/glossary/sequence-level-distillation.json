@@ -1,0 +1,15 @@
+{
+  "id": "sequence-level-distillation",
+  "term": "Sequence-level distillation",
+  "def": "Distillation by ordinary supervised fine-tuning on complete outputs that a teacher model generated in advance.",
+  "practice": "The usual option when the teacher is an API that returns text but not full logits; check the provider's terms of use before training on its outputs.",
+  "aliases": [
+    "sequence-level KD"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "synthetic-data",
+    "sft",
+    "llm-distillation"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "autonomy-level",
+  "term": "Autonomy level",
+  "def": "How much a system is designed to act without user involvement, a design choice separate from capability, often expressed as levels or a per-action setting from always ask to fully automatic.",
+  "practice": "Set it per action class; one framework (Feng et al., 2025) names five levels by the user's role: operator, collaborator, consultant, approver and observer.",
+  "aliases": [
+    "levels of autonomy",
+    "level of autonomy",
+    "autonomy dial"
+  ],
+  "chapters": [
+    "what-is-an-agent",
+    "human-in-the-loop",
+    "agent-ux",
+    "history-of-ai",
+    "autonomy-and-oversight"
+  ]
+}

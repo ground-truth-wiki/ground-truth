@@ -1,0 +1,17 @@
+{
+  "id": "unified-diff",
+  "term": "Unified diff",
+  "def": "The standard text format for file changes: per-file headers, then hunks that start with @@ -l,s +l,s @@ and list context lines plus lines prefixed - (removed) or + (added).",
+  "practice": "Git and patch use it; as an agent edit format it is compact, but models handle line numbers badly, so Aider tells them to omit line numbers and applies each hunk like a search-and-replace.",
+  "aliases": [
+    "udiff",
+    "diff -u",
+    "unified format"
+  ],
+  "chapters": [
+    "harness-engineering",
+    "coding-agents",
+    "build-your-own-harness",
+    "coding-agent-internals"
+  ]
+}

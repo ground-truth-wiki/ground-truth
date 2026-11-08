@@ -98,3 +98,13 @@ online-evaluation
 - [Statistics for evals](#eval-statistics)
 - [Building eval datasets](#eval-datasets)
 - [Incident response](#incidents-on-call)
+- [Anomaly detection and distribution shift](#anomaly-drift-detection)
+- [Multi-armed and contextual bandits](#bandits)
+- [Data validation, drift and skew](#data-validation-drift)
+- [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Online controlled experiments for AI features](#online-experiments)

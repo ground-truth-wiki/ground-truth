@@ -1,0 +1,14 @@
+{
+  "id": "csat",
+  "term": "Customer satisfaction score",
+  "def": "A survey-based support metric: the share of customers who rate an interaction as satisfied, typically 4 or 5 on a 1-to-5 scale, or the average rating.",
+  "practice": "Report it separately for AI-handled and human-handled contacts and next to resolution quality, since only some customers answer the survey.",
+  "aliases": [
+    "CSAT"
+  ],
+  "chapters": [
+    "support-agents",
+    "online-evaluation"
+  ],
+  "abbr": "CSAT"
+}

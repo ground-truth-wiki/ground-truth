@@ -1,0 +1,19 @@
+{
+  "id": "toxicity",
+  "term": "Toxicity",
+  "def": "The degree to which content is abusive, threatening, insulting, hateful or otherwise offensive, usually scored by a classifier across several attributes.",
+  "practice": "Measured with prompt sets such as RealToxicityPrompts and a toxicity classifier; such classifiers can unfairly flag dialects and identity terms, and the long-standard Perspective API ends service after 2026.",
+  "aliases": [
+    "toxic content",
+    "toxic language"
+  ],
+  "chapters": [
+    "safety-evals",
+    "pretraining-data",
+    "guardrails-control",
+    "safety-character-training",
+    "responsible-ai",
+    "guard-models-moderation",
+    "fairness-bias"
+  ]
+}

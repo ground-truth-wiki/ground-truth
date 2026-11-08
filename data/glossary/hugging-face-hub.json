@@ -1,0 +1,19 @@
+{
+  "id": "hugging-face-hub",
+  "term": "Hugging Face Hub",
+  "def": "Hugging Face's platform that hosts models, datasets and Spaces demo apps as versioned Git repositories, with chunked large-file storage, model cards, licenses and access controls.",
+  "practice": "Where most open-weight models and datasets are published; read the model card and license, prefer safetensors files and pin a commit revision in production instead of tracking the main branch.",
+  "aliases": [
+    "HF Hub"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "small-local-models",
+    "fine-tuning-practice",
+    "supply-chain-security",
+    "pretraining-data",
+    "model-licenses",
+    "model-documentation",
+    "cloud-ai-platforms"
+  ]
+}

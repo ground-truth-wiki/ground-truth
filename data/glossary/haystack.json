@@ -1,0 +1,14 @@
+{
+  "id": "haystack",
+  "term": "Haystack",
+  "def": "An open-source framework from deepset for retrieval and agent applications built from components wired into pipelines, where an agent can be a pipeline step and a pipeline can be an agent's tool.",
+  "practice": "Pipelines are graphs you wire explicitly, so runs are predictable; version 3.x is current as of November 2026, so check which major version older tutorials target.",
+  "aliases": [
+    "deepset Haystack"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "rag-fundamentals"
+  ]
+}

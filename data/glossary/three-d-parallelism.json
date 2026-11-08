@@ -1,0 +1,12 @@
+{
+  "id": "three-d-parallelism",
+  "term": "3D parallelism",
+  "def": "Combining data, tensor and pipeline parallelism in one training run; adding context or expert parallelism gives what practitioners call 4D or 5D parallelism.",
+  "practice": "Tensor parallelism stays inside a fast NVLink domain, pipeline stages span nodes and data parallelism replicates the arrangement; Megatron-LM's combination reached 52% of theoretical peak on 3,072 GPUs (Narayanan et al., 2021).",
+  "aliases": [
+    "PTD-P"
+  ],
+  "chapters": [
+    "distributed-training"
+  ]
+}

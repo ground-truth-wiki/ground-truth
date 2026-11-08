@@ -1,0 +1,14 @@
+{
+  "id": "sequential-scaling",
+  "term": "Sequential scaling",
+  "def": "Spending more test-time compute along one line of work in which each step builds on earlier ones, as in longer reasoning chains or repeated revision of a single answer.",
+  "practice": "Latency grows with the tokens generated, so it suits hard or offline tasks; products expose it as thinking budgets and effort levels.",
+  "aliases": [
+    "serial test-time scaling",
+    "sequential test-time scaling"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "reasoning-models"
+  ]
+}

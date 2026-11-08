@@ -1,0 +1,15 @@
+{
+  "id": "cuda-graphs",
+  "term": "CUDA graphs",
+  "def": "A CUDA feature that records a sequence of GPU kernel launches and their arguments once, then replays the whole sequence as a unit, removing per-kernel CPU launch overhead.",
+  "practice": "Serving engines capture them for a set of small batch sizes, where launch overhead dominates decode; replays need fixed shapes and memory addresses, and captured graphs cost some GPU memory.",
+  "aliases": [],
+  "chapters": [
+    "memory-math",
+    "serving-engines",
+    "moe-serving",
+    "inference-fleet-scaling",
+    "accelerator-architecture",
+    "gpu-kernels-compilers"
+  ]
+}

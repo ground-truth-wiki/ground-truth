@@ -82,3 +82,16 @@ distributed-training
 - [Fine-tuning in practice](#fine-tuning-practice)
 - [Memory math](#memory-math)
 - [Calculus and optimization](#calculus-optimization)
+- [Optimizers in depth](#optimizers)
+- [Floating-point formats and numerical precision](#floating-point-formats)
+- [The pretraining run, end to end](#pretraining-run)
+- [Compute accounting: FLOP, GPU-hours and utilization](#compute-accounting)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Parallelism strategies and collective communication](#parallelism-strategies)
+- [Mixed and low-precision training](#low-precision-training)
+- [Training stability: loss spikes and divergence](#training-stability)
+- [Fault tolerance and checkpointing at scale](#training-reliability)

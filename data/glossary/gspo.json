@@ -1,0 +1,15 @@
+{
+  "id": "gspo",
+  "term": "Group Sequence Policy Optimization",
+  "def": "A GRPO successor that defines the importance ratio on length-normalized sequence likelihood and clips, rewards and optimizes per sequence rather than per token.",
+  "practice": "Its authors report more stable RL on mixture-of-experts models and credit it for gains in Qwen3 models; TRL exposes it as importance_sampling_level='sequence'.",
+  "aliases": [
+    "GSPO"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "mixture-of-experts",
+    "llm-policy-gradients"
+  ],
+  "abbr": "GSPO"
+}

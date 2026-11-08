@@ -1,0 +1,17 @@
+{
+  "id": "action-conditioned-video-model",
+  "term": "Action-conditioned video model",
+  "def": "A video model that predicts the next frames from the current frames and an action, so it can be played interactively or used as a learned simulator.",
+  "practice": "Genie learns latent actions from unlabeled video, GameNGen ran DOOM in real time and Genie 3 renders explorable 720p worlds at 24 fps; errors compound over long rollouts.",
+  "aliases": [
+    "action-conditioned",
+    "interactive video model",
+    "generative interactive environment"
+  ],
+  "chapters": [
+    "video-world-models",
+    "embodied-agents",
+    "self-supervised-methods",
+    "world-models"
+  ]
+}

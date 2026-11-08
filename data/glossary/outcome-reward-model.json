@@ -1,0 +1,18 @@
+{
+  "id": "outcome-reward-model",
+  "term": "Outcome reward model",
+  "def": "A learned verifier that predicts from a complete solution whether its final answer is correct, trained only on final-answer labels rather than step labels.",
+  "practice": "Reranks samples in best-of-n or supplies an RL reward where answers cannot be checked by a program, but cannot say which step went wrong, unlike a process reward model.",
+  "aliases": [
+    "ORM",
+    "outcome-supervised reward model"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "rlvr-reasoning",
+    "agentic-rl",
+    "reward-modeling",
+    "test-time-search"
+  ],
+  "abbr": "ORM"
+}

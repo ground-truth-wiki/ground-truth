@@ -1,0 +1,15 @@
+{
+  "id": "right-to-erasure",
+  "term": "Right to erasure",
+  "def": "The GDPR right (Article 17) to have personal data deleted without undue delay on listed grounds, such as data no longer being needed or consent being withdrawn, subject to exceptions.",
+  "practice": "In AI systems a request must reach logs, vector indexes, agent memory and eval sets; data already learned into model weights remains an open problem.",
+  "aliases": [
+    "right to be forgotten",
+    "Article 17"
+  ],
+  "chapters": [
+    "privacy",
+    "agent-memory",
+    "guard-models-moderation"
+  ]
+}

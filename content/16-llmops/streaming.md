@@ -92,3 +92,4 @@ streaming
 - [Reliability engineering](#reliability-engineering)
 - [Model APIs in practice](#model-apis)
 - [The rest of the alphabet soup](#protocol-soup)
+- [Asynchronous and batch AI workloads](#async-batch-workloads)

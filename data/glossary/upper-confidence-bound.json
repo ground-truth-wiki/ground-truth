@@ -1,0 +1,17 @@
+{
+  "id": "upper-confidence-bound",
+  "term": "Upper confidence bound",
+  "def": "An exploration rule that picks the action with the highest optimistic estimate: its average reward plus a bonus that shrinks as the action is tried more often.",
+  "practice": "Gives deterministic, principled exploration in bandits; its tree version, UCT, chooses branches in Monte Carlo tree search, which LLM search methods such as LATS also use.",
+  "aliases": [
+    "UCB",
+    "UCB1"
+  ],
+  "chapters": [
+    "rl-primer",
+    "planning-reasoning",
+    "bandits",
+    "planning-mcts"
+  ],
+  "abbr": "UCB"
+}

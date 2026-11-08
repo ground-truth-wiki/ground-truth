@@ -1,0 +1,12 @@
+{
+  "id": "generative-agents",
+  "term": "Generative agents",
+  "def": "Simulated characters driven by language models (Park et al., 2023) that log observations in a memory stream, reflect on them to form higher-level insights, and plan; 25 lived in a sandbox town.",
+  "practice": "The standard reference for memory retrieval scored by recency, importance and relevance, for reflection, and for agent-based social simulation.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory",
+    "agent-research-lineage",
+    "agent-memory-architectures"
+  ]
+}

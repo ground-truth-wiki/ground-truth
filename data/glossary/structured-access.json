@@ -1,0 +1,11 @@
+{
+  "id": "structured-access",
+  "term": "Structured access",
+  "def": "Releasing an AI system only through controlled interfaces, typically a hosted API, so the developer can restrict uses and prevent modification, instead of publishing the weights.",
+  "practice": "The rationale behind API-only frontier models, tiered access programs and know-your-customer checks; the trade-off is less transparency and customization than with open weights.",
+  "aliases": [],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-safety-frameworks"
+  ]
+}

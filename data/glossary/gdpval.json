@@ -1,0 +1,13 @@
+{
+  "id": "gdpval",
+  "term": "GDPval",
+  "def": "OpenAI's benchmark of real work tasks from 44 occupations in the nine sectors contributing most to US GDP, built from deliverables of professionals averaging 14 years of experience.",
+  "practice": "Expert graders compare model and human deliverables blind, framing progress as economically useful output rather than exam scores; a 220-task gold subset is public.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "open-problems",
+    "benchmark-catalog",
+    "economic-impact-evidence"
+  ]
+}

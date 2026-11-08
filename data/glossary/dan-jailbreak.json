@@ -1,0 +1,15 @@
+{
+  "id": "dan-jailbreak",
+  "term": "Do Anything Now",
+  "def": "A family of community-written role-play jailbreak prompts that tell a chat model to act as an unrestricted persona that ignores its rules.",
+  "practice": "The archetype of in-the-wild jailbreaks; Shen et al. collected 1,405 jailbreak prompts from 131 online communities between December 2022 and December 2023.",
+  "aliases": [
+    "DAN",
+    "DAN prompt"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ],
+  "abbr": "DAN"
+}

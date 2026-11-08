@@ -1,0 +1,20 @@
+{
+  "id": "gaussian-distribution",
+  "term": "Gaussian distribution",
+  "def": "The bell-shaped continuous distribution set by a mean μ and a variance σ², with density proportional to exp(−(x − μ)² / (2σ²)).",
+  "practice": "Weights are initialized from Gaussians, diffusion models add and remove Gaussian noise, and averages over many eval items are approximately Gaussian by the central limit theorem.",
+  "aliases": [
+    "normal distribution",
+    "Gaussian"
+  ],
+  "chapters": [
+    "probability-information",
+    "image-generation",
+    "eval-statistics",
+    "neural-networks",
+    "high-dimensional-geometry",
+    "distributions-and-estimation",
+    "loss-functions",
+    "validation-tuning"
+  ]
+}

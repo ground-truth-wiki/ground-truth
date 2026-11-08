@@ -1,0 +1,18 @@
+{
+  "id": "caisi",
+  "term": "Center for AI Standards and Innovation",
+  "def": "The NIST center that leads US government testing of frontier AI for national-security risks and works with industry on voluntary standards; renamed from the US AI Safety Institute in 2025.",
+  "practice": "Publishes capability assessments of US and foreign models, some jointly with the UK AI Security Institute; as of November 2026 NIST's page also calls it the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI).",
+  "aliases": [
+    "CAISI",
+    "CAISSI"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "prompt-injection-techniques",
+    "dangerous-capability-evals",
+    "us-ai-law"
+  ],
+  "abbr": "CAISI"
+}

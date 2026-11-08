@@ -1,0 +1,12 @@
+{
+  "id": "model-signing",
+  "term": "Model signing",
+  "def": "Cryptographically signing model files so that users can verify who produced them and that they have not been altered since.",
+  "practice": "OpenSSF's model-signing library reached v1.0 in April 2025; it signs a whole model directory, with Sigstore as the default or with PKI certificates.",
+  "aliases": [
+    "OpenSSF model signing"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

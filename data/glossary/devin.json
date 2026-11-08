@@ -1,0 +1,13 @@
+{
+  "id": "devin",
+  "term": "Devin",
+  "def": "Cognition's autonomous software-engineering agent, announced on 12 March 2024 as 'the first AI software engineer', which takes a task and works toward a pull request.",
+  "practice": "Its launch claimed 13.86% of SWE-bench issues resolved end to end on a random 25% subset, against a 1.96% prior best; it is usually grouped with cloud agents that return a pull request.",
+  "aliases": [],
+  "chapters": [
+    "coding-harness-landscape",
+    "coding-agents",
+    "autonomy-and-oversight",
+    "agent-instruction-files"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "stochastic-rounding",
+  "term": "Stochastic rounding",
+  "def": "Rounding a value up or down at random, with probability proportional to its closeness to each neighboring representable value, so the result is correct on average.",
+  "practice": "Keeps tiny gradient updates from being systematically rounded away at low precision; NVIDIA’s NVFP4 pretraining recipe applies it to gradients, and Blackwell GPUs support it natively.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "distributed-training",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

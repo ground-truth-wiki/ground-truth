@@ -1,0 +1,11 @@
+{
+  "id": "logit-lens",
+  "term": "Logit lens",
+  "def": "Applying a model's final layer norm and unembedding to intermediate residual-stream activations to read off which next-token prediction is forming at each layer.",
+  "practice": "A cheap first look inside a model that is unreliable in early layers; the tuned lens trains a small affine map per layer for better readouts.",
+  "aliases": [],
+  "chapters": [
+    "mech-interp",
+    "probes-and-steering"
+  ]
+}

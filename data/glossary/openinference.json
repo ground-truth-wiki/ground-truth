@@ -1,0 +1,13 @@
+{
+  "id": "openinference",
+  "term": "OpenInference",
+  "def": "Open-source tracing conventions and auto-instrumentation plugins from Arize that complement OpenTelemetry, defining AI span kinds such as LLM, retriever, tool and agent across many frameworks and SDKs.",
+  "practice": "Native to Arize Phoenix and usable with any OpenTelemetry backend; its attributes differ from the OpenTelemetry GenAI gen_ai.* conventions, so mixing the two needs a mapping.",
+  "aliases": [],
+  "chapters": [
+    "observability-tracing",
+    "eval-tooling",
+    "agent-sdk-primitives",
+    "otel-genai-conventions"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ontology",
+  "term": "Ontology",
+  "def": "A formal, machine-readable specification of a domain's classes, properties, relationships and constraints, against which data can be validated and reasoned about, as in the W3C's Web Ontology Language (OWL).",
+  "practice": "Gives a knowledge graph one agreed meaning per type and relation; for RAG metadata, a lighter taxonomy or controlled vocabulary is often enough.",
+  "aliases": [
+    "ontologies"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "structured-code-retrieval",
+    "knowledge-graphs",
+    "graph-rag",
+    "agent-memory-architectures"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cross-embodiment",
+  "term": "Cross-embodiment learning",
+  "def": "Training one robot policy on data from many different robot bodies, such as single arms, dual arms, mobile manipulators and humanoids, so that skills transfer between them.",
+  "practice": "Open X-Embodiment’s RT-X models showed positive transfer from pooled data; because sensors, action spaces and control rates differ, generalist policies such as Octo are designed to accommodate them.",
+  "aliases": [
+    "cross-embodiment",
+    "multi-embodiment"
+  ],
+  "chapters": [
+    "embodied-agents",
+    "vla-models"
+  ]
+}

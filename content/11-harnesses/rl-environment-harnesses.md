@@ -91,3 +91,10 @@ rl-environment-harnesses
 - [Reinforcement learning primer](#rl-primer)
 - [What “harness” means](#what-is-a-harness)
 - [Alignment concepts](#alignment-concepts)
+- [Managed and reinforcement fine-tuning services](#fine-tuning-services)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Training environments for coding agents](#swe-training-environments)

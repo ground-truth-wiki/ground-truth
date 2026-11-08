@@ -1,0 +1,14 @@
+{
+  "id": "fair-use",
+  "term": "Fair use",
+  "def": "A US copyright doctrine permitting some unlicensed uses of protected works, weighed case by case on four factors: the use's purpose and character, the work's nature, the amount used and the market effect.",
+  "practice": "The central US question for training on copyrighted works; the Copyright Office's report on generative AI training (pre-publication version, May 2025) treats it as fact-specific, including how data was acquired (as of November 2026; not legal advice).",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "pretraining-data",
+    "data-governance",
+    "data-licensing-consent",
+    "ai-copyright"
+  ]
+}

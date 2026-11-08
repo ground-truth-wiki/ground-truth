@@ -1,0 +1,18 @@
+{
+  "id": "path-scoped-instructions",
+  "term": "Path-scoped instructions",
+  "def": "Instruction files that a harness loads only when the agent works on files matching a glob pattern, rather than in every session.",
+  "practice": "Cursor rules set to Apply to Specific Files, Copilot .instructions.md files with applyTo and Claude Code .claude/rules files with paths frontmatter all work this way; they keep directory- or language-specific guidance out of the always-loaded context.",
+  "aliases": [
+    "path-specific instructions",
+    "path-scoped rules",
+    "path-specific rules"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "claude-code",
+    "context-engineering",
+    "working-with-coding-agents",
+    "agent-instruction-files"
+  ]
+}

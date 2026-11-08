@@ -1,0 +1,19 @@
+{
+  "id": "gradient-norm",
+  "term": "Gradient norm",
+  "def": "The L2 norm of the gradient taken over all of a model's parameters at once, a single number summarizing how large the current update direction is.",
+  "practice": "Training dashboards plot it every step, gradient clipping commonly caps it at 1.0, and growing spikes in it often precede loss spikes, as OLMo 2 reported.",
+  "aliases": [
+    "grad norm",
+    "global gradient norm"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "neural-networks",
+    "recurrent-networks",
+    "training-neural-networks",
+    "pretraining-run",
+    "training-stability"
+  ]
+}

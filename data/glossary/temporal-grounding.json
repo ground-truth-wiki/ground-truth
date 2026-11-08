@@ -1,0 +1,16 @@
+{
+  "id": "temporal-grounding",
+  "term": "Temporal grounding",
+  "def": "Locating when in a video an event described in text happens, and returning its start and end timestamps.",
+  "practice": "Ask for timestamps in a fixed format such as MM:SS and spot-check them; models trained with absolute time encodings can localize events to about a second in hours-long video.",
+  "aliases": [
+    "temporal localization",
+    "moment retrieval"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "multimodal-apps",
+    "multimodal-rag",
+    "video-understanding"
+  ]
+}

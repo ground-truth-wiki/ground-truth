@@ -1,0 +1,14 @@
+{
+  "id": "speech-translation",
+  "term": "Speech translation",
+  "def": "Translating spoken audio in one language into text or speech in another, either cascaded (recognition, then machine translation) or end to end.",
+  "practice": "Whisper translates into English text only, SeamlessM4T covers many languages with text or speech output, and in live use latency versus accuracy is the main trade-off.",
+  "aliases": [
+    "speech-to-text translation",
+    "speech-to-speech translation"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents"
+  ]
+}

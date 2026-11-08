@@ -1,0 +1,14 @@
+{
+  "id": "error-budget",
+  "term": "Error budget",
+  "def": "The amount of unreliability an SLO permits over its window, such as 0.1% of requests for a 99.9% SLO; burn rate is how fast that allowance is being consumed.",
+  "practice": "When the budget runs low, slow down prompt, model and provider changes; for a 99.9% SLO, Google's SRE workbook pages at a 14.4x burn rate over one hour, which spends 2% of the budget.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering",
+    "ci-cd-for-ai",
+    "incidents-on-call",
+    "rate-limits-overload",
+    "slos-error-budgets"
+  ]
+}

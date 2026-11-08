@@ -1,0 +1,12 @@
+{
+  "id": "logit-bias",
+  "term": "Logit bias",
+  "def": "A per-token value added to the logits before sampling to make chosen tokens more or less likely, or to ban them outright.",
+  "practice": "Used to restrict output to label tokens in classification or to block a word; it acts on token ids, so a bias map breaks when the tokenizer or model changes.",
+  "aliases": [],
+  "chapters": [
+    "decoding-sampling",
+    "structured-outputs",
+    "model-theft"
+  ]
+}

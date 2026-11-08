@@ -1,0 +1,19 @@
+{
+  "id": "word2vec",
+  "term": "word2vec",
+  "def": "A 2013 family of shallow models, skip-gram and CBOW, that learn one static vector per word by predicting words from their neighbors or neighbors from a word.",
+  "practice": "Made vector-arithmetic analogies famous and popularized negative sampling; contextual embeddings superseded it, but it remains a fast baseline and the clearest first example of learned embeddings.",
+  "aliases": [
+    "skip-gram",
+    "CBOW",
+    "continuous bag of words"
+  ],
+  "chapters": [
+    "the-canon",
+    "representation-learning",
+    "embeddings",
+    "clustering-dimensionality-reduction",
+    "word-embeddings",
+    "self-supervised-methods"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mutual-information",
+  "term": "Mutual information",
+  "def": "The reduction in uncertainty about one random variable from knowing another, I(X; Y) = H(X) − H(X | Y); it is zero exactly when the two are independent.",
+  "practice": "Contrastive objectives such as InfoNCE maximize a lower bound on it, and pointwise mutual information scores how much more often two events co-occur than chance predicts.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "representation-learning",
+    "information-theory-for-llms",
+    "clustering-dimensionality-reduction"
+  ]
+}

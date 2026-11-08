@@ -1,0 +1,19 @@
+{
+  "id": "ltr",
+  "term": "Learning to rank",
+  "def": "Training a model to order documents for a query from relevance labels or click data, with pointwise, pairwise or listwise losses over query-document features.",
+  "practice": "How web and e-commerce search tune ranking, classically gradient-boosted trees such as LambdaMART in a rescoring stage; neural rerankers learn the same task from text.",
+  "aliases": [
+    "LTR",
+    "machine-learned ranking"
+  ],
+  "chapters": [
+    "reranking",
+    "hybrid-retrieval",
+    "rag-evaluation",
+    "recommender-systems",
+    "ir-foundations",
+    "learning-to-rank"
+  ],
+  "abbr": "LTR"
+}

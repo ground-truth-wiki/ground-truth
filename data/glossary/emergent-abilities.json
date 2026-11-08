@@ -1,0 +1,14 @@
+{
+  "id": "emergent-abilities",
+  "term": "Emergent abilities",
+  "def": "Abilities absent in smaller models that appear in larger ones and cannot be predicted by extrapolating smaller models' performance.",
+  "practice": "Contested: Schaeffer et al. (2023) traced many apparent jumps to all-or-nothing metrics that smooth out under continuous ones, while others see real threshold effects; forecast with smooth measures.",
+  "aliases": [
+    "emergence",
+    "emergent capabilities"
+  ],
+  "chapters": [
+    "scaling-laws",
+    "open-problems"
+  ]
+}

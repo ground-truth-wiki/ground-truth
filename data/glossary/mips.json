@@ -1,0 +1,15 @@
+{
+  "id": "mips",
+  "term": "Maximum inner product search",
+  "def": "Finding the stored vectors with the largest dot product with a query, which gives different results from nearest-neighbor or cosine search when vector lengths vary.",
+  "practice": "The real search problem when an embedding model is trained for dot-product scores: use an inner-product index, because normalizing such vectors changes the ranking; ScaNN was built mainly for it.",
+  "aliases": [
+    "MIPS",
+    "inner product search"
+  ],
+  "chapters": [
+    "vector-search",
+    "vector-index-internals"
+  ],
+  "abbr": "MIPS"
+}

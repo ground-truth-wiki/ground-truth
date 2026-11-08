@@ -1,0 +1,12 @@
+{
+  "id": "hellaswag",
+  "term": "HellaSwag",
+  "def": "A commonsense benchmark in which the model picks the most plausible of four continuations of an everyday event description, with wrong endings machine-generated and chosen by adversarial filtering.",
+  "practice": "At release humans scored over 95% and the best models under 48%; it is now saturated for large models but remains common in base-model and pretraining evaluation suites.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "web-data-pipeline",
+    "base-model-evaluation"
+  ]
+}

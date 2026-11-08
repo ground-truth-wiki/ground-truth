@@ -1,0 +1,14 @@
+{
+  "id": "online-softmax",
+  "term": "Online softmax",
+  "def": "Computing a softmax in one streaming pass by keeping a running maximum and a running sum that is rescaled whenever the maximum changes.",
+  "practice": "The trick that lets FlashAttention compute exact attention tile by tile without storing the full score matrix.",
+  "aliases": [
+    "online normalizer"
+  ],
+  "chapters": [
+    "long-context",
+    "attention",
+    "floating-point-formats"
+  ]
+}

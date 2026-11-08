@@ -1,0 +1,20 @@
+{
+  "id": "latent-space",
+  "term": "Latent space",
+  "def": "The space of internal codes a model maps data into, usually lower-dimensional than the input, where generation, comparison or editing happens.",
+  "practice": "Latent diffusion denoises in an autoencoder's latent space rather than in pixels, which cuts compute enough to make high-resolution generation affordable.",
+  "aliases": [
+    "latent representation",
+    "latents"
+  ],
+  "chapters": [
+    "image-generation",
+    "representation-learning",
+    "video-world-models",
+    "autoencoders-latent-spaces",
+    "deep-generative-models",
+    "sae-circuit-tracing",
+    "probes-and-steering",
+    "diffusion-flow-matching"
+  ]
+}

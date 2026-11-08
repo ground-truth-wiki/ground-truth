@@ -1,0 +1,21 @@
+{
+  "id": "log-probability",
+  "term": "Log-probability",
+  "def": "The logarithm, usually natural, of a probability: 0 for certainty and increasingly negative for less likely events.",
+  "practice": "Many APIs and serving engines can return token logprobs, used for confidence scores, label classification and perplexity; summing them avoids the underflow of multiplying many small probabilities.",
+  "aliases": [
+    "logprob",
+    "log-probabilities",
+    "log probabilities"
+  ],
+  "chapters": [
+    "probability-information",
+    "decoding-sampling",
+    "model-apis",
+    "distributions-and-estimation",
+    "language-modeling",
+    "pretraining-run",
+    "dpo-and-relatives",
+    "llm-distillation"
+  ]
+}

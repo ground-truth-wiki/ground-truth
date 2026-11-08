@@ -1,0 +1,11 @@
+{
+  "id": "model-revision",
+  "term": "Model revision",
+  "def": "A specific version of a Hugging Face Hub repository, named by branch, tag or full commit hash and passed as the revision parameter, so the same files load every time.",
+  "practice": "Pinning a full commit hash, not a short hash or branch, protects production from silent upstream changes to weights, tokenizer, chat template or custom code.",
+  "aliases": [],
+  "chapters": [
+    "supply-chain-security",
+    "open-weight-frontier"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "amazon-bedrock",
+  "term": "Amazon Bedrock",
+  "def": "AWS's fully managed service for calling foundation models from many providers through AWS identity, networking and billing.",
+  "practice": "Model IDs, features, quotas and lifecycle dates can differ from the provider's own API; it adds cross-Region inference profiles, provisioned throughput and its own Converse API.",
+  "aliases": [
+    "Bedrock",
+    "AWS Bedrock"
+  ],
+  "chapters": [
+    "model-apis",
+    "choosing-a-model",
+    "enterprise-readiness",
+    "fine-tuning-services",
+    "model-lifecycle",
+    "api-shapes",
+    "cloud-ai-platforms",
+    "web-search-hosted-retrieval"
+  ]
+}

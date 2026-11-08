@@ -1,0 +1,21 @@
+{
+  "id": "managed-settings",
+  "term": "Managed settings",
+  "def": "Harness configuration that an organization deploys at the highest precedence, so developers' user and project settings cannot override it.",
+  "practice": "Used to enforce deny rules, disable bypass and auto modes, allow only approved hooks or MCP servers and ship an organization-wide instruction file; Claude Code reads managed-settings.json and Codex reads requirements.toml.",
+  "aliases": [
+    "managed policy",
+    "managed configuration",
+    "managed-settings.json",
+    "requirements.toml"
+  ],
+  "chapters": [
+    "claude-code",
+    "enterprise-readiness",
+    "harness-anatomy",
+    "secure-agent-design",
+    "harness-permissions-hooks",
+    "agent-instruction-files",
+    "embedded-agent-harnesses"
+  ]
+}

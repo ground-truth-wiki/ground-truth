@@ -1,0 +1,15 @@
+{
+  "id": "experiment-tracking",
+  "term": "Experiment tracking",
+  "def": "Recording each training or evaluation run's code version, parameters, data, metrics and output artifacts so runs can be compared, reproduced and traced to what shipped.",
+  "practice": "MLflow Tracking and similar tools do this for training runs; eval platforms apply the same idea to prompt and model experiments, with per-case diffs between runs.",
+  "aliases": [
+    "run tracking",
+    "experiment management"
+  ],
+  "chapters": [
+    "eval-tooling",
+    "fine-tuning-practice",
+    "ci-cd-for-ai"
+  ]
+}

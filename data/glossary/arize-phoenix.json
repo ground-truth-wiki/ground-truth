@@ -1,0 +1,13 @@
+{
+  "id": "arize-phoenix",
+  "term": "Arize Phoenix",
+  "def": "Arize AI's self-hostable platform for tracing, evaluating and debugging AI applications, instrumented through OpenInference, a set of OpenTelemetry-based conventions.",
+  "practice": "Licensed under the Elastic License 2.0, which is source-available rather than OSI open source, so check the terms before offering it as a hosted service (as of November 2026).",
+  "aliases": [
+    "Phoenix"
+  ],
+  "chapters": [
+    "eval-tooling",
+    "observability-tracing"
+  ]
+}

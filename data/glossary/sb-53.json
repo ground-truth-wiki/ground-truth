@@ -1,0 +1,17 @@
+{
+  "id": "sb-53",
+  "term": "California SB 53",
+  "def": "California's Transparency in Frontier Artificial Intelligence Act, signed 29 September 2025: frontier AI developers must publish transparency reports and report critical safety incidents, and large ones must publish a safety framework.",
+  "practice": "In force since 1 January 2026; it covers models trained with over 10²⁶ operations, defines large developers by annual revenue above USD 500 million and sets a 15-day incident reporting deadline.",
+  "aliases": [
+    "SB 53",
+    "TFAIA",
+    "Transparency in Frontier Artificial Intelligence Act"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "dangerous-capability-evals",
+    "us-ai-law"
+  ]
+}

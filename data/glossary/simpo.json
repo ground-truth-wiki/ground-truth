@@ -1,0 +1,14 @@
+{
+  "id": "simpo",
+  "term": "Simple Preference Optimization",
+  "def": "A reference-free DPO variant that uses a response's length-normalized average log-probability as its implicit reward and requires a target margin between chosen and rejected rewards.",
+  "practice": "Saves the reference model's memory and curbs length exploitation, at the cost of a margin hyperparameter to tune alongside beta.",
+  "aliases": [
+    "SimPO"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "dpo-and-relatives"
+  ],
+  "abbr": "SimPO"
+}

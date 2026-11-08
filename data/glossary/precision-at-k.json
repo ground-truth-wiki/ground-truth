@@ -1,0 +1,16 @@
+{
+  "id": "precision-at-k",
+  "term": "Precision@k",
+  "def": "The fraction of the top k retrieved results that are relevant to the query.",
+  "practice": "Matters when the context budget is tight, since it measures how much of what the generator reads is noise; report it next to recall@k at the same k.",
+  "aliases": [
+    "P@k",
+    "precision at k"
+  ],
+  "chapters": [
+    "rag-evaluation",
+    "metrics-graders",
+    "ir-foundations",
+    "anomaly-drift-detection"
+  ]
+}

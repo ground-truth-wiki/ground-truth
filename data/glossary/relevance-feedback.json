@@ -1,0 +1,16 @@
+{
+  "id": "relevance-feedback",
+  "term": "Relevance feedback",
+  "def": "Refining a query using documents judged relevant, for example moving its vector toward relevant and away from non-relevant documents (Rocchio); pseudo-relevance feedback simply assumes the top results are relevant.",
+  "practice": "BM25 with RM3 pseudo-relevance feedback is a long-standing strong baseline in IR research, and LLM query expansion such as HyDE pursues the same goal without needing feedback documents.",
+  "aliases": [
+    "pseudo-relevance feedback",
+    "blind relevance feedback",
+    "PRF"
+  ],
+  "chapters": [
+    "query-understanding",
+    "hybrid-retrieval",
+    "ir-foundations"
+  ]
+}

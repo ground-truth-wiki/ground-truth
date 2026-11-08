@@ -111,3 +111,10 @@ a2a
 - [MCP architecture](#mcp-architecture)
 - [Governance and ecosystem](#protocol-governance)
 - [Long-running and durable agents](#long-running-agents)
+- [Protocol building blocks: JSON-RPC, JSON Schema, HTTP streams and OAuth](#protocol-building-blocks)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [A2A 1.0 in depth: bindings, extensions and signed agent cards](#a2a-in-depth)

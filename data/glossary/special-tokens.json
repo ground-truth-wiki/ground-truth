@@ -1,0 +1,21 @@
+{
+  "id": "special-tokens",
+  "term": "Special tokens",
+  "def": "Reserved vocabulary entries, such as beginning and end of sequence, padding and chat-role markers, that carry control meaning rather than text and are never split by the tokenizer.",
+  "practice": "Chat templates insert them; a duplicated BOS or a missing EOS in training data silently degrades a fine-tune or leaves it unable to stop generating.",
+  "aliases": [
+    "control tokens",
+    "BOS token",
+    "EOS token"
+  ],
+  "chapters": [
+    "tokenization",
+    "sft",
+    "model-specific-notes",
+    "model-types",
+    "pretraining-run",
+    "tokenizers-in-practice",
+    "function-calling-training",
+    "model-documentation"
+  ]
+}

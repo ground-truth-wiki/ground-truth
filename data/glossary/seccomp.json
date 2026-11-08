@@ -1,0 +1,14 @@
+{
+  "id": "seccomp",
+  "term": "seccomp",
+  "def": "A Linux kernel facility (seccomp-bpf) that lets a process install a BPF filter deciding, per system call, whether to allow it, return an error, kill the process or notify a supervisor.",
+  "practice": "A building block, not a sandbox by itself: container runtimes and agent sandboxes add seccomp filters, for example to block Unix domain sockets, on top of namespaces.",
+  "aliases": [
+    "seccomp-bpf",
+    "seccomp filter"
+  ],
+  "chapters": [
+    "sandboxes",
+    "os-level-sandboxing"
+  ]
+}

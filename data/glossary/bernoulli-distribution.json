@@ -1,0 +1,17 @@
+{
+  "id": "bernoulli-distribution",
+  "term": "Bernoulli distribution",
+  "def": "The distribution of a single trial with two outcomes: success with probability p and failure with probability 1 − p.",
+  "practice": "A pass/fail eval case is a Bernoulli trial, so the standard error of an accuracy p measured on n independent cases is √(p(1 − p)/n).",
+  "aliases": [
+    "Bernoulli trial",
+    "Bernoulli"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "probability-information",
+    "metrics-graders",
+    "distributions-and-estimation",
+    "bandits"
+  ]
+}

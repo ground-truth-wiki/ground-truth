@@ -1,0 +1,17 @@
+{
+  "id": "needle-in-a-haystack",
+  "term": "Needle in a haystack",
+  "def": "A long-context test that hides one fact (the needle) at a chosen depth in long filler text (the haystack) and asks the model to retrieve it, across lengths and depths.",
+  "practice": "Near-perfect scores are common and say little about multi-fact retrieval or reasoning over long inputs; add RULER-style or task-specific evals.",
+  "aliases": [
+    "NIAH",
+    "needle-in-a-haystack test",
+    "needle test"
+  ],
+  "chapters": [
+    "long-context",
+    "benchmark-literacy",
+    "long-context-training"
+  ],
+  "abbr": "NIAH"
+}

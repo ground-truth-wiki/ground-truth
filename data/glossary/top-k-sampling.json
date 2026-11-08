@@ -1,0 +1,13 @@
+{
+  "id": "top-k-sampling",
+  "term": "Top-k sampling",
+  "def": "Sampling the next token only from the k most probable candidates, after renormalizing their probabilities to sum to one.",
+  "practice": "Simple and widely supported, but a fixed k is too wide when the model is confident and too narrow when many continuations fit, which motivated top-p and min-p.",
+  "aliases": [
+    "top_k"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "model-lifecycle"
+  ]
+}

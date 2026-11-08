@@ -1,0 +1,18 @@
+{
+  "id": "generative-reward-model",
+  "term": "Generative reward model",
+  "def": "A reward model that writes its judgment as text, often after step-by-step reasoning, and derives the score from that text or a token probability rather than a scalar head.",
+  "practice": "Gains from chain of thought and from voting over several sampled judgments, at the cost of more inference per score; in practice it shades into LLM-as-judge.",
+  "aliases": [
+    "GenRM",
+    "generative verifier"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "llm-as-judge",
+    "test-time-scaling",
+    "rlvr-reasoning",
+    "test-time-search"
+  ],
+  "abbr": "GenRM"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mastra",
+  "term": "Mastra",
+  "def": "An open-source TypeScript framework for building AI agents and applications, with agents, tools, workflows, memory, models chosen by provider/model strings and a local Studio UI.",
+  "practice": "A common pick for TypeScript teams that want more structure than the AI SDK alone; its stable 1.0 has shipped as of November 2026.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "frameworks-beyond-python"
+  ]
+}

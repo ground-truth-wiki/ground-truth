@@ -1,0 +1,13 @@
+{
+  "id": "agentless",
+  "term": "Agentless",
+  "def": "A software-repair approach (Xia et al., 2024) that replaces an autonomous agent loop with a fixed three-phase pipeline: localize the fault, generate candidate repairs, then validate patches.",
+  "practice": "Its paper reported 32% on SWE-bench Lite at about $0.70 per issue, and it became a widely used baseline for how much of a coding agent's score a simple workflow can match.",
+  "aliases": [],
+  "chapters": [
+    "harness-engineering",
+    "workflow-patterns",
+    "coding-agents",
+    "coding-agent-internals"
+  ]
+}

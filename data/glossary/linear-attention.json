@@ -1,0 +1,18 @@
+{
+  "id": "linear-attention",
+  "term": "Linear attention",
+  "def": "Attention that replaces the softmax with a kernel feature map, so the computation can be reordered into a fixed-size recurrent state and costs time linear in sequence length.",
+  "practice": "Modern variants add decay gates or delta-rule updates, as in RetNet, Mamba-2 and Gated DeltaNet, and are often mixed with a few full-attention layers to keep exact recall.",
+  "aliases": [
+    "linear transformer"
+  ],
+  "chapters": [
+    "beyond-transformers",
+    "long-context",
+    "transformer-overview",
+    "new-architectures",
+    "recurrent-networks",
+    "sparse-and-local-attention",
+    "linear-attention-hybrids"
+  ]
+}

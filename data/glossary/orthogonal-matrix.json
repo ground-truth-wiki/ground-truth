@@ -1,0 +1,16 @@
+{
+  "id": "orthogonal-matrix",
+  "term": "Orthogonal matrix",
+  "def": "A square matrix whose columns are orthonormal, unit length and mutually perpendicular, so it preserves lengths and angles and its inverse is its transpose.",
+  "practice": "RoPE rotates query and key pairs with orthogonal matrices, Muon approximately orthogonalizes each update, and rotation-based quantization multiplies weights by orthogonal Hadamard matrices.",
+  "aliases": [
+    "orthonormal matrix"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "positional-encoding",
+    "quantization",
+    "calculus-optimization",
+    "eigenvectors-svd-pca"
+  ]
+}

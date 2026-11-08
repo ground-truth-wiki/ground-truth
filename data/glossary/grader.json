@@ -1,0 +1,17 @@
+{
+  "id": "grader",
+  "term": "Grader",
+  "def": "A function, program or model that scores an output, such as an exact-match check, unit tests, a rubric-guided model judge or a human reviewer, returning pass or fail or a number.",
+  "practice": "Graders drive both evals and RL rewards; validate each one against human-labeled good and bad examples before trusting its scores, and expect model graders to add token cost.",
+  "aliases": [],
+  "chapters": [
+    "metrics-graders",
+    "llm-as-judge",
+    "evaluating-agents",
+    "eval-harnesses",
+    "rl-environment-harnesses",
+    "fine-tuning-practice",
+    "fine-tuning-services",
+    "benchmark-catalog"
+  ]
+}

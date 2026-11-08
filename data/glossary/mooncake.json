@@ -1,0 +1,12 @@
+{
+  "id": "mooncake",
+  "term": "Mooncake",
+  "def": "Moonshot AI's KV-cache-centric serving architecture for its Kimi chatbot, which runs prefill and decode on separate clusters and pools spare CPU, DRAM and SSD capacity into a distributed KV cache.",
+  "practice": "Its paper won Best Paper at USENIX FAST 2025, and its open-source Transfer Engine and Store are used as KV-cache transfer and storage backends by other serving projects.",
+  "aliases": [],
+  "chapters": [
+    "disaggregated-serving",
+    "kv-cache",
+    "inference-fleet-scaling"
+  ]
+}

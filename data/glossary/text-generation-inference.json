@@ -1,0 +1,14 @@
+{
+  "id": "text-generation-inference",
+  "term": "Text Generation Inference",
+  "def": "Hugging Face's toolkit for serving LLMs, with continuous batching, tensor parallelism and token streaming; in maintenance mode as of November 2026.",
+  "practice": "Existing deployments keep working and receive only minor fixes; Hugging Face recommends vLLM, SGLang, llama.cpp or MLX for new ones.",
+  "aliases": [
+    "TGI"
+  ],
+  "chapters": [
+    "serving-engines",
+    "batching-scheduling"
+  ],
+  "abbr": "TGI"
+}

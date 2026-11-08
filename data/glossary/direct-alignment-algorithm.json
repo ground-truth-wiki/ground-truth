@@ -1,0 +1,16 @@
+{
+  "id": "direct-alignment-algorithm",
+  "term": "Direct alignment algorithm",
+  "def": "Any method, such as DPO, IPO, KTO, ORPO or SimPO, that trains on preference data with a closed-form loss instead of a separate reward model and an RL loop.",
+  "practice": "Cheaper and more stable than PPO-based RLHF, but offline versions learn only from the pairs they are given and still overoptimize, as Rafailov et al. (2024) showed.",
+  "aliases": [
+    "DAA",
+    "direct alignment from preferences"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "post-training-overview",
+    "dpo-and-relatives"
+  ],
+  "abbr": "DAA"
+}

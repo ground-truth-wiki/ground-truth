@@ -1,0 +1,15 @@
+{
+  "id": "example-selection",
+  "term": "Example selection",
+  "def": "Choosing which demonstrations go into a few-shot prompt, often by retrieving the stored examples most similar to the current input.",
+  "practice": "Retrieval-based selection beat random examples in Liu et al. (2022); an embedding index over labeled cases automates it, but near neighbors can all share one label and bias the answer.",
+  "aliases": [
+    "dynamic few-shot",
+    "demonstration retrieval"
+  ],
+  "chapters": [
+    "in-context-learning",
+    "prompting-fundamentals",
+    "prompt-optimization"
+  ]
+}

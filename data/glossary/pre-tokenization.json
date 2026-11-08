@@ -1,0 +1,14 @@
+{
+  "id": "pre-tokenization",
+  "term": "Pre-tokenization",
+  "def": "Splitting text into word-like chunks, usually with a regular expression over spaces, punctuation and digits, before the subword algorithm runs, so no token crosses a chunk boundary.",
+  "practice": "It decides whether numbers split into single digits, as in LLaMA, and whether a leading space joins the next word; SentencePiece skips it and encodes spaces as a symbol.",
+  "aliases": [
+    "pretokenization",
+    "pre-tokenizer"
+  ],
+  "chapters": [
+    "tokenization",
+    "tokenizers-in-practice"
+  ]
+}

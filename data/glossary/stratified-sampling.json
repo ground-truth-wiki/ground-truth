@@ -1,0 +1,17 @@
+{
+  "id": "stratified-sampling",
+  "term": "Stratified sampling",
+  "def": "Sampling separately within predefined groups (strata) so each group appears in a chosen proportion, either matching the population or deliberately over-represented.",
+  "practice": "Used to build eval sets and splits that keep rare classes and slices; when a slice is over-sampled, reweight it before reporting overall metrics.",
+  "aliases": [
+    "stratified sample",
+    "stratified split",
+    "stratification"
+  ],
+  "chapters": [
+    "eval-datasets",
+    "data-flywheel",
+    "online-evaluation",
+    "classical-ml"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "silent-data-corruption",
+  "term": "Silent data corruption",
+  "def": "Hardware faults that produce wrong computation results without raising any error, so the corruption propagates through software undetected.",
+  "practice": "Rare per chip but routine at fleet scale; Llama 3 attributed 6 of 419 unexpected interruptions during a 54-day stretch of pretraining to it.",
+  "aliases": [
+    "SDC"
+  ],
+  "chapters": [
+    "distributed-training",
+    "pretraining-run",
+    "training-reliability"
+  ],
+  "abbr": "SDC"
+}

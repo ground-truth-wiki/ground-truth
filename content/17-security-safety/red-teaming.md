@@ -98,3 +98,6 @@ red-teaming
 - [Jailbreaks and misuse](#jailbreaks-misuse)
 - [Prompt injection](#prompt-injection)
 - [Secure agent design](#secure-agent-design)
+- [Security and vulnerability-research agents](#security-agents)
+- [AI security frameworks and standards](#ai-security-frameworks)
+- [Jailbreak attacks and defenses in depth](#jailbreak-techniques)

@@ -1,0 +1,20 @@
+{
+  "id": "algorithmic-bias",
+  "term": "Algorithmic bias",
+  "def": "Systematic differences in an AI system’s behavior or outcomes that unfairly favor or harm some people or groups, arising from data, design, deployment or human decisions.",
+  "practice": "NIST SP 1270 (2022) sorts its sources into systemic, statistical and computational, and human biases and states that zero risk of bias is not achievable, so it is measured and managed per group.",
+  "aliases": [
+    "AI bias",
+    "harmful bias",
+    "social bias",
+    "societal bias"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals",
+    "eval-statistics",
+    "governance-regulation",
+    "word-embeddings",
+    "ai-risk-management"
+  ]
+}

@@ -102,3 +102,14 @@ embeddings
 - [Chunking](#chunking)
 - [Lexical and hybrid retrieval](#hybrid-retrieval)
 - [Evaluating RAG](#rag-evaluation)
+- [High-dimensional geometry](#high-dimensional-geometry)
+- [Word embeddings: from word2vec to contextual representations](#word-embeddings)
+- [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
+- [Multilingual and low-resource language models](#multilingual-models)
+- [Retrieval benchmarks and test collections](#retrieval-test-collections)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Training and fine-tuning retrievers](#training-retrievers)

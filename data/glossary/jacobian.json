@@ -1,0 +1,13 @@
+{
+  "id": "jacobian",
+  "term": "Jacobian",
+  "def": "The matrix of all first-order partial derivatives of a vector-valued function, with one row per output and one column per input.",
+  "practice": "Autodiff never builds the full Jacobian of a large model; the backward pass computes vector-Jacobian products, which are all a scalar loss needs.",
+  "aliases": [
+    "Jacobian matrix"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "automatic-differentiation"
+  ]
+}

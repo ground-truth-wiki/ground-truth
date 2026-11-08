@@ -1,0 +1,13 @@
+{
+  "id": "forced-alignment",
+  "term": "Forced alignment",
+  "def": "Aligning a known transcript to its audio to obtain start and end times for each word or phone.",
+  "practice": "Produces word timestamps for subtitles, audio search and citing passages in recordings; CTC models and tools such as the Montreal Forced Aligner do it.",
+  "aliases": [
+    "audio-text alignment"
+  ],
+  "chapters": [
+    "speech-audio",
+    "multimodal-rag"
+  ]
+}

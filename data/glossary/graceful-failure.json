@@ -1,0 +1,15 @@
+{
+  "id": "graceful-failure",
+  "term": "Graceful failure",
+  "def": "Designing an AI product so its errors are expected, easy to notice and recoverable, with a clear path forward for the user.",
+  "practice": "Covers stated limits, easy correction and undo, abstention, escalation and a non-AI way to finish the task; distinct from graceful degradation, which keeps a service running when a dependency fails.",
+  "aliases": [
+    "defensive UX"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "agent-ux",
+    "grounding-citations",
+    "human-ai-interaction-guidelines"
+  ]
+}

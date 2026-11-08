@@ -1,0 +1,20 @@
+{
+  "id": "microsoft-agent-framework",
+  "term": "Microsoft Agent Framework",
+  "def": "Microsoft's open-source framework for building agents and graph-based workflows, released as 1.0 for .NET and Python on 3 April 2026 as the successor to AutoGen and Semantic Kernel.",
+  "practice": "Ships sequential, concurrent, handoff, group-chat and Magentic orchestrations with checkpointing and human approval; several integrations, such as hosted agents and AG-UI, were still in preview at 1.0.",
+  "aliases": [
+    "MAF"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "multi-agent",
+    "ai-engineering-stack",
+    "multi-agent-patterns",
+    "agent-sdk-primitives",
+    "embedded-agent-harnesses",
+    "graph-workflow-runtimes"
+  ],
+  "abbr": "MAF"
+}

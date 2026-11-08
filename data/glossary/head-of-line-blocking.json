@@ -1,0 +1,13 @@
+{
+  "id": "head-of-line-blocking",
+  "term": "Head-of-line blocking",
+  "def": "Delay suffered by short jobs that must wait behind a long job at the front of a shared queue or resource.",
+  "practice": "In LLM servers, first-come-first-served, run-to-completion scheduling lets long prompts or generations stall short requests; continuous batching, chunked prefill, preemption and priorities reduce it.",
+  "aliases": [
+    "HOL blocking"
+  ],
+  "chapters": [
+    "batching-scheduling",
+    "latency-throughput"
+  ]
+}

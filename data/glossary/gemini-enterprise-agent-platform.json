@@ -1,0 +1,19 @@
+{
+  "id": "gemini-enterprise-agent-platform",
+  "term": "Gemini Enterprise Agent Platform",
+  "def": "Google Cloud's platform for building and governing models and agents, which absorbed Vertex AI in April 2026 and includes Model Garden with Gemini, partner and open models.",
+  "practice": "Older Vertex AI names, URLs and SDK flags still appear widely; partner and open models are offered as Model-as-a-Service or deployed to your own endpoints, as of November 2026.",
+  "aliases": [
+    "Vertex AI",
+    "Google Vertex AI"
+  ],
+  "chapters": [
+    "model-apis",
+    "choosing-a-model",
+    "enterprise-readiness",
+    "fine-tuning-services",
+    "cloud-ai-platforms",
+    "mlops-foundations",
+    "slos-error-budgets"
+  ]
+}

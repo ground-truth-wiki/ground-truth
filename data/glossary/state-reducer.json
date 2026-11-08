@@ -1,0 +1,13 @@
+{
+  "id": "state-reducer",
+  "term": "State reducer",
+  "def": "A function attached to one key of a graph's shared state that merges each node's update into the current value, for example appending to a list instead of overwriting it.",
+  "practice": "Without one an update replaces the old value, so keys written by parallel branches need a reducer; LangGraph's add_messages appends new messages and updates those with a matching ID.",
+  "aliases": [
+    "reducer"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "graph-workflow-runtimes"
+  ]
+}

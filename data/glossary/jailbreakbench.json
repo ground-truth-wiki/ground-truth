@@ -1,0 +1,14 @@
+{
+  "id": "jailbreakbench",
+  "term": "JailbreakBench",
+  "def": "An open jailbreak robustness benchmark with 100 misuse behaviors, a repository of attack artifacts, a standard evaluation setup and judge, and a public leaderboard.",
+  "practice": "Makes jailbreak claims reproducible by fixing the behaviors, prompts, chat templates and judge, so attacks and defenses are scored the same way.",
+  "aliases": [
+    "JBB-Behaviors"
+  ],
+  "chapters": [
+    "safety-evals",
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ]
+}

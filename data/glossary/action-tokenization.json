@@ -1,0 +1,14 @@
+{
+  "id": "action-tokenization",
+  "term": "Action tokenization",
+  "def": "Turning continuous robot actions into discrete tokens that a language-model backbone can predict, either by binning each action dimension per time step or by compressing whole action sequences.",
+  "practice": "RT-2 wrote actions as text tokens from 256 bins per dimension; FAST compresses action chunks with the discrete cosine transform, letting autoregressive VLAs handle high-frequency, dexterous tasks where simple binning fails.",
+  "aliases": [
+    "action discretization"
+  ],
+  "chapters": [
+    "embodied-agents",
+    "tokenization",
+    "vla-models"
+  ]
+}

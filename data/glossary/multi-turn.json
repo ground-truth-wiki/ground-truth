@@ -1,0 +1,19 @@
+{
+  "id": "multi-turn",
+  "term": "Multi-turn conversation",
+  "def": "An interaction in which user and model exchange several messages, so each response depends on earlier turns that are passed back to the model as history.",
+  "practice": "Many model APIs are stateless, so the client resends the history each turn; evaluate multi-turn behavior separately, since single-turn evals miss drift and late failures.",
+  "aliases": [
+    "multi-turn"
+  ],
+  "chapters": [
+    "model-apis",
+    "context-engineering",
+    "evaluating-agents",
+    "sft",
+    "eval-recipes",
+    "jailbreaks-misuse",
+    "kv-cache-compression",
+    "sparse-and-local-attention"
+  ]
+}

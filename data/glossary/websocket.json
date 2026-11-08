@@ -1,0 +1,16 @@
+{
+  "id": "websocket",
+  "term": "WebSocket",
+  "def": "A protocol (RFC 6455) that upgrades an HTTP connection into a persistent, full-duplex channel carrying messages in both directions between client and server.",
+  "practice": "Used by realtime voice APIs and interactive agent front ends; for one-way token streams, Server-Sent Events are simpler and pass through proxies more easily.",
+  "aliases": [
+    "RFC 6455"
+  ],
+  "chapters": [
+    "streaming",
+    "voice-agents",
+    "why-protocols",
+    "voice-telephony",
+    "agent-client-protocol"
+  ]
+}

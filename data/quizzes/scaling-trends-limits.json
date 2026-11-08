@@ -1,0 +1,41 @@
+[
+  {
+    "id": "scaling-trends-limits-1",
+    "chapter": "scaling-trends-limits",
+    "q": "Your agent costs $1.00 per task. Prices at the capability you need fall 10 times a year, but the agent's tokens per task grow 2.5 times a year as you move to longer reasoning. On trend, about how fast does cost per task fall?",
+    "options": [
+      "About 4 times a year",
+      "About 10 times a year",
+      "About 25 times a year",
+      "It does not fall, because tokens per task are growing"
+    ],
+    "answer": 0,
+    "explain": "Cost per task is price per token times tokens per task, so the net decline is the price trend divided by the token growth: 10 ÷ 2.5 = 4 times a year. The tempting answer of 10 times reads the price trend as if it were the cost trend, which holds only when tokens per task stay flat. Cost stops falling only if tokens grow as fast as prices fall."
+  },
+  {
+    "id": "scaling-trends-limits-2",
+    "chapter": "scaling-trends-limits",
+    "q": "Epoch AI lists a model at 2e25 FLOP with the status \"speculative\". The EU AI Act presumes systemic risk above 1e25 FLOP. What can you conclude about whether this model crossed the threshold?",
+    "options": [
+      "It crossed it, because 2e25 is twice the threshold",
+      "Nothing firm: a speculative estimate has a 90% interval of about 31 times either way, which reaches far below 1e25",
+      "It did not cross it, because speculative estimates are biased upward",
+      "It crossed it, because only confident estimates can fall below a threshold"
+    ],
+    "answer": 1,
+    "explain": "Epoch's speculative status means a 90% interval of about ±31 times, so 2e25 is consistent with roughly 6e23 to 6e26 FLOP. That range straddles the threshold, so you need the developer's own figure or better evidence. The tempting answer treats the central estimate as exact; a factor of two is small next to the uncertainty."
+  },
+  {
+    "id": "scaling-trends-limits-3",
+    "chapter": "scaling-trends-limits",
+    "q": "Training sets are projected to reach the stock of public human text between 2026 and 2032, yet Epoch's 2030 analysis names power, not data, as the limit most likely to bind first. Why are both claims consistent?",
+    "options": [
+      "Test-time compute removes the need for pretraining data",
+      "The data projection was withdrawn when the 2030 report was published",
+      "Counting images, video and audio widens the effective data stock to a range that reaches far higher than the power limit, while a single campus of 1 to 5 GW caps runs lower",
+      "Power limits apply only to inference, so they always bind before training limits"
+    ],
+    "answer": 2,
+    "explain": "The text projection covers public human text alone. Counting multimodal data, the 2030 report puts the effective stock at 400 trillion to 20 quadrillion tokens, enough for runs of 6e28 to 2e32 FLOP, while one campus of 1 to 5 GW supports only about 1e28 to 3e29 FLOP. The tempting test-time answer is wrong: test-time compute is a second axis of scaling, not a replacement for training data, and the report's limits concern training runs."
+  }
+]

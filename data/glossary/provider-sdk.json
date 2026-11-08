@@ -1,0 +1,17 @@
+{
+  "id": "provider-sdk",
+  "term": "Provider SDK",
+  "def": "A model provider's official client library for its API, with typed requests and responses, streaming helpers, retries and tool-use types, usually without an agent loop of its own.",
+  "practice": "The lowest layer of the stack and the escape hatch from every framework; some now add an optional loop helper, such as the tool runner in Anthropic's client SDKs (beta as of November 2026).",
+  "aliases": [
+    "client SDK",
+    "provider client library"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "framework-landscape",
+    "model-apis",
+    "gateways-routers",
+    "embedded-agent-harnesses"
+  ]
+}

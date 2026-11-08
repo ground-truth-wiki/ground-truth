@@ -1,0 +1,15 @@
+{
+  "id": "reward-shaping",
+  "term": "Reward shaping",
+  "def": "Adding intermediate rewards that guide an agent toward a goal, ideally in a potential-based form that provably leaves the optimal policy unchanged.",
+  "practice": "Speeds learning when rewards are sparse, such as partial credit for passing some tests, but badly designed shaping terms change what the agent optimizes and invite reward hacking.",
+  "aliases": [
+    "potential-based reward shaping"
+  ],
+  "chapters": [
+    "agentic-rl",
+    "rl-primer",
+    "alignment-concepts",
+    "rl-environment-harnesses"
+  ]
+}

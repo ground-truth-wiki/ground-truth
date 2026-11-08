@@ -1,0 +1,16 @@
+{
+  "id": "siglip",
+  "term": "SigLIP",
+  "def": "A CLIP-style image-text pretraining method that replaces the batch-wide softmax contrastive loss with an independent sigmoid loss on each image-text pair.",
+  "practice": "Needing no batch-wide normalization makes large batches cheaper and small batches work better; as of November 2026, SigLIP and SigLIP 2 encoders are common vision towers in open VLMs such as PaliGemma.",
+  "aliases": [
+    "SigLIP 2"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "representation-learning",
+    "self-supervised-methods",
+    "vlm-architectures",
+    "vla-models"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "the-pile",
+  "term": "The Pile",
+  "def": "An 825 GiB English-language pretraining corpus of 22 sources, including web text, books, papers, code and forums, released by EleutherAI in 2020.",
+  "practice": "It trained EleutherAI's GPT-J and Pythia models and remains a common multi-domain baseline in data research, for example for mixture methods such as DoReMi.",
+  "aliases": [],
+  "chapters": [
+    "pretraining-data",
+    "open-pretraining-datasets",
+    "retrieval-augmented-lms",
+    "data-selection-attribution",
+    "open-model-communities"
+  ]
+}

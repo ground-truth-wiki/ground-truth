@@ -84,3 +84,11 @@ beyond-transformers
 - [The transformer block](#transformer-block)
 - [The KV cache](#kv-cache)
 - [Image generation](#image-generation)
+- [Recurrent networks, LSTMs and sequence-to-sequence models](#recurrent-networks)
+- [Latent reasoning and recurrent depth](#latent-reasoning)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Linear attention and hybrid models](#linear-attention-hybrids)

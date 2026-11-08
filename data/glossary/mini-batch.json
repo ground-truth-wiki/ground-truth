@@ -1,0 +1,19 @@
+{
+  "id": "mini-batch",
+  "term": "Mini-batch",
+  "def": "The random subset of training examples used to compute one gradient estimate and take one optimizer step.",
+  "practice": "Steps per epoch equal dataset size divided by batch size; when memory limits the mini-batch, gradient accumulation combines several micro-batches into one step.",
+  "aliases": [
+    "minibatch"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "automatic-differentiation",
+    "training-hyperparameters",
+    "trainable-deep-networks",
+    "value-based-rl",
+    "policy-gradient-methods",
+    "training-neural-networks"
+  ]
+}

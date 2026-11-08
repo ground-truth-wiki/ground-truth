@@ -1,0 +1,20 @@
+{
+  "id": "collective-communication",
+  "term": "Collective communication",
+  "def": "Communication in which a group of devices exchange data together in fixed patterns such as broadcast, all-gather, reduce-scatter, all-reduce and all-to-all.",
+  "practice": "Each parallelism strategy has a signature: sharded data parallelism uses all-gather and reduce-scatter, tensor parallelism all-reduce, and expert parallelism all-to-all.",
+  "aliases": [
+    "collectives",
+    "collective operations"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "mixture-of-experts",
+    "moe-routing",
+    "parallelism-strategies",
+    "training-reliability",
+    "long-context-training",
+    "moe-serving"
+  ]
+}

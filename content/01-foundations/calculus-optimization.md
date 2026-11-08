@@ -76,3 +76,13 @@ calculus-optimization
 - [Fine-tuning in practice](#fine-tuning-practice)
 - [Probability and information theory](#probability-information)
 - [Linear algebra for AI](#linear-algebra)
+- [Training neural networks in practice](#training-neural-networks)
+- [Training stability: loss spikes and divergence](#training-stability)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Automatic differentiation](#automatic-differentiation)
+- [Optimizers in depth](#optimizers)
+- [Learning rate, batch size and schedules](#training-hyperparameters)

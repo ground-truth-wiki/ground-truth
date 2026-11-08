@@ -1,0 +1,13 @@
+{
+  "id": "bias-variance-tradeoff",
+  "term": "Bias-variance trade-off",
+  "def": "The split of a model's expected squared error into bias (systematic error from a too-simple model), variance (sensitivity to the particular training set) and irreducible noise.",
+  "practice": "Read it from learning curves: low training and validation scores mean high bias, while a large gap between them means high variance.",
+  "aliases": [
+    "bias-variance tradeoff",
+    "bias-variance decomposition"
+  ],
+  "chapters": [
+    "classical-ml"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "isoflop-profile",
+  "term": "IsoFLOP profile",
+  "def": "For one fixed compute budget, the curve of final loss against model size as parameters are traded for tokens; its minimum marks the compute-optimal size for that budget.",
+  "practice": "Chinchilla's Approach 2 fits a parabola per budget; Llama 3 used IsoFLOP curves to size its 405B model and found them flatter near the minimum at larger budgets.",
+  "aliases": [
+    "IsoFLOP curve",
+    "IsoFLOPs"
+  ],
+  "chapters": [
+    "scaling-laws",
+    "pretraining-run"
+  ]
+}

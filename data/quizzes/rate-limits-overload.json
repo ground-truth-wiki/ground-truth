@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rate-limits-overload-1",
+    "chapter": "rate-limits-overload",
+    "q": "Your organization has a limit of 60,000 input tokens per minute. A nightly job sends forty 1,000-token requests in the same second, and some of them get 429s, although the job uses only 40,000 tokens that minute. What explains this?",
+    "options": [
+      "The limit is enforced over shorter intervals by a continuously refilling token bucket, so a burst can empty it within a second although the minute's total stays under the limit",
+      "The job started near the end of a fixed one-minute window, so its tokens were added to the previous minute's usage",
+      "Cached input tokens count twice toward the input-token limit",
+      "The provider counts max_tokens as input, so each request was charged far more than 1,000 tokens"
+    ],
+    "answer": 0,
+    "explain": "Providers such as Anthropic enforce limits with a token bucket that refills continuously, and a per-minute limit may be enforced over shorter intervals (60 requests per minute as 1 per second), so bursts trip it. The fixed-window answer is tempting, but a token bucket has no window boundary to straddle: capacity flows back steadily, and the fix is to pace or queue the burst locally."
+  },
+  {
+    "id": "rate-limits-overload-2",
+    "chapter": "rate-limits-overload",
+    "q": "An agent receives a 429 with error type rate_limit_error, no retry-after header, and the error code enforced_spend_limit_reached. What should the calling code do?",
+    "options": [
+      "Back off exponentially with jitter and retry, since a 429 is a retryable error",
+      "Retry immediately once, because a missing retry-after header means no wait is needed",
+      "Stop retrying, alert a human and switch to a fallback or degraded mode, because the request fails until the spend cap is lifted or resets",
+      "Shrink the prompt and resend, because the request exceeded the input-token limit"
+    ],
+    "answer": 2,
+    "explain": "A spend-cap 429 shares the status and error type of a rate limit, but it does not recover with time: Anthropic's docs say retries, including the SDK's, fail until access resumes. Treating every 429 as retryable is the tempting mistake; the error code and the missing retry-after are what tell the two apart."
+  },
+  {
+    "id": "rate-limits-overload-3",
+    "chapter": "rate-limits-overload",
+    "q": "Your SDK retries a failed call twice, your gateway retries twice, and your agent loop retries a failed step twice. During a full provider outage, how many calls can one user action put on the provider, and what is the better design?",
+    "options": [
+      "7 calls (1 + 2 + 2 + 2); the layers are independent, so no change is needed",
+      "27 calls (3 × 3 × 3); retry at one layer only, set the others to zero and give that layer a retry budget",
+      "3 calls; the provider deduplicates identical requests, so only the SDK's retries count",
+      "27 calls; add more retries at the gateway so the outage is ridden out faster"
+    ],
+    "answer": 1,
+    "explain": "Each layer retries every failure it sees, including failures the layer below already retried, so attempts multiply: (1 + 2) × (1 + 2) × (1 + 2) = 27. Adding the retries to get 7 is the tempting error. Google's SRE book recommends retrying only at the layer immediately above the one that rejects, with per-request and per-client retry budgets."
+  }
+]

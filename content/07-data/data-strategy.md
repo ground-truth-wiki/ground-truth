@@ -81,3 +81,7 @@ data-strategy
 - [Synthetic data](#synthetic-data)
 - [Data quality and governance](#data-governance)
 - [Building eval datasets](#eval-datasets)
+- [Feature engineering and preprocessing](#feature-engineering)
+- [Active learning and weak supervision](#active-learning-weak-supervision)
+- [Data lakes, warehouses and lakehouses](#data-lakehouses)
+- [Feature stores and training-serving consistency](#feature-stores)

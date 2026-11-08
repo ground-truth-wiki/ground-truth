@@ -1,0 +1,14 @@
+{
+  "id": "gemini-cli",
+  "term": "Gemini CLI",
+  "def": "Google's open-source (Apache 2.0) terminal coding agent, launched in June 2025 and configured with GEMINI.md files, layered settings, extensions and hooks.",
+  "practice": "Since 18 June 2026 it no longer serves Google AI Pro, Ultra or free Code Assist users, who were moved to Antigravity CLI; it still works with paid Gemini API keys and Code Assist Standard or Enterprise licenses (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "coding-harness-landscape",
+    "harness-permissions-hooks",
+    "agent-instruction-files",
+    "os-level-sandboxing",
+    "agent-client-protocol"
+  ]
+}

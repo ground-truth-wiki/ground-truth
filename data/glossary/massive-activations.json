@@ -1,0 +1,12 @@
+{
+  "id": "massive-activations",
+  "term": "Massive activations",
+  "def": "A very few scalar activations in an LLM's hidden states, at a few specific tokens, that are orders of magnitude larger than the rest, for example 100,000 times larger.",
+  "practice": "They act as near-constant bias terms that pull attention onto their tokens, linked to attention sinks; Sun et al. (2024) show they are distinct from the outlier features that complicate 8-bit quantization.",
+  "aliases": [],
+  "chapters": [
+    "attention",
+    "mech-interp",
+    "quantization"
+  ]
+}

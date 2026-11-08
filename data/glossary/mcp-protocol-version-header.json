@@ -1,0 +1,13 @@
+{
+  "id": "mcp-protocol-version-header",
+  "term": "MCP-Protocol-Version header",
+  "def": "The HTTP header carrying the MCP protocol version on Streamable HTTP requests, required since 2025-06-18 and, since 2026-07-28, required to match the version in the request's _meta.",
+  "practice": "A mismatch returns 400 with a HeaderMismatch error; since 2026-07-28 POSTs must also carry Mcp-Method and, for tools/call, resources/read and prompts/get, Mcp-Name, so gateways can route without parsing bodies.",
+  "aliases": [
+    "MCP-Protocol-Version"
+  ],
+  "chapters": [
+    "mcp-transports",
+    "mcp-spec-history"
+  ]
+}

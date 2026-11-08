@@ -1,0 +1,20 @@
+{
+  "id": "floating-point-number",
+  "term": "Floating-point number",
+  "def": "A number stored as a sign, an exponent and a significand (mantissa), which gives roughly constant relative precision across a very wide range of magnitudes.",
+  "practice": "Each floating-point format used in AI, from FP32 down to FP4, is a choice of how many bits go to the exponent (range) and to the mantissa (precision).",
+  "aliases": [
+    "floating point",
+    "floating-point"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "quantization",
+    "hardware",
+    "tensors-and-shapes",
+    "training-neural-networks",
+    "floating-point-formats",
+    "transformer-overview",
+    "inference-nondeterminism"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hyperparameter-optimization",
+  "term": "Hyperparameter optimization",
+  "def": "Searching for the hyperparameter values that maximize validation performance, with grid search, random search, Bayesian optimization or schemes that stop weak trials early.",
+  "practice": "Random search usually beats grid search at the same budget because only a few hyperparameters matter much (Bergstra and Bengio, 2012); tools such as Optuna also prune weak trials.",
+  "aliases": [
+    "HPO",
+    "hyperparameter tuning",
+    "hyperparameter search"
+  ],
+  "chapters": [
+    "classical-ml",
+    "fine-tuning-practice",
+    "calculus-optimization",
+    "validation-tuning",
+    "ai-research-publishing"
+  ],
+  "abbr": "HPO"
+}

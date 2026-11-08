@@ -1,0 +1,19 @@
+{
+  "id": "training-serving-skew",
+  "term": "Training-serving skew",
+  "def": "A gap between a model's performance in training and in serving, caused by different data handling in the two pipelines, data that changed in between, or a feedback loop.",
+  "practice": "Typical causes are a feature computed differently online, a prompt template that differs from the fine-tuning format, or retrieval that returns different context in production than in evals.",
+  "aliases": [
+    "train-serve skew"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "fine-tuning-practice",
+    "observability-tracing",
+    "classical-ml",
+    "feature-engineering",
+    "data-validation-drift",
+    "feature-stores",
+    "mlops-foundations"
+  ]
+}

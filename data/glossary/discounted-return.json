@@ -1,0 +1,12 @@
+{
+  "id": "discounted-return",
+  "term": "Discounted return",
+  "def": "The sum of future rewards from a time step, each weighted by a power of the discount factor γ: Gₜ = Rₜ₊₁ + γRₜ₊₂ + γ²Rₜ₊₃ + …",
+  "practice": "RL maximizes its expected value; with no discounting and only an end-of-episode reward, as in outcome-rewarded RLVR, the return is simply that final reward.",
+  "aliases": [
+    "cumulative reward"
+  ],
+  "chapters": [
+    "rl-primer"
+  ]
+}

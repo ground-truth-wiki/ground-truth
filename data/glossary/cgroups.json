@@ -1,0 +1,16 @@
+{
+  "id": "cgroups",
+  "term": "Control groups",
+  "def": "A Linux kernel mechanism that organizes processes into a hierarchy so their CPU, memory, I/O and process counts can be limited and accounted for.",
+  "practice": "How containers enforce resource caps on agent-run code, such as a memory limit or a pids limit that stops a fork bomb.",
+  "aliases": [
+    "cgroups",
+    "cgroup",
+    "cgroup v2"
+  ],
+  "chapters": [
+    "sandboxes",
+    "os-level-sandboxing"
+  ],
+  "abbr": "cgroups"
+}

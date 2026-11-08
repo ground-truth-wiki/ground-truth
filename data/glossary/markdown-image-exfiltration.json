@@ -1,0 +1,14 @@
+{
+  "id": "markdown-image-exfiltration",
+  "term": "Markdown image exfiltration",
+  "def": "Leaking data by getting a model to emit a Markdown image whose URL carries private data, so the client sends that data to the attacker's server when it fetches the image.",
+  "practice": "Reported in ChatGPT, GitHub Copilot Chat and GitLab Duo; render images only from allowlisted domains or not at all, since even a trusted image proxy can be abused.",
+  "aliases": [
+    "markdown exfiltration",
+    "image URL exfiltration"
+  ],
+  "chapters": [
+    "prompt-injection",
+    "secure-agent-design"
+  ]
+}

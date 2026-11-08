@@ -1,0 +1,18 @@
+{
+  "id": "agentic-system",
+  "term": "Agentic system",
+  "def": "An umbrella term for LLM systems that take actions toward a goal, covering both predefined workflows and agents that direct their own steps; agency is a matter of degree.",
+  "practice": "Use it to avoid arguing whether something is really an agent, then say who controls the next step: code or the model.",
+  "aliases": [
+    "agentic AI"
+  ],
+  "chapters": [
+    "what-is-an-agent",
+    "workflow-patterns",
+    "ai-engineer-role",
+    "autonomy-and-oversight",
+    "agent-instruction-files",
+    "a2a-in-depth",
+    "agent-identity-delegation"
+  ]
+}

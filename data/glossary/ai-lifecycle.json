@@ -1,0 +1,16 @@
+{
+  "id": "ai-lifecycle",
+  "term": "AI system lifecycle",
+  "def": "The stages an AI system passes through from conception to retirement; ISO/IEC 22989 names inception, design and development, verification and validation, deployment, operation and monitoring, continuous validation, re-evaluation and retirement.",
+  "practice": "Laws and standards attach duties to stages, such as risk assessment before deployment and monitoring after it, so mapping your own pipeline onto them shows where evidence must be produced.",
+  "aliases": [
+    "AI lifecycle",
+    "AI life cycle",
+    "AI system life cycle"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "ci-cd-for-ai",
+    "enterprise-readiness"
+  ]
+}

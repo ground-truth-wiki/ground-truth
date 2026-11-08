@@ -1,0 +1,17 @@
+{
+  "id": "verbalized-confidence",
+  "term": "Verbalized confidence",
+  "def": "A confidence the model states in its output text, such as a percentage or ‘high confidence’, as opposed to one computed from its token probabilities.",
+  "practice": "Works when logprobs are unavailable; for RLHF-tuned models stated confidences were often better calibrated than token probabilities (Tian et al., 2023), but check calibration on your own data.",
+  "aliases": [
+    "verbal confidence",
+    "stated confidence",
+    "verbalized probability"
+  ],
+  "chapters": [
+    "probability-information",
+    "document-extraction",
+    "reasoning-prompts",
+    "llm-uncertainty"
+  ]
+}

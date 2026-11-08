@@ -102,3 +102,4 @@ query-understanding
 - [RAG fundamentals](#rag-fundamentals)
 - [Prompt patterns and chaining](#prompt-chaining)
 - [Reranking](#reranking)
+- [Information retrieval foundations](#ir-foundations)

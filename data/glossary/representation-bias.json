@@ -1,0 +1,14 @@
+{
+  "id": "representation-bias",
+  "term": "Representation bias",
+  "def": "Bias that arises when training or eval data under-represents parts of the population a model will serve, so it learns less about them and performs worse for them.",
+  "practice": "A classic cause of per-group quality gaps in speech, vision and multilingual models; fix it with targeted data collection and per-slice evals.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "eval-datasets",
+    "pretraining-data",
+    "data-strategy",
+    "fairness-bias"
+  ]
+}

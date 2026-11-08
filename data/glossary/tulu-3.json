@@ -1,0 +1,13 @@
+{
+  "id": "tulu-3",
+  "term": "Tulu 3",
+  "def": "AI2's fully open post-training recipe and model family (2024), built on Llama 3.1 base models with SFT, DPO and RLVR, released with data, code and evaluations.",
+  "practice": "A widely cited open reference for modern post-training and the report that named RLVR; the recipe was reused for OLMo 2 and SmolLM models.",
+  "aliases": [],
+  "chapters": [
+    "sft",
+    "rlvr-reasoning",
+    "post-training-overview",
+    "preference-optimization"
+  ]
+}

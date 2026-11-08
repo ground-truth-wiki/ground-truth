@@ -1,0 +1,17 @@
+{
+  "id": "amd-instinct",
+  "term": "AMD Instinct",
+  "def": "AMD's line of data-center GPU accelerators, including the MI300X, MI325X, MI350X and MI355X, programmed through the open ROCm software stack.",
+  "practice": "The MI350 series (2025) carries 288 GB of HBM3E at 8 TB/s and adds FP4 and FP6; vLLM and SGLang support it, though new kernels can arrive later than on CUDA.",
+  "aliases": [
+    "MI300X",
+    "MI325X",
+    "MI350X",
+    "MI355X"
+  ],
+  "chapters": [
+    "hardware",
+    "quantization-methods",
+    "moe-serving"
+  ]
+}

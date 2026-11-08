@@ -95,3 +95,5 @@ document-extraction
 - [Document and screen understanding](#document-screen-understanding)
 - [Human in the loop](#human-in-the-loop)
 - [The data flywheel](#data-flywheel)
+- [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)
+- [OCR and document parsing models](#document-ocr-models)

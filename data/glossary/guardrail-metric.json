@@ -1,0 +1,12 @@
+{
+  "id": "guardrail-metric",
+  "term": "Guardrail metric",
+  "def": "A metric an experiment is not trying to improve but must not significantly harm, such as latency, cost or error rate, for a change to ship.",
+  "practice": "Declare guardrails with the primary metric before the test; for LLM features, latency, cost per request and refusal or safety-violation rates are typical, and canary rollbacks often trigger on them.",
+  "aliases": [],
+  "chapters": [
+    "online-evaluation",
+    "ci-cd-for-ai",
+    "measuring-ai-impact"
+  ]
+}

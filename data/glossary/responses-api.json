@@ -1,0 +1,16 @@
+{
+  "id": "responses-api",
+  "term": "Responses API",
+  "def": "OpenAI's API built on typed input and output items, with optional server-side conversation state and built-in tools such as web search and file search.",
+  "practice": "Chain turns with previous_response_id or pass items back yourself; earlier turns are still billed as input. Amazon Bedrock and Microsoft Foundry also expose it (as of November 2026).",
+  "aliases": [
+    "/v1/responses"
+  ],
+  "chapters": [
+    "model-apis",
+    "provider-agent-sdks",
+    "agent-loop",
+    "api-shapes",
+    "context-compaction"
+  ]
+}

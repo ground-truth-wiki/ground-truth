@@ -119,3 +119,13 @@ reliability-engineering
 - [Online evaluation](#online-evaluation)
 - [Incidents and on-call](#incidents-on-call)
 - [Streaming](#streaming)
+- [Fault tolerance and checkpointing at scale](#training-reliability)
+- [Durable execution for agents in depth](#durable-agent-execution)
+- [Gateway keys, routing and failover in depth](#gateway-routing-in-depth)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Rate limits, quotas and overload control](#rate-limits-overload)
+- [SLOs and error budgets for AI systems](#slos-error-budgets)

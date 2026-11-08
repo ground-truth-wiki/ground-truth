@@ -1,0 +1,20 @@
+{
+  "id": "inference",
+  "term": "Inference",
+  "def": "Running a trained model on new inputs to produce outputs, as opposed to training it; for a language model, a prefill pass over the prompt followed by token-by-token decoding.",
+  "practice": "It is the cost a deployed product pays on every request, so latency, throughput and price per token are tuned here: prefill is compute-bound, decode memory-bandwidth-bound.",
+  "aliases": [
+    "model inference",
+    "LLM inference"
+  ],
+  "chapters": [
+    "inference-fundamentals",
+    "latency-throughput",
+    "serving-engines",
+    "hardware",
+    "memory-math",
+    "cost-engineering",
+    "eigenvectors-svd-pca",
+    "automatic-differentiation"
+  ]
+}

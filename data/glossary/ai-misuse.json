@@ -1,0 +1,19 @@
+{
+  "id": "ai-misuse",
+  "term": "AI misuse",
+  "def": "Deliberate use of an AI system by people to cause harm, such as cyberattacks, fraud, weapons development or abusive content, as distinct from harm caused by the system’s own failures.",
+  "practice": "Much misuse uses ordinary-looking requests, so defenses layer safety training, classifiers, account-level abuse detection and monitoring; NIST AI 800-1 (second public draft, January 2025) gives guidance for foundation models.",
+  "aliases": [
+    "misuse risk",
+    "malicious use"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "red-teaming",
+    "threat-modeling",
+    "open-weight-frontier",
+    "fine-tuning-and-safety"
+  ]
+}

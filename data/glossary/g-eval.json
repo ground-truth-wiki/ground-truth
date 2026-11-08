@@ -1,0 +1,15 @@
+{
+  "id": "g-eval",
+  "term": "G-Eval",
+  "def": "An LLM-as-judge method in which the judge first generates evaluation steps with chain of thought, then fills in a score form, with the final score weighted by each score token’s probability.",
+  "practice": "Available in eval libraries such as DeepEval for custom criteria; the 2023 paper reports a Spearman correlation of 0.514 with human ratings on summarization and warns that LLM judges may favor LLM-written text.",
+  "aliases": [
+    "GEval"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "text-generation-metrics",
+    "judge-models-meta-evaluation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "data-mixture",
+  "term": "Data mixture",
+  "def": "The proportions in which data sources or domains (web, code, math, books, languages) are sampled into a training run, often changed between training stages.",
+  "practice": "Llama 3's final pretraining mix was roughly 50% general knowledge, 25% math and reasoning, 17% code and 8% multilingual tokens, chosen with knowledge classification and small-scale scaling-law experiments.",
+  "aliases": [
+    "data mix",
+    "domain weights"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "mid-training",
+    "scaling-laws",
+    "pretraining-run",
+    "data-mixing",
+    "long-context-training",
+    "model-documentation"
+  ]
+}

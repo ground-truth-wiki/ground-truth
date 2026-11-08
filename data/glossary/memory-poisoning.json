@@ -1,0 +1,14 @@
+{
+  "id": "memory-poisoning",
+  "term": "Memory poisoning",
+  "def": "Writing malicious instructions or false facts into an agent's persistent memory so that they steer its behavior in later sessions.",
+  "practice": "One successful write keeps working across sessions, unlike a one-off injection; OWASP lists it under ASI06, so scope, review and expire memories written from untrusted content.",
+  "aliases": [
+    "agent memory poisoning"
+  ],
+  "chapters": [
+    "agent-memory",
+    "prompt-injection",
+    "secure-agent-design"
+  ]
+}

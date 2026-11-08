@@ -1,0 +1,17 @@
+{
+  "id": "dclm",
+  "term": "DataComp-LM",
+  "def": "A benchmark that compares data-curation methods by training models on a fixed 240T-token Common Crawl pool; its DCLM-Baseline dataset relies on model-based quality filtering.",
+  "practice": "DCLM-Baseline trained a 7B model to 64% five-shot MMLU on 2.6T tokens and makes up 3.71T of the 3.90T tokens in OLMo 2's pretraining mix.",
+  "aliases": [
+    "DCLM",
+    "DCLM-Baseline"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline",
+    "data-mixing",
+    "open-pretraining-datasets"
+  ],
+  "abbr": "DCLM"
+}

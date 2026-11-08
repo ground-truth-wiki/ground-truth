@@ -1,0 +1,11 @@
+{
+  "id": "rwkv",
+  "term": "RWKV",
+  "def": "A family of recurrent language models that train in parallel like transformers but run as RNNs with a fixed-size state at inference, so per-token cost does not grow with context.",
+  "practice": "Released as open models and code; RWKV-7 'Goose' (2025) updates its state with a generalized delta rule, which links it to Gated DeltaNet-style linear attention.",
+  "aliases": [],
+  "chapters": [
+    "beyond-transformers",
+    "linear-attention-hybrids"
+  ]
+}

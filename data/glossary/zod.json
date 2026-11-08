@@ -1,0 +1,10 @@
+{
+  "id": "zod",
+  "term": "Zod",
+  "def": "A TypeScript-first schema validation library that infers static types from schemas and can convert them to JSON Schema.",
+  "practice": "The TypeScript counterpart of Pydantic for structured outputs; OpenAI’s and Anthropic’s TypeScript SDKs accept Zod schemas directly.",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs"
+  ]
+}

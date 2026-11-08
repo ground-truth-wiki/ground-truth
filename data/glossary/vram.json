@@ -1,0 +1,20 @@
+{
+  "id": "vram",
+  "term": "VRAM",
+  "def": "The memory on a GPU or accelerator that holds model weights, KV cache and activations during inference; data-center accelerators use high-bandwidth memory, consumer cards GDDR.",
+  "practice": "Whether weights plus KV cache fit in VRAM decides what you can run; local tools keep layers that do not fit in system RAM at a large speed cost.",
+  "aliases": [
+    "GPU memory",
+    "video memory"
+  ],
+  "chapters": [
+    "memory-math",
+    "kv-cache",
+    "numbers-to-know",
+    "ai-engineering-stack",
+    "edge-on-device",
+    "small-local-models",
+    "floating-point-formats",
+    "kv-cache-compression"
+  ]
+}

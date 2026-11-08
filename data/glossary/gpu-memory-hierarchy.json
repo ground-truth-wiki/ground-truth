@@ -1,0 +1,12 @@
+{
+  "id": "gpu-memory-hierarchy",
+  "term": "GPU memory hierarchy",
+  "def": "The tiers of GPU memory, from small, fast registers and per-SM shared memory (SRAM) through the L2 cache to large, slower high-bandwidth memory (HBM).",
+  "practice": "Fast kernels tile their work so each byte loaded from HBM is reused many times from shared memory; FlashAttention is the canonical example of designing around this.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "long-context",
+    "inference-fundamentals"
+  ]
+}

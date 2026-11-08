@@ -1,0 +1,14 @@
+{
+  "id": "degenerate-feedback-loop",
+  "term": "Degenerate feedback loop",
+  "def": "A loop in which a system's outputs influence its own future training or evaluation data, so its biases and errors reinforce themselves over time.",
+  "practice": "A risk whenever production traffic feeds fine-tuning, retrieval or eval sets: prefer human-reviewed data and held-out real traffic; Sculley et al. call indirect versions, through other systems or users, hidden feedback loops.",
+  "aliases": [
+    "hidden feedback loop"
+  ],
+  "chapters": [
+    "data-flywheel",
+    "online-evaluation",
+    "eval-datasets"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mmlu",
+  "term": "MMLU",
+  "def": "Massive Multitask Language Understanding: a 2020 multiple-choice benchmark of knowledge and problem solving across 57 subjects, from elementary mathematics to law and medicine.",
+  "practice": "Saturated at the frontier, with top models above 90%, and known to contain label errors, so prefer MMLU-Pro or harder sets for current comparisons.",
+  "aliases": [
+    "Massive Multitask Language Understanding"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "llm-uncertainty",
+    "web-data-pipeline",
+    "data-mixing",
+    "open-pretraining-datasets",
+    "llm-pruning",
+    "base-model-evaluation",
+    "benchmark-catalog"
+  ]
+}

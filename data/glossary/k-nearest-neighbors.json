@@ -1,0 +1,18 @@
+{
+  "id": "k-nearest-neighbors",
+  "term": "k-nearest neighbors",
+  "def": "A method that predicts from the k training examples closest to a query, by majority vote for classification or by averaging for regression.",
+  "practice": "Training is just storing or indexing the data, so the cost moves to query time; in vector search, kNN usually means exact top-k retrieval as opposed to approximate (ANN) search.",
+  "aliases": [
+    "kNN",
+    "k-NN",
+    "nearest-neighbor classifier"
+  ],
+  "chapters": [
+    "classical-ml",
+    "vector-search",
+    "linear-and-kernel-models",
+    "self-supervised-methods"
+  ],
+  "abbr": "kNN"
+}

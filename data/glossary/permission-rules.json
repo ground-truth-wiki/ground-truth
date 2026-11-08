@@ -1,0 +1,21 @@
+{
+  "id": "permission-rules",
+  "term": "Permission rules",
+  "def": "Declarative allow, ask and deny entries that match tool calls by tool name and argument pattern, deciding whether the harness runs, prompts for or blocks each call.",
+  "practice": "In Claude Code they look like Bash(npm run *) or Read(./.env); deny is checked before ask and allow, a hook's approval cannot override a matching deny, and the harness enforces them, not the model.",
+  "aliases": [
+    "allow rules",
+    "deny rules",
+    "ask rules"
+  ],
+  "chapters": [
+    "claude-code",
+    "harness-anatomy",
+    "build-your-own-harness",
+    "guardrails-control",
+    "secure-agent-design",
+    "harness-permissions-hooks",
+    "agent-instruction-files",
+    "coding-agent-security"
+  ]
+}

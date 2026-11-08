@@ -1,0 +1,17 @@
+{
+  "id": "otlp",
+  "term": "OpenTelemetry Protocol",
+  "def": "The protocol that defines how OpenTelemetry encodes, transports and delivers traces, metrics and logs between telemetry sources, collectors and backends, over gRPC or HTTP with Protobuf payloads.",
+  "practice": "Default ports are 4317 (gRPC) and 4318 (HTTP), and exporting OTLP keeps you free to switch or combine LLM observability backends; the profiles signal is still in development as of November 2026.",
+  "aliases": [
+    "OTLP",
+    "OTLP/gRPC",
+    "OTLP/HTTP"
+  ],
+  "chapters": [
+    "observability-tracing",
+    "eval-tooling",
+    "otel-genai-conventions"
+  ],
+  "abbr": "OTLP"
+}

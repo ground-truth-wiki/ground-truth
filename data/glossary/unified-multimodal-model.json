@@ -1,0 +1,12 @@
+{
+  "id": "unified-multimodal-model",
+  "term": "Unified multimodal model",
+  "def": "A single model that both understands and generates more than one modality, for example reading and producing images as well as text in one sequence.",
+  "practice": "Designs include early-fusion discrete tokens (Chameleon), combined next-token and diffusion losses (Transfusion) and separate visual encoders for understanding and generation (Janus).",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "vision-language-models",
+    "multimodal-apps"
+  ]
+}

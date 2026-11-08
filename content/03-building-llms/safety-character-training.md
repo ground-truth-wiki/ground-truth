@@ -84,3 +84,10 @@ safety-character-training
 - [Jailbreaks and misuse](#jailbreaks-misuse)
 - [Safety evals](#safety-evals)
 - [Frontier safety frameworks](#frontier-safety-frameworks)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Model specs, constitutions and the instruction hierarchy](#model-specs-instruction-hierarchy)
+- [How fine-tuning changes safety](#fine-tuning-and-safety)

@@ -83,3 +83,13 @@ mid-training
 - [Embeddings and position](#positional-encoding)
 - [Scaling laws and compute](#scaling-laws)
 - [Synthetic data](#synthetic-data)
+- [Learning rate, batch size and schedules](#training-hyperparameters)
+- [RoPE scaling and context extension](#rope-scaling)
+- [The pretraining run, end to end](#pretraining-run)
+- [Data mixtures, repetition and curricula](#data-mixing)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Long-context extension during training](#long-context-training)

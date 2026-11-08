@@ -1,0 +1,21 @@
+{
+  "id": "encoder-decoder",
+  "term": "Encoder-decoder model",
+  "def": "An architecture in which an encoder reads the whole input into representations and a decoder generates the output from them; in transformers the decoder attends to the encoder through cross-attention.",
+  "practice": "Introduced with RNNs for translation in 2014 and used by the original transformer, T5, BART and Whisper; most LLMs are decoder-only instead.",
+  "aliases": [
+    "encoder-decoder",
+    "seq2seq",
+    "sequence-to-sequence model"
+  ],
+  "chapters": [
+    "transformer-block",
+    "attention",
+    "speech-audio",
+    "neural-networks",
+    "convolutional-networks",
+    "recurrent-networks",
+    "transformer-overview",
+    "encoders-and-decoders"
+  ]
+}

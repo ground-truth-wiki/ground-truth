@@ -1,0 +1,19 @@
+{
+  "id": "prompt-engineering",
+  "term": "Prompt engineering",
+  "def": "The iterative practice of designing, testing and revising the instructions, examples and structure of a prompt so a model performs a task reliably.",
+  "practice": "In production it means versioned prompts measured against an eval set with defined success criteria, not one-off phrasing tricks; context engineering extends it to everything else in the window.",
+  "aliases": [
+    "prompt design"
+  ],
+  "chapters": [
+    "prompting-fundamentals",
+    "prompt-optimization",
+    "context-engineering",
+    "prompt-config-management",
+    "prompt-robustness",
+    "prompting-techniques",
+    "chat-templates",
+    "ai-use-case-scoping"
+  ]
+}

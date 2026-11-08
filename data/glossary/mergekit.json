@@ -1,0 +1,11 @@
+{
+  "id": "mergekit",
+  "term": "mergekit",
+  "def": "Arcee's open-source toolkit for merging language model weights with methods such as linear, SLERP, task arithmetic, TIES, DARE and Model Stock.",
+  "practice": "Widely used for community merges on the Hugging Face Hub; merging needs no training and runs on CPU or with as little as 8 GB of VRAM.",
+  "aliases": [],
+  "chapters": [
+    "distillation-merging",
+    "model-merging-methods"
+  ]
+}

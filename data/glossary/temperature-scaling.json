@@ -1,0 +1,13 @@
+{
+  "id": "temperature-scaling",
+  "term": "Temperature scaling",
+  "def": "Post-hoc calibration that divides a classifier's logits by one temperature, fitted on held-out data by minimizing log loss, before the softmax.",
+  "practice": "The standard fix for overconfident neural networks (Guo et al., 2017); it leaves the predicted class and accuracy unchanged, and is the same division as sampling temperature put to a different use.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "decoding-sampling",
+    "classical-ml",
+    "classification-metrics"
+  ]
+}

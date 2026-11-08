@@ -1,0 +1,19 @@
+{
+  "id": "messages-api",
+  "term": "Messages API",
+  "def": "Anthropic's request and response format, in which messages carry typed content blocks (text, images, documents, tool use, tool results, thinking) and responses report a stop reason and usage.",
+  "practice": "Stateless: send the full conversation on every call. Amazon Bedrock also exposes it for Claude models.",
+  "aliases": [
+    "Anthropic Messages API",
+    "/v1/messages"
+  ],
+  "chapters": [
+    "model-apis",
+    "agent-loop",
+    "agent-tools",
+    "streaming",
+    "api-shapes",
+    "managed-agent-platforms",
+    "rate-limits-overload"
+  ]
+}

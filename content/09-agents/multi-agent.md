@@ -102,3 +102,10 @@ multi-agent
 - [Deep research systems](#deep-research)
 - [Evaluating agents](#evaluating-agents)
 - [Case study: Claude Code](#claude-code)
+- [A2A 1.0 in depth: bindings, extensions and signed agent cards](#a2a-in-depth)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Multi-agent orchestration patterns](#multi-agent-patterns)

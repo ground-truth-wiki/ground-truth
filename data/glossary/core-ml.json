@@ -1,0 +1,14 @@
+{
+  "id": "core-ml",
+  "term": "Core ML",
+  "def": "Apple's framework for running machine-learning models inside apps on Apple devices across the CPU, GPU and Neural Engine; the coremltools package converts PyTorch and other models to it.",
+  "practice": "The usual route to the Neural Engine for custom models; ExecuTorch's Core ML backend became production-ready in its 1.0 release in October 2025.",
+  "aliases": [
+    "CoreML",
+    "coremltools"
+  ],
+  "chapters": [
+    "edge-on-device",
+    "ai-research-publishing"
+  ]
+}

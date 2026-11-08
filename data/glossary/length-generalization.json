@@ -1,0 +1,14 @@
+{
+  "id": "length-generalization",
+  "term": "Length generalization",
+  "def": "A model's ability to keep working on inputs longer than any sequence it saw during training.",
+  "practice": "ALiBi and NoPE were proposed to improve it, but long windows in practice usually come from RoPE scaling plus continued training on long documents.",
+  "aliases": [
+    "length extrapolation"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "long-context",
+    "rope-scaling"
+  ]
+}

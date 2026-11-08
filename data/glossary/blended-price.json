@@ -1,0 +1,14 @@
+{
+  "id": "blended-price",
+  "term": "Blended price",
+  "def": "A single price per million tokens that averages a model's input and output prices at an assumed ratio, commonly three input tokens to one output token.",
+  "practice": "Handy for comparing providers but misleading for input-heavy RAG or output-heavy reasoning workloads; compute your own blend from logged usage.",
+  "aliases": [
+    "blended token price"
+  ],
+  "chapters": [
+    "cost-engineering",
+    "choosing-a-model",
+    "ai-pricing-unit-economics"
+  ]
+}

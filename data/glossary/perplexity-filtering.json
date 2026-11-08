@@ -1,0 +1,12 @@
+{
+  "id": "perplexity-filtering",
+  "term": "Perplexity filtering",
+  "def": "Scoring web documents with a small language model trained on high-quality text such as Wikipedia, and keeping the low-perplexity ones that resemble it.",
+  "practice": "CCNet's approach, used for LLaMA's Common Crawl data with an n-gram model; it is cheap but favors the reference domain's style and can drop useful unusual text.",
+  "aliases": [
+    "CCNet filtering"
+  ],
+  "chapters": [
+    "pretraining-data"
+  ]
+}

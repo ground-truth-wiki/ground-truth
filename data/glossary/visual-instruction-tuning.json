@@ -1,0 +1,14 @@
+{
+  "id": "visual-instruction-tuning",
+  "term": "Visual instruction tuning",
+  "def": "Supervised fine-tuning of a vision-language model on image-grounded instructions and answers so that it follows requests about images.",
+  "practice": "The stage that turns an aligned image-text model into an assistant; LLaVA generated its data with text-only GPT-4, while later open efforts such as Molmo collected human data instead.",
+  "aliases": [
+    "multimodal instruction tuning"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "encoders-and-decoders",
+    "vlm-architectures"
+  ]
+}

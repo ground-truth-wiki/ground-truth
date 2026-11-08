@@ -1,0 +1,15 @@
+{
+  "id": "adversarial-training",
+  "term": "Adversarial training",
+  "def": "Training on adversarial or attack inputs paired with correct labels or safe responses, so the model learns to resist those attacks.",
+  "practice": "Raises robustness at some cost in clean accuracy and compute; LLM developers apply it to jailbreak attempts, but it can miss attacks unlike those it saw.",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training",
+    "jailbreaks-misuse",
+    "red-teaming",
+    "threat-modeling",
+    "scheming-evaluations",
+    "adversarial-ml"
+  ]
+}

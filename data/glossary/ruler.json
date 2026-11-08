@@ -1,0 +1,13 @@
+{
+  "id": "ruler",
+  "term": "RULER",
+  "def": "NVIDIA's synthetic long-context benchmark with configurable length that extends needle-in-a-haystack retrieval with multi-hop tracing, aggregation and question-answering tasks.",
+  "practice": "Its 2024 paper found only about half of models claiming 32K or more context performed satisfactorily at 32K, a reminder that usable context is often shorter than advertised.",
+  "aliases": [],
+  "chapters": [
+    "long-context",
+    "benchmark-literacy",
+    "rope-scaling",
+    "benchmark-catalog"
+  ]
+}

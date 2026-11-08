@@ -1,0 +1,19 @@
+{
+  "id": "metr",
+  "term": "METR",
+  "def": "Model Evaluation and Threat Research, a nonprofit that measures what frontier AI agents can do autonomously and assesses risks such as developers losing control of them.",
+  "practice": "Best known for task time-horizon measurements; it also evaluates models with developers and published a pilot frontier risk report in May 2026, so read its confidence intervals along with the headline numbers.",
+  "aliases": [
+    "Model Evaluation and Threat Research"
+  ],
+  "chapters": [
+    "long-horizon-autonomy",
+    "watchlist",
+    "coding-agents",
+    "frontier-safety-frameworks",
+    "safety-evals",
+    "benchmark-catalog",
+    "coding-agent-benchmarks",
+    "dangerous-capability-evals"
+  ]
+}

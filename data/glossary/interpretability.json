@@ -1,0 +1,17 @@
+{
+  "id": "interpretability",
+  "term": "Interpretability",
+  "def": "The degree to which people can understand why an AI system produced an output, either by reading an inherently simple model directly or by analyzing a complex model’s behavior or internals.",
+  "practice": "NIST’s AI RMF separates explainability (how the system works) from interpretability (what an output means for its purpose); in LLM research the word usually refers to mechanistic interpretability.",
+  "aliases": [],
+  "chapters": [
+    "mech-interp",
+    "alignment-concepts",
+    "open-problems",
+    "attention",
+    "responsible-ai",
+    "high-dimensional-geometry",
+    "autoencoders-latent-spaces",
+    "model-interpretability"
+  ]
+}

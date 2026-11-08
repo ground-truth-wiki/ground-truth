@@ -1,0 +1,16 @@
+{
+  "id": "defense-in-depth",
+  "term": "Defense in depth",
+  "def": "A security strategy that layers several independent, different controls so that an attack or failure missed by one layer is caught by another.",
+  "practice": "For agents, combine model safety training, input and output classifiers, tool permissions, approvals, sandboxing and egress control, and assume each layer will sometimes fail.",
+  "aliases": [
+    "defence in depth",
+    "layered defense"
+  ],
+  "chapters": [
+    "guardrails-control",
+    "prompt-injection",
+    "secure-agent-design",
+    "synthetic-media-provenance"
+  ]
+}

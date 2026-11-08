@@ -1,0 +1,19 @@
+{
+  "id": "chatbot",
+  "term": "Chatbot",
+  "def": "Software that holds a conversation with people in text or speech; early chatbots matched patterns against scripted replies, while modern ones generate replies with a large language model.",
+  "practice": "The lineage runs from ELIZA (1966) to ChatGPT (2022); a production chatbot adds retrieval, guardrails and escalation to a human, and once it acts through tools it should be treated as an agent.",
+  "aliases": [
+    "chatterbot"
+  ],
+  "chapters": [
+    "what-is-an-agent",
+    "support-agents",
+    "incidents-on-call",
+    "governance-regulation",
+    "threat-modeling",
+    "eval-recipes",
+    "llm-policy-gradients",
+    "arenas-leaderboards"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "tokenizer-fertility",
+  "term": "Tokenizer fertility",
+  "def": "The average number of tokens a tokenizer produces per word in a given language; a value of 1 means every word is a single token.",
+  "practice": "Higher fertility means higher cost, slower generation and less text per context window; for the same text, token counts can differ up to 15 times across languages.",
+  "aliases": [
+    "fertility",
+    "subword fertility",
+    "tokens per word"
+  ],
+  "chapters": [
+    "tokenization",
+    "cost-engineering",
+    "tokenizers-in-practice",
+    "multilingual-models"
+  ]
+}

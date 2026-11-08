@@ -1,0 +1,17 @@
+{
+  "id": "epistemic-aleatoric-uncertainty",
+  "term": "Epistemic and aleatoric uncertainty",
+  "def": "Two sources of predictive uncertainty: aleatoric, from noise or ambiguity in the data itself, which more data cannot remove, and epistemic, from the model’s missing knowledge, which more data reduces.",
+  "practice": "The split tells you what helps: retrieval or more training data can reduce epistemic uncertainty, while an ambiguous question needs clarification or several acceptable answers.",
+  "aliases": [
+    "epistemic uncertainty",
+    "aleatoric uncertainty",
+    "model uncertainty",
+    "data uncertainty"
+  ],
+  "chapters": [
+    "probability-information",
+    "grounding-citations",
+    "llm-uncertainty"
+  ]
+}

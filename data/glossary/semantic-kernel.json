@@ -1,0 +1,13 @@
+{
+  "id": "semantic-kernel",
+  "term": "Semantic Kernel",
+  "def": "Microsoft's open-source, model-agnostic SDK for .NET, Python and Java that builds AI agents and apps from a kernel, plugins and model connectors; Microsoft Agent Framework is its designated successor.",
+  "practice": "Still common in enterprise .NET code; plan migrations with Microsoft's migration guide rather than starting new projects on it.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "frameworks-beyond-python",
+    "managed-agent-platforms"
+  ]
+}

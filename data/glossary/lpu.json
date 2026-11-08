@@ -1,0 +1,14 @@
+{
+  "id": "lpu",
+  "term": "Language processing unit",
+  "def": "Groq's inference accelerator, which keeps model weights in fast on-chip SRAM instead of external high-bandwidth memory to reach high per-user token speeds.",
+  "practice": "Offered through GroqCloud; little memory per chip means one large model spans many chips, and NVIDIA licensed Groq's technology in December 2025 for its announced Groq 3 LPX racks (as of November 2026).",
+  "aliases": [
+    "LPU",
+    "Groq LPU"
+  ],
+  "chapters": [
+    "hardware"
+  ],
+  "abbr": "LPU"
+}

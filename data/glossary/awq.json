@@ -1,0 +1,14 @@
+{
+  "id": "awq",
+  "term": "Activation-aware Weight Quantization",
+  "def": "A post-training method (Lin et al., 2023) that finds the roughly 1% of salient weight channels from activation statistics and scales them up before low-bit rounding to protect them.",
+  "practice": "A common 4-bit weight-only format for GPU serving; checkpoints are produced with separate tooling and loaded by vLLM or Transformers.",
+  "aliases": [
+    "AWQ"
+  ],
+  "chapters": [
+    "quantization",
+    "quantization-methods"
+  ],
+  "abbr": "AWQ"
+}

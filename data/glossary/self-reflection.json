@@ -1,0 +1,20 @@
+{
+  "id": "self-reflection",
+  "term": "Self-reflection",
+  "def": "A model or agent reviewing its own output or trajectory, writing a critique, and revising or retrying based on it.",
+  "practice": "Helps most when the critique is grounded in external feedback such as tests, tool results or a calibrated judge; ungrounded reflection can get stuck on a confident wrong answer.",
+  "aliases": [
+    "reflection pattern",
+    "self-critique",
+    "self-correction"
+  ],
+  "chapters": [
+    "planning-reasoning",
+    "reasoning-prompts",
+    "workflow-patterns",
+    "agent-failure-modes",
+    "advanced-rag",
+    "planning-mcts",
+    "llm-planning-debate"
+  ]
+}

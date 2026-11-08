@@ -1,0 +1,11 @@
+{
+  "id": "promptfoo",
+  "term": "Promptfoo",
+  "def": "An open-source CLI and library for testing LLM applications, with a red-team mode that generates attacks such as prompt injection and jailbreaks against your app.",
+  "practice": "Often run in CI for eval and red-team suites; OpenAI agreed to acquire it in March 2026 and it remains open source (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "red-teaming",
+    "eval-tooling"
+  ]
+}

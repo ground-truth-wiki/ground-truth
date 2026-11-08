@@ -1,0 +1,15 @@
+{
+  "id": "orchestration-framework",
+  "term": "Orchestration framework",
+  "def": "A provider-neutral library for building multi-step AI applications from building blocks such as workflow graphs over shared state, checkpoints, human interrupts, retrieval pipelines and multi-agent patterns.",
+  "practice": "LangGraph, Microsoft Agent Framework, LlamaIndex, CrewAI and Haystack are examples; compare them by state model, control flow and how much they hide, not by feature lists.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "framework-selection",
+    "framework-anti-patterns",
+    "provider-agent-sdks",
+    "low-code-builders"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "data-parallelism",
+  "term": "Data parallelism",
+  "def": "Training with a full model replica on each device, each processing a different slice of the batch, with gradients averaged across devices every step.",
+  "practice": "The first and simplest way to scale; PyTorch's DistributedDataParallel overlaps the gradient all-reduce with the backward pass using buckets, and sharded variants such as FSDP cut memory when replicas no longer fit.",
+  "aliases": [
+    "distributed data parallel",
+    "DDP"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "fine-tuning-practice",
+    "parallelism-strategies"
+  ]
+}

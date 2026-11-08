@@ -1,0 +1,14 @@
+{
+  "id": "linear-map",
+  "term": "Linear map",
+  "def": "A function between vector spaces that preserves addition and scaling, f(ax + by) = af(x) + bf(y); in finite dimensions every linear map is multiplication by a matrix.",
+  "practice": "A stack of linear layers without nonlinear activations collapses into one linear map, which is why networks interleave them with activation functions.",
+  "aliases": [
+    "linear transformation",
+    "linear mapping"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "neural-networks"
+  ]
+}

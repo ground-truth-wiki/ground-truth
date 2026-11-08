@@ -1,0 +1,14 @@
+{
+  "id": "query-routing",
+  "term": "Query routing",
+  "def": "Sending each query to the most suitable index, tool or pipeline, such as a document store, a SQL database or no retrieval at all, based on a classifier or LLM decision.",
+  "practice": "Cheap and effective when sources differ in kind; log the chosen route with every query so misroutes show up in error analysis.",
+  "aliases": [
+    "retrieval routing"
+  ],
+  "chapters": [
+    "query-understanding",
+    "advanced-rag",
+    "structured-code-retrieval"
+  ]
+}

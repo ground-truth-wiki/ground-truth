@@ -1,0 +1,19 @@
+{
+  "id": "aws-trainium",
+  "term": "AWS Trainium and Inferentia",
+  "def": "Amazon's custom AI accelerator chips, Trainium for training and inference and Inferentia for inference, available on AWS and programmed through the Neuron SDK.",
+  "practice": "Trainium3 carries 144 GB of HBM3e per chip and scales to 144-chip UltraServers; PyTorch and vLLM run on it through Neuron, but check support for your model first.",
+  "aliases": [
+    "AWS Trainium",
+    "Trainium",
+    "Trainium2",
+    "Trainium3",
+    "Inferentia",
+    "AWS Inferentia"
+  ],
+  "chapters": [
+    "hardware",
+    "accelerator-architecture",
+    "ai-industry-map"
+  ]
+}

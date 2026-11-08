@@ -1,0 +1,14 @@
+{
+  "id": "zero-trust",
+  "term": "Zero trust",
+  "def": "A security model that grants no implicit trust based on network location or ownership, and authenticates and authorizes every subject and device before each session with a resource.",
+  "practice": "Applied to agents, it means authorizing each tool call on its own with scoped, short-lived credentials, even inside your own network.",
+  "aliases": [
+    "zero trust architecture",
+    "ZTA"
+  ],
+  "chapters": [
+    "secure-agent-design",
+    "mcp-authorization"
+  ]
+}

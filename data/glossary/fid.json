@@ -1,0 +1,21 @@
+{
+  "id": "fid",
+  "term": "Fréchet Inception Distance",
+  "def": "The Fréchet distance between Gaussians fitted to Inception-v3 features of real and generated images; lower means the generated distribution is closer to the real one.",
+  "practice": "The standard automatic image-generation metric, but it shifts with sample count, resizing and implementation, inherits ImageNet biases and ignores prompt alignment, so compare scores only under the same protocol.",
+  "aliases": [
+    "FID",
+    "FID score"
+  ],
+  "chapters": [
+    "image-generation",
+    "video-world-models",
+    "autoencoders-latent-spaces",
+    "deep-generative-models",
+    "diffusion-flow-matching",
+    "autoregressive-image-generation",
+    "music-generation",
+    "multimodal-evaluation"
+  ],
+  "abbr": "FID"
+}

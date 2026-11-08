@@ -1,0 +1,11 @@
+{
+  "id": "capacity-factor",
+  "term": "Capacity factor",
+  "def": "A multiplier that sets how many tokens each MoE expert may accept per batch, relative to a perfectly even split of tokens across experts.",
+  "practice": "Values such as 1.25 leave headroom for imbalance at the cost of memory and wasted compute; tokens beyond capacity skip the expert through the residual path, and dropless MoE implementations remove the limit.",
+  "aliases": [],
+  "chapters": [
+    "mixture-of-experts",
+    "moe-routing"
+  ]
+}

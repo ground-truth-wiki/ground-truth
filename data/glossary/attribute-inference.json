@@ -1,0 +1,10 @@
+{
+  "id": "attribute-inference",
+  "term": "Attribute inference",
+  "def": "Inferring a person's sensitive attributes, such as location, income or sex, either from a model trained on their data or by having an LLM analyze text they wrote.",
+  "practice": "Staab et al. (2023) found LLMs inferred such attributes from real Reddit profiles with up to 85% top-1 accuracy, a privacy risk that needs no memorization.",
+  "aliases": [],
+  "chapters": [
+    "privacy"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "torch-compile",
+  "term": "torch.compile",
+  "def": "PyTorch's compiler entry point: TorchDynamo captures graphs from Python bytecode, AOTAutograd traces the backward pass, and TorchInductor generates fused kernels, using Triton on GPUs.",
+  "practice": "Often speeds up training and inference after a warm-up compile; when it does not, graph breaks and recompilations are the usual causes to investigate.",
+  "aliases": [],
+  "chapters": [
+    "distributed-training",
+    "serving-engines",
+    "dl-frameworks",
+    "inference-fleet-scaling",
+    "accelerator-architecture",
+    "gpu-kernels-compilers"
+  ]
+}

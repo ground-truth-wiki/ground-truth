@@ -105,3 +105,13 @@ evaluating-agents
 - [Metrics and graders](#metrics-graders)
 - [Benchmark literacy](#benchmark-literacy)
 - [Sandboxes and execution environments](#sandboxes)
+- [How benchmarks are built and why they break](#benchmark-validity)
+- [Coding-agent benchmarks: SWE-bench, Terminal-Bench and their harnesses](#coding-agent-benchmarks)
+- [Computer-use and web agent benchmarks](#computer-use-benchmarks)
+- [Measuring time horizons and AI R&D capability](#measuring-time-horizons)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Agent eval metrics and benchmark design](#agent-eval-metrics)

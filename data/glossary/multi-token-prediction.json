@@ -1,0 +1,14 @@
+{
+  "id": "multi-token-prediction",
+  "term": "Multi-token prediction",
+  "def": "A training objective in which extra output heads or small modules predict several future tokens at each position, not only the next one.",
+  "practice": "Gains are largest on code; DeepSeek-V3 and Qwen3-Next train with it, and the extra heads can draft tokens for speculative decoding.",
+  "aliases": [
+    "MTP"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "speculative-decoding"
+  ],
+  "abbr": "MTP"
+}

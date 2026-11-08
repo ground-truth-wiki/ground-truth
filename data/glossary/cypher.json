@@ -1,0 +1,15 @@
+{
+  "id": "cypher",
+  "term": "Cypher",
+  "def": "A declarative query language for property graphs that matches ASCII-art patterns of nodes and relationships (MATCH ... RETURN), created at Neo4j and opened as openCypher.",
+  "practice": "LLMs generate it in text-to-Cypher pipelines, which need the same schema grounding and read-only safeguards as text-to-SQL; ISO GQL builds on much of its syntax.",
+  "aliases": [
+    "openCypher"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "structured-code-retrieval",
+    "knowledge-graphs",
+    "graph-rag"
+  ]
+}

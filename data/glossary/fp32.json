@@ -1,0 +1,21 @@
+{
+  "id": "fp32",
+  "term": "FP32",
+  "def": "IEEE 754 single precision: 32 bits with 1 sign, 8 exponent and 23 stored mantissa bits, about 7 significant decimal digits.",
+  "practice": "The reference format for master weights, optimizer states and accumulations in mixed-precision training; at 4 bytes per value it doubles memory versus BF16.",
+  "aliases": [
+    "float32",
+    "single precision",
+    "binary32"
+  ],
+  "chapters": [
+    "numbers-to-know",
+    "kv-cache",
+    "calculus-optimization",
+    "embeddings",
+    "vector-databases",
+    "distributed-training",
+    "training-neural-networks",
+    "floating-point-formats"
+  ]
+}

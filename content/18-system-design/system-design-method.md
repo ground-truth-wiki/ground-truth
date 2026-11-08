@@ -85,3 +85,6 @@ system-design-method
 - [Back-of-the-envelope estimation](#back-of-envelope)
 - [Decision guides](#decision-guides)
 - [Interview prep](#interview-prep)
+- [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)
+- [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
+- [Worked AI system design interview answers](#system-design-interview-answers)

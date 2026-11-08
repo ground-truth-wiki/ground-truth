@@ -1,0 +1,16 @@
+{
+  "id": "hf-datasets",
+  "term": "Datasets library",
+  "def": "Hugging Face's open-source library for loading, processing and sharing datasets, backed by memory-mapped Apache Arrow files and able to stream data instead of downloading it.",
+  "practice": "load_dataset pulls a dataset from the Hub or local files, map caches processed results to disk, and streaming mode iterates over very large corpora without downloading them first.",
+  "aliases": [
+    "Hugging Face Datasets"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "eval-datasets",
+    "fine-tuning-practice",
+    "hugging-face-ecosystem",
+    "data-formats"
+  ]
+}

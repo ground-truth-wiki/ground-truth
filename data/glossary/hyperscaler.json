@@ -1,0 +1,15 @@
+{
+  "id": "hyperscaler",
+  "term": "Hyperscaler",
+  "def": "A company that operates data centers at enormous scale, chiefly the largest cloud providers (AWS, Microsoft Azure, Google Cloud); discussions of AI spending often add Meta and Oracle.",
+  "practice": "Hyperscalers host much frontier training and inference, resell model APIs and invest in labs; GPU-focused 'neoclouds' such as CoreWeave compete with them on raw GPU capacity.",
+  "aliases": [
+    "hyperscale cloud"
+  ],
+  "chapters": [
+    "model-apis",
+    "hardware",
+    "cost-capacity",
+    "cloud-ai-platforms"
+  ]
+}

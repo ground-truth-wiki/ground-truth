@@ -86,3 +86,5 @@ framework-selection
 - [Framework anti-patterns](#framework-anti-patterns)
 - [Decision guides](#decision-guides)
 - [Provider and agent SDKs](#provider-agent-sdks)
+- [AI frameworks beyond Python: TypeScript, Java, .NET and Go](#frameworks-beyond-python)
+- [Managed agent platforms and hosted harnesses](#managed-agent-platforms)

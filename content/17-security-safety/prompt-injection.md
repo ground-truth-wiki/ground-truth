@@ -114,3 +114,12 @@ prompt-injection
 - [Sandboxes and execution environments](#sandboxes)
 - [Human in the loop](#human-in-the-loop)
 - [Safety and red-team evals](#safety-evals)
+- [Model specs, constitutions and the instruction hierarchy](#model-specs-instruction-hierarchy)
+- [RAG security: poisoning, inversion and leakage](#rag-security)
+- [Securing coding agents](#coding-agent-security)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Prompt injection attacks and defenses in depth](#prompt-injection-techniques)

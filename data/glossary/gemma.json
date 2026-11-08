@@ -1,0 +1,19 @@
+{
+  "id": "gemma",
+  "term": "Gemma",
+  "def": "Google's family of open-weight models built from Gemini research and technology, first released in 2024 in sizes that fit laptops, phones and single GPUs.",
+  "practice": "Licenses differ by generation: Gemma 1 to 3n use the Gemma Terms of Use, whose prohibited-use policy must flow down to users, while Gemma 4 (2026) is Apache 2.0.",
+  "aliases": [
+    "Gemma models"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "small-local-models",
+    "edge-on-device",
+    "loss-functions",
+    "self-supervised-methods",
+    "rope-scaling",
+    "encoders-and-decoders"
+  ]
+}

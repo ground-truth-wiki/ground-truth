@@ -1,0 +1,12 @@
+{
+  "id": "funsearch",
+  "term": "FunSearch",
+  "def": "A Google DeepMind method (2023) that pairs an LLM writing programs with an automated evaluator in an evolutionary loop, searching for programs that construct solutions rather than for the solutions themselves.",
+  "practice": "Found larger cap sets and better bin-packing heuristics (Nature, 2023) with readable code as output; AlphaEvolve extends the approach from single functions to whole programs.",
+  "aliases": [],
+  "chapters": [
+    "self-improving-systems",
+    "ai-for-science",
+    "evolutionary-program-search"
+  ]
+}

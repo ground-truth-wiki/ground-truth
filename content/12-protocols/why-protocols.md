@@ -99,3 +99,13 @@ why-protocols
 - [The rest of the alphabet soup](#protocol-soup)
 - [Governance and ecosystem](#protocol-governance)
 - [Tool use and tool design](#agent-tools)
+- [Agent interface protocols: AG-UI, MCP Apps and generative UI specs](#agent-ui-protocols)
+- [The Agent Client Protocol](#agent-client-protocol)
+- [The web for agents: llms.txt, NLWeb, signed agents and content preferences](#agent-facing-web)
+- [Agentic commerce and payment protocols](#agentic-commerce-protocols)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Protocol building blocks: JSON-RPC, JSON Schema, HTTP streams and OAuth](#protocol-building-blocks)

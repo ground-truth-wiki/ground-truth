@@ -1,0 +1,41 @@
+[
+  {
+    "id": "in-context-learning-1",
+    "chapter": "in-context-learning",
+    "q": "A few-shot ticket classifier returns “Billing issue”, “BUG” and “how to” instead of exactly billing, bug or how-to. Every example has the correct label, but each example is laid out and spelled differently. Which fix targets the cause?",
+    "options": [
+      "Rewrite the examples so each uses the same fields, tags and exact label spelling, and end the query where the label goes",
+      "Have an expert double-check that every example’s label is correct",
+      "Add more examples in the same mixed styles so the model sees more data",
+      "Lower the temperature to 0 so the model always picks its most likely answer"
+    ],
+    "answer": 0,
+    "explain": "Demonstrations mostly teach the label space and the format (Min et al., 2022): if the examples spell labels and lay out fields inconsistently, the model copies that inconsistency. Making every example identical in structure and label spelling fixes the cause. Checking label correctness is tempting, but the labels are already right, and Min et al. found that even random labels cost only a few points; correctness is not what is broken here."
+  },
+  {
+    "id": "in-context-learning-2",
+    "chapter": "in-context-learning",
+    "q": "A sentiment prompt has four examples: three positive and one negative, with a positive one last. On mixed reviews it answers positive far too often. You can read label probabilities but have no new labeled data. What is the best fix?",
+    "options": [
+      "Score the same prompt with a content-free input such as “N/A”, then divide each label’s probability by its content-free probability and renormalize",
+      "Raise the sampling temperature so “negative” is sampled more often",
+      "Move the negative example to the first position",
+      "Add three more positive examples so the model has more evidence"
+    ],
+    "answer": 0,
+    "explain": "The prompt carries majority-label and recency bias toward positive (Zhao et al., 2021). Contextual calibration measures that bias directly, as the prompt’s answer on an input with no content, and divides it out, without needing labels. Moving the negative example to the front is tempting but leaves three of four labels positive and a positive example last, so both biases remain; if anything, it moves the one negative example further from the query."
+  },
+  {
+    "id": "in-context-learning-3",
+    "chapter": "in-context-learning",
+    "q": "Your app retrieves the eight examples most similar to each query and places them at the very start of the prompt, followed by a long fixed instruction block. The provider caches prompt prefixes, yet the cache hit rate is near zero. Why, and what is the fix?",
+    "options": [
+      "The retrieved examples differ per query and come first, so no two prompts share a prefix; put the fixed instructions first and the retrieved examples after them",
+      "The examples are too similar to each other; retrieve more diverse examples to raise the hit rate",
+      "Prompt caching cannot work with examples at all; remove them and rely on instructions",
+      "The cache stores model outputs, so it only helps when two users ask the same question"
+    ],
+    "answer": 0,
+    "explain": "Caches match the exact prompt prefix from the first token, so per-query content at the front gives every request a new prefix. Putting the stable instructions first lets that block be reused, with the retrieved examples and the query after it. Adding diversity is tempting because it does help accuracy and label balance, but it does nothing for caching: the examples still change per query and still sit at the front."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "forward-pass",
+  "term": "Forward pass",
+  "def": "Running inputs through a network layer by layer to compute its outputs; in training it also computes the loss and stores the activations the backward pass needs.",
+  "practice": "Inference is forward passes only; a training step adds a backward pass costing roughly twice the forward, the origin of the 6ND compute rule.",
+  "aliases": [
+    "forward propagation"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "transformer-block",
+    "scaling-laws",
+    "memory-math",
+    "numbers-to-know",
+    "automatic-differentiation",
+    "trainable-deep-networks"
+  ]
+}

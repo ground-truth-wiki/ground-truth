@@ -1,0 +1,16 @@
+{
+  "id": "generation-prompt",
+  "term": "Generation prompt",
+  "def": "The tokens a chat template appends after the last message to open the assistant's turn, so the model writes a reply instead of continuing the previous message.",
+  "practice": "Add it at inference (add_generation_prompt=True in Hugging Face Transformers) and leave it out when formatting complete conversations for training.",
+  "aliases": [
+    "add_generation_prompt"
+  ],
+  "chapters": [
+    "model-types",
+    "sft",
+    "model-specific-notes",
+    "chat-templates",
+    "synthetic-data-recipes"
+  ]
+}

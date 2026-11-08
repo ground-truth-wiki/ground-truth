@@ -1,0 +1,14 @@
+{
+  "id": "ai-safety-via-debate",
+  "term": "AI safety via debate",
+  "def": "A scalable-oversight protocol in which two AI systems argue for opposing answers and a weaker judge, human or model, decides which side is right.",
+  "practice": "Proposed by Irving et al. (2018); Khan et al. (2024) found debate raised non-expert judge accuracy on a reading-comprehension task, and it is distinct from multi-agent debate used to improve reasoning.",
+  "aliases": [
+    "safety via debate"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "llm-as-judge",
+    "scalable-oversight"
+  ]
+}

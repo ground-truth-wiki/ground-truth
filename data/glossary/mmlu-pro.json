@@ -1,0 +1,12 @@
+{
+  "id": "mmlu-pro",
+  "term": "MMLU-Pro",
+  "def": "A harder successor to MMLU with ten answer options instead of four, more reasoning-heavy questions, and trivial or noisy items removed.",
+  "practice": "Common in model cards as a general knowledge and reasoning number; less saturated than MMLU and less sensitive to prompt wording.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "benchmark-catalog",
+    "prompting-techniques"
+  ]
+}

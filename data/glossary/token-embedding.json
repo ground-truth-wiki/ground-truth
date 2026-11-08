@@ -1,0 +1,20 @@
+{
+  "id": "token-embedding",
+  "term": "Token embedding",
+  "def": "The learned vector looked up for each token id in an embedding matrix that has one row per vocabulary entry; it is the input to the first transformer layer.",
+  "practice": "The matrix holds vocabulary size × hidden size parameters, a large share of small models, and needs new rows whenever tokens are added to the vocabulary.",
+  "aliases": [
+    "embedding matrix",
+    "embedding table",
+    "input embedding"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "transformer-block",
+    "tokenization",
+    "positional-encoding",
+    "recommender-systems",
+    "tokenizers-in-practice",
+    "latent-reasoning"
+  ]
+}

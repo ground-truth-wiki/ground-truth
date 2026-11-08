@@ -71,3 +71,10 @@ the-canon
 - [Talking shop](#talking-shop)
 - [Watchlist](#watchlist)
 - [How to use Ground Truth](#how-to-use)
+- [A short history of AI](#history-of-ai)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [How AI research is published: arXiv, conferences and peer review](#ai-research-publishing)

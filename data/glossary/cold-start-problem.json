@@ -1,0 +1,11 @@
+{
+  "id": "cold-start-problem",
+  "term": "Cold-start problem",
+  "def": "The difficulty that models relying on interaction history, such as collaborative filtering, have in making good predictions for new users or items with little or no history.",
+  "practice": "Mitigated with content features and metadata, popularity priors, asking new users for preferences, or exploration; hybrids of content and collaborative signals are the usual answer.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "recommender-systems"
+  ]
+}

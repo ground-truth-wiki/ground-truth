@@ -1,0 +1,19 @@
+{
+  "id": "glue",
+  "term": "GLUE",
+  "def": "General Language Understanding Evaluation: a 2018 multi-task benchmark and leaderboard for English natural language understanding, with nine tasks and a hand-crafted diagnostic set.",
+  "practice": "Models passed its non-expert human baseline within about a year, which prompted the harder SuperGLUE in 2019: the textbook case of benchmark saturation.",
+  "aliases": [
+    "General Language Understanding Evaluation"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "peft-methods",
+    "nlp-tasks",
+    "benchmark-validity",
+    "dataset-versioning-lineage",
+    "data-lakehouses",
+    "data-selection-attribution",
+    "mlops-foundations"
+  ]
+}

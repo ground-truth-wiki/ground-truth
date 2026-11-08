@@ -1,0 +1,21 @@
+{
+  "id": "ai-safety-institute",
+  "term": "AI safety institute",
+  "def": "A government body that evaluates advanced AI systems and researches their risks, such as the UK AI Security Institute, renamed from AI Safety Institute in 2025.",
+  "practice": "Runs pre-release evaluations of frontier models under voluntary agreements; the UK institute also publishes open-source tools such as the Inspect eval framework and ControlArena.",
+  "aliases": [
+    "AISI",
+    "AI Security Institute",
+    "UK AISI"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "eval-harnesses",
+    "supply-chain-security",
+    "what-is-a-harness",
+    "prompt-injection-techniques",
+    "ai-control",
+    "dangerous-capability-evals"
+  ]
+}

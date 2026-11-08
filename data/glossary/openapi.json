@@ -1,0 +1,20 @@
+{
+  "id": "openapi",
+  "term": "OpenAPI",
+  "def": "A language-agnostic standard for describing HTTP APIs (paths, operations, parameters, schemas and security) in JSON or YAML, formerly called Swagger; since version 3.1 its schemas follow JSON Schema 2020-12.",
+  "practice": "Generators turn each operation into a function or MCP tool, but curated, task-shaped tools usually work better for agents than one tool per endpoint.",
+  "aliases": [
+    "OpenAPI Specification",
+    "OAS",
+    "Swagger"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "building-mcp-servers",
+    "agent-tools",
+    "protocol-building-blocks",
+    "mcp-registry-and-packaging",
+    "agentic-commerce-protocols"
+  ],
+  "abbr": "OAS"
+}

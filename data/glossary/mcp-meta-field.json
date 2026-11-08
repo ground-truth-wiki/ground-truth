@@ -1,0 +1,19 @@
+{
+  "id": "mcp-meta-field",
+  "term": "_meta field",
+  "def": "The metadata object on MCP requests, results and notifications, keyed by namespaced names such as io.modelcontextprotocol/protocolVersion; prefixes whose second label is modelcontextprotocol or mcp are reserved.",
+  "practice": "Since 2026-07-28 every request carries its protocol version and client capabilities here, plus optional client info, log level, progress token and OpenTelemetry trace context such as traceparent.",
+  "aliases": [
+    "_meta"
+  ],
+  "chapters": [
+    "mcp-architecture",
+    "mcp-at-scale",
+    "mcp-client-features",
+    "mcp-spec-history",
+    "protocol-building-blocks",
+    "mcp-extensions",
+    "mcp-registry-and-packaging",
+    "agent-ui-protocols"
+  ]
+}

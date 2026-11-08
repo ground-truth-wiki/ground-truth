@@ -1,0 +1,14 @@
+{
+  "id": "repetition-penalty",
+  "term": "Repetition penalties",
+  "def": "Logit adjustments that make already-used tokens less likely: a repetition penalty rescales their logits, a presence penalty applies once a token appears, and a frequency penalty grows with its count.",
+  "practice": "A repetition penalty of 1.0 means none and the CTRL paper suggested about 1.2; strong penalties distort code identifiers, names and other legitimate repetition.",
+  "aliases": [
+    "repetition penalty",
+    "frequency penalty",
+    "presence penalty"
+  ],
+  "chapters": [
+    "decoding-sampling"
+  ]
+}

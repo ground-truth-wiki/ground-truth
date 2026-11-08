@@ -111,3 +111,5 @@ eval-harnesses
 - [Benchmark literacy](#benchmark-literacy)
 - [Eval and observability tooling map](#eval-tooling)
 - [Statistics for evals](#eval-statistics)
+- [Coding-agent benchmarks: SWE-bench, Terminal-Bench and their harnesses](#coding-agent-benchmarks)
+- [Agent eval metrics and benchmark design](#agent-eval-metrics)

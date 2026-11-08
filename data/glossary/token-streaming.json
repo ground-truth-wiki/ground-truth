@@ -1,0 +1,16 @@
+{
+  "id": "token-streaming",
+  "term": "Token streaming",
+  "def": "Sending a model’s output to the client incrementally as tokens are generated, usually over server-sent events, instead of waiting for the complete response.",
+  "practice": "It cuts perceived latency to the time to first token, but clients must assemble partial tool calls and handle errors that arrive mid-stream.",
+  "aliases": [
+    "streaming output",
+    "streamed responses"
+  ],
+  "chapters": [
+    "streaming",
+    "model-apis",
+    "agent-ux",
+    "latency-throughput"
+  ]
+}

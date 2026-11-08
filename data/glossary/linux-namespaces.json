@@ -1,0 +1,16 @@
+{
+  "id": "linux-namespaces",
+  "term": "Linux namespaces",
+  "def": "A Linux kernel feature that gives processes their own isolated view of a global resource, such as mount points, process IDs, the network stack, user IDs or the hostname.",
+  "practice": "The isolation half of containers and of tools like bubblewrap; a network namespace with no route out is how Claude Code's Linux sandbox forces traffic through its filtering proxy.",
+  "aliases": [
+    "user namespace",
+    "network namespace",
+    "mount namespace",
+    "PID namespace"
+  ],
+  "chapters": [
+    "sandboxes",
+    "os-level-sandboxing"
+  ]
+}

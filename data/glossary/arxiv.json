@@ -1,0 +1,17 @@
+{
+  "id": "arxiv",
+  "term": "arXiv",
+  "def": "An open-access repository where researchers post papers, often before formal publication; submissions are moderated for scope and scholarly value but not peer reviewed.",
+  "practice": "Most AI research appears here first, in categories such as cs.CL, cs.LG and cs.AI, so check which version you cite and whether the paper later passed peer review.",
+  "aliases": [],
+  "chapters": [
+    "watchlist",
+    "the-canon",
+    "history-of-ai",
+    "eigenvectors-svd-pca",
+    "high-dimensional-geometry",
+    "distributions-and-estimation",
+    "information-theory-for-llms",
+    "loss-functions"
+  ]
+}

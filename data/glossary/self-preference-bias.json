@@ -1,0 +1,15 @@
+{
+  "id": "self-preference-bias",
+  "term": "Self-preference bias",
+  "def": "A judge model’s tendency to favor responses that it generated itself or that resemble its own outputs.",
+  "practice": "When grading your own model’s outputs, use a judge from a different model family or a panel of judges, and measure the effect on your own data.",
+  "aliases": [
+    "self-enhancement bias",
+    "self-preference"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "judge-models-meta-evaluation",
+    "hallucination-factuality"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "disparate-impact",
+  "term": "Disparate impact",
+  "def": "Substantially worse outcomes for a protected group from a practice that looks neutral; US employment guidelines generally treat a selection rate below four-fifths of the highest group’s as evidence of it.",
+  "practice": "The four-fifths ratio is a legal screening heuristic, unstable on small samples and not a general fairness test; this is information, not legal advice.",
+  "aliases": [
+    "adverse impact"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "us-ai-law",
+    "fairness-bias"
+  ]
+}

@@ -126,3 +126,4 @@ talking-shop
 - [The Canon](#the-canon)
 - [Open problems and big debates](#open-problems)
 - [Decision guides](#decision-guides)
+- [How AI research is published: arXiv, conferences and peer review](#ai-research-publishing)

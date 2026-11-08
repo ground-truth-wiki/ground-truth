@@ -1,0 +1,21 @@
+{
+  "id": "encoder-only",
+  "term": "Encoder-only model",
+  "def": "A transformer whose self-attention is bidirectional, so every token sees the whole input; it outputs contextual vectors instead of generating text, as BERT does.",
+  "practice": "BERT-style encoders such as ModernBERT still power embedding models, rerankers and classifiers because they are small and fast.",
+  "aliases": [
+    "encoder-only",
+    "bidirectional encoder",
+    "BERT-style model"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "representation-learning",
+    "embeddings",
+    "reranking",
+    "encoders-and-decoders",
+    "sparse-and-local-attention",
+    "nlp-tasks",
+    "learning-to-rank"
+  ]
+}

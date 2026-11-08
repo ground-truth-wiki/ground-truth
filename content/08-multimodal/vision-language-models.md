@@ -81,3 +81,16 @@ vision-language-models
 - [Representation learning](#representation-learning)
 - [Computer-use and browser agents](#computer-use-agents)
 - [Multimodal applications](#multimodal-apps)
+- [Convolutional neural networks](#convolutional-networks)
+- [Self-supervised learning methods](#self-supervised-methods)
+- [Visual tokenizers and autoregressive image generation](#autoregressive-image-generation)
+- [Visual grounding, detection and segmentation](#visual-grounding)
+- [Evaluating multimodal and generative models](#multimodal-evaluation)
+- [Vision-language-action models, robot data and sim-to-real](#vla-models)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Vision-language model architectures and training](#vlm-architectures)
+- [Video understanding](#video-understanding)

@@ -77,3 +77,12 @@ ai-product-ux
 - [Human in the loop](#human-in-the-loop)
 - [Responsible AI in practice](#responsible-ai)
 - [The data flywheel](#data-flywheel)
+- [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)
+- [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)
+- [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)

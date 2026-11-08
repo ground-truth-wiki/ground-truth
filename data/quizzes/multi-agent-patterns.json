@@ -1,0 +1,41 @@
+[
+  {
+    "id": "multi-agent-patterns-1",
+    "chapter": "multi-agent-patterns",
+    "q": "Early in a chat, a user says they moved to the annual plan. Later, a manager agent calls a billing specialist through Agent.as_tool() with the brief “Find duplicate charges in the last 7 days.” The specialist flags a legitimate annual-plan charge as a duplicate. What is the most likely cause?",
+    "options": [
+      "The specialist’s context window overflowed with the earlier conversation",
+      "An agent called as a tool sees only the input the manager writes, and the brief left out the plan change",
+      "The handoff’s input_filter removed the user’s earlier messages",
+      "The manager and the specialist used different models, so the specialist misread the shared history"
+    ],
+    "answer": 1,
+    "explain": "In the manager pattern, the specialist does not inherit the parent’s conversation; the brief is its whole view of the task, so a constraint the manager leaves out never reaches it. The overflow answer is tempting, but the specialist never received the earlier conversation at all. The input_filter answer describes a handoff, which is not what happened here."
+  },
+  {
+    "id": "multi-agent-patterns-2",
+    "chapter": "multi-agent-patterns",
+    "q": "Support tickets fall into three queues, and the right queue is almost always clear from the first message. Which design does Microsoft’s orchestration guide point you to?",
+    "options": [
+      "Handoff orchestration with a triage agent that transfers control to the right specialist",
+      "Group chat, so all three specialists can discuss each ticket",
+      "A simple dispatcher that classifies the input and routes it, without an agent that takes part in the work",
+      "Magentic orchestration, so a manager can plan which queue to use"
+    ],
+    "answer": 2,
+    "explain": "When the right agent is identifiable from the initial input, the guide recommends deterministic routing or a simple dispatcher, which is the routing workflow pattern. Handoff is tempting because “triage” is one of its aliases, but it is meant for cases where the right specialist only emerges during processing, and it adds the risk of agents bouncing the task between them."
+  },
+  {
+    "id": "multi-agent-patterns-3",
+    "chapter": "multi-agent-patterns",
+    "q": "A group chat of a writer, a reviewer and a fact checker often runs until its message cap, with the agents politely agreeing and rephrasing. Which change best addresses the cause?",
+    "options": [
+      "Add two more specialist agents to bring in fresh viewpoints",
+      "Switch every agent to a stronger model",
+      "Raise the message cap so the agents have time to converge",
+      "Give the chat manager a checkable completion test, such as written acceptance criteria, and keep the cap as a backstop"
+    ],
+    "answer": 3,
+    "explain": "This is step repetition from being unaware of the termination conditions, two failure modes MAST names. Microsoft’s guide advises against group chat when the manager has no objective way to tell the task is done, and suggests three or fewer agents. A stronger model is the tempting answer, but without a defined finish line it still has nothing to stop on; adding agents makes control harder, and a higher cap only spends more tokens."
+  }
+]

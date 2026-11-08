@@ -1,0 +1,22 @@
+{
+  "id": "llama",
+  "term": "Llama",
+  "def": "Meta's family of open-weight large language models, released from 2023 under custom community licenses, from Llama 2 to the Llama 4 mixture-of-experts models (2025).",
+  "practice": "Its licenses allow commercial use but add an acceptable-use policy and need a separate grant above 700 million monthly active users; Meta's newer models (2026) are the Muse family.",
+  "aliases": [
+    "Llama 2",
+    "Llama 3",
+    "Llama 4",
+    "Meta Llama"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "small-local-models",
+    "mixture-of-experts",
+    "scaling-laws",
+    "quantization",
+    "training-hyperparameters",
+    "classification-metrics"
+  ]
+}

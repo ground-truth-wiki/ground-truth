@@ -1,0 +1,17 @@
+{
+  "id": "automated-program-repair",
+  "term": "Automated program repair",
+  "def": "The research field and task of automatically producing patches that fix software bugs, classically by localizing the fault, generating candidate patches and validating them against tests.",
+  "practice": "Issue-resolving coding agents are program-repair systems with a language model inside, and pipelines such as Agentless follow the field’s split into localization, repair and patch validation.",
+  "aliases": [
+    "APR",
+    "program repair",
+    "automatic program repair"
+  ],
+  "chapters": [
+    "coding-agents",
+    "working-with-coding-agents",
+    "coding-agent-internals"
+  ],
+  "abbr": "APR"
+}

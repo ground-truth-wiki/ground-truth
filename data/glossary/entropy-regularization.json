@@ -1,0 +1,13 @@
+{
+  "id": "entropy-regularization",
+  "term": "Entropy regularization",
+  "def": "Adding the policy's entropy to the RL objective as a bonus, so the agent keeps some randomness and goes on exploring; maximum-entropy RL builds this into the core objective.",
+  "practice": "Guards against early collapse to a near-deterministic policy; PPO implementations often add a small entropy bonus, and soft actor–critic is the best-known maximum-entropy method.",
+  "aliases": [
+    "entropy bonus"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning"
+  ]
+}

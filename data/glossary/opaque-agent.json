@@ -1,0 +1,14 @@
+{
+  "id": "opaque-agent",
+  "term": "Opaque agent",
+  "def": "An agent that collaborates through a protocol using declared capabilities and exchanged messages, without exposing its internal reasoning, plans, memory or tool implementations.",
+  "practice": "A design principle of A2A: send requests, not prompts, and treat whatever comes back as untrusted external input.",
+  "aliases": [
+    "opaque execution"
+  ],
+  "chapters": [
+    "a2a",
+    "why-protocols",
+    "multi-agent"
+  ]
+}

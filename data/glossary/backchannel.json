@@ -1,0 +1,14 @@
+{
+  "id": "backchannel",
+  "term": "Backchannel",
+  "def": "A short listener response such as “mm-hm” or “yeah” that signals attention without taking the turn.",
+  "practice": "Voice agents must not treat a user’s backchannel as an interruption (LiveKit’s adaptive interruption handling filters them), and full-duplex models are evaluated on producing them at the right moments.",
+  "aliases": [
+    "backchanneling",
+    "back-channel"
+  ],
+  "chapters": [
+    "voice-agents",
+    "voice-turn-taking"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "clipped-surrogate-objective",
+  "term": "Clipped surrogate objective",
+  "def": "PPO's objective, which multiplies the advantage by the new-to-old policy probability ratio but clips that ratio to [1 − ε, 1 + ε], so large policy changes earn no extra credit.",
+  "practice": "The 'clip' in PPO and GRPO; the PPO paper used ε = 0.2, and variants such as DAPO raise the upper bound so low-probability tokens can still grow.",
+  "aliases": [
+    "PPO-Clip"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "rlvr-reasoning",
+    "rl-primer",
+    "policy-gradient-methods"
+  ]
+}

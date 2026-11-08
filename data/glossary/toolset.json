@@ -1,0 +1,14 @@
+{
+  "id": "toolset",
+  "term": "Toolset",
+  "def": "A named collection of tools registered with an agent as one unit, such as all tools of an MCP server, which a framework can filter, prefix, rename or put behind approval.",
+  "practice": "Filter a toolset to what the task needs; exposing every tool of an MCP server by default bloats the context and widens permissions.",
+  "aliases": [
+    "MCPToolset"
+  ],
+  "chapters": [
+    "agent-tools",
+    "provider-agent-sdks",
+    "mcp-at-scale"
+  ]
+}

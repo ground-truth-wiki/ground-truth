@@ -81,3 +81,4 @@ back-of-envelope
 - [Cost and capacity](#cost-capacity)
 - [Memory math](#memory-math)
 - [The AI system design method](#system-design-method)
+- [AI pricing and unit economics](#ai-pricing-unit-economics)

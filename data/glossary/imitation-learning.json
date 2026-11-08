@@ -1,0 +1,18 @@
+{
+  "id": "imitation-learning",
+  "term": "Imitation learning",
+  "def": "Learning a policy from demonstrations of expert behavior, either directly by supervised learning or by first inferring the expert's reward function (inverse RL).",
+  "practice": "Supervised fine-tuning on human demonstrations is a form of it, and teleoperated demonstrations are a standard starting point for robot policies.",
+  "aliases": [
+    "learning from demonstration",
+    "apprenticeship learning"
+  ],
+  "chapters": [
+    "rl-primer",
+    "sft",
+    "embodied-agents",
+    "imitation-offline-rl",
+    "llm-distillation",
+    "vla-models"
+  ]
+}

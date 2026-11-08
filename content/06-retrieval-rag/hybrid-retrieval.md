@@ -103,3 +103,5 @@ hybrid-retrieval
 - [Query understanding](#query-understanding)
 - [Embeddings](#embeddings)
 - [RAG fundamentals](#rag-fundamentals)
+- [Information retrieval foundations](#ir-foundations)
+- [Learning to rank](#learning-to-rank)

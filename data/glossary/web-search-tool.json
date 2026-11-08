@@ -1,0 +1,19 @@
+{
+  "id": "web-search-tool",
+  "term": "Web search tool",
+  "def": "A provider-run tool that lets a model issue web searches during a request and cite the results, such as Anthropic's and OpenAI's web_search tools or Gemini's Grounding with Google Search.",
+  "practice": "The quickest route to open-web retrieval: cap searches per turn, use domain allow or block lists, budget per-search fees on top of tokens, and treat results as untrusted input (as of November 2026).",
+  "aliases": [
+    "web grounding",
+    "search grounding",
+    "Grounding with Google Search"
+  ],
+  "chapters": [
+    "deep-research",
+    "agent-tools",
+    "model-apis",
+    "multi-agent",
+    "research-analyst-agents",
+    "web-search-hosted-retrieval"
+  ]
+}

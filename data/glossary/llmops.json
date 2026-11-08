@@ -1,0 +1,20 @@
+{
+  "id": "llmops",
+  "term": "LLMOps",
+  "def": "Operating applications built on large language models: versioning prompts, orchestration, indexes and model choices, gating releases on evals, and monitoring quality, safety, latency and token cost in production.",
+  "practice": "Extends MLOps rather than replacing it; Microsoft's Azure guidance calls it GenAIOps and adds prompt lifecycle, grounding-data pipelines, content safety and token-cost governance on top of existing MLOps.",
+  "aliases": [
+    "GenAIOps",
+    "generative AI operations",
+    "LLM operations"
+  ],
+  "chapters": [
+    "ai-engineering-stack",
+    "reference-architecture",
+    "observability-tracing",
+    "prompt-config-management",
+    "ci-cd-for-ai",
+    "mlops-foundations",
+    "slos-error-budgets"
+  ]
+}

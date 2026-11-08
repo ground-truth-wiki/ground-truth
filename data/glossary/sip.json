@@ -1,0 +1,16 @@
+{
+  "id": "sip",
+  "term": "Session Initiation Protocol",
+  "def": "The IETF signaling protocol (RFC 3261) for setting up, changing and ending sessions such as internet phone calls; the audio itself usually travels separately over RTP.",
+  "practice": "Voice agents reach the phone network through SIP trunks from telephony carriers; frameworks such as LiveKit bridge trunks to agent sessions, including keypad tones and call transfers.",
+  "aliases": [
+    "SIP"
+  ],
+  "chapters": [
+    "voice-agents",
+    "support-agents",
+    "voice-turn-taking",
+    "voice-telephony"
+  ],
+  "abbr": "SIP"
+}

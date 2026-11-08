@@ -1,0 +1,12 @@
+{
+  "id": "reinforce-algorithm",
+  "term": "REINFORCE algorithm",
+  "def": "The basic Monte Carlo policy-gradient method: sample complete episodes, then raise the log-probability of each action in proportion to the return that followed it.",
+  "practice": "Unbiased but high-variance; subtracting a baseline, such as a value estimate or the mean reward of other samples for the same prompt as in RLOO, cuts variance without adding bias.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization"
+  ]
+}

@@ -96,3 +96,5 @@ incidents-on-call
 - [Guardrails and control](#guardrails-control)
 - [CI/CD for AI](#ci-cd-for-ai)
 - [Observability and tracing](#observability-tracing)
+- [SLOs and error budgets for AI systems](#slos-error-budgets)
+- [Public AI failures and incidents: a casebook](#ai-failure-casebook)

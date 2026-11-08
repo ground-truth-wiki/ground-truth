@@ -1,0 +1,17 @@
+{
+  "id": "euclidean-distance",
+  "term": "Euclidean distance",
+  "def": "The straight-line distance between two vectors, the L2 norm of their difference.",
+  "practice": "One of the three standard vector-search metrics with dot product and cosine; on unit-length vectors it ranks neighbors exactly as cosine similarity does.",
+  "aliases": [
+    "L2 distance"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "embeddings",
+    "vector-search",
+    "vector-databases",
+    "high-dimensional-geometry",
+    "vector-index-internals"
+  ]
+}

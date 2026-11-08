@@ -1,0 +1,16 @@
+{
+  "id": "gated-deltanet",
+  "term": "Gated DeltaNet",
+  "def": "A linear-attention layer whose fixed-size state is updated by the delta rule, which replaces the value stored under the current key, combined with a decay gate that erases old content.",
+  "practice": "Used three to one with gated full-attention layers in Qwen3-Next and the Qwen3.5 family; Kimi Delta Attention extends it with finer-grained gating.",
+  "aliases": [
+    "gated delta rule",
+    "GDN"
+  ],
+  "chapters": [
+    "beyond-transformers",
+    "new-architectures",
+    "long-context",
+    "linear-attention-hybrids"
+  ]
+}

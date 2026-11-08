@@ -1,0 +1,15 @@
+{
+  "id": "swarm-architecture",
+  "term": "Swarm architecture",
+  "def": "A decentralized multi-agent design in which peer agents hand control to one another by specialization, with no central manager; the system remembers which agent is active.",
+  "practice": "Popularized by OpenAI's experimental Swarm library, since superseded by its Agents SDK, and by LangGraph Swarm; simple for triage conversations, harder to budget and debug than a manager design.",
+  "aliases": [
+    "decentralized pattern",
+    "swarm"
+  ],
+  "chapters": [
+    "multi-agent",
+    "orchestration-frameworks",
+    "multi-agent-patterns"
+  ]
+}

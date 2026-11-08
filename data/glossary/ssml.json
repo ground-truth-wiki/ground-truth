@@ -1,0 +1,15 @@
+{
+  "id": "ssml",
+  "term": "Speech Synthesis Markup Language",
+  "def": "The W3C XML markup for controlling text-to-speech output, including pronunciation, pauses, emphasis, voice selection and prosody.",
+  "practice": "Use say-as for dates and numbers and phoneme or lexicon entries for names; supported tags vary by TTS provider and voice.",
+  "aliases": [
+    "SSML"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "speech-synthesis"
+  ],
+  "abbr": "SSML"
+}

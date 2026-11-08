@@ -1,0 +1,15 @@
+{
+  "id": "tied-embeddings",
+  "term": "Tied embeddings",
+  "def": "Using one matrix both for the input token embeddings and, transposed, for the output projection that turns final hidden states into vocabulary logits.",
+  "practice": "Saves vocabulary × hidden size parameters, which matters most in small models with large vocabularies; many large models keep the two matrices separate.",
+  "aliases": [
+    "weight tying",
+    "tied word embeddings"
+  ],
+  "chapters": [
+    "transformer-block",
+    "transformer-overview",
+    "positional-encoding"
+  ]
+}

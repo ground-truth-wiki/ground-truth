@@ -1,0 +1,16 @@
+{
+  "id": "reliability-diagram",
+  "term": "Reliability diagram",
+  "def": "A plot of observed accuracy, or fraction of positives, against mean predicted confidence in bins; a perfectly calibrated model lies on the diagonal.",
+  "practice": "The quickest visual calibration check before using model or judge confidence for routing or abstention; show the count per bin, since sparse bins are noisy.",
+  "aliases": [
+    "calibration curve",
+    "calibration plot"
+  ],
+  "chapters": [
+    "probability-information",
+    "classical-ml",
+    "llm-as-judge",
+    "classification-metrics"
+  ]
+}

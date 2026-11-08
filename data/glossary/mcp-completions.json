@@ -1,0 +1,14 @@
+{
+  "id": "mcp-completions",
+  "term": "Completions (MCP)",
+  "def": "An MCP server utility, completion/complete, that suggests values for prompt arguments and resource-template variables as the user types, returning at most 100 ranked suggestions.",
+  "practice": "Declared with the completions capability since 2025-03-26; since 2025-06-18 requests can pass already-resolved arguments as context, so suggestions can depend on earlier choices.",
+  "aliases": [
+    "MCP completions",
+    "argument autocompletion"
+  ],
+  "chapters": [
+    "mcp-primitives",
+    "building-mcp-servers"
+  ]
+}

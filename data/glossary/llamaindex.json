@@ -1,0 +1,14 @@
+{
+  "id": "llamaindex",
+  "term": "LlamaIndex",
+  "def": "An open-source framework for connecting language models to data, with document loaders, indexes, retrievers and query engines, plus event-driven Workflows and agents built on top.",
+  "practice": "Strongest where ingestion and retrieval dominate; its Workflows can checkpoint their context and resume a run after a restart.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "rag-fundamentals",
+    "graph-workflow-runtimes",
+    "managed-agent-platforms"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "sleeper-agents",
+  "term": "Sleeper agent",
+  "def": "A model trained with a hidden backdoor so it behaves normally until a trigger, such as a particular year in the prompt, appears, and then acts harmfully.",
+  "practice": "Hubinger et al. (2024) showed such backdoors survived supervised fine-tuning, RL and adversarial training, so passing safety training does not prove a model is clean.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts",
+    "supply-chain-security"
+  ]
+}

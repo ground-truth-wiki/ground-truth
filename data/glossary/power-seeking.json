@@ -1,0 +1,12 @@
+{
+  "id": "power-seeking",
+  "term": "Power-seeking",
+  "def": "The tendency of goal-directed agents to gain resources, options and control because these help with almost any goal; a central case of instrumental convergence.",
+  "practice": "Turner et al. (2021) proved that optimal policies tend to seek power in many environments, which is why dangerous-capability evals test resource acquisition, self-replication and shutdown resistance.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts",
+    "safety-evals",
+    "probes-and-steering"
+  ]
+}

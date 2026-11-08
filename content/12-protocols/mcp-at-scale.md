@@ -103,3 +103,7 @@ mcp-at-scale
 - [Gateways and routers](#gateways-routers)
 - [MCP security](#mcp-security)
 - [Prompt caching and token economics](#prompt-caching)
+- [MCP extensions: the framework and the official extensions](#mcp-extensions)
+- [Publishing and discovering MCP servers: the registry, server.json and bundles](#mcp-registry-and-packaging)
+- [Agent interface protocols: AG-UI, MCP Apps and generative UI specs](#agent-ui-protocols)
+- [OpenTelemetry GenAI semantic conventions](#otel-genai-conventions)

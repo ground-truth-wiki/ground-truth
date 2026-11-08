@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fairness-bias-1",
+    "chapter": "fairness-bias",
+    "q": "An audit finds that a risk model has the same precision (PPV) and the same false negative rate in two groups, but 45% of one group belongs to the positive class against 25% of the other. In each group the model flags some true positives and some false positives. What follows?",
+    "options": [
+      "The false positive rates must differ between the groups",
+      "Equalized odds holds, because the false negative rates are equal",
+      "The selection rates must be equal, because precision is equal",
+      "Nothing follows until you know which features the model uses"
+    ],
+    "answer": 0,
+    "explain": "Chouldechova's identity, FPR = p/(1 − p) × (1 − PPV)/PPV × (1 − FNR), holds in each group. With PPV and FNR fixed and the base rate p different, the false positive rates cannot be equal. The tempting answer, equalized odds, needs equal false positive rates as well as equal true positive rates, so equal false negative rates alone are only equal opportunity."
+  },
+  {
+    "id": "fairness-bias-2",
+    "chapter": "fairness-bias",
+    "q": "A model picks patients for a free, low-risk program of extra nursing visits. Which group gap should the team look at first?",
+    "options": [
+      "False positive rates, because a wrongly selected patient bears a burden",
+      "False negative rates, because a patient who should have been selected and was missed loses a benefit",
+      "Only the selection-rate ratio, which must stay above 0.8",
+      "No gap, as long as group membership is not one of the model's features"
+    ],
+    "answer": 1,
+    "explain": "The decision helps the people it selects, so the harm is missing people who would qualify: compare false negative rates, that is, equal opportunity. Aequitas calls this the assistive case. The tempting answer, false positive rates, fits punitive decisions such as investigations, where a wrong flag is the harm; here a wrongly selected patient gets an extra visit and little else."
+  },
+  {
+    "id": "fairness-bias-3",
+    "chapter": "fairness-bias",
+    "q": "A team drops the ethnicity column from a credit model's features and says the model can no longer treat groups differently. Why is the claim weak?",
+    "options": [
+      "Other features, such as postcode, can encode ethnicity, so the model can still treat groups differently",
+      "Dropping the column guarantees demographic parity but not equalized odds",
+      "The claim holds as long as the model is calibrated on the whole population",
+      "The column must stay in the features so that the model can apply one threshold per group"
+    ],
+    "answer": 0,
+    "explain": "In large feature spaces a sensitive attribute is usually redundantly encoded in other features, so a model can still use it without seeing it. Keep the column for the audit, because measuring a group gap needs it. The tempting answer assumes unawareness buys at least one criterion; it guarantees none, including demographic parity, because proxies can still drive selection rates apart."
+  }
+]

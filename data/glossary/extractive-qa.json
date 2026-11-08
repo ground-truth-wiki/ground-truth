@@ -1,0 +1,18 @@
+{
+  "id": "extractive-qa",
+  "term": "Extractive question answering",
+  "def": "Question answering that returns a span copied from a given passage, predicted as the most likely start and end token positions.",
+  "practice": "The SQuAD-era setup behind many small QA models: the answer can never contain text outside the passage, unlike the abstractive answers an LLM writes in RAG.",
+  "aliases": [
+    "extractive QA"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "grounding-citations",
+    "specialist-models",
+    "encoders-and-decoders",
+    "nlp-tasks",
+    "text-generation-metrics",
+    "scalable-oversight"
+  ]
+}

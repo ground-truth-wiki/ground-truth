@@ -1,0 +1,11 @@
+{
+  "id": "sparsegpt",
+  "term": "SparseGPT",
+  "def": "A one-shot pruning method that sparsifies GPT-family models to 50 percent or more without retraining, by solving layer-wise sparse regression problems with approximate second-order weight updates.",
+  "practice": "Pruned OPT-175B and BLOOM-176B in under 4.5 hours in the original work (Frantar and Alistarh, 2023) and also supports 2:4 and 4:8 semi-structured sparsity.",
+  "aliases": [],
+  "chapters": [
+    "distillation-merging",
+    "llm-pruning"
+  ]
+}

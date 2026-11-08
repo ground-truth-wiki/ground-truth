@@ -1,0 +1,17 @@
+{
+  "id": "eleutherai",
+  "term": "EleutherAI",
+  "def": "A nonprofit AI research institute that began in July 2020 as a Discord community aiming to replicate GPT-3 in the open.",
+  "practice": "Its releases, including the Pile, GPT-J, GPT-NeoX-20B, the Pythia model suite and the lm-evaluation-harness, underpin much open-model research; the harness is a standard tool for scoring open models.",
+  "aliases": [
+    "Eleuther AI"
+  ],
+  "chapters": [
+    "eval-harnesses",
+    "what-is-a-harness",
+    "open-weight-frontier",
+    "pretraining-data",
+    "open-model-communities",
+    "ai-industry-map"
+  ]
+}

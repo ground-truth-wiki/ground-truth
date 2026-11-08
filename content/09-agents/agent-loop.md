@@ -114,3 +114,5 @@ agent-loop
 - [Anatomy of an agent harness](#harness-anatomy)
 - [Agent failure modes](#agent-failure-modes)
 - [Build your own harness](#build-your-own-harness)
+- [Chat Completions, Responses and Messages](#api-shapes)
+- [Language agents: research lineage and the CoALA framework](#agent-research-lineage)

@@ -1,0 +1,13 @@
+{
+  "id": "krippendorffs-alpha",
+  "term": "Krippendorff’s alpha",
+  "def": "An inter-annotator reliability coefficient that works with any number of annotators, tolerates missing labels and supports nominal, ordinal, interval and ratio data.",
+  "practice": "Use it when annotators label different subsets or labels are ordinal, such as 1-to-5 scores, where Cohen’s kappa does not fit; Krippendorff advises alpha of at least 0.8 for firm conclusions.",
+  "aliases": [
+    "Krippendorff alpha"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "llm-as-judge"
+  ]
+}

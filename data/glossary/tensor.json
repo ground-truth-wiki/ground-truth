@@ -1,0 +1,19 @@
+{
+  "id": "tensor",
+  "term": "Tensor",
+  "def": "A multidimensional array of numbers with a shape, a data type and a device, the basic data structure of deep learning frameworks; vectors and matrices are tensors with one and two axes.",
+  "practice": "Weights, activations and gradients are all tensors, and most framework bugs are shape, dtype or device mismatches, so print shapes early.",
+  "aliases": [
+    "ndarray"
+  ],
+  "chapters": [
+    "neural-networks",
+    "linear-algebra",
+    "distributed-training",
+    "hardware",
+    "quantization",
+    "numbers-to-know",
+    "tensors-and-shapes",
+    "optimizers"
+  ]
+}

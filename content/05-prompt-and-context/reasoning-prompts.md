@@ -101,3 +101,10 @@ reasoning-prompts
 - [Planning and reasoning strategies](#planning-reasoning)
 - [Prompt patterns and chaining](#prompt-chaining)
 - [RL with verifiable rewards](#rlvr-reasoning)
+- [Test-time search, sampling and verification](#test-time-search)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [A field guide to prompting techniques](#prompting-techniques)

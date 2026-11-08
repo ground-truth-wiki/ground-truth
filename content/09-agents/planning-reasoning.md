@@ -100,3 +100,12 @@ planning-reasoning
 - [Workflow patterns](#workflow-patterns)
 - [Reasoning models and test-time compute](#reasoning-models)
 - [Long-running and durable agents](#long-running-agents)
+- [Model-based RL, planning and Monte Carlo tree search](#planning-mcts)
+- [A field guide to prompting techniques](#prompting-techniques)
+- [Test-time search, sampling and verification](#test-time-search)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Can LLMs plan? Classical planners, search and verifiers](#llm-planning-debate)

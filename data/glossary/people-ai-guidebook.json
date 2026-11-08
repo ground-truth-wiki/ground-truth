@@ -1,0 +1,15 @@
+{
+  "id": "people-ai-guidebook",
+  "term": "People + AI Guidebook",
+  "def": "Google PAIR's guide to designing AI products, in six chapters: user needs and success, data collection and evaluation, mental models, explainability and trust, feedback and control, and errors and graceful failure.",
+  "practice": "First launched in 2019 and updated since; a common companion to Microsoft's Guidelines for Human-AI Interaction when reviewing AI product designs.",
+  "aliases": [
+    "PAIR Guidebook"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "agent-ux",
+    "ai-use-case-scoping",
+    "human-ai-interaction-guidelines"
+  ]
+}

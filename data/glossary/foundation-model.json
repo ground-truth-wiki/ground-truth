@@ -1,0 +1,17 @@
+{
+  "id": "foundation-model",
+  "term": "Foundation model",
+  "def": "A model trained on broad data at scale, usually with self-supervision, that can be adapted to a wide range of downstream tasks; Stanford researchers coined the term in 2021.",
+  "practice": "Cloud platforms use it as the umbrella word for the models they host, as in Amazon Bedrock's catalog; it covers language, vision, speech and multimodal models alike.",
+  "aliases": [],
+  "chapters": [
+    "ai-engineer-role",
+    "ai-engineering-stack",
+    "specialist-models",
+    "embodied-agents",
+    "frontier-families",
+    "trees-and-ensembles",
+    "time-series-forecasting",
+    "model-documentation"
+  ]
+}

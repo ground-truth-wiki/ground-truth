@@ -1,0 +1,15 @@
+{
+  "id": "gpu-utilization",
+  "term": "GPU utilization",
+  "def": "The share of a sampling window during which at least one kernel ran on the GPU, as nvidia-smi and NVML report it, not the share of the GPU's compute in use.",
+  "practice": "It can read 100% while tensor cores sit mostly idle; judge efficiency with DCGM's SM, tensor and DRAM activity metrics, or with MFU and MBU.",
+  "aliases": [
+    "GPU util",
+    "utilization.gpu"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "cost-engineering",
+    "cost-capacity"
+  ]
+}

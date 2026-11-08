@@ -1,0 +1,15 @@
+{
+  "id": "ctc",
+  "term": "Connectionist temporal classification",
+  "def": "A loss and decoding scheme for sequence labeling without known alignments: the model emits a label or a blank per input frame, then repeats and blanks are collapsed.",
+  "practice": "Used with encoder-only speech models such as wav2vec 2.0 (one prediction per 20 ms frame) and for forced alignment; without a language model its output tends toward phonetic spellings.",
+  "aliases": [
+    "CTC",
+    "CTC loss"
+  ],
+  "chapters": [
+    "speech-audio",
+    "speech-recognition"
+  ],
+  "abbr": "CTC"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "batch-size",
+  "term": "Batch size",
+  "def": "The number of examples processed together in one step: in training, the sequences or tokens behind one optimizer update; in inference, the requests a model serves at once.",
+  "practice": "In training, retune the learning rate when you change it (LLM batches are quoted in millions of tokens); in serving, larger batches raise throughput but slow each request.",
+  "aliases": [
+    "global batch size",
+    "mini-batch size"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "kv-cache",
+    "latency-throughput",
+    "inference-fundamentals",
+    "speculative-decoding",
+    "optimizers",
+    "training-hyperparameters"
+  ]
+}

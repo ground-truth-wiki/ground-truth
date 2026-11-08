@@ -1,0 +1,15 @@
+{
+  "id": "contextual-bandit",
+  "term": "Contextual bandit",
+  "def": "A bandit problem in which each decision comes with observed features, so the best action depends on the context, while actions do not affect future contexts.",
+  "practice": "Fits per-request choices such as which article or offer to show; decisions logged with their selection probabilities let teams evaluate a new policy offline.",
+  "aliases": [
+    "associative search"
+  ],
+  "chapters": [
+    "rl-primer",
+    "online-evaluation",
+    "bandits",
+    "recommender-systems"
+  ]
+}

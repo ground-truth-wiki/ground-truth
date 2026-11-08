@@ -1,0 +1,15 @@
+{
+  "id": "eigenvector",
+  "term": "Eigenvalue and eigenvector",
+  "def": "A nonzero vector v that a square matrix A only rescales, Av = λv; the scale factor λ is the matching eigenvalue.",
+  "practice": "Eigenvalues of the loss Hessian measure curvature along each direction, and eigenvectors of a covariance matrix are the principal directions PCA projects onto.",
+  "aliases": [
+    "eigenvalue",
+    "eigenvector",
+    "eigendecomposition"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "eigenvectors-svd-pca"
+  ]
+}

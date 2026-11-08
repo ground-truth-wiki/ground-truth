@@ -1,0 +1,15 @@
+{
+  "id": "algorithm-filing",
+  "term": "Algorithm filing",
+  "def": "China's requirement that providers of recommendation, deep synthesis and some generative AI services register their algorithms with the Cyberspace Administration of China.",
+  "practice": "In place since 2022 under the algorithmic recommendation provisions; more than 1,400 algorithms were registered by mid-2024, and filing is a practical market-entry step for AI services in China.",
+  "aliases": [
+    "algorithm registry",
+    "CAC algorithm registry",
+    "algorithm registration"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "global-ai-governance"
+  ]
+}

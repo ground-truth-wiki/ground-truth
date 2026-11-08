@@ -1,0 +1,19 @@
+{
+  "id": "weight-decay",
+  "term": "Weight decay",
+  "def": "A regularizer that shrinks weights toward zero by a small fraction at every optimizer step, limiting their growth.",
+  "practice": "For plain SGD it equals an L2 penalty but not for Adam, hence AdamW's decoupled form; LLaMA used 0.1, and biases and normalization weights are often exempt.",
+  "aliases": [
+    "decoupled weight decay"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "fine-tuning-practice",
+    "classical-ml",
+    "distributions-and-estimation",
+    "optimizers",
+    "training-hyperparameters",
+    "training-neural-networks",
+    "architecture-choices"
+  ]
+}

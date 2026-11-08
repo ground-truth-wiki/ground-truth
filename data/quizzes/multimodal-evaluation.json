@@ -1,0 +1,41 @@
+[
+  {
+    "id": "multimodal-evaluation-1",
+    "chapter": "multimodal-evaluation",
+    "q": "A paper reports FID 7.9 for its image model, computed on 5,000 samples with a PyTorch bilinear resize. Your model scores 8.6 on 50,000 samples with clean-fid. What can you conclude?",
+    "options": [
+      "Nothing yet: recompute both models in one pipeline with the same sample size, resizer and reference set",
+      "Their model is better, because lower FID is better",
+      "Your model is better, because 50,000 samples make an FID more trustworthy than 5,000",
+      "The models are tied, because a 0.7 gap is always within FID noise"
+    ],
+    "answer": 0,
+    "explain": "The FID estimate is biased and depends on the sample size, so scores compare only at equal N (Bińkowski et al., 2018). Resizing filters and compression shift FID by more than the gap between published methods (Parmar et al., 2021). “Lower is better” is true only when both numbers come from the same pipeline, and here they do not."
+  },
+  {
+    "id": "multimodal-evaluation-2",
+    "chapter": "multimodal-evaluation",
+    "q": "You fine-tune an image model with PickScore as the reward, and PickScore on your eval prompts rises sharply. Which next step tells you most about real quality?",
+    "options": [
+      "Report the PickScore gain, since PickScore was trained on real user preferences",
+      "Compare old and new models in a blind pairwise human study, plus a metric you did not train on",
+      "Train longer until PickScore stops rising",
+      "Recompute PickScore on more prompts to shrink its confidence interval"
+    ],
+    "answer": 1,
+    "explain": "Once a scorer is the training reward, optimization exploits its blind spots: in DDPO, a model tuned for VLM-judged alignment learned to write text that fooled the judge. Its agreement with people was measured before optimization, not after, so the gain needs independent evidence. More prompts would shrink the interval around a number that may no longer mean what it did."
+  },
+  {
+    "id": "multimodal-evaluation-3",
+    "chapter": "multimodal-evaluation",
+    "q": "On your four-option chart-QA set, a vision-language model scores 71% with the charts and 64% with the charts removed. What does this tell you?",
+    "options": [
+      "The model reads charts well, since 71% is far above the 25% chance level",
+      "The charts are too small and should be sent at a higher resolution",
+      "The model memorized the test set, so the score should be discarded",
+      "Many items can be answered without the chart, so the set barely tests chart reading; flag or drop the blind-solvable items"
+    ],
+    "answer": 3,
+    "explain": "The right baseline is the blind score, not chance: the chart adds only 7 points. MMStar and MMMU-Pro found the same problem in public benchmarks and filtered such items. Memorization is one possible cause, but questions and options can also leak the answer through language priors, so the fix is to clean the set, not to assume contamination."
+  }
+]

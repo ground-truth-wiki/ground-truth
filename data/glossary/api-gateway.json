@@ -1,0 +1,13 @@
+{
+  "id": "api-gateway",
+  "term": "API gateway",
+  "def": "The entry service in front of an application's APIs that handles authentication, tenancy, rate limits and quotas, request validation and routing before requests reach the backend.",
+  "practice": "In AI systems it enforces per-tenant token and cost limits and streams responses to clients; it is distinct from the AI gateway, which sits between the application and model providers.",
+  "aliases": [],
+  "chapters": [
+    "reference-architecture",
+    "reference-architectures",
+    "enterprise-readiness",
+    "cost-capacity"
+  ]
+}

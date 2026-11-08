@@ -1,0 +1,15 @@
+{
+  "id": "tokenization-disparity",
+  "term": "Tokenization disparity",
+  "def": "The gap in how many tokens one tokenizer needs for the same content in different languages or scripts, usually measured relative to English.",
+  "practice": "Petrov et al. (2023) found up to 15 times more tokens for some languages, which raises their API cost and latency and shrinks how much content fits in the context window.",
+  "aliases": [
+    "token tax",
+    "tokenization premium"
+  ],
+  "chapters": [
+    "tokenization",
+    "cost-engineering",
+    "responsible-ai"
+  ]
+}

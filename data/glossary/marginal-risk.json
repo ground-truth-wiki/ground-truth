@@ -1,0 +1,16 @@
+{
+  "id": "marginal-risk",
+  "term": "Marginal risk",
+  "def": "The additional risk a model or release creates compared with what is already available, such as existing models or ordinary internet search, rather than its absolute risk.",
+  "practice": "Central to open-weight release debates (Kapoor et al., 2024) and assessed in developer risk reports such as those under Anthropic's RSP v3.0; conclusions depend heavily on the chosen baseline.",
+  "aliases": [
+    "marginal risk assessment"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-safety-frameworks",
+    "threat-modeling",
+    "model-licenses",
+    "open-model-communities"
+  ]
+}

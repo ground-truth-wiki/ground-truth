@@ -1,0 +1,14 @@
+{
+  "id": "advantage-function",
+  "term": "Advantage function",
+  "def": "The difference A(s, a) = Q(s, a) − V(s): how much better taking action a in state s is than the policy's average behavior in that state.",
+  "practice": "Policy-gradient methods weight each action's log-probability by an advantage estimate; PPO gets it from a learned critic, GRPO from comparing rewards within a group of samples.",
+  "aliases": [
+    "advantage estimate"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization"
+  ]
+}

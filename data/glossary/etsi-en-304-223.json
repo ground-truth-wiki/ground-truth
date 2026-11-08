@@ -1,0 +1,14 @@
+{
+  "id": "etsi-en-304-223",
+  "term": "ETSI EN 304 223",
+  "def": "ETSI's European Standard of baseline cyber security requirements for AI models and systems, set out as 13 principles across secure design, development, deployment, maintenance and end of life.",
+  "practice": "Published in January 2026, building on ETSI TS 104 223; it addresses AI-specific threats such as data poisoning, model obfuscation and indirect prompt injection.",
+  "aliases": [
+    "EN 304 223"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "governance-regulation",
+    "ai-security-frameworks"
+  ]
+}

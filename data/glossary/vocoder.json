@@ -1,0 +1,13 @@
+{
+  "id": "vocoder",
+  "term": "Vocoder",
+  "def": "The component that converts an acoustic representation, typically a mel spectrogram or codec tokens, into an audio waveform.",
+  "practice": "WaveNet showed high-quality neural vocoding, GAN vocoders such as HiFi-GAN made it fast enough for real time, and in token-based TTS the codec decoder plays this role.",
+  "aliases": [
+    "neural vocoder"
+  ],
+  "chapters": [
+    "speech-audio",
+    "speech-synthesis"
+  ]
+}

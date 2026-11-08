@@ -1,0 +1,10 @@
+{
+  "id": "braintrust",
+  "term": "Braintrust",
+  "def": "A commercial platform for tracing AI applications, turning logs and human annotations into datasets, and running experiments and evals that compare prompts and models.",
+  "practice": "One of the hosted eval platforms in the eval-tooling landscape; as with any hosted tool, check data export and retention options before committing your eval history to it.",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling"
+  ]
+}

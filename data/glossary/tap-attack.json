@@ -1,0 +1,15 @@
+{
+  "id": "tap-attack",
+  "term": "Tree of Attacks with Pruning",
+  "def": "A black-box jailbreak method that extends PAIR with tree search, generating several candidate attack prompts per step and pruning unpromising ones before they reach the target.",
+  "practice": "Its authors report jailbreaking GPT-4 Turbo and GPT-4o on more than 80% of prompts while sending few queries to the target; red-teaming toolkits implement it.",
+  "aliases": [
+    "Tree of Attacks"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "red-teaming",
+    "jailbreak-techniques"
+  ],
+  "abbr": "TAP"
+}

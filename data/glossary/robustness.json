@@ -1,0 +1,19 @@
+{
+  "id": "robustness",
+  "term": "Robustness",
+  "def": "The ability of a system to maintain its level of performance under varied circumstances, including noisy, shifted or adversarial inputs and uses not anticipated at design time.",
+  "practice": "Test it explicitly with perturbed, out-of-distribution and adversarial cases; NIST notes it can trade off against accuracy and that a robust system should fail in ways that minimize harm.",
+  "aliases": [
+    "AI robustness"
+  ],
+  "chapters": [
+    "safety-evals",
+    "jailbreaks-misuse",
+    "prompt-injection",
+    "threat-modeling",
+    "secure-agent-design",
+    "governance-regulation",
+    "model-merging-methods",
+    "model-specs-instruction-hierarchy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "behavior-cloning",
+  "term": "Behavior cloning",
+  "def": "Imitation learning by plain supervised learning on expert state–action pairs, predicting the expert's action from each state.",
+  "practice": "Simple and stable, but small mistakes lead to states the demonstrations never covered, so errors compound, in the worst case quadratically in the horizon; DAgger addresses this.",
+  "aliases": [
+    "behavioral cloning"
+  ],
+  "chapters": [
+    "rl-primer",
+    "embodied-agents",
+    "sft",
+    "imitation-offline-rl",
+    "vla-models"
+  ]
+}

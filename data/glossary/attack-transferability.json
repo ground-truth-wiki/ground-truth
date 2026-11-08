@@ -1,0 +1,15 @@
+{
+  "id": "attack-transferability",
+  "term": "Attack transferability",
+  "def": "The tendency of adversarial inputs crafted against one model to also fool other models trained for similar tasks.",
+  "practice": "Lets attackers optimize against an open-weight or substitute model and then hit a closed API; GCG suffixes found on open models transferred this way.",
+  "aliases": [
+    "transfer attack",
+    "transferable adversarial examples",
+    "substitute model attack"
+  ],
+  "chapters": [
+    "jailbreaks-misuse",
+    "threat-modeling"
+  ]
+}

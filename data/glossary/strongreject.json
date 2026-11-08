@@ -1,0 +1,12 @@
+{
+  "id": "strongreject",
+  "term": "StrongREJECT",
+  "def": "A jailbreak benchmark whose automated grader scores how useful a response is for the harmful goal, not only whether the model refused.",
+  "practice": "Showed that standard grading overstates many published jailbreaks, which get past refusal but return degraded, less useful answers.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ]
+}

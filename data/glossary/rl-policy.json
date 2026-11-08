@@ -1,0 +1,19 @@
+{
+  "id": "rl-policy",
+  "term": "Policy (reinforcement learning)",
+  "def": "The agent's rule for choosing actions: a mapping from states or observations to actions, or to a probability distribution over actions.",
+  "practice": "In LLM post-training the policy is the language model being trained, and sampling from it at non-zero temperature supplies the exploration.",
+  "aliases": [
+    "policy network",
+    "policy model",
+    "RL policy"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization",
+    "agentic-rl",
+    "embodied-agents",
+    "reward-modeling"
+  ]
+}

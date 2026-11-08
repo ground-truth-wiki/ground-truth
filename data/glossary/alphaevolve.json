@@ -1,0 +1,13 @@
+{
+  "id": "alphaevolve",
+  "term": "AlphaEvolve",
+  "def": "Google DeepMind's evolutionary coding agent (May 2025) that uses Gemini models to propose changes to whole programs and automated evaluators to score and select them.",
+  "practice": "Found a way to multiply 4x4 complex matrices with 48 scalar multiplications, a scheduling heuristic that recovers about 0.7% of Google's worldwide compute, and a 23% faster Gemini kernel.",
+  "aliases": [],
+  "chapters": [
+    "self-improving-systems",
+    "ai-for-science",
+    "evolutionary-program-search",
+    "ai-for-mathematics"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "medusa",
+  "term": "Medusa",
+  "def": "A speculative-decoding method that adds extra decoding heads to the target model, each predicting a token further ahead, and verifies their combined candidates in one pass with tree attention.",
+  "practice": "Medusa-1 trains only the heads on a frozen model; Medusa-2 fine-tunes model and heads together for larger speedups, and an optional typical-acceptance scheme trades exact output matching for more accepted tokens.",
+  "aliases": [
+    "Medusa heads"
+  ],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

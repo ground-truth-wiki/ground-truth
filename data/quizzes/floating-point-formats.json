@@ -1,0 +1,41 @@
+[
+  {
+    "id": "floating-point-formats-1",
+    "chapter": "floating-point-formats",
+    "q": "A team switches a training run from FP16 to BF16. Both use 16 bits per value. What changes numerically?",
+    "options": [
+      "Values up to about 3.4 × 10³⁸ now fit and tiny gradients rarely underflow, but the gap between neighbors near 1 grows 8 times",
+      "Both range and precision improve, because BF16 spends its 16 bits more efficiently",
+      "Precision improves 8 times, but values above 65,504 now overflow",
+      "Nothing numerical changes; BF16 is only faster on newer hardware"
+    ],
+    "answer": 0,
+    "explain": "BF16 moves 3 bits from the mantissa to the exponent: 8 exponent bits instead of 5 give it FP32’s range, and 7 mantissa bits instead of 10 make the gap above 1 grow from 2⁻¹⁰ to 2⁻⁷. The tempting third option describes the opposite move, from BF16 to FP16. With a fixed bit budget you cannot gain both range and precision."
+  },
+  {
+    "id": "floating-point-formats-2",
+    "chapter": "floating-point-formats",
+    "q": "A run applies optimizer updates directly to BF16 weights, with no FP32 master copy. The loss stops improving although the gradients are nonzero and finite. Which explanation fits best?",
+    "options": [
+      "The gradients overflowed to infinity, so the optimizer skipped every step",
+      "Most updates are smaller than half the gap between neighboring BF16 values at the weights’ magnitude, so rounding returns the old weight",
+      "BF16 cannot represent numbers below 1, so small weights are set to zero",
+      "Round-to-nearest-even always rounds down, so weights can only shrink"
+    ],
+    "answer": 1,
+    "explain": "Near 1.0 the BF16 gap is 2⁻⁷ ≈ 0.0078, so an update of 0.001 rounds away and the weight never moves. FP32 master weights or stochastic rounding keep such updates. Overflow is the tempting answer, but the gradients are finite, BF16 has FP32’s range, and skipping steps on Inf or NaN is what an FP16 gradient scaler does, not a cause of silent stagnation."
+  },
+  {
+    "id": "floating-point-formats-3",
+    "chapter": "floating-point-formats",
+    "q": "An inference server returns slightly different logits for the same prompt depending on how many other requests share its batch, even with greedy decoding on one GPU type. What is the most likely root cause?",
+    "options": [
+      "Each batch uses a different random seed",
+      "The GPU uses stochastic rounding by default",
+      "Requests in the same batch attend to each other’s tokens",
+      "Floating-point addition is not associative, and the kernels’ summation order changes with batch size"
+    ],
+    "answer": 3,
+    "explain": "Summing the same numbers in a different order rounds differently, and kernels that split their reductions by batch size are not batch invariant, so a request’s result depends on its neighbors. The default rounding mode is deterministic round-to-nearest-even, so stochastic rounding is not the cause. A seed is tempting, but greedy decoding samples nothing, and batching keeps each request’s attention separate."
+  }
+]

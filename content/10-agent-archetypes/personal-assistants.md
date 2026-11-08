@@ -93,3 +93,6 @@ personal-assistants
 - [Prompt injection](#prompt-injection)
 - [Privacy](#privacy)
 - [Human in the loop](#human-in-the-loop)
+- [Agent memory architectures and benchmarks](#agent-memory-architectures)
+- [Agent identity and delegated authorization](#agent-identity-delegation)
+- [Agentic commerce and payment protocols](#agentic-commerce-protocols)

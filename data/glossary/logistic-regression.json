@@ -1,0 +1,20 @@
+{
+  "id": "logistic-regression",
+  "term": "Logistic regression",
+  "def": "A linear classification model that passes a weighted sum of features through the sigmoid, or softmax for several classes, to output class probabilities.",
+  "practice": "A fast, strong baseline for text and tabular classification whose probabilities are often reasonably calibrated, and the usual linear probe on frozen embeddings.",
+  "aliases": [
+    "softmax regression",
+    "multinomial logistic regression"
+  ],
+  "chapters": [
+    "classical-ml",
+    "representation-learning",
+    "classification-metrics",
+    "linear-and-kernel-models",
+    "word-embeddings",
+    "model-interpretability",
+    "nlp-tasks",
+    "model-theft"
+  ]
+}

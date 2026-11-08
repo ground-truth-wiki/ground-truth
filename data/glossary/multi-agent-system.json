@@ -1,0 +1,21 @@
+{
+  "id": "multi-agent-system",
+  "term": "Multi-agent system",
+  "def": "A system in which workflow execution is distributed across several coordinated agents, each with its own context, instructions and tools.",
+  "practice": "Start with one agent and split only when evals show context overload, parallelizable work or a need for independent review.",
+  "aliases": [
+    "multiagent system",
+    "MAS"
+  ],
+  "chapters": [
+    "multi-agent",
+    "what-is-an-agent",
+    "agent-failure-modes",
+    "deep-research",
+    "context-engineering",
+    "orchestration-frameworks",
+    "multi-agent-patterns",
+    "ai-scientist-agents"
+  ],
+  "abbr": "MAS"
+}

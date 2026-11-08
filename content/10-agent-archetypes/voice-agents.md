@@ -88,3 +88,14 @@ voice-agents
 - [Latency and throughput](#latency-throughput)
 - [Customer-support agents](#support-agents)
 - [Agent UX](#agent-ux)
+- [Speech recognition models](#speech-recognition)
+- [Speech synthesis and voice cloning](#speech-synthesis)
+- [Neural audio codecs and audio tokens](#audio-codecs-tokens)
+- [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Turn-taking, interruptions and latency in voice agents](#voice-turn-taking)
+- [Telephony and transport for voice agents](#voice-telephony)

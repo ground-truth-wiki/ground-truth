@@ -1,0 +1,16 @@
+{
+  "id": "selection-bias",
+  "term": "Selection bias",
+  "def": "Systematic error that arises when the way data is collected or selected makes the sample differ from the population of interest; coverage, sampling and non-response bias are forms of it.",
+  "practice": "Eval sets built from logs, thumbs-up feedback or volunteers inherit it, so compare the sample with real traffic before trusting a score.",
+  "aliases": [],
+  "chapters": [
+    "eval-datasets",
+    "online-evaluation",
+    "data-flywheel",
+    "responsible-ai",
+    "eval-statistics",
+    "validation-tuning",
+    "retrieval-test-collections"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "deep-learning",
+  "term": "Deep learning",
+  "def": "Machine learning with neural networks of many stacked layers that learn their own layered representations from raw data, trained end to end by gradient descent.",
+  "practice": "The approach behind every model in this wiki; \"deep\" refers to the number of layers, not to depth of understanding.",
+  "aliases": [
+    "deep neural network",
+    "DNN"
+  ],
+  "chapters": [
+    "neural-networks",
+    "representation-learning",
+    "classical-ml",
+    "calculus-optimization",
+    "ai-for-science",
+    "whos-who",
+    "history-of-ai",
+    "tensors-and-shapes"
+  ]
+}

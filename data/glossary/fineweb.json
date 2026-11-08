@@ -1,0 +1,18 @@
+{
+  "id": "fineweb",
+  "term": "FineWeb",
+  "def": "Hugging Face's open English web dataset of about 15T tokens from 96 Common Crawl snapshots, with FineWeb-Edu, a 1.3T-token subset filtered for educational value.",
+  "practice": "A strong open baseline with a documented, ablated pipeline; FineWeb-Edu lifts knowledge and reasoning benchmarks such as MMLU and ARC but discards most documents.",
+  "aliases": [
+    "FineWeb-Edu"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline",
+    "open-pretraining-datasets",
+    "compute-accounting",
+    "base-model-evaluation",
+    "hugging-face-ecosystem",
+    "deduplication-decontamination"
+  ]
+}

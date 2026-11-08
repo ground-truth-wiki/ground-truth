@@ -1,0 +1,15 @@
+{
+  "id": "temporal-difference-learning",
+  "term": "Temporal-difference learning",
+  "def": "Learning value estimates by bootstrapping: nudging a state's value toward the observed reward plus the discounted estimated value of the next state, in proportion to their gap, the TD error.",
+  "practice": "Updates after every step instead of waiting for the episode to end; TD(λ) blends one-step and multi-step targets, the same idea GAE applies to advantages.",
+  "aliases": [
+    "TD learning"
+  ],
+  "chapters": [
+    "rl-primer",
+    "value-based-rl",
+    "policy-gradient-methods"
+  ],
+  "abbr": "TD"
+}
