@@ -1641,12 +1641,13 @@ const mqMotion = W.matchMedia ? W.matchMedia('(prefers-reduced-motion: reduce)')
 function prefs() { return Store.s.prefs; }
 function effectiveTheme() { const t = prefs().theme || 'light'; /* gt: light theme by default */ return t === 'system' ? (mqDark.matches ? 'dark' : 'light') : t; }
 function reduceMotion() { const m = prefs().motion || 'system'; return m === 'reduce' || (m === 'system' && mqMotion.matches); }
+function setFocusMode(on) { D.body.classList.toggle('focus-mode', on); $$('[aria-label="Focus mode"]').forEach(b => b.setAttribute('aria-pressed', String(on))); } /* gt: one place to switch focus mode */
 function applyPrefs() {
   const p = prefs(), r = D.documentElement;
   const th = p.theme || 'light'; /* gt: light theme by default */
   if (th === 'light' || th === 'dark') r.setAttribute('data-theme', th); else r.removeAttribute('data-theme');
   r.style.setProperty('--fscale', String(p.fscale || 1));
-  r.style.setProperty('--measure', { narrow: '60ch', normal: '68ch', wide: '80ch' }[p.width || 'normal']);
+  r.style.setProperty('--measure', { narrow: 'var(--measure-narrow)', normal: 'var(--measure-normal)', wide: 'var(--measure-wide)' }[p.width || 'normal']); /* gt: line widths grow with the screen */
   r.classList.toggle('reduce-motion', reduceMotion());
   const tb = $('#theme-btn');
   if (tb) { const dark = effectiveTheme() === 'dark'; tb.replaceChildren(icon(dark ? 'ic-sun' : 'ic-moon')); tb.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme'); tb.title = tb.getAttribute('aria-label'); }
@@ -1928,7 +1929,7 @@ function pageChapter(c, main, rail) {
       el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Smaller text', title: 'Smaller text', onclick: fz(-0.05) }, el('span', { style: 'font-size:.8rem;font-weight:700', text: 'A−' })),
       el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Larger text', title: 'Larger text', onclick: fz(0.05) }, el('span', { style: 'font-size:1rem;font-weight:700', text: 'A+' })),
       el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Change line width', title: 'Change line width', onclick: () => { const o = ['narrow', 'normal', 'wide']; setPref('width', o[(o.indexOf(prefs().width || 'normal') + 1) % 3]); toast('Line width: ' + prefs().width); } }, icon('ic-width')),
-      el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Focus mode', title: 'Focus mode', 'aria-pressed': String(D.body.classList.contains('focus-mode')), onclick: e => { const on = D.body.classList.toggle('focus-mode'); e.currentTarget.setAttribute('aria-pressed', String(on)); } }, icon('ic-focus')),
+      el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Focus mode', title: 'Focus mode', 'aria-pressed': String(D.body.classList.contains('focus-mode')), onclick: () => setFocusMode(!D.body.classList.contains('focus-mode')) /* gt: one place to switch focus mode */ }, icon('ic-focus')),
       el('button', { class: 'icon-btn rail-btn', type: 'button', 'aria-label': 'On this page', title: 'On this page', onclick: () => openDrawer('rail') }, icon('ic-rail'))));
   main.append(head);
   if (c.status === 'seed') main.append(el('div', { class: 'banner' }, icon('ic-seed'), el('div', {}, el('b', { text: 'Seed chapter. ' }), 'The key ideas are here; the full treatment with visuals and quizzes comes later. To grow it, say ', el('code', { text: 'deepen ' + c.id }), '. ', copyBtn(() => 'deepen ' + c.id, 'Copy the command'))));
@@ -2410,6 +2411,7 @@ function init() {
   const hint = $('#search-btn .hint'); if (hint) hint.textContent = isMac ? '⌘K' : 'Ctrl K';
   $('#search-btn').addEventListener('click', () => openPalette());
   $('#theme-btn').addEventListener('click', () => setPref('theme', effectiveTheme() === 'dark' ? 'light' : 'dark'));
+  D.body.append(el('button', { class: 'btn focus-exit', type: 'button', onclick: () => setFocusMode(false) }, icon('ic-x', 'sm'), 'Exit focus mode', el('kbd', { text: 'Esc' }))); /* gt: a visible way out of focus mode */
   $('#nav-btn').addEventListener('click', () => openDrawer('nav'));
   $('#pal-input').addEventListener('input', renderResults);
   $('#pal-input').addEventListener('keydown', palKeys);
@@ -2420,7 +2422,7 @@ function init() {
     const tag = (e.target.tagName || '').toLowerCase(), typing = tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable;
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); if ($('#pal').hidden) openPalette(); else closePalette(); return; }
     if (e.key === '/' && !typing && $('#pal').hidden) { e.preventDefault(); openPalette(); return; }
-    if (e.key === 'Escape') { if (!$('#pal').hidden) closePalette(); else if (Pop.el) hidePop(); else closeDrawers(); }
+    if (e.key === 'Escape') { if (!$('#pal').hidden) closePalette(); else if (Pop.el) hidePop(); else if (D.body.classList.contains('focus-mode')) setFocusMode(false); /* gt: Escape leaves focus mode */ else closeDrawers(); }
     if (!typing) { kp = (e.key === KON[kp] || e.key.toLowerCase() === KON[kp]) ? kp + 1 : (e.key === KON[0] ? 1 : 0); if (kp === KON.length) { kp = 0; Store.s.badges.hallucinator = Store.s.badges.hallucinator || todayStr(); Store.save(); toast('Temperature set to 2.0. Everything you read now is slightly more creative.', 4200); if (W.__heroHallucinate && $('.hero')) W.__heroHallucinate(); else go('home'); } }
   });
   W.addEventListener('hashchange', route);
