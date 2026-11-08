@@ -31,7 +31,7 @@
     "q": "What is data lineage?",
     "options": [
       "Model ancestry",
-      "A record of where each dataset came from and what it may be used for",
+      "A record of where each dataset came from and what was built from it",
       "A labeling tool",
       "A compression method"
     ],

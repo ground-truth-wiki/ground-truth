@@ -26,11 +26,11 @@ Different models are like colleagues from different teams: all competent, each w
 ```
 
 ## How it works
-**Claude (Anthropic).** Anthropic’s guidance recommends clear, explicit instructions, XML tags to separate the parts of a prompt, examples, and placing long documents before the question. Newer models follow instructions precisely, so state exactly the behavior you want rather than relying on implied defaults. Extended thinking has its own controls; check the API documentation for current parameters and for which features, such as prefill, work with it.
+**Claude (Anthropic).** Anthropic’s guidance recommends clear, explicit instructions, XML tags to separate the parts of a prompt, examples, and placing long documents before the question. Newer models follow instructions precisely, so state exactly the behavior you want rather than relying on implied defaults. As of November 2026, Claude 4.6 and later models use adaptive thinking, steered by an effort setting rather than the older token budget, and prefilling the last assistant turn returns an error on them; use structured outputs or explicit format instructions instead.
 
 **GPT (OpenAI).** OpenAI publishes model-specific prompting guides. Recent models follow instructions literally, so explicit, well-structured instructions matter; for very long contexts its guidance has suggested placing instructions at both the start and the end (verify for your model). Reasoning models expose a reasoning-effort setting and prefer concise goals to step-by-step scripts.
 
-**Gemini (Google).** Google’s documentation covers system instructions, long-context use, where a query after long context is recommended, and multimodal inputs. Thinking models expose a thinking budget; check current parameter names.
+**Gemini (Google).** Google’s documentation covers system instructions, long-context use, where a query after long context is recommended, and multimodal inputs. Most models think dynamically by default; as of November 2026 the control is a thinking level (such as low, medium or high, varying by model), and the older thinking budget is deprecated from Gemini 3 on.
 
 **Open-weight models.** Use the model’s own chat template exactly, typically through the tokenizer’s template function; small formatting differences, such as a missing special token, quietly degrade quality. Some open models toggle a thinking mode through template flags or system prompt conventions. See [supervised fine-tuning](#sft).
 
@@ -71,7 +71,7 @@ model-specific-notes
 ```
 
 ## Go deeper
-- The current prompting guides from Anthropic (docs.claude.com), OpenAI and Google, for each model you use.
+- The current prompting guides from Anthropic (platform.claude.com/docs), OpenAI and Google, for each model you use.
 - Hugging Face documentation on chat templates for open models.
 
 ## Related

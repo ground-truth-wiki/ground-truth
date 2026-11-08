@@ -683,7 +683,7 @@
           "s": "XML tags recommended in the docs",
           "l": "Documents before the question",
           "r": "Extended thinking with its own parameters (check current API)",
-          "p": "Assistant prefill supported; check compatibility with extended thinking",
+          "p": "Not supported on Claude 4.6 and later (400 error); earlier models only. Use structured outputs or instructions instead",
           "x": "Follows instructions precisely; be explicit"
         },
         {
@@ -698,7 +698,7 @@
           "n": "Gemini (Google)",
           "s": "System instructions; Markdown or XML",
           "l": "Query after the long context",
-          "r": "Thinking budget on thinking models (check names)",
+          "r": "Thinking level (low, medium, high; minimal on some models); thinking budget deprecated from Gemini 3 on",
           "p": "Check current API",
           "x": "Strong long-context and multimodal input"
         },
@@ -948,7 +948,7 @@
           "f": "Claude",
           "t": "Opus, Sonnet, Haiku; Mythos tier",
           "o": "Closed, API and apps",
-          "x": "Public: Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1; Mythos Preview restricted (verified Nov 2026)"
+          "x": "Public: Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1; Mythos 5.1 only via trusted-access programs, Mythos Preview deprecated (verified Nov 2026)"
         },
         {
           "d": "OpenAI",
@@ -966,9 +966,9 @@
         },
         {
           "d": "Meta",
-          "f": "Llama",
-          "t": "Several sizes, dense and MoE (Llama 4, 2025)",
-          "o": "Open weights with a custom license",
+          "f": "Llama, then Muse",
+          "t": "Several sizes, dense and MoE (Llama 4, 2025); Muse Spark Open (October 2026)",
+          "o": "Open weights with custom licenses; flagship Muse Spark not open",
           "x": "Check license terms"
         },
         {

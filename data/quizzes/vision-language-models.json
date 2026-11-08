@@ -28,7 +28,7 @@
   {
     "id": "qvl-2",
     "chapter": "vision-language-models",
-    "q": "Under Anthropic’s published approximation, about how many tokens is a 1,000 × 1,000 image?",
+    "q": "Under Anthropic’s published rule (as of November 2026), about how many tokens is a 1,000 × 1,000 image?",
     "options": [
       "130",
       "1,300",
@@ -36,7 +36,7 @@
       "130,000"
     ],
     "answer": 1,
-    "explain": "1,000,000 ÷ 750 ≈ 1,333."
+    "explain": "36 × 36 patches of 28 × 28 pixels = 1,296 tokens."
   },
   {
     "id": "qvl-3",
