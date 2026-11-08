@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hallucination-factuality-1",
+    "chapter": "hallucination-factuality",
+    "q": "On 1,000 short factual questions, model A answers everything: 420 right, 580 wrong. Model B answers 500: 380 right, 120 wrong, 500 “I don’t know”. The prompt states a confidence target of t = 0.75. Which model scores higher, and why?",
+    "options": [
+      "A, because it has the higher accuracy (42% against 38%), and accuracy is what the confidence target protects",
+      "Neither: abstentions are dropped, so both are scored only on the questions they attempted",
+      "B: each wrong answer costs t/(1 − t) = 3 points, so A scores about −1.32 per question and B about +0.02",
+      "A, because the penalty applies only to wrong answers given with low stated confidence"
+    ],
+    "answer": 2,
+    "explain": "With +1 for right, 0 for “I don’t know” and −3 for wrong, A scores (420 − 3 × 580) ÷ 1,000 ≈ −1.32 and B scores (380 − 3 × 120) ÷ 1,000 = +0.02. The tempting answer is A’s higher accuracy, but accuracy gives abstaining no credit, which is exactly the incentive to guess that Kalai et al. (2025) describe. Dropping abstentions would score correct given attempted and reward a model that answers only its easiest question."
+  },
+  {
+    "id": "hallucination-factuality-2",
+    "chapter": "hallucination-factuality",
+    "q": "A support assistant answers “Refunds are possible within 30 days”, quoting the retrieved policy exactly. That policy was replaced last month by a 14-day policy. A faithfulness judge scores the answer 100%. What does this case show?",
+    "options": [
+      "The answer is faithful but not factual: faithfulness compares the answer with the supplied source, so a stale source passes; you also need fresh, dated sources or a check against the world",
+      "The faithfulness judge is broken, because an answer fully supported by its source cannot be false",
+      "It is an intrinsic hallucination, because the answer misrepresents the retrieved policy",
+      "It is an extrinsic hallucination, because the answer adds information that is not in the retrieved policy"
+    ],
+    "answer": 0,
+    "explain": "Faithfulness, or groundedness, measures agreement with the supplied source; factuality measures agreement with the world. Here the answer matches the source exactly, so the judge is right to pass it, and the error lives in the stale source that retrieval returned. The tempting labels intrinsic and extrinsic (Maynez et al., 2020) both describe answers that diverge from the source, which this one does not."
+  },
+  {
+    "id": "hallucination-factuality-3",
+    "chapter": "hallucination-factuality",
+    "q": "You sample a model ten times on a question about a popular myth. All ten answers state the same false claim in different words, and semantic entropy is low. What explains this?",
+    "options": [
+      "The sampling temperature was too high, which makes semantic entropy unreliable",
+      "Semantic entropy detects arbitrary errors (confabulations); a consistent error learned from training data forms one meaning cluster, so entropy stays low although the answer is false",
+      "Low semantic entropy proves the answer is correct, so the reference answer must be wrong",
+      "Semantic entropy needs token probabilities, so on sampled text alone it always returns zero"
+    ],
+    "answer": 1,
+    "explain": "Semantic entropy clusters samples that entail each other in both directions and measures how spread the meanings are. Ten paraphrases of one claim form one cluster, so the model looks certain. Farquhar et al. (2024) state that the method targets confabulations and is not suited to consistent errors learned from training data, which is what TruthfulQA-style myths are. Reading low entropy as proof of truth is the tempting mistake, and the discrete variant works from sampled text without token probabilities."
+  }
+]
