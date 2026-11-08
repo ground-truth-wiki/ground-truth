@@ -1639,11 +1639,12 @@ let pendingScroll = null, routeStart = 0, firstRoute = true, curChapter = null;
 const mqDark = W.matchMedia ? W.matchMedia('(prefers-color-scheme: dark)') : { matches: false, addEventListener() { } };
 const mqMotion = W.matchMedia ? W.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false, addEventListener() { } };
 function prefs() { return Store.s.prefs; }
-function effectiveTheme() { const t = prefs().theme || 'system'; return t === 'system' ? (mqDark.matches ? 'dark' : 'light') : t; }
+function effectiveTheme() { const t = prefs().theme || 'light'; /* gt: light theme by default */ return t === 'system' ? (mqDark.matches ? 'dark' : 'light') : t; }
 function reduceMotion() { const m = prefs().motion || 'system'; return m === 'reduce' || (m === 'system' && mqMotion.matches); }
 function applyPrefs() {
   const p = prefs(), r = D.documentElement;
-  if (p.theme === 'light' || p.theme === 'dark') r.setAttribute('data-theme', p.theme); else r.removeAttribute('data-theme');
+  const th = p.theme || 'light'; /* gt: light theme by default */
+  if (th === 'light' || th === 'dark') r.setAttribute('data-theme', th); else r.removeAttribute('data-theme');
   r.style.setProperty('--fscale', String(p.fscale || 1));
   r.style.setProperty('--measure', { narrow: '60ch', normal: '68ch', wide: '80ch' }[p.width || 'normal']);
   r.classList.toggle('reduce-motion', reduceMotion());
@@ -2341,7 +2342,7 @@ function pagePrefs(main) {
   const reset = el('button', { class: 'btn', type: 'button', text: 'Reset all progress' });
   reset.addEventListener('click', () => { if (!armed) { armed = true; reset.textContent = 'Click again to erase everything'; reset.style.borderColor = 'var(--bad)'; setTimeout(() => { armed = false; reset.textContent = 'Reset all progress'; reset.style.borderColor = ''; }, 5000); return; } Store.reset(); applyPrefs(); refreshNavTicks(); updateLevelChip(); toast('Progress reset'); route(); });
   main.append(el('div', { class: 'prefs-grid' },
-    el('fieldset', {}, el('legend', { text: 'Theme' }), radio('theme', [['Match the system', 'system'], ['Light', 'light'], ['Dark', 'dark']], p.theme || 'system', v => setPref('theme', v))),
+    el('fieldset', {}, el('legend', { text: 'Theme' }), radio('theme', [['Match the system', 'system'], ['Light', 'light'], ['Dark', 'dark']], p.theme || 'light', /* gt: light theme by default */ v => setPref('theme', v))),
     el('fieldset', {}, el('legend', { text: 'Reading' }), el('div', { class: 'ctl' }, el('label', { for: fsId }, el('span', { text: 'Text size' }), fo), fsr), el('p', { class: 'small', style: 'margin:8px 0 4px', text: 'Line width' }), radio('width', [['Narrow', 'narrow'], ['Normal', 'normal'], ['Wide', 'wide']], p.width || 'normal', v => setPref('width', v))),
     el('fieldset', {}, el('legend', { text: 'Motion' }), radio('motion', [['Match the system', 'system'], ['Reduce motion', 'reduce'], ['Allow motion', 'full']], p.motion || 'system', v => setPref('motion', v)), el('p', { class: 'small muted', text: 'Nothing ever animates on its own; steppers move only when you press play or step.' })),
     el('fieldset', {}, el('legend', { text: 'Export progress' }), exp, el('div', { class: 'row', style: 'margin-top:6px' }, copyBtn(() => JSON.stringify(Store.s), 'Copy progress JSON'))),
