@@ -1,0 +1,12 @@
+{
+  "id": "distributional-hypothesis",
+  "term": "Distributional hypothesis",
+  "def": "The idea that words occurring in similar contexts tend to have similar meanings, the premise behind learning word and text embeddings from co-occurrence.",
+  "practice": "Every embedding method from word2vec to LLM-based embedders relies on it, which is also why embeddings mirror the associations and biases of their training text.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "embeddings",
+    "word-embeddings"
+  ]
+}

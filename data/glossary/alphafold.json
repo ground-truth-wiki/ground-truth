@@ -1,0 +1,17 @@
+{
+  "id": "alphafold",
+  "term": "AlphaFold",
+  "def": "Google DeepMind's protein structure prediction models: AlphaFold 2 won CASP14 in 2020, and AlphaFold 3 (2024) uses a diffusion-based module to predict complexes of proteins with DNA, RNA, ligands and ions.",
+  "practice": "Its database holds over 200 million predicted structures, Hassabis and Jumper shared the 2024 Nobel Prize in Chemistry for it, and AlphaFold 3 code and weights are available for academic use.",
+  "aliases": [
+    "AlphaFold 2",
+    "AlphaFold2",
+    "AlphaFold 3"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "specialist-models",
+    "history-of-ai",
+    "ai-for-biology"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "access-token",
+  "term": "Access token",
+  "def": "A credential, usually short-lived, that a client presents to a resource server to use protected resources within the scopes and audience it was issued for.",
+  "practice": "Most are bearer tokens (RFC 6750) that anyone holding them can use; keep them out of model context and logs, and validate issuer, audience, expiry and scopes on every request.",
+  "aliases": [
+    "bearer token"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "secure-agent-design",
+    "agent-identity-delegation"
+  ]
+}

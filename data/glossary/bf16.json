@@ -1,0 +1,20 @@
+{
+  "id": "bf16",
+  "term": "BF16",
+  "def": "The bfloat16 format: 16 bits with 1 sign, 8 exponent and 7 mantissa bits, giving FP32's range with much less precision.",
+  "practice": "The usual format for training and serving LLMs: 2 bytes per value, no loss scaling needed, and coarse rounding as the price.",
+  "aliases": [
+    "bfloat16",
+    "brain floating point"
+  ],
+  "chapters": [
+    "quantization",
+    "memory-math",
+    "distributed-training",
+    "numbers-to-know",
+    "inference-fundamentals",
+    "kv-cache",
+    "training-neural-networks",
+    "floating-point-formats"
+  ]
+}

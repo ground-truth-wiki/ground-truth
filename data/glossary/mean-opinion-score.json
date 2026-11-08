@@ -1,0 +1,16 @@
+{
+  "id": "mean-opinion-score",
+  "term": "Mean opinion score",
+  "def": "The average of listeners' quality ratings on a 1 to 5 scale, the standard subjective measure for synthesized speech and transmitted audio, defined in ITU-T recommendations such as P.800.",
+  "practice": "Report MOS with listener count, test protocol and confidence intervals; neural MOS predictors such as UTMOS are cheap proxies, not substitutes for listening tests.",
+  "aliases": [
+    "MOS"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "speech-synthesis",
+    "multimodal-evaluation"
+  ],
+  "abbr": "MOS"
+}

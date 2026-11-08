@@ -1,0 +1,15 @@
+{
+  "id": "hipaa",
+  "term": "HIPAA",
+  "def": "The US Health Insurance Portability and Accountability Act of 1996 and its rules, which govern how covered entities and their business associates use, disclose and safeguard protected health information.",
+  "practice": "An AI vendor handling protected health information signs business associate agreements (BAAs) with its customers and its model providers, and may use only the provider features those agreements cover.",
+  "aliases": [
+    "Health Insurance Portability and Accountability Act"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "privacy",
+    "managed-agent-platforms"
+  ],
+  "abbr": "HIPAA"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "alignment-tax",
+  "term": "Alignment tax",
+  "def": "The cost in capability, performance or compute paid to make a model aligned, such as benchmark regressions after safety or preference training.",
+  "practice": "InstructGPT reported such regressions on public NLP datasets and reduced them by mixing pretraining updates into RL training; compare general-capability evals before and after safety tuning.",
+  "aliases": [
+    "alignment taxes"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "safety-character-training",
+    "alignment-concepts"
+  ]
+}

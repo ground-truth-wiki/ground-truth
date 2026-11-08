@@ -1,0 +1,17 @@
+{
+  "id": "regularization",
+  "term": "Regularization",
+  "def": "Any technique that constrains a model during training, such as weight penalties, dropout, early stopping or limits on tree depth, to reduce overfitting.",
+  "practice": "The knob that trades training fit for generalization; in scikit-learn a larger alpha strengthens it while a larger C weakens it, since C is the inverse strength.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "calculus-optimization",
+    "neural-networks",
+    "distributions-and-estimation",
+    "optimizers",
+    "linear-and-kernel-models",
+    "training-neural-networks",
+    "continual-learning"
+  ]
+}

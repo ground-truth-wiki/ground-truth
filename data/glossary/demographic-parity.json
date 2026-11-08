@@ -1,0 +1,14 @@
+{
+  "id": "demographic-parity",
+  "term": "Demographic parity",
+  "def": "The fairness criterion that a model’s positive-decision rate is the same for every group, that is, decisions are independent of group membership.",
+  "practice": "Reported as a selection-rate difference (0 is parity) or ratio (1 is parity); it ignores whether decisions are correct, so it can conflict with accuracy and equalized odds when base rates differ.",
+  "aliases": [
+    "statistical parity"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "eval-statistics",
+    "fairness-bias"
+  ]
+}

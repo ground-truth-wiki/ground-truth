@@ -1,0 +1,21 @@
+{
+  "id": "tau-bench",
+  "term": "τ-bench",
+  "def": "A benchmark where an agent with domain tools and policy rules serves a user simulated by a language model; τ²-bench adds dual control, where the user also changes shared state.",
+  "practice": "Common for customer-support agents; it reports pass^k, the chance of succeeding on all k repeated trials, which exposes inconsistency that single-run success hides.",
+  "aliases": [
+    "tau-bench",
+    "τ²-bench",
+    "tau2-bench"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "evaluating-agents",
+    "support-agents",
+    "eval-harnesses",
+    "metrics-graders",
+    "function-calling-training",
+    "benchmark-catalog",
+    "benchmark-validity"
+  ]
+}

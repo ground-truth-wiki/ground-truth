@@ -1,0 +1,16 @@
+{
+  "id": "program-aided-reasoning",
+  "term": "Program-aided reasoning",
+  "def": "Having the model write its reasoning as a program and running it in an interpreter to compute the answer, so arithmetic and logic are done by code rather than by the model.",
+  "practice": "Introduced in 2022 as PAL and Program of Thoughts; the prompt-level ancestor of code interpreters and code as action, useful whenever answers depend on exact calculation.",
+  "aliases": [
+    "PAL",
+    "program-aided language models",
+    "Program of Thoughts"
+  ],
+  "chapters": [
+    "reasoning-prompts",
+    "agent-tools",
+    "prompting-techniques"
+  ]
+}

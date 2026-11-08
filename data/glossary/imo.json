@@ -1,0 +1,17 @@
+{
+  "id": "imo",
+  "term": "International Mathematical Olympiad",
+  "def": "The annual mathematics competition for pre-university students, with six proof problems over two 4.5-hour sessions, used as a milestone for AI mathematical reasoning.",
+  "practice": "AI reached silver level in 2024 with formal systems and days of compute, and gold level (35 of 42) in 2025 with a natural-language Gemini model, graded by IMO coordinators, within the time limit.",
+  "aliases": [
+    "IMO"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "reasoning-models",
+    "benchmark-literacy",
+    "test-time-search",
+    "ai-for-mathematics"
+  ],
+  "abbr": "IMO"
+}

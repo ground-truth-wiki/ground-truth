@@ -1,0 +1,17 @@
+{
+  "id": "straight-through-estimator",
+  "term": "Straight-through estimator",
+  "def": "A gradient approximation that treats a non-differentiable step, such as rounding or picking a discrete value, as the identity function in the backward pass.",
+  "practice": "It lets quantization-aware training and models with discrete codes, such as VQ-VAEs, train with backpropagation despite rounding or argmax in the forward pass, at the price of a biased gradient.",
+  "aliases": [
+    "STE",
+    "straight-through gradient"
+  ],
+  "chapters": [
+    "quantization",
+    "calculus-optimization",
+    "automatic-differentiation",
+    "autoencoders-latent-spaces"
+  ],
+  "abbr": "STE"
+}

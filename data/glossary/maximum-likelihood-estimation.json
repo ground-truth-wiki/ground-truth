@@ -1,0 +1,19 @@
+{
+  "id": "maximum-likelihood-estimation",
+  "term": "Maximum likelihood estimation",
+  "def": "Estimating a model’s parameters by choosing the values that make the observed data most probable under the model.",
+  "practice": "Next-token pretraining and supervised fine-tuning are maximum likelihood estimation, since minimizing cross-entropy on the data is the same objective.",
+  "aliases": [
+    "MLE",
+    "maximum likelihood"
+  ],
+  "chapters": [
+    "probability-information",
+    "sft",
+    "distributions-and-estimation",
+    "information-theory-for-llms",
+    "loss-functions",
+    "language-modeling"
+  ],
+  "abbr": "MLE"
+}

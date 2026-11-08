@@ -1,0 +1,16 @@
+{
+  "id": "auxiliary-loss",
+  "term": "Auxiliary loss",
+  "def": "An extra term added to the main training loss to encourage a property the main objective does not, such as balanced expert load or bounded logits.",
+  "practice": "Mixture-of-experts models add a load-balancing loss so the router spreads tokens across experts, but too large a weight hurts quality, which motivated DeepSeek-V3's auxiliary-loss-free balancing.",
+  "aliases": [
+    "auxiliary losses",
+    "load-balancing loss"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "calculus-optimization",
+    "loss-functions",
+    "moe-routing"
+  ]
+}

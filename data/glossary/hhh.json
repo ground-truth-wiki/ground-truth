@@ -1,0 +1,15 @@
+{
+  "id": "hhh",
+  "term": "Helpful, honest and harmless",
+  "def": "A three-part statement of what an aligned AI assistant should be, introduced by Anthropic researchers (Askell et al., 2021) and widely used to frame preference data and evaluations.",
+  "practice": "The three goals conflict at the edges, for example helpfulness against harm avoidance on borderline requests; model specs and constitutions spell out how to trade them off.",
+  "aliases": [
+    "HHH"
+  ],
+  "chapters": [
+    "safety-character-training",
+    "alignment-concepts",
+    "preference-optimization"
+  ],
+  "abbr": "HHH"
+}

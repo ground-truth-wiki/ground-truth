@@ -1,0 +1,17 @@
+{
+  "id": "chatgpt",
+  "term": "ChatGPT",
+  "def": "OpenAI's chat assistant, launched on 30 November 2022 on a fine-tuned GPT-3.5 model, which brought large language model assistants to a mass audience.",
+  "practice": "It reached about 100 million monthly users two months after launch, and its release is the usual marker for the start of the generative AI boom; the models behind it change often.",
+  "aliases": [],
+  "chapters": [
+    "low-code-builders",
+    "frontier-families",
+    "ai-product-ux",
+    "history-of-ai",
+    "function-calling-training",
+    "nlp-tasks",
+    "benchmark-validity",
+    "learning-to-rank"
+  ]
+}

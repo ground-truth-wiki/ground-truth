@@ -1,0 +1,16 @@
+{
+  "id": "control-evaluation",
+  "term": "Control evaluation",
+  "def": "A test of whether a deployment's control measures hold when a red team makes the untrusted model actively try to subvert them, scored on safety and usefulness.",
+  "practice": "Supplies the evidence for a control-based safety case; Korbak et al. (2025) argue the red team's affordances should scale with the deployed model's actual capabilities.",
+  "aliases": [
+    "control eval"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "red-teaming",
+    "safety-evals",
+    "ai-control",
+    "safety-cases"
+  ]
+}

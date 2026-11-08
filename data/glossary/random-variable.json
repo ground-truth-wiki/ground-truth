@@ -1,0 +1,12 @@
+{
+  "id": "random-variable",
+  "term": "Random variable",
+  "def": "A quantity whose value depends on the outcome of a random process, formally a function from outcomes to numbers, and is described by a probability distribution.",
+  "practice": "The next sampled token, a judge’s verdict and an eval score are all random variables, which is why a single run can mislead.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "eval-statistics",
+    "distributions-and-estimation"
+  ]
+}

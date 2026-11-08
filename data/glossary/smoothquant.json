@@ -1,0 +1,11 @@
+{
+  "id": "smoothquant",
+  "term": "SmoothQuant",
+  "def": "A post-training method (Xiao et al., 2022) that moves quantization difficulty from activation outliers into the weights with a mathematically equivalent per-channel rescaling, enabling 8-bit weights and activations.",
+  "practice": "Made INT8 W8A8 inference practical for large models without retraining; its outlier-migration idea recurs in later methods.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "quantization-methods"
+  ]
+}

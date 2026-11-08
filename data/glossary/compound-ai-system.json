@@ -1,0 +1,16 @@
+{
+  "id": "compound-ai-system",
+  "term": "Compound AI system",
+  "def": "A system that tackles AI tasks with multiple interacting components, such as several model calls, retrievers and external tools, rather than a single model call.",
+  "practice": "Popularized by a 2024 Berkeley AI Research blog post and central to DSPy: quality comes from the whole pipeline, so evaluate and optimize the system, not the model alone.",
+  "aliases": [
+    "compound AI"
+  ],
+  "chapters": [
+    "ai-engineering-stack",
+    "system-design-method",
+    "prompt-optimization",
+    "what-is-an-agent",
+    "workflow-patterns"
+  ]
+}

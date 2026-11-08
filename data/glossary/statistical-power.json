@@ -1,0 +1,15 @@
+{
+  "id": "statistical-power",
+  "term": "Statistical power",
+  "def": "The probability that an experiment detects an effect of a given size when that effect is real; it depends on sample size, effect size, variance and significance level.",
+  "practice": "Aim for about 80% before running an eval comparison or A/B test; Card et al. (2020) found many NLP comparisons underpowered, with typical 2,000-sentence translation test sets at about 75% power for a 1 BLEU difference.",
+  "aliases": [
+    "power analysis"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "online-evaluation",
+    "prompt-robustness",
+    "online-experiments"
+  ]
+}

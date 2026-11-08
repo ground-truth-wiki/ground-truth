@@ -1,0 +1,11 @@
+{
+  "id": "ip-adapter",
+  "term": "IP-Adapter",
+  "def": "A lightweight adapter that adds separate image cross-attention layers to a frozen diffusion model, so a reference image steers subject or style alongside the text prompt.",
+  "practice": "About 22M trainable parameters, with checkpoints around 100 MB; a scale near 0.5 usually balances text and image prompts, and it combines with ControlNet for structure.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "image-editing-control"
+  ]
+}

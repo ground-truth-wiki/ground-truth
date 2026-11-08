@@ -1,0 +1,18 @@
+{
+  "id": "web-crawler",
+  "term": "Web crawler",
+  "def": "A program that discovers and fetches web pages by following links, within rate limits and robots.txt rules, to build a search index or dataset.",
+  "practice": "Behind search engines, web-scale pretraining corpora and website connectors for RAG; crawlers should honor robots.txt per user agent (RFC 9309), which many sites now use to block AI crawlers.",
+  "aliases": [
+    "crawler",
+    "web spider"
+  ],
+  "chapters": [
+    "ir-foundations",
+    "pretraining-data",
+    "ingestion-parsing",
+    "deep-research",
+    "web-search-hosted-retrieval",
+    "data-licensing-consent"
+  ]
+}

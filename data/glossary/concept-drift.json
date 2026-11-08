@@ -1,0 +1,16 @@
+{
+  "id": "concept-drift",
+  "term": "Concept drift",
+  "def": "A change over time in the relationship between inputs and the correct output, so a model trained on older data gives wrong answers even when the inputs look the same.",
+  "practice": "Input monitoring alone misses it; only fresh labels or outcome metrics reveal it, as when policies, prices or facts change, so retrain the model or update its retrieval sources.",
+  "aliases": [
+    "concept shift"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "data-flywheel",
+    "classical-ml",
+    "anomaly-drift-detection",
+    "data-validation-drift"
+  ]
+}

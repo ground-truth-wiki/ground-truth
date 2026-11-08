@@ -1,0 +1,14 @@
+{
+  "id": "gaia",
+  "term": "GAIA",
+  "def": "A benchmark of 466 real-world questions for general AI assistants that are simple for humans but need reasoning, multimodality, web browsing and tool use.",
+  "practice": "At release humans scored about 92% and GPT-4 with plugins about 15%; useful for comparing assistant harnesses, with test-set answers kept hidden.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "evaluating-agents",
+    "research-analyst-agents",
+    "benchmark-catalog",
+    "multi-agent-patterns"
+  ]
+}

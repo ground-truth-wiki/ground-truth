@@ -1,0 +1,17 @@
+{
+  "id": "data-annotation",
+  "term": "Data annotation",
+  "def": "Attaching descriptive information such as labels, spans, bounding boxes or preference judgments to data without changing the data itself.",
+  "practice": "Annotation quality caps model and eval quality, so write guidelines, measure inter-annotator agreement and audit samples before scaling up.",
+  "aliases": [
+    "data labeling",
+    "data labelling"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "data-strategy",
+    "sft",
+    "preference-optimization",
+    "error-analysis"
+  ]
+}

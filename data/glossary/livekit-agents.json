@@ -1,0 +1,11 @@
+{
+  "id": "livekit-agents",
+  "term": "LiveKit Agents",
+  "def": "LiveKit’s open-source framework for realtime voice and multimodal agents that join LiveKit rooms as participants and combine plugins for speech recognition, language models, speech synthesis and realtime model APIs.",
+  "practice": "It bundles Silero VAD, a turn-detector model that uses both meaning and acoustics, interruption handling that recovers from false interruptions, and phone calls through LiveKit SIP trunks.",
+  "aliases": [],
+  "chapters": [
+    "voice-agents",
+    "voice-turn-taking"
+  ]
+}

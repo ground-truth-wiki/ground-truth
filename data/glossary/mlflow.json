@@ -1,0 +1,12 @@
+{
+  "id": "mlflow",
+  "term": "MLflow",
+  "def": "An open-source platform for the machine-learning lifecycle, covering experiment tracking, a model registry, packaging and deployment, plus tracing, evaluation and prompt management for LLM and agent applications.",
+  "practice": "A common default for tracking and registry in self-managed, Databricks and Azure Machine Learning stacks; Microsoft's GenAIOps guidance suggests checking its language-model features before adopting new tools.",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling",
+    "fine-tuning-practice",
+    "mlops-foundations"
+  ]
+}

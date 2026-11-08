@@ -1,0 +1,19 @@
+{
+  "id": "bits-per-byte",
+  "term": "Bits per byte",
+  "def": "A language model’s total negative log-likelihood on a text, converted to bits, divided by the text’s length in UTF-8 bytes.",
+  "practice": "Unlike per-token perplexity it does not depend on the tokenizer, so models with different vocabularies can be compared; The Pile, Paloma and lm-evaluation-harness report it.",
+  "aliases": [
+    "BPB"
+  ],
+  "chapters": [
+    "probability-information",
+    "tokenization",
+    "benchmark-literacy",
+    "pretraining-data",
+    "information-theory-for-llms",
+    "pretraining-run",
+    "base-model-evaluation"
+  ],
+  "abbr": "BPB"
+}

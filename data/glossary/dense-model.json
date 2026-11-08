@@ -1,0 +1,18 @@
+{
+  "id": "dense-model",
+  "term": "Dense model",
+  "def": "A model in which every parameter is used for every token, as opposed to a sparse mixture-of-experts model.",
+  "practice": "Total and active parameters are equal, so memory and per-token compute both scale with the headline size; an MoE of the same total size computes far less per token.",
+  "aliases": [
+    "dense transformer"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "scaling-laws",
+    "memory-math",
+    "numbers-to-know",
+    "pretraining-run",
+    "model-types",
+    "model-documentation"
+  ]
+}

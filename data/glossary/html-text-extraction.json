@@ -1,0 +1,14 @@
+{
+  "id": "html-text-extraction",
+  "term": "HTML text extraction",
+  "def": "Turning a crawled web page's HTML into clean main-body text by stripping navigation, menus, ads and other boilerplate.",
+  "practice": "The extractor changes downstream quality: FineWeb found trafilatura run on raw WARC files clearly beat Common Crawl's pre-extracted WET text, which keeps too much menu text.",
+  "aliases": [
+    "boilerplate removal",
+    "main-content extraction"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "ingestion-parsing"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "semi-supervised-learning",
+  "term": "Semi-supervised learning",
+  "def": "Training on a small labeled set plus a larger unlabeled set, using the unlabeled data to learn the structure of the input distribution.",
+  "practice": "Useful when labels are expensive; self-training with pseudo-labels is the common recipe, and unlabeled data from a different distribution than the labeled data can hurt rather than help.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "labeling-annotation",
+    "graph-neural-networks"
+  ]
+}

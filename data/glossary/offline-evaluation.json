@@ -1,0 +1,15 @@
+{
+  "id": "offline-evaluation",
+  "term": "Offline evaluation",
+  "def": "Running a system on a curated, fixed eval set before or outside deployment, as opposed to scoring sampled production traffic.",
+  "practice": "Offline evals gate releases and compare versions on identical cases; online evaluation on live traffic then shows what real users experience.",
+  "aliases": [
+    "offline eval"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "why-evals",
+    "ci-cd-for-ai",
+    "reference-architecture"
+  ]
+}

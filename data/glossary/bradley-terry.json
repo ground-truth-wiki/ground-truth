@@ -1,0 +1,21 @@
+{
+  "id": "bradley-terry",
+  "term": "Bradley–Terry model",
+  "def": "A model of pairwise comparisons in which the probability that item i beats item j is σ(sᵢ − sⱼ), the logistic function of the difference between their latent scores.",
+  "practice": "RLHF reward models are trained with its loss on preference pairs, DPO is derived from it, and arena leaderboards fit it to human votes to produce their scores.",
+  "aliases": [
+    "Bradley–Terry",
+    "Bradley-Terry",
+    "BT model"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "benchmark-literacy",
+    "llm-as-judge",
+    "eval-statistics",
+    "loss-functions",
+    "reward-modeling",
+    "dpo-and-relatives",
+    "arenas-leaderboards"
+  ]
+}

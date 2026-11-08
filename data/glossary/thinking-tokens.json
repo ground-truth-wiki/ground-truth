@@ -1,0 +1,19 @@
+{
+  "id": "thinking-tokens",
+  "term": "Thinking tokens",
+  "def": "Tokens a reasoning model generates to reason before or between its visible outputs; billed as output and counted against the output limit and context window even when hidden.",
+  "practice": "OpenAI suggests reserving at least 25,000 tokens for reasoning plus output when starting out; log thinking tokens separately from visible output for cost and latency analysis.",
+  "aliases": [
+    "reasoning tokens"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "cost-engineering",
+    "test-time-scaling",
+    "model-apis",
+    "rlvr-reasoning",
+    "prompt-caching",
+    "function-calling-training",
+    "model-types"
+  ]
+}

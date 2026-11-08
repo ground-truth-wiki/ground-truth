@@ -1,0 +1,17 @@
+{
+  "id": "wide-expert-parallelism",
+  "term": "Wide expert parallelism",
+  "def": "Expert parallelism spread across many GPUs, often several nodes, so each GPU holds only a few experts of a large mixture-of-experts model and can run a larger batch.",
+  "practice": "DeepSeek's published V3/R1 decode setup used EP144 across 18 nodes with two routed experts per GPU; it depends on fast all-to-all kernels and expert load balancing.",
+  "aliases": [
+    "wide EP",
+    "Wide-EP",
+    "large-scale expert parallelism"
+  ],
+  "chapters": [
+    "disaggregated-serving",
+    "mixture-of-experts",
+    "serving-engines",
+    "moe-serving"
+  ]
+}

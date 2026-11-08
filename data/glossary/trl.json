@@ -1,0 +1,20 @@
+{
+  "id": "trl",
+  "term": "TRL",
+  "def": "Hugging Face's open-source post-training library, with trainers for supervised fine-tuning, preference optimization such as DPO and KTO, reinforcement learning such as GRPO and RLOO, reward modeling and distillation.",
+  "practice": "A common starting point for SFT and RL fine-tuning of open models, often combined with PEFT for LoRA and with vLLM for fast generation during online RL.",
+  "aliases": [
+    "Transformers Reinforcement Learning",
+    "Transformer Reinforcement Learning"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "preference-optimization",
+    "rlvr-reasoning",
+    "rl-environment-harnesses",
+    "sft",
+    "loss-functions",
+    "training-hyperparameters",
+    "dpo-and-relatives"
+  ]
+}

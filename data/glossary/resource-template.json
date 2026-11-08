@@ -1,0 +1,11 @@
+{
+  "id": "resource-template",
+  "term": "Resource template",
+  "def": "A parameterized family of MCP resources described by an RFC 6570 URI template, such as file:///{path}, and listed with resources/templates/list.",
+  "practice": "Lets a server expose many records without listing each one; pair it with MCP completions so users get suggested values for the template variables.",
+  "aliases": [],
+  "chapters": [
+    "mcp-primitives",
+    "building-mcp-servers"
+  ]
+}

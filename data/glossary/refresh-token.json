@@ -1,0 +1,11 @@
+{
+  "id": "refresh-token",
+  "term": "Refresh token",
+  "def": "A longer-lived OAuth credential that a client exchanges at the authorization server for new access tokens without asking the user again.",
+  "practice": "Unattended agents depend on them, so store them encrypted, rotate them and revoke them on logout; MCP clients must not assume an authorization server will issue one.",
+  "aliases": [],
+  "chapters": [
+    "mcp-authorization",
+    "long-running-agents"
+  ]
+}

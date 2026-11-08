@@ -1,0 +1,19 @@
+{
+  "id": "dino",
+  "term": "DINO",
+  "def": "A self-supervised vision method from Meta in which a student network learns to match a momentum-averaged teacher's outputs on different crops of the same image, without labels.",
+  "practice": "DINOv2 (2023) and DINOv3 (2025) features work frozen across classification, retrieval, segmentation and depth estimation, so they often serve as backbones for vision and robotics models.",
+  "aliases": [
+    "DINOv2",
+    "DINOv3",
+    "self-distillation with no labels"
+  ],
+  "chapters": [
+    "representation-learning",
+    "vision-language-models",
+    "self-supervised-methods",
+    "vlm-architectures",
+    "visual-grounding",
+    "vla-models"
+  ]
+}

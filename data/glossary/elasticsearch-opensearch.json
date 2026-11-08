@@ -1,0 +1,16 @@
+{
+  "id": "elasticsearch-opensearch",
+  "term": "Elasticsearch and OpenSearch",
+  "def": "Distributed search and analytics engines built on Apache Lucene that combine keyword search, aggregations and vector search; OpenSearch is the Apache 2.0 licensed fork of Elasticsearch 7.10.",
+  "practice": "A common choice when hybrid retrieval must run at scale next to existing site or log search; the two have diverged in licenses, APIs and features since the 2021 fork, so check which one a guide targets.",
+  "aliases": [
+    "Elasticsearch",
+    "OpenSearch"
+  ],
+  "chapters": [
+    "vector-databases",
+    "hybrid-retrieval",
+    "ir-foundations",
+    "learning-to-rank"
+  ]
+}

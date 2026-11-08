@@ -1,0 +1,15 @@
+{
+  "id": "pipeline-parallelism",
+  "term": "Pipeline parallelism",
+  "def": "Placing consecutive groups of layers on different devices and streaming micro-batches through them like an assembly line.",
+  "practice": "It communicates only activations at stage boundaries, so it can span nodes; idle time while the pipeline fills and drains (the bubble) shrinks with more micro-batches and with schedules such as 1F1B, interleaved or zero-bubble.",
+  "aliases": [
+    "pipeline model parallelism"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "parallelism-strategies"
+  ],
+  "abbr": "PP"
+}

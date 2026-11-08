@@ -1,0 +1,11 @@
+{
+  "id": "zero-shot-classification",
+  "term": "Zero-shot image classification",
+  "def": "Classifying images into labels the model never trained on by encoding each label name as a text prompt and picking the one closest to the image embedding.",
+  "practice": "A quick baseline for tagging and filtering images without training data, popularized by CLIP; accuracy depends heavily on prompt wording such as 'a photo of a {label}'.",
+  "aliases": [],
+  "chapters": [
+    "vision-language-models",
+    "representation-learning"
+  ]
+}

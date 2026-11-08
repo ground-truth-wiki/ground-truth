@@ -1,0 +1,12 @@
+{
+  "id": "openrlhf",
+  "term": "OpenRLHF",
+  "def": "An open-source framework for RLHF and RL training of LLMs (Hu et al., 2024) built on Ray, vLLM, DeepSpeed and Hugging Face Transformers.",
+  "practice": "Named alongside veRL and TRL as an open stack for RLVR and large-scale rollouts; its paper reports 1.22x to 1.68x training speedups over comparable frameworks.",
+  "aliases": [],
+  "chapters": [
+    "rl-environment-harnesses",
+    "rlvr-reasoning",
+    "preference-optimization"
+  ]
+}

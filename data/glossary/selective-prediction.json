@@ -1,0 +1,18 @@
+{
+  "id": "selective-prediction",
+  "term": "Selective prediction",
+  "def": "Letting a model abstain on inputs where its confidence falls below a threshold, trading coverage (the share of inputs it answers) for lower error on those it answers.",
+  "practice": "The formal version of ‘send low-confidence cases to a human’: plot error against coverage on held-out data and pick the threshold that meets your error target.",
+  "aliases": [
+    "selective classification",
+    "reject option",
+    "risk-coverage curve"
+  ],
+  "chapters": [
+    "document-extraction",
+    "human-in-the-loop",
+    "probability-information",
+    "llm-uncertainty",
+    "fairness-bias"
+  ]
+}

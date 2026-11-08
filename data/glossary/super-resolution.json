@@ -1,0 +1,15 @@
+{
+  "id": "super-resolution",
+  "term": "Super-resolution",
+  "def": "Producing a higher-resolution image from a lower-resolution one, synthesizing plausible detail rather than only interpolating pixels.",
+  "practice": "Used as a final upscaling stage and inside cascaded generators; generative upscalers can invent detail, which matters for documents, evidence and medical images.",
+  "aliases": [
+    "upscaling",
+    "upscaler"
+  ],
+  "chapters": [
+    "image-generation",
+    "image-editing-control",
+    "multimodal-evaluation"
+  ]
+}

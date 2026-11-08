@@ -1,0 +1,17 @@
+{
+  "id": "voice-to-voice-latency",
+  "term": "Voice-to-voice latency",
+  "def": "The time from the end of the user’s speech to the start of the agent’s spoken reply, the main responsiveness measure for voice agents.",
+  "practice": "Measure it at p50 and p95 on real networks; human replies typically come within about 500 ms, and one widely read practitioner guide treats 1,500 ms as an important target.",
+  "aliases": [
+    "time to first audio",
+    "latency to first audio"
+  ],
+  "chapters": [
+    "voice-agents",
+    "eval-recipes",
+    "latency-throughput",
+    "speech-synthesis",
+    "voice-turn-taking"
+  ]
+}

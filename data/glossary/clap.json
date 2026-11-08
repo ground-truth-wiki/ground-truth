@@ -1,0 +1,15 @@
+{
+  "id": "clap",
+  "term": "Contrastive language-audio pretraining",
+  "def": "CLIP-style training of paired audio and text encoders so that matching sounds and descriptions land close together in a shared embedding space.",
+  "practice": "Used for text-to-audio retrieval, zero-shot audio classification, conditioning audio generators such as AudioLDM, and scoring text-audio alignment.",
+  "aliases": [
+    "CLAP"
+  ],
+  "chapters": [
+    "speech-audio",
+    "representation-learning",
+    "music-generation"
+  ],
+  "abbr": "CLAP"
+}

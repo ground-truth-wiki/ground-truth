@@ -1,0 +1,14 @@
+{
+  "id": "alexnet",
+  "term": "AlexNet",
+  "def": "The deep convolutional neural network by Krizhevsky, Sutskever and Hinton that won the 2012 ImageNet challenge by a wide margin, trained on two GPUs.",
+  "practice": "It marks the moment deep learning took over computer vision and helped make GPUs the default hardware for neural networks; its roughly 60 million parameters are tiny by today's standards.",
+  "aliases": [],
+  "chapters": [
+    "neural-networks",
+    "hardware",
+    "the-canon",
+    "history-of-ai",
+    "convolutional-networks"
+  ]
+}

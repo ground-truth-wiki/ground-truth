@@ -1,0 +1,18 @@
+{
+  "id": "replica",
+  "term": "Replica",
+  "def": "One complete, independent copy of a deployed service; in model serving, a full copy of the model, possibly spread over several GPUs, that handles its own share of requests.",
+  "practice": "Fleets are described as a per-replica layout, such as eight-way tensor parallelism, times a replica count; adding replicas raises throughput but not the size of model that fits.",
+  "aliases": [
+    "model replica"
+  ],
+  "chapters": [
+    "disaggregated-serving",
+    "batching-scheduling",
+    "memory-math",
+    "serving-engines",
+    "cost-capacity",
+    "pretraining-run",
+    "inference-fleet-scaling"
+  ]
+}

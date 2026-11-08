@@ -1,0 +1,15 @@
+{
+  "id": "automation-bias",
+  "term": "Automation bias",
+  "def": "The tendency of people to over-rely on or defer to an automated system's output, including when it is wrong.",
+  "practice": "Explains rubber-stamped approvals and unchecked agent output; the EU AI Act requires that people overseeing high-risk systems be enabled to stay aware of it.",
+  "aliases": [],
+  "chapters": [
+    "human-in-the-loop",
+    "agent-ux",
+    "ai-product-ux",
+    "governance-regulation",
+    "autonomy-and-oversight",
+    "human-ai-interaction-guidelines"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "imagenet",
+  "term": "ImageNet",
+  "def": "A large labeled image dataset whose 1,000-class challenge subset (ILSVRC, about 1.28 million training images) was the main computer vision benchmark of the 2010s.",
+  "practice": "AlexNet's 2012 ImageNet result started the deep learning boom, and many vision backbones are still described as ImageNet-pretrained.",
+  "aliases": [
+    "ILSVRC",
+    "ImageNet-1k"
+  ],
+  "chapters": [
+    "neural-networks",
+    "representation-learning",
+    "history-of-ai",
+    "information-theory-for-llms",
+    "llm-uncertainty",
+    "training-hyperparameters",
+    "trainable-deep-networks",
+    "convolutional-networks"
+  ]
+}

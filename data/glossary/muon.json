@@ -1,0 +1,14 @@
+{
+  "id": "muon",
+  "term": "Muon",
+  "def": "An optimizer for the 2D weight matrices of hidden layers that approximately orthogonalizes the momentum update with a few Newton-Schulz iterations before applying it.",
+  "practice": "Embeddings, output heads and vector parameters stay on AdamW; the Moonlight paper reported about twice AdamW's compute efficiency, and Kimi K2 was trained with a variant, MuonClip.",
+  "aliases": [
+    "MomentUm Orthogonalized by Newton-Schulz"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "eigenvectors-svd-pca",
+    "optimizers"
+  ]
+}

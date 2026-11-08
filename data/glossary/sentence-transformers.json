@@ -1,0 +1,18 @@
+{
+  "id": "sentence-transformers",
+  "term": "Sentence Transformers",
+  "def": "An open-source Python library, grown out of the Sentence-BERT paper (Reimers and Gurevych, 2019), for computing and fine-tuning embedding models, cross-encoder rerankers and sparse encoders.",
+  "practice": "A standard way to run open embedders and fine-tune them on your own pairs with losses such as MultipleNegativesRankingLoss; maintained by Hugging Face as of November 2026.",
+  "aliases": [
+    "SBERT",
+    "Sentence-BERT"
+  ],
+  "chapters": [
+    "embeddings",
+    "reranking",
+    "representation-learning",
+    "word-embeddings",
+    "model-types",
+    "training-retrievers"
+  ]
+}

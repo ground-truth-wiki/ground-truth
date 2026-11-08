@@ -1,0 +1,14 @@
+{
+  "id": "expert-system",
+  "term": "Expert system",
+  "def": "A program that emulates a human specialist's decisions by applying a knowledge base of hand-written if-then rules through an inference engine.",
+  "practice": "Systems such as MYCIN and XCON were the commercial face of 1980s AI; the cost of eliciting and maintaining rules, the knowledge-acquisition bottleneck, is the classic argument for learning from data.",
+  "aliases": [
+    "rule-based expert system"
+  ],
+  "chapters": [
+    "mental-models",
+    "classical-ml",
+    "history-of-ai"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "data-versioning",
+  "term": "Data versioning",
+  "def": "Recording immutable, addressable versions of datasets so every training run, eval score or index can be traced to, and rebuilt from, the exact data it used.",
+  "practice": "Pin dataset versions in training configs and eval reports; common tools are DVC, lakeFS, Hugging Face Hub revisions and time-travel queries in Delta Lake and Apache Iceberg.",
+  "aliases": [
+    "dataset versioning",
+    "data version control"
+  ],
+  "chapters": [
+    "data-governance",
+    "eval-datasets",
+    "eval-tooling",
+    "dataset-documentation",
+    "dataset-versioning-lineage",
+    "data-formats",
+    "data-lakehouses",
+    "mlops-foundations"
+  ]
+}

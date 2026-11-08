@@ -1,0 +1,14 @@
+{
+  "id": "text-to-music",
+  "term": "Text-to-music generation",
+  "def": "Generating music audio from a text description, optionally conditioned on a melody or audio prompt, usually with codec language models or latent diffusion.",
+  "practice": "Open examples include MusicGen (a codec language model) and Stable Audio Open (latent diffusion); outputs raise licensing, labeling and watermarking questions.",
+  "aliases": [
+    "music generation"
+  ],
+  "chapters": [
+    "speech-audio",
+    "audio-codecs-tokens",
+    "music-generation"
+  ]
+}

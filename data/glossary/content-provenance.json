@@ -1,0 +1,17 @@
+{
+  "id": "content-provenance",
+  "term": "Content provenance",
+  "def": "Verifiable information about where a piece of media came from and how it was changed, carried as signed metadata, embedded watermarks or registered fingerprints.",
+  "practice": "NIST AI 100-4 (2024) surveys provenance tracking, watermarking and synthetic-content detection as complementary approaches; none survives every edit, so systems layer them.",
+  "aliases": [
+    "media provenance",
+    "digital content transparency"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "image-generation",
+    "video-world-models",
+    "speech-audio",
+    "multimodal-apps"
+  ]
+}

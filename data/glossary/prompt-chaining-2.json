@@ -1,0 +1,16 @@
+{
+  "id": "prompt-chaining-2",
+  "term": "Prompt chaining",
+  "def": "Splitting a task into a fixed sequence of model calls in which each call’s output feeds the next, often with programmatic checks between steps.",
+  "practice": "Makes each step testable and lets cheaper models handle easy steps, at the cost of one call’s latency per step; the simplest workflow pattern.",
+  "aliases": [
+    "prompt chain",
+    "chained prompts"
+  ],
+  "chapters": [
+    "prompt-chaining",
+    "workflow-patterns",
+    "what-is-an-agent",
+    "multi-agent-patterns"
+  ]
+}

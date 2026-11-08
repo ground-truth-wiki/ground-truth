@@ -1,0 +1,13 @@
+{
+  "id": "scientific-foundation-model",
+  "term": "Scientific foundation model",
+  "def": "A large model pretrained on scientific data, such as protein or DNA sequences, atomic structures or weather records, that can be adapted to many tasks in its domain.",
+  "practice": "Examples include ESM3 for proteins, Evo 2 for genomes (1M-token context, with weights, code and data released) and Meta's UMA for atomistic simulation.",
+  "aliases": [
+    "foundation model for science"
+  ],
+  "chapters": [
+    "specialist-models",
+    "ai-for-science"
+  ]
+}

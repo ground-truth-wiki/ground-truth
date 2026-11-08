@@ -1,0 +1,11 @@
+{
+  "id": "time-series-foundation-model",
+  "term": "Time-series foundation model",
+  "def": "A model pretrained on large and varied collections of time series that forecasts series it has never seen, zero-shot, without per-dataset training.",
+  "practice": "Examples include Amazon's Chronos and Google's TimesFM, whose papers report zero-shot accuracy close to models trained on each dataset; compare against seasonal-naive and statistical baselines before adopting one (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "specialist-models"
+  ]
+}

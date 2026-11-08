@@ -1,0 +1,13 @@
+{
+  "id": "litert",
+  "term": "LiteRT",
+  "def": "Google's on-device inference runtime, formerly TensorFlow Lite, which runs models converted from PyTorch, JAX or TensorFlow on CPU, GPU and NPU across mobile, web, desktop and IoT.",
+  "practice": "Models ship as .tflite FlatBuffer files; for on-device LLMs Google points to the separate LiteRT-LM library, and NPU support covers vendors such as Qualcomm and MediaTek.",
+  "aliases": [
+    "TensorFlow Lite",
+    "TFLite"
+  ],
+  "chapters": [
+    "edge-on-device"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "dpia",
+  "term": "Data protection impact assessment",
+  "def": "A documented assessment, required under GDPR Article 35 for processing likely to pose a high risk to people, that describes the processing, weighs necessity and risks, and records mitigations.",
+  "practice": "The UK regulator says most AI uses of personal data will need one, completed before deployment and revisited when the processing changes.",
+  "aliases": [
+    "privacy impact assessment"
+  ],
+  "chapters": [
+    "privacy",
+    "governance-regulation",
+    "ai-risk-management"
+  ],
+  "abbr": "DPIA"
+}

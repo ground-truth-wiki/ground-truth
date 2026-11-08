@@ -1,0 +1,14 @@
+{
+  "id": "eagle-drafting",
+  "term": "EAGLE",
+  "def": "Speculative-decoding drafters that reuse the target model's hidden states: EAGLE drafts at the feature level, EAGLE-2 adds dynamic draft trees, and EAGLE-3 predicts tokens from fused multi-layer features.",
+  "practice": "Supported in vLLM, SGLang and TensorRT-LLM and among the fastest trained drafters at small batch sizes; each target model needs its own trained drafter, and gains shrink as batches grow.",
+  "aliases": [
+    "EAGLE-2",
+    "EAGLE-3",
+    "EAGLE3"
+  ],
+  "chapters": [
+    "speculative-decoding"
+  ]
+}

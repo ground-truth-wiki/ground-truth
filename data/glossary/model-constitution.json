@@ -1,0 +1,16 @@
+{
+  "id": "model-constitution",
+  "term": "Model constitution",
+  "def": "A natural-language document of principles and values that a developer uses to train and evaluate a model's behavior, as in Constitutional AI.",
+  "practice": "Anthropic published Claude's constitution in January 2026 under CC0, ranking broad safety, ethics, Anthropic's guidelines and helpfulness, plus a short list of hard constraints.",
+  "aliases": [
+    "Claude's constitution",
+    "AI constitution"
+  ],
+  "chapters": [
+    "safety-character-training",
+    "alignment-concepts",
+    "preference-optimization",
+    "model-specs-instruction-hierarchy"
+  ]
+}

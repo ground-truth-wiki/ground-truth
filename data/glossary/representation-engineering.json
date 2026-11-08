@@ -1,0 +1,15 @@
+{
+  "id": "representation-engineering",
+  "term": "Representation engineering",
+  "def": "Reading and controlling model behavior through directions in its activations, typically found by contrasting activations on paired prompts.",
+  "practice": "Covers reading with linear probes and control with steering vectors or directions such as refusal; steered models need the same evals as any other change, since side effects are common.",
+  "aliases": [
+    "RepE"
+  ],
+  "chapters": [
+    "mech-interp",
+    "alignment-concepts",
+    "probes-and-steering"
+  ],
+  "abbr": "RepE"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "machine-epsilon",
+  "term": "Machine epsilon",
+  "def": "A floating-point format’s relative precision: the gap between 1.0 and the next larger representable number, or half that gap when quoted as the bound on rounding error.",
+  "practice": "BF16’s epsilon is 2⁻⁷ (about 0.0078), so adding an update smaller than a few tenths of a percent of a weight’s magnitude leaves a BF16 weight unchanged, one reason master weights stay in FP32.",
+  "aliases": [
+    "unit roundoff"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "distributed-training",
+    "quantization",
+    "floating-point-formats"
+  ]
+}

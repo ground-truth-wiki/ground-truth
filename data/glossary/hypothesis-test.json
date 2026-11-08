@@ -1,0 +1,15 @@
+{
+  "id": "hypothesis-test",
+  "term": "Hypothesis test",
+  "def": "A procedure that decides whether observed data are inconsistent with a null hypothesis, such as no difference between two models, at a chosen significance level.",
+  "practice": "Used to judge A/B tests and eval comparisons; failing to reject the null does not show that two systems are equal, only that the data cannot tell them apart.",
+  "aliases": [
+    "significance test",
+    "statistical hypothesis test"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "online-evaluation",
+    "text-generation-metrics"
+  ]
+}

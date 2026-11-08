@@ -1,0 +1,12 @@
+{
+  "id": "langfuse",
+  "term": "Langfuse",
+  "def": "An open-source, self-hostable LLM engineering platform for tracing, evaluations, datasets and prompt management, built on OpenTelemetry.",
+  "practice": "MIT-licensed except its enterprise folders and part of ClickHouse since January 2026; a common pick when traces must stay on your own infrastructure (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling",
+    "observability-tracing",
+    "prompt-config-management"
+  ]
+}

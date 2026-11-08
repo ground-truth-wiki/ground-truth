@@ -1,0 +1,15 @@
+{
+  "id": "faiss",
+  "term": "FAISS",
+  "def": "Meta's open-source library for similarity search and clustering of dense vectors, offering flat, IVF, HNSW, product- and scalar-quantized indexes on CPU and GPU.",
+  "practice": "The reference implementation behind many vector stores and research papers; its index_factory strings such as 'IVF4096,PQ64' are common shorthand for an index design.",
+  "aliases": [
+    "Facebook AI Similarity Search"
+  ],
+  "chapters": [
+    "vector-search",
+    "vector-databases",
+    "high-dimensional-geometry",
+    "vector-index-internals"
+  ]
+}

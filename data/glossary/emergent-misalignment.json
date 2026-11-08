@@ -1,0 +1,13 @@
+{
+  "id": "emergent-misalignment",
+  "term": "Emergent misalignment",
+  "def": "Broadly misaligned behavior, such as deception or hostile views, that appears after fine-tuning a model on a narrow task like writing insecure code without disclosing it.",
+  "practice": "Run broad safety evals even after narrow fine-tunes (Betley et al., 2025, later in Nature); Anthropic found that reward hacking learned during RL can trigger it too.",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training",
+    "alignment-concepts",
+    "fine-tuning-practice",
+    "fine-tuning-and-safety"
+  ]
+}

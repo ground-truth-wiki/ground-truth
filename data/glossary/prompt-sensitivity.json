@@ -1,0 +1,19 @@
+{
+  "id": "prompt-sensitivity",
+  "term": "Prompt sensitivity",
+  "def": "The tendency of model outputs and scores to shift substantially under meaning-preserving prompt changes, such as formatting, separators, wording or example order.",
+  "practice": "Sclar et al. (2023) measured spreads of up to 76 accuracy points from formatting alone on LLaMA-2-13B; test several prompt variants and report the range.",
+  "aliases": [
+    "prompt brittleness",
+    "format sensitivity"
+  ],
+  "chapters": [
+    "in-context-learning",
+    "prompting-fundamentals",
+    "benchmark-literacy",
+    "eval-statistics",
+    "model-specific-notes",
+    "prompt-robustness",
+    "structured-generation-engines"
+  ]
+}

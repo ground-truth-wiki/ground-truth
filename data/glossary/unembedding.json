@@ -1,0 +1,17 @@
+{
+  "id": "unembedding",
+  "term": "Unembedding",
+  "def": "The final linear layer that maps each token's last hidden state to one logit per vocabulary entry, from which the next-token distribution is computed.",
+  "practice": "Often shares weights with the token embedding; applying it to intermediate layers, the logit lens, shows what the model would predict at each depth.",
+  "aliases": [
+    "LM head",
+    "language-modeling head",
+    "output embedding"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "transformer-block",
+    "mech-interp",
+    "decoding-sampling"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "reinforcement-learning",
+  "term": "Reinforcement learning",
+  "def": "Learning a policy that chooses actions in an environment to maximize cumulative reward, from the outcomes of its own actions rather than from labeled correct answers.",
+  "practice": "The basis of RLHF, RLVR and agentic RL post-training; most of the work goes into reward and environment design, since the policy exploits any flaw in either.",
+  "aliases": [
+    "RL"
+  ],
+  "chapters": [
+    "rl-primer",
+    "agentic-rl",
+    "rlvr-reasoning",
+    "preference-optimization",
+    "rl-environment-harnesses",
+    "history-of-ai",
+    "distributions-and-estimation",
+    "automatic-differentiation"
+  ],
+  "abbr": "RL"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "qk-norm",
+  "term": "QK-norm",
+  "def": "Normalizing query and key vectors, with LayerNorm or RMSNorm, before the attention dot product so that attention logits cannot grow without bound.",
+  "practice": "ViT-22B adopted it after training diverged at about 8B parameters, and OLMo 2 and Gemma 3, which replaced Gemma 2's soft-capping with it, use it too.",
+  "aliases": [
+    "QK normalization",
+    "query-key normalization",
+    "QK-LayerNorm"
+  ],
+  "chapters": [
+    "attention",
+    "transformer-block",
+    "calculus-optimization",
+    "architecture-choices",
+    "pretraining-run",
+    "training-stability"
+  ]
+}

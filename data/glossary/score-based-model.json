@@ -1,0 +1,13 @@
+{
+  "id": "score-based-model",
+  "term": "Score-based generative model",
+  "def": "A generative model that learns the score, the gradient of the log data density, at many noise levels and samples by following it, for example by solving a reverse-time stochastic differential equation.",
+  "practice": "The SDE view of Song et al. (2021) puts DDPM-style diffusion and score models in one family, which is why diffusion samplers are ODE or SDE solvers.",
+  "aliases": [
+    "score-based diffusion",
+    "score-based model"
+  ],
+  "chapters": [
+    "image-generation"
+  ]
+}

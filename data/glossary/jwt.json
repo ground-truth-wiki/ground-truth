@@ -1,0 +1,17 @@
+{
+  "id": "jwt",
+  "term": "JSON Web Token",
+  "def": "A compact, URL-safe format (RFC 7519) for a set of claims, usually signed as a JSON Web Signature, used for access tokens, ID tokens and client assertions.",
+  "practice": "Validate the signature against the issuer's published keys (JWKS) and check iss, aud and exp before trusting claims; A2A agent card signatures and ID-JAGs use the same JOSE family.",
+  "aliases": [
+    "JWT",
+    "JWTs"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "a2a",
+    "protocol-building-blocks",
+    "agent-identity-delegation"
+  ],
+  "abbr": "JWT"
+}

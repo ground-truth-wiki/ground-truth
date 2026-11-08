@@ -1,0 +1,11 @@
+{
+  "id": "random-forest",
+  "term": "Random forest",
+  "def": "An ensemble of decision trees, each trained on a bootstrap sample and choosing among a random subset of features at each split, whose predictions are averaged or voted.",
+  "practice": "A robust tabular baseline that needs little tuning and gives an out-of-bag error estimate without a separate validation set.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "trees-and-ensembles"
+  ]
+}

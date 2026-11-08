@@ -1,0 +1,15 @@
+{
+  "id": "rpa",
+  "term": "Robotic process automation",
+  "def": "Software robots that run repetitive, rule-based tasks by mimicking human actions in application user interfaces, following recorded or designed scripts.",
+  "practice": "The incumbent way enterprises automate legacy interfaces, for example UiPath or Power Automate desktop flows; computer-use agents target the same work, trading scripted determinism for flexibility, and many teams combine both.",
+  "aliases": [
+    "RPA"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "low-code-builders",
+    "document-extraction"
+  ],
+  "abbr": "RPA"
+}

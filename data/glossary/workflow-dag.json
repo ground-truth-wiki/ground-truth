@@ -1,0 +1,18 @@
+{
+  "id": "workflow-dag",
+  "term": "DAG",
+  "def": "A directed acyclic graph: nodes joined by one-way edges with no cycles, used to express tasks and the dependencies between them in data pipelines and agent plans.",
+  "practice": "Orchestrators such as Airflow and Dagster schedule pipelines as DAGs, and planners such as LLMCompiler emit DAGs of tool calls; make each node idempotent so failed runs can resume.",
+  "aliases": [
+    "directed acyclic graph"
+  ],
+  "chapters": [
+    "unstructured-pipelines",
+    "planning-reasoning",
+    "workflow-patterns",
+    "automatic-differentiation",
+    "dl-frameworks",
+    "data-pipeline-orchestration"
+  ],
+  "abbr": "DAG"
+}

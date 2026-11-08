@@ -1,0 +1,15 @@
+{
+  "id": "poisson-arrivals",
+  "term": "Poisson arrivals",
+  "def": "A traffic model in which requests arrive independently at a constant average rate, so the gaps between arrivals follow an exponential distribution.",
+  "practice": "MLPerf's Server scenario and most LLM load generators use it; a gamma distribution with a burstiness setting models burstier real traffic, which raises tail latency at the same average rate.",
+  "aliases": [
+    "Poisson process",
+    "Poisson traffic"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "back-of-envelope",
+    "inference-benchmarking"
+  ]
+}

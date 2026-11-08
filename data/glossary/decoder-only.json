@@ -1,0 +1,21 @@
+{
+  "id": "decoder-only",
+  "term": "Decoder-only model",
+  "def": "A transformer built from one stack of causally masked self-attention layers, so each token attends only to earlier tokens, trained to predict the next token.",
+  "practice": "The design behind GPT, Llama, Qwen, DeepSeek and most chat LLMs; it generates text one token at a time and reuses past keys and values through a KV cache.",
+  "aliases": [
+    "decoder-only",
+    "decoder-only transformer",
+    "causal decoder"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "transformer-block",
+    "attention",
+    "language-modeling",
+    "kv-cache",
+    "time-series-forecasting",
+    "encoders-and-decoders",
+    "training-retrievers"
+  ]
+}

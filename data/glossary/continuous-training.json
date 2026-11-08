@@ -1,0 +1,15 @@
+{
+  "id": "continuous-training",
+  "term": "Continuous training",
+  "def": "Automatically retraining and redeploying a model through a pipeline, triggered by a schedule, newly arrived data, or detected drift or performance decay.",
+  "practice": "Google calls it a property unique to ML systems; for LLM apps the analogue is refreshing embedders, rerankers, indexes, fine-tunes and eval sets from production data, always behind eval gates.",
+  "aliases": [
+    "automated retraining"
+  ],
+  "chapters": [
+    "ci-cd-for-ai",
+    "data-flywheel",
+    "fine-tuning-practice",
+    "mlops-foundations"
+  ]
+}

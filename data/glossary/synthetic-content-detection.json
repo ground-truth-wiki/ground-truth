@@ -1,0 +1,15 @@
+{
+  "id": "synthetic-content-detection",
+  "term": "Synthetic content detection",
+  "def": "Classifying media or text as AI-generated or authentic without relying on embedded watermarks or provenance, using trained classifiers or forensic cues.",
+  "practice": "Detectors generalize poorly to new generators and can be evaded or spoofed, and general-purpose VLMs are not detectors (Anthropic's docs say Claude cannot determine whether an image is AI-generated).",
+  "aliases": [
+    "deepfake detection",
+    "AI-generated content detection"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "image-generation",
+    "synthetic-media-provenance"
+  ]
+}

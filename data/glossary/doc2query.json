@@ -1,0 +1,15 @@
+{
+  "id": "doc2query",
+  "term": "doc2query",
+  "def": "Document expansion in which a sequence-to-sequence model generates questions a document could answer, and those questions are appended to the document's text before indexing.",
+  "practice": "Raises BM25 recall with no model call at query time, at the price of one generation pass over the corpus; docTTTTTquery is its T5-based successor.",
+  "aliases": [
+    "docTTTTTquery",
+    "document expansion by query prediction"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "query-understanding",
+    "ir-foundations"
+  ]
+}

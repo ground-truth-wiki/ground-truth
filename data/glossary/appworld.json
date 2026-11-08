@@ -1,0 +1,12 @@
+{
+  "id": "appworld",
+  "term": "AppWorld",
+  "def": "A benchmark of 750 everyday digital tasks in a simulated world of 9 apps, 457 APIs and about 100 fictitious users, which agents complete by writing code against the APIs.",
+  "practice": "Graded by state-based unit tests that accept any valid solution path and flag collateral damage, unintended changes to the environment, a design worth copying in your own agent evals.",
+  "aliases": [],
+  "chapters": [
+    "evaluating-agents",
+    "benchmark-literacy",
+    "agent-eval-metrics"
+  ]
+}

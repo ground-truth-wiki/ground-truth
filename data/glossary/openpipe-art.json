@@ -1,0 +1,19 @@
+{
+  "id": "openpipe-art",
+  "term": "Agent Reinforcement Trainer",
+  "def": "OpenPipe's open-source framework for training multi-step LLM agents with GRPO, split into a client inside your agent code and a GPU server that runs inference and training.",
+  "practice": "Often paired with its RULER method, which generates rewards automatically, so teams can try agent RL without hand-written reward functions.",
+  "aliases": [
+    "ART",
+    "OpenPipe ART"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "agentic-rl",
+    "prompt-robustness",
+    "data-licensing-consent",
+    "document-ocr-models",
+    "ai-for-physical-sciences"
+  ],
+  "abbr": "ART"
+}

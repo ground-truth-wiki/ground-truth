@@ -1,0 +1,17 @@
+{
+  "id": "gradient-descent",
+  "term": "Gradient descent",
+  "def": "An iterative method that repeatedly moves parameters a small step against the gradient of the loss; stochastic gradient descent (SGD) estimates that gradient from a random mini-batch.",
+  "practice": "Every neural-network optimizer, from SGD with momentum to AdamW and Muon, is a variant of it, and the learning rate sets the size of each step.",
+  "aliases": [],
+  "chapters": [
+    "calculus-optimization",
+    "neural-networks",
+    "classical-ml",
+    "eigenvectors-svd-pca",
+    "linear-and-kernel-models",
+    "trees-and-ensembles",
+    "prompt-injection-techniques",
+    "privacy-preserving-ml"
+  ]
+}

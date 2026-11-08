@@ -1,0 +1,16 @@
+{
+  "id": "megatron-lm",
+  "term": "Megatron-LM",
+  "def": "NVIDIA's open-source framework for training large transformers, built on its Megatron Core library of tensor, pipeline, context, expert and data parallelism, distributed optimizers and FP8 training.",
+  "practice": "Its 2019 paper introduced the Megatron-style tensor parallelism that many training and serving stacks now copy or integrate.",
+  "aliases": [
+    "Megatron Core",
+    "Megatron"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "parallelism-strategies",
+    "low-precision-training"
+  ]
+}

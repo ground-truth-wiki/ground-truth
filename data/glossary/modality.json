@@ -1,0 +1,19 @@
+{
+  "id": "modality",
+  "term": "Modality",
+  "def": "A kind of data a model takes in or produces, such as text, images, audio or video; a multimodal model handles more than one.",
+  "practice": "Each modality has its own tokenization, cost per input and failure modes, so check per-modality support, limits and pricing in a model’s docs.",
+  "aliases": [
+    "modalities"
+  ],
+  "chapters": [
+    "multimodal-apps",
+    "vision-language-models",
+    "specialist-models",
+    "speech-audio",
+    "choosing-a-model",
+    "frontier-families",
+    "model-types",
+    "model-documentation"
+  ]
+}

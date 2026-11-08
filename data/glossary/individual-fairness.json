@@ -1,0 +1,11 @@
+{
+  "id": "individual-fairness",
+  "term": "Individual fairness",
+  "def": "The criterion that individuals who are similar for the task, under a chosen similarity metric, should receive similar outcomes; the counterpart to group fairness.",
+  "practice": "Hard to apply because everything rests on the similarity metric; counterfactual tests that change only a name or dialect are a practical approximation.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "fairness-bias"
+  ]
+}

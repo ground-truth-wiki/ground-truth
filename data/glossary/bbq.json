@@ -1,0 +1,14 @@
+{
+  "id": "bbq",
+  "term": "BBQ",
+  "def": "Bias Benchmark for QA: hand-built questions across nine social dimensions that test whether models fall back on stereotypes when context is ambiguous, and whether bias overrides the correct answer when it is not.",
+  "practice": "A standard bias eval in model cards; report ambiguous and disambiguated scores separately, and note that its categories reflect US English-speaking contexts.",
+  "aliases": [
+    "Bias Benchmark for QA"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals",
+    "fairness-bias"
+  ]
+}

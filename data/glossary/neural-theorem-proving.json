@@ -1,0 +1,15 @@
+{
+  "id": "neural-theorem-proving",
+  "term": "Neural theorem proving",
+  "def": "Using neural models, usually LLMs, to generate formal proofs that a proof assistant then checks, so every accepted proof is guaranteed valid.",
+  "practice": "Benchmarks include miniF2F and PutnamBench; DeepSeek-Prover-V2 reached 88.9% on miniF2F-test and solved 49 of 658 PutnamBench problems in April 2025, and scores move fast, so date them.",
+  "aliases": [
+    "neural theorem prover",
+    "LLM theorem proving"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "rlvr-reasoning",
+    "ai-for-mathematics"
+  ]
+}

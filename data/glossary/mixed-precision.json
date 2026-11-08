@@ -1,0 +1,21 @@
+{
+  "id": "mixed-precision",
+  "term": "Mixed-precision training",
+  "def": "Training with most matrix math in a 16-bit or lower format while keeping precision-sensitive values, such as master weights, optimizer state and large reductions, in FP32.",
+  "practice": "BF16 is the usual default on recent accelerators; FP16 additionally needs loss scaling, and FP8 training adds fine-grained scaling factors.",
+  "aliases": [
+    "mixed precision",
+    "automatic mixed precision",
+    "AMP"
+  ],
+  "chapters": [
+    "distributed-training",
+    "calculus-optimization",
+    "quantization",
+    "hardware",
+    "optimizers",
+    "training-neural-networks",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

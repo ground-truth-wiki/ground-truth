@@ -1,0 +1,15 @@
+{
+  "id": "sandbox-snapshot",
+  "term": "Sandbox snapshot",
+  "def": "A saved copy of a sandbox's filesystem, and sometimes its memory, from which a new or resumed sandbox can start.",
+  "practice": "Hosted sandboxes such as E2B, Modal and Vercel Sandbox, and cloud coding agents such as Cursor's, use them to skip dependency installs and resume long tasks; keep secrets out, since every sandbox started from one inherits them.",
+  "aliases": [
+    "environment snapshot",
+    "filesystem snapshot"
+  ],
+  "chapters": [
+    "sandboxes",
+    "long-running-agents",
+    "rl-environment-harnesses"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "label-smoothing",
+  "term": "Label smoothing",
+  "def": "Training against targets that mix the one-hot label with a uniform distribution over all classes, weighted by a factor ε, which discourages overconfident predictions.",
+  "practice": "A one-argument option in common cross-entropy implementations, often set to ε = 0.1; it can improve calibration but makes the model a worse teacher for distillation.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "distillation-merging",
+    "loss-functions",
+    "training-neural-networks"
+  ]
+}

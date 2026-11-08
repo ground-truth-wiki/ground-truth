@@ -1,0 +1,13 @@
+{
+  "id": "event-driven-workflow",
+  "term": "Event-driven workflow",
+  "def": "A workflow whose steps run when they receive an event emitted by an earlier step, instead of following edges declared up front.",
+  "practice": "The model of LlamaIndex Workflows and CrewAI Flows; it handles branching and loops naturally but is harder to visualize and audit than a declared graph.",
+  "aliases": [
+    "event-driven orchestration"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "workflow-patterns"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "agentharm",
+  "term": "AgentHarm",
+  "def": "A benchmark of explicitly malicious multi-step tasks for tool-using LLM agents that measures whether agents refuse and whether jailbroken agents stay capable.",
+  "practice": "It has 110 base tasks (440 with augmentations) across 11 harm categories such as fraud, cybercrime and harassment (Andriushchenko et al., 2024).",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "evaluating-agents",
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ]
+}

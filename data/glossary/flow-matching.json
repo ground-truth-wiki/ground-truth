@@ -1,0 +1,19 @@
+{
+  "id": "flow-matching",
+  "term": "Flow matching",
+  "def": "A simulation-free way to train continuous normalizing flows: a network regresses the velocity field of a chosen probability path from noise to data, and sampling integrates the learned ODE.",
+  "practice": "The training objective behind many recent image, video, speech and robot-action generators; straighter paths usually allow fewer sampling steps than classic diffusion.",
+  "aliases": [
+    "conditional flow matching"
+  ],
+  "chapters": [
+    "image-generation",
+    "embodied-agents",
+    "video-world-models",
+    "speech-audio",
+    "deep-generative-models",
+    "diffusion-flow-matching",
+    "image-editing-control",
+    "autoregressive-image-generation"
+  ]
+}

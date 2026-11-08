@@ -1,0 +1,16 @@
+{
+  "id": "fault-localization",
+  "term": "Fault localization",
+  "def": "Identifying the files, functions or lines responsible for a bug, using the issue text, code search, stack traces or which code the passing and failing tests execute.",
+  "practice": "The first step of most issue-resolving agents; a wrong localization dooms the patch, so traces should show which files the agent read before it edited.",
+  "aliases": [
+    "bug localization",
+    "code localization"
+  ],
+  "chapters": [
+    "coding-agents",
+    "structured-code-retrieval",
+    "agent-failure-modes",
+    "coding-agent-internals"
+  ]
+}

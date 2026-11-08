@@ -1,0 +1,15 @@
+{
+  "id": "narrow-ai",
+  "term": "Narrow AI",
+  "def": "AI designed for a specific task or domain, such as playing Go or recognizing speech, as opposed to artificial general intelligence.",
+  "practice": "Most deployed AI before LLMs was narrow; 'weak AI' is often used as a synonym, though in Searle's original sense it means AI that simulates a mind rather than having one.",
+  "aliases": [
+    "weak AI",
+    "artificial narrow intelligence",
+    "ANI"
+  ],
+  "chapters": [
+    "specialist-models",
+    "mental-models"
+  ]
+}

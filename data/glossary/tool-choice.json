@@ -1,0 +1,16 @@
+{
+  "id": "tool-choice",
+  "term": "Tool choice",
+  "def": "An API setting that controls whether the model may call tools, must call one, must call a specific one or must call none; some APIs also restrict calls to a subset of the defined tools.",
+  "practice": "Forcing one tool is a portable way to get typed output, and restricting tools through this setting instead of removing definitions keeps more of the prompt cache valid.",
+  "aliases": [
+    "forced tool use"
+  ],
+  "chapters": [
+    "agent-tools",
+    "structured-outputs",
+    "context-engineering",
+    "model-apis",
+    "prompt-caching"
+  ]
+}

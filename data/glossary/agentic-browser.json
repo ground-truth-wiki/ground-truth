@@ -1,0 +1,15 @@
+{
+  "id": "agentic-browser",
+  "term": "Agentic browser",
+  "def": "A web browser with a built-in AI agent that reads pages and acts in them on the user’s behalf, such as Perplexity’s Comet or OpenAI’s ChatGPT Atlas.",
+  "practice": "Every page becomes a prompt-injection vector with logged-in sessions in reach; Gartner advised in December 2025 that organizations block AI browsers for now, so keep agentic browsing away from sensitive accounts.",
+  "aliases": [
+    "AI browser"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "prompt-injection",
+    "personal-assistants",
+    "browser-automation-stack"
+  ]
+}

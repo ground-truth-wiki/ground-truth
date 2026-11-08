@@ -1,0 +1,14 @@
+{
+  "id": "double-descent",
+  "term": "Double descent",
+  "def": "The pattern in which test error falls, rises near the point where a model can just fit its training data exactly, then falls again as model size, data or training time grows.",
+  "practice": "It means the classical advice to stop growing a model at the first rise in test error can mislead for neural networks, and near that threshold more data can even hurt.",
+  "aliases": [
+    "deep double descent"
+  ],
+  "chapters": [
+    "classical-ml",
+    "scaling-laws",
+    "validation-tuning"
+  ]
+}

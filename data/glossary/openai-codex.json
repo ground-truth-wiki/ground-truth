@@ -1,0 +1,20 @@
+{
+  "id": "openai-codex",
+  "term": "Codex",
+  "def": "OpenAI's coding agent, offered as an open-source (Apache-2.0) CLI, an IDE extension, a cloud agent, inside the ChatGPT apps and as an SDK, as of November 2026.",
+  "practice": "It reads AGENTS.md and Agent Skills, runs locally under sandbox modes and approval policies, and reviews pull requests on request; not to be confused with Codex, the 2021 OpenAI code model behind the first GitHub Copilot.",
+  "aliases": [
+    "Codex CLI",
+    "Codex cloud"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "coding-agents",
+    "prompting-techniques",
+    "coding-agent-benchmarks",
+    "data-analysis-agents",
+    "security-agents",
+    "harness-permissions-hooks",
+    "agent-instruction-files"
+  ]
+}

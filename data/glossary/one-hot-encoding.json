@@ -1,0 +1,18 @@
+{
+  "id": "one-hot-encoding",
+  "term": "One-hot encoding",
+  "def": "Representing a categorical value with K possible values as a length-K vector of zeros with a single 1 at that value's position.",
+  "practice": "Fine for low-cardinality features; next-token targets are one-hot too, which is why cross-entropy reduces to minus the log probability of the correct token.",
+  "aliases": [
+    "one-hot",
+    "one-hot vector",
+    "one-of-K encoding"
+  ],
+  "chapters": [
+    "classical-ml",
+    "probability-information",
+    "loss-functions",
+    "feature-engineering",
+    "training-stability"
+  ]
+}

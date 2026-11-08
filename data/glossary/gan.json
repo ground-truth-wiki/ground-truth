@@ -1,0 +1,18 @@
+{
+  "id": "gan",
+  "term": "Generative adversarial network",
+  "def": "A pair of networks trained against each other: a generator that turns random noise into samples and a discriminator that tries to tell them from real data.",
+  "practice": "Largely displaced by diffusion for image generation because training is unstable, but adversarial losses survive in image tokenizers (VQGAN), vocoders (HiFi-GAN), audio codecs and few-step diffusion distillation.",
+  "aliases": [
+    "GAN"
+  ],
+  "chapters": [
+    "image-generation",
+    "speech-audio",
+    "deep-generative-models",
+    "speech-synthesis",
+    "multimodal-evaluation",
+    "synthetic-media-provenance"
+  ],
+  "abbr": "GAN"
+}

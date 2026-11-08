@@ -1,0 +1,19 @@
+{
+  "id": "continual-learning",
+  "term": "Continual learning",
+  "def": "Training a model on a stream of new data or tasks over time so it gains new knowledge or skills without losing what it learned before.",
+  "practice": "Deployed LLMs stay mostly frozen between releases; teams approximate it with retrieval, memory and periodic fine-tunes, and catastrophic forgetting is the main risk of updating weights.",
+  "aliases": [
+    "lifelong learning",
+    "incremental learning",
+    "continuous learning"
+  ],
+  "chapters": [
+    "open-problems",
+    "fine-tuning-practice",
+    "agent-memory",
+    "mid-training",
+    "new-architectures",
+    "continual-learning"
+  ]
+}

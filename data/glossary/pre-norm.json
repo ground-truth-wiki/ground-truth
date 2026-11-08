@@ -1,0 +1,18 @@
+{
+  "id": "pre-norm",
+  "term": "Pre-norm and post-norm",
+  "def": "Two placements of normalization in a residual block: pre-norm normalizes each sublayer's input inside the residual branch; post-norm, the original 2017 design, normalizes after the residual addition.",
+  "practice": "Nearly all modern LLMs use pre-norm because it trains stably at depth with less need for learning-rate warmup; some, such as Gemma 2, also normalize sublayer outputs.",
+  "aliases": [
+    "pre-norm",
+    "post-norm",
+    "Pre-LN",
+    "Post-LN",
+    "pre-normalization"
+  ],
+  "chapters": [
+    "transformer-block",
+    "trainable-deep-networks",
+    "architecture-choices"
+  ]
+}

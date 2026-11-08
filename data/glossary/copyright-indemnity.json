@@ -1,0 +1,15 @@
+{
+  "id": "copyright-indemnity",
+  "term": "Copyright indemnity",
+  "def": "A vendor's contractual promise to defend customers and pay resulting costs if its AI service, training data or generated output is claimed to infringe copyright or other intellectual property.",
+  "practice": "Major vendors have offered it for enterprise products since 2023, typically only if you keep their safety filters on and do not deliberately infringe; check which products and outputs are covered.",
+  "aliases": [
+    "IP indemnity",
+    "IP indemnification",
+    "copyright indemnification"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "enterprise-readiness"
+  ]
+}

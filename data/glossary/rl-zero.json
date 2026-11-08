@@ -1,0 +1,18 @@
+{
+  "id": "rl-zero",
+  "term": "RL-Zero",
+  "def": "Reinforcement learning with verifiable rewards applied directly to a pretrained base model, with no supervised fine-tuning stage first.",
+  "practice": "DeepSeek-R1-Zero made it famous and Olmo 3 released an RL-Zero model; results depend heavily on the base model and the prompt template.",
+  "aliases": [
+    "R1-Zero",
+    "zero RL",
+    "R1-Zero-like training"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "post-training-overview",
+    "reasoning-models",
+    "llm-policy-gradients",
+    "reasoning-training-recipes"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "multi-armed-bandit",
+  "term": "Multi-armed bandit",
+  "def": "A sequential decision problem without states: repeatedly choose one of k actions (arms) with unknown reward distributions to maximize total reward.",
+  "practice": "The model behind adaptive experiments that shift traffic toward the better-performing variant while still testing the others; simpler than full RL because choices do not change future states.",
+  "aliases": [
+    "k-armed bandit",
+    "bandit problem"
+  ],
+  "chapters": [
+    "rl-primer",
+    "online-evaluation",
+    "bandits"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "http-message-signatures",
+  "term": "HTTP Message Signatures",
+  "def": "An IETF standard (RFC 9421) for signing selected components of an HTTP request or response so the receiver can verify who sent it and detect tampering.",
+  "practice": "The basis of Web Bot Auth and Visa's Trusted Agent Protocol, which let websites recognize signed agents without relying on IP allowlists or user-agent strings.",
+  "aliases": [
+    "RFC 9421"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "computer-use-agents",
+    "agent-facing-web",
+    "agentic-commerce-protocols"
+  ]
+}

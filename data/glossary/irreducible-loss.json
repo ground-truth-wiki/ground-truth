@@ -1,0 +1,10 @@
+{
+  "id": "irreducible-loss",
+  "term": "Irreducible loss",
+  "def": "The constant term in a loss scaling law: the loss no amount of parameters or data removes, usually read as the entropy of the data distribution itself.",
+  "practice": "Only the reducible part shrinks with scale, so loss curves flatten toward this floor; in Chinchilla's fit L(N, D) = E + A/N^α + B/D^β it is the constant E.",
+  "aliases": [],
+  "chapters": [
+    "scaling-laws"
+  ]
+}

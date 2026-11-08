@@ -1,0 +1,14 @@
+{
+  "id": "ai-ethics",
+  "term": "AI ethics",
+  "def": "The study of the moral questions AI raises, including bias and fairness, privacy, accountability, transparency, labor and environmental costs, and how machines should behave.",
+  "practice": "Its practical arm is responsible-AI work such as fairness testing and documentation; scholars in this tradition often argue that a focus on existential risk distracts from present harms.",
+  "aliases": [
+    "ethics of AI",
+    "ethics of artificial intelligence"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation"
+  ]
+}

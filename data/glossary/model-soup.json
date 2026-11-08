@@ -1,0 +1,13 @@
+{
+  "id": "model-soup",
+  "term": "Model soup",
+  "def": "A single model made by averaging the weights of several models fine-tuned from the same pretrained base, often more accurate and robust at no extra inference cost.",
+  "practice": "The simplest weight merge (Wortsman et al., 2022); it works only when the fine-tunes share a base and stay close enough in weight space to average.",
+  "aliases": [
+    "linear merge"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "model-merging-methods"
+  ]
+}

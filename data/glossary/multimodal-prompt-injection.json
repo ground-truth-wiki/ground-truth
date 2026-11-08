@@ -1,0 +1,14 @@
+{
+  "id": "multimodal-prompt-injection",
+  "term": "Multimodal prompt injection",
+  "def": "Prompt injection delivered through images, audio or video, either as readable text inside the media or as adversarial perturbations that the model decodes as instructions.",
+  "practice": "Agents that read screenshots, scanned documents, web pages or audio transcripts are exposed, and text-only filters miss it, so treat every media input as untrusted.",
+  "aliases": [
+    "visual prompt injection",
+    "image prompt injection"
+  ],
+  "chapters": [
+    "prompt-injection",
+    "computer-use-agents"
+  ]
+}

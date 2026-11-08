@@ -1,0 +1,16 @@
+{
+  "id": "n-gram-language-model",
+  "term": "n-gram language model",
+  "def": "A language model that conditions each token only on the previous n−1 tokens (a Markov assumption) and estimates those probabilities from counts in a corpus.",
+  "practice": "Superseded for generation by neural models, but still the clearest way to see what a language model, perplexity and data sparsity are, as in the bigram models of NLP courses.",
+  "aliases": [
+    "n-gram model",
+    "bigram model",
+    "trigram model"
+  ],
+  "chapters": [
+    "probability-information",
+    "neural-networks",
+    "language-modeling"
+  ]
+}

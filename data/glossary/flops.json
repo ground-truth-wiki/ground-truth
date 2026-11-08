@@ -1,0 +1,20 @@
+{
+  "id": "flops",
+  "term": "FLOPs",
+  "def": "Floating-point operations, counted (FLOPs) as a measure of work or measured per second (FLOP/s, often written FLOPS) as a measure of hardware speed.",
+  "practice": "A forward pass costs about 2 FLOPs per parameter per token and training about 6 (see 6ND); dividing achieved by peak FLOP/s gives model FLOP utilization.",
+  "aliases": [
+    "FLOP/s",
+    "floating-point operations"
+  ],
+  "chapters": [
+    "scaling-laws",
+    "numbers-to-know",
+    "hardware",
+    "inference-fundamentals",
+    "transformer-block",
+    "distributed-training",
+    "tensors-and-shapes",
+    "automatic-differentiation"
+  ]
+}

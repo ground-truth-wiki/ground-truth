@@ -1,0 +1,15 @@
+{
+  "id": "neuro-symbolic-ai",
+  "term": "Neuro-symbolic AI",
+  "def": "Systems that combine neural networks, which learn patterns from data, with symbolic components such as rules, logic engines, solvers or proof checkers.",
+  "practice": "Its everyday form is an LLM that calls a theorem prover, verifier, code interpreter or database; AlphaGeometry, which pairs a language model with a symbolic deduction engine, is a well-known example.",
+  "aliases": [
+    "neurosymbolic AI",
+    "neural-symbolic AI"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "planning-reasoning",
+    "agent-tools"
+  ]
+}

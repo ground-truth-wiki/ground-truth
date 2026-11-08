@@ -1,0 +1,13 @@
+{
+  "id": "mmmu",
+  "term": "MMMU",
+  "def": "A benchmark of 11.5K college-level multimodal questions from exams, quizzes and textbooks across six disciplines and 30 subjects, needing both images and subject knowledge.",
+  "practice": "The usual headline multimodal-reasoning number in model cards; MMMU-Pro is a harder variant that removes questions answerable from text alone.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "vision-language-models",
+    "benchmark-catalog",
+    "multimodal-evaluation"
+  ]
+}

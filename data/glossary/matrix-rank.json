@@ -1,0 +1,15 @@
+{
+  "id": "matrix-rank",
+  "term": "Matrix rank",
+  "def": "The number of linearly independent rows, equivalently columns, of a matrix, which equals its number of nonzero singular values.",
+  "practice": "A rank-r matrix factors into two thin matrices with inner dimension r, and LoRA's rank r caps the rank of the weight update it learns.",
+  "aliases": [
+    "rank of a matrix"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "fine-tuning-practice",
+    "tensors-and-shapes",
+    "eigenvectors-svd-pca"
+  ]
+}

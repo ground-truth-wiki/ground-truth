@@ -1,0 +1,14 @@
+{
+  "id": "data-contract",
+  "term": "Data contract",
+  "def": "A versioned, machine-readable agreement between a data producer and its consumers that specifies a dataset’s schema, quality rules, ownership and service levels.",
+  "practice": "Stops upstream schema changes from silently breaking indexes and training sets; the Open Data Contract Standard, hosted by LF AI & Data, defines a YAML format (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "data-governance",
+    "unstructured-pipelines",
+    "data-validation-drift",
+    "data-pipeline-orchestration",
+    "protocol-building-blocks"
+  ]
+}

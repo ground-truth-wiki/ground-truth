@@ -1,0 +1,15 @@
+{
+  "id": "dynamic-resolution",
+  "term": "Dynamic resolution",
+  "def": "Processing images at or near their native size and aspect ratio, so the number of visual tokens varies per image, instead of resizing every image to one fixed square.",
+  "practice": "Implemented by tiling into crops plus a thumbnail (LLaVA-NeXT's AnyRes) or by native-resolution encoders (NaViT, Qwen2-VL); providers still cap tokens and downscale large images.",
+  "aliases": [
+    "resolution tiling",
+    "image tiling"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "document-screen-understanding",
+    "vlm-architectures"
+  ]
+}

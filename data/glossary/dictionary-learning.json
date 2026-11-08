@@ -1,0 +1,12 @@
+{
+  "id": "dictionary-learning",
+  "term": "Dictionary learning",
+  "def": "Learning an overcomplete set of directions, the dictionary, so that each input vector is approximated as a sparse combination of a few of them.",
+  "practice": "In language-model interpretability it is done with sparse autoencoders and their variants, transcoders and crosscoders, applied to activations.",
+  "aliases": [],
+  "chapters": [
+    "mech-interp",
+    "autoencoders-latent-spaces",
+    "sae-circuit-tracing"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "set-of-mark",
+  "term": "Set-of-Mark prompting",
+  "def": "Overlaying numbered marks, boxes or masks on an image so a multimodal model can refer to regions by label instead of by coordinates.",
+  "practice": "Used by screen and web agents to pick a labeled element by its number; screen parsers such as OmniParser, or segmenters such as SAM, produce the regions.",
+  "aliases": [
+    "SoM",
+    "Set-of-Mark"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "computer-use-agents",
+    "visual-grounding"
+  ],
+  "abbr": "SoM"
+}

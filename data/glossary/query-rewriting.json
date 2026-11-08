@@ -1,0 +1,16 @@
+{
+  "id": "query-rewriting",
+  "term": "Query rewriting",
+  "def": "Transforming a user's question into a better search request before retrieval, with an LLM or a trained rewriter, for example by clarifying, expanding or decomposing it.",
+  "practice": "The umbrella over condensation, expansion and HyDE-style rewrites; keep the original query among the searches, because a rewrite can drift from what the user asked.",
+  "aliases": [
+    "query reformulation",
+    "query transformation"
+  ],
+  "chapters": [
+    "query-understanding",
+    "advanced-rag",
+    "production-rag",
+    "observability-tracing"
+  ]
+}

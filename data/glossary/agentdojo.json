@@ -1,0 +1,15 @@
+{
+  "id": "agentdojo",
+  "term": "AgentDojo",
+  "def": "An extensible benchmark environment (Debenedetti et al., 2024) of realistic tool-using tasks, such as email, banking and travel, paired with prompt-injection attacks to measure agent utility and security together.",
+  "practice": "Released with 97 tasks and 629 security test cases; because it reports task success next to attack success, a defense that blocks attacks by breaking the task shows up, and defenses such as CaMeL report results on it.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "prompt-injection",
+    "secure-agent-design",
+    "evaluating-agents",
+    "prompt-injection-techniques",
+    "guard-models-moderation"
+  ]
+}

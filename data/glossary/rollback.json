@@ -1,0 +1,20 @@
+{
+  "id": "rollback",
+  "term": "Rollback",
+  "def": "Returning a system to a previous known-good version of its code, configuration, prompt, model or index after a bad change.",
+  "practice": "Make it one step and rehearse it: pinned versions, the previous model kept warm, and flags and gateway mappings that can be reverted within minutes.",
+  "aliases": [
+    "roll back",
+    "automatic rollback"
+  ],
+  "chapters": [
+    "incidents-on-call",
+    "prompt-config-management",
+    "ci-cd-for-ai",
+    "online-evaluation",
+    "anti-patterns",
+    "agent-ux",
+    "model-lifecycle",
+    "data-lakehouses"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "late-chunking",
+  "term": "Late chunking",
+  "def": "Embedding a whole document with a long-context embedding model first, then mean-pooling the token vectors of each chunk, so every chunk vector carries context from the surrounding text.",
+  "practice": "A cheaper alternative to contextual retrieval that needs no LLM calls or extra training, but requires an embedding model with a long context window and access to its token-level outputs.",
+  "aliases": [],
+  "chapters": [
+    "chunking",
+    "embeddings"
+  ]
+}

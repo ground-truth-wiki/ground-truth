@@ -1,0 +1,12 @@
+{
+  "id": "llguidance",
+  "term": "llguidance",
+  "def": "An open-source constrained-decoding engine from the Guidance project that enforces JSON Schemas, regular expressions and Lark-like context-free grammars with fast per-token masking.",
+  "practice": "Its README says it powers OpenAI’s JSON Schema structured outputs and is integrated in vLLM, SGLang and llama.cpp (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs",
+    "serving-engines",
+    "structured-generation-engines"
+  ]
+}

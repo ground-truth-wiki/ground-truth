@@ -1,0 +1,16 @@
+{
+  "id": "linear-probe",
+  "term": "Linear probe",
+  "def": "A linear classifier trained on frozen activations from one layer of a model to test whether some information is linearly decodable there.",
+  "practice": "The standard yardstick for self-supervised features and a cheap interpretability or monitoring tool; a working probe shows the information is present, not that the model uses it.",
+  "aliases": [
+    "linear probing",
+    "probing classifier"
+  ],
+  "chapters": [
+    "mech-interp",
+    "representation-learning",
+    "self-supervised-methods",
+    "probes-and-steering"
+  ]
+}

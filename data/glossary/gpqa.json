@@ -1,0 +1,18 @@
+{
+  "id": "gpqa",
+  "term": "GPQA",
+  "def": "Graduate-Level Google-Proof Q&A: 448 expert-written multiple-choice questions in biology, physics and chemistry that skilled non-experts answer poorly even with web access.",
+  "practice": "Usually quoted as GPQA Diamond, its hardest 198-question subset; experts scored about 65% at release and frontier models now match or exceed that baseline.",
+  "aliases": [
+    "GPQA Diamond",
+    "Graduate-Level Google-Proof Q&A"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "reasoning-models",
+    "benchmark-catalog",
+    "in-context-learning",
+    "prompting-techniques",
+    "scaling-trends-limits"
+  ]
+}

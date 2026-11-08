@@ -1,0 +1,17 @@
+{
+  "id": "e4m3",
+  "term": "E4M3",
+  "def": "An 8-bit floating-point encoding with 1 sign bit, 4 exponent bits and 3 mantissa bits; it gives up infinities to reach a largest magnitude of 448.",
+  "practice": "The FP8 variant usually chosen for weights and activations, and in some recipes for all tensors; PyTorch calls it float8_e4m3fn.",
+  "aliases": [
+    "float8_e4m3fn",
+    "FP8 E4M3"
+  ],
+  "chapters": [
+    "quantization",
+    "hardware",
+    "distributed-training",
+    "floating-point-formats",
+    "low-precision-training"
+  ]
+}

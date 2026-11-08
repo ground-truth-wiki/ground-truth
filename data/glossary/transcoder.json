@@ -1,0 +1,13 @@
+{
+  "id": "transcoder",
+  "term": "Transcoder",
+  "def": "A sparse dictionary model trained to reproduce an MLP layer's output from its input, so the MLP's computation is expressed through interpretable features.",
+  "practice": "Anthropic's attribution graphs use cross-layer transcoders, whose features write to all later layers; the open circuit-tracing tools use Gemma Scope transcoders for Gemma 2 2B.",
+  "aliases": [
+    "cross-layer transcoder"
+  ],
+  "chapters": [
+    "mech-interp",
+    "sae-circuit-tracing"
+  ]
+}

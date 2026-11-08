@@ -1,0 +1,19 @@
+{
+  "id": "importance-sampling",
+  "term": "Importance sampling",
+  "def": "Estimating an expectation under one distribution from samples drawn under another, by weighting each sample with the ratio of the two probabilities.",
+  "practice": "PPO's ratio of new to old policy probabilities is an importance weight, and LLM RL frameworks add importance-sampling corrections when the inference engine's token probabilities differ from the trainer's.",
+  "aliases": [
+    "importance weight",
+    "importance ratio"
+  ],
+  "chapters": [
+    "rl-primer",
+    "preference-optimization",
+    "rlvr-reasoning",
+    "probability-information",
+    "distributions-and-estimation",
+    "imitation-offline-rl",
+    "llm-policy-gradients"
+  ]
+}

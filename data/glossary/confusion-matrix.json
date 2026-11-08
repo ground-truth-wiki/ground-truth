@@ -1,0 +1,18 @@
+{
+  "id": "confusion-matrix",
+  "term": "Confusion matrix",
+  "def": "A table counting predictions against true labels, commonly one row per actual class and one column per predicted class, from which accuracy, precision and recall follow.",
+  "practice": "The first thing to inspect for any classifier, router or LLM judge; the off-diagonal cells show which classes get confused with which.",
+  "aliases": [
+    "confusion matrices"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes",
+    "llm-as-judge",
+    "classification-metrics",
+    "anomaly-drift-detection",
+    "label-quality",
+    "fairness-bias"
+  ]
+}

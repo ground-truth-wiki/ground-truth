@@ -1,0 +1,14 @@
+{
+  "id": "all-reduce",
+  "term": "All-reduce",
+  "def": "A collective operation in which every device contributes a tensor and every device receives the elementwise reduction, usually the sum, of all of them.",
+  "practice": "Data parallelism all-reduces gradients every step; a ring all-reduce, built from a reduce-scatter and an all-gather, sends about twice the tensor size per device regardless of device count.",
+  "aliases": [
+    "allreduce"
+  ],
+  "chapters": [
+    "distributed-training",
+    "disaggregated-serving",
+    "parallelism-strategies"
+  ]
+}

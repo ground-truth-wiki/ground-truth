@@ -1,0 +1,14 @@
+{
+  "id": "interp-feature",
+  "term": "Interpretable feature",
+  "def": "In interpretability, a direction in a model's activation space that corresponds to a human-understandable property of the input or output.",
+  "practice": "Sparse autoencoders extract millions of them, up to 34 million from Claude 3 Sonnet; labels come from top-activating examples and should be checked on held-out text.",
+  "aliases": [
+    "monosemantic feature",
+    "SAE feature",
+    "SAE latent"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

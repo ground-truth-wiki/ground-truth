@@ -1,0 +1,17 @@
+{
+  "id": "ml-weather-prediction",
+  "term": "Machine-learning weather prediction",
+  "def": "Forecasting weather with neural networks trained on decades of historical reanalysis data such as ERA5, instead of numerically solving the equations of atmospheric physics.",
+  "practice": "GraphCast beat ECMWF's HRES on over 90% of 1,380 targets, and GenCast's ensemble beat ENS on 97.2% of 1,320, at a small fraction of the compute.",
+  "aliases": [
+    "MLWP",
+    "AI weather model",
+    "ML weather forecasting"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "specialist-models",
+    "ai-for-physical-sciences"
+  ],
+  "abbr": "MLWP"
+}

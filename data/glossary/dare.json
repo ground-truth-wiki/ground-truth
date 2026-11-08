@@ -1,0 +1,14 @@
+{
+  "id": "dare",
+  "term": "DARE",
+  "def": "Drop And REscale: randomly zeroing a fraction p of a fine-tune's delta weights and scaling the rest by 1/(1-p) before merging, to reduce interference between models.",
+  "practice": "Often combined with TIES sign election (dare_ties in mergekit); the paper reports dropping 90 percent or even 99 percent of delta weights with little loss.",
+  "aliases": [
+    "Drop And REscale",
+    "dare_ties"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "model-merging-methods"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "nist-ai-600-1",
+  "term": "NIST AI 600-1",
+  "def": "NIST's Generative AI Profile of the AI Risk Management Framework, published 26 July 2024, which names 12 risks unique to or worsened by generative AI and suggests actions for each.",
+  "practice": "The most common US reference for generative AI risk programs; it maps its actions onto the RMF's govern, map, measure and manage functions.",
+  "aliases": [
+    "Generative AI Profile",
+    "AI 600-1",
+    "GenAI Profile"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "threat-modeling",
+    "ai-security-frameworks",
+    "ai-risk-management"
+  ]
+}

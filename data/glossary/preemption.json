@@ -1,0 +1,14 @@
+{
+  "id": "preemption",
+  "term": "Preemption",
+  "def": "Pausing a running sequence to free KV-cache memory or make room for higher-priority work, then resuming it later by recomputing or swapping back its KV cache.",
+  "practice": "vLLM preempts by recomputation by default as of November 2026; frequent preemption hurts end-to-end latency and means the configured concurrency needs more KV-cache memory.",
+  "aliases": [
+    "request preemption"
+  ],
+  "chapters": [
+    "batching-scheduling",
+    "memory-math",
+    "us-ai-law"
+  ]
+}

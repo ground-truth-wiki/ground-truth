@@ -1,0 +1,15 @@
+{
+  "id": "bag-of-words",
+  "term": "Bag of words",
+  "def": "A text representation that counts word or n-gram occurrences in a document and ignores their order.",
+  "practice": "Lexical retrievers such as BM25 are bag-of-words models: they match exact terms and identifiers well but miss paraphrases and word order.",
+  "aliases": [
+    "bag of n-grams"
+  ],
+  "chapters": [
+    "reranking",
+    "hybrid-retrieval",
+    "classical-ml",
+    "feature-engineering"
+  ]
+}

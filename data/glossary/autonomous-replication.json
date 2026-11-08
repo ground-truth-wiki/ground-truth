@@ -1,0 +1,18 @@
+{
+  "id": "autonomous-replication",
+  "term": "Autonomous replication and adaptation",
+  "def": "The cluster of capabilities an AI agent would need to acquire resources, copy itself onto new machines and adapt to obstacles without human help.",
+  "practice": "A long-standing category in dangerous-capability evals, first scoped by Kinniment et al. (2023) with 12 agent tasks; OpenAI's Preparedness Framework lists it as a research category.",
+  "aliases": [
+    "ARA",
+    "self-replication",
+    "self-proliferation"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "long-horizon-autonomy",
+    "dangerous-capability-evals"
+  ],
+  "abbr": "ARA"
+}

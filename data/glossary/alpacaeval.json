@@ -1,0 +1,17 @@
+{
+  "id": "alpacaeval",
+  "term": "AlpacaEval",
+  "def": "An automatic instruction-following benchmark in which an LLM judge compares a model’s answers with a baseline model’s answers and reports a win rate.",
+  "practice": "Its length-controlled win rate (Dubois et al., 2024) estimates the judge’s preference as if both answers had the same length, which raised its Spearman correlation with Chatbot Arena from 0.94 to 0.98.",
+  "aliases": [
+    "AlpacaEval 2.0",
+    "length-controlled AlpacaEval",
+    "length-controlled win rate"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "llm-as-judge",
+    "arenas-leaderboards",
+    "judge-models-meta-evaluation"
+  ]
+}

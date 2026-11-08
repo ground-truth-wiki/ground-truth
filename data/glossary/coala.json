@@ -1,0 +1,16 @@
+{
+  "id": "coala",
+  "term": "CoALA",
+  "def": "Cognitive Architectures for Language Agents (Sumers et al., 2023), a framework that describes agents by their memory (working, episodic, semantic, procedural), internal and external actions, and a repeated decision cycle.",
+  "practice": "A shared vocabulary for comparing agent designs and papers; LangChain's memory documentation maps its memory types to CoALA's.",
+  "aliases": [
+    "Cognitive Architectures for Language Agents"
+  ],
+  "chapters": [
+    "agent-memory",
+    "what-is-an-agent",
+    "agent-research-lineage",
+    "llm-planning-debate",
+    "agent-memory-architectures"
+  ]
+}

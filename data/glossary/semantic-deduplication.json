@@ -1,0 +1,18 @@
+{
+  "id": "semantic-deduplication",
+  "term": "Semantic deduplication",
+  "def": "Removing items whose embeddings are nearly identical even though their wording or pixels differ, typically by clustering embeddings and dropping close neighbors within each cluster.",
+  "practice": "Catches paraphrased and templated duplicates that MinHash misses; SemDeDup removed half of a LAION subset with minimal performance loss.",
+  "aliases": [
+    "SemDeDup",
+    "embedding-based deduplication",
+    "semantic dedup"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "synthetic-data",
+    "clustering-dimensionality-reduction",
+    "deduplication-decontamination",
+    "data-pipeline-orchestration"
+  ]
+}

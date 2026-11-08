@@ -1,0 +1,19 @@
+{
+  "id": "protected-attribute",
+  "term": "Protected attribute",
+  "def": "A personal characteristic, such as race, sex, age, religion or disability, on which discrimination is restricted by law or policy and along which fairness is measured.",
+  "practice": "You often need the attribute to measure fairness even where you must not use it to decide; Fairlearn calls it a sensitive feature, and collecting it has its own legal limits.",
+  "aliases": [
+    "protected characteristic",
+    "protected characteristics",
+    "sensitive attribute",
+    "sensitive feature"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "privacy",
+    "governance-regulation",
+    "eu-ai-act",
+    "fairness-bias"
+  ]
+}

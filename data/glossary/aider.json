@@ -1,0 +1,14 @@
+{
+  "id": "aider",
+  "term": "Aider",
+  "def": "An open-source terminal pair-programming tool that edits code in a local Git repository with many different models, using a repository map and model-specific edit formats.",
+  "practice": "Its published edit-format experiments and leaderboards, such as the laziness benchmark for unified diffs, are a common reference for how edit formats change model results.",
+  "aliases": [],
+  "chapters": [
+    "harness-engineering",
+    "coding-harness-landscape",
+    "structured-code-retrieval",
+    "coding-agent-internals",
+    "agent-instruction-files"
+  ]
+}

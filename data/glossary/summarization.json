@@ -1,0 +1,21 @@
+{
+  "id": "summarization",
+  "term": "Summarization",
+  "def": "Producing a shorter text that keeps a document’s important information, either by selecting source passages (extractive) or by writing new text (abstractive).",
+  "practice": "LLM summaries are abstractive, so check faithfulness to the source; ROUGE rewards word overlap with a reference, not correctness.",
+  "aliases": [
+    "text summarization",
+    "abstractive summarization",
+    "extractive summarization"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "eval-recipes",
+    "advanced-rag",
+    "context-engineering",
+    "graph-neural-networks",
+    "encoders-and-decoders",
+    "reward-modeling",
+    "llm-pruning"
+  ]
+}

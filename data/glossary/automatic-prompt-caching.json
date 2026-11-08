@@ -1,0 +1,14 @@
+{
+  "id": "automatic-prompt-caching",
+  "term": "Automatic prompt caching",
+  "def": "Prompt caching that the provider applies without per-block markers in the request, reusing any sufficiently long prefix it has recently processed.",
+  "practice": "As of November 2026, Google calls it implicit caching and enables it by default for Gemini 2.5 and newer, OpenAI caches long prefixes automatically, and Anthropic offers it through one top-level cache_control field.",
+  "aliases": [
+    "implicit caching",
+    "automatic caching"
+  ],
+  "chapters": [
+    "prompt-caching",
+    "cost-engineering"
+  ]
+}

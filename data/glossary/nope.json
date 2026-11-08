@@ -1,0 +1,16 @@
+{
+  "id": "nope",
+  "term": "No positional encoding",
+  "def": "Leaving explicit position information out of some or all layers of a causal decoder, which can still infer token order because the causal mask gives each position a different prefix.",
+  "practice": "Kazemnejad et al. (2023) found it generalized to longer inputs better than explicit schemes in small-scale tests; SmolLM3 drops RoPE in every fourth layer and Kimi Linear in all its full-attention layers.",
+  "aliases": [
+    "NoPE",
+    "no positional embeddings"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "long-context",
+    "rope-scaling"
+  ],
+  "abbr": "NoPE"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "temporal-consistency",
+  "term": "Temporal consistency",
+  "def": "How well a generated or edited video keeps subjects, appearance and background stable across frames, without flicker or identity drift.",
+  "practice": "Scored separately from per-frame quality, for example by VBench's subject consistency and temporal flickering dimensions; interactive world models such as Genie 3 stay consistent for a few minutes (as of November 2026).",
+  "aliases": [
+    "temporal coherence"
+  ],
+  "chapters": [
+    "video-world-models",
+    "image-generation",
+    "video-generation"
+  ]
+}

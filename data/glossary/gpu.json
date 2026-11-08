@@ -1,0 +1,20 @@
+{
+  "id": "gpu",
+  "term": "Graphics processing unit",
+  "def": "A massively parallel processor, originally built for graphics, made of many streaming multiprocessors next to high-bandwidth memory; the main accelerator for training and serving neural networks.",
+  "practice": "For AI work, compare GPUs by memory capacity, memory bandwidth, low-precision tensor-core throughput and interconnect, not by peak FLOPs alone.",
+  "aliases": [
+    "GPU"
+  ],
+  "chapters": [
+    "hardware",
+    "inference-fundamentals",
+    "memory-math",
+    "distributed-training",
+    "cost-engineering",
+    "serving-engines",
+    "tensors-and-shapes",
+    "training-neural-networks"
+  ],
+  "abbr": "GPU"
+}

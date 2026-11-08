@@ -1,0 +1,16 @@
+{
+  "id": "checkpoint-averaging",
+  "term": "Checkpoint averaging",
+  "def": "Averaging the weights of several checkpoints, from late in one run or from several parallel annealing runs, to produce the final model.",
+  "practice": "Llama 3 averages checkpoints during annealing and OLMo 2 averages anneals run with different data orders; it costs no extra training and tends to beat single checkpoints.",
+  "aliases": [
+    "Polyak averaging",
+    "weight averaging"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "mid-training",
+    "distillation-merging",
+    "training-hyperparameters"
+  ]
+}

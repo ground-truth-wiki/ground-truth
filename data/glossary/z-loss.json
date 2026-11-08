@@ -1,0 +1,19 @@
+{
+  "id": "z-loss",
+  "term": "z-loss",
+  "def": "An auxiliary loss proportional to the squared log of the softmax normalizer, log² Z, that keeps output logits from drifting to large values.",
+  "practice": "PaLM added 10⁻⁴ · log² Z for training stability, ST-MoE applied the same idea to router logits as the router z-loss, and OLMo 2 adopted it.",
+  "aliases": [
+    "router z-loss"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "mixture-of-experts",
+    "transformer-block",
+    "loss-functions",
+    "architecture-choices",
+    "moe-routing",
+    "pretraining-run",
+    "training-stability"
+  ]
+}

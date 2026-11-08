@@ -1,0 +1,16 @@
+{
+  "id": "momentum",
+  "term": "Momentum",
+  "def": "An optimizer technique that steps along an exponentially decaying average of past gradients instead of the current gradient alone.",
+  "practice": "It smooths noisy mini-batch gradients and speeds progress along consistent directions; Adam's first moment is a momentum term, with a default coefficient of 0.9.",
+  "aliases": [
+    "heavy-ball momentum",
+    "Polyak momentum"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "eigenvectors-svd-pca",
+    "optimizers",
+    "self-supervised-methods"
+  ]
+}

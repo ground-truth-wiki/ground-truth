@@ -1,0 +1,14 @@
+{
+  "id": "big-bench",
+  "term": "BIG-bench",
+  "def": "Beyond the Imitation Game benchmark: a collaborative suite of 204 tasks from about 450 authors at 132 institutions, spanning linguistics, math, common sense, science, social bias and software.",
+  "practice": "Its 23-task subset BIG-Bench Hard (BBH), chosen where earlier models trailed average human raters, is the part still most often reported.",
+  "aliases": [
+    "Beyond the Imitation Game"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "benchmark-validity",
+    "deduplication-decontamination"
+  ]
+}

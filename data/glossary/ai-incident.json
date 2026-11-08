@@ -1,0 +1,16 @@
+{
+  "id": "ai-incident",
+  "term": "AI incident",
+  "def": "An event in which the development, use or malfunction of an AI system directly or indirectly causes real harm; an AI hazard is one that could plausibly lead to harm but has not.",
+  "practice": "Public trackers such as the AI Incident Database and the OECD AI Incidents and Hazards Monitor are sources of realistic failure modes for threat models, red-team plans and runbooks.",
+  "aliases": [],
+  "chapters": [
+    "incidents-on-call",
+    "threat-modeling",
+    "red-teaming",
+    "responsible-ai",
+    "governance-regulation",
+    "ai-risk-management",
+    "ai-failure-casebook"
+  ]
+}

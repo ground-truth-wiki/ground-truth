@@ -1,0 +1,15 @@
+{
+  "id": "first-contact-resolution",
+  "term": "First contact resolution",
+  "def": "The share of customer issues resolved in the first interaction, with no follow-up contact or reopened case.",
+  "practice": "A better target for support agents than containment alone: a conversation that ends but brings the customer back the next day is not resolved, so track repeat contacts.",
+  "aliases": [
+    "FCR",
+    "first-call resolution"
+  ],
+  "chapters": [
+    "support-agents",
+    "online-evaluation"
+  ],
+  "abbr": "FCR"
+}

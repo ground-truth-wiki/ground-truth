@@ -1,0 +1,17 @@
+{
+  "id": "swe-agent",
+  "term": "SWE-agent",
+  "def": "An open-source agent for resolving GitHub issues (Yang et al., 2024) whose paper introduced the agent-computer interface: purpose-built commands for viewing, searching and editing files.",
+  "practice": "As of November 2026 its team recommends mini-SWE-agent, about 100 lines of Python with bash as its only tool, as the default, a minimal harness often used to compare models.",
+  "aliases": [],
+  "chapters": [
+    "agent-tools",
+    "build-your-own-harness",
+    "coding-harness-landscape",
+    "harness-anatomy",
+    "harness-engineering",
+    "what-is-a-harness",
+    "autonomy-and-oversight",
+    "coding-agent-internals"
+  ]
+}

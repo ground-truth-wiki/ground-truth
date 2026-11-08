@@ -1,0 +1,13 @@
+{
+  "id": "dynamic-range",
+  "term": "Dynamic range",
+  "def": "The ratio of the largest to the smallest positive value a number format can represent, set mainly by how many exponent bits it has.",
+  "practice": "BF16 keeps FP32’s range with less precision than FP16, which is why it usually trains without loss scaling; low-bit formats recover range with per-block or per-tensor scale factors.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "distributed-training",
+    "calculus-optimization",
+    "training-neural-networks"
+  ]
+}

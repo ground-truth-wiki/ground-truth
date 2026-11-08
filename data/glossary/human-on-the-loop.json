@@ -1,0 +1,13 @@
+{
+  "id": "human-on-the-loop",
+  "term": "Human on the loop",
+  "def": "Oversight in which a system acts on its own while a person monitors it and can intervene or override, unlike human in the loop, where a person approves each action.",
+  "practice": "The usual mode for background agents: good logs, alerts and a working stop control replace per-action approval, at the cost of catching mistakes only after they happen.",
+  "aliases": [],
+  "chapters": [
+    "human-in-the-loop",
+    "agent-ux",
+    "long-running-agents",
+    "autonomy-and-oversight"
+  ]
+}

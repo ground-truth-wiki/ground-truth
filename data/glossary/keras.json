@@ -1,0 +1,15 @@
+{
+  "id": "keras",
+  "term": "Keras",
+  "def": "A high-level deep learning API for defining and training models; since version 3 the same model code runs on JAX, TensorFlow or PyTorch backends.",
+  "practice": "TensorFlow 2.16 and later use Keras 3 by default, while legacy Keras 2 code written against tf.keras lives on in the tf_keras package, which is in maintenance mode.",
+  "aliases": [
+    "tf.keras"
+  ],
+  "chapters": [
+    "neural-networks",
+    "tensors-and-shapes",
+    "automatic-differentiation",
+    "dl-frameworks"
+  ]
+}

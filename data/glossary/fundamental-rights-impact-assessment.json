@@ -1,0 +1,17 @@
+{
+  "id": "fundamental-rights-impact-assessment",
+  "term": "Fundamental rights impact assessment",
+  "def": "An EU AI Act assessment that public bodies, public-service providers and deployers of credit-scoring or life and health insurance pricing AI must complete before first using an Annex III high-risk system.",
+  "practice": "It covers affected groups, specific risks, human oversight and remedies, goes to the market surveillance authority, can reuse a GDPR data protection impact assessment, and applies from 2 December 2027 (as of November 2026).",
+  "aliases": [
+    "FRIA"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "privacy",
+    "eu-ai-act",
+    "ai-risk-management"
+  ],
+  "abbr": "FRIA"
+}

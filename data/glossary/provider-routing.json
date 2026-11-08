@@ -1,0 +1,15 @@
+{
+  "id": "provider-routing",
+  "term": "Provider routing",
+  "def": "Choosing which provider or deployment serves a request for a given model, based on order, price, throughput, latency, health, rate limits or data policy.",
+  "practice": "Distinct from model routing, which picks the model; log the provider that served each request, because the same open model can behave differently across providers and quantizations.",
+  "aliases": [
+    "provider selection"
+  ],
+  "chapters": [
+    "gateways-routers",
+    "reference-architecture",
+    "cloud-ai-platforms",
+    "gateway-routing-in-depth"
+  ]
+}

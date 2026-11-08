@@ -1,0 +1,16 @@
+{
+  "id": "four-golden-signals",
+  "term": "Four golden signals",
+  "def": "Latency, traffic, errors and saturation: the four metrics Google's SRE book says to monitor first on a user-facing system, counting implicit failures such as wrong content as errors.",
+  "practice": "For LLM services, track TTFT and end-to-end latency, requests and tokens per second, errors including wrong answers returned with HTTP 200, and saturation of rate limits, KV-cache memory or GPUs.",
+  "aliases": [
+    "golden signals"
+  ],
+  "chapters": [
+    "observability-tracing",
+    "latency-throughput",
+    "incidents-on-call",
+    "reliability-engineering",
+    "slos-error-budgets"
+  ]
+}

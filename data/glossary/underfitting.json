@@ -1,0 +1,13 @@
+{
+  "id": "underfitting",
+  "term": "Underfitting",
+  "def": "A model too simple or too constrained to capture the pattern in the data, so it performs poorly on training and validation data alike.",
+  "practice": "Fix it with a more expressive model, better features or less regularization; more training data alone does not help.",
+  "aliases": [
+    "underfit"
+  ],
+  "chapters": [
+    "classical-ml",
+    "validation-tuning"
+  ]
+}

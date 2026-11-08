@@ -1,0 +1,10 @@
+{
+  "id": "proxy-discrimination",
+  "term": "Proxy discrimination",
+  "def": "Discrimination that arises through features correlated with a protected attribute, such as postcode or purchase history, even when the attribute itself is excluded from the model.",
+  "practice": "Dropping the protected attribute rarely removes the signal because other features encode it redundantly; test outcomes by group, since the effect can still count as indirect discrimination or disparate impact.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai"
+  ]
+}

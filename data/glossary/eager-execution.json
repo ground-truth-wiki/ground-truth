@@ -1,0 +1,14 @@
+{
+  "id": "eager-execution",
+  "term": "Eager execution",
+  "def": "Running each tensor operation immediately as the Python code reaches it, rather than first building a computation graph and executing it later (graph mode).",
+  "practice": "Eager code is easy to debug but runs operators one at a time; graph capture with torch.compile, tf.function or jax.jit enables fusion and other whole-program optimizations.",
+  "aliases": [
+    "eager mode",
+    "define-by-run"
+  ],
+  "chapters": [
+    "neural-networks",
+    "dl-frameworks"
+  ]
+}

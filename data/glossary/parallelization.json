@@ -1,0 +1,19 @@
+{
+  "id": "parallelization",
+  "term": "Parallelization",
+  "def": "A workflow pattern that runs several model calls at once and combines their outputs in code, either by splitting a task into independent parts (sectioning) or repeating it and aggregating (voting).",
+  "practice": "Cuts wall-clock time for independent work, and voting raises confidence on judgments; avoid it when the parts depend on each other.",
+  "aliases": [
+    "fan-out/fan-in",
+    "scatter-gather",
+    "concurrent orchestration"
+  ],
+  "chapters": [
+    "workflow-patterns",
+    "multi-agent",
+    "deep-research",
+    "recurrent-networks",
+    "dl-frameworks",
+    "multi-agent-patterns"
+  ]
+}

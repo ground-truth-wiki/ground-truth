@@ -1,0 +1,16 @@
+{
+  "id": "goodharts-law",
+  "term": "Goodhart's law",
+  "def": "The observation, commonly phrased as 'when a measure becomes a target, it ceases to be a good measure', that optimizing a proxy weakens its link to the real goal.",
+  "practice": "The informal law behind reward hacking, judge gaming and benchmark overfitting; assume any metric you optimize hard will drift from what you care about.",
+  "aliases": [
+    "Goodhart"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "preference-optimization",
+    "benchmark-literacy",
+    "metrics-graders",
+    "benchmark-validity"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "single-sign-on",
+  "term": "Single sign-on",
+  "def": "An authentication arrangement in which one account and its authenticators give access to several applications, usually through a federation protocol such as SAML or OpenID Connect.",
+  "practice": "Usually the first enterprise procurement requirement; pair it with SCIM provisioning so that departing employees lose access to AI tools and the data those tools connect to.",
+  "aliases": [
+    "SSO"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "mcp-at-scale",
+    "mcp-authorization",
+    "agent-identity-delegation"
+  ],
+  "abbr": "SSO"
+}

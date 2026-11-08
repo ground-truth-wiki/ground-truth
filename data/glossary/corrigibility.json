@@ -1,0 +1,11 @@
+{
+  "id": "corrigibility",
+  "term": "Corrigibility",
+  "def": "The property of an AI system that does not resist, and ideally assists, its operators' efforts to correct, modify, retrain or shut it down.",
+  "practice": "Hard to guarantee, since staying switched on helps with almost any goal; Google DeepMind's Frontier Safety Framework (2025) covers models that might interfere with being modified or shut down.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts",
+    "frontier-safety-frameworks"
+  ]
+}

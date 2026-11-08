@@ -1,0 +1,18 @@
+{
+  "id": "test-time-training",
+  "term": "Test-time training",
+  "def": "Temporarily updating a model's parameters at inference with a loss derived from the test input itself, such as its in-context examples or a self-supervised objective, before answering.",
+  "practice": "Per-task fine-tuning at inference gave up to 6x higher ARC accuracy than fine-tuned baselines (Akyürek et al.); TTT layers build the idea into an architecture whose hidden state is a small model trained on the sequence.",
+  "aliases": [
+    "TTT",
+    "test-time fine-tuning"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "new-architectures",
+    "beyond-transformers",
+    "continual-learning",
+    "reasoning-debate"
+  ],
+  "abbr": "TTT"
+}

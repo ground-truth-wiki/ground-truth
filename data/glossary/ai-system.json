@@ -1,0 +1,17 @@
+{
+  "id": "ai-system",
+  "term": "AI system",
+  "def": "As defined in the EU AI Act, following the OECD, a machine-based system that infers from its input how to generate outputs such as predictions, content, recommendations or decisions, with varying autonomy.",
+  "practice": "The unit that regulation attaches obligations to: usually your whole product, not just the model inside it, counts as the AI system.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "enterprise-readiness",
+    "data-governance",
+    "history-of-ai",
+    "training-reliability",
+    "voice-telephony",
+    "slos-error-budgets"
+  ]
+}

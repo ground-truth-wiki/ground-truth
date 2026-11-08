@@ -1,0 +1,17 @@
+{
+  "id": "nvidia-dynamo",
+  "term": "NVIDIA Dynamo",
+  "def": "NVIDIA's open-source, datacenter-scale inference framework that coordinates engines such as vLLM, SGLang and TensorRT-LLM across nodes, adding disaggregated prefill and decode, KV-aware routing and SLA-driven autoscaling.",
+  "practice": "An orchestration layer for multi-node and disaggregated deployments, not a replacement for the engine underneath; it can also offload KV cache from GPU to CPU memory, SSD and remote storage.",
+  "aliases": [
+    "Dynamo"
+  ],
+  "chapters": [
+    "serving-engines",
+    "disaggregated-serving",
+    "batching-scheduling",
+    "dl-frameworks",
+    "inference-fleet-scaling",
+    "gpu-kernels-compilers"
+  ]
+}

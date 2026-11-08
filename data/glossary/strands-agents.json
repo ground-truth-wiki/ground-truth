@@ -1,0 +1,16 @@
+{
+  "id": "strands-agents",
+  "term": "Strands Agents",
+  "def": "AWS's open-source agent toolkit for Python and TypeScript in which the model drives the loop with little scaffolding code, with multi-agent patterns (agents as tools, swarm, graph, workflow), hooks and sessions.",
+  "practice": "Most at home on AWS, with documented deployment to AgentCore, Lambda, Fargate and EKS, but it also works with providers such as Anthropic, OpenAI and Ollama.",
+  "aliases": [
+    "Strands"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "orchestration-frameworks",
+    "framework-landscape",
+    "agent-sdk-primitives",
+    "managed-agent-platforms"
+  ]
+}

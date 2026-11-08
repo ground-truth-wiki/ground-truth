@@ -1,0 +1,17 @@
+{
+  "id": "likert-scale",
+  "term": "Likert scale",
+  "def": "An ordinal rating scale with a fixed number of labeled points, such as 1 to 5, on which raters or judge models score a response.",
+  "practice": "Raters often disagree on what separates adjacent points such as 3 and 4, so many practitioners prefer one binary pass or fail per criterion; G-Eval-style judges weight the points by token probabilities.",
+  "aliases": [
+    "Likert",
+    "1-to-5 scale"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "labeling-annotation",
+    "reasoning-training-recipes",
+    "judge-models-meta-evaluation"
+  ]
+}

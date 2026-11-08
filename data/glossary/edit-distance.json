@@ -1,0 +1,17 @@
+{
+  "id": "edit-distance",
+  "term": "Edit distance",
+  "def": "The minimum number of insertions, deletions and substitutions needed to turn one string into another; with unit costs it is the Levenshtein distance.",
+  "practice": "Word error rate is edit distance over words, and normalized edit distance is a cheap fuzzy-match score for OCR, extraction and short answers after normalizing case and whitespace.",
+  "aliases": [
+    "Levenshtein distance",
+    "minimum edit distance"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "speech-audio",
+    "document-extraction",
+    "document-ocr-models",
+    "multimodal-evaluation"
+  ]
+}

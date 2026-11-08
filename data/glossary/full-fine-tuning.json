@@ -1,0 +1,19 @@
+{
+  "id": "full-fine-tuning",
+  "term": "Full fine-tuning",
+  "def": "Fine-tuning that updates every weight of a pretrained model, as opposed to parameter-efficient methods that train a small set of added or selected parameters.",
+  "practice": "Needs memory for gradients and optimizer states of all weights; compared with LoRA it learns more from large datasets and forgets more (Biderman et al., 2024).",
+  "aliases": [
+    "full-parameter fine-tuning",
+    "FullFT"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "sft",
+    "calculus-optimization",
+    "self-supervised-methods",
+    "peft-methods",
+    "in-context-learning",
+    "continual-learning"
+  ]
+}

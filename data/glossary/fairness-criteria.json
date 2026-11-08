@@ -1,0 +1,13 @@
+{
+  "id": "fairness-criteria",
+  "term": "Independence, separation and sufficiency",
+  "def": "The three families of statistical group-fairness criteria: independence (prediction independent of group), separation (independent given the true outcome) and sufficiency (outcome independent of group given the prediction).",
+  "practice": "Demographic parity, equalized odds and calibration by group are the usual instances; except in degenerate cases such as equal base rates, no two can hold together, so choose by the harm at stake.",
+  "aliases": [
+    "group fairness criteria",
+    "statistical fairness criteria"
+  ],
+  "chapters": [
+    "responsible-ai"
+  ]
+}

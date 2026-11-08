@@ -1,0 +1,20 @@
+{
+  "id": "ensemble-learning",
+  "term": "Ensemble learning",
+  "def": "Combining the predictions of several models, by averaging, voting, boosting or stacking, to get a model more accurate or robust than any single member.",
+  "practice": "Random forests, gradient boosting and stacked models are ensembles, and a panel of LLM judges or a majority vote over sampled answers applies the same idea.",
+  "aliases": [
+    "ensemble",
+    "model ensemble"
+  ],
+  "chapters": [
+    "classical-ml",
+    "llm-as-judge",
+    "trees-and-ensembles",
+    "anomaly-drift-detection",
+    "prompting-techniques",
+    "learning-to-rank",
+    "evolutionary-program-search",
+    "ai-for-physical-sciences"
+  ]
+}

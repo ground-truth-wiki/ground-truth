@@ -1,0 +1,16 @@
+{
+  "id": "protein-structure-prediction",
+  "term": "Protein structure prediction",
+  "def": "Predicting the three-dimensional shape of a protein from its amino-acid sequence and, in newer models, its complexes with other molecules.",
+  "practice": "Assessed blind every two years in CASP; now routine in biology pipelines through AlphaFold, ESMFold and open models such as Boltz.",
+  "aliases": [
+    "structure prediction",
+    "protein folding"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "specialist-models",
+    "history-of-ai",
+    "ai-for-biology"
+  ]
+}

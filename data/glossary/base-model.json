@@ -1,0 +1,19 @@
+{
+  "id": "base-model",
+  "term": "Base model",
+  "def": "A model after pretraining (and any mid-training) but before post-training, which continues text rather than following instructions or holding a conversation.",
+  "practice": "The starting point for fine-tuning and RL research; prompt it with text or few-shot examples to continue, not chat messages. Open releases often ship base and instruct variants side by side.",
+  "aliases": [
+    "base checkpoint"
+  ],
+  "chapters": [
+    "sft",
+    "fine-tuning-practice",
+    "small-local-models",
+    "rlvr-reasoning",
+    "distillation-merging",
+    "pretraining-data",
+    "transformer-overview",
+    "sae-circuit-tracing"
+  ]
+}

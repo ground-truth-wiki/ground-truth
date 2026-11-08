@@ -1,0 +1,16 @@
+{
+  "id": "dpop",
+  "term": "Demonstrating Proof of Possession",
+  "def": "An OAuth extension (RFC 9449) that binds tokens to a key pair the client holds, so each request carries a signed proof and a stolen token alone cannot be used.",
+  "practice": "A priority in MCP's roadmap for agent identity as of November 2026; it complements short token lifetimes at the cost of key management and per-request signing in the client.",
+  "aliases": [
+    "DPoP"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "secure-agent-design",
+    "protocol-building-blocks",
+    "agent-identity-delegation"
+  ],
+  "abbr": "DPoP"
+}

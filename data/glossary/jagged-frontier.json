@@ -1,0 +1,17 @@
+{
+  "id": "jagged-frontier",
+  "term": "Jagged frontier",
+  "def": "The uneven boundary of AI capability, where tasks that look equally hard fall inside it (the AI does well) or outside it (the AI fails), and the line is hard to see in advance.",
+  "practice": "In a 2023 field experiment with 758 BCG consultants using GPT-4, output quality rose about 40% on tasks inside the frontier while correctness fell on a task outside it; evaluate task by task.",
+  "aliases": [
+    "jagged technological frontier"
+  ],
+  "chapters": [
+    "open-problems",
+    "ai-product-ux",
+    "sota-snapshot",
+    "choosing-a-model",
+    "ai-use-case-scoping",
+    "economic-impact-evidence"
+  ]
+}

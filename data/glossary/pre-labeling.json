@@ -1,0 +1,14 @@
+{
+  "id": "pre-labeling",
+  "term": "Pre-labeling",
+  "def": "Importing model-generated labels into an annotation tool so annotators review and correct them instead of labeling from scratch.",
+  "practice": "Speeds labeling up but anchors annotators toward the model’s answer; label a sample without pre-labels to measure that bias.",
+  "aliases": [
+    "pre-annotation",
+    "model-assisted labeling",
+    "pre-label"
+  ],
+  "chapters": [
+    "labeling-annotation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "agent-communication-protocol",
+  "term": "Agent Communication Protocol",
+  "def": "IBM's REST-based agent-to-agent protocol, built for the BeeAI platform, which merged into A2A under the Linux Foundation in August 2025.",
+  "practice": "One of several protocols abbreviated ACP, alongside the Agent Client Protocol and the Agentic Commerce Protocol; do not start new work on it, and follow IBM's migration guide to A2A.",
+  "aliases": [
+    "IBM ACP"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "a2a",
+    "acronym-decoder",
+    "a2a-in-depth",
+    "agent-client-protocol"
+  ]
+}

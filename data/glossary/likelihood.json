@@ -1,0 +1,19 @@
+{
+  "id": "likelihood",
+  "term": "Likelihood function",
+  "def": "The probability, or probability density, of the observed data viewed as a function of the model’s parameters rather than of the data.",
+  "practice": "Training maximizes it; in practice the log-likelihood is summed over tokens instead, because multiplying many small probabilities underflows.",
+  "aliases": [
+    "log-likelihood"
+  ],
+  "chapters": [
+    "probability-information",
+    "sft",
+    "preference-optimization",
+    "distributions-and-estimation",
+    "information-theory-for-llms",
+    "loss-functions",
+    "language-modeling",
+    "deep-generative-models"
+  ]
+}

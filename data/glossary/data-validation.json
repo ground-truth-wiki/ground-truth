@@ -1,0 +1,19 @@
+{
+  "id": "data-validation",
+  "term": "Data validation",
+  "def": "Automatically checking data against declared expectations, such as schema, types, ranges, uniqueness and distributions, before it is used for training, evaluation or serving.",
+  "practice": "Run checks at every pipeline boundary and fail loudly; TensorFlow Data Validation and Great Expectations are common tools, and TFDV also flags training-serving skew and drift.",
+  "aliases": [
+    "data quality checks"
+  ],
+  "chapters": [
+    "data-governance",
+    "unstructured-pipelines",
+    "ci-cd-for-ai",
+    "anomaly-drift-detection",
+    "data-validation-drift",
+    "data-pipeline-orchestration",
+    "feature-stores",
+    "mlops-foundations"
+  ]
+}

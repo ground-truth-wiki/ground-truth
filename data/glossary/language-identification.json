@@ -1,0 +1,15 @@
+{
+  "id": "language-identification",
+  "term": "Language identification",
+  "def": "Classifying the language of each document, usually with a fast classifier such as fastText, to build monolingual or balanced multilingual corpora.",
+  "practice": "FineWeb keeps pages with a fastText English score of at least 0.65; its errors decide which languages and dialects end up underrepresented in a model.",
+  "aliases": [
+    "LID",
+    "language ID"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline"
+  ],
+  "abbr": "LID"
+}

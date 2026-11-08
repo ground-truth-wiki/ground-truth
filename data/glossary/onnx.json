@@ -1,0 +1,14 @@
+{
+  "id": "onnx",
+  "term": "ONNX",
+  "def": "An open format defining a common set of operators and a file format for machine learning models, so a model exported from one framework runs in other runtimes and compilers.",
+  "practice": "Export a trained model once and run it with ONNX Runtime across languages and platforms, including Windows, mobile and the browser; new or custom operators may not export cleanly.",
+  "aliases": [
+    "Open Neural Network Exchange"
+  ],
+  "chapters": [
+    "edge-on-device",
+    "serving-engines",
+    "dl-frameworks"
+  ]
+}

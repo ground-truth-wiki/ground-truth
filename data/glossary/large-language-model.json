@@ -1,0 +1,21 @@
+{
+  "id": "large-language-model",
+  "term": "Large language model",
+  "def": "A neural network, usually a decoder-only transformer, trained on very large text corpora to predict the next token and typically post-trained to follow instructions.",
+  "practice": "The generic name for the models behind chat assistants, coding tools and agents, used through provider APIs or run from open weights.",
+  "aliases": [
+    "LLM",
+    "LLMs"
+  ],
+  "chapters": [
+    "ai-engineer-role",
+    "mental-models",
+    "transformer-block",
+    "pretraining-data",
+    "frontier-families",
+    "eigenvectors-svd-pca",
+    "information-theory-for-llms",
+    "llm-uncertainty"
+  ],
+  "abbr": "LLM"
+}

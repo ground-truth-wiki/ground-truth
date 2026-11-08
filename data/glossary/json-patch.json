@@ -1,0 +1,15 @@
+{
+  "id": "json-patch",
+  "term": "JSON Patch",
+  "def": "An IETF format (RFC 6902) for a list of operations (add, remove, replace, move, copy, test) that transforms one JSON document into another.",
+  "practice": "AG-UI streams agent state changes as JSON Patch deltas, which are far smaller than resending the full state on every update.",
+  "aliases": [
+    "RFC 6902"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "streaming",
+    "protocol-building-blocks",
+    "agent-ui-protocols"
+  ]
+}

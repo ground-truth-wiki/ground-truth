@@ -1,0 +1,15 @@
+{
+  "id": "entity-linking",
+  "term": "Entity linking",
+  "def": "Resolving a mention in text to a unique entry in a knowledge base, which tells 'Paris' the city apart from 'Paris' the person.",
+  "practice": "What turns extracted names into graph nodes you can join on; a common recipe retrieves candidate entities with a bi-encoder and reranks them with a cross-encoder, as BLINK does.",
+  "aliases": [
+    "entity disambiguation",
+    "named entity disambiguation"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "agent-memory",
+    "knowledge-graphs"
+  ]
+}

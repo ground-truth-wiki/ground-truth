@@ -1,0 +1,17 @@
+{
+  "id": "ralm",
+  "term": "Retrieval-augmented language model",
+  "def": "A language model that conditions on text retrieved from an external datastore, whether retrieval is built in during pretraining (REALM, RETRO), added by fine-tuning (RA-DIT) or used only at inference.",
+  "practice": "The research umbrella over RAG; In-Context RALM (Ram et al., 2023) showed that prepending retrieved documents to a frozen model's input brings large gains, which is how most production RAG works.",
+  "aliases": [
+    "RALM",
+    "retrieval-augmented LM",
+    "retrieval-based language model"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "advanced-rag",
+    "retrieval-augmented-lms"
+  ],
+  "abbr": "RALM"
+}

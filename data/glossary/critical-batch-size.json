@@ -1,0 +1,13 @@
+{
+  "id": "critical-batch-size",
+  "term": "Critical batch size",
+  "def": "The batch size beyond which larger batches give sharply diminishing reductions in the optimizer steps needed to reach a given loss, so extra parallel compute is mostly wasted.",
+  "practice": "The gradient noise scale estimates it and it grows as loss falls; a 2024 study found it scales mainly with dataset size rather than model size, bounding useful data parallelism.",
+  "aliases": [],
+  "chapters": [
+    "scaling-laws",
+    "distributed-training",
+    "calculus-optimization",
+    "training-hyperparameters"
+  ]
+}

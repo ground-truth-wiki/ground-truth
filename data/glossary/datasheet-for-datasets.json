@@ -1,0 +1,15 @@
+{
+  "id": "datasheet-for-datasets",
+  "term": "Datasheet for datasets",
+  "def": "A structured document, modeled on electronic-component datasheets, that records a dataset’s motivation, composition, collection process, preprocessing, intended uses, distribution and maintenance.",
+  "practice": "Answer its questions for every eval and fine-tuning set you build; hub dataset cards cover much of the same ground and can hold the answers.",
+  "aliases": [
+    "datasheets for datasets"
+  ],
+  "chapters": [
+    "data-governance",
+    "responsible-ai",
+    "eval-datasets",
+    "dataset-documentation"
+  ]
+}

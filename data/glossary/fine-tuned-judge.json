@@ -1,0 +1,16 @@
+{
+  "id": "fine-tuned-judge",
+  "term": "Fine-tuned judge model",
+  "def": "A language model trained specifically to evaluate other models’ outputs, by scoring a response against a rubric or by choosing the better of two responses.",
+  "practice": "Open evaluators such as Prometheus 2 and JudgeLM run locally and cheaply, but like any judge they need calibration against human labels on your own data.",
+  "aliases": [
+    "evaluator language model",
+    "evaluator LM",
+    "fine-tuned judge"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "eval-tooling",
+    "judge-models-meta-evaluation"
+  ]
+}

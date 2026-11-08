@@ -1,0 +1,13 @@
+{
+  "id": "rocm",
+  "term": "ROCm",
+  "def": "AMD's open-source software stack for its GPUs, including drivers, compilers, libraries and HIP, a C++ runtime and kernel language that closely mirrors CUDA so code can be ported.",
+  "practice": "PyTorch, vLLM and SGLang run on AMD Instinct GPUs through ROCm; as of November 2026, new models and optimized kernels can still arrive later than on CUDA.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "serving-engines",
+    "floating-point-formats",
+    "accelerator-architecture"
+  ]
+}

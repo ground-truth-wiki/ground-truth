@@ -1,0 +1,16 @@
+{
+  "id": "out-of-scope-detection",
+  "term": "Out-of-scope detection",
+  "def": "Recognizing that a user request falls outside every intent or policy a system supports, so it can say so or hand off instead of forcing the nearest match.",
+  "practice": "Classifiers that do well in scope often fail here, as the CLINC150 dataset showed; for LLM support agents it is the explicit “not covered” path that leads to a refusal or handoff.",
+  "aliases": [
+    "out-of-scope prediction",
+    "OOS detection"
+  ],
+  "chapters": [
+    "support-agents",
+    "guardrails-control",
+    "eval-datasets",
+    "dialogue-systems"
+  ]
+}

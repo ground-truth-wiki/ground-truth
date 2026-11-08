@@ -1,0 +1,12 @@
+{
+  "id": "text-encoder",
+  "term": "Text encoder",
+  "def": "The network that turns text into embeddings; in image, video and audio generators it is usually a frozen pretrained model, such as CLIP's text tower or T5, whose outputs condition generation.",
+  "practice": "Its capacity bounds prompt understanding: Imagen found that scaling the frozen text encoder improved fidelity and alignment far more than scaling the image diffusion model.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "representation-learning",
+    "feature-engineering"
+  ]
+}

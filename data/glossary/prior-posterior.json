@@ -1,0 +1,14 @@
+{
+  "id": "prior-posterior",
+  "term": "Prior and posterior",
+  "def": "In Bayesian inference, the prior is the distribution over unknown quantities before seeing data; the posterior is the updated distribution after combining it with the data’s likelihood.",
+  "practice": "MAP estimation with a Gaussian prior on the weights is equivalent to an L2 penalty, the standard Bayesian reading of weight regularization.",
+  "aliases": [
+    "prior distribution",
+    "posterior distribution"
+  ],
+  "chapters": [
+    "probability-information",
+    "classical-ml"
+  ]
+}

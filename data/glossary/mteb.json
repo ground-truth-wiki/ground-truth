@@ -1,0 +1,18 @@
+{
+  "id": "mteb",
+  "term": "Massive Text Embedding Benchmark",
+  "def": "A benchmark and public leaderboard (Muennighoff et al., 2022) that scores embedding models on retrieval, classification, clustering, reranking and other tasks; its multilingual extension MMTEB (2025) has over 500 tasks.",
+  "practice": "The usual place to shortlist embedders; read the retrieval scores for your languages and domains rather than the overall average, and confirm on your own queries.",
+  "aliases": [
+    "MTEB",
+    "MMTEB",
+    "MTEB leaderboard"
+  ],
+  "chapters": [
+    "embeddings",
+    "benchmark-literacy",
+    "multilingual-models",
+    "retrieval-test-collections"
+  ],
+  "abbr": "MTEB"
+}

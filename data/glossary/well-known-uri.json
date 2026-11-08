@@ -1,0 +1,14 @@
+{
+  "id": "well-known-uri",
+  "term": "Well-known URI",
+  "def": "A standardized path under /.well-known/ (RFC 8615) where a site publishes metadata for automated discovery.",
+  "practice": "Agent protocols rely on them: /.well-known/oauth-protected-resource for MCP authorization and /.well-known/agent-card.json for A2A agent cards.",
+  "aliases": [
+    "/.well-known/"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "a2a",
+    "protocol-building-blocks"
+  ]
+}

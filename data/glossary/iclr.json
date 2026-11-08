@@ -1,0 +1,20 @@
+{
+  "id": "iclr",
+  "term": "International Conference on Learning Representations",
+  "def": "A major annual deep learning conference, founded in 2013, that runs its peer review in the open on OpenReview.",
+  "practice": "Reviews, scores and author responses are public on OpenReview, which helps you judge how a paper was received and what reviewers doubted.",
+  "aliases": [
+    "ICLR"
+  ],
+  "chapters": [
+    "watchlist",
+    "the-canon",
+    "tensors-and-shapes",
+    "optimizers",
+    "llm-pruning",
+    "fine-tuning-and-safety",
+    "agent-memory-architectures",
+    "dangerous-capability-evals"
+  ],
+  "abbr": "ICLR"
+}

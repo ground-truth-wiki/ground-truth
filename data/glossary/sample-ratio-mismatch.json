@@ -1,0 +1,15 @@
+{
+  "id": "sample-ratio-mismatch",
+  "term": "Sample ratio mismatch",
+  "def": "A gap between the planned and the observed split of users or events across experiment arms that is larger than chance allows, signaling a bug in assignment or logging.",
+  "practice": "Check it with a chi-squared test at a strict threshold such as p < 0.001 (GrowthBook's warning level), and do not trust the experiment's results until the cause is found and fixed.",
+  "aliases": [
+    "SRM"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "eval-statistics",
+    "online-experiments"
+  ],
+  "abbr": "SRM"
+}

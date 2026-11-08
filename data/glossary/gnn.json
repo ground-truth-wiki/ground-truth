@@ -1,0 +1,16 @@
+{
+  "id": "gnn",
+  "term": "Graph neural network",
+  "def": "A network that operates on graph-structured data, updating each node's (and optionally each edge's) representation from its neighbors in a way that does not depend on node ordering.",
+  "practice": "Used for molecules and materials, recommendation, fraud detection and learned simulators such as the GraphCast weather model; each layer passes information one hop further.",
+  "aliases": [
+    "GNN",
+    "graph network"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "graph-neural-networks",
+    "ai-for-physical-sciences"
+  ],
+  "abbr": "GNN"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "wandb-weave",
+  "term": "W&B Weave",
+  "def": "Weights & Biases' open-source (Apache 2.0) toolkit for tracing and evaluating AI agents and LLM applications, which traces Python functions through the @weave.op decorator.",
+  "practice": "A natural fit for teams already tracking training runs in Weights & Biases, since traces and evals sit next to their experiment history.",
+  "aliases": [
+    "Weights & Biases Weave"
+  ],
+  "chapters": [
+    "eval-tooling",
+    "observability-tracing"
+  ]
+}

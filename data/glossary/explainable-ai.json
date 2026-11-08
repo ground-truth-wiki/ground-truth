@@ -1,0 +1,21 @@
+{
+  "id": "explainable-ai",
+  "term": "Explainable AI",
+  "def": "Methods and system properties that help people understand why an AI system produced a given output or how it works in general.",
+  "practice": "Regulated decisions often require explanations, but post-hoc explanations such as SHAP, LIME or a model’s stated reasoning can be unfaithful to what it actually computed, so test them.",
+  "aliases": [
+    "XAI",
+    "explainability"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "mech-interp",
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "ai-product-ux",
+    "model-documentation",
+    "cloud-ai-platforms",
+    "ai-energy"
+  ],
+  "abbr": "XAI"
+}

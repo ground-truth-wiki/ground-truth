@@ -1,0 +1,13 @@
+{
+  "id": "mind2web",
+  "term": "Mind2Web",
+  "def": "A dataset of over 2,000 open-ended web tasks on 137 real websites across 31 domains, with crowdsourced action sequences, for building and evaluating generalist web agents (Deng et al., 2023).",
+  "practice": "Its live successor Online-Mind2Web (300 tasks on 136 websites) found earlier web-agent results over-optimistic and grades with an LLM judge at about 85% agreement with humans; date any live-site score.",
+  "aliases": [],
+  "chapters": [
+    "computer-use-agents",
+    "benchmark-literacy",
+    "evaluating-agents",
+    "computer-use-benchmarks"
+  ]
+}

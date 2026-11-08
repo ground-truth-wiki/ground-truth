@@ -1,0 +1,13 @@
+{
+  "id": "image-to-image",
+  "term": "Image-to-image",
+  "def": "Generating a new image from a partly noised copy of an input image plus a prompt, keeping the input's composition to a degree set by a strength parameter (the SDEdit method).",
+  "practice": "With 50 steps and strength 0.8, Diffusers adds 40 steps of noise and denoises for 40; low strength stays close to the input, while 1.0 nearly ignores it.",
+  "aliases": [
+    "img2img"
+  ],
+  "chapters": [
+    "image-generation",
+    "image-editing-control"
+  ]
+}

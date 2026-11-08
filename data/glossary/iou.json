@@ -1,0 +1,16 @@
+{
+  "id": "iou",
+  "term": "Intersection over union",
+  "def": "The area where a predicted region and a reference region overlap, divided by the area of their union, from 0 for no overlap to 1 for a perfect match.",
+  "practice": "Detection and segmentation count a prediction as correct above an IoU threshold; COCO averages precision over ten thresholds from 0.50 to 0.95.",
+  "aliases": [
+    "IoU",
+    "Jaccard index"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "document-screen-understanding",
+    "visual-grounding"
+  ],
+  "abbr": "IoU"
+}

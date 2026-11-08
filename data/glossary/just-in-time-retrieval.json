@@ -1,0 +1,15 @@
+{
+  "id": "just-in-time-retrieval",
+  "term": "Just-in-time retrieval",
+  "def": "Keeping lightweight references such as file paths, ids, stored queries or URLs in context and loading the content behind them only when a step needs it.",
+  "practice": "How coding agents explore a repository with search and file reads instead of preloading it; it saves context at the cost of extra tool calls and latency.",
+  "aliases": [
+    "just-in-time context"
+  ],
+  "chapters": [
+    "context-engineering",
+    "agent-memory",
+    "structured-code-retrieval",
+    "coding-agents"
+  ]
+}

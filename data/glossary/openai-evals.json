@@ -1,0 +1,10 @@
+{
+  "id": "openai-evals",
+  "term": "OpenAI Evals",
+  "def": "OpenAI's open-source (MIT) framework and registry for evaluating LLMs and LLM systems, with model-graded evals defined in YAML, now complemented by evals run in the OpenAI dashboard.",
+  "practice": "The open registry is a useful library of eval templates; the dashboard version is tied to OpenAI's platform, so it suits teams already building there.",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling"
+  ]
+}

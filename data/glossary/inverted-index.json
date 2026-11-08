@@ -1,0 +1,15 @@
+{
+  "id": "inverted-index",
+  "term": "Inverted index",
+  "def": "A data structure that maps each term to a postings list of the documents (often with positions) that contain it, so a query reads only the lists for its own terms.",
+  "practice": "The core of keyword engines such as Lucene, Elasticsearch and Postgres full-text search, and of learned sparse retrieval; not to be confused with the IVF (inverted file) vector index.",
+  "aliases": [
+    "inverted indexes",
+    "full-text index"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "vector-databases",
+    "ir-foundations"
+  ]
+}

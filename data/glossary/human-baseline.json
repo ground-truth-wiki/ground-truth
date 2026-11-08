@@ -1,0 +1,19 @@
+{
+  "id": "human-baseline",
+  "term": "Human baseline",
+  "def": "Measured performance or completion time of qualified people on the same tasks, under the same conditions as an AI system, used to calibrate difficulty and interpret scores.",
+  "practice": "METR's time horizons rest on human timings such as HCAST's 563 baselines totaling over 1,500 hours, and RE-Bench compares agents with 61 experts; check who the humans were and how long they had.",
+  "aliases": [
+    "human baselining",
+    "expert baseline"
+  ],
+  "chapters": [
+    "long-horizon-autonomy",
+    "benchmark-literacy",
+    "eval-datasets",
+    "benchmark-validity",
+    "computer-use-benchmarks",
+    "data-analysis-agents",
+    "scheming-evaluations"
+  ]
+}

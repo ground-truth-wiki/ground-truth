@@ -1,0 +1,18 @@
+{
+  "id": "kernel-fusion",
+  "term": "Kernel fusion",
+  "def": "Combining several operations into one GPU kernel so intermediate results stay in registers or on-chip memory instead of round-tripping through high-bandwidth memory.",
+  "practice": "One of the most important optimizations deep learning compilers perform, especially for memory-bound elementwise operations; FlashAttention is a hand-fused attention kernel.",
+  "aliases": [
+    "operator fusion",
+    "operation fusion",
+    "fused kernel"
+  ],
+  "chapters": [
+    "distributed-training",
+    "attention",
+    "long-context",
+    "hardware",
+    "accelerator-architecture"
+  ]
+}

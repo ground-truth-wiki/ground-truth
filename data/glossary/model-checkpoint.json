@@ -1,0 +1,11 @@
+{
+  "id": "model-checkpoint",
+  "term": "Model checkpoint",
+  "def": "A saved copy of a model's parameters and, when meant for resuming training, its optimizer state, learning-rate scheduler state and step counter.",
+  "practice": "Published checkpoints are usually safetensors files plus a config; resumable training checkpoints are several times larger because they add optimizer state.",
+  "aliases": [],
+  "chapters": [
+    "supply-chain-security",
+    "distributed-training"
+  ]
+}

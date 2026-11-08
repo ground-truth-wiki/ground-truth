@@ -1,0 +1,20 @@
+{
+  "id": "ai-export-controls",
+  "term": "AI export controls",
+  "def": "Government restrictions on exporting advanced AI chips, chipmaking equipment and, in some cases, model weights or model access, applied mainly by the United States.",
+  "practice": "They can decide which hardware and models you may use and where; in June 2026 a US export control directive forced Anthropic to suspend access to two models for about three weeks.",
+  "aliases": [
+    "export controls",
+    "chip export controls"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "sota-snapshot",
+    "open-weight-frontier",
+    "hardware",
+    "ai-energy",
+    "model-theft",
+    "eu-ai-act",
+    "us-ai-law"
+  ]
+}

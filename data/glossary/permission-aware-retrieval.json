@@ -1,0 +1,21 @@
+{
+  "id": "permission-aware-retrieval",
+  "term": "Permission-aware retrieval",
+  "def": "Restricting retrieval results at query time to documents the asking user may see, by matching their identity and groups against access-control lists stored with each document or chunk.",
+  "practice": "Also called security trimming; apply the filter inside the search query rather than after generation, and keep ACLs synced with the source systems.",
+  "aliases": [
+    "security trimming",
+    "document-level security",
+    "ACL filtering"
+  ],
+  "chapters": [
+    "production-rag",
+    "vector-databases",
+    "rag-fundamentals",
+    "enterprise-readiness",
+    "ingestion-parsing",
+    "reference-architectures",
+    "rag-security",
+    "web-search-hosted-retrieval"
+  ]
+}

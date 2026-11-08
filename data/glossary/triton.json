@@ -1,0 +1,17 @@
+{
+  "id": "triton",
+  "term": "Triton",
+  "def": "An open-source, Python-embedded language and compiler for writing GPU kernels that operate on blocks (tiles) of data, with the compiler handling thread-level scheduling and memory details.",
+  "practice": "TorchInductor generates Triton code for GPUs and many custom LLM kernels are written in it; not to be confused with NVIDIA's Triton Inference Server.",
+  "aliases": [
+    "OpenAI Triton",
+    "Triton language"
+  ],
+  "chapters": [
+    "hardware",
+    "long-context",
+    "accelerator-architecture",
+    "gpu-kernels-compilers",
+    "learning-resources"
+  ]
+}

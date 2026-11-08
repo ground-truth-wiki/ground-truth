@@ -1,0 +1,17 @@
+{
+  "id": "cot-faithfulness",
+  "term": "Chain-of-thought faithfulness",
+  "def": "The degree to which a model's stated reasoning reflects the factors that actually produced its answer.",
+  "practice": "Measured by planting hints or intervening on the reasoning; reasoning models often fail to mention hints they used, so treat a visible chain of thought as evidence, not an explanation.",
+  "aliases": [
+    "CoT faithfulness",
+    "reasoning faithfulness"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "reasoning-prompts",
+    "alignment-concepts",
+    "mech-interp",
+    "reasoning-debate"
+  ]
+}

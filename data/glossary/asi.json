@@ -1,0 +1,18 @@
+{
+  "id": "asi",
+  "term": "Artificial superintelligence",
+  "def": "Hypothetical AI whose cognitive performance greatly exceeds that of humans in virtually all domains of interest, following Nick Bostrom's 2014 definition of superintelligence.",
+  "practice": "Appears in lab mission statements, scenario forecasts and safety debates; it differs from AGI, which needs only roughly human level, and no current system qualifies.",
+  "aliases": [
+    "ASI",
+    "superintelligence"
+  ],
+  "chapters": [
+    "open-problems",
+    "alignment-concepts",
+    "ai-control",
+    "open-model-communities",
+    "agi-timelines-risk"
+  ],
+  "abbr": "ASI"
+}

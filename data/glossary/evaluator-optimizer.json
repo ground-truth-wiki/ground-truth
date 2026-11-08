@@ -1,0 +1,19 @@
+{
+  "id": "evaluator-optimizer",
+  "term": "Evaluator-optimizer",
+  "def": "A workflow in which one model call generates a response and another evaluates it against explicit criteria and returns feedback, looping until it passes or an iteration cap is reached.",
+  "practice": "Cap the iterations and keep the best draft; the loop is only as good as the evaluator's criteria.",
+  "aliases": [
+    "evaluator and optimizer",
+    "maker-checker loop",
+    "generator-verifier",
+    "critic loop",
+    "generator and critic"
+  ],
+  "chapters": [
+    "workflow-patterns",
+    "prompt-chaining",
+    "multi-agent",
+    "multi-agent-patterns"
+  ]
+}

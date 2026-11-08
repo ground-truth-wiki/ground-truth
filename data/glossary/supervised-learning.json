@@ -1,0 +1,17 @@
+{
+  "id": "supervised-learning",
+  "term": "Supervised learning",
+  "def": "Learning a mapping from inputs to known targets, either class labels or numeric values, from examples where the correct output is given.",
+  "practice": "Covers classification and regression and is the setting behind routers, guard models, rerankers and supervised fine-tuning; the model can only be as good as its labels.",
+  "aliases": [
+    "supervised machine learning"
+  ],
+  "chapters": [
+    "classical-ml",
+    "labeling-annotation",
+    "sft",
+    "self-supervised-methods",
+    "imitation-offline-rl",
+    "model-interpretability"
+  ]
+}

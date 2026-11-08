@@ -1,0 +1,14 @@
+{
+  "id": "helm",
+  "term": "HELM",
+  "def": "Holistic Evaluation of Language Models: Stanford CRFM's framework and leaderboards that score models across many scenarios and on metrics beyond accuracy, such as calibration, robustness and efficiency.",
+  "practice": "Useful for transparent, like-for-like comparisons because prompts, settings and raw model outputs are published.",
+  "aliases": [
+    "Holistic Evaluation of Language Models"
+  ],
+  "chapters": [
+    "eval-harnesses",
+    "benchmark-literacy",
+    "benchmark-catalog"
+  ]
+}

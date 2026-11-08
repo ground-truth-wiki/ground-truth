@@ -1,0 +1,17 @@
+{
+  "id": "precision-recall-curve",
+  "term": "Precision–recall curve",
+  "def": "A plot of precision against recall as the classification threshold varies; its area, usually computed as average precision, summarizes it in one number.",
+  "practice": "More informative than the ROC curve when positives are rare, as with fraud, abuse or guard-model triggers, because its baseline moves with the positive rate (Saito and Rehmsmeier, 2015).",
+  "aliases": [
+    "PR curve",
+    "PR AUC",
+    "average precision"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes",
+    "classification-metrics",
+    "anomaly-drift-detection"
+  ]
+}

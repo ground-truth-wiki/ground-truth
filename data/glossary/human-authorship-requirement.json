@@ -1,0 +1,13 @@
+{
+  "id": "human-authorship-requirement",
+  "term": "Human authorship requirement",
+  "def": "The US copyright rule that protection requires human creative authorship, so material generated entirely by AI cannot be registered, while human selection, arrangement or edits of it can be.",
+  "practice": "Upheld in Thaler v. Perlmutter (D.C. Circuit, March 2025; Supreme Court review denied March 2026); the Copyright Office's January 2025 report says prompts alone generally do not make you the author.",
+  "aliases": [
+    "human authorship"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "image-generation"
+  ]
+}

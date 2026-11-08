@@ -1,0 +1,19 @@
+{
+  "id": "cross-attention",
+  "term": "Cross-attention",
+  "def": "Attention in which the queries come from one sequence and the keys and values from another, such as a decoder reading an encoder's output vectors.",
+  "practice": "Used in encoder-decoder models such as the 2017 transformer and T5, and in some vision-language models, such as Flamingo, where text tokens attend to image features.",
+  "aliases": [
+    "encoder-decoder attention"
+  ],
+  "chapters": [
+    "transformer-overview",
+    "attention",
+    "vision-language-models",
+    "recurrent-networks",
+    "encoders-and-decoders",
+    "retrieval-augmented-lms",
+    "vlm-architectures",
+    "diffusion-flow-matching"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "google-antigravity",
+  "term": "Google Antigravity",
+  "def": "Google's agent-first development platform, launched in November 2025 as an agentic IDE and extended in May 2026 with the Antigravity 2.0 desktop app and the Go-based Antigravity CLI.",
+  "practice": "Antigravity CLI shares the desktop app's agent harness and replaced Gemini CLI for consumer tiers; Agent Skills, hooks, subagents and extensions (renamed Antigravity plugins) carried over, without full parity at launch (as of November 2026).",
+  "aliases": [
+    "Antigravity",
+    "Antigravity CLI",
+    "Antigravity plugins"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "harness-permissions-hooks",
+    "agent-instruction-files"
+  ]
+}

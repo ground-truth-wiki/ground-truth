@@ -1,0 +1,13 @@
+{
+  "id": "maximal-marginal-relevance",
+  "term": "Maximal marginal relevance",
+  "def": "A reranking rule that picks each next result by trading off its relevance to the query against its similarity to results already picked, weighted by a parameter lambda.",
+  "practice": "Cuts near-duplicate chunks from the context window; LangChain vector stores expose it with fetch_k candidates and lambda_mult, and it is unrelated to MRR, the ranking metric.",
+  "aliases": [
+    "MMR"
+  ],
+  "chapters": [
+    "reranking"
+  ],
+  "abbr": "MMR"
+}

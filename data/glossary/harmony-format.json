@@ -1,0 +1,17 @@
+{
+  "id": "harmony-format",
+  "term": "Harmony response format",
+  "def": "The conversation format OpenAI's open-weight gpt-oss models were trained on, with system, developer, user, assistant and tool roles and analysis, commentary and final output channels.",
+  "practice": "OpenAI says gpt-oss will not work correctly without it; hosted APIs and most inference servers apply it, but custom serving code must render it exactly.",
+  "aliases": [
+    "harmony format",
+    "OpenAI Harmony"
+  ],
+  "chapters": [
+    "model-specific-notes",
+    "open-weight-frontier",
+    "sft",
+    "model-specs-instruction-hierarchy",
+    "chat-templates"
+  ]
+}

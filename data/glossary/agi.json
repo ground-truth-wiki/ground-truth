@@ -1,0 +1,21 @@
+{
+  "id": "agi",
+  "term": "Artificial general intelligence",
+  "def": "Hypothetical AI that matches or exceeds human ability across most cognitive tasks rather than in narrow domains; there is no agreed definition or test.",
+  "practice": "Definitions differ (Levels of AGI grades performance and breadth, OpenAI's charter uses economically valuable work, Hendrycks et al. 2025 scored GPT-5 at 57%), so ask which one a claim uses.",
+  "aliases": [
+    "AGI",
+    "human-level AI"
+  ],
+  "chapters": [
+    "open-problems",
+    "mental-models",
+    "frontier-safety-frameworks",
+    "alignment-concepts",
+    "continual-learning",
+    "scaling-trends-limits",
+    "economic-impact-evidence",
+    "agi-timelines-risk"
+  ],
+  "abbr": "AGI"
+}

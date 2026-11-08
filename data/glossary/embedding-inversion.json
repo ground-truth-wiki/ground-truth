@@ -1,0 +1,16 @@
+{
+  "id": "embedding-inversion",
+  "term": "Embedding inversion",
+  "def": "Reconstructing the original text, or sensitive parts of it, from its embedding vector.",
+  "practice": "Vec2Text (Morris et al., 2023) recovered 92% of 32-token inputs exactly, so treat stored embeddings as being as sensitive as the text they encode; OWASP lists the risk under LLM08:2025.",
+  "aliases": [
+    "embedding inversion attack"
+  ],
+  "chapters": [
+    "privacy",
+    "vector-databases",
+    "production-rag",
+    "embeddings",
+    "rag-security"
+  ]
+}

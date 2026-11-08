@@ -1,0 +1,15 @@
+{
+  "id": "backbone",
+  "term": "Backbone network",
+  "def": "The pretrained network that turns raw inputs into general-purpose features, onto which a small task-specific head is attached.",
+  "practice": "Vision systems commonly reuse ResNet, ViT, ConvNeXt or DINOv2 backbones, often frozen at first so only the head trains; the timm library packages many of them.",
+  "aliases": [
+    "pretrained backbone",
+    "vision backbone"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "representation-learning",
+    "vlm-architectures"
+  ]
+}

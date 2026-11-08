@@ -1,0 +1,22 @@
+{
+  "id": "github-copilot",
+  "term": "GitHub Copilot",
+  "def": "GitHub's family of AI coding tools, from the 2021 code-completion assistant to agent mode in editors, the Copilot CLI, a cloud agent that opens pull requests, and Copilot code review.",
+  "practice": "It reads .github/copilot-instructions.md, path-specific .instructions.md files and AGENTS.md and supports Agent Skills (as of November 2026); not to be confused with Microsoft Copilot or Copilot Studio.",
+  "aliases": [
+    "Copilot cloud agent",
+    "Copilot coding agent",
+    "Copilot CLI",
+    "Copilot code review"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "coding-agents",
+    "working-with-coding-agents",
+    "data-analysis-agents",
+    "harness-permissions-hooks",
+    "agent-instruction-files",
+    "cloud-and-ci-coding-agents",
+    "coding-agent-security"
+  ]
+}

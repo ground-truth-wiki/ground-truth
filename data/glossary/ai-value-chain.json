@@ -1,0 +1,12 @@
+{
+  "id": "ai-value-chain",
+  "term": "AI value chain",
+  "def": "The network of actors and components behind an AI system, from data and model suppliers and tool vendors to system providers, deployers and distributors.",
+  "practice": "Responsibilities follow it: the EU AI Act requires written agreements between high-risk providers and their component suppliers (Article 25(4)), and NIST lists untraceable third-party components as a generative AI risk.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "supply-chain-security",
+    "enterprise-readiness"
+  ]
+}

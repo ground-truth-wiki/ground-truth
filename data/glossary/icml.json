@@ -1,0 +1,20 @@
+{
+  "id": "icml",
+  "term": "International Conference on Machine Learning",
+  "def": "One of the main annual machine learning research conferences, publishing peer-reviewed papers on theory, methods and applications.",
+  "practice": "A venue and year such as ICML 2024 tells you a paper passed peer review; PaperBench uses ICML 2024 Spotlight and Oral papers as replication targets for agents.",
+  "aliases": [
+    "ICML"
+  ],
+  "chapters": [
+    "watchlist",
+    "the-canon",
+    "anomaly-drift-detection",
+    "trainable-deep-networks",
+    "function-calling-training",
+    "llm-pruning",
+    "llm-planning-debate",
+    "measuring-time-horizons"
+  ],
+  "abbr": "ICML"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mcp-extension",
+  "term": "MCP extension",
+  "def": "An optional, opt-in addition to the MCP core with a namespaced identifier such as io.modelcontextprotocol/ui, negotiated through the extensions field of client and server capabilities.",
+  "practice": "Official extensions live in ext- repositories and move from Experimental through Beta to Stable or into the core; as of November 2026 MCP Apps and both authorization extensions are Stable.",
+  "aliases": [],
+  "chapters": [
+    "mcp-architecture",
+    "mcp-spec-history",
+    "mcp-at-scale",
+    "protocol-governance",
+    "protocol-soup",
+    "mcp-extensions",
+    "agent-ui-protocols"
+  ]
+}

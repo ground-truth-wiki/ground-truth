@@ -1,0 +1,21 @@
+{
+  "id": "reinforcement-fine-tuning",
+  "term": "Reinforcement fine-tuning",
+  "def": "Fine-tuning a model with reinforcement learning against a grader or reward function the customer defines, instead of fixed target answers, usually offered as a managed service.",
+  "practice": "As of November 2026 Amazon Bedrock and Google Cloud offer it, while OpenAI is winding down its self-serve fine-tuning (announced May 2026); RFT can also mean rejection-sampling fine-tuning.",
+  "aliases": [
+    "RFT",
+    "RLFT",
+    "reinforcement learning fine-tuning"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "rlvr-reasoning",
+    "rl-environment-harnesses",
+    "agentic-rl",
+    "peft-methods",
+    "fine-tuning-services",
+    "continual-learning"
+  ],
+  "abbr": "RFT"
+}

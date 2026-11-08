@@ -1,0 +1,13 @@
+{
+  "id": "credit-assignment",
+  "term": "Credit assignment",
+  "def": "Working out which of the many actions or tokens in a trajectory deserve credit or blame for the eventual reward.",
+  "practice": "The central difficulty of long agent trajectories and reasoning traces rewarded only at the end; value models, process rewards and group comparisons are partial answers.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "agentic-rl",
+    "rl-environment-harnesses",
+    "rlvr-reasoning"
+  ]
+}

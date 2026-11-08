@@ -1,0 +1,19 @@
+{
+  "id": "vae",
+  "term": "Variational autoencoder",
+  "def": "A probabilistic autoencoder whose encoder outputs a distribution over latent codes, trained on the evidence lower bound so that sampling its latent space generates new data.",
+  "practice": "In latent diffusion generators a KL-regularized VAE encodes images into latents and decodes generated latents back to pixels; on their own, VAEs tend to produce blurry samples.",
+  "aliases": [
+    "VAE",
+    "variational auto-encoder"
+  ],
+  "chapters": [
+    "image-generation",
+    "representation-learning",
+    "video-world-models",
+    "autoencoders-latent-spaces",
+    "deep-generative-models",
+    "video-generation"
+  ],
+  "abbr": "VAE"
+}

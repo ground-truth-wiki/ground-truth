@@ -1,0 +1,13 @@
+{
+  "id": "croissant",
+  "term": "Croissant",
+  "def": "An MLCommons metadata vocabulary for machine-learning datasets, built on schema.org, that describes a dataset’s files, structure and semantics in machine-readable form.",
+  "practice": "Hugging Face, Kaggle and OpenML serve Croissant files, NeurIPS’s Datasets and Benchmarks track asks for one, and version 1.1 (February 2026) adds provenance (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "data-governance",
+    "responsible-ai",
+    "dataset-documentation",
+    "dataset-versioning-lineage"
+  ]
+}

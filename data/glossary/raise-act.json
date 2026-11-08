@@ -1,0 +1,17 @@
+{
+  "id": "raise-act",
+  "term": "RAISE Act",
+  "def": "New York's Responsible AI Safety and Education Act, signed December 2025 and rewritten by a March 2026 chapter amendment to closely follow California SB 53's duties for frontier AI developers.",
+  "practice": "Takes effect 1 January 2027 with the same 10²⁶-operation and USD 500 million thresholds as California, but a 72-hour incident deadline and a new oversight office in the Department of Financial Services.",
+  "aliases": [
+    "New York RAISE Act",
+    "Responsible AI Safety and Education Act"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "dangerous-capability-evals",
+    "us-ai-law",
+    "compute-governance"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "uplift-study",
+  "term": "Uplift study",
+  "def": "A controlled experiment comparing how well people complete a task, often a hazardous one such as drafting a bioweapons acquisition plan, with and without access to an AI model.",
+  "practice": "Frontier developers use it to test whether a model adds risk beyond what internet access already gives; groups are often small, so read the measured uplift together with the study design.",
+  "aliases": [
+    "uplift trial",
+    "human uplift trial"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "dangerous-capability-evals"
+  ]
+}

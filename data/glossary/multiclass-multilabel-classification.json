@@ -1,0 +1,16 @@
+{
+  "id": "multiclass-multilabel-classification",
+  "term": "Multiclass and multilabel classification",
+  "def": "Multiclass classification assigns each example exactly one of three or more classes; multilabel classification lets each example carry any subset of labels.",
+  "practice": "It decides the output layer and the metrics: one softmax whose classes compete versus an independent sigmoid and threshold per label, and how per-class scores are averaged.",
+  "aliases": [
+    "multiclass classification",
+    "multi-class classification",
+    "multilabel classification",
+    "multi-label classification"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes"
+  ]
+}

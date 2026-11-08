@@ -1,0 +1,11 @@
+{
+  "id": "user-mental-model",
+  "term": "User mental model",
+  "def": "What a user believes about how a product works and how their actions affect it, which shapes what they expect from it and how they use it.",
+  "practice": "Mismatches cause over-trust, misuse and abandonment; AI products shape an accurate model through onboarding, stated limits and showing how feedback changes the system.",
+  "aliases": [],
+  "chapters": [
+    "ai-product-ux",
+    "agent-ux"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gpt-3",
+  "term": "GPT-3",
+  "def": "OpenAI's 175-billion-parameter language model, described in 'Language Models are Few-Shot Learners' (Brown et al., 2020), which performed new tasks from examples in the prompt without fine-tuning.",
+  "practice": "It made in-context learning and prompting the main way to use language models; ChatGPT launched about two and a half years later on a fine-tuned model from the GPT-3.5 series.",
+  "aliases": [],
+  "chapters": [
+    "the-canon",
+    "prompting-fundamentals",
+    "scaling-laws",
+    "frontier-families",
+    "history-of-ai",
+    "training-hyperparameters",
+    "language-modeling",
+    "web-data-pipeline"
+  ]
+}

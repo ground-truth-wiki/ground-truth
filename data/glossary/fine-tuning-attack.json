@@ -1,0 +1,16 @@
+{
+  "id": "fine-tuning-attack",
+  "term": "Fine-tuning attack",
+  "def": "Removing a model's safety behavior by fine-tuning it on a small number of harmful examples, through open weights or a fine-tuning API; even benign fine-tuning can weaken it.",
+  "practice": "Qi et al. (2023) jailbroke GPT-3.5 Turbo with 10 harmful examples through OpenAI's fine-tuning API; re-run safety evals after every fine-tune.",
+  "aliases": [
+    "harmful fine-tuning"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "safety-character-training",
+    "jailbreaks-misuse",
+    "safety-evals",
+    "fine-tuning-and-safety"
+  ]
+}

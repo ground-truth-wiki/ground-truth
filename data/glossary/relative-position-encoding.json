@@ -1,0 +1,14 @@
+{
+  "id": "relative-position-encoding",
+  "term": "Relative position encoding",
+  "def": "Position information based on the distance between a query and a key, applied inside attention instead of being added to the input embeddings.",
+  "practice": "Shaw et al. (2018) learned a vector per clipped offset and T5 adds a learned bias per distance bucket to attention scores; RoPE and ALiBi are relative schemes too.",
+  "aliases": [
+    "relative positional encoding",
+    "relative position embedding"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "attention"
+  ]
+}

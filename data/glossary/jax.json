@@ -1,0 +1,17 @@
+{
+  "id": "jax",
+  "term": "JAX",
+  "def": "A Python library from Google for composable transformations of numerical functions, such as grad, jit and vmap, compiled through XLA for CPUs, GPUs and TPUs.",
+  "practice": "The main framework for TPU work, with neural network libraries such as Flax and optimizer libraries such as Optax built on it; its transformations require pure functions.",
+  "aliases": [],
+  "chapters": [
+    "neural-networks",
+    "hardware",
+    "tensors-and-shapes",
+    "automatic-differentiation",
+    "dl-frameworks",
+    "accelerator-architecture",
+    "gpu-kernels-compilers",
+    "learning-resources"
+  ]
+}

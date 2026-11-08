@@ -1,0 +1,16 @@
+{
+  "id": "learned-simulator",
+  "term": "Learned simulator",
+  "def": "A neural network trained to predict how a physical system evolves over time, replacing or speeding up a numerical simulator.",
+  "practice": "Graph-network simulators handled an order of magnitude more particles than in training, and GraphCast makes a 10-day global forecast in under a minute on one TPU; watch for errors that accumulate over long rollouts.",
+  "aliases": [
+    "neural simulator"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "video-world-models",
+    "specialist-models",
+    "world-models",
+    "ai-for-physical-sciences"
+  ]
+}

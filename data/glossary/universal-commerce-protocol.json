@@ -1,0 +1,14 @@
+{
+  "id": "universal-commerce-protocol",
+  "term": "Universal Commerce Protocol",
+  "def": "An open standard co-developed by Google with platforms and retailers such as Shopify, Etsy, Walmart and Target, for agents to run catalog, cart, checkout, identity-linking and order flows with businesses.",
+  "practice": "Announced in January 2026; it runs over REST, JSON-RPC, MCP or A2A and builds on AP2 mandates for payment authorization.",
+  "aliases": [
+    "UCP"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "agentic-commerce-protocols"
+  ],
+  "abbr": "UCP"
+}

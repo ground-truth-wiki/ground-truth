@@ -1,0 +1,13 @@
+{
+  "id": "imputation",
+  "term": "Imputation",
+  "def": "Filling in missing feature values with estimates such as a column's mean or median, a nearest neighbor's value or a model's prediction.",
+  "practice": "Add a missing-value indicator when absence itself carries signal; histogram-based gradient boosting in scikit-learn, XGBoost and LightGBM handles missing values natively.",
+  "aliases": [
+    "missing-value imputation"
+  ],
+  "chapters": [
+    "classical-ml",
+    "feature-engineering"
+  ]
+}

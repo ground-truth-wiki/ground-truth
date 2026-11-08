@@ -1,0 +1,17 @@
+{
+  "id": "dpr",
+  "term": "Dense Passage Retrieval",
+  "def": "A dual-encoder retriever from Karpukhin et al. (2020): two BERT encoders trained on question-passage pairs with in-batch negatives and dot-product scoring, which outperformed BM25 on open-domain QA.",
+  "practice": "The reference design for trained dense retrievers and the retriever in the original RAG paper (Lewis et al., 2020); 'DPR-style' usually means a bi-encoder trained this way.",
+  "aliases": [
+    "DPR"
+  ],
+  "chapters": [
+    "embeddings",
+    "rag-fundamentals",
+    "ir-foundations",
+    "retrieval-augmented-lms",
+    "training-retrievers"
+  ],
+  "abbr": "DPR"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "patch-embedding",
+  "term": "Patch embedding",
+  "def": "The first step of a vision transformer: the image is cut into fixed-size square patches, and each is flattened and linearly projected into a token vector, plus a position embedding.",
+  "practice": "Patch size and resolution set the token count: a 224 x 224 image with 16-pixel patches yields 196 tokens, and halving the patch size quadruples that.",
+  "aliases": [
+    "patchify"
+  ],
+  "chapters": [
+    "vision-language-models"
+  ]
+}

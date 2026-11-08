@@ -1,0 +1,12 @@
+{
+  "id": "progress-notification",
+  "term": "Progress notification",
+  "def": "An MCP notification, notifications/progress, that a server sends for a request carrying a client-chosen progressToken, reporting progress so far plus an optional total and message.",
+  "practice": "Progress values must increase with each notification; since 2026-07-28 they flow only on the response stream of their request, never on the subscriptions/listen stream.",
+  "aliases": [],
+  "chapters": [
+    "mcp-transports",
+    "mcp-architecture",
+    "agent-ux"
+  ]
+}

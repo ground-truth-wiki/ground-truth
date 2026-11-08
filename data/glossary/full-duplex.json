@@ -1,0 +1,13 @@
+{
+  "id": "full-duplex",
+  "term": "Full-duplex speech model",
+  "def": "A spoken dialogue model that listens and speaks at the same time over parallel audio streams, handling overlaps, interruptions and backchannels without explicit turn segmentation.",
+  "practice": "Moshi is an open example; it removes the turn-taking logic of cascaded voice agents but is harder to inspect and control.",
+  "aliases": [
+    "full-duplex dialogue model"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents"
+  ]
+}

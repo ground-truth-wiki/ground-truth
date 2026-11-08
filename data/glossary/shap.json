@@ -1,0 +1,15 @@
+{
+  "id": "shap",
+  "term": "SHAP",
+  "def": "SHapley Additive exPlanations: a method that attributes a single prediction to input features using Shapley values from cooperative game theory, so attributions sum to the prediction minus a baseline.",
+  "practice": "A standard way to explain individual predictions of tabular and tree models; it explains what the model does, not causal effects in the world.",
+  "aliases": [
+    "SHAP values",
+    "Shapley additive explanations"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "classical-ml",
+    "model-interpretability"
+  ]
+}

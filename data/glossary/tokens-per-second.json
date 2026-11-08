@@ -1,0 +1,22 @@
+{
+  "id": "tokens-per-second",
+  "term": "Tokens per second",
+  "def": "A rate of token generation, either summed over all requests on a server (throughput) or measured for a single stream (output speed).",
+  "practice": "Always say which: one server can produce thousands of tokens per second in total while each user sees a few dozen.",
+  "aliases": [
+    "tok/s",
+    "tokens/s",
+    "TPS",
+    "output speed"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "inference-fundamentals",
+    "hardware",
+    "edge-on-device",
+    "cost-capacity",
+    "back-of-envelope",
+    "compute-accounting",
+    "video-understanding"
+  ]
+}

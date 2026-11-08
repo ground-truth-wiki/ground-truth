@@ -1,0 +1,19 @@
+{
+  "id": "learning-rate-schedule",
+  "term": "Learning-rate schedule",
+  "def": "A rule that changes the learning rate over a training run, typically a short warmup followed by a gradual decay.",
+  "practice": "Warmup then cosine decay is the most common shape (LLaMA decayed to 10% of the peak), but it fixes the run length in advance, which warmup-stable-decay schedules avoid.",
+  "aliases": [
+    "LR schedule",
+    "learning-rate scheduler",
+    "learning-rate decay"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "mid-training",
+    "fine-tuning-practice",
+    "scaling-laws",
+    "training-neural-networks",
+    "pretraining-run"
+  ]
+}

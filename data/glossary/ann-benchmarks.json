@@ -1,0 +1,15 @@
+{
+  "id": "ann-benchmarks",
+  "term": "ANN-Benchmarks",
+  "def": "An open benchmarking tool and results site that compares approximate nearest-neighbor libraries by recall against queries per second on standard datasets.",
+  "practice": "The usual index-level comparison; it does not test your vectors, filters, updates or deletes, so treat it as a shortlist, not a verdict.",
+  "aliases": [
+    "ann-benchmarks.com"
+  ],
+  "chapters": [
+    "vector-search",
+    "vector-databases",
+    "high-dimensional-geometry",
+    "vector-index-internals"
+  ]
+}

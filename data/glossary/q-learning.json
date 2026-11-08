@@ -1,0 +1,12 @@
+{
+  "id": "q-learning",
+  "term": "Q-learning",
+  "def": "An off-policy TD control algorithm that updates the action value Q(s, a) toward the reward plus the discounted maximum action value of the next state.",
+  "practice": "The root of DQN and most value-based deep RL; the max in its target overestimates values, which double Q-learning corrects.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "value-based-rl",
+    "imitation-offline-rl"
+  ]
+}

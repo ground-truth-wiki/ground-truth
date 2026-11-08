@@ -1,0 +1,11 @@
+{
+  "id": "controlnet",
+  "term": "ControlNet",
+  "def": "A trainable copy of a frozen diffusion model's encoder, joined to it through zero-initialized convolutions, that conditions generation on a structural input such as edges, depth, pose or segmentation.",
+  "practice": "The standard way to make generated images follow a sketch, pose or layout without retraining the base model; several ControlNets can be combined.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "image-editing-control"
+  ]
+}

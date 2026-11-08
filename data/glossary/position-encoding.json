@@ -1,0 +1,21 @@
+{
+  "id": "position-encoding",
+  "term": "Positional encoding",
+  "def": "Any mechanism that gives a transformer information about token order, which attention alone ignores because it treats its inputs as an unordered set.",
+  "practice": "Most current LLMs use RoPE; older models added sinusoidal or learned position vectors to the input, and some recent ones leave position out of some layers (NoPE).",
+  "aliases": [
+    "position encoding",
+    "positional embedding",
+    "position embedding"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "transformer-overview",
+    "attention",
+    "linear-algebra",
+    "mid-training",
+    "rope-scaling",
+    "long-context-training",
+    "video-understanding"
+  ]
+}

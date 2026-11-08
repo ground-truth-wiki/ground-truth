@@ -1,0 +1,19 @@
+{
+  "id": "vercel-ai-sdk",
+  "term": "AI SDK",
+  "def": "Vercel's open-source TypeScript toolkit for AI applications and agents: a provider-agnostic core for text, structured output, tools and agents, UI hooks for chat interfaces, and adapters for external agent harnesses.",
+  "practice": "The usual choice for streaming chat UIs in TypeScript; version 7 (June 2026) is ESM-only and needs Node.js 22 or later, so pin one major version across all ai and @ai-sdk packages.",
+  "aliases": [
+    "Vercel AI SDK"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "framework-selection",
+    "streaming",
+    "agent-ux",
+    "agent-sdk-primitives",
+    "embedded-agent-harnesses",
+    "frameworks-beyond-python"
+  ]
+}

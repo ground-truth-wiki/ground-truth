@@ -1,0 +1,17 @@
+{
+  "id": "crowdsourcing",
+  "term": "Crowdsourcing",
+  "def": "Splitting labeling or data-collection work into small tasks done by many paid online workers, usually with redundant labels per item and quality checks.",
+  "practice": "Suits simple, high-volume tasks; a 2023 study found ChatGPT beat crowd workers on several text-annotation tasks, and pay and working conditions affect both label quality and ethics.",
+  "aliases": [
+    "crowd labeling",
+    "crowd workers",
+    "crowdworkers"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "label-quality",
+    "active-learning-weak-supervision",
+    "dialogue-systems"
+  ]
+}

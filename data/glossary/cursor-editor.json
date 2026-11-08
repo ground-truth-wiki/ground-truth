@@ -1,0 +1,15 @@
+{
+  "id": "cursor-editor",
+  "term": "Cursor (editor)",
+  "def": "Anysphere's AI code editor, built on VS Code, whose agent works in the IDE and as Cloud Agents in remote VMs that push branches and open pull requests.",
+  "practice": "It is configured through project rules, AGENTS.md, hooks and Agent Skills, Cloud Agents were formerly called Background Agents, and its Bugbot reviews pull requests (as of November 2026).",
+  "aliases": [
+    "Cursor IDE",
+    "Cursor Cloud Agents",
+    "Cursor Background Agents"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "skills-plugins"
+  ]
+}

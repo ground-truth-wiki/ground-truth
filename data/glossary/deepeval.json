@@ -1,0 +1,11 @@
+{
+  "id": "deepeval",
+  "term": "DeepEval",
+  "def": "An open-source (Apache 2.0) LLM evaluation framework from Confident AI that works like Pytest for LLM apps, with built-in metrics such as G-Eval, task completion and RAG faithfulness.",
+  "practice": "Many of its metrics use an LLM judge, so calibrate them against human labels like any judge; tests run in CI and can optionally report to Confident AI's hosted platform.",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling",
+    "rag-evaluation"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "gelu",
+  "term": "GELU",
+  "def": "The Gaussian error linear unit, x·Φ(x), with Φ the standard normal cumulative distribution function: a smooth, ReLU-like activation that weights each input by Φ(x).",
+  "practice": "Used in BERT and GPT-2 era transformers; frameworks offer the exact form and a faster tanh approximation, and a checkpoint expects the variant it was trained with.",
+  "aliases": [
+    "Gaussian error linear unit"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "trainable-deep-networks"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "lawful-basis",
+  "term": "Lawful basis",
+  "def": "One of six grounds in Article 6(1) of the GDPR that make processing personal data lawful: consent, contract, legal obligation, vital interests, public task or legitimate interests.",
+  "practice": "Training, fine-tuning or building eval sets on personal data each needs one, documented per purpose; the EDPB's Opinion 28/2024 (December 2024) addresses when legitimate interest can cover developing and deploying AI models.",
+  "aliases": [
+    "legal basis",
+    "legal basis for processing"
+  ],
+  "chapters": [
+    "privacy",
+    "data-governance",
+    "data-flywheel",
+    "governance-regulation",
+    "data-licensing-consent"
+  ]
+}

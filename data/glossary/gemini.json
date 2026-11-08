@@ -1,0 +1,21 @@
+{
+  "id": "gemini",
+  "term": "Gemini",
+  "def": "Google DeepMind's family of natively multimodal models, first announced in December 2023 and offered in tiers such as Pro, Flash and Flash-Lite.",
+  "practice": "As of November 2026 the flagship is Gemini 4 Argon (generally available October 2026) alongside Gemini 3.x Pro, Flash and Flash-Lite; check each model's stable, preview or experimental label before production use.",
+  "aliases": [
+    "Gemini models",
+    "Gemini Pro",
+    "Gemini Flash"
+  ],
+  "chapters": [
+    "frontier-families",
+    "model-specific-notes",
+    "reasoning-models",
+    "provider-agent-sdks",
+    "fine-tuning-services",
+    "model-lifecycle",
+    "cloud-ai-platforms",
+    "context-compaction"
+  ]
+}

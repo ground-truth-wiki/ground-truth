@@ -1,0 +1,15 @@
+{
+  "id": "cache-augmented-generation",
+  "term": "Cache-augmented generation",
+  "def": "Answering from a small knowledge base that is loaded whole into the model's context ahead of time and kept as a cached prefix, instead of retrieving passages per query.",
+  "practice": "Suits small corpora that rarely change and fit well inside the context window; every update rebuilds the cache, and a long prefix still raises per-query cost and latency.",
+  "aliases": [
+    "CAG"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "prompt-caching",
+    "long-context"
+  ],
+  "abbr": "CAG"
+}

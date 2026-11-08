@@ -1,0 +1,19 @@
+{
+  "id": "energy-per-token",
+  "term": "Energy per token",
+  "def": "The energy an inference system uses divided by the tokens it processes or generates, usually in joules per token; energy per response multiplies it by response length.",
+  "practice": "Varies widely with batch size, hardware and what is counted; the ML.ENERGY benchmark reports energy per response instead, because more verbose models spend more tokens per answer.",
+  "aliases": [
+    "joules per token",
+    "J/token",
+    "energy per response",
+    "energy per request"
+  ],
+  "chapters": [
+    "hardware",
+    "cost-engineering",
+    "latency-throughput",
+    "inference-benchmarking",
+    "ai-energy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gui-grounding",
+  "term": "GUI grounding",
+  "def": "Mapping a natural-language instruction to the on-screen element it refers to, returned as a box or click point, from a screenshot alone.",
+  "practice": "A main bottleneck of pixel-based computer-use agents; measured by ScreenSpot and the harder ScreenSpot-Pro, whose small targets on high-resolution professional screens defeat many models.",
+  "aliases": [
+    "UI grounding"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "document-screen-understanding",
+    "vision-language-models",
+    "visual-grounding",
+    "computer-use-benchmarks"
+  ]
+}

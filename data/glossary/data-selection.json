@@ -1,0 +1,18 @@
+{
+  "id": "data-selection",
+  "term": "Data selection",
+  "def": "Choosing which examples to include in a training set, and how often, from a larger candidate pool to improve quality, efficiency or performance on target tasks.",
+  "practice": "Ranges from heuristic and classifier filtering to distribution matching and gradient-based methods such as LESS; for instruction tuning, a small well-chosen subset can match or beat the full set.",
+  "aliases": [
+    "training data selection"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "sft",
+    "fine-tuning-practice",
+    "synthetic-data",
+    "synthetic-data-recipes",
+    "deduplication-decontamination",
+    "data-selection-attribution"
+  ]
+}

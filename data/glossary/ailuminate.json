@@ -1,0 +1,14 @@
+{
+  "id": "ailuminate",
+  "term": "AILuminate",
+  "def": "MLCommons' AI risk and reliability benchmark, which grades general-purpose chat systems on their responses to prompts across 12 hazard categories, on a five-tier scale from Poor to Excellent.",
+  "practice": "Its hazard taxonomy, from violent crimes to privacy, intellectual property and specialized advice, is a ready-made starting point for safety policies and guard-model labels.",
+  "aliases": [
+    "MLCommons AILuminate"
+  ],
+  "chapters": [
+    "safety-evals",
+    "guardrails-control",
+    "guard-models-moderation"
+  ]
+}

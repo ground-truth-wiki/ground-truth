@@ -1,0 +1,12 @@
+{
+  "id": "pyrit",
+  "term": "PyRIT",
+  "def": "Microsoft's open-source Python Risk Identification Tool, a framework for automating red teaming of generative AI systems with attack strategies, including multi-turn ones, and scorers.",
+  "practice": "A framework for red-team operators rather than a turnkey scanner; review scorer verdicts by hand before acting on them.",
+  "aliases": [
+    "Python Risk Identification Tool"
+  ],
+  "chapters": [
+    "red-teaming"
+  ]
+}

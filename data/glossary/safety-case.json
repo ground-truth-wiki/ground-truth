@@ -1,0 +1,13 @@
+{
+  "id": "safety-case",
+  "term": "Safety case",
+  "def": "A structured, evidence-backed argument that a system is acceptably safe in a specific deployment context, a practice borrowed from aviation, nuclear and other safety-critical engineering.",
+  "practice": "AI safety cases typically rest on inability, control or trustworthiness arguments (Clymer et al., 2024); Google DeepMind runs safety case reviews before external launches once relevant capability levels are reached.",
+  "aliases": [],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "alignment-concepts",
+    "ai-control",
+    "safety-cases"
+  ]
+}

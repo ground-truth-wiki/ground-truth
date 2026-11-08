@@ -1,0 +1,15 @@
+{
+  "id": "inference-provider",
+  "term": "Inference provider",
+  "def": "A company that serves models, usually open-weight ones, behind a hosted API, so the same model can be bought from several providers at different prices and speeds.",
+  "practice": "Quality can differ between providers of the same model, for example through different quantizations; routers let you filter by price, throughput, latency, quantization and data policy.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "gateways-routers",
+    "open-weight-frontier",
+    "cost-engineering",
+    "model-apis",
+    "cloud-ai-platforms"
+  ]
+}

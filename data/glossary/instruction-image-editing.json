@@ -1,0 +1,14 @@
+{
+  "id": "instruction-image-editing",
+  "term": "Instruction-based image editing",
+  "def": "Editing an image from a natural-language instruction such as 'make it winter', using a model trained on before-and-after examples rather than masks or full-scene prompts.",
+  "practice": "The pattern behind conversational image editing in multimodal assistants; check that regions and identities the instruction did not mention stay unchanged.",
+  "aliases": [
+    "instruction-guided editing",
+    "instruction-guided image editing"
+  ],
+  "chapters": [
+    "image-generation",
+    "multimodal-apps"
+  ]
+}

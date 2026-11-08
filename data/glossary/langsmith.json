@@ -1,0 +1,12 @@
+{
+  "id": "langsmith",
+  "term": "LangSmith",
+  "def": "LangChain's commercial platform for tracing, evaluating and monitoring LLM applications and agents, usable with LangChain, LangGraph or other frameworks and providers.",
+  "practice": "Offered as cloud, hybrid or self-hosted deployments; online evaluators can score production traces automatically, and it fits teams already on LangChain or LangGraph.",
+  "aliases": [],
+  "chapters": [
+    "eval-tooling",
+    "observability-tracing",
+    "managed-agent-platforms"
+  ]
+}

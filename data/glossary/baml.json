@@ -1,0 +1,10 @@
+{
+  "id": "baml",
+  "term": "BAML",
+  "def": "An open-source, TypeScript-like language from BoundaryML for defining typed LLM functions and agents, callable from TypeScript, Python, Go, C#, Java and others.",
+  "practice": "An alternative to library-based structured output: prompts and types live in BAML code with built-in tests and evals, and calls return typed objects.",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mape",
+  "term": "Mean absolute percentage error",
+  "def": "The average of absolute errors divided by the corresponding true values, expressed as a percentage.",
+  "practice": "Easy to communicate but undefined when a true value is zero and extreme near zero; scaled errors such as MASE compare better across series.",
+  "aliases": [
+    "MAPE"
+  ],
+  "chapters": [
+    "classical-ml",
+    "cost-capacity",
+    "classification-metrics",
+    "time-series-forecasting"
+  ],
+  "abbr": "MAPE"
+}

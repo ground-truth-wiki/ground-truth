@@ -1,0 +1,14 @@
+{
+  "id": "relu",
+  "term": "ReLU",
+  "def": "The rectified linear unit, max(0, x): it passes positive inputs unchanged and outputs zero for negative ones.",
+  "practice": "The default activation of the convolutional-network era: cheap and less prone to vanishing gradients than sigmoid or tanh, though units stuck at zero stop learning.",
+  "aliases": [
+    "rectified linear unit"
+  ],
+  "chapters": [
+    "neural-networks",
+    "trainable-deep-networks",
+    "accelerator-architecture"
+  ]
+}

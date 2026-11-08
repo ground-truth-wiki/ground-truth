@@ -1,0 +1,12 @@
+{
+  "id": "role-prompting",
+  "term": "Role prompting",
+  "def": "Assigning the model a persona or role, such as a senior security reviewer, usually in the system prompt, to shape its tone, vocabulary and focus.",
+  "practice": "Providers recommend it for tone and focus, but Zheng et al. found system-prompt personas did not improve accuracy on 2,410 factual questions across four model families.",
+  "aliases": [
+    "persona prompting"
+  ],
+  "chapters": [
+    "prompting-fundamentals"
+  ]
+}

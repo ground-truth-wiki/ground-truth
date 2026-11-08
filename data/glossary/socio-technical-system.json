@@ -1,0 +1,17 @@
+{
+  "id": "socio-technical-system",
+  "term": "Socio-technical system",
+  "def": "A system understood as its technical components together with the people, organizations and social context that operate it and are affected by it.",
+  "practice": "NIST calls AI systems inherently socio-technical because their risks and benefits emerge from how and by whom they are used, which is why a model eval alone cannot certify a deployment.",
+  "aliases": [
+    "sociotechnical system",
+    "socio-technical",
+    "sociotechnical"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "ai-product-ux",
+    "ai-risk-management"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "token-exchange",
+  "term": "Token exchange",
+  "def": "The OAuth 2.0 mechanism (RFC 8693) for trading one security token for another at an authorization server, for example a narrower, audience-specific token or one that records delegation.",
+  "practice": "The standard alternative to token passthrough when an MCP server or agent must call a downstream API; it is also the first step of the ID-JAG flow.",
+  "aliases": [
+    "OAuth token exchange",
+    "RFC 8693"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "secure-agent-design",
+    "enterprise-readiness",
+    "cloud-and-ci-coding-agents",
+    "agent-identity-delegation"
+  ]
+}

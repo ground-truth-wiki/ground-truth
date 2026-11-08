@@ -1,0 +1,17 @@
+{
+  "id": "low-code-builder",
+  "term": "Low-code builder",
+  "def": "A visual tool for assembling AI workflows and agents from blocks such as triggers, model calls, conditions and connector actions, with little or no hand-written code.",
+  "practice": "Fast for automations owned by business teams; treat flows that touch customers or money as production systems with tests, approvals and organization-owned credentials.",
+  "aliases": [
+    "low-code platform",
+    "no-code builder",
+    "visual builder",
+    "low-code development platform"
+  ],
+  "chapters": [
+    "low-code-builders",
+    "framework-landscape",
+    "framework-selection"
+  ]
+}

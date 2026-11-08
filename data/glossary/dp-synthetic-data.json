@@ -1,0 +1,14 @@
+{
+  "id": "dp-synthetic-data",
+  "term": "Differentially private synthetic data",
+  "def": "Synthetic data from a generator trained on a private dataset with a differential-privacy guarantee, which then covers any later use of the synthetic data.",
+  "practice": "Typically made by fine-tuning a generator with DP-SGD and sampling from it; downstream training needs no further privacy accounting, but quality drops as the privacy budget tightens.",
+  "aliases": [
+    "DP synthetic data",
+    "private synthetic data"
+  ],
+  "chapters": [
+    "synthetic-data",
+    "privacy"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "foreseeable-misuse",
+  "term": "Reasonably foreseeable misuse",
+  "def": "Under the EU AI Act, use of an AI system in a way not in line with its intended purpose that may result from reasonably foreseeable human behavior or interaction with other systems.",
+  "practice": "Risk management (Article 9) and human oversight (Article 14) for high-risk systems must cover it, so threat models and evals should include predictable misuse by ordinary users, not only attackers.",
+  "aliases": [
+    "foreseeable misuse"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "threat-modeling"
+  ]
+}

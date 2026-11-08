@@ -1,0 +1,13 @@
+{
+  "id": "finops",
+  "term": "FinOps",
+  "def": "An operational framework and cultural practice, defined by the FinOps Foundation, for maximizing the business value of technology spend through shared financial accountability among engineering, finance and business teams.",
+  "practice": "The Foundation's FinOps for AI guidance recommends tracking cost per inference, per user and per successful outcome as distributions, and showing teams their costs (showback) before charging them back.",
+  "aliases": [
+    "cloud financial management"
+  ],
+  "chapters": [
+    "cost-capacity",
+    "cost-engineering"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ap2",
+  "term": "Agent Payments Protocol",
+  "def": "An open protocol for agent payments, introduced by Google in 2025, in which signed mandates record what the user authorized and chain from checkout to payment into an auditable trail.",
+  "practice": "Works as an extension of A2A and UCP and covers human-present and human-not-present purchases; Google contributed it to the FIDO Alliance in April 2026. Current mandates are checkout and payment.",
+  "aliases": [
+    "AP2"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "protocol-building-blocks",
+    "a2a-in-depth",
+    "agentic-commerce-protocols"
+  ],
+  "abbr": "AP2"
+}

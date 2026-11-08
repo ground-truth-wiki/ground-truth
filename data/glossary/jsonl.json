@@ -1,0 +1,22 @@
+{
+  "id": "jsonl",
+  "term": "JSON Lines",
+  "def": "A text format with one valid JSON value per line, UTF-8 encoded and newline-separated, usually saved with the .jsonl extension.",
+  "practice": "The usual format for fine-tuning, batch and eval files, including the files OpenAI's fine-tuning and Batch APIs accept; gzip-compressed .jsonl.gz shards are common for corpora.",
+  "aliases": [
+    "JSONL",
+    "NDJSON",
+    "newline-delimited JSON"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "sft",
+    "eval-datasets",
+    "model-apis",
+    "build-your-own-harness",
+    "error-analysis",
+    "fine-tuning-services",
+    "data-formats"
+  ],
+  "abbr": "JSONL"
+}

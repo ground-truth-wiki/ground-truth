@@ -1,0 +1,17 @@
+{
+  "id": "k-quants",
+  "term": "K-quants",
+  "def": "llama.cpp's GGUF quantization types with names such as Q4_K_M, which store weights in super-blocks of 256 values with quantized per-block scales; S, M and L variants mix bit widths across tensors.",
+  "practice": "Q4_K_M averages about 4.9 bits per weight on Llama 3.1 8B in llama.cpp's own table; an importance matrix computed on sample text reduces accuracy loss, and i-quants (IQ types) go lower.",
+  "aliases": [
+    "Q4_K_M",
+    "i-quants"
+  ],
+  "chapters": [
+    "quantization",
+    "edge-on-device",
+    "small-local-models",
+    "quantization-methods",
+    "local-inference"
+  ]
+}

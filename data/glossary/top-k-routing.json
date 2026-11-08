@@ -1,0 +1,15 @@
+{
+  "id": "top-k-routing",
+  "term": "Top-k routing",
+  "def": "MoE routing in which each token goes to the k experts with the highest router scores, and their outputs are summed with weights derived from those scores.",
+  "practice": "k is 1 in Switch Transformer, 2 of 8 in Mixtral 8x7B and 8 of 256 routed experts in DeepSeek-V3; larger k raises compute and communication per token.",
+  "aliases": [
+    "token-choice routing",
+    "top-k gating"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "moe-routing",
+    "sparse-and-local-attention"
+  ]
+}

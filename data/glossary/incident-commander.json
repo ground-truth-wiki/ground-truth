@@ -1,0 +1,10 @@
+{
+  "id": "incident-commander",
+  "term": "Incident commander",
+  "def": "The person who holds the overall state of an incident, assigns roles such as operations, communications and planning, and retains every responsibility not delegated.",
+  "practice": "Declare incidents early and name one; for AI incidents, make sure someone watches quality and safety signals and owns the kill-switch decision, not only uptime.",
+  "aliases": [],
+  "chapters": [
+    "incidents-on-call"
+  ]
+}

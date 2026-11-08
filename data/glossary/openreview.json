@@ -1,0 +1,14 @@
+{
+  "id": "openreview",
+  "term": "OpenReview",
+  "def": "A peer-review platform built by Andrew McCallum's lab at UMass Amherst and run with nonprofit status, which lets venues choose how public their reviews, discussions and decisions are.",
+  "practice": "ICLR has used open review since 2013 and posts submissions with their reviews on openreview.net; reading the reviews of a well-known paper is a fast way to learn its weaknesses.",
+  "aliases": [
+    "openreview.net"
+  ],
+  "chapters": [
+    "the-canon",
+    "watchlist",
+    "ai-research-publishing"
+  ]
+}

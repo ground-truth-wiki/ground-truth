@@ -1,0 +1,15 @@
+{
+  "id": "property-graph",
+  "term": "Property graph",
+  "def": "A graph data model in which nodes carry labels and key-value properties, and each relationship has one type, a direction between two nodes, and its own properties.",
+  "practice": "The model behind Neo4j and many graph databases used for GraphRAG and agent memory, queried with Cypher or the ISO GQL standard published in 2024.",
+  "aliases": [
+    "labeled property graph",
+    "LPG"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "agent-memory",
+    "knowledge-graphs"
+  ]
+}

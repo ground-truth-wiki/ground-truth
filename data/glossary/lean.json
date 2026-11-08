@@ -1,0 +1,18 @@
+{
+  "id": "lean",
+  "term": "Lean",
+  "def": "An open-source functional programming language and proof assistant in which mathematical proofs and programs are checked mechanically.",
+  "practice": "The formal language of AlphaProof, DeepSeek-Prover and most AI-for-math benchmarks; its community library Mathlib holds over a million lines of formalized mathematics.",
+  "aliases": [
+    "Lean 4",
+    "Lean theorem prover"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "rlvr-reasoning",
+    "in-context-learning",
+    "agent-identity-delegation",
+    "dangerous-capability-evals",
+    "ai-for-mathematics"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "matrix-multiplication",
+  "term": "Matrix multiplication",
+  "def": "The product of an m × k and a k × n matrix: an m × n matrix of row-by-column dot products, costing about 2mkn floating-point operations.",
+  "practice": "Libraries call it GEMM and it dominates training and inference compute; matrix-vector products, as in decoding a single sequence, are memory-bound because each loaded weight is used for only one multiply-add.",
+  "aliases": [
+    "matmul",
+    "GEMM",
+    "matrix multiply"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "inference-fundamentals",
+    "transformer-block",
+    "serving-engines",
+    "self-improving-systems",
+    "tensors-and-shapes",
+    "floating-point-formats",
+    "moe-routing"
+  ]
+}

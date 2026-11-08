@@ -1,0 +1,13 @@
+{
+  "id": "metric-cardinality",
+  "term": "Metric cardinality",
+  "def": "The number of distinct label or attribute value combinations a metric has; each combination is stored as a separate time series.",
+  "practice": "Labeling metrics with user ids, prompts or trace ids explodes storage and cost; keep those on traces and logs and use bounded labels such as feature, model and tenant tier.",
+  "aliases": [
+    "high cardinality",
+    "label cardinality"
+  ],
+  "chapters": [
+    "observability-tracing"
+  ]
+}

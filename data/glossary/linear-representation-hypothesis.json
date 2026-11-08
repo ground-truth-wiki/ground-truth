@@ -1,0 +1,12 @@
+{
+  "id": "linear-representation-hypothesis",
+  "term": "Linear representation hypothesis",
+  "def": "The hypothesis that models represent many concepts as directions in activation space, so they can be read with linear probes and changed by adding vectors.",
+  "practice": "The working assumption behind probes, steering vectors and sparse autoencoders; known exceptions include circular, multi-dimensional features for days of the week and months.",
+  "aliases": [
+    "linear representations"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

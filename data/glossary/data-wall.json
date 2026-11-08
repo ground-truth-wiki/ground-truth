@@ -1,0 +1,17 @@
+{
+  "id": "data-wall",
+  "term": "Data wall",
+  "def": "The point at which frontier training runs would use up the stock of high-quality public human-generated text.",
+  "practice": "Epoch AI projects training datasets reaching that stock between 2026 and 2032; responses include synthetic data, other modalities, better data efficiency and RL environments.",
+  "aliases": [
+    "data exhaustion"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "open-problems",
+    "scaling-laws",
+    "synthetic-data",
+    "embodied-agents",
+    "scaling-trends-limits"
+  ]
+}

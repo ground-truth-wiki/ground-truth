@@ -1,0 +1,18 @@
+{
+  "id": "content-moderation",
+  "term": "Content moderation",
+  "def": "Reviewing user-generated or AI-generated content against a written policy and acting on violations, through automated classifiers, human reviewers or both.",
+  "practice": "A pipeline, not a single model: policy, classifiers with per-category thresholds, human review queues, appeals and reporting; LLM guard models such as Llama Guard take the policy taxonomy in the prompt.",
+  "aliases": [
+    "moderation pipeline"
+  ],
+  "chapters": [
+    "guardrails-control",
+    "jailbreaks-misuse",
+    "specialist-models",
+    "responsible-ai",
+    "prompt-injection-techniques",
+    "guard-models-moderation",
+    "jailbreak-techniques"
+  ]
+}

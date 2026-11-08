@@ -1,0 +1,19 @@
+{
+  "id": "gradient-clipping",
+  "term": "Gradient clipping",
+  "def": "Rescaling the gradients before an update when their combined norm exceeds a threshold, or capping individual values, so one huge gradient cannot wreck the weights.",
+  "practice": "Clipping the global L2 norm at 1.0 is a common default in LLM training (LLaMA used it); log the pre-clip norm, since frequent clipping signals instability.",
+  "aliases": [
+    "gradient norm clipping",
+    "global norm clipping"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "fine-tuning-practice",
+    "training-hyperparameters",
+    "recurrent-networks",
+    "training-neural-networks",
+    "pretraining-run",
+    "training-stability"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "china-generative-ai-measures",
+  "term": "Interim Measures for Generative AI Services",
+  "def": "China's rules for generative AI services offered to the public, in force since 15 August 2023, covering training-data legality, content controls, labeling and, for some services, security assessment and filing.",
+  "practice": "Services with 'public opinion attributes or social mobilization capacity' must pass a security assessment and file with the Cyberspace Administration of China; separate labeling rules for AI-generated content apply since 1 September 2025.",
+  "aliases": [
+    "China generative AI measures",
+    "Interim Measures for the Management of Generative Artificial Intelligence Services"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "global-ai-governance"
+  ]
+}

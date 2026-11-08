@@ -1,0 +1,14 @@
+{
+  "id": "litellm",
+  "term": "LiteLLM",
+  "def": "An open-source Python SDK and proxy server that puts many model providers behind one OpenAI-style interface, with virtual keys, budgets, routing strategies, retries, cooldowns and fallbacks.",
+  "practice": "A common first self-hosted gateway; its docs recommend the default simple-shuffle routing for production because usage-based routing adds Redis latency.",
+  "aliases": [
+    "LiteLLM proxy"
+  ],
+  "chapters": [
+    "gateways-routers",
+    "cost-capacity",
+    "gateway-routing-in-depth"
+  ]
+}

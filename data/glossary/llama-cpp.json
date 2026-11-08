@@ -1,0 +1,19 @@
+{
+  "id": "llama-cpp",
+  "term": "llama.cpp",
+  "def": "Open-source C/C++ inference engine built on the ggml tensor library that runs GGUF models, usually quantized, on CPUs, Apple silicon and a wide range of GPUs.",
+  "practice": "The engine under many local tools; it supports 1.5- to 8-bit integer quantization, splits models larger than VRAM between CPU and GPU, and ships an OpenAI-compatible server, llama-server.",
+  "aliases": [
+    "llamacpp"
+  ],
+  "chapters": [
+    "edge-on-device",
+    "serving-engines",
+    "quantization",
+    "small-local-models",
+    "hugging-face-ecosystem",
+    "structured-generation-engines",
+    "quantization-methods",
+    "local-inference"
+  ]
+}

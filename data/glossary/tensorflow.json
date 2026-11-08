@@ -1,0 +1,16 @@
+{
+  "id": "tensorflow",
+  "term": "TensorFlow",
+  "def": "Google's open-source machine learning framework, released in 2015, originally built around static dataflow graphs and running eagerly by default since TensorFlow 2.",
+  "practice": "Still found in older production and mobile pipelines, but new LLM work mostly uses PyTorch or JAX, and Hugging Face Transformers v5 dropped TensorFlow support.",
+  "aliases": [],
+  "chapters": [
+    "neural-networks",
+    "edge-on-device",
+    "dl-frameworks",
+    "recommender-systems",
+    "data-validation-drift",
+    "data-formats",
+    "learning-resources"
+  ]
+}

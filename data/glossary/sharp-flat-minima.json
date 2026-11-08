@@ -1,0 +1,16 @@
+{
+  "id": "sharp-flat-minima",
+  "term": "Sharp and flat minima",
+  "def": "Minima where the loss rises steeply (sharp) or slowly (flat) as parameters move away from them.",
+  "practice": "Large-batch training was linked to sharper minima and worse generalization, and sharpness-aware minimization seeks flatter ones, but sharpness changes under reparametrization, so the link remains debated.",
+  "aliases": [
+    "flat minima",
+    "sharp minima",
+    "flat minimum",
+    "sharp minimum"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "training-stability"
+  ]
+}

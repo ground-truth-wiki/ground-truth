@@ -1,0 +1,16 @@
+{
+  "id": "medallion-architecture",
+  "term": "Medallion architecture",
+  "def": "A layered data design in which raw data lands in a bronze layer, is validated, cleaned and deduplicated into silver, and is refined into business- or model-ready gold tables.",
+  "practice": "Maps well onto AI data: raw traces in bronze, redacted and deduplicated interactions in silver, curated eval and fine-tuning sets in gold.",
+  "aliases": [
+    "medallion lakehouse architecture"
+  ],
+  "chapters": [
+    "data-governance",
+    "unstructured-pipelines",
+    "data-flywheel",
+    "data-pipeline-orchestration",
+    "data-lakehouses"
+  ]
+}

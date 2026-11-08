@@ -1,0 +1,12 @@
+{
+  "id": "opentelemetry-collector",
+  "term": "OpenTelemetry Collector",
+  "def": "A vendor-agnostic service that receives telemetry, processes it (batching, filtering, redaction, sampling) and exports it to one or more backends, through pipelines of receivers, processors and exporters.",
+  "practice": "The natural place to centralize prompt redaction, tail sampling and fan-out to several observability tools without changing application code.",
+  "aliases": [
+    "OTel Collector"
+  ],
+  "chapters": [
+    "observability-tracing"
+  ]
+}

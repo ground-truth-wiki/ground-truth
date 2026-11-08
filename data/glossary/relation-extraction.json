@@ -1,0 +1,16 @@
+{
+  "id": "relation-extraction",
+  "term": "Relation extraction",
+  "def": "Identifying typed relationships between entities mentioned in text and outputting them as (subject, relation, object) facts.",
+  "practice": "The expensive LLM pass in GraphRAG-style indexing, run over every chunk; output quality depends heavily on the prompt and the allowed relation types.",
+  "aliases": [
+    "relationship extraction",
+    "triple extraction"
+  ],
+  "chapters": [
+    "advanced-rag",
+    "document-extraction",
+    "knowledge-graphs",
+    "graph-rag"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "early-stopping",
+  "term": "Early stopping",
+  "def": "Ending training, or choosing the saved checkpoint, at the point where validation performance stops improving, to avoid overfitting and wasted compute.",
+  "practice": "A cheap regularizer; Google's deep learning tuning playbook favors a fixed step budget and picking the best checkpoint afterward over stopping runs early.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "calculus-optimization",
+    "fine-tuning-practice",
+    "validation-tuning",
+    "trees-and-ensembles",
+    "policy-gradient-methods",
+    "training-neural-networks"
+  ]
+}

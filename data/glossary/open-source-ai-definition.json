@@ -1,0 +1,16 @@
+{
+  "id": "open-source-ai-definition",
+  "term": "Open Source AI Definition",
+  "def": "The Open Source Initiative's definition (version 1.0, October 2024) under which an AI system is open source only if it grants the freedoms to use, study, modify and share it.",
+  "practice": "It requires detailed training-data information, complete training and inference code, and the parameters, so many popular open-weight models do not qualify.",
+  "aliases": [
+    "OSAID",
+    "OSI Open Source AI Definition"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-families",
+    "model-licenses"
+  ],
+  "abbr": "OSAID"
+}

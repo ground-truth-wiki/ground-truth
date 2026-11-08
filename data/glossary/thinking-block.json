@@ -1,0 +1,19 @@
+{
+  "id": "thinking-block",
+  "term": "Thinking block",
+  "def": "A response element carrying a reasoning model’s reasoning, often summarized or encrypted and signed, that the client must send back unchanged in later requests, notably alongside tool results.",
+  "practice": "Anthropic calls them thinking blocks, OpenAI reasoning items and Google thought signatures; Anthropic rejects modified blocks, so harnesses pass them back exactly as returned.",
+  "aliases": [
+    "reasoning item",
+    "thought signature"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "context-engineering",
+    "agent-loop",
+    "model-apis",
+    "streaming",
+    "api-shapes",
+    "context-compaction"
+  ]
+}

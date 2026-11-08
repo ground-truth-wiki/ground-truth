@@ -1,0 +1,14 @@
+{
+  "id": "ai-crawler",
+  "term": "AI crawler",
+  "def": "A web crawler that collects content to train or ground AI models, identified by a user-agent token that robots.txt rules can target.",
+  "practice": "As of November 2026, OpenAI separates GPTBot (training) from OAI-SearchBot (search), Common Crawl runs CCBot, and Google's Google-Extended token governs Gemini training and grounding without affecting Search.",
+  "aliases": [
+    "AI training crawler"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "data-governance",
+    "governance-regulation"
+  ]
+}

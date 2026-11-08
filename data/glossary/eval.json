@@ -1,0 +1,19 @@
+{
+  "id": "eval",
+  "term": "Eval",
+  "def": "A test of an AI system: a set of inputs, a way to run the system on them and grading logic that scores the outputs, usually aggregated into metrics.",
+  "practice": "Evals are the core feedback loop of AI engineering, from quick unit-style checks on a few cases to full benchmark suites run before every release.",
+  "aliases": [
+    "LLM evaluation"
+  ],
+  "chapters": [
+    "why-evals",
+    "eval-recipes",
+    "metrics-graders",
+    "eval-datasets",
+    "evaluating-agents",
+    "eval-harnesses",
+    "distributions-and-estimation",
+    "classification-metrics"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cross-lingual-transfer",
+  "term": "Cross-lingual transfer",
+  "def": "Using what a model learned from data in one language, often English, to perform a task in another language with little or no training data in it.",
+  "practice": "Why tuning on English data often improves other languages too, and why benchmarks translated from English mix transfer with translation and cultural artifacts.",
+  "aliases": [
+    "zero-shot cross-lingual transfer"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "benchmark-literacy",
+    "embeddings",
+    "multilingual-models"
+  ]
+}

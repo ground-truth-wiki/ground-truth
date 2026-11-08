@@ -1,0 +1,13 @@
+{
+  "id": "construct-validity",
+  "term": "Construct validity",
+  "def": "The degree to which a test measures the abstract property it claims to measure, such as reasoning, safety or robustness, rather than something easier that merely correlates with it.",
+  "practice": "A NeurIPS 2025 review of 445 LLM benchmarks (Bean et al.) found recurring weaknesses in how they define the phenomenon, choose tasks and score, so check what a benchmark actually operationalizes before reading its name as a claim.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "why-evals",
+    "eval-datasets",
+    "benchmark-validity"
+  ]
+}

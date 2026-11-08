@@ -1,0 +1,12 @@
+{
+  "id": "presidio",
+  "term": "Presidio",
+  "def": "Microsoft's open-source SDK for detecting and anonymizing personal data in text and images, combining named-entity recognition, regular expressions, rules and checksums.",
+  "practice": "A common building block for PII redaction pipelines; the project warns it will not find all sensitive data, so measure recall on your own data.",
+  "aliases": [
+    "Microsoft Presidio"
+  ],
+  "chapters": [
+    "privacy"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gpt-oss",
+  "term": "gpt-oss",
+  "def": "OpenAI's open-weight mixture-of-experts reasoning models, released in August 2025 as gpt-oss-120b and gpt-oss-20b under the Apache 2.0 license.",
+  "practice": "Weights ship in MXFP4, so gpt-oss-120b (117B total, 5.1B active parameters) runs on one 80 GB GPU; many inference providers serve it, so compare them on latency and price.",
+  "aliases": [
+    "gpt-oss-120b",
+    "gpt-oss-20b"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "mixture-of-experts",
+    "quantization",
+    "sparse-and-local-attention",
+    "model-specs-instruction-hierarchy",
+    "chat-templates"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "self-training",
+  "term": "Self-training",
+  "def": "A semi-supervised method in which a model labels unlabeled examples with its own predictions and adds the most confident ones to its training set, repeating the cycle.",
+  "practice": "A confidence threshold controls how much label noise enters, so the base model's calibration matters; LLM-generated labels used to train a smaller model follow a similar pattern.",
+  "aliases": [
+    "pseudo-labeling"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "synthetic-data",
+    "classical-ml"
+  ]
+}

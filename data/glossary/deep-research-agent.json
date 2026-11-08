@@ -1,0 +1,19 @@
+{
+  "id": "deep-research-agent",
+  "term": "Deep research",
+  "def": "An agent pattern in which a model plans, runs many searches, reads sources and writes a long cited report over several minutes; Google's Gemini Deep Research (December 2024) was an early example.",
+  "practice": "Judge it on citation accuracy, source quality and coverage of disagreement rather than length; Anthropic reported that its multi-agent research system used about 15 times the tokens of a chat.",
+  "aliases": [
+    "deep research agent"
+  ],
+  "chapters": [
+    "deep-research",
+    "research-analyst-agents",
+    "advanced-rag",
+    "multi-agent",
+    "reference-architectures",
+    "ai-for-science",
+    "graph-rag",
+    "web-search-hosted-retrieval"
+  ]
+}

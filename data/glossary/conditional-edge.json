@@ -1,0 +1,11 @@
+{
+  "id": "conditional-edge",
+  "term": "Conditional edge",
+  "def": "An edge in a graph workflow whose destination is chosen at run time by a routing function over the current state, used for branching, loops and parallel fan-out.",
+  "practice": "This is where a graph's decisions live; keep routing functions small and deterministic and log the branch taken, so traces show why a run went where it did.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "workflow-patterns"
+  ]
+}

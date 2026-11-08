@@ -1,0 +1,16 @@
+{
+  "id": "muse",
+  "term": "Muse",
+  "def": "Meta Superintelligence Labs' model family, launched in April 2026 with Muse Spark, a natively multimodal reasoning model.",
+  "practice": "As of November 2026 Muse Spark powers meta.ai and the Meta AI app, and Muse Spark Open (October 2026) releases weights (816B total, 42B active parameters, 1M-token context) under the Muse Model License with limited commercial terms.",
+  "aliases": [
+    "Muse Spark",
+    "Muse Spark Open"
+  ],
+  "chapters": [
+    "frontier-families",
+    "open-weight-frontier",
+    "autoregressive-image-generation",
+    "open-model-communities"
+  ]
+}

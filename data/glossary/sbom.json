@@ -1,0 +1,13 @@
+{
+  "id": "sbom",
+  "term": "Software bill of materials",
+  "def": "A nested inventory of the components, libraries and versions that make up a piece of software.",
+  "practice": "SPDX and CycloneDX are the main formats; CycloneDX's ML-BOM extends it to models and datasets, the basis of an AI bill of materials.",
+  "aliases": [
+    "SBOM"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ],
+  "abbr": "SBOM"
+}

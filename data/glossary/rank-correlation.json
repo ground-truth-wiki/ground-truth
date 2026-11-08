@@ -1,0 +1,19 @@
+{
+  "id": "rank-correlation",
+  "term": "Rank correlation",
+  "def": "A measure, such as Spearman’s rho or Kendall’s tau, of how similarly two methods order the same items, regardless of the scale of their scores.",
+  "practice": "The usual way to report how well an automatic metric, judge or benchmark tracks human ratings or rankings, as G-Eval and length-controlled AlpacaEval do.",
+  "aliases": [
+    "Spearman’s rho",
+    "Spearman correlation",
+    "Kendall’s tau",
+    "Kendall tau"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "benchmark-literacy",
+    "arenas-leaderboards",
+    "judge-models-meta-evaluation"
+  ]
+}

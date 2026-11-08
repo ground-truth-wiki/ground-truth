@@ -1,0 +1,14 @@
+{
+  "id": "scann",
+  "term": "ScaNN",
+  "def": "Google's open-source vector search library, built mainly for maximum inner product search, whose anisotropic quantization penalizes error parallel to a vector more than error orthogonal to it.",
+  "practice": "A quantization-first alternative to graph indexes such as HNSW; it also supports Euclidean distance, and its paper (Guo et al., ICML 2020) reported state-of-the-art results on ANN-Benchmarks.",
+  "aliases": [
+    "Scalable Nearest Neighbors",
+    "anisotropic vector quantization"
+  ],
+  "chapters": [
+    "vector-search",
+    "vector-index-internals"
+  ]
+}

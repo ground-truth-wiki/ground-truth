@@ -1,0 +1,14 @@
+{
+  "id": "pgd-attack",
+  "term": "Projected gradient descent attack",
+  "def": "An iterative attack that repeatedly steps the input in the direction that raises the model's loss and projects it back into the allowed perturbation set after each step.",
+  "practice": "The standard first-order attack for evaluating and training robust models since Madry et al. (2017); robustness claims are usually stated against PGD at a given epsilon.",
+  "aliases": [
+    "PGD attack"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "adversarial-ml"
+  ],
+  "abbr": "PGD"
+}

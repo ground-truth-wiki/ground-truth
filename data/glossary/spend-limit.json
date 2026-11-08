@@ -1,0 +1,15 @@
+{
+  "id": "spend-limit",
+  "term": "Spend limit",
+  "def": "A provider-enforced ceiling on how much an organization, project or workspace may spend on an API per period, after which requests fail until the period resets or the limit is raised.",
+  "practice": "As of November 2026, Anthropic and OpenAI return some spend-limit errors as HTTP 429s that retries never clear, so check the error code, fail fast and alert whoever owns the budget.",
+  "aliases": [
+    "spend cap",
+    "spending limit"
+  ],
+  "chapters": [
+    "reliability-engineering",
+    "cost-capacity",
+    "rate-limits-overload"
+  ]
+}

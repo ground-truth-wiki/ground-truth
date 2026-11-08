@@ -1,0 +1,14 @@
+{
+  "id": "thompson-sampling",
+  "term": "Thompson sampling",
+  "def": "A Bayesian exploration strategy that samples a plausible reward model for each action from its posterior and acts greedily with respect to that sample.",
+  "practice": "Simple, computationally cheap and strong in practice, so it is widely used in adaptive experiments, recommendation and ad selection.",
+  "aliases": [
+    "posterior sampling"
+  ],
+  "chapters": [
+    "rl-primer",
+    "online-evaluation",
+    "bandits"
+  ]
+}

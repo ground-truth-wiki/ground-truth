@@ -1,0 +1,18 @@
+{
+  "id": "model-extraction",
+  "term": "Model extraction",
+  "def": "An attack that uses query access to recover a model's parameters, architecture or behavior, producing a copy or a close substitute.",
+  "practice": "Tramer et al. (2016) copied models served by ML-as-a-service APIs; Carlini et al. (2024) recovered the embedding projection layer of production LLMs through their APIs.",
+  "aliases": [
+    "model stealing",
+    "model stealing attack"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "supply-chain-security",
+    "cost-capacity",
+    "privacy",
+    "model-theft",
+    "adversarial-ml"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "diarization-error-rate",
+  "term": "Diarization error rate",
+  "def": "The share of reference speech time a diarization system gets wrong: false alarm plus missed speech plus speaker confusion, divided by total reference speech duration.",
+  "practice": "Scores depend on the forgiveness collar around speaker changes (often 250 ms on each side; pyannote applies none by default) and on whether overlapped speech is scored, so report both.",
+  "aliases": [
+    "DER"
+  ],
+  "chapters": [
+    "speech-audio",
+    "speech-recognition",
+    "multimodal-evaluation",
+    "scheming-evaluations",
+    "dangerous-capability-evals"
+  ],
+  "abbr": "DER"
+}

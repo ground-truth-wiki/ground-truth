@@ -1,0 +1,14 @@
+{
+  "id": "suggestion-acceptance-rate",
+  "term": "Suggestion acceptance rate",
+  "def": "The share of AI suggestions shown to users that they accept, the standard usage metric for code completion and inline writing assistants.",
+  "practice": "Google reported 37% for code completion in June 2024, and Ziegler et al. (2022) found it predicts developers' perceived productivity, but it measures uptake, not correctness or value.",
+  "aliases": [
+    "completion acceptance rate"
+  ],
+  "chapters": [
+    "coding-agents",
+    "online-evaluation",
+    "ai-product-ux"
+  ]
+}

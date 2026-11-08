@@ -1,0 +1,15 @@
+{
+  "id": "bird-bench",
+  "term": "BIRD",
+  "def": "A text-to-SQL benchmark (Li et al., 2023) of 12,751 question-SQL pairs over 95 large databases totaling 33.4 GB in more than 37 professional domains, scored mainly by execution accuracy.",
+  "practice": "Harder than schema-only parsing because questions need messy real values and outside knowledge; the BIRD-Interact extension adds conversational and agentic modes, and leaderboard scores should be read with dates.",
+  "aliases": [
+    "BIRD-SQL"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "research-analyst-agents",
+    "sparse-and-local-attention",
+    "data-analysis-agents"
+  ]
+}

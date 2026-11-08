@@ -1,0 +1,12 @@
+{
+  "id": "open-table-format",
+  "term": "Open table format",
+  "def": "A metadata layer over data files such as Parquet in object storage that gives a set of files table semantics: atomic commits, snapshots, schema evolution and time travel.",
+  "practice": "Delta Lake, Apache Iceberg and Apache Hudi are the best-known examples; several engines can read and write the same table safely and query earlier versions of it.",
+  "aliases": [],
+  "chapters": [
+    "data-governance",
+    "unstructured-pipelines",
+    "data-lakehouses"
+  ]
+}

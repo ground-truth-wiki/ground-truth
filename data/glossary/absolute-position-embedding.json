@@ -1,0 +1,14 @@
+{
+  "id": "absolute-position-embedding",
+  "term": "Absolute position embedding",
+  "def": "A vector for each position index, either fixed sinusoids or learned parameters, added to the token embedding at the model's input.",
+  "practice": "Used by the original transformer (sinusoidal) and GPT-1 to GPT-3 (learned); learned tables end at the trained length and neither kind extrapolates well past it.",
+  "aliases": [
+    "absolute positional encoding",
+    "absolute position encoding",
+    "absolute positional embedding"
+  ],
+  "chapters": [
+    "positional-encoding"
+  ]
+}

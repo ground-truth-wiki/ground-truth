@@ -1,0 +1,20 @@
+{
+  "id": "fail-to-pass-tests",
+  "term": "FAIL_TO_PASS and PASS_TO_PASS tests",
+  "def": "The two test lists that grade a SWE-bench-style task: FAIL_TO_PASS tests fail before the reference fix and must pass after it, while PASS_TO_PASS tests must keep passing.",
+  "practice": "A patch counts as resolving the task only if both lists pass; overly narrow or flawed FAIL_TO_PASS tests can reject correct fixes, a known source of benchmark noise.",
+  "aliases": [
+    "FAIL_TO_PASS",
+    "PASS_TO_PASS",
+    "fail-to-pass tests",
+    "pass-to-pass tests"
+  ],
+  "chapters": [
+    "eval-harnesses",
+    "coding-agents",
+    "evaluating-agents",
+    "rl-environment-harnesses",
+    "coding-agent-benchmarks",
+    "swe-training-environments"
+  ]
+}

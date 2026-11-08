@@ -1,0 +1,17 @@
+{
+  "id": "unbounded-consumption",
+  "term": "Unbounded consumption",
+  "def": "OWASP's risk category for LLM applications that allow uncontrolled inference, leading to denial of service, runaway cost or model extraction through high-volume queries.",
+  "practice": "LLM10 in the 2025 list and LLM06 in the 2026 list, as of November 2026; per-user rate limits, token and step budgets and spend alerts are the main controls.",
+  "aliases": [
+    "denial of wallet",
+    "model denial of service"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "cost-capacity",
+    "guardrails-control",
+    "ai-security-frameworks",
+    "model-theft"
+  ]
+}

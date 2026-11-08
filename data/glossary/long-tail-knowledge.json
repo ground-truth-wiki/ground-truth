@@ -1,0 +1,16 @@
+{
+  "id": "long-tail-knowledge",
+  "term": "Long-tail knowledge",
+  "def": "Facts that appear rarely in pretraining data, which language models recall far less reliably than frequently mentioned facts.",
+  "practice": "A main argument for retrieval: studies such as PopQA found that retrieval helps most on rare entities and niche domains, where scaling the model helps least.",
+  "aliases": [
+    "long-tail facts",
+    "tail knowledge"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "pretraining-data",
+    "grounding-citations",
+    "scaling-laws"
+  ]
+}

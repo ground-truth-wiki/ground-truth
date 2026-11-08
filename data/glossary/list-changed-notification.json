@@ -1,0 +1,12 @@
+{
+  "id": "list-changed-notification",
+  "term": "List-changed notification",
+  "def": "An MCP notification, such as notifications/tools/list_changed, telling a client that a server's list of tools, prompts or resources changed and should be fetched again.",
+  "practice": "Since 2026-07-28 clients opt in through subscriptions/listen; when one fires, review changed tool definitions before the model sees them, because silent changes enable rug pulls.",
+  "aliases": [],
+  "chapters": [
+    "mcp-primitives",
+    "mcp-architecture",
+    "mcp-security"
+  ]
+}

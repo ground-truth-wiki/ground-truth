@@ -1,0 +1,14 @@
+{
+  "id": "analyzer",
+  "term": "Text analyzer",
+  "def": "The processing chain a search engine applies to text at index and query time: character filters, exactly one tokenizer, then token filters such as lowercasing, stop-word removal, stemming or synonyms.",
+  "practice": "Many keyword-search misses trace to an analyzer that differs between index and query or suits the wrong language, so check it before tuning BM25.",
+  "aliases": [
+    "text analysis",
+    "analysis chain"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "ir-foundations"
+  ]
+}

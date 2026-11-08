@@ -1,0 +1,18 @@
+{
+  "id": "model-deprecation",
+  "term": "Model deprecation",
+  "def": "A provider's process for retiring a model: it is marked legacy or deprecated, given a retirement date, and then shut down so requests to it fail.",
+  "practice": "Notice periods differ (Anthropic gives at least 60 days for public models; Bedrock model cards state 6-month or 45-day legacy periods), and clouds set their own dates, as of November 2026.",
+  "aliases": [
+    "model retirement",
+    "model sunset"
+  ],
+  "chapters": [
+    "choosing-a-model",
+    "ci-cd-for-ai",
+    "prompt-config-management",
+    "incidents-on-call",
+    "frontier-families",
+    "model-lifecycle"
+  ]
+}

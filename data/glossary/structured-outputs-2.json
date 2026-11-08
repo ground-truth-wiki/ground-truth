@@ -1,0 +1,20 @@
+{
+  "id": "structured-outputs-2",
+  "term": "Structured outputs",
+  "def": "An API mode that constrains a model’s response, or its tool-call arguments, to a supplied JSON Schema, typically enforced through constrained decoding.",
+  "practice": "Offered by OpenAI, Anthropic and Google as of November 2026; it guarantees shape, not truth, and each provider supports only a subset of JSON Schema.",
+  "aliases": [
+    "strict mode",
+    "strict tool use"
+  ],
+  "chapters": [
+    "structured-outputs",
+    "model-apis",
+    "document-extraction",
+    "agent-tools",
+    "decoding-sampling",
+    "prompting-fundamentals",
+    "function-calling-training",
+    "nlp-tasks"
+  ]
+}

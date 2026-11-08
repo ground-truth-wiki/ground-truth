@@ -1,0 +1,18 @@
+{
+  "id": "effective-context-length",
+  "term": "Effective context length",
+  "def": "The longest input at which a model still meets a chosen quality bar on a task, as opposed to the maximum length it accepts.",
+  "practice": "Often much shorter than the advertised window and different for each task, as RULER showed; measure it on your own workload at the lengths you plan to use.",
+  "aliases": [
+    "effective context",
+    "usable context"
+  ],
+  "chapters": [
+    "long-context",
+    "positional-encoding",
+    "context-engineering",
+    "talking-shop",
+    "rope-scaling",
+    "context-compaction"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "scale-and-zero-point",
+  "term": "Scale and zero point",
+  "def": "The two parameters of affine quantization: the scale is the real-valued size of one integer step, and the zero point is the integer that represents real zero.",
+  "practice": "A value is recovered as x ≈ scale × (q − zero point); symmetric quantization fixes the zero point at 0 and stores only the scale, per tensor or per group.",
+  "aliases": [
+    "zero-point",
+    "quantization scale",
+    "affine quantization",
+    "symmetric quantization",
+    "asymmetric quantization"
+  ],
+  "chapters": [
+    "quantization",
+    "quantization-methods"
+  ]
+}

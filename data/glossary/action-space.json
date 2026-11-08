@@ -1,0 +1,16 @@
+{
+  "id": "action-space",
+  "term": "Action space",
+  "def": "The set of actions available to an agent, either discrete (a finite set of moves or tools) or continuous (real-valued vectors such as joint torques).",
+  "practice": "For LLM agents it is the tool set and its argument schemas; computer-use agents choose among clicks, typing, key presses and scrolls, and robot policies output motor commands.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "computer-use-agents",
+    "agentic-rl",
+    "embodied-agents",
+    "agent-tools",
+    "world-models",
+    "agent-research-lineage"
+  ]
+}

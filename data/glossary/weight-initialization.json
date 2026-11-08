@@ -1,0 +1,15 @@
+{
+  "id": "weight-initialization",
+  "term": "Weight initialization",
+  "def": "The scheme for setting a network's starting weights, usually random with variance scaled to layer width so activations and gradients keep a stable size through depth.",
+  "practice": "Xavier (Glorot) initialization suits tanh-like activations and He (Kaiming) suits ReLU; frameworks apply sensible defaults per layer type.",
+  "aliases": [
+    "parameter initialization",
+    "weight init"
+  ],
+  "chapters": [
+    "neural-networks",
+    "calculus-optimization",
+    "training-neural-networks"
+  ]
+}

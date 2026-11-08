@@ -1,0 +1,17 @@
+{
+  "id": "kv-cache-quantization",
+  "term": "KV-cache quantization",
+  "def": "Storing cached keys and values in fewer bits, such as FP8 or 2 to 4-bit integers, to fit longer contexts or larger batches in the same memory.",
+  "practice": "FP8 halves cache memory versus 16-bit and is supported by engines such as vLLM; below 8 bits, methods such as KIVI quantize keys per channel and values per token to limit quality loss.",
+  "aliases": [
+    "KV quantization",
+    "quantized KV cache",
+    "FP8 KV cache"
+  ],
+  "chapters": [
+    "kv-cache",
+    "quantization",
+    "memory-math",
+    "kv-cache-compression"
+  ]
+}

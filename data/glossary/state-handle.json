@@ -1,0 +1,12 @@
+{
+  "id": "state-handle",
+  "term": "State handle",
+  "def": "A server-minted identifier, such as a cart or workflow id, that a stateless MCP server returns from one tool call and accepts as an ordinary argument on later calls to carry state.",
+  "practice": "Make handles random, opaque and expiring, state their lifetime in the tool description, and check authorization against the handle on every call; possessing a handle is not authentication.",
+  "aliases": [],
+  "chapters": [
+    "mcp-architecture",
+    "building-mcp-servers",
+    "mcp-security"
+  ]
+}

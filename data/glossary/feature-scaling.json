@@ -1,0 +1,13 @@
+{
+  "id": "feature-scaling",
+  "term": "Feature scaling",
+  "def": "Transforming numeric features to comparable ranges, for example standardization to zero mean and unit variance or min-max scaling to [0, 1].",
+  "practice": "Matters for distance-, kernel- and gradient-based models such as kNN, SVMs and regularized linear models, not for tree ensembles; fit the scaler on training data only and reuse it at serving time.",
+  "aliases": [
+    "z-score normalization",
+    "min-max scaling"
+  ],
+  "chapters": [
+    "classical-ml"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "code-interpreter",
+  "term": "Code interpreter",
+  "def": "A provider-hosted tool that lets a model write and run code, typically Python and sometimes shell commands, in a sandboxed container holding uploaded files, and read back outputs, files and charts.",
+  "practice": "The engine of analyst agents, since numbers come from executed code rather than model arithmetic; check retention terms, for example Anthropic’s code execution tool keeps container data up to 30 days and is not ZDR-eligible, as of November 2026.",
+  "aliases": [
+    "code execution tool"
+  ],
+  "chapters": [
+    "research-analyst-agents",
+    "sandboxes",
+    "agent-tools",
+    "api-shapes",
+    "data-analysis-agents",
+    "managed-agent-platforms"
+  ]
+}

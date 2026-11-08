@@ -1,0 +1,20 @@
+{
+  "id": "rubric",
+  "term": "Rubric",
+  "def": "A written set of criteria, often with levels or examples, that defines how a person or a model judges a response.",
+  "practice": "Judges and annotators agree more when each criterion is specific and checkable, ideally pass or fail; draft it after reading real outputs, because criteria shift as you see examples.",
+  "aliases": [
+    "scoring rubric",
+    "grading rubric"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "evaluating-agents",
+    "error-analysis",
+    "deep-research",
+    "prompt-chaining",
+    "mlops-foundations",
+    "jailbreak-techniques"
+  ]
+}

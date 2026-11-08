@@ -1,0 +1,16 @@
+{
+  "id": "tevv",
+  "term": "Test, evaluation, verification and validation",
+  "def": "The umbrella term in NIST and US government practice for activities that check whether an AI system meets its specification (verification) and is fit for its intended use (validation).",
+  "practice": "NIST’s AI RMF places TEVV tasks in every lifecycle stage, from validating design assumptions to monitoring in operation; for LLM teams it spans offline evals, red teaming, field tests and production monitoring.",
+  "aliases": [
+    "TEVV"
+  ],
+  "chapters": [
+    "why-evals",
+    "safety-evals",
+    "online-evaluation",
+    "governance-regulation"
+  ],
+  "abbr": "TEVV"
+}

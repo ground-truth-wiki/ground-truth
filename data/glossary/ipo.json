@@ -1,0 +1,15 @@
+{
+  "id": "ipo",
+  "term": "Identity Preference Optimization",
+  "def": "A DPO alternative that fits the gap between chosen and rejected log-ratios to a fixed target with a squared loss, avoiding DPO's overfitting when preferences are nearly deterministic.",
+  "practice": "Available as a loss option in DPO-style trainers such as TRL; compare it with DPO on held-out human or judge preferences, not on training loss.",
+  "aliases": [
+    "IPO"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "dpo-and-relatives",
+    "ai-industry-map"
+  ],
+  "abbr": "IPO"
+}

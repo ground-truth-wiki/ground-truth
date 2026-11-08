@@ -1,0 +1,13 @@
+{
+  "id": "object-detection",
+  "term": "Object detection",
+  "def": "The vision task of locating each object in an image with a bounding box and assigning it a class label.",
+  "practice": "Document parsers use detectors to find layout regions such as tables and figures, YOLO-style detectors run in real time, and some vision-language models return box coordinates directly.",
+  "aliases": [],
+  "chapters": [
+    "document-screen-understanding",
+    "ingestion-parsing",
+    "vision-language-models",
+    "visual-grounding"
+  ]
+}

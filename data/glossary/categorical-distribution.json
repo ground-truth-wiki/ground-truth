@@ -1,0 +1,14 @@
+{
+  "id": "categorical-distribution",
+  "term": "Categorical distribution",
+  "def": "The distribution over K discrete outcomes, each with its own probability, the probabilities summing to one; the many-outcome generalization of the Bernoulli distribution.",
+  "practice": "A language model’s next-token output is a categorical distribution over the vocabulary; the Gumbel-softmax relaxation makes samples from it differentiable.",
+  "aliases": [
+    "multinoulli distribution"
+  ],
+  "chapters": [
+    "probability-information",
+    "decoding-sampling",
+    "distributions-and-estimation"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "a2a-message-part",
+  "term": "A2A message and part",
+  "def": "In A2A, a message is one turn with a role (user or agent) and a list of parts; each part holds exactly one of text, raw bytes, a URL or JSON data.",
+  "practice": "Parts may add mediaType and filename, and artifacts reuse the same parts, so validate data parts like any outside input; versions before 1.0 used separate TextPart, FilePart and DataPart types.",
+  "aliases": [
+    "A2A message",
+    "A2A part"
+  ],
+  "chapters": [
+    "a2a"
+  ]
+}

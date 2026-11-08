@@ -1,0 +1,13 @@
+{
+  "id": "agentic-commerce-protocol",
+  "term": "Agentic Commerce Protocol",
+  "def": "An open standard maintained by OpenAI and Stripe for agents to complete purchases with businesses, specifying an agentic checkout API and delegated payment, published as dated versions.",
+  "practice": "The business stays merchant of record and can use any compatible payment provider; labeled beta, latest version 2026-04-17, as of November 2026. Shares the abbreviation ACP with unrelated protocols.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup",
+    "protocol-building-blocks",
+    "agent-client-protocol",
+    "agentic-commerce-protocols"
+  ]
+}

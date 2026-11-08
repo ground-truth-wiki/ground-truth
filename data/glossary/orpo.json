@@ -1,0 +1,15 @@
+{
+  "id": "orpo",
+  "term": "Odds Ratio Preference Optimization",
+  "def": "A reference-free, single-stage method that adds an odds-ratio penalty, favoring chosen over rejected responses, to the ordinary supervised fine-tuning loss.",
+  "practice": "Merges instruction tuning and preference tuning into one run with no reference model, saving memory and a training stage.",
+  "aliases": [
+    "ORPO"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "sft",
+    "dpo-and-relatives"
+  ],
+  "abbr": "ORPO"
+}

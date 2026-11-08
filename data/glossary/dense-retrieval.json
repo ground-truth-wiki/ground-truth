@@ -1,0 +1,22 @@
+{
+  "id": "dense-retrieval",
+  "term": "Dense retrieval",
+  "def": "Retrieval that encodes queries and documents as dense embedding vectors and ranks documents by vector similarity instead of by shared terms.",
+  "practice": "The vector side of hybrid search; trained dense retrievers beat BM25 in domain (DPR, 2020), but the BEIR benchmark (2021) showed many generalize poorly to new domains, so test on your own data.",
+  "aliases": [
+    "semantic search",
+    "vector retrieval",
+    "embedding search",
+    "embedding-based retrieval"
+  ],
+  "chapters": [
+    "embeddings",
+    "hybrid-retrieval",
+    "rag-fundamentals",
+    "vector-search",
+    "query-understanding",
+    "structured-code-retrieval",
+    "encoders-and-decoders",
+    "ir-foundations"
+  ]
+}

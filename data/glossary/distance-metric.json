@@ -1,0 +1,17 @@
+{
+  "id": "distance-metric",
+  "term": "Distance metric",
+  "def": "The function a vector index uses to compare vectors, usually Euclidean (L2) distance, inner product or cosine similarity; for unit-length vectors all three give the same ranking.",
+  "practice": "Use the metric the embedding model was trained with; normalizing vectors to unit length lets an L2 or inner-product index serve cosine search.",
+  "aliases": [
+    "similarity metric",
+    "distance function",
+    "similarity function"
+  ],
+  "chapters": [
+    "vector-search",
+    "embeddings",
+    "vector-databases",
+    "linear-algebra"
+  ]
+}

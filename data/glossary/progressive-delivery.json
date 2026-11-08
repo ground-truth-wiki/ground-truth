@@ -1,0 +1,15 @@
+{
+  "id": "progressive-delivery",
+  "term": "Progressive delivery",
+  "def": "Releasing a change to growing shares of traffic in steps, with metrics analyzed at each step and automatic promotion or rollback.",
+  "practice": "Canaries gated on quality, latency and cost are progressive delivery for AI changes; Argo Rollouts and similar controllers automate the steps for Kubernetes services.",
+  "aliases": [
+    "progressive rollout",
+    "gradual rollout"
+  ],
+  "chapters": [
+    "ci-cd-for-ai",
+    "online-evaluation",
+    "prompt-config-management"
+  ]
+}

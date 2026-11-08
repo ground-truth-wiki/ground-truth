@@ -1,0 +1,14 @@
+{
+  "id": "ai-disclosure",
+  "term": "AI disclosure",
+  "def": "Telling people when they are interacting with an AI system or viewing AI-generated content, rather than letting them assume a human is behind it.",
+  "practice": "A design norm in Apple's and Google's guidelines and, in the EU, a legal duty under AI Act Article 50, applying from 2 August 2026; show it in the interface at first contact, not only in the terms.",
+  "aliases": [],
+  "chapters": [
+    "ai-product-ux",
+    "responsible-ai",
+    "governance-regulation",
+    "support-agents",
+    "voice-agents"
+  ]
+}

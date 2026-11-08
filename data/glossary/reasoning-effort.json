@@ -1,0 +1,19 @@
+{
+  "id": "reasoning-effort",
+  "term": "Reasoning effort",
+  "def": "An API parameter that sets how much a reasoning model thinks before answering, as discrete levels such as low, medium and high rather than a token count.",
+  "practice": "Levels and defaults differ by provider and model (some add none, minimal, xhigh or max, as of November 2026); set it per route and measure accuracy per dollar.",
+  "aliases": [
+    "effort parameter",
+    "effort setting"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "model-specific-notes",
+    "reasoning-prompts",
+    "cost-engineering",
+    "prompt-config-management",
+    "model-types",
+    "reasoning-debate"
+  ]
+}

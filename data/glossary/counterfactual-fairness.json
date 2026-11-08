@@ -1,0 +1,12 @@
+{
+  "id": "counterfactual-fairness",
+  "term": "Counterfactual fairness",
+  "def": "Fairness to an individual defined causally: the decision would stay the same in a counterfactual world where only their protected attribute, and its effects, differed (Kusner et al., 2017).",
+  "practice": "It needs a causal model; in LLM work its cheap empirical cousin is counterfactual testing, which swaps a name or dialect marker and checks that outputs stay the same.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "safety-evals",
+    "fairness-bias"
+  ]
+}

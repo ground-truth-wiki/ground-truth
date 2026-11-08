@@ -1,0 +1,20 @@
+{
+  "id": "adversarial-machine-learning",
+  "term": "Adversarial machine learning",
+  "def": "The study of attacks that exploit the statistical, data-driven nature of machine learning systems, and of the defenses against them.",
+  "practice": "NIST AI 100-2 is the common reference taxonomy, covering evasion, poisoning and privacy attacks on predictive models and prompt-injection and misuse risks for generative AI.",
+  "aliases": [
+    "adversarial ML"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "red-teaming",
+    "jailbreaks-misuse",
+    "supply-chain-security",
+    "privacy",
+    "ai-security-frameworks",
+    "prompt-injection-techniques",
+    "jailbreak-techniques"
+  ],
+  "abbr": "AML"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "container",
+  "term": "Container",
+  "def": "An isolated process, or group of processes, started from an image that packages its filesystem and dependencies, separated from the host by kernel namespaces and limited by cgroups.",
+  "practice": "Docker and OCI containers are the default unit for eval tasks and agent sandboxes; they share the host kernel, so for untrusted code they are a weaker boundary than gVisor or a microVM.",
+  "aliases": [
+    "Docker container",
+    "OCI container"
+  ],
+  "chapters": [
+    "sandboxes",
+    "eval-harnesses",
+    "rl-environment-harnesses",
+    "claude-code",
+    "working-with-coding-agents",
+    "eval-tooling",
+    "coding-agent-benchmarks",
+    "data-analysis-agents"
+  ]
+}

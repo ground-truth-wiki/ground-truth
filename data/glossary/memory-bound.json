@@ -1,0 +1,22 @@
+{
+  "id": "memory-bound",
+  "term": "Memory-bound and compute-bound",
+  "def": "Whether an operation's speed is limited by moving data to and from memory (memory-bound) or by arithmetic throughput (compute-bound, also called math-bound).",
+  "practice": "Elementwise operations and small-batch LLM decode are memory-bound while large matrix multiplications and prefill are compute-bound; comparing arithmetic intensity with the hardware's FLOPs-to-bandwidth ratio tells which.",
+  "aliases": [
+    "memory-bound",
+    "compute-bound",
+    "bandwidth-bound",
+    "math-bound"
+  ],
+  "chapters": [
+    "inference-fundamentals",
+    "disaggregated-serving",
+    "quantization",
+    "speculative-decoding",
+    "numbers-to-know",
+    "hardware",
+    "kv-cache-compression",
+    "quantization-methods"
+  ]
+}

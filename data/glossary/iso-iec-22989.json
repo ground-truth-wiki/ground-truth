@@ -1,0 +1,14 @@
+{
+  "id": "iso-iec-22989",
+  "term": "ISO/IEC 22989",
+  "def": "The international standard for AI concepts and terminology, first published in July 2022, defining terms such as AI system, AI agent, general and narrow AI, data annotation and test data.",
+  "practice": "A citable source for definitions in contracts, policies and audits; NIST’s AI RMF adapts its AI system definition from it and from the OECD.",
+  "aliases": [
+    "ISO/IEC 22989:2022",
+    "ISO 22989"
+  ],
+  "chapters": [
+    "lexicon-guide",
+    "governance-regulation"
+  ]
+}

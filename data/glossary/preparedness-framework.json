@@ -1,0 +1,15 @@
+{
+  "id": "preparedness-framework",
+  "term": "Preparedness Framework",
+  "def": "OpenAI's frontier safety framework, which tracks biological and chemical, cybersecurity and AI self-improvement capabilities against High and Critical thresholds that require matching safeguards.",
+  "practice": "Version 2 (April 2025) is current as of November 2026; in September 2026 OpenAI rated a model, Astra, Critical in cybersecurity for the first time and withheld its full cyber capabilities from wide release.",
+  "aliases": [
+    "OpenAI Preparedness Framework"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "safety-evals",
+    "model-documentation",
+    "dangerous-capability-evals"
+  ]
+}

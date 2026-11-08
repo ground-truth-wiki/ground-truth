@@ -1,0 +1,13 @@
+{
+  "id": "slsa",
+  "term": "Supply-chain Levels for Software Artifacts",
+  "def": "A specification of graded levels for software supply-chain integrity, whose Build track runs from no guarantees to signed provenance from an isolated, hardened build platform.",
+  "practice": "Ask model and package publishers for SLSA provenance and verify it before deployment; quote the level and track, such as Build L3.",
+  "aliases": [
+    "SLSA"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ],
+  "abbr": "SLSA"
+}

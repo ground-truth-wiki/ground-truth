@@ -1,0 +1,13 @@
+{
+  "id": "curse-of-multilinguality",
+  "term": "Curse of multilinguality",
+  "def": "The drop in per-language performance when a fixed-capacity model is trained on more languages, because capacity dilution outweighs positive cross-lingual transfer (Conneau et al., 2019).",
+  "practice": "Hits small models hardest and eases with more capacity; a 2025 study of 1.1B and 3B models trained on up to 400 languages found no significant curse, so its size is debated.",
+  "aliases": [],
+  "chapters": [
+    "pretraining-data",
+    "small-local-models",
+    "scaling-laws",
+    "multilingual-models"
+  ]
+}

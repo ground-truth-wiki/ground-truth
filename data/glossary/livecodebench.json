@@ -1,0 +1,12 @@
+{
+  "id": "livecodebench",
+  "term": "LiveCodeBench",
+  "def": "A coding benchmark that keeps adding dated problems from LeetCode, AtCoder and Codeforces, so models can be scored only on problems released after their training cutoff.",
+  "practice": "Pick a problem window that postdates every model you compare; besides code generation it covers self-repair, code execution and test-output prediction.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "coding-agents",
+    "benchmark-catalog"
+  ]
+}

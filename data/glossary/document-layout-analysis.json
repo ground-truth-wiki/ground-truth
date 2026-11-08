@@ -1,0 +1,17 @@
+{
+  "id": "document-layout-analysis",
+  "term": "Document layout analysis",
+  "def": "Detecting and classifying the regions of a page, such as text blocks, titles, lists, tables, figures, formulas, headers and footers.",
+  "practice": "The step that lets parsers keep tables whole, drop running headers and footers and recover reading order; DocLayNet is a common training set and OmniDocBench scores it with 19 layout categories.",
+  "aliases": [
+    "layout analysis",
+    "layout detection",
+    "page segmentation"
+  ],
+  "chapters": [
+    "document-screen-understanding",
+    "ingestion-parsing",
+    "unstructured-pipelines",
+    "document-ocr-models"
+  ]
+}

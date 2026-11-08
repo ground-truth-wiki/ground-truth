@@ -1,0 +1,16 @@
+{
+  "id": "curse-of-dimensionality",
+  "term": "Curse of dimensionality",
+  "def": "The problems that appear as the number of dimensions grows: data become sparse, distances between points become less informative, and the volume to cover grows exponentially.",
+  "practice": "Why k-d trees stop paying off beyond roughly 20 dimensions, why embedding search relies on approximate indexes, and why a few hub points show up in many nearest-neighbor lists.",
+  "aliases": [],
+  "chapters": [
+    "vector-search",
+    "embeddings",
+    "linear-algebra",
+    "classical-ml",
+    "high-dimensional-geometry",
+    "linear-and-kernel-models",
+    "language-modeling"
+  ]
+}

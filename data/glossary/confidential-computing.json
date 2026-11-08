@@ -1,0 +1,17 @@
+{
+  "id": "confidential-computing",
+  "term": "Confidential computing",
+  "def": "Protecting data while it is being processed by running workloads in hardware-isolated trusted execution environments on CPUs or GPUs, whose state can be verified by remote attestation.",
+  "practice": "Used for private inference and to protect model weights, supported on NVIDIA Hopper and Blackwell GPUs; Apple’s Private Cloud Compute adds stateless processing and publicly inspectable software images.",
+  "aliases": [],
+  "chapters": [
+    "privacy",
+    "personal-assistants",
+    "hardware",
+    "enterprise-readiness",
+    "edge-on-device",
+    "supply-chain-security",
+    "model-theft",
+    "privacy-preserving-ml"
+  ]
+}

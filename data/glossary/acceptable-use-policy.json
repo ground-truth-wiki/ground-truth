@@ -1,0 +1,20 @@
+{
+  "id": "acceptable-use-policy",
+  "term": "Acceptable use policy",
+  "def": "A document, often incorporated into a model license or service terms, that lists forbidden uses even where commercial use is otherwise permitted.",
+  "practice": "It usually flows down to your users and to derivatives; Llama and Gemma licenses incorporate one and hosted APIs have their own, so review it before shipping.",
+  "aliases": [
+    "AUP",
+    "usage policy",
+    "prohibited use policy"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-families",
+    "governance-regulation",
+    "model-licenses",
+    "guard-models-moderation",
+    "open-model-communities"
+  ],
+  "abbr": "AUP"
+}

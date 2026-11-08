@@ -1,0 +1,15 @@
+{
+  "id": "confidence-display",
+  "term": "Confidence display",
+  "def": "Showing users how certain the system is about an output, as categories, alternative results, numbers or visual ranges such as error bars.",
+  "practice": "Show it only when confidence is calibrated against quality and changes what the user does; PAIR and Apple warn that raw percentages are easily misread and favor categories, alternatives or plain language.",
+  "aliases": [
+    "confidence indicator",
+    "uncertainty display"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "grounding-citations",
+    "agent-ux"
+  ]
+}

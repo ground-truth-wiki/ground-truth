@@ -1,0 +1,15 @@
+{
+  "id": "law-of-large-numbers",
+  "term": "Law of large numbers",
+  "def": "The theorem that the average of many independent samples from the same distribution converges to its expected value as the number of samples grows.",
+  "practice": "Why averaging over more eval cases, or more runs per case, gives a score closer to the system’s true rate.",
+  "aliases": [
+    "LLN"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "probability-information",
+    "high-dimensional-geometry"
+  ],
+  "abbr": "LLN"
+}

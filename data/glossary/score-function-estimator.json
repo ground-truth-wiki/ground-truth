@@ -1,0 +1,17 @@
+{
+  "id": "score-function-estimator",
+  "term": "Score-function estimator",
+  "def": "An unbiased Monte Carlo estimate of the gradient of an expectation that weights each sample's value by the gradient of its log-probability, so the sampling step need not be differentiable.",
+  "practice": "It underlies REINFORCE and the policy-gradient losses used in RLHF and RLVR; its variance is high, so methods subtract a baseline or a group-relative advantage.",
+  "aliases": [
+    "REINFORCE estimator",
+    "log-derivative trick",
+    "likelihood-ratio estimator"
+  ],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization",
+    "policy-gradient-methods"
+  ]
+}

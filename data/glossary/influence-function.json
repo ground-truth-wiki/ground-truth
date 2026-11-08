@@ -1,0 +1,11 @@
+{
+  "id": "influence-function",
+  "term": "Influence function",
+  "def": "A technique from robust statistics that estimates how a model's parameters or predictions would change if one training example were upweighted or removed, without retraining.",
+  "practice": "Used to find the training examples behind a behavior or error (Koh and Liang, 2017); scaled approximations have been applied to large language models, though estimates can be fragile in deep networks.",
+  "aliases": [],
+  "chapters": [
+    "mech-interp",
+    "pretraining-data"
+  ]
+}

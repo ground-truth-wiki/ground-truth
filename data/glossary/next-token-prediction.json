@@ -1,0 +1,21 @@
+{
+  "id": "next-token-prediction",
+  "term": "Next-token prediction",
+  "def": "The training objective of autoregressive language models: predict each token from all tokens before it, minimizing cross-entropy against the true next token.",
+  "practice": "Training scores every position in one pass with the inputs shifted by one as labels; generation then repeats the prediction one token at a time.",
+  "aliases": [
+    "causal language modeling",
+    "autoregressive language modeling",
+    "next-token objective"
+  ],
+  "chapters": [
+    "language-modeling",
+    "transformer-overview",
+    "representation-learning",
+    "pretraining-run",
+    "probability-information",
+    "recurrent-networks",
+    "encoders-and-decoders",
+    "reward-modeling"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "central-limit-theorem",
+  "term": "Central limit theorem",
+  "def": "The theorem that the sum or mean of many independent, identically distributed random variables with finite variance is approximately normally distributed, whatever their own distribution.",
+  "practice": "Justifies reporting an eval mean ± 1.96 standard errors as an approximate 95% confidence interval when there are enough cases; for small sets or scores near 0 or 100%, a Wilson or bootstrap interval is safer.",
+  "aliases": [
+    "CLT"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "probability-information",
+    "distributions-and-estimation",
+    "sae-circuit-tracing"
+  ],
+  "abbr": "CLT"
+}

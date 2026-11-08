@@ -1,0 +1,13 @@
+{
+  "id": "infiniband",
+  "term": "InfiniBand",
+  "def": "A low-latency, high-bandwidth network fabric with remote direct memory access (RDMA), widely used to connect GPU servers in training clusters.",
+  "practice": "Bandwidth between nodes is far below NVLink inside a server or rack, so parallelism layouts keep the chattiest traffic, such as tensor parallelism, inside the NVLink domain; RDMA over Ethernet is the main alternative.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "distributed-training",
+    "disaggregated-serving",
+    "parallelism-strategies"
+  ]
+}

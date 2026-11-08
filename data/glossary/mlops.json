@@ -1,0 +1,18 @@
+{
+  "id": "mlops",
+  "term": "MLOps",
+  "def": "The practices and tooling that automate and monitor the machine-learning lifecycle (data, training, validation, deployment, monitoring), adding data and model versioning and continuous training to DevOps.",
+  "practice": "The source of model registries, experiment tracking, training pipelines and drift monitoring; it still applies when you fine-tune or self-host, while prompt and retrieval workloads extend it into LLMOps.",
+  "aliases": [
+    "machine learning operations",
+    "ML operations"
+  ],
+  "chapters": [
+    "reference-architecture",
+    "ci-cd-for-ai",
+    "ai-engineering-stack",
+    "fine-tuning-practice",
+    "mlops-foundations",
+    "slos-error-budgets"
+  ]
+}

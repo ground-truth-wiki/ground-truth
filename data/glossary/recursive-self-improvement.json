@@ -1,0 +1,17 @@
+{
+  "id": "recursive-self-improvement",
+  "term": "Recursive self-improvement",
+  "def": "A hypothesized process in which an AI system builds a more capable successor, which builds a still more capable one, each round faster; a runaway version is called an intelligence explosion.",
+  "practice": "The scenario behind automated AI R&D thresholds and forecasts such as AI 2027; as of November 2026, systems improve narrow parts of the pipeline, such as kernels or agent code, rather than themselves end to end.",
+  "aliases": [
+    "RSI",
+    "intelligence explosion"
+  ],
+  "chapters": [
+    "self-improving-systems",
+    "open-problems",
+    "frontier-safety-frameworks",
+    "agi-timelines-risk"
+  ],
+  "abbr": "RSI"
+}

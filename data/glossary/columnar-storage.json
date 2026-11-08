@@ -1,0 +1,15 @@
+{
+  "id": "columnar-storage",
+  "term": "Columnar storage",
+  "def": "Storing a table column by column rather than row by row, so queries read only the columns they need and similar values compress well.",
+  "practice": "Why Parquet, Arrow and engines such as DuckDB are fast for dataset analysis; row formats such as JSON Lines stay simpler for appending records and streaming writes.",
+  "aliases": [
+    "column-oriented storage",
+    "columnar format"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "unstructured-pipelines",
+    "data-formats"
+  ]
+}

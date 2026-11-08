@@ -1,0 +1,12 @@
+{
+  "id": "matrix-factorization",
+  "term": "Matrix factorization",
+  "def": "In recommender systems, approximating the sparse user-item interaction matrix as the product of two low-rank matrices of user and item embeddings, whose dot product predicts affinity.",
+  "practice": "The classic collaborative-filtering model, fit by alternating least squares or SGD; how much weight unobserved entries get is a key tuning choice.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "linear-algebra",
+    "recommender-systems"
+  ]
+}

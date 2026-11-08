@@ -1,0 +1,13 @@
+{
+  "id": "zero-shot-tts",
+  "term": "Zero-shot TTS",
+  "def": "Synthesizing speech in a voice not seen in training from a short reference recording, without fine-tuning.",
+  "practice": "The technical basis of instant voice cloning; judged by naturalness and speaker similarity, and it needs consent checks and misuse controls.",
+  "aliases": [
+    "zero-shot speech synthesis"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents"
+  ]
+}

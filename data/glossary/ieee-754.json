@@ -1,0 +1,16 @@
+{
+  "id": "ieee-754",
+  "term": "IEEE 754",
+  "def": "The IEEE standard for floating-point arithmetic, defining binary and decimal formats, rounding, special values such as infinity and NaN, and exception handling; first published in 1985.",
+  "practice": "FP64, FP32 and FP16 are IEEE binary formats, while BF16, TF32 and the FP8 and FP4 formats used in AI come from vendors and the Open Compute Project; the current revision is IEEE 754-2019, as of November 2026.",
+  "aliases": [
+    "IEEE 754-2019",
+    "IEEE floating point"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "hardware",
+    "quantization",
+    "floating-point-formats"
+  ]
+}

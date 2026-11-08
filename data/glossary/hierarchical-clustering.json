@@ -1,0 +1,13 @@
+{
+  "id": "hierarchical-clustering",
+  "term": "Hierarchical clustering",
+  "def": "Clustering that builds a tree of nested clusters, bottom-up by repeatedly merging the closest clusters (agglomerative) or top-down by splitting (divisive).",
+  "practice": "You can cut the tree at any granularity instead of fixing the number of clusters up front, but the linkage rule (Ward, complete, average or single) changes the result.",
+  "aliases": [
+    "agglomerative clustering"
+  ],
+  "chapters": [
+    "classical-ml",
+    "clustering-dimensionality-reduction"
+  ]
+}

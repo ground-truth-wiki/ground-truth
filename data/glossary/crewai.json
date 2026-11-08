@@ -1,0 +1,14 @@
+{
+  "id": "crewai",
+  "term": "CrewAI",
+  "def": "An open-source Python framework that organizes role-based agents into crews working through tasks in a sequential or manager-led hierarchical process, plus event-driven Flows with structured, persistable state.",
+  "practice": "Quick for prototyping role-based teams; put the parts that must be predictable in Flows and keep crews for open-ended subtasks.",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "multi-agent",
+    "graph-workflow-runtimes",
+    "managed-agent-platforms"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "reversal-curse",
+  "term": "Reversal curse",
+  "def": "The failure of language models trained on statements of the form ‘A is B’ to infer ‘B is A’ (Berglund et al., 2023).",
+  "practice": "One reason to put needed facts in context rather than teach them by fine-tuning: in data-matched tests, in-context learning generalized reversals more flexibly than fine-tuning (Lampinen et al., 2025).",
+  "aliases": [],
+  "chapters": [
+    "sft",
+    "fine-tuning-practice",
+    "rag-fundamentals",
+    "reasoning-debate"
+  ]
+}

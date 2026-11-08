@@ -1,0 +1,10 @@
+{
+  "id": "negative-prompt",
+  "term": "Negative prompt",
+  "def": "A second prompt that steers a diffusion model away from unwanted content; under classifier-free guidance it replaces the empty unconditional prompt.",
+  "practice": "Used to suppress artifacts (blurry, bad anatomy) or remove an object or style at no extra compute; guidance-distilled models that skip the unconditional pass may not support it.",
+  "aliases": [],
+  "chapters": [
+    "image-generation"
+  ]
+}

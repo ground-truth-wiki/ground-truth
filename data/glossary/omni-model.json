@@ -1,0 +1,17 @@
+{
+  "id": "omni-model",
+  "term": "Omni model",
+  "def": "A natively multimodal model trained end to end to accept any mix of text, images, audio and video and to produce text and speech, sometimes images, from one network.",
+  "practice": "Lower voice and video latency than chaining speech recognition, an LLM and text-to-speech; check which input and output modalities the API actually exposes.",
+  "aliases": [
+    "omni-modal model",
+    "any-to-any model"
+  ],
+  "chapters": [
+    "vision-language-models",
+    "speech-audio",
+    "voice-agents",
+    "multimodal-apps",
+    "model-types"
+  ]
+}

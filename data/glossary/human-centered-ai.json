@@ -1,0 +1,18 @@
+{
+  "id": "human-centered-ai",
+  "term": "Human-centered AI",
+  "def": "An approach to designing AI systems around human needs, control and wellbeing; Shneiderman's framework treats automation and human control as separate dimensions that can both be high.",
+  "practice": "Use it to challenge the single manual-to-automatic slider: an agent can automate heavily while users keep control through previews, approvals and undo.",
+  "aliases": [
+    "HCAI",
+    "human-centred AI"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "human-in-the-loop",
+    "autonomy-and-oversight",
+    "agent-ux",
+    "responsible-ai"
+  ],
+  "abbr": "HCAI"
+}

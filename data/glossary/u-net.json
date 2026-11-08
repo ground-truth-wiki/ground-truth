@@ -1,0 +1,14 @@
+{
+  "id": "u-net",
+  "term": "U-Net",
+  "def": "A convolutional encoder-decoder with skip connections between matching resolutions, introduced in 2015 for biomedical image segmentation and later adopted as the denoising network of diffusion models.",
+  "practice": "The denoiser in Stable Diffusion 1.x and SDXL; diffusion transformers have replaced it in many later image and video models.",
+  "aliases": [
+    "UNet"
+  ],
+  "chapters": [
+    "image-generation",
+    "convolutional-networks",
+    "diffusion-flow-matching"
+  ]
+}

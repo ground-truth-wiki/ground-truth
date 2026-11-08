@@ -1,0 +1,16 @@
+{
+  "id": "calibration-dataset",
+  "term": "Calibration dataset",
+  "def": "A small set of representative inputs run through a model during post-training quantization to measure activation ranges or to guide how weights are rounded.",
+  "practice": "Usually improves accuracy at 4 bits and below; pick data that resembles production traffic, including its languages and formats.",
+  "aliases": [
+    "calibration data",
+    "calibration set"
+  ],
+  "chapters": [
+    "quantization",
+    "llm-pruning",
+    "judge-models-meta-evaluation",
+    "quantization-methods"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "training-set",
+  "term": "Training set",
+  "def": "The portion of a dataset used to fit a model’s parameters, kept separate from the validation and test sets used to tune and evaluate it.",
+  "practice": "Any overlap between training data and eval data inflates scores (see data leakage), a constant risk for LLMs trained on web-scale data that may contain public benchmarks.",
+  "aliases": [
+    "training data",
+    "training split",
+    "train set"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-datasets",
+    "pretraining-data",
+    "benchmark-literacy",
+    "data-strategy",
+    "sft",
+    "classification-metrics",
+    "validation-tuning"
+  ]
+}

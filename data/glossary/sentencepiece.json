@@ -1,0 +1,11 @@
+{
+  "id": "sentencepiece",
+  "term": "SentencePiece",
+  "def": "A language-independent tokenizer library that trains BPE or unigram models directly on raw text, treating whitespace as an ordinary symbol so decoding is lossless.",
+  "practice": "T5 uses its unigram model and LLaMA 1 and 2 its BPE with byte fallback, which encodes unseen characters as bytes instead of an unknown token.",
+  "aliases": [],
+  "chapters": [
+    "tokenization",
+    "tokenizers-in-practice"
+  ]
+}

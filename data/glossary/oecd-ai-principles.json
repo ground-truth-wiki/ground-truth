@@ -1,0 +1,15 @@
+{
+  "id": "oecd-ai-principles",
+  "term": "OECD AI Principles",
+  "def": "Intergovernmental principles for trustworthy AI, adopted by the OECD in May 2019 and updated in May 2024: five values-based principles plus five recommendations for governments.",
+  "practice": "Their definition of an AI system underpins the EU AI Act and other frameworks; the OECD lists 47 adherents (as of November 2026).",
+  "aliases": [
+    "OECD AI Recommendation",
+    "OECD Recommendation on Artificial Intelligence"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "global-ai-governance"
+  ]
+}

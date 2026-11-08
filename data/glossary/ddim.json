@@ -1,0 +1,14 @@
+{
+  "id": "ddim",
+  "term": "Denoising diffusion implicit models",
+  "def": "A sampler for models trained with the DDPM objective that uses a non-Markovian process to skip steps and, when deterministic, gives an approximately invertible mapping between noise and image.",
+  "practice": "Cuts sampling from about a thousand steps to tens; DDIM inversion recovers the starting noise of a real image, which image-editing methods and the Tree-Ring watermark rely on.",
+  "aliases": [
+    "DDIM"
+  ],
+  "chapters": [
+    "image-generation",
+    "diffusion-flow-matching"
+  ],
+  "abbr": "DDIM"
+}

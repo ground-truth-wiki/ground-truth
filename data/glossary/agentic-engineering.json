@@ -1,0 +1,12 @@
+{
+  "id": "agentic-engineering",
+  "term": "Agentic engineering",
+  "def": "Using coding agents for professional software development with deliberate specs, plans, tests and review, in contrast to vibe coding.",
+  "practice": "Simon Willison's Agentic Engineering Patterns guide collects its practices; the distinction from vibe coding matters for any code you will have to maintain.",
+  "aliases": [],
+  "chapters": [
+    "working-with-coding-agents",
+    "coding-agents",
+    "sparse-and-local-attention"
+  ]
+}

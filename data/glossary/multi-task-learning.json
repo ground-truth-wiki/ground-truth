@@ -1,0 +1,18 @@
+{
+  "id": "multi-task-learning",
+  "term": "Multi-task learning",
+  "def": "Training one model on several tasks at once with shared parameters, so that what it learns for one task can help the others.",
+  "practice": "Instruction tuning on a mix of many tasks is multi-task learning at scale, as in T5 and FLAN; the alternative for combining skills is to fine-tune separately and merge the models.",
+  "aliases": [
+    "multitask learning",
+    "MTL",
+    "multi-task fine-tuning"
+  ],
+  "chapters": [
+    "sft",
+    "fine-tuning-practice",
+    "distillation-merging",
+    "feature-engineering"
+  ],
+  "abbr": "MTL"
+}

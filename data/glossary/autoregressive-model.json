@@ -1,0 +1,20 @@
+{
+  "id": "autoregressive-model",
+  "term": "Autoregressive model",
+  "def": "A generative model that factorizes a joint distribution into a product of conditionals and generates one element at a time, each conditioned on all earlier ones.",
+  "practice": "GPT-style LLMs, PixelRNN for images and WaveNet for audio are autoregressive; generation is sequential, so latency grows with output length, which speculative decoding attacks.",
+  "aliases": [
+    "autoregressive",
+    "AR model"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "image-generation",
+    "transformer-block",
+    "speculative-decoding",
+    "distributions-and-estimation",
+    "recurrent-networks",
+    "language-modeling",
+    "deep-generative-models"
+  ]
+}

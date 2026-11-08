@@ -1,0 +1,15 @@
+{
+  "id": "stemming-lemmatization",
+  "term": "Stemming and lemmatization",
+  "def": "Two ways to reduce word variants to a shared form: stemming strips suffixes by rule (for example Porter's algorithm), lemmatization maps a word to its dictionary form using vocabulary and grammar.",
+  "practice": "Stemming in a search analyzer raises keyword recall ('connected' matches 'connection') at some precision cost, is set per language, and changes what the BM25 side of hybrid search finds.",
+  "aliases": [
+    "stemming",
+    "lemmatization",
+    "stemmer"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "ir-foundations"
+  ]
+}

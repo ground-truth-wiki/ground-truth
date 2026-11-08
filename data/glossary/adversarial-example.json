@@ -1,0 +1,15 @@
+{
+  "id": "adversarial-example",
+  "term": "Adversarial example",
+  "def": "An input altered slightly, often imperceptibly to people, so that a model misclassifies or misbehaves at inference time.",
+  "practice": "The basic unit of evasion attacks, first described by Szegedy et al. (2013); adversarial suffixes play the same role against LLMs.",
+  "aliases": [
+    "adversarial input",
+    "adversarial perturbation"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "jailbreaks-misuse",
+    "adversarial-ml"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "rope-base-frequency",
+  "term": "RoPE base frequency",
+  "def": "The constant, 10,000 in the original RoPE, that sets the range of rotary-embedding frequencies; a larger base rotates more slowly and lets attention resolve longer distances.",
+  "practice": "Long-context models raise it, for example to 500,000 in Llama 3 and 1M on Gemma 3's global layers; model configs call it rope_theta.",
+  "aliases": [
+    "RoPE base",
+    "rope_theta",
+    "rope theta",
+    "adjusted base frequency",
+    "ABF"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "mid-training",
+    "long-context",
+    "rope-scaling",
+    "long-context-training"
+  ]
+}

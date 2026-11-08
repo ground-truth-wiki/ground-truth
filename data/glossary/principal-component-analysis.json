@@ -1,0 +1,20 @@
+{
+  "id": "principal-component-analysis",
+  "term": "Principal component analysis",
+  "def": "A linear dimensionality reduction that projects centered data onto orthogonal directions, the principal components, ordered by how much variance they capture; usually computed with the SVD.",
+  "practice": "Used to compress or denoise features and embeddings and to plot them in two dimensions; the explained-variance ratio guides how many components to keep, and it captures only linear structure.",
+  "aliases": [
+    "PCA"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "classical-ml",
+    "embeddings",
+    "representation-learning",
+    "eigenvectors-svd-pca",
+    "high-dimensional-geometry",
+    "optimizers",
+    "clustering-dimensionality-reduction"
+  ],
+  "abbr": "PCA"
+}

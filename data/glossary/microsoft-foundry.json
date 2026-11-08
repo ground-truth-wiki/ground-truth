@@ -1,0 +1,18 @@
+{
+  "id": "microsoft-foundry",
+  "term": "Microsoft Foundry",
+  "def": "Microsoft's Azure platform for discovering, deploying and governing models and agents, formerly branded Azure AI Studio and then Azure AI Foundry.",
+  "practice": "Its catalog separates models sold by Azure from partner and community models, deployed serverless (global, data zone or regional) or on managed compute, as of November 2026.",
+  "aliases": [
+    "Azure AI Foundry",
+    "Azure AI Studio",
+    "Foundry Models"
+  ],
+  "chapters": [
+    "model-apis",
+    "choosing-a-model",
+    "enterprise-readiness",
+    "cloud-ai-platforms",
+    "managed-agent-platforms"
+  ]
+}

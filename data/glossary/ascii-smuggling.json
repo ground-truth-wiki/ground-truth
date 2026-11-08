@@ -1,0 +1,13 @@
+{
+  "id": "ascii-smuggling",
+  "term": "ASCII smuggling",
+  "def": "Hiding text in invisible characters from the Unicode Tags block (U+E0000 to U+E007F), which most interfaces do not display but language models still read as instructions.",
+  "practice": "Strip or flag tag characters and other invisible code points in prompts, retrieved documents and model outputs before they reach a model or a user.",
+  "aliases": [
+    "Unicode tag smuggling"
+  ],
+  "chapters": [
+    "prompt-injection",
+    "guardrails-control"
+  ]
+}

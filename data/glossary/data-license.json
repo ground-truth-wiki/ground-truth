@@ -1,0 +1,15 @@
+{
+  "id": "data-license",
+  "term": "Data license",
+  "def": "A license that grants permission to copy, use, share or adapt a dataset or database, under conditions such as attribution, share-alike or non-commercial use.",
+  "practice": "Common families are Creative Commons, Open Data Commons (PDDL, ODC-By, ODbL) and the Community Data License Agreement (CDLA); license fields on dataset hubs are often missing or wrong, so trace each license to its original source.",
+  "aliases": [
+    "dataset license"
+  ],
+  "chapters": [
+    "data-governance",
+    "data-strategy",
+    "pretraining-data",
+    "data-licensing-consent"
+  ]
+}

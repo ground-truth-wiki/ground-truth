@@ -1,0 +1,15 @@
+{
+  "id": "skyrl",
+  "term": "SkyRL",
+  "def": "A modular open-source RL library for training LLM agents on long-horizon tasks, from Berkeley's Sky Computing Lab (NovaSky) with Anyscale, split into training, environment and agent components.",
+  "practice": "Used for agentic RL on tasks such as SWE-bench-style coding and text-to-SQL; its skyrl-gym environments follow the Gymnasium API, and it integrates with OpenEnv.",
+  "aliases": [
+    "skyrl-train",
+    "skyrl-gym"
+  ],
+  "chapters": [
+    "rl-environment-harnesses",
+    "agentic-rl",
+    "swe-training-environments"
+  ]
+}

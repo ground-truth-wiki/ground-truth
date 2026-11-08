@@ -1,0 +1,18 @@
+{
+  "id": "etl-elt",
+  "term": "ETL and ELT",
+  "def": "Two data pipeline patterns: extract-transform-load reshapes data before loading it into the destination, while extract-load-transform loads raw data first and transforms it inside the destination.",
+  "practice": "AI document pipelines are usually ELT-like: keep raw sources, then parse, enrich and chunk as re-runnable steps so a parser upgrade can reprocess history.",
+  "aliases": [
+    "ETL",
+    "ELT",
+    "extract, transform, load"
+  ],
+  "chapters": [
+    "unstructured-pipelines",
+    "ingestion-parsing",
+    "production-rag",
+    "data-pipeline-orchestration",
+    "data-lakehouses"
+  ]
+}

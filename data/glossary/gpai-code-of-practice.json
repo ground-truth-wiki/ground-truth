@@ -1,0 +1,15 @@
+{
+  "id": "gpai-code-of-practice",
+  "term": "General-Purpose AI Code of Practice",
+  "def": "A voluntary code, published in July 2025 with Transparency, Copyright, and Safety and Security chapters, that general-purpose AI model providers can follow to show EU AI Act compliance.",
+  "practice": "Signing reduces the administrative burden of proving compliance, and the Safety and Security chapter applies only to models with systemic risk; 22 organizations had signed the full code as of November 2026.",
+  "aliases": [
+    "GPAI Code of Practice"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "frontier-safety-frameworks",
+    "data-licensing-consent",
+    "eu-ai-act"
+  ]
+}

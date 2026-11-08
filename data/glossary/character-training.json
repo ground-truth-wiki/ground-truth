@@ -1,0 +1,20 @@
+{
+  "id": "character-training",
+  "term": "Character training",
+  "def": "Post-training that gives a model a stable persona and traits, such as curiosity, open-mindedness and honesty, typically with synthetic data and Constitutional AI-style self-ranking.",
+  "practice": "Part of why assistants built on similar base models feel different; Anthropic described it for Claude 3 in 2024, using a preference model trained on Claude's own rankings.",
+  "aliases": [
+    "persona training",
+    "personality training"
+  ],
+  "chapters": [
+    "safety-character-training",
+    "alignment-concepts",
+    "post-training-overview",
+    "preference-optimization",
+    "mid-training",
+    "model-specs-instruction-hierarchy",
+    "fine-tuning-and-safety",
+    "jailbreak-techniques"
+  ]
+}

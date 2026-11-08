@@ -1,0 +1,13 @@
+{
+  "id": "unigram-tokenization",
+  "term": "Unigram tokenization",
+  "def": "A subword method that models text as independently drawn vocabulary pieces, trains by pruning a large seed vocabulary while losing the least likelihood, and segments with the Viterbi algorithm.",
+  "practice": "SentencePiece's default model type, used by T5, ALBERT and XLNet; it can sample alternative splits during training, a technique called subword regularization.",
+  "aliases": [
+    "Unigram LM",
+    "unigram language model tokenizer"
+  ],
+  "chapters": [
+    "tokenization"
+  ]
+}

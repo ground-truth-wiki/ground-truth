@@ -1,0 +1,16 @@
+{
+  "id": "working-memory",
+  "term": "Working memory",
+  "def": "The information an agent holds for its current step: in practice the context window plus any state the harness carries between model calls.",
+  "practice": "Fast and exact but bounded, and lost at compaction or session end; anything that must survive goes to long-term memory or a progress file.",
+  "aliases": [
+    "short-term memory"
+  ],
+  "chapters": [
+    "agent-memory",
+    "context-engineering",
+    "long-context",
+    "recurrent-networks",
+    "agent-research-lineage"
+  ]
+}

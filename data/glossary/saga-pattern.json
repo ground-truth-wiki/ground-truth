@@ -1,0 +1,15 @@
+{
+  "id": "saga-pattern",
+  "term": "Saga pattern",
+  "def": "A way to keep a multi-step process consistent without a distributed transaction: each step commits on its own, and if a later step fails, compensating steps undo the completed ones.",
+  "practice": "For agents with side effects, pair each reversible tool (book, charge, create) with a compensation (cancel, refund, delete) and put irreversible steps behind approval.",
+  "aliases": [
+    "saga"
+  ],
+  "chapters": [
+    "long-running-agents",
+    "reliability-engineering",
+    "human-in-the-loop",
+    "durable-agent-execution"
+  ]
+}

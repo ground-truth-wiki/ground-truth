@@ -1,0 +1,19 @@
+{
+  "id": "w3c-trace-context",
+  "term": "W3C Trace Context",
+  "def": "A W3C Recommendation defining the traceparent and tracestate headers, which carry a trace id, parent span id and sampling flag so one distributed trace continues across services and vendors.",
+  "practice": "It lets one trace cover client, gateway, orchestrator, tools and MCP servers; OpenTelemetry propagates it by default, and MCP carries the same keys in request _meta (SEP-414).",
+  "aliases": [
+    "Trace Context",
+    "traceparent",
+    "tracestate"
+  ],
+  "chapters": [
+    "observability-tracing",
+    "mcp-at-scale",
+    "mcp-architecture",
+    "mcp-spec-history",
+    "async-batch-workloads",
+    "otel-genai-conventions"
+  ]
+}

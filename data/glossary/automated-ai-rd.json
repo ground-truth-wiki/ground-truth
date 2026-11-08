@@ -1,0 +1,16 @@
+{
+  "id": "automated-ai-rd",
+  "term": "Automated AI R&D",
+  "def": "AI systems doing substantial parts of the work of AI researchers and engineers, such as running experiments and writing training code, with little human input.",
+  "practice": "A tracked threshold in frontier safety frameworks because it could sharply accelerate AI progress; METR's May 2026 risk report found agents autonomously doing real research engineering, but no company relying on them to set research agendas.",
+  "aliases": [
+    "AI R&D automation"
+  ],
+  "chapters": [
+    "self-improving-systems",
+    "frontier-safety-frameworks",
+    "long-horizon-autonomy",
+    "measuring-time-horizons",
+    "agi-timelines-risk"
+  ]
+}

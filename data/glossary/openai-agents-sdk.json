@@ -1,0 +1,19 @@
+{
+  "id": "openai-agents-sdk",
+  "term": "OpenAI Agents SDK",
+  "def": "OpenAI's open-source agent framework for Python and TypeScript with agents, handoffs, agents as tools, guardrails, sessions, tracing, voice agents and sandboxed workspaces; still pre-1.0 as of November 2026.",
+  "practice": "Tracing is on by default, sends data to OpenAI and is unavailable under zero data retention, so replace the trace processors if traces must stay in your own stack.",
+  "aliases": [
+    "Agents SDK"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "framework-landscape",
+    "multi-agent",
+    "guardrails-control",
+    "observability-tracing",
+    "agent-research-lineage",
+    "multi-agent-patterns",
+    "durable-agent-execution"
+  ]
+}

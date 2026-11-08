@@ -1,0 +1,18 @@
+{
+  "id": "backfill",
+  "term": "Backfill",
+  "def": "Running a pipeline over past time intervals or data partitions so historical outputs are computed or recomputed, for example after adding a pipeline or fixing a bug.",
+  "practice": "Needed whenever a parser, chunker or embedding model changes and existing documents must be reprocessed; keeping raw inputs in a bronze layer is what makes it possible.",
+  "aliases": [
+    "backfilling"
+  ],
+  "chapters": [
+    "unstructured-pipelines",
+    "production-rag",
+    "embeddings",
+    "training-retrievers",
+    "data-pipeline-orchestration",
+    "async-batch-workloads",
+    "rate-limits-overload"
+  ]
+}

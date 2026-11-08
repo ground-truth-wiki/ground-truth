@@ -1,0 +1,20 @@
+{
+  "id": "state-graph",
+  "term": "State graph",
+  "def": "A workflow defined as nodes, such as functions or agents, connected by fixed and conditional edges, which a runtime executes step by step over shared state.",
+  "practice": "The programming model of LangGraph and of Microsoft Agent Framework and ADK graph workflows; choose it when control flow must be explicit, inspectable and resumable from checkpoints.",
+  "aliases": [
+    "StateGraph",
+    "graph workflow",
+    "graph-based workflow"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "workflow-patterns",
+    "multi-agent-patterns",
+    "durable-agent-execution",
+    "graph-workflow-runtimes",
+    "frameworks-beyond-python"
+  ]
+}

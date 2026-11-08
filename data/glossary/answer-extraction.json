@@ -1,0 +1,14 @@
+{
+  "id": "answer-extraction",
+  "term": "Answer extraction",
+  "def": "The eval-harness step that pulls the final answer out of a model's free-text output, for example with a regular expression or an 'ANSWER:' marker, before it is scored.",
+  "practice": "lm-evaluation-harness implements it as filters (regex, take_first, majority_vote) and Inspect as scorers such as pattern() and answer(); a brittle extractor can cost a model points it earned.",
+  "aliases": [
+    "answer parsing"
+  ],
+  "chapters": [
+    "eval-harnesses",
+    "metrics-graders",
+    "benchmark-literacy"
+  ]
+}

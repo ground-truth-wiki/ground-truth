@@ -1,0 +1,17 @@
+{
+  "id": "gpu-hours",
+  "term": "GPU-hours",
+  "def": "Number of accelerators multiplied by wall-clock hours of use: the common unit of training cost, and a basis for estimating compute when FLOP counts are not published.",
+  "practice": "DeepSeek-V3 reported 2.788M H800 GPU-hours, about $5.6M at an assumed $2 per hour, a figure that excludes prior research and ablation runs.",
+  "aliases": [
+    "accelerator-hours"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "scaling-laws",
+    "numbers-to-know",
+    "post-training-overview",
+    "compute-accounting",
+    "training-reliability"
+  ]
+}

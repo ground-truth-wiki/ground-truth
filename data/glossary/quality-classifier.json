@@ -1,0 +1,15 @@
+{
+  "id": "quality-classifier",
+  "term": "Quality classifier",
+  "def": "A model that scores documents for quality, such as resemblance to reference text or educational value, so a data pipeline keeps only high scorers.",
+  "practice": "FineWeb-Edu trained one on Llama-3-70B-Instruct ratings of 460,000 pages and kept scores of 3 or more; DCLM found model-based filtering key to a strong training set.",
+  "aliases": [
+    "model-based filtering",
+    "quality filter",
+    "educational-value classifier"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline"
+  ]
+}

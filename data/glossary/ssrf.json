@@ -1,0 +1,17 @@
+{
+  "id": "ssrf",
+  "term": "Server-side request forgery",
+  "def": "An attack that makes a server or client send requests to destinations the attacker chooses, reaching internal services, localhost or cloud metadata endpoints.",
+  "practice": "MCP clients that follow OAuth discovery URLs from servers should require HTTPS, block private and link-local ranges and validate redirects; agent tools that fetch URLs need the same checks.",
+  "aliases": [
+    "SSRF"
+  ],
+  "chapters": [
+    "mcp-security",
+    "mcp-authorization",
+    "secure-agent-design",
+    "threat-modeling",
+    "a2a-in-depth"
+  ],
+  "abbr": "SSRF"
+}

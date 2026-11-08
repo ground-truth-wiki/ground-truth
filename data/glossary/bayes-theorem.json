@@ -1,0 +1,15 @@
+{
+  "id": "bayes-theorem",
+  "term": "Bayes’ theorem",
+  "def": "The rule P(A | B) = P(B | A) · P(A) / P(B), which turns a prior probability P(A) into a posterior P(A | B) after observing evidence B.",
+  "practice": "Explains the base-rate effect: a highly accurate classifier for a rare problem, such as a guardrail, can still raise mostly false alarms.",
+  "aliases": [
+    "Bayes’ rule",
+    "Bayes' rule",
+    "Bayes rule"
+  ],
+  "chapters": [
+    "probability-information",
+    "classical-ml"
+  ]
+}

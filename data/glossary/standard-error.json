@@ -1,0 +1,14 @@
+{
+  "id": "standard-error",
+  "term": "Standard error",
+  "def": "The standard deviation of an estimate, such as a mean, across hypothetical repeated samples; for the mean of n independent values it is σ / √n.",
+  "practice": "Reporting an eval score with its standard error shows whether a difference between models could be noise; clustered standard errors widen it when cases share a source.",
+  "aliases": [
+    "standard error of the mean"
+  ],
+  "chapters": [
+    "eval-statistics",
+    "benchmark-literacy",
+    "distributions-and-estimation"
+  ]
+}

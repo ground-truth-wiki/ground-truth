@@ -1,0 +1,19 @@
+{
+  "id": "rescoring",
+  "term": "Rescoring",
+  "def": "Recomputing scores for a first-pass candidate list with a more accurate signal, most often full-precision vectors after a search over quantized ones, before returning the top k.",
+  "practice": "Oversample, for example 4 times k as in Hugging Face's binary-quantization experiments, then rescore; with a cross-encoder or learned ranker instead of vectors the same step is called reranking.",
+  "aliases": [
+    "rescore",
+    "re-scoring",
+    "oversampling and rescoring"
+  ],
+  "chapters": [
+    "embeddings",
+    "vector-search",
+    "reranking",
+    "vector-index-internals",
+    "learning-to-rank",
+    "hallucination-factuality"
+  ]
+}

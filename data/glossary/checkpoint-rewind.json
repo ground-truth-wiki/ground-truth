@@ -1,0 +1,16 @@
+{
+  "id": "checkpoint-rewind",
+  "term": "Checkpoint and rewind",
+  "def": "A harness feature that snapshots files, and often the conversation, before each agent turn or edit so the user can return to an earlier state.",
+  "practice": "Claude Code's /rewind restores code, conversation or both from per-prompt checkpoints and Gemini CLI's /restore uses a shadow Git repository; changes made through shell commands may not be captured, so it complements Git rather than replacing it.",
+  "aliases": [
+    "/rewind",
+    "/restore"
+  ],
+  "chapters": [
+    "claude-code",
+    "harness-anatomy",
+    "agent-ux",
+    "working-with-coding-agents"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "data-attribution",
+  "term": "Data attribution",
+  "def": "Tracing a model's predictions or behaviors back to the training examples that most contributed to them.",
+  "practice": "Methods include influence functions and TRAK; uses range from debugging and removing harmful data to arguments about compensating data creators.",
+  "aliases": [
+    "training data attribution",
+    "TDA"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "mech-interp",
+    "data-governance",
+    "data-selection-attribution"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "curriculum-learning",
+  "term": "Curriculum learning",
+  "def": "Training on examples presented in a meaningful order, typically from easier to harder, instead of in random order.",
+  "practice": "In LLM training it shows up as staged data mixes, annealing on high-quality data late in pretraining and difficulty-sorted RL tasks; random order remains a strong baseline.",
+  "aliases": [],
+  "chapters": [
+    "mid-training",
+    "pretraining-data",
+    "rlvr-reasoning",
+    "data-selection-attribution"
+  ]
+}

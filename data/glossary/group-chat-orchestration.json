@@ -1,0 +1,15 @@
+{
+  "id": "group-chat-orchestration",
+  "term": "Group chat orchestration",
+  "def": "A multi-agent pattern in which several agents share one accumulating conversation thread while a chat manager, using a fixed rule or a model, picks who speaks next.",
+  "practice": "Transparent and easy to audit but prone to loops; as of November 2026, Microsoft's architecture guidance suggests three or fewer agents, and a turn limit helps.",
+  "aliases": [
+    "group chat",
+    "roundtable"
+  ],
+  "chapters": [
+    "multi-agent",
+    "orchestration-frameworks",
+    "multi-agent-patterns"
+  ]
+}

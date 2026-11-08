@@ -1,0 +1,22 @@
+{
+  "id": "learning-rate",
+  "term": "Learning rate",
+  "def": "The step-size multiplier that sets how far parameters move along the optimizer's update direction at each step.",
+  "practice": "Usually the most sensitive hyperparameter: too high causes loss spikes or divergence, too low wastes compute, and it often needs retuning when batch or model size changes.",
+  "aliases": [
+    "step size",
+    "LR",
+    "peak learning rate"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "fine-tuning-practice",
+    "sft",
+    "mid-training",
+    "neural-networks",
+    "eigenvectors-svd-pca",
+    "optimizers",
+    "training-hyperparameters"
+  ],
+  "abbr": "LR"
+}

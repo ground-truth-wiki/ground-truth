@@ -1,0 +1,17 @@
+{
+  "id": "active-learning",
+  "term": "Active learning",
+  "def": "A training setup in which the model chooses which unlabeled examples a human annotator labels next, aiming for higher accuracy with fewer labels.",
+  "practice": "Score an unlabeled pool, send the most uncertain or informative items to annotators, retrain and repeat; the labeled set ends up skewed toward the model's blind spots, so keep a random sample for evaluation.",
+  "aliases": [
+    "query learning"
+  ],
+  "chapters": [
+    "labeling-annotation",
+    "data-flywheel",
+    "data-strategy",
+    "label-quality",
+    "active-learning-weak-supervision",
+    "ai-scientist-agents"
+  ]
+}

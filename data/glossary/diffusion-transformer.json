@@ -1,0 +1,17 @@
+{
+  "id": "diffusion-transformer",
+  "term": "Diffusion transformer",
+  "def": "A diffusion or flow model whose denoising network is a transformer operating on a sequence of latent patches instead of a convolutional U-Net.",
+  "practice": "In the original DiT study more compute per forward pass gave consistently better FID; the design now underpins many image and video generators, including Stable Diffusion 3 and Wan.",
+  "aliases": [
+    "DiT"
+  ],
+  "chapters": [
+    "image-generation",
+    "video-world-models",
+    "diffusion-flow-matching",
+    "autoregressive-image-generation",
+    "video-generation"
+  ],
+  "abbr": "DiT"
+}

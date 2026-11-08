@@ -1,0 +1,12 @@
+{
+  "id": "format-reward",
+  "term": "Format reward",
+  "def": "A rule-based reward for producing a required output structure, such as reasoning inside think tags before the final answer, independent of whether the answer is correct.",
+  "practice": "DeepSeek-R1 paired it with an accuracy reward; used alone it teaches the format, not correctness, so keep it a small auxiliary term.",
+  "aliases": [],
+  "chapters": [
+    "rlvr-reasoning",
+    "rl-environment-harnesses",
+    "metrics-graders"
+  ]
+}

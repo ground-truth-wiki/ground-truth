@@ -1,0 +1,14 @@
+{
+  "id": "star",
+  "term": "Self-Taught Reasoner",
+  "def": "A bootstrapping loop that samples rationales, keeps those reaching correct answers, retries failures with the answer given as a hint, fine-tunes on the kept rationales and repeats.",
+  "practice": "A 2022 precursor of rejection-sampling fine-tuning and RLVR; it needs only a few example rationales and a set of problems with known answers.",
+  "aliases": [],
+  "chapters": [
+    "rlvr-reasoning",
+    "synthetic-data",
+    "self-improving-systems",
+    "reasoning-training-recipes"
+  ],
+  "abbr": "STaR"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "post-training-quantization",
+  "term": "Post-training quantization",
+  "def": "Quantizing an already trained model without further training, using the weights alone or a small calibration dataset to choose scales and rounding.",
+  "practice": "GPTQ, AWQ, SmoothQuant, FP8 conversion and GGUF quantization are all PTQ; they take seconds to hours, not a training run, but lose more accuracy than QAT at very low bit widths.",
+  "aliases": [
+    "PTQ"
+  ],
+  "chapters": [
+    "quantization",
+    "edge-on-device",
+    "small-local-models",
+    "low-precision-training",
+    "quantization-methods"
+  ],
+  "abbr": "PTQ"
+}

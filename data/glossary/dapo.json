@@ -1,0 +1,14 @@
+{
+  "id": "dapo",
+  "term": "Decoupled Clip and Dynamic Sampling Policy Optimization",
+  "def": "A GRPO-based RL recipe that adds clip-higher, dynamic sampling of informative groups, a token-level loss and overlong reward shaping.",
+  "practice": "Its fixes target entropy collapse, zero-signal groups and long-response bias; as of November 2026 its token-level loss is the default loss type of TRL's GRPO trainer.",
+  "aliases": [
+    "DAPO"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "llm-policy-gradients"
+  ],
+  "abbr": "DAPO"
+}

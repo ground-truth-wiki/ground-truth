@@ -1,0 +1,15 @@
+{
+  "id": "hadamard-transform",
+  "term": "Hadamard transform",
+  "def": "Multiplication by a Hadamard matrix, an orthogonal matrix whose entries are all +1 or −1 up to a common scale factor, computable in n log n time.",
+  "practice": "Quantization methods such as QuIP# and QuaRot, and NVIDIA's NVFP4 pretraining recipe, apply randomized Hadamard transforms to spread outliers across a block before rounding; it differs from the element-wise Hadamard product.",
+  "aliases": [
+    "Hadamard rotation",
+    "randomized Hadamard transform",
+    "random Hadamard transform"
+  ],
+  "chapters": [
+    "quantization",
+    "linear-algebra"
+  ]
+}

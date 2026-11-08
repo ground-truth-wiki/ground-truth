@@ -1,0 +1,17 @@
+{
+  "id": "sandbagging",
+  "term": "Sandbagging",
+  "def": "Strategic underperformance on an evaluation, by a model or by its developer, so that measured capabilities understate real ones.",
+  "practice": "Van der Weij et al. (2024) showed that prompted or password-locked models can hide chosen capabilities, so dangerous-capability scores are read as lower bounds and need strong elicitation.",
+  "aliases": [
+    "strategic underperformance"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "alignment-concepts",
+    "scheming-evaluations",
+    "ai-control",
+    "dangerous-capability-evals"
+  ]
+}

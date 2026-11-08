@@ -1,0 +1,12 @@
+{
+  "id": "negative-sampling",
+  "term": "Negative sampling",
+  "def": "Training an embedding objective by contrasting each true pair against a few randomly drawn false pairs instead of normalizing over every possible item, such as the whole vocabulary.",
+  "practice": "Introduced with word2vec as a cheap replacement for a full softmax; modern embedders apply the same idea with in-batch and mined hard negatives.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "embeddings",
+    "word-embeddings"
+  ]
+}

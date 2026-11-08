@@ -1,0 +1,10 @@
+{
+  "id": "textual-gradient",
+  "term": "Textual gradient",
+  "def": "Natural-language feedback, written by an LLM, that criticizes a prompt or another component of an AI system and is used like a gradient to edit it toward better results.",
+  "practice": "The core idea of ProTeGi (Pryzant et al., 2023) and TextGrad (published in Nature in 2025); like any optimizer it needs a metric, data and a held-out check.",
+  "aliases": [],
+  "chapters": [
+    "prompt-optimization"
+  ]
+}

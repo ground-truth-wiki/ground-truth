@@ -1,0 +1,15 @@
+{
+  "id": "nlweb",
+  "term": "NLWeb",
+  "def": "An open project Microsoft started in 2025 that gives a website a natural-language ask method returning Schema.org-typed JSON, with every instance also acting as an MCP server.",
+  "practice": "Lets agents query a site's content directly instead of scraping its pages, building on the Schema.org markup many sites already publish.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup",
+    "why-protocols",
+    "browser-automation-stack",
+    "agent-identity-delegation",
+    "agent-facing-web",
+    "agentic-commerce-protocols"
+  ]
+}

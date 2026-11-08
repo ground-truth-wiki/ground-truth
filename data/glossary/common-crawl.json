@@ -1,0 +1,18 @@
+{
+  "id": "common-crawl",
+  "term": "Common Crawl",
+  "def": "A nonprofit's open repository of web crawl data, collected regularly since 2008 and distributed as raw WARC pages, WAT metadata and WET extracted-text files.",
+  "practice": "The raw starting point of most open web pretraining corpora, such as C4, RefinedWeb, FineWeb and DCLM; filtering and deduplication typically discard most of it.",
+  "aliases": [
+    "CommonCrawl"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "data-governance",
+    "web-data-pipeline",
+    "data-mixing",
+    "open-pretraining-datasets",
+    "multilingual-models",
+    "learning-resources"
+  ]
+}

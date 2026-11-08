@@ -1,0 +1,15 @@
+{
+  "id": "clip-score",
+  "term": "CLIP score",
+  "def": "A reference-free image-text alignment metric: the cosine similarity between CLIP embeddings of an image and a caption, scaled and clipped at zero.",
+  "practice": "torchmetrics reports max(100 x cosine, 0); it is fast but blind to counts, spatial relations and attribute binding, so pair it with object-level checks or human review.",
+  "aliases": [
+    "CLIPScore",
+    "CLIP-S"
+  ],
+  "chapters": [
+    "image-generation",
+    "vision-language-models",
+    "multimodal-evaluation"
+  ]
+}

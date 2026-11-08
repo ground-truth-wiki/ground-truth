@@ -1,0 +1,19 @@
+{
+  "id": "aime",
+  "term": "AIME",
+  "def": "The American Invitational Mathematics Examination, a US high-school competition of 15 problems with integer answers from 0 to 999, used as a math reasoning benchmark.",
+  "practice": "Each year's new problems give a fresh test while older years are online and may be memorized, which is why MathArena scores models on newly released competitions.",
+  "aliases": [
+    "American Invitational Mathematics Examination"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "reasoning-models",
+    "post-training-overview",
+    "rlvr-reasoning",
+    "llm-policy-gradients",
+    "reasoning-training-recipes",
+    "llm-distillation",
+    "benchmark-catalog"
+  ]
+}

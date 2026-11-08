@@ -1,0 +1,12 @@
+{
+  "id": "ragas",
+  "term": "RAGAS",
+  "def": "An open-source framework (Es et al., 2023) for evaluating RAG pipelines with LLM-scored metrics such as faithfulness, answer relevancy, context precision and context recall, several needing no reference answer.",
+  "practice": "Popular for quick RAG scorecards; its scores are LLM judgments, so calibrate them against human labels before trusting trends or small differences.",
+  "aliases": [],
+  "chapters": [
+    "rag-evaluation",
+    "eval-tooling",
+    "acronym-decoder"
+  ]
+}

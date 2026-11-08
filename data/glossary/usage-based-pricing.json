@@ -1,0 +1,16 @@
+{
+  "id": "usage-based-pricing",
+  "term": "Usage-based pricing",
+  "def": "Charging per unit consumed, such as per million tokens, per request, per conversation or per action, instead of a flat fee per user or period.",
+  "practice": "The default for model APIs, which price input, output and cached tokens separately; it ties revenue to cost but makes bills vary, so it needs per-tenant metering and budgets.",
+  "aliases": [
+    "consumption-based pricing",
+    "pay-as-you-go pricing",
+    "metered pricing"
+  ],
+  "chapters": [
+    "cost-engineering",
+    "cost-capacity",
+    "model-apis"
+  ]
+}

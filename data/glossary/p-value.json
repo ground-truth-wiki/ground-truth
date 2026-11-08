@@ -1,0 +1,13 @@
+{
+  "id": "p-value",
+  "term": "p-value",
+  "def": "The probability, computed assuming the null hypothesis is true, of a result at least as extreme as the one observed.",
+  "practice": "A small p-value says nothing about how large an improvement is, and across many comparisons some will fall below 0.05 by chance alone.",
+  "aliases": [],
+  "chapters": [
+    "eval-statistics",
+    "online-evaluation",
+    "distributions-and-estimation",
+    "online-experiments"
+  ]
+}

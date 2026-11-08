@@ -1,0 +1,17 @@
+{
+  "id": "uplift",
+  "term": "Uplift",
+  "def": "The added ability an AI system gives someone to carry out a task, especially a harmful one, compared with what they could already do with existing tools such as web search.",
+  "practice": "Measured with uplift trials and expert red teaming; safeguards target meaningful help on end-to-end harmful workflows, not single facts that are already widely available.",
+  "aliases": [
+    "marginal uplift"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "safety-evals",
+    "jailbreaks-misuse",
+    "model-specs-instruction-hierarchy",
+    "dangerous-capability-evals",
+    "agi-timelines-risk"
+  ]
+}

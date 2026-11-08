@@ -1,0 +1,15 @@
+{
+  "id": "sparse-attention",
+  "term": "Sparse attention",
+  "def": "Attention in which each query scores only a subset of keys, chosen by a fixed pattern (local windows, strides, global tokens) or by learned selection, instead of all of them.",
+  "practice": "It cuts long-context compute; fixed patterns date to Sparse Transformers, Longformer and BigBird, while DeepSeek-V3.2 uses a learned indexer to pick the top-scoring tokens for each query.",
+  "aliases": [
+    "sparse attention patterns"
+  ],
+  "chapters": [
+    "attention",
+    "long-context",
+    "new-architectures",
+    "sparse-and-local-attention"
+  ]
+}

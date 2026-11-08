@@ -1,0 +1,16 @@
+{
+  "id": "hosted-file-search",
+  "term": "Hosted file search",
+  "def": "A managed RAG service in which the provider parses, chunks, embeds and indexes uploaded files and exposes retrieval as a tool whose answers carry file citations.",
+  "practice": "OpenAI file search, Gemini File Search and Amazon Bedrock Knowledge Bases are examples as of November 2026; fast to ship, but you give up control of parsing, chunking and ranking.",
+  "aliases": [
+    "managed RAG",
+    "file search tool"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "vector-databases",
+    "model-apis",
+    "web-search-hosted-retrieval"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nf4",
+  "term": "NormalFloat4",
+  "def": "A 4-bit data type, introduced with QLoRA, whose 16 levels sit at quantiles of a normal distribution to match how pretrained weights are distributed.",
+  "practice": "The usual format for the frozen base model in QLoRA with bitsandbytes, often with double quantization of the scales, while computation runs in 16-bit.",
+  "aliases": [
+    "NF4",
+    "4-bit NormalFloat"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "quantization",
+    "peft-methods"
+  ],
+  "abbr": "NF4"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "classification-threshold",
+  "term": "Classification threshold",
+  "def": "The score cutoff above which a classifier's output counts as the positive class.",
+  "practice": "Choose it from the costs of false positives and false negatives on validation data instead of defaulting to 0.5; an LLM judge that outputs scores needs one too.",
+  "aliases": [
+    "decision threshold"
+  ],
+  "chapters": [
+    "classical-ml",
+    "llm-as-judge",
+    "guardrails-control",
+    "dialogue-systems"
+  ]
+}

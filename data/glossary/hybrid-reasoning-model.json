@@ -1,0 +1,19 @@
+{
+  "id": "hybrid-reasoning-model",
+  "term": "Hybrid reasoning model",
+  "def": "A single model that can either answer directly or think at length first, with thinking switched on, off or scaled per request.",
+  "practice": "Lets one model serve both fast and hard routes, controlled by a thinking or effort setting instead of switching models; Claude 3.7 Sonnet and Qwen3 introduced the pattern.",
+  "aliases": [
+    "hybrid reasoning",
+    "hybrid thinking",
+    "thinking and non-thinking modes"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "model-specific-notes",
+    "choosing-a-model",
+    "test-time-scaling",
+    "reasoning-training-recipes",
+    "model-types"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "agents-as-tools",
+  "term": "Agents as tools",
+  "def": "A multi-agent pattern in which a manager agent calls specialist agents through ordinary tool calls and keeps control of the conversation and the final answer.",
+  "practice": "Choose it when one agent must own the user and the synthesis; in a handoff, by contrast, the specialist takes over the conversation.",
+  "aliases": [
+    "manager pattern",
+    "agent as a tool"
+  ],
+  "chapters": [
+    "multi-agent",
+    "provider-agent-sdks",
+    "a2a",
+    "multi-agent-patterns",
+    "agent-sdk-primitives"
+  ]
+}

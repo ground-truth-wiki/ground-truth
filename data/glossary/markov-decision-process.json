@@ -1,0 +1,17 @@
+{
+  "id": "markov-decision-process",
+  "term": "Markov decision process",
+  "def": "The formal model of sequential decision making: states, actions, transition probabilities, rewards and a discount factor, where the next state depends only on the current state and action.",
+  "practice": "The frame behind RL methods; in LLM training the state is the prompt plus the text so far, and an action is a token, a whole response or a tool call.",
+  "aliases": [
+    "MDP"
+  ],
+  "chapters": [
+    "rl-primer",
+    "agentic-rl",
+    "rlvr-reasoning",
+    "value-based-rl",
+    "llm-policy-gradients"
+  ],
+  "abbr": "MDP"
+}

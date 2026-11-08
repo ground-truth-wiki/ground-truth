@@ -1,0 +1,14 @@
+{
+  "id": "heart-framework",
+  "term": "HEART framework",
+  "def": "Google's framework for user-centered product metrics across Happiness, Engagement, Adoption, Retention and Task success, each mapped from goals to signals to metrics.",
+  "practice": "Helps choose adoption and outcome metrics for an AI feature instead of raw usage counts; introduced by Rodden, Hutchinson and Fu at CHI 2010.",
+  "aliases": [
+    "HEART metrics"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "ai-product-ux",
+    "measuring-ai-impact"
+  ]
+}

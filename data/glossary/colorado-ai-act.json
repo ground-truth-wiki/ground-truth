@@ -1,0 +1,16 @@
+{
+  "id": "colorado-ai-act",
+  "term": "Colorado AI Act",
+  "def": "Colorado's law on automated decision-making in consequential decisions such as hiring, lending and housing: SB 26-189, signed 14 May 2026, replaced the 2024 act (SB 24-205) before it took effect.",
+  "practice": "Applies from 1 January 2027 with notice, post-decision explanation, data correction and human review duties; the original duty of care against algorithmic discrimination and its impact assessments were dropped.",
+  "aliases": [
+    "SB 24-205",
+    "SB 26-189",
+    "Colorado Artificial Intelligence Act"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "us-ai-law"
+  ]
+}

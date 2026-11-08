@@ -1,0 +1,17 @@
+{
+  "id": "vector",
+  "term": "Vector",
+  "def": "An ordered list of numbers that represents a point or a direction in a space; in a model, token embeddings and hidden activations are vectors.",
+  "practice": "A model's hidden size is the length of its activation vectors, and an embedding model returns one fixed-length vector per input, typically a few hundred to a few thousand numbers long.",
+  "aliases": [],
+  "chapters": [
+    "linear-algebra",
+    "embeddings",
+    "vector-search",
+    "vector-databases",
+    "attention",
+    "representation-learning",
+    "history-of-ai",
+    "tensors-and-shapes"
+  ]
+}

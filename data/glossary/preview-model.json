@@ -1,0 +1,14 @@
+{
+  "id": "preview-model",
+  "term": "Preview model",
+  "def": "A model release offered before general availability, with weaker stability, support or lifecycle guarantees than a stable release.",
+  "practice": "Google's Gemini API allows preview models in production but gives them tighter rate limits and as little as two weeks' deprecation notice (as of November 2026); check terms before shipping on one.",
+  "aliases": [
+    "preview release"
+  ],
+  "chapters": [
+    "choosing-a-model",
+    "frontier-families",
+    "sota-snapshot"
+  ]
+}

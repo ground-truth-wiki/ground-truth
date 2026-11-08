@@ -1,0 +1,14 @@
+{
+  "id": "trajectory-match",
+  "term": "Trajectory match",
+  "def": "Comparing an agent’s sequence of tool calls with a reference trajectory, either exactly or in looser modes such as unordered, subset or superset.",
+  "practice": "Cheap and deterministic but penalizes valid alternative paths, so pair it with final-state checks or a judge that reads the trajectory.",
+  "aliases": [
+    "trajectory matching",
+    "tool trajectory match"
+  ],
+  "chapters": [
+    "evaluating-agents",
+    "eval-recipes"
+  ]
+}

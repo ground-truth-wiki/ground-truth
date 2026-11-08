@@ -1,0 +1,15 @@
+{
+  "id": "compute-optimal-inference",
+  "term": "Compute-optimal inference",
+  "def": "Choosing the inference strategy, model size and budget, per problem or per difficulty level, that gives the best accuracy for a fixed amount of compute.",
+  "practice": "Snell et al. (2024) report over 4x better efficiency than best-of-n by adapting the strategy to difficulty; in products it shows up as per-route effort levels and model routing.",
+  "aliases": [
+    "compute-optimal test-time scaling"
+  ],
+  "chapters": [
+    "test-time-scaling",
+    "reasoning-models",
+    "cost-engineering",
+    "test-time-search"
+  ]
+}

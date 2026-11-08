@@ -1,0 +1,21 @@
+{
+  "id": "server-side-tools",
+  "term": "Server-side tools",
+  "def": "Tools that the model provider executes on its own infrastructure during a request, such as web search, web fetch, code execution or file search, unlike tools your application runs.",
+  "practice": "Enabled by adding one tool entry; check pricing, data terms and admin controls (an organization can disable web search) before relying on one.",
+  "aliases": [
+    "server tools",
+    "built-in tools",
+    "hosted tools"
+  ],
+  "chapters": [
+    "model-apis",
+    "agent-tools",
+    "provider-agent-sdks",
+    "harness-anatomy",
+    "api-shapes",
+    "web-search-hosted-retrieval",
+    "agent-sdk-primitives",
+    "embedded-agent-harnesses"
+  ]
+}

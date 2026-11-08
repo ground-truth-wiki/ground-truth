@@ -1,0 +1,11 @@
+{
+  "id": "chaos-engineering",
+  "term": "Chaos engineering",
+  "def": "Experimenting on a system, ideally in production with a contained blast radius, by injecting real-world faults to build confidence that it withstands turbulent conditions.",
+  "practice": "For AI systems, inject provider 429s and overload errors, stalled streams, tool timeouts and malformed outputs to prove that fallbacks, circuit breakers and degraded modes actually work.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering",
+    "incidents-on-call"
+  ]
+}

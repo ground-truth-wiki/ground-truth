@@ -1,0 +1,21 @@
+{
+  "id": "slo",
+  "term": "Service-level objective",
+  "def": "A target for a measured service-level indicator (SLI) over a time window, such as p95 time to first token under one second; an SLA adds contractual consequences for missing it.",
+  "practice": "Inference SLOs usually cover TTFT and TPOT at a percentile, and goodput counts only requests that meet them; keep internal SLOs stricter than any SLA you sign.",
+  "aliases": [
+    "SLO",
+    "SLOs"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "batching-scheduling",
+    "cost-capacity",
+    "reliability-engineering",
+    "back-of-envelope",
+    "production-rag",
+    "inference-benchmarking",
+    "inference-fleet-scaling"
+  ],
+  "abbr": "SLO"
+}

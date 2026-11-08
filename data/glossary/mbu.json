@@ -1,0 +1,16 @@
+{
+  "id": "mbu",
+  "term": "Model bandwidth utilization",
+  "def": "Achieved memory bandwidth divided by the accelerator's peak, where achieved bandwidth is the bytes of weights and KV cache read per decode step divided by the time per output token.",
+  "practice": "The decode counterpart of MFU: values near 100% mean a memory-bound deployment is close to its hardware limit, and low values point to software overhead.",
+  "aliases": [
+    "MBU",
+    "memory bandwidth utilization"
+  ],
+  "chapters": [
+    "inference-fundamentals",
+    "latency-throughput",
+    "hardware"
+  ],
+  "abbr": "MBU"
+}

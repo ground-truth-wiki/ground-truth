@@ -1,0 +1,11 @@
+{
+  "id": "lightrag",
+  "term": "LightRAG",
+  "def": "A graph-based RAG method (Guo et al., 2024) that indexes text into an entity-relationship graph plus vectors and retrieves at two levels: specific entities and broader themes.",
+  "practice": "A lighter, incrementally updatable alternative to Microsoft GraphRAG, open source with naive, local, global, hybrid and mix query modes (as of November 2026).",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag",
+    "graph-rag"
+  ]
+}

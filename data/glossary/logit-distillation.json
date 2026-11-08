@@ -1,0 +1,21 @@
+{
+  "id": "logit-distillation",
+  "term": "Logit distillation",
+  "def": "Training a student to match the teacher's full next-token probability distribution (soft labels), usually softened by a temperature, rather than only the teacher's sampled text.",
+  "practice": "A richer signal per token than training on text, but it needs teacher logits and a shared vocabulary, so it is mostly used within one model family.",
+  "aliases": [
+    "soft-label distillation",
+    "soft labels",
+    "word-level distillation"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "small-local-models",
+    "information-theory-for-llms",
+    "imitation-offline-rl",
+    "reasoning-training-recipes",
+    "llm-distillation",
+    "model-merging-methods",
+    "llm-pruning"
+  ]
+}

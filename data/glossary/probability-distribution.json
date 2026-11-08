@@ -1,0 +1,14 @@
+{
+  "id": "probability-distribution",
+  "term": "Probability distribution",
+  "def": "A description of how likely each possible value of a random variable is: probabilities that sum to one for discrete values, or a density that integrates to one for continuous ones.",
+  "practice": "A language model outputs one over its vocabulary at every position, and decoding settings such as temperature and top-p reshape it before a token is sampled.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "decoding-sampling",
+    "distillation-merging",
+    "ai-engineering-stack",
+    "distributions-and-estimation"
+  ]
+}

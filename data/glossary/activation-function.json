@@ -1,0 +1,14 @@
+{
+  "id": "activation-function",
+  "term": "Activation function",
+  "def": "The elementwise nonlinear function applied after a layer's linear transformation; without it, any stack of layers collapses into a single linear map.",
+  "practice": "Older and convolutional networks mostly use ReLU, while transformer feed-forward blocks use GELU or SiLU, often inside gated units such as SwiGLU.",
+  "aliases": [
+    "nonlinearity"
+  ],
+  "chapters": [
+    "neural-networks",
+    "transformer-block",
+    "feature-engineering"
+  ]
+}

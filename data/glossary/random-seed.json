@@ -1,0 +1,15 @@
+{
+  "id": "random-seed",
+  "term": "Random seed",
+  "def": "The starting value of a pseudorandom number generator; fixing it makes initialization, data shuffling, dropout and sampling repeatable.",
+  "practice": "Seeds alone do not guarantee identical results across library versions, hardware or nondeterministic GPU kernels, and hosted model APIs are not fully deterministic even with a seed parameter.",
+  "aliases": [],
+  "chapters": [
+    "eval-harnesses",
+    "decoding-sampling",
+    "image-generation",
+    "eval-statistics",
+    "fine-tuning-practice",
+    "hallucination-factuality"
+  ]
+}

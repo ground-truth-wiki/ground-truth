@@ -1,0 +1,14 @@
+{
+  "id": "superficial-alignment-hypothesis",
+  "term": "Superficial alignment hypothesis",
+  "def": "The hypothesis, from the 2023 LIMA paper, that a model learns almost all its knowledge in pretraining and alignment mainly teaches it which response style and format to use.",
+  "practice": "LIMA was fine-tuned on only 1,000 curated examples, which motivates small, high-quality SFT sets; later work calls the hypothesis an oversimplification.",
+  "aliases": [
+    "superficial alignment"
+  ],
+  "chapters": [
+    "sft",
+    "post-training-overview",
+    "preference-optimization"
+  ]
+}

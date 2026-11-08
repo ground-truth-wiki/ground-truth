@@ -1,0 +1,16 @@
+{
+  "id": "kl-coefficient",
+  "term": "KL coefficient",
+  "def": "The hyperparameter, usually written beta, that weights the penalty for diverging from the reference model in RLHF and plays the matching role in DPO's loss.",
+  "practice": "Higher values keep the model closer to the reference and resist reward hacking at some cost in reward; as of November 2026, TRL defaults to 0.1 for DPO and 0 for GRPO.",
+  "aliases": [
+    "KL beta",
+    "DPO beta"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "rlvr-reasoning",
+    "post-training-overview",
+    "llm-policy-gradients"
+  ]
+}

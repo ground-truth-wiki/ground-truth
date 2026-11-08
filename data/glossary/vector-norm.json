@@ -1,0 +1,17 @@
+{
+  "id": "vector-norm",
+  "term": "Vector norm",
+  "def": "A function that measures a vector's length: the L2 (Euclidean) norm is the square root of the sum of squared entries, the L1 norm the sum of absolute values.",
+  "practice": "Gradient clipping caps the L2 norm of the gradient, and normalizing embeddings to unit L2 norm makes their dot product equal their cosine similarity.",
+  "aliases": [
+    "L2 norm",
+    "L1 norm",
+    "Euclidean norm"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "calculus-optimization",
+    "embeddings",
+    "vector-search"
+  ]
+}

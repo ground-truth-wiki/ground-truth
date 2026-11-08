@@ -1,0 +1,15 @@
+{
+  "id": "dp-sgd",
+  "term": "DP-SGD",
+  "def": "Differentially private stochastic gradient descent: clipping each example's gradient and adding calibrated noise so that training satisfies a differential-privacy guarantee.",
+  "practice": "The standard algorithm for private training; expect slower training and lower quality, with Google's DP-trained VaultGemma 1B roughly matching non-private models from about five years earlier.",
+  "aliases": [
+    "differentially private SGD"
+  ],
+  "chapters": [
+    "privacy",
+    "privacy-preserving-ml",
+    "adversarial-ml"
+  ],
+  "abbr": "DP-SGD"
+}

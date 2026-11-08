@@ -1,0 +1,14 @@
+{
+  "id": "data-lake",
+  "term": "Data lake",
+  "def": "A central repository that stores structured and unstructured data at any scale in raw form, with structure applied when the data is read rather than when it is written.",
+  "practice": "Where logs, documents and media for AI pipelines usually land first; without a catalog and quality layers it becomes hard to tell which data is usable.",
+  "aliases": [],
+  "chapters": [
+    "unstructured-pipelines",
+    "data-governance",
+    "data-strategy",
+    "data-lakehouses",
+    "feature-stores"
+  ]
+}

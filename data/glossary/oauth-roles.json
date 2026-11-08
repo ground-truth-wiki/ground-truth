@@ -1,0 +1,17 @@
+{
+  "id": "oauth-roles",
+  "term": "Resource server and authorization server",
+  "def": "Two OAuth roles: the authorization server authenticates the user or client and issues access tokens; the resource server, such as a remote MCP server, accepts them for protected requests.",
+  "practice": "MCP servers have been OAuth resource servers since 2025-06-18 and point clients to their authorization server through protected-resource metadata; the MCP client is the OAuth client.",
+  "aliases": [
+    "resource server",
+    "authorization server"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "mcp-spec-history",
+    "protocol-building-blocks",
+    "agent-identity-delegation",
+    "agentic-commerce-protocols"
+  ]
+}

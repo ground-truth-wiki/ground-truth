@@ -1,0 +1,16 @@
+{
+  "id": "johnson-lindenstrauss",
+  "term": "Johnson-Lindenstrauss lemma",
+  "def": "The result that n points can be projected, with high probability by a random linear map, into about log(n)/ε² dimensions while all pairwise distances stay within a factor 1 ± ε.",
+  "practice": "It explains why random projections keep similarity search usable, and it is cited to argue that high-dimensional activations can hold far more nearly orthogonal directions than dimensions, a basis of superposition.",
+  "aliases": [
+    "JL lemma"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "embeddings",
+    "mech-interp",
+    "high-dimensional-geometry",
+    "clustering-dimensionality-reduction"
+  ]
+}

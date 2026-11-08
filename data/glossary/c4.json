@@ -1,0 +1,18 @@
+{
+  "id": "c4",
+  "term": "Colossal Clean Crawled Corpus",
+  "def": "English Common Crawl text cleaned with heuristic rules such as line and page filters and deduplication, released with Google's T5 model in 2019.",
+  "practice": "A standard baseline web dataset, but one 61-word sentence repeats over 60,000 times in it, and as of 2024 at least 5% of its tokens came from sources that fully restrict AI use.",
+  "aliases": [
+    "C4"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "web-data-pipeline",
+    "data-mixing",
+    "open-pretraining-datasets",
+    "data-licensing-consent",
+    "deduplication-decontamination"
+  ],
+  "abbr": "C4"
+}

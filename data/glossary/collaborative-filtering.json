@@ -1,0 +1,11 @@
+{
+  "id": "collaborative-filtering",
+  "term": "Collaborative filtering",
+  "def": "Recommending items to a user from the preferences of similar users, or from patterns across many users' interaction histories, without needing item content.",
+  "practice": "Strong when interaction data are plentiful, often through matrix factorization or two-tower models; weak for new users and items, the cold-start problem.",
+  "aliases": [],
+  "chapters": [
+    "representation-learning",
+    "recommender-systems"
+  ]
+}

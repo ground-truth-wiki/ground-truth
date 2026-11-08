@@ -1,0 +1,17 @@
+{
+  "id": "embedding-quantization",
+  "term": "Embedding quantization",
+  "def": "Storing embedding vectors at reduced precision, for example int8 scalar quantization (4 times smaller than float32) or binary quantization at one bit per dimension (32 times smaller).",
+  "practice": "Pair it with oversampling and full-precision rescoring: Hugging Face measured about 96% of retrieval quality kept with binary vectors plus rescoring on one model but under 75% on another, so test yours.",
+  "aliases": [
+    "binary quantization",
+    "binary embeddings",
+    "int8 embeddings"
+  ],
+  "chapters": [
+    "embeddings",
+    "vector-search",
+    "vector-databases",
+    "vector-index-internals"
+  ]
+}

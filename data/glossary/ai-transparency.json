@@ -1,0 +1,12 @@
+{
+  "id": "ai-transparency",
+  "term": "AI transparency",
+  "def": "The extent to which information about an AI system and its outputs, from design decisions and training data to intended use and limitations, is available to the people who interact with it.",
+  "practice": "It shows up as model and system cards, disclosure that a user is dealing with an AI, labels on generated content and decision logs; NIST stresses that a transparent system is not necessarily accurate, secure or fair.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation",
+    "probes-and-steering"
+  ]
+}

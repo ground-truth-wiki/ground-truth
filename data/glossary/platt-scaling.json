@@ -1,0 +1,14 @@
+{
+  "id": "platt-scaling",
+  "term": "Platt scaling",
+  "def": "Post-hoc calibration that fits a logistic function mapping a classifier's raw scores to probabilities on held-out data.",
+  "practice": "Works with little calibration data and is strictly monotonic, so ranking and AUC are unchanged; isotonic regression does as well or better once there are about 1,000 calibration examples.",
+  "aliases": [
+    "sigmoid calibration"
+  ],
+  "chapters": [
+    "classical-ml",
+    "probability-information",
+    "classification-metrics"
+  ]
+}

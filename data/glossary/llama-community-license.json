@@ -1,0 +1,14 @@
+{
+  "id": "llama-community-license",
+  "term": "Llama Community License",
+  "def": "Meta's custom license for Llama models, which allows commercial use but requires Meta's permission above 700 million monthly active users, plus attribution, naming and acceptable-use terms.",
+  "practice": "The Open Source Initiative says it is not an open source license; terms change between Llama versions, so read the license that ships with the exact model.",
+  "aliases": [
+    "Llama license",
+    "Llama Community License Agreement"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-families"
+  ]
+}

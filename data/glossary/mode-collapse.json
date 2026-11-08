@@ -1,0 +1,13 @@
+{
+  "id": "mode-collapse",
+  "term": "Mode collapse",
+  "def": "A failure in which a generative model covers only a few modes of the data distribution and keeps producing similar, low-diversity outputs.",
+  "practice": "The classic GAN failure, now also used for the narrowed output diversity of RLHF-tuned LLMs, which hurts synthetic data and brainstorming; not the same as model collapse.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "synthetic-data",
+    "preference-optimization",
+    "deep-generative-models"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "build-versus-buy",
+  "term": "Build versus buy",
+  "def": "The decision whether to build a capability in-house, including training or hosting models, or to adopt a vendor's model, API, managed service or product.",
+  "practice": "Weighed on differentiation, total cost of ownership, control over data and behavior, time to value and lock-in; the wiki's default is to build what differentiates you and adopt commodity components.",
+  "aliases": [
+    "build vs buy",
+    "build or buy",
+    "make or buy"
+  ],
+  "chapters": [
+    "decision-guides",
+    "reference-architecture",
+    "choosing-a-model",
+    "cost-engineering"
+  ]
+}

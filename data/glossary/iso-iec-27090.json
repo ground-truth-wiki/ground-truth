@@ -1,0 +1,15 @@
+{
+  "id": "iso-iec-27090",
+  "term": "ISO/IEC 27090",
+  "def": "The ISO/IEC standard giving guidance on detecting and mitigating security threats and compromises specific to AI systems, such as data poisoning, evasion and model theft, across their life cycle.",
+  "practice": "Published in October 2026 as guidance rather than certifiable requirements; it complements ISO/IEC 27001 and 27002 and the AI management standard ISO/IEC 42001.",
+  "aliases": [
+    "ISO/IEC 27090:2026",
+    "ISO 27090"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "governance-regulation",
+    "ai-security-frameworks"
+  ]
+}

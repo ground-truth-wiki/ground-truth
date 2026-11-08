@@ -1,0 +1,13 @@
+{
+  "id": "feature-store",
+  "term": "Feature store",
+  "def": "A system that defines, stores and serves model features, with an offline store for building historical training sets and an online store for low-latency serving from the same definitions.",
+  "practice": "Point-in-time joins rebuild each feature's value as of every training example's timestamp to prevent leakage; Feast is a widely used open-source example.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "reference-architecture",
+    "data-strategy",
+    "feature-stores"
+  ]
+}

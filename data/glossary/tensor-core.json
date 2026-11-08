@@ -1,0 +1,13 @@
+{
+  "id": "tensor-core",
+  "term": "Tensor core",
+  "def": "A specialized unit inside each NVIDIA GPU streaming multiprocessor that performs a small matrix multiply-accumulate per instruction and supplies most of the GPU's FLOPs.",
+  "practice": "Introduced with the Volta architecture; each generation adds lower-precision modes such as FP8 and FP4, and code reaches peak throughput only if its matrix multiplications run on them.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "quantization",
+    "training-neural-networks",
+    "accelerator-architecture"
+  ]
+}

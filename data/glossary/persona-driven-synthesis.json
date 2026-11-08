@@ -1,0 +1,12 @@
+{
+  "id": "persona-driven-synthesis",
+  "term": "Persona-driven data synthesis",
+  "def": "Generating synthetic data by conditioning each prompt on a different persona, so outputs cover more perspectives, topics and styles than unconditioned generation.",
+  "practice": "The Persona Hub work curated about a billion personas from web data, and Tülu 3 conditioned on about 250K of them; a cheap lever against the sameness of repeated sampling.",
+  "aliases": [
+    "persona-driven generation"
+  ],
+  "chapters": [
+    "synthetic-data"
+  ]
+}

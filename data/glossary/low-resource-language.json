@@ -1,0 +1,16 @@
+{
+  "id": "low-resource-language",
+  "term": "Low-resource language",
+  "def": "A language with little digital text and few annotated datasets compared with English, so models see little of it during training.",
+  "practice": "Expect up to 15 times more tokens for the same text (Petrov et al., 2023), lower accuracy and weaker safety: translated harmful prompts got actionable answers from GPT-4 79% of the time (Yong et al., 2023).",
+  "aliases": [
+    "under-resourced language"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "jailbreaks-misuse",
+    "tokenization",
+    "tokenizers-in-practice",
+    "model-types"
+  ]
+}

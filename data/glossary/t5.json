@@ -1,0 +1,14 @@
+{
+  "id": "t5",
+  "term": "T5",
+  "def": "Google’s Text-to-Text Transfer Transformer (Raffel et al., 2019): an encoder-decoder model family, from 60M to 11B parameters, that casts every text task as text in, text out.",
+  "practice": "The reference encoder-decoder: task prefixes such as ‘summarize:’ come from it, and its variants (Flan-T5, mT5) and the C4 corpus it introduced still appear in papers and pipelines.",
+  "aliases": [
+    "Text-to-Text Transfer Transformer"
+  ],
+  "chapters": [
+    "transformer-block",
+    "pretraining-data",
+    "specialist-models"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "model-scanning",
+  "term": "Model file scanning",
+  "def": "Statically inspecting model files, especially pickle-based checkpoints, for imports or opcodes that would run code when the file is loaded, without executing them.",
+  "practice": "The Hugging Face Hub runs ClamAV and a pickle-import scan on uploads, yet nullifAI models evaded picklescan in 2025, so scanning complements safetensors and never replaces it.",
+  "aliases": [
+    "model scanning",
+    "pickle scanning"
+  ],
+  "chapters": [
+    "supply-chain-security",
+    "hugging-face-ecosystem",
+    "local-inference"
+  ]
+}

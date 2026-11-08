@@ -1,0 +1,13 @@
+{
+  "id": "bagging",
+  "term": "Bagging",
+  "def": "Bootstrap aggregating: training each ensemble member on a random sample of the training set drawn with replacement, then averaging or voting over their predictions.",
+  "practice": "Reduces the variance of unstable learners such as deep trees and is the basis of random forests; it does little for a model that is already stable.",
+  "aliases": [
+    "bootstrap aggregating"
+  ],
+  "chapters": [
+    "classical-ml",
+    "trees-and-ensembles"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "layer-normalization",
+  "term": "Layer normalization",
+  "def": "Normalizing each example's activation vector, in transformers each token's, to zero mean and unit variance across its features, then applying a learned scale and shift.",
+  "practice": "Used in the original transformer, BERT and GPT-2; most recent LLMs use RMSNorm, a cheaper variant that skips mean-centering, applied before each sublayer.",
+  "aliases": [
+    "LayerNorm",
+    "layer norm"
+  ],
+  "chapters": [
+    "transformer-block",
+    "linear-algebra",
+    "neural-networks",
+    "trainable-deep-networks",
+    "architecture-choices",
+    "training-stability"
+  ]
+}

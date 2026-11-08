@@ -1,0 +1,12 @@
+{
+  "id": "actor-critic",
+  "term": "Actor–critic",
+  "def": "RL methods that learn both a policy (the actor) and a value function (the critic), using the critic's estimates to reduce the variance of the actor's policy-gradient updates.",
+  "practice": "PPO as used in RLHF is actor–critic, with a value model as the critic; GRPO drops the critic to save memory and compute.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "rlvr-reasoning",
+    "preference-optimization"
+  ]
+}

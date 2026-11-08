@@ -1,0 +1,15 @@
+{
+  "id": "log-sum-exp-trick",
+  "term": "Log-sum-exp trick",
+  "def": "Computing log Σ exp(xᵢ) as m + log Σ exp(xᵢ − m), where m is the largest xᵢ, so that no exponential overflows.",
+  "practice": "Standard softmax and cross-entropy implementations rely on it, which is why losses should be computed from logits rather than from already-normalized probabilities.",
+  "aliases": [
+    "LogSumExp",
+    "log-sum-exp"
+  ],
+  "chapters": [
+    "probability-information",
+    "attention",
+    "floating-point-formats"
+  ]
+}

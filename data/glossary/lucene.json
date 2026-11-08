@@ -1,0 +1,16 @@
+{
+  "id": "lucene",
+  "term": "Apache Lucene",
+  "def": "An open-source Java search library that provides inverted indexes, ranked text search with pluggable models such as BM25 and the vector space model, faceting and nearest-neighbor vector search.",
+  "practice": "It underlies Elasticsearch, OpenSearch and Apache Solr, so many of their keyword and vector search behaviors are really Lucene behaviors.",
+  "aliases": [
+    "Lucene"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "vector-databases",
+    "ir-foundations",
+    "retrieval-augmented-lms",
+    "training-retrievers"
+  ]
+}

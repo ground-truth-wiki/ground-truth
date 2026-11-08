@@ -1,0 +1,12 @@
+{
+  "id": "deepspeed",
+  "term": "DeepSpeed",
+  "def": "An open-source distributed training and inference library, originally from Microsoft, that introduced the ZeRO family of sharding and offloading methods and DeepSpeed-Ulysses sequence parallelism.",
+  "practice": "A common choice for multi-GPU fine-tuning and pretraining, configured through a JSON file and integrated with Hugging Face Accelerate and Trainer.",
+  "aliases": [],
+  "chapters": [
+    "distributed-training",
+    "fine-tuning-practice",
+    "parallelism-strategies"
+  ]
+}

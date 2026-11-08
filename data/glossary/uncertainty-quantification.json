@@ -1,0 +1,22 @@
+{
+  "id": "uncertainty-quantification",
+  "term": "Uncertainty quantification",
+  "def": "Estimating how far a model’s output can be trusted, as a probability, a score or a set of plausible outputs, rather than giving a bare prediction.",
+  "practice": "What turns ‘escalate on low confidence’ into a working rule: pick a signal (token logprobs, sample agreement, ensembles or stated confidence), check its calibration on your data, then route below a threshold.",
+  "aliases": [
+    "UQ",
+    "uncertainty estimation",
+    "confidence estimation"
+  ],
+  "chapters": [
+    "probability-information",
+    "document-extraction",
+    "ai-product-ux",
+    "grounding-citations",
+    "human-in-the-loop",
+    "llm-uncertainty",
+    "classification-metrics",
+    "hallucination-factuality"
+  ],
+  "abbr": "UQ"
+}

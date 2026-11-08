@@ -1,0 +1,20 @@
+{
+  "id": "language-model",
+  "term": "Language model",
+  "def": "A model that assigns probabilities to token sequences, usually by predicting a probability distribution over the next token given the preceding ones.",
+  "practice": "Scoring text (perplexity), generating it one sampled token at a time and next-token pretraining all follow from this one definition; an LLM is a large neural one.",
+  "aliases": [
+    "statistical language model"
+  ],
+  "chapters": [
+    "probability-information",
+    "neural-networks",
+    "transformer-block",
+    "decoding-sampling",
+    "pretraining-data",
+    "beyond-transformers",
+    "history-of-ai",
+    "eigenvectors-svd-pca"
+  ],
+  "abbr": "LM"
+}

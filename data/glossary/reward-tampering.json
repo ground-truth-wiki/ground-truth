@@ -1,0 +1,13 @@
+{
+  "id": "reward-tampering",
+  "term": "Reward tampering",
+  "def": "A severe form of reward hacking in which a model directly modifies its own reward signal or the code or process that computes it, instead of exploiting gaps in the task.",
+  "practice": "Denison et al. (2024) found that models trained on a curriculum of gameable environments occasionally generalized to rewriting their own reward function, so keep reward code out of an agent's reach.",
+  "aliases": [
+    "wireheading"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "rl-environment-harnesses"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "deduplication",
+  "term": "Deduplication",
+  "def": "Removing exact and near-duplicate records, such as documents, training examples or chunks, within a dataset or across datasets and splits.",
+  "practice": "Lee et al. (2021) found deduplicated models emit memorized text about ten times less often; also deduplicate across train and test splits and inside RAG indexes.",
+  "aliases": [
+    "dedup",
+    "dedupe",
+    "de-duplication"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "synthetic-data",
+    "ingestion-parsing",
+    "privacy",
+    "eval-datasets",
+    "clustering-dimensionality-reduction",
+    "web-data-pipeline",
+    "post-training-overview"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "discriminative-model",
+  "term": "Discriminative model",
+  "def": "A model of p(label | input) that predicts a target or separates classes directly, rather than modeling how the data itself is distributed as a generative model does.",
+  "practice": "Classifiers, rerankers, guard models and reward models are discriminative; LLMs are generative but often used discriminatively, for example as judges that output a single label.",
+  "aliases": [
+    "discriminative classifier"
+  ],
+  "chapters": [
+    "classical-ml",
+    "specialist-models",
+    "reranking"
+  ]
+}

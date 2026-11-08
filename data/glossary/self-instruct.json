@@ -1,0 +1,12 @@
+{
+  "id": "self-instruct",
+  "term": "Self-Instruct",
+  "def": "A method that bootstraps instruction-tuning data from a small seed set: a language model writes new instructions, inputs and outputs, and invalid or near-duplicate items are filtered out.",
+  "practice": "Stanford Alpaca used an extended version to make 52K demonstrations from text-davinci-003; the generator’s quality limits and terms of use carry over to the data.",
+  "aliases": [],
+  "chapters": [
+    "synthetic-data",
+    "sft",
+    "synthetic-data-recipes"
+  ]
+}

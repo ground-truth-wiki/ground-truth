@@ -1,0 +1,15 @@
+{
+  "id": "video-vae",
+  "term": "Video VAE",
+  "def": "An autoencoder that compresses video in time as well as space, often causally so the first frame is encoded like a still image, producing the latent a video diffusion model works in.",
+  "practice": "Its compression ratios, for example 4x in time and 8x8 in space in CogVideoX, set how many tokens a clip costs and limit fine motion and detail.",
+  "aliases": [
+    "3D VAE",
+    "causal 3D VAE",
+    "causal video VAE"
+  ],
+  "chapters": [
+    "video-world-models",
+    "image-generation"
+  ]
+}

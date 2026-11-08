@@ -1,0 +1,17 @@
+{
+  "id": "context-engineering-2",
+  "term": "Context engineering",
+  "def": "Curating and maintaining the whole set of tokens a model sees at each step (instructions, tools, examples, retrieved data, history and memory) so it can do the task.",
+  "practice": "Framed as the agent-era successor to prompt engineering; its levers include compaction, tool-result clearing, just-in-time retrieval and subagent isolation.",
+  "aliases": [],
+  "chapters": [
+    "context-engineering",
+    "harness-anatomy",
+    "agent-memory",
+    "long-running-agents",
+    "prompt-caching",
+    "ai-engineer-role",
+    "context-compaction",
+    "agent-memory-architectures"
+  ]
+}

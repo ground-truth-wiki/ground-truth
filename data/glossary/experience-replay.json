@@ -1,0 +1,14 @@
+{
+  "id": "experience-replay",
+  "term": "Experience replay",
+  "def": "Storing past transitions in a replay buffer and training on random samples from it, which breaks correlations between consecutive steps and reuses data.",
+  "practice": "Standard in off-policy deep RL since DQN; prioritized replay samples transitions with large TD errors more often.",
+  "aliases": [
+    "replay buffer",
+    "replay memory"
+  ],
+  "chapters": [
+    "rl-primer",
+    "value-based-rl"
+  ]
+}

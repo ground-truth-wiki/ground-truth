@@ -1,0 +1,15 @@
+{
+  "id": "data-warehouse",
+  "term": "Data warehouse",
+  "def": "A central repository of structured, modeled data whose schema is defined before loading, optimized for analytical queries and reporting.",
+  "practice": "Holds the business tables that text-to-SQL and analytics agents query; a semantic layer on top tells the model what tables and columns mean.",
+  "aliases": [
+    "DWH"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "research-analyst-agents",
+    "data-governance",
+    "data-lakehouses"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "naive-rag",
+  "term": "Naive RAG",
+  "def": "The basic index, retrieve and generate pipeline with one retrieval pass and no query rewriting, reranking or feedback; the first tier of Gao et al.'s naive, advanced and modular RAG taxonomy.",
+  "practice": "A useful name for your baseline, against which every added stage should be measured; Microsoft's GraphRAG documentation calls the same thing baseline RAG.",
+  "aliases": [
+    "vanilla RAG",
+    "baseline RAG"
+  ],
+  "chapters": [
+    "rag-fundamentals",
+    "advanced-rag"
+  ]
+}

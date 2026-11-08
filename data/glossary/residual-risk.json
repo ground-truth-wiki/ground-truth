@@ -1,0 +1,12 @@
+{
+  "id": "residual-risk",
+  "term": "Residual risk",
+  "def": "The risk that remains after risk treatment, such as mitigations and controls, has been applied.",
+  "practice": "The EU AI Act requires providers of high-risk systems to judge the residual risk of each hazard, and overall, acceptable, and NIST asks that residual risks be documented for downstream users.",
+  "aliases": [],
+  "chapters": [
+    "threat-modeling",
+    "governance-regulation",
+    "frontier-safety-frameworks"
+  ]
+}

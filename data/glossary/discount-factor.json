@@ -1,0 +1,12 @@
+{
+  "id": "discount-factor",
+  "term": "Discount factor",
+  "def": "The number γ, from 0 to 1, that weights a reward k steps ahead by γᵏ in the return, balancing immediate against future reward.",
+  "practice": "Classic RL commonly uses 0.9 to 0.99, values near 1 make the agent far-sighted, and LLM RL with outcome rewards usually applies no discounting (γ = 1).",
+  "aliases": [
+    "discount rate"
+  ],
+  "chapters": [
+    "rl-primer"
+  ]
+}

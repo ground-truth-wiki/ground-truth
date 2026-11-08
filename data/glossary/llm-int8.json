@@ -1,0 +1,11 @@
+{
+  "id": "llm-int8",
+  "term": "LLM.int8()",
+  "def": "An 8-bit inference method (Dettmers et al., 2022) that quantizes most features with vector-wise scales and keeps the rare large-magnitude outlier dimensions in 16-bit.",
+  "practice": "Showed that a few emergent outlier features make naive 8-bit inference of large models fail; it ships in bitsandbytes as 8-bit loading.",
+  "aliases": [],
+  "chapters": [
+    "quantization",
+    "quantization-methods"
+  ]
+}

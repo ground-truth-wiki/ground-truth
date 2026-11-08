@@ -1,0 +1,16 @@
+{
+  "id": "weak-to-strong-generalization",
+  "term": "Weak-to-strong generalization",
+  "def": "The finding that a strong model fine-tuned on labels from a weaker supervisor can outperform that supervisor, studied as an analogy for humans supervising superhuman models.",
+  "practice": "Measured as performance gap recovered (PGR); Burns et al. (2023) found naive fine-tuning recovers only part of the gap, and an auxiliary confidence loss recovers more.",
+  "aliases": [
+    "weak-to-strong",
+    "W2S"
+  ],
+  "chapters": [
+    "alignment-concepts",
+    "judge-models-meta-evaluation",
+    "scheming-evaluations",
+    "scalable-oversight"
+  ]
+}

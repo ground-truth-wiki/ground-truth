@@ -1,0 +1,16 @@
+{
+  "id": "rloo",
+  "term": "REINFORCE Leave-One-Out",
+  "def": "A REINFORCE variant that samples several completions per prompt and uses the mean reward of the other completions as each one's baseline.",
+  "practice": "Needs no value model, and its advantage equals Dr. GRPO's group-mean advantage up to a constant factor; TRL ships an RLOO trainer.",
+  "aliases": [
+    "RLOO"
+  ],
+  "chapters": [
+    "rlvr-reasoning",
+    "preference-optimization",
+    "rl-primer",
+    "llm-policy-gradients"
+  ],
+  "abbr": "RLOO"
+}

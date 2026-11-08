@@ -1,0 +1,14 @@
+{
+  "id": "streaming-dataset",
+  "term": "Streaming dataset",
+  "def": "A dataset read incrementally from local or remote files while it is iterated, without downloading or converting it first, trading random access for near-constant memory.",
+  "practice": "In Hugging Face Datasets, streaming=True returns an IterableDataset that shuffles only approximately, using a buffer of 1,000 examples by default plus shuffled shard order.",
+  "aliases": [
+    "dataset streaming"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "fine-tuning-practice",
+    "distributed-training"
+  ]
+}

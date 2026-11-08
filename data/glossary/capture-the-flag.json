@@ -1,0 +1,16 @@
+{
+  "id": "capture-the-flag",
+  "term": "Capture the flag",
+  "def": "A security competition format in which participants exploit deliberately vulnerable programs or services to retrieve a secret string, the flag, which makes success automatically checkable.",
+  "practice": "The standard format for evaluating AI agents’ offensive cyber skills, as in Cybench’s 40 professional CTF tasks; benchmarks built on real vulnerabilities, such as CVE-Bench, exist because CTFs abstract away real-world conditions.",
+  "aliases": [
+    "CTF"
+  ],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks",
+    "red-teaming",
+    "security-agents"
+  ],
+  "abbr": "CTF"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "interleaved-image-text",
+  "term": "Interleaved image-text data",
+  "def": "Training documents in which images appear inline at their original positions in running text, as on web pages, rather than as isolated image-caption pairs.",
+  "practice": "Gives VLMs multi-image and in-context few-shot abilities, as Flamingo showed; MMC4 and OBELICS are open web-scale datasets of this kind.",
+  "aliases": [
+    "interleaved image-text documents"
+  ],
+  "chapters": [
+    "vision-language-models"
+  ]
+}

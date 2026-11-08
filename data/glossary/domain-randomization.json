@@ -1,0 +1,12 @@
+{
+  "id": "domain-randomization",
+  "term": "Domain randomization",
+  "def": "Training in simulation with randomized visuals and physics, such as textures, lighting, masses and friction, so the real world looks like one more variation and the policy transfers.",
+  "practice": "The classic remedy for the sim-to-real gap (Tobin et al., 2017); OpenAI’s automatic domain randomization widened the ranges during training and let a robot hand trained in simulation solve a Rubik’s cube.",
+  "aliases": [],
+  "chapters": [
+    "embodied-agents",
+    "synthetic-data",
+    "vla-models"
+  ]
+}

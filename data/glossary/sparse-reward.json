@@ -1,0 +1,12 @@
+{
+  "id": "sparse-reward",
+  "term": "Sparse reward",
+  "def": "A reward signal that is zero almost everywhere and informative only on rare events, such as completing the task.",
+  "practice": "Typical of verifiable-reward and agentic training, where only pass or fail at the end is scored, which makes exploration and credit assignment hard.",
+  "aliases": [],
+  "chapters": [
+    "agentic-rl",
+    "rlvr-reasoning",
+    "rl-primer"
+  ]
+}

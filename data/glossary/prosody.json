@@ -1,0 +1,12 @@
+{
+  "id": "prosody",
+  "term": "Prosody",
+  "def": "The rhythm, stress, intonation, pitch and tempo of speech, which carry emphasis and emotion beyond the words themselves.",
+  "practice": "Controlled in TTS through SSML prosody and emphasis tags or a reference recording, and the main difference between a flat synthetic voice and a natural one.",
+  "aliases": [],
+  "chapters": [
+    "speech-audio",
+    "voice-agents",
+    "speech-synthesis"
+  ]
+}

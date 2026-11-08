@@ -1,0 +1,16 @@
+{
+  "id": "enterprise-managed-authorization",
+  "term": "Enterprise-Managed Authorization",
+  "def": "An MCP authorization extension in which an organization's identity provider decides which MCP servers employees may use, issuing an ID-JAG that the client exchanges for an MCP access token.",
+  "practice": "Removes per-server consent prompts and centralizes revocation at the IdP; it needs SSO into the MCP client and ID-JAG support at the IdP and the server's authorization server.",
+  "aliases": [
+    "enterprise-managed auth"
+  ],
+  "chapters": [
+    "mcp-authorization",
+    "enterprise-readiness",
+    "mcp-at-scale",
+    "mcp-extensions",
+    "agent-identity-delegation"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text-classification",
+  "term": "Text classification",
+  "def": "Assigning one or more labels from a fixed set to a whole text, such as sentiment, topic, intent or toxicity.",
+  "practice": "Often the highest-volume task in production: a fine-tuned encoder with a classification head is cheap when labels and volume justify it, otherwise a prompted LLM with constrained output; report per-class F1.",
+  "aliases": [
+    "sequence classification",
+    "document classification"
+  ],
+  "chapters": [
+    "classical-ml",
+    "specialist-models",
+    "small-local-models",
+    "eval-recipes",
+    "nlp-tasks"
+  ]
+}

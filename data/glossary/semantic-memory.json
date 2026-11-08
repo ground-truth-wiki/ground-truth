@@ -1,0 +1,11 @@
+{
+  "id": "semantic-memory",
+  "term": "Semantic memory",
+  "def": "Long-term memory of facts and knowledge about the world, the user or the agent itself, such as preferences or project facts.",
+  "practice": "The usual target of personalization; store each fact with a source and a date so later contradictions can be resolved.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory",
+    "agent-research-lineage"
+  ]
+}

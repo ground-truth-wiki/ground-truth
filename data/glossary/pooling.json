@@ -1,0 +1,19 @@
+{
+  "id": "pooling",
+  "term": "Pooling",
+  "def": "Aggregating a set of vectors, such as neighboring positions in an image feature grid or the token outputs of an encoder, into fewer vectors or one, usually by maximum or mean.",
+  "practice": "Text embedders typically mean-pool token vectors or take the first ([CLS]) or last token, and the choice must match how the model was trained; CNNs use max or average pooling to downsample.",
+  "aliases": [
+    "mean pooling",
+    "max pooling",
+    "average pooling"
+  ],
+  "chapters": [
+    "embeddings",
+    "neural-networks",
+    "representation-learning",
+    "convolutional-networks",
+    "retrieval-test-collections",
+    "vlm-architectures"
+  ]
+}

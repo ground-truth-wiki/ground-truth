@@ -1,0 +1,14 @@
+{
+  "id": "spider-benchmark",
+  "term": "Spider",
+  "def": "A cross-domain text-to-SQL benchmark (Yu et al., 2018) of 10,181 questions and 5,693 SQL queries over 200 multi-table databases, testing generalization to unseen schemas.",
+  "practice": "Its successor Spider 2.0 (2024) has 632 enterprise workflow tasks on Snowflake, BigQuery, SQLite and dbt projects with databases often over 1,000 columns, much closer to analyst-agent work than single-query parsing.",
+  "aliases": [
+    "Spider 2.0"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "research-analyst-agents",
+    "data-analysis-agents"
+  ]
+}

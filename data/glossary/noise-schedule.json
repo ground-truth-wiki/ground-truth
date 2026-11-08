@@ -1,0 +1,13 @@
+{
+  "id": "noise-schedule",
+  "term": "Noise schedule",
+  "def": "The function that sets how much noise is present at each diffusion timestep, used both to train the model and to place its sampling steps.",
+  "practice": "Linear, cosine and Karras-style schedules spend steps differently; the sampling schedule can be changed at inference without retraining and often shifts quality at a fixed step count.",
+  "aliases": [
+    "sigma schedule"
+  ],
+  "chapters": [
+    "image-generation",
+    "diffusion-flow-matching"
+  ]
+}

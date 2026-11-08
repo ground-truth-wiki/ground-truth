@@ -1,0 +1,12 @@
+{
+  "id": "backpressure",
+  "term": "Backpressure",
+  "def": "The buildup of data when a consumer is slower than its producer, and the flow-control mechanisms that slow the producer to the consumer's pace.",
+  "practice": "In streaming AI apps a slow client or proxy should pause reads from the model stream, and a vanished client should cancel the upstream request so you stop paying for tokens.",
+  "aliases": [
+    "back-pressure"
+  ],
+  "chapters": [
+    "streaming"
+  ]
+}

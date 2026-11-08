@@ -1,0 +1,13 @@
+{
+  "id": "aux-loss-free-balancing",
+  "term": "Auxiliary-loss-free load balancing",
+  "def": "Balancing MoE expert load by adding a per-expert bias to router scores for top-k selection only, raised for underused experts and lowered for overloaded ones, instead of a balancing loss.",
+  "practice": "Proposed by DeepSeek researchers in 2024 to avoid the interference gradients a large auxiliary loss adds; DeepSeek-V3 uses it alongside a very small sequence-wise auxiliary loss.",
+  "aliases": [
+    "loss-free balancing"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "moe-routing"
+  ]
+}

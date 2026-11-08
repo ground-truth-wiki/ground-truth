@@ -1,0 +1,11 @@
+{
+  "id": "adaptive-rag",
+  "term": "Adaptive RAG",
+  "def": "A RAG method (Jeong et al., 2024) in which a small classifier predicts each query's complexity and picks no retrieval, single-step retrieval or iterative retrieval accordingly.",
+  "practice": "Saves latency and cost on easy questions while keeping multi-step retrieval for hard ones; a misjudged query gets too little evidence, so evaluate each route separately.",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag",
+    "query-understanding"
+  ]
+}

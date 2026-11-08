@@ -1,0 +1,15 @@
+{
+  "id": "data-upsampling",
+  "term": "Data upsampling",
+  "def": "Drawing a small, high-value data source more often than its natural share of the corpus, so the model sees it for several epochs while larger sources get less than one.",
+  "practice": "GPT-3 saw Wikipedia about 3.4 times in 300B training tokens but its filtered Common Crawl less than once; the art is boosting quality without overfitting the boosted source.",
+  "aliases": [
+    "upsampling"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "pretraining-run",
+    "data-mixing",
+    "long-context-training"
+  ]
+}

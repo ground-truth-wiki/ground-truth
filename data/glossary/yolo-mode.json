@@ -1,0 +1,23 @@
+{
+  "id": "yolo-mode",
+  "term": "YOLO mode",
+  "def": "Practitioner slang for running a coding agent with every approval prompt, and often the sandbox, switched off.",
+  "practice": "Exposed as --yolo in Codex and Gemini CLI and as --dangerously-skip-permissions (bypassPermissions mode) in Claude Code, as of November 2026; use it only in a disposable sandbox without credentials, and organizations can disable it.",
+  "aliases": [
+    "--yolo",
+    "bypassPermissions",
+    "bypass permissions mode",
+    "--dangerously-skip-permissions",
+    "--dangerously-bypass-approvals-and-sandbox"
+  ],
+  "chapters": [
+    "claude-code",
+    "sandboxes",
+    "working-with-coding-agents",
+    "harness-anatomy",
+    "human-in-the-loop",
+    "autonomy-and-oversight",
+    "harness-permissions-hooks",
+    "coding-agent-security"
+  ]
+}

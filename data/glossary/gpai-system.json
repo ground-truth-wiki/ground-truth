@@ -1,0 +1,12 @@
+{
+  "id": "gpai-system",
+  "term": "General-purpose AI system",
+  "def": "Under the EU AI Act, an AI system based on a general-purpose AI model that can serve a variety of purposes, used directly or integrated into other AI systems.",
+  "practice": "A chat assistant built on a frontier model is a typical example; whoever repurposes one for a high-risk use becomes the provider of a high-risk system under Article 25.",
+  "aliases": [
+    "GPAI system"
+  ],
+  "chapters": [
+    "governance-regulation"
+  ]
+}

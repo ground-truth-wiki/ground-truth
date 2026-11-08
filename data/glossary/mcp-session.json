@@ -1,0 +1,14 @@
+{
+  "id": "mcp-session",
+  "term": "MCP session",
+  "def": "The protocol-level session of MCP revisions up to 2025-11-25, opened by the initialize handshake and optionally identified on Streamable HTTP by the Mcp-Session-Id header; removed in 2026-07-28.",
+  "practice": "Servers that kept state per session break behind load balancers under the stateless spec; carry cross-call state in explicit state handles passed as tool arguments instead.",
+  "aliases": [
+    "protocol-level session"
+  ],
+  "chapters": [
+    "mcp-transports",
+    "mcp-architecture",
+    "mcp-spec-history"
+  ]
+}

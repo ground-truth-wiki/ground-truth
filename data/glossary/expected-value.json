@@ -1,0 +1,14 @@
+{
+  "id": "expected-value",
+  "term": "Expected value",
+  "def": "The probability-weighted average of a random variable’s values, E[X] = Σ x · P(x), or the corresponding integral for continuous variables.",
+  "practice": "Losses, rewards and eval scores are estimates of expected values, and reinforcement learning maximizes expected return.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "rl-primer",
+    "eval-statistics",
+    "information-theory-for-llms",
+    "autonomy-and-oversight"
+  ]
+}

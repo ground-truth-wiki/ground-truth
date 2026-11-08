@@ -1,0 +1,18 @@
+{
+  "id": "padding-truncation",
+  "term": "Padding and truncation",
+  "def": "Batching steps that give token sequences a common length: padding appends a special pad token to shorter ones, and truncation cuts those longer than a maximum length.",
+  "practice": "An attention mask hides pad positions, decoder-only models are padded on the left for batched generation, and silent truncation of long inputs is a classic embedding and classification bug.",
+  "aliases": [
+    "padding token",
+    "pad token",
+    "left padding"
+  ],
+  "chapters": [
+    "tokenization",
+    "embeddings",
+    "sft",
+    "batching-scheduling",
+    "nlp-tasks"
+  ]
+}

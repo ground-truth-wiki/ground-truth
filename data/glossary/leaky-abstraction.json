@@ -1,0 +1,14 @@
+{
+  "id": "leaky-abstraction",
+  "term": "Leaky abstraction",
+  "def": "An abstraction that fails to fully hide the details it was meant to hide, so users must understand the layer underneath to use or debug it.",
+  "practice": "Joel Spolsky's 2002 law says all non-trivial abstractions leak to some degree; agent frameworks leak prompts, retries and context handling, which is why you read raw traces.",
+  "aliases": [
+    "abstraction leak",
+    "law of leaky abstractions"
+  ],
+  "chapters": [
+    "framework-anti-patterns",
+    "framework-landscape"
+  ]
+}

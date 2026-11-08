@@ -1,0 +1,16 @@
+{
+  "id": "nan",
+  "term": "NaN",
+  "def": "\"Not a number\": the floating-point value produced by invalid operations such as 0/0 or ∞ − ∞, which then propagates through nearly all arithmetic that uses it.",
+  "practice": "One NaN in the loss or gradients spreads to every weight in a single optimizer step, so mixed-precision loss scalers check for Inf and NaN and skip such steps.",
+  "aliases": [
+    "not a number"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "distributed-training",
+    "training-neural-networks",
+    "floating-point-formats",
+    "autonomy-and-oversight"
+  ]
+}

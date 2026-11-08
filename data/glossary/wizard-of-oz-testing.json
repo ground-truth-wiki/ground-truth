@@ -1,0 +1,17 @@
+{
+  "id": "wizard-of-oz-testing",
+  "term": "Wizard of Oz testing",
+  "def": "A prototyping method in which a hidden person secretly performs the system's intelligent behavior, so a design can be tested with real users before the technology exists.",
+  "practice": "A cheap way to learn whether an AI feature is worth building and how users react to its outputs; J. F. Kelley introduced the name in the early 1980s for natural-language systems.",
+  "aliases": [
+    "Wizard of Oz experiment",
+    "Wizard of Oz prototyping",
+    "WoZ"
+  ],
+  "chapters": [
+    "ai-product-ux",
+    "system-design-method",
+    "voice-agents"
+  ],
+  "abbr": "WoZ"
+}

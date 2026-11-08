@@ -1,0 +1,15 @@
+{
+  "id": "data-catalog",
+  "term": "Data catalog",
+  "def": "A searchable inventory of an organization’s datasets and their metadata, such as location, schema, owner, lineage and access policies.",
+  "practice": "Where owners, permitted uses and retention rules for AI datasets should live instead of spreadsheets; examples include AWS Glue Data Catalog and Unity Catalog.",
+  "aliases": [
+    "metadata catalog"
+  ],
+  "chapters": [
+    "data-governance",
+    "data-strategy",
+    "dataset-versioning-lineage",
+    "data-lakehouses"
+  ]
+}

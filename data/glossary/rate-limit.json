@@ -1,0 +1,20 @@
+{
+  "id": "rate-limit",
+  "term": "Rate limit",
+  "def": "A provider cap on how many requests or tokens an organization may send per time window, usually per model, enforced by rejecting excess requests with HTTP 429.",
+  "practice": "Usually measured in requests and tokens per minute; Anthropic counts input and output separately and excludes cached input reads, and limits rise with usage tier. Back off and honor retry-after.",
+  "aliases": [
+    "rate limiting",
+    "RPM",
+    "TPM"
+  ],
+  "chapters": [
+    "model-apis",
+    "reliability-engineering",
+    "cost-capacity",
+    "choosing-a-model",
+    "reference-architecture",
+    "gateway-routing-in-depth",
+    "rate-limits-overload"
+  ]
+}

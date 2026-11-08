@@ -1,0 +1,14 @@
+{
+  "id": "prohibited-ai-practices",
+  "term": "Prohibited AI practices",
+  "def": "Uses of AI banned outright by Article 5 of the EU AI Act, such as harmful manipulation, social scoring, untargeted scraping of facial images and emotion recognition at work or school.",
+  "practice": "Eight bans have applied since 2 February 2025; the AI Omnibus adds a ban on systems that generate child sexual abuse material or non-consensual intimate imagery from 2 December 2026.",
+  "aliases": [
+    "unacceptable risk",
+    "AI Act prohibitions"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai"
+  ]
+}

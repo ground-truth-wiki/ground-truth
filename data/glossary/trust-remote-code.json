@@ -1,0 +1,12 @@
+{
+  "id": "trust-remote-code",
+  "term": "trust_remote_code",
+  "def": "A Hugging Face loading flag that lets Python modeling code stored in a Hub repository run on your machine, needed for architectures the Transformers library does not include.",
+  "practice": "Off by default because it executes arbitrary code from the model author; read the repository's code and pin a commit revision before enabling it, since a later commit can change what runs.",
+  "aliases": [],
+  "chapters": [
+    "supply-chain-security",
+    "open-weight-frontier",
+    "hugging-face-ecosystem"
+  ]
+}

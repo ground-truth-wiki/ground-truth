@@ -1,0 +1,14 @@
+{
+  "id": "fairness-impossibility",
+  "term": "Fairness impossibility theorem",
+  "def": "The result that calibration within groups and equal error rates across groups cannot hold together unless base rates are equal or prediction is perfect (Kleinberg et al., 2016; Chouldechova, 2017).",
+  "practice": "It explains the 2016 COMPAS dispute, in which the two sides measured different criteria; there is no neutral fairness metric, so document which criterion you chose and why.",
+  "aliases": [
+    "impossibility of fairness",
+    "incompatibility of fairness metrics"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "eval-statistics"
+  ]
+}

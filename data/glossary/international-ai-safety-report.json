@@ -1,0 +1,17 @@
+{
+  "id": "international-ai-safety-report",
+  "term": "International AI Safety Report",
+  "def": "A scientific assessment of general-purpose AI capabilities and risks by an international expert panel chaired by Yoshua Bengio, commissioned at the 2023 Bletchley Park summit.",
+  "practice": "The usual citation for the state of evidence on AI risk; full editions appeared in January 2025 and February 2026, grouping risks into malicious use, malfunctions and systemic risks.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation",
+    "open-problems",
+    "frontier-safety-frameworks",
+    "whos-who",
+    "scheming-evaluations",
+    "dangerous-capability-evals",
+    "global-ai-governance",
+    "agi-timelines-risk"
+  ]
+}

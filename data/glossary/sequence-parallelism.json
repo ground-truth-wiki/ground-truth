@@ -1,0 +1,15 @@
+{
+  "id": "sequence-parallelism",
+  "term": "Sequence parallelism",
+  "def": "In Megatron-style tensor parallelism, splitting along the sequence dimension the operations that tensor parallelism leaves replicated, such as layer normalization and dropout, to cut activation memory.",
+  "practice": "Combined with selective activation recomputation it reduced activation memory 5x (Korthikanti et al., 2022); DeepSpeed-Ulysses uses the same name for an all-to-all long-sequence method, so say which one you mean.",
+  "aliases": [],
+  "chapters": [
+    "distributed-training",
+    "long-context",
+    "parallelism-strategies",
+    "privacy-preserving-ml",
+    "fairness-bias"
+  ],
+  "abbr": "SP"
+}

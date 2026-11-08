@@ -1,0 +1,18 @@
+{
+  "id": "run-context",
+  "term": "Run context",
+  "def": "A typed object of dependencies and per-run data, such as the current user, a database handle or API clients, that a framework passes to tools and hooks but never sends to the model.",
+  "practice": "The clean way to give tools what they need without putting handles or secrets in prompts; swapping in fake dependencies also makes agents easy to test.",
+  "aliases": [
+    "RunContext",
+    "RunContextWrapper",
+    "runtime context"
+  ],
+  "chapters": [
+    "provider-agent-sdks",
+    "agent-tools",
+    "orchestration-frameworks",
+    "agent-sdk-primitives",
+    "graph-workflow-runtimes"
+  ]
+}

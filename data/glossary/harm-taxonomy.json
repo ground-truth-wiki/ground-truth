@@ -1,0 +1,15 @@
+{
+  "id": "harm-taxonomy",
+  "term": "Harm taxonomy",
+  "def": "A structured classification of the ways an AI system can cause harm, used to scope evaluations, red teaming and impact assessments.",
+  "practice": "Weidinger et al.'s six risk areas for language models (2021) and Shelby et al.'s five sociotechnical harm categories, drawn from 172 papers (2022), are common starting points.",
+  "aliases": [
+    "risk taxonomy",
+    "taxonomy of harms"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "threat-modeling",
+    "safety-evals"
+  ]
+}

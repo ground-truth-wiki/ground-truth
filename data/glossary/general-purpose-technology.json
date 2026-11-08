@@ -1,0 +1,11 @@
+{
+  "id": "general-purpose-technology",
+  "term": "General-purpose technology",
+  "def": "A technology that spreads across the economy, keeps improving and spawns complementary innovations, as the steam engine, electricity and computers did.",
+  "practice": "Eloundou et al. (2023) argue LLMs show these traits; historically such technologies raised productivity only after years of complementary investment, and the economists' abbreviation GPT clashes with generative pre-trained transformer.",
+  "aliases": [],
+  "chapters": [
+    "open-problems",
+    "ai-engineer-role"
+  ]
+}

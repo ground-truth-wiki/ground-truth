@@ -1,0 +1,12 @@
+{
+  "id": "nemo-guardrails",
+  "term": "NeMo Guardrails",
+  "def": "An open-source NVIDIA toolkit that adds programmable rails around an LLM application: input, dialog, retrieval, execution and output rails, with dialogue flows written in the Colang language.",
+  "practice": "Rails sit outside the model, so they work with any LLM, but many rails make their own LLM calls; measure added latency and false positives on your own traffic.",
+  "aliases": [],
+  "chapters": [
+    "guardrails-control",
+    "secure-agent-design",
+    "guard-models-moderation"
+  ]
+}

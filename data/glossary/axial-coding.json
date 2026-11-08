@@ -1,0 +1,10 @@
+{
+  "id": "axial-coding",
+  "term": "Axial coding",
+  "def": "The step in grounded-theory analysis that groups and relates the free-form notes from open coding into categories.",
+  "practice": "In LLM error analysis it turns trace notes into a countable failure taxonomy; Husain and Shankar’s evals FAQ calls it the most important step.",
+  "aliases": [],
+  "chapters": [
+    "error-analysis"
+  ]
+}

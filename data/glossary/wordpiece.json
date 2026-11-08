@@ -1,0 +1,15 @@
+{
+  "id": "wordpiece",
+  "term": "WordPiece",
+  "def": "A subword tokenization method, best known from BERT, that builds its vocabulary from merges that most raise training-data likelihood and splits each word greedily into the longest matching pieces.",
+  "practice": "Found in BERT-family encoders, embedding models and rerankers; continuation pieces carry a ## prefix, and a word with no match becomes a single unknown token.",
+  "aliases": [
+    "wordpiece model"
+  ],
+  "chapters": [
+    "tokenization",
+    "embeddings",
+    "tokenizers-in-practice",
+    "encoders-and-decoders"
+  ]
+}

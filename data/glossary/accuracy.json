@@ -1,0 +1,17 @@
+{
+  "id": "accuracy",
+  "term": "Accuracy",
+  "def": "The fraction of predictions that are correct: correct predictions divided by all predictions.",
+  "practice": "Misleading on imbalanced data: if 99% of cases are negative, always answering no scores 99%, so report precision, recall or balanced accuracy alongside it.",
+  "aliases": [],
+  "chapters": [
+    "classical-ml",
+    "metrics-graders",
+    "eval-statistics",
+    "benchmark-literacy",
+    "llm-uncertainty",
+    "classification-metrics",
+    "validation-tuning",
+    "clustering-dimensionality-reduction"
+  ]
+}

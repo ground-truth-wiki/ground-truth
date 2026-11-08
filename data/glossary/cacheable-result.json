@@ -1,0 +1,17 @@
+{
+  "id": "cacheable-result",
+  "term": "Cacheable result",
+  "def": "An MCP result carrying ttlMs, a freshness hint in milliseconds, and cacheScope, public or private, which tell clients how long to cache it and whether shared intermediaries may.",
+  "practice": "Required on tools/list, prompts/list, resources/list, resources/read and resources/templates/list since 2026-07-28; it complements list-changed notifications and cuts polling.",
+  "aliases": [
+    "CacheableResult",
+    "cache hints"
+  ],
+  "chapters": [
+    "mcp-at-scale",
+    "mcp-architecture",
+    "mcp-primitives",
+    "building-mcp-servers",
+    "mcp-spec-history"
+  ]
+}

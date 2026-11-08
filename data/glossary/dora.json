@@ -1,0 +1,15 @@
+{
+  "id": "dora",
+  "term": "DoRA",
+  "def": "Weight-Decomposed Low-Rank Adaptation: a LoRA variant that splits each pretrained weight into a magnitude vector, trained directly, and a direction matrix, updated with a low-rank LoRA adapter.",
+  "practice": "Enabled in Hugging Face PEFT with use_dora; it can beat plain LoRA, especially at low ranks, but adds overhead, so merge the weights for inference.",
+  "aliases": [
+    "Weight-Decomposed Low-Rank Adaptation"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "sft",
+    "peft-methods",
+    "measuring-ai-impact"
+  ]
+}

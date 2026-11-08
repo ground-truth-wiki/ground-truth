@@ -1,0 +1,17 @@
+{
+  "id": "zero-stages",
+  "term": "ZeRO stages",
+  "def": "DeepSpeed's three levels of sharding in data-parallel training: stage 1 partitions optimizer states, stage 2 adds gradients, stage 3 adds the parameters themselves.",
+  "practice": "Each stage saves more memory per GPU for more communication; stage 3 matches PyTorch FSDP's full sharding, and ZeRO-Offload and ZeRO-Infinity move state to CPU or NVMe.",
+  "aliases": [
+    "ZeRO-1",
+    "ZeRO-2",
+    "ZeRO-3",
+    "Zero Redundancy Optimizer"
+  ],
+  "chapters": [
+    "distributed-training",
+    "fine-tuning-practice",
+    "parallelism-strategies"
+  ]
+}

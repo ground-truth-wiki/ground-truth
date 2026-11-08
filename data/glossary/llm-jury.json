@@ -1,0 +1,17 @@
+{
+  "id": "llm-jury",
+  "term": "Panel of LLM judges",
+  "def": "An evaluation setup that aggregates verdicts from several judge models, usually from different model families, instead of relying on one large judge.",
+  "practice": "Verga et al. (2024) found a panel of smaller models from disjoint families outperformed a single large judge at over seven times lower cost, with less self-preference; FACTS Grounding also combines several judges.",
+  "aliases": [
+    "LLM jury",
+    "judge ensemble",
+    "multi-judge evaluation"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "judge-models-meta-evaluation"
+  ],
+  "abbr": "PoLL"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "table-structure-recognition",
+  "term": "Table structure recognition",
+  "def": "Recovering a table's rows, columns, spanning cells and headers from an image or PDF into a structured form such as HTML.",
+  "practice": "Scored with tree-edit-distance-based similarity (TEDS) against reference HTML; merged and spanning cells are the usual failure point.",
+  "aliases": [
+    "TSR",
+    "table recognition"
+  ],
+  "chapters": [
+    "document-screen-understanding",
+    "ingestion-parsing",
+    "document-extraction",
+    "document-ocr-models"
+  ],
+  "abbr": "TSR"
+}

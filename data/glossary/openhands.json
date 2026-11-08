@@ -1,0 +1,18 @@
+{
+  "id": "openhands",
+  "term": "OpenHands",
+  "def": "An open-source (MIT) platform, formerly OpenDevin, for AI software-development agents that write code, run commands and browse the web in sandboxed environments.",
+  "practice": "A common open research harness for benchmarking models on SWE-bench-style tasks; its skills, formerly microagents, follow the Agent Skills format in .agents/skills (as of November 2026).",
+  "aliases": [
+    "OpenDevin"
+  ],
+  "chapters": [
+    "coding-harness-landscape",
+    "what-is-a-harness",
+    "harness-engineering",
+    "coding-agents",
+    "coding-agent-internals",
+    "coding-agent-benchmarks",
+    "swe-training-environments"
+  ]
+}

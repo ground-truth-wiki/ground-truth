@@ -1,0 +1,13 @@
+{
+  "id": "stop-sequence",
+  "term": "Stop sequence",
+  "def": "A string that ends generation as soon as the model produces it.",
+  "practice": "Used to cut output at a delimiter or role marker; APIs usually leave the string out of the returned text and report it as the stop reason.",
+  "aliases": [
+    "stop string"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "model-apis"
+  ]
+}

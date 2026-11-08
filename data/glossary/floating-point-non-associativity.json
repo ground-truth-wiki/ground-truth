@@ -1,0 +1,13 @@
+{
+  "id": "floating-point-non-associativity",
+  "term": "Floating-point non-associativity",
+  "def": "The fact that (a + b) + c and a + (b + c) can round to different results in floating point, so the order of a sum changes its value.",
+  "practice": "Parallel reductions in different orders give slightly different results, which is why GPU outputs, even at temperature 0, are not bit-exact across batch sizes or kernels.",
+  "aliases": [
+    "non-associativity"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "eval-statistics"
+  ]
+}

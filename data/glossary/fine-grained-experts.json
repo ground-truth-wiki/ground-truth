@@ -1,0 +1,14 @@
+{
+  "id": "fine-grained-experts",
+  "term": "Fine-grained experts",
+  "def": "An MoE design that splits each expert into several smaller ones and activates proportionally more of them, so each token combines more specialized experts at the same compute.",
+  "practice": "Introduced with DeepSeekMoE; DeepSeek-V3 routes each token to 8 of 256 small routed experts plus one shared expert in each MoE layer.",
+  "aliases": [
+    "fine-grained MoE",
+    "fine-grained expert segmentation"
+  ],
+  "chapters": [
+    "mixture-of-experts",
+    "moe-routing"
+  ]
+}

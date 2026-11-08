@@ -1,0 +1,16 @@
+{
+  "id": "pointwise-evaluation",
+  "term": "Pointwise evaluation",
+  "def": "Grading one response on its own against a rubric or scale, without comparing it to another response.",
+  "practice": "Yields an absolute score or pass rate you can track over time and gate on, which is why production judges and CI eval gates are usually pointwise.",
+  "aliases": [
+    "single-answer grading",
+    "direct assessment",
+    "direct scoring"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "judge-models-meta-evaluation"
+  ]
+}

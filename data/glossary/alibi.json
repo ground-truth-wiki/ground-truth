@@ -1,0 +1,15 @@
+{
+  "id": "alibi",
+  "term": "Attention with linear biases",
+  "def": "A position method that uses no position embeddings and instead subtracts from each attention score a penalty proportional to the query-key distance, with a fixed slope per head.",
+  "practice": "Proposed by Press et al. (2022) to train on short sequences and run on longer ones, and used in BLOOM and MPT; MosaicML later switched to RoPE, citing lack of kernel support.",
+  "aliases": [
+    "ALiBi"
+  ],
+  "chapters": [
+    "positional-encoding",
+    "long-context",
+    "rope-scaling"
+  ],
+  "abbr": "ALiBi"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "plan-and-solve",
+  "term": "Plan-and-solve prompting",
+  "def": "A zero-shot prompting method that replaces \"Let’s think step by step\" with an instruction to first devise a plan, then carry out its subtasks step by step.",
+  "practice": "Wang et al. (2023) aimed it at the missing-step errors of zero-shot chain of thought, with a PS+ variant for calculation errors; plan-and-execute agents use the same split.",
+  "aliases": [
+    "plan-and-solve"
+  ],
+  "chapters": [
+    "reasoning-prompts",
+    "planning-reasoning",
+    "prompting-techniques"
+  ]
+}

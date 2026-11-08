@@ -1,0 +1,17 @@
+{
+  "id": "generalized-advantage-estimation",
+  "term": "Generalized advantage estimation",
+  "def": "An advantage estimator that averages multi-step TD errors with exponentially decaying weights, using a parameter λ to trade bias against variance, analogous to TD(λ).",
+  "practice": "The usual advantage estimator in PPO, including PPO-based RLHF with a learned value model; group-based methods such as GRPO do without it.",
+  "aliases": [
+    "GAE"
+  ],
+  "chapters": [
+    "rl-primer",
+    "preference-optimization",
+    "rlvr-reasoning",
+    "value-based-rl",
+    "policy-gradient-methods"
+  ],
+  "abbr": "GAE"
+}

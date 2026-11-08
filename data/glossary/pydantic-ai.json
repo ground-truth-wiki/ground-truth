@@ -1,0 +1,17 @@
+{
+  "id": "pydantic-ai",
+  "term": "Pydantic AI",
+  "def": "An open-source Python agent framework from the Pydantic team with validated typed outputs, dependency injection through a run context, toolsets, graph support and durable-execution integrations.",
+  "practice": "A good fit for type-checked Python services; it is OpenTelemetry-native and has first-party durable execution on Temporal, DBOS and Prefect.",
+  "aliases": [
+    "PydanticAI"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "framework-landscape",
+    "structured-outputs",
+    "long-running-agents",
+    "durable-agent-execution",
+    "agent-sdk-primitives"
+  ]
+}

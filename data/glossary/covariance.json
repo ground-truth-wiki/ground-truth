@@ -1,0 +1,21 @@
+{
+  "id": "covariance",
+  "term": "Covariance and correlation",
+  "def": "Covariance measures how two random variables vary together; correlation is covariance divided by both standard deviations, giving a unitless value from −1 to 1.",
+  "practice": "Correlated eval items, such as several questions about one document, shrink the effective sample size, and PCA decomposes the covariance matrix of a set of embeddings.",
+  "aliases": [
+    "covariance",
+    "correlation",
+    "correlation coefficient"
+  ],
+  "chapters": [
+    "probability-information",
+    "eval-statistics",
+    "eigenvectors-svd-pca",
+    "distributions-and-estimation",
+    "classification-metrics",
+    "linear-and-kernel-models",
+    "anomaly-drift-detection",
+    "self-supervised-methods"
+  ]
+}

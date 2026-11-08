@@ -1,0 +1,16 @@
+{
+  "id": "expected-calibration-error",
+  "term": "Expected calibration error",
+  "def": "The average gap between accuracy and mean confidence across confidence bins, weighted by the share of predictions in each bin.",
+  "practice": "The usual one-number calibration summary in papers; it depends on the number and kind of bins, so compare values only under the same setup.",
+  "aliases": [
+    "ECE"
+  ],
+  "chapters": [
+    "probability-information",
+    "classical-ml",
+    "llm-uncertainty",
+    "classification-metrics"
+  ],
+  "abbr": "ECE"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "apache-parquet",
+  "term": "Apache Parquet",
+  "def": "An open columnar file format that splits a table into row groups, stores each column's values together in compressed chunks, and keeps the schema, chunk locations and statistics in a footer.",
+  "practice": "The Hugging Face dataset viewer converts public Hub datasets to Parquet; readers load only the columns they need and skip row groups whose min and max statistics cannot match a filter.",
+  "aliases": [
+    "Parquet"
+  ],
+  "chapters": [
+    "pretraining-data",
+    "fine-tuning-practice",
+    "eval-datasets",
+    "unstructured-pipelines",
+    "hugging-face-ecosystem",
+    "data-formats",
+    "data-lakehouses",
+    "vla-models"
+  ]
+}

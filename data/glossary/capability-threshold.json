@@ -1,0 +1,11 @@
+{
+  "id": "capability-threshold",
+  "term": "Capability threshold",
+  "def": "A predefined level of dangerous capability at which a developer's safety framework requires stronger safeguards, further review or other action.",
+  "practice": "Each developer names and defines them differently (Anthropic's thresholds tied to AI Safety Levels, OpenAI's High and Critical, Google DeepMind's Critical Capability Levels), so compare definitions, not labels.",
+  "aliases": [],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "safety-evals"
+  ]
+}

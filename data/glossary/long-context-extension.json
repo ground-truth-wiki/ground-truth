@@ -1,0 +1,22 @@
+{
+  "id": "long-context-extension",
+  "term": "Long-context extension",
+  "def": "Raising the context length a trained model can use, usually by rescaling its position encoding and continuing training on long documents.",
+  "practice": "Usually late and staged: Llama 3 used six stages and about 800B tokens to reach 128K, while Fu et al. (2024) found a few billion well-balanced tokens enough for retrieval across 128K.",
+  "aliases": [
+    "context extension",
+    "context-length extension",
+    "context window extension",
+    "long-context continual pretraining"
+  ],
+  "chapters": [
+    "mid-training",
+    "long-context",
+    "positional-encoding",
+    "pretraining-run",
+    "transformer-overview",
+    "rope-scaling",
+    "compute-accounting",
+    "long-context-training"
+  ]
+}

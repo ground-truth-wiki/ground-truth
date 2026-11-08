@@ -1,0 +1,14 @@
+{
+  "id": "executive-order-14365",
+  "term": "Executive Order 14365",
+  "def": "A US executive order of 11 December 2025, 'Ensuring a National Policy Framework for Artificial Intelligence', directing federal agencies to challenge conflicting state AI laws and seeking a preempting federal law.",
+  "practice": "It created a Justice Department AI Litigation Task Force; as of November 2026 Congress has passed no preempting statute, so state AI laws still apply.",
+  "aliases": [
+    "EO 14365",
+    "Ensuring a National Policy Framework for Artificial Intelligence"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "us-ai-law"
+  ]
+}

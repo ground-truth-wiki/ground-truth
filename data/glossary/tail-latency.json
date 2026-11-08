@@ -1,0 +1,22 @@
+{
+  "id": "tail-latency",
+  "term": "Tail latency",
+  "def": "The latency of the slowest requests in a workload, reported as a high percentile of the latency distribution such as p95, p99 or p99.9.",
+  "practice": "Long prompts, long outputs and queueing give LLM serving heavy tails, so set and report targets at a percentile and a stated load, never as an average.",
+  "aliases": [
+    "p99",
+    "p95",
+    "p99.9",
+    "tail latencies"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "reliability-engineering",
+    "observability-tracing",
+    "production-rag",
+    "voice-agents",
+    "serving-engines",
+    "voice-turn-taking",
+    "inference-benchmarking"
+  ]
+}

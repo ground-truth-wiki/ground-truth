@@ -1,0 +1,13 @@
+{
+  "id": "distributed-checkpointing",
+  "term": "Distributed checkpointing",
+  "def": "Saving and loading sharded model and optimizer state from every rank in parallel, with the ability to reshard onto a different cluster layout when loading.",
+  "practice": "PyTorch DCP writes at least one file per rank and can stage state to CPU memory and save asynchronously, so training stalls only briefly at each checkpoint.",
+  "aliases": [
+    "sharded checkpointing"
+  ],
+  "chapters": [
+    "distributed-training",
+    "pretraining-run"
+  ]
+}

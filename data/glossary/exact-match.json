@@ -1,0 +1,19 @@
+{
+  "id": "exact-match",
+  "term": "Exact match",
+  "def": "A metric that counts an output as correct only if it equals the reference after a stated normalization, such as lowercasing, trimming whitespace or removing punctuation.",
+  "practice": "Cheap and objective for labels, numbers and short answers, but weak normalization or rigid answer formats can understate a model badly, which is why math graders compare answers symbolically.",
+  "aliases": [
+    "EM",
+    "exact-match accuracy"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "eval-recipes",
+    "eval-harnesses",
+    "hybrid-retrieval",
+    "nlp-tasks",
+    "text-generation-metrics"
+  ],
+  "abbr": "EM"
+}

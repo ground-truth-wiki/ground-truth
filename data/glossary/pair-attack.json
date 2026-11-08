@@ -1,0 +1,16 @@
+{
+  "id": "pair-attack",
+  "term": "Prompt Automatic Iterative Refinement",
+  "def": "A black-box jailbreak method in which an attacker LLM repeatedly rewrites a prompt using the target model's replies and a judge's score.",
+  "practice": "Often succeeds in fewer than twenty queries and yields fluent prompts that perplexity filters miss; a standard baseline in later jailbreak work.",
+  "aliases": [],
+  "chapters": [
+    "jailbreaks-misuse",
+    "red-teaming",
+    "safety-evals",
+    "jailbreak-techniques",
+    "ai-use-case-scoping",
+    "human-ai-interaction-guidelines"
+  ],
+  "abbr": "PAIR"
+}

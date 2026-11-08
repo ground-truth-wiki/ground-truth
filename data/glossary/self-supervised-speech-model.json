@@ -1,0 +1,12 @@
+{
+  "id": "self-supervised-speech-model",
+  "term": "Self-supervised speech model",
+  "def": "A speech encoder pretrained on unlabeled audio, typically by predicting masked latent or clustered units, then fine-tuned for recognition and other tasks with little labeled data.",
+  "practice": "wav2vec 2.0, HuBERT and WavLM made low-resource ASR practical, and their discretized features serve as the semantic tokens of audio language models.",
+  "aliases": [],
+  "chapters": [
+    "speech-audio",
+    "representation-learning",
+    "audio-codecs-tokens"
+  ]
+}

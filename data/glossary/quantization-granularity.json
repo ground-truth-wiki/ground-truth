@@ -1,0 +1,16 @@
+{
+  "id": "quantization-granularity",
+  "term": "Quantization granularity",
+  "def": "How many values share one set of quantization parameters: a whole tensor, one output channel, a group of consecutive values, or a fixed block.",
+  "practice": "Smaller groups track outliers better but store more scales; GPTQ in Transformers defaults to groups of 128 weights and fine-grained FP8 to 128 x 128 blocks.",
+  "aliases": [
+    "per-tensor quantization",
+    "per-channel quantization",
+    "per-group quantization",
+    "group-wise quantization",
+    "block-wise quantization"
+  ],
+  "chapters": [
+    "quantization"
+  ]
+}

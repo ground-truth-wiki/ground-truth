@@ -1,0 +1,19 @@
+{
+  "id": "agent-hijacking",
+  "term": "Agent hijacking",
+  "def": "An attack in which malicious instructions planted in data an agent ingests, such as emails, web pages, files or tool results, make it carry out the attacker’s task.",
+  "practice": "NIST’s CAISI uses the term for indirect prompt injection against agents and measures it with AgentDojo; OWASP’s Top 10 for Agentic Applications ranks Agent Goal Hijack first (ASI01).",
+  "aliases": [
+    "agent goal hijack",
+    "goal hijacking"
+  ],
+  "chapters": [
+    "prompt-injection",
+    "secure-agent-design",
+    "personal-assistants",
+    "computer-use-agents",
+    "safety-evals",
+    "ai-security-frameworks",
+    "prompt-injection-techniques"
+  ]
+}

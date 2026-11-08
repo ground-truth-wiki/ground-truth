@@ -1,0 +1,15 @@
+{
+  "id": "alphageometry",
+  "term": "AlphaGeometry",
+  "def": "A Google DeepMind neuro-symbolic system in which a language model proposes geometric constructions and a symbolic deduction engine derives proofs, trained on 100 million synthetic examples.",
+  "practice": "Solved 25 of 30 olympiad geometry problems within time limits (Nature, January 2024); AlphaGeometry 2 contributed to the IMO 2024 silver-level result.",
+  "aliases": [
+    "AlphaGeometry 2"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "synthetic-data",
+    "history-of-ai",
+    "ai-for-mathematics"
+  ]
+}

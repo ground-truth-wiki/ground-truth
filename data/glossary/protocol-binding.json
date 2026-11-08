@@ -1,0 +1,13 @@
+{
+  "id": "protocol-binding",
+  "term": "Protocol binding",
+  "def": "The mapping of a protocol's abstract operations onto a concrete wire format and transport, such as A2A's JSON-RPC, gRPC and HTTP+JSON bindings of the same operations.",
+  "practice": "Separating the data model from bindings lets one spec serve web, mobile and backend clients; confirm which binding a peer actually supports before integrating.",
+  "aliases": [
+    "transport binding"
+  ],
+  "chapters": [
+    "a2a",
+    "mcp-transports"
+  ]
+}

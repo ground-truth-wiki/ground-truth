@@ -1,0 +1,20 @@
+{
+  "id": "allowlist",
+  "term": "Allowlist",
+  "def": "A list of explicitly permitted items, such as tools, commands, hosts or file paths, with everything not on it denied.",
+  "practice": "Prefer allowlists to blocklists for agent tools, shell commands and network egress, because they fail closed when something new appears.",
+  "aliases": [
+    "allow list",
+    "whitelist"
+  ],
+  "chapters": [
+    "guardrails-control",
+    "sandboxes",
+    "mcp-security",
+    "secure-agent-design",
+    "mcp-at-scale",
+    "prompt-injection",
+    "web-search-hosted-retrieval",
+    "browser-automation-stack"
+  ]
+}

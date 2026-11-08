@@ -1,0 +1,15 @@
+{
+  "id": "frontier-ai-safety-commitments",
+  "term": "Frontier AI Safety Commitments",
+  "def": "Voluntary commitments made by leading AI developers at the May 2024 AI Seoul Summit, chiefly to publish safety frameworks that set risk thresholds and the mitigations they trigger.",
+  "practice": "The main reason most frontier developers now publish such frameworks; the 2026 International AI Safety Report counts 12 companies that published or updated one in 2025.",
+  "aliases": [
+    "Seoul commitments",
+    "Seoul Frontier AI Safety Commitments"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "governance-regulation",
+    "global-ai-governance"
+  ]
+}

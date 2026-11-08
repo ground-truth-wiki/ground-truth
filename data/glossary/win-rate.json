@@ -1,0 +1,16 @@
+{
+  "id": "win-rate",
+  "term": "Win rate",
+  "def": "The share of pairwise comparisons in which one system’s response is preferred over another system’s or over a fixed baseline, with ties handled by a stated rule.",
+  "practice": "The headline number of AlpacaEval-style benchmarks and internal side-by-side tests; judges tend to prefer longer answers, so control for length before trusting it.",
+  "aliases": [
+    "pairwise win rate"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "benchmark-literacy",
+    "reward-modeling",
+    "graph-rag"
+  ]
+}

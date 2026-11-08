@@ -1,0 +1,20 @@
+{
+  "id": "ai-watermarking",
+  "term": "AI watermarking",
+  "def": "Embedding an imperceptible, machine-detectable signal in generated images, video, audio or text, during or after generation, so the content can later be identified as AI-generated.",
+  "practice": "Low-perturbation image watermarks can be removed or spoofed, for example by diffusion purification, so pair them with signed provenance; the EU AI Act requires machine-readable marking from 2 August 2026.",
+  "aliases": [
+    "watermarking",
+    "invisible watermark"
+  ],
+  "chapters": [
+    "image-generation",
+    "responsible-ai",
+    "video-world-models",
+    "speech-audio",
+    "governance-regulation",
+    "speech-synthesis",
+    "synthetic-media-provenance",
+    "model-theft"
+  ]
+}

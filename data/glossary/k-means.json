@@ -1,0 +1,18 @@
+{
+  "id": "k-means",
+  "term": "k-means",
+  "def": "A clustering algorithm that places k centroids and assigns each point to its nearest one, iterating to minimize the within-cluster sum of squared distances.",
+  "practice": "Fast but assumes compact, similar-sized clusters and a k chosen up front; it also builds the coarse partitions of IVF indexes and the codebooks of product quantization.",
+  "aliases": [
+    "k-means clustering",
+    "kmeans"
+  ],
+  "chapters": [
+    "vector-search",
+    "classical-ml",
+    "embeddings",
+    "clustering-dimensionality-reduction",
+    "deduplication-decontamination",
+    "audio-codecs-tokens"
+  ]
+}

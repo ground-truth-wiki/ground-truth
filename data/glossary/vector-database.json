@@ -1,0 +1,21 @@
+{
+  "id": "vector-database",
+  "term": "Vector database",
+  "def": "A database built to store embedding vectors with metadata and serve approximate nearest-neighbor search with filtering, updates, replication and access control.",
+  "practice": "Often unnecessary at first, since Postgres with pgvector or a search engine with vector support covers many corpora; choose by filtering, deletes, multi-tenancy and cost.",
+  "aliases": [
+    "vector store",
+    "vector stores",
+    "vector DB"
+  ],
+  "chapters": [
+    "vector-databases",
+    "vector-search",
+    "production-rag",
+    "reference-architecture",
+    "threat-modeling",
+    "framework-landscape",
+    "rag-security",
+    "web-search-hosted-retrieval"
+  ]
+}

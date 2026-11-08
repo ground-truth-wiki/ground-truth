@@ -1,0 +1,13 @@
+{
+  "id": "isolation-forest",
+  "term": "Isolation forest",
+  "def": "An anomaly detector that builds trees from random features and random split values and scores each point by how few splits it takes to isolate it; anomalies have short paths.",
+  "practice": "A fast default for unsupervised anomaly detection on tabular data, available in scikit-learn; its contamination setting fixes the share of points flagged.",
+  "aliases": [
+    "iForest"
+  ],
+  "chapters": [
+    "classical-ml",
+    "anomaly-drift-detection"
+  ]
+}

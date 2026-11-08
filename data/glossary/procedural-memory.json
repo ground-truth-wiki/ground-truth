@@ -1,0 +1,13 @@
+{
+  "id": "procedural-memory",
+  "term": "Procedural memory",
+  "def": "Knowledge of how to act, held implicitly in model weights and explicitly in the agent's code, prompts, instruction files and skills.",
+  "practice": "Writing to it is riskier than writing episodic or semantic memory, so review any change an agent makes to its own instructions or skills.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory",
+    "skills-plugins",
+    "agent-research-lineage",
+    "agent-memory-architectures"
+  ]
+}

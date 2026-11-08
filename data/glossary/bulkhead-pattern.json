@@ -1,0 +1,16 @@
+{
+  "id": "bulkhead-pattern",
+  "term": "Bulkhead pattern",
+  "def": "Isolating parts of a system, such as connection pools, workers, queues or deployments per dependency or tenant, so failure or overload in one partition cannot exhaust resources for the rest.",
+  "practice": "Give each model provider, tool and large tenant its own pool and quota; Microsoft's pattern guide notes that AI inference workloads often need strict bulkheads because of deployment-level quotas and concurrency limits.",
+  "aliases": [
+    "bulkhead",
+    "bulkheads"
+  ],
+  "chapters": [
+    "reliability-engineering",
+    "cost-capacity",
+    "reference-architecture",
+    "rate-limits-overload"
+  ]
+}

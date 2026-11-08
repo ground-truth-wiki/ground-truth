@@ -1,0 +1,12 @@
+{
+  "id": "ai-winter",
+  "term": "AI winter",
+  "def": "A period of sharply reduced funding and interest in AI after promises go unmet; the two major ones began around 1974 and 1987.",
+  "practice": "The term was coined at a 1984 AAAI panel as a warning that hype would bring a backlash; people invoke it whenever promises seem to outrun reliable capability.",
+  "aliases": [],
+  "chapters": [
+    "open-problems",
+    "mental-models",
+    "history-of-ai"
+  ]
+}

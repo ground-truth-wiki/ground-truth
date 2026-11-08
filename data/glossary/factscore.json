@@ -1,0 +1,13 @@
+{
+  "id": "factscore",
+  "term": "FActScore",
+  "def": "A long-form factuality metric that splits generated text into atomic facts and reports the percentage supported by a reliable knowledge source.",
+  "practice": "Introduced on generated biographies with an automated estimator under 2% error (Min et al., 2023); later evaluators such as SAFE use the same split-then-verify recipe.",
+  "aliases": [],
+  "chapters": [
+    "eval-recipes",
+    "grounding-citations",
+    "metrics-graders",
+    "hallucination-factuality"
+  ]
+}

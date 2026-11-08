@@ -1,0 +1,11 @@
+{
+  "id": "unstructured-pruning",
+  "term": "Unstructured pruning",
+  "def": "Zeroing individual weights anywhere in a weight matrix, typically those judged least important, which leaves the matrix shape unchanged but sparse.",
+  "practice": "SparseGPT and Wanda reach about 50 percent sparsity on large models with little loss, but real speedups need sparse kernels or hardware-supported patterns such as 2:4.",
+  "aliases": [],
+  "chapters": [
+    "distillation-merging",
+    "quantization"
+  ]
+}

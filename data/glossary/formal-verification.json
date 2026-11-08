@@ -1,0 +1,15 @@
+{
+  "id": "formal-verification",
+  "term": "Formal verification",
+  "def": "Proving mathematically that a program, system or proof meets a formal specification, usually with a proof assistant, model checker or automated solver.",
+  "practice": "In AI it is the checker behind theorem-proving RL and a candidate way to trust AI-written code; the hard part is writing a specification that says what you actually want.",
+  "aliases": [
+    "formally verified"
+  ],
+  "chapters": [
+    "ai-for-science",
+    "coding-agents",
+    "secure-agent-design",
+    "adversarial-ml"
+  ]
+}

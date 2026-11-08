@@ -1,0 +1,19 @@
+{
+  "id": "symbolic-ai",
+  "term": "Symbolic AI",
+  "def": "The approach to AI that represents knowledge as human-readable symbols and manipulates them with explicit logic, rules and search.",
+  "practice": "It was the dominant paradigm from the mid-1950s to the mid-1990s; its methods, such as search, planners, SAT solvers, theorem provers and knowledge graphs, now often serve as tools that LLM agents call.",
+  "aliases": [
+    "GOFAI",
+    "good old-fashioned AI",
+    "classical AI",
+    "logic-based AI"
+  ],
+  "chapters": [
+    "neural-networks",
+    "planning-reasoning",
+    "mental-models",
+    "history-of-ai",
+    "agent-research-lineage"
+  ]
+}

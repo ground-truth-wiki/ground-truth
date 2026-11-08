@@ -1,0 +1,19 @@
+{
+  "id": "synthid",
+  "term": "SynthID",
+  "def": "Google DeepMind's family of invisible watermarks and detectors for AI-generated images, video, audio and text.",
+  "practice": "Applied to output of Google generators such as Veo; Gemini, Search, Chrome and the SynthID Detector portal check uploads, and OpenAI, NVIDIA and Kakao are listed partners (as of November 2026).",
+  "aliases": [
+    "SynthID Detector"
+  ],
+  "chapters": [
+    "image-generation",
+    "responsible-ai",
+    "video-world-models",
+    "speech-audio",
+    "image-editing-control",
+    "video-generation",
+    "music-generation",
+    "synthetic-media-provenance"
+  ]
+}

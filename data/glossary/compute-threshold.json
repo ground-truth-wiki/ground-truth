@@ -1,0 +1,17 @@
+{
+  "id": "compute-threshold",
+  "term": "Training compute threshold",
+  "def": "A legal trigger based on training compute, such as the EU AI Act's 10²⁵ FLOP presumption of systemic risk or the 10²⁶-operation frontier-model line in California and New York.",
+  "practice": "Crude but measurable: the California and New York definitions include later fine-tuning and reinforcement learning, and the European Commission can adjust its threshold by delegated act.",
+  "aliases": [
+    "compute threshold",
+    "FLOP threshold"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "scaling-laws",
+    "frontier-safety-frameworks",
+    "global-ai-governance",
+    "compute-governance"
+  ]
+}

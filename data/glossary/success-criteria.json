@@ -1,0 +1,19 @@
+{
+  "id": "success-criteria",
+  "term": "Success criteria",
+  "def": "Specific, measurable targets that define when an AI feature is good enough, usually across several dimensions such as task quality, error severity, safety, latency and cost.",
+  "practice": "Set them before building and turn them into evals, for example an F1 of at least 0.85 on a 10,000-post held-out set plus 95% of responses under 200 ms, not 'it should work well'.",
+  "aliases": [
+    "success metrics"
+  ],
+  "chapters": [
+    "system-design-method",
+    "why-evals",
+    "prompting-fundamentals",
+    "reasoning-prompts",
+    "agent-failure-modes",
+    "what-is-a-harness",
+    "agent-eval-metrics",
+    "ai-use-case-scoping"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "lakehouse",
+  "term": "Lakehouse",
+  "def": "A data architecture that adds warehouse features (transactions, schemas, governance, fast SQL) directly on open file formats in a data lake, so analytics and machine learning share one copy of the data.",
+  "practice": "Typically built from object storage, Parquet files and an open table format such as Delta Lake or Apache Iceberg, often organized in medallion layers.",
+  "aliases": [
+    "data lakehouse"
+  ],
+  "chapters": [
+    "data-governance",
+    "unstructured-pipelines",
+    "data-strategy",
+    "data-lakehouses"
+  ]
+}

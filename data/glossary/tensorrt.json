@@ -1,0 +1,16 @@
+{
+  "id": "tensorrt",
+  "term": "TensorRT and TensorRT-LLM",
+  "def": "NVIDIA's inference stack: TensorRT compiles trained models into optimized engines for NVIDIA GPUs, and TensorRT-LLM is its open-source library for serving large language models.",
+  "practice": "Often the fastest option on NVIDIA hardware but NVIDIA-only; TensorRT engines are by default tied to the GPU type and TensorRT version they were built with, while TensorRT-LLM is now architected on PyTorch (as of November 2026).",
+  "aliases": [
+    "TensorRT",
+    "TensorRT-LLM",
+    "TensorRT LLM"
+  ],
+  "chapters": [
+    "serving-engines",
+    "batching-scheduling",
+    "speculative-decoding"
+  ]
+}

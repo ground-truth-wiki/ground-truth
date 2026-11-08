@@ -1,0 +1,20 @@
+{
+  "id": "computer-use",
+  "term": "Computer use",
+  "def": "An agent capability in which a model operates a graphical interface from screenshots, returning mouse and keyboard actions that the application executes before sending back a new screenshot.",
+  "practice": "Offered as provider tools by Anthropic and OpenAI; run it in an isolated VM or browser with limited network access, and require human confirmation for consequential actions such as purchases.",
+  "aliases": [
+    "computer-use agent",
+    "GUI agent"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "agentic-rl",
+    "benchmark-literacy",
+    "evaluating-agents",
+    "sandboxes",
+    "agent-tools",
+    "api-shapes",
+    "visual-grounding"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "self-play",
+  "term": "Self-play",
+  "def": "Training an agent by having it play against copies or earlier versions of itself, so its opponent improves as it does.",
+  "practice": "How TD-Gammon and AlphaZero reached top-level play without learning from human games; language-model variants have one copy propose tasks or play an opposing role for another.",
+  "aliases": [],
+  "chapters": [
+    "rl-primer",
+    "self-improving-systems",
+    "planning-mcts",
+    "dpo-and-relatives"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "autoscaling",
+  "term": "Autoscaling",
+  "def": "Automatically adding or removing replicas of a service as load changes, driven by metrics such as queue length or latency targets.",
+  "practice": "LLM servers scale on waiting requests, KV-cache use or TTFT and inter-token latency targets rather than CPU; slow cold starts mean keeping headroom, and scaling to zero saves money at the cost of a slow first request.",
+  "aliases": [
+    "auto-scaling",
+    "autoscaler"
+  ],
+  "chapters": [
+    "serving-engines",
+    "cost-capacity",
+    "disaggregated-serving",
+    "gateway-routing-in-depth",
+    "moe-serving",
+    "inference-fleet-scaling",
+    "async-batch-workloads"
+  ]
+}

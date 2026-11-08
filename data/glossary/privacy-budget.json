@@ -1,0 +1,14 @@
+{
+  "id": "privacy-budget",
+  "term": "Privacy budget",
+  "def": "The epsilon parameter, plus delta in approximate differential privacy, that bounds how much any one record can change what an observer learns from a private output; smaller means more private.",
+  "practice": "Budgets add up across queries and releases (composition); deployed values range from VaultGemma's epsilon of 2 per 1,024-token sequence to 19.61 for the 2020 US Census redistricting data.",
+  "aliases": [
+    "privacy loss budget",
+    "privacy loss parameter"
+  ],
+  "chapters": [
+    "privacy",
+    "privacy-preserving-ml"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "owasp-mcp-top-10",
+  "term": "OWASP MCP Top 10",
+  "def": "OWASP's list of the ten main security risks in MCP deployments, including token mismanagement, scope creep, tool poisoning, supply-chain tampering, command injection, shadow MCP servers and context over-sharing.",
+  "practice": "Use it as a threat-modeling checklist for MCP alongside the OWASP Top 10 for LLM applications; the current edition labels its entries MCP01 to MCP10 with the year 2025.",
+  "aliases": [
+    "MCP Top 10"
+  ],
+  "chapters": [
+    "mcp-security",
+    "threat-modeling"
+  ]
+}

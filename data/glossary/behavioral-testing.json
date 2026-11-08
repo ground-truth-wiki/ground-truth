@@ -1,0 +1,16 @@
+{
+  "id": "behavioral-testing",
+  "term": "Behavioral testing",
+  "def": "Testing specific model capabilities with test types borrowed from software engineering, as in CheckList: minimum functionality tests, invariance tests under label-preserving changes, and directional expectation tests.",
+  "practice": "Templates generate many cases per capability, so a failure points to a specific skill instead of an average score; counterfactual matched pairs apply the same idea to fairness.",
+  "aliases": [
+    "minimum functionality test",
+    "invariance test",
+    "directional expectation test"
+  ],
+  "chapters": [
+    "eval-datasets",
+    "metrics-graders",
+    "responsible-ai"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "rectified-flow",
+  "term": "Rectified flow",
+  "def": "A flow model trained to move samples along straight lines between noise and data; retraining on its own noise-data pairings (reflow) straightens paths further for few-step sampling.",
+  "practice": "Stable Diffusion 3 is a rectified-flow transformer; in practice the term largely overlaps with flow matching on straight-line interpolation paths.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "diffusion-flow-matching"
+  ]
+}

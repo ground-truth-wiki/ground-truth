@@ -1,0 +1,17 @@
+{
+  "id": "forward-reverse-kl",
+  "term": "Forward and reverse KL",
+  "def": "The two directions of KL divergence between a target P and a model Q: forward KL(P‖Q) pushes Q to cover all of P’s mass, reverse KL(Q‖P) to concentrate on P’s main modes.",
+  "practice": "Standard distillation on teacher outputs minimizes forward KL; MiniLLM and on-policy distillation use reverse KL, which is also the direction of the usual RLHF KL penalty.",
+  "aliases": [
+    "forward KL",
+    "reverse KL"
+  ],
+  "chapters": [
+    "probability-information",
+    "distillation-merging",
+    "preference-optimization",
+    "information-theory-for-llms",
+    "llm-distillation"
+  ]
+}

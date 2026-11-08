@@ -1,0 +1,16 @@
+{
+  "id": "agentic-search",
+  "term": "Agentic search",
+  "def": "Search in which the agent explores with iterative tool calls, such as grep, glob, file reads and directory listings, instead of querying a precomputed embedding index.",
+  "practice": "The default in terminal coding agents; Anthropic suggests starting with it and adding semantic search only when speed requires it, and Cursor says it does not store embeddings of your codebase for search (as of November 2026).",
+  "aliases": [
+    "agentic grep",
+    "grep-based search"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "coding-agents",
+    "rag-fundamentals",
+    "advanced-rag"
+  ]
+}

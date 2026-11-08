@@ -1,0 +1,14 @@
+{
+  "id": "saif",
+  "term": "Secure AI Framework",
+  "def": "Google's conceptual framework for securing AI systems, with a risk map that places risks and controls across data, infrastructure, model and application components.",
+  "practice": "Google donated SAIF's risk-map data to the Coalition for Secure AI (CoSAI) in September 2025, where it continues as the CoSAI Risk Map.",
+  "aliases": [
+    "Google SAIF"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "ai-security-frameworks"
+  ],
+  "abbr": "SAIF"
+}

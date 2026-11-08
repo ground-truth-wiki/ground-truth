@@ -1,0 +1,15 @@
+{
+  "id": "ocr-free-document-understanding",
+  "term": "OCR-free document understanding",
+  "def": "Reading document images end to end, mapping pixels directly to text or structured output without a separate OCR engine.",
+  "practice": "Avoids OCR error propagation and handles layout, formulas and tables, but generative readers can produce fluent text that is not on the page, so validate the output.",
+  "aliases": [
+    "end-to-end document parsing"
+  ],
+  "chapters": [
+    "document-screen-understanding",
+    "ingestion-parsing",
+    "document-extraction",
+    "document-ocr-models"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "explicit-feedback",
+  "term": "Explicit feedback",
+  "def": "Feedback that users give deliberately in response to a request from the product, such as ratings, thumbs up or down, selected reasons or written comments.",
+  "practice": "Sparse and self-selected, so pair it with implicit signals; Apple's guidelines advise asking only when necessary, keeping it voluntary and stating what each option will change.",
+  "aliases": [
+    "explicit user feedback"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "data-flywheel",
+    "ai-product-ux",
+    "recommender-systems"
+  ]
+}

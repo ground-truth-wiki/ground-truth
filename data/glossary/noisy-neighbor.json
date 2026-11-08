@@ -1,0 +1,16 @@
+{
+  "id": "noisy-neighbor",
+  "term": "Noisy neighbor",
+  "def": "A multitenant failure mode in which one tenant's heavy usage degrades performance or availability for other tenants sharing the same resources.",
+  "practice": "One customer's agent batch can exhaust a shared provider rate limit for everyone; per-tenant quotas, bulkheads and dedicated capacity for large tenants prevent it.",
+  "aliases": [
+    "noisy neighbour",
+    "noisy neighbor problem"
+  ],
+  "chapters": [
+    "cost-capacity",
+    "reliability-engineering",
+    "production-rag",
+    "rate-limits-overload"
+  ]
+}

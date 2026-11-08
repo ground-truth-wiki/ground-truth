@@ -1,0 +1,15 @@
+{
+  "id": "judge-error-correction",
+  "term": "Judge error correction",
+  "def": "Adjusting a pass rate measured by an imperfect LLM judge using the judge’s true positive and true negative rates, measured on human-labeled data, to estimate the true pass rate.",
+  "practice": "With pass as the positive class, the Rogan-Gladen estimate is (observed pass rate + TNR − 1) ÷ (TPR + TNR − 1); it becomes unstable as TPR + TNR nears 1, and its interval should include calibration-set uncertainty.",
+  "aliases": [
+    "Rogan-Gladen estimator",
+    "Rogan-Gladen correction",
+    "bias-corrected pass rate"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "eval-statistics"
+  ]
+}

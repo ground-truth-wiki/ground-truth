@@ -1,0 +1,22 @@
+{
+  "id": "max-output-tokens",
+  "term": "Max output tokens",
+  "def": "The upper limit on tokens a model may generate in one response, set per request and capped by a per-model maximum.",
+  "practice": "On reasoning models thinking tokens count against it; a response that hits it stops early with a length or incomplete status, so always check why generation stopped.",
+  "aliases": [
+    "max_tokens",
+    "max_completion_tokens",
+    "maximum output tokens",
+    "output token limit"
+  ],
+  "chapters": [
+    "model-apis",
+    "agent-loop",
+    "reasoning-models",
+    "prompt-config-management",
+    "provider-agent-sdks",
+    "model-documentation",
+    "agent-client-protocol",
+    "rate-limits-overload"
+  ]
+}

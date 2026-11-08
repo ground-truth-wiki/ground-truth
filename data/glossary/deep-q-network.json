@@ -1,0 +1,15 @@
+{
+  "id": "deep-q-network",
+  "term": "Deep Q-network",
+  "def": "Q-learning with a deep neural network as the action-value function, stabilized by experience replay and a periodically updated target network.",
+  "practice": "DeepMind's agent (2013 preprint, 2015 Nature paper) learned dozens of Atari games from raw pixels and the score, with the same network and settings for every game.",
+  "aliases": [
+    "DQN",
+    "deep Q-learning"
+  ],
+  "chapters": [
+    "rl-primer",
+    "value-based-rl"
+  ],
+  "abbr": "DQN"
+}

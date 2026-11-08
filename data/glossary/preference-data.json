@@ -1,0 +1,20 @@
+{
+  "id": "preference-data",
+  "term": "Preference data",
+  "def": "Training examples that pair a prompt with two or more responses and a judgment of which is better, usually stored as a chosen and a rejected response.",
+  "practice": "Labeled by people or AI judges; pairs sampled from the model being trained usually teach more than pairs written by other models.",
+  "aliases": [
+    "preference pair",
+    "comparison data"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "post-training-overview",
+    "data-flywheel",
+    "data-strategy",
+    "labeling-annotation",
+    "loss-functions",
+    "classification-metrics",
+    "reward-modeling"
+  ]
+}

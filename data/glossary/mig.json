@@ -1,0 +1,15 @@
+{
+  "id": "mig",
+  "term": "Multi-Instance GPU",
+  "def": "An NVIDIA feature that partitions a supported data-center GPU, such as an A100 or H100, into as many as seven isolated instances, each with its own memory, cache and compute.",
+  "practice": "Lets several small models or tenants share one GPU with predictable performance; Kubernetes, through NVIDIA's device plugin, schedules each MIG instance as a separate device.",
+  "aliases": [
+    "MIG"
+  ],
+  "chapters": [
+    "hardware",
+    "serving-engines",
+    "cost-engineering"
+  ],
+  "abbr": "MIG"
+}

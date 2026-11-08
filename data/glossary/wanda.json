@@ -1,0 +1,13 @@
+{
+  "id": "wanda",
+  "term": "Wanda",
+  "def": "Pruning by Weights and activations: removing the weights with the smallest product of magnitude and input-activation norm, compared per output, with no retraining or weight update.",
+  "practice": "Much simpler and faster to run than SparseGPT, with competitive quality at moderate sparsity (Sun et al., ICLR 2024).",
+  "aliases": [
+    "pruning by weights and activations"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "llm-pruning"
+  ]
+}

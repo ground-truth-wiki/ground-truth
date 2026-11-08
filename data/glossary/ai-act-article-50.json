@@ -1,0 +1,16 @@
+{
+  "id": "ai-act-article-50",
+  "term": "EU AI Act Article 50",
+  "def": "The AI Act's transparency article: providers must disclose AI interaction and mark synthetic content machine-readably; deployers must disclose deepfakes, emotion recognition and AI-written public-interest text.",
+  "practice": "Applies from 2 August 2026, with marking by 2 December 2026 for generative systems already on the market; the Code of Practice on Transparency of AI-generated Content (final 10 June 2026) is an accepted route to compliance (as of November 2026, not legal advice).",
+  "aliases": [
+    "AI Act Article 50",
+    "AI Act transparency obligations"
+  ],
+  "chapters": [
+    "governance-regulation",
+    "responsible-ai",
+    "image-generation",
+    "synthetic-media-provenance"
+  ]
+}

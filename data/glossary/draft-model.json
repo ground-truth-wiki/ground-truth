@@ -1,0 +1,15 @@
+{
+  "id": "draft-model",
+  "term": "Draft model",
+  "def": "A smaller, faster model that proposes candidate tokens for a larger target model to verify in speculative decoding; it must share the target's vocabulary or have its tokens mapped.",
+  "practice": "Works best with a small sibling from the same model family, since acceptance falls when the two disagree; TensorRT-LLM and llama.cpp's server accept a separate draft model.",
+  "aliases": [
+    "drafter"
+  ],
+  "chapters": [
+    "speculative-decoding",
+    "numbers-to-know",
+    "multi-agent-patterns",
+    "local-inference"
+  ]
+}

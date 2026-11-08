@@ -1,0 +1,21 @@
+{
+  "id": "threat-model",
+  "term": "Threat model",
+  "def": "A structured description of what a system must protect, who might attack it, what those attackers know, can reach and want, and the threats that follow.",
+  "practice": "Write one per AI feature before design review; ML papers also use the phrase for the attacker's assumed knowledge and access, such as white-box or query-only.",
+  "aliases": [
+    "threat modeling",
+    "attacker model",
+    "adversary model"
+  ],
+  "chapters": [
+    "threat-modeling",
+    "red-teaming",
+    "prompt-injection",
+    "secure-agent-design",
+    "supply-chain-security",
+    "privacy",
+    "fine-tuning-and-safety",
+    "rag-security"
+  ]
+}

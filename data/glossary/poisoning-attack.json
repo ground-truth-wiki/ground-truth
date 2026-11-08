@@ -1,0 +1,16 @@
+{
+  "id": "poisoning-attack",
+  "term": "Poisoning attack",
+  "def": "A training-time attack that inserts or alters training data (data poisoning) or model parameters (model poisoning) to degrade a model, change its outputs on chosen inputs or plant a backdoor.",
+  "practice": "For LLMs the routes are scraped pretraining data, fine-tuning and preference data and third-party weights; 2025 research found a small, roughly constant number of poisoned documents could plant a backdoor regardless of model size.",
+  "aliases": [
+    "training-data poisoning",
+    "training data poisoning"
+  ],
+  "chapters": [
+    "supply-chain-security",
+    "threat-modeling",
+    "pretraining-data",
+    "rag-security"
+  ]
+}

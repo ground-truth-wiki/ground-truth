@@ -1,0 +1,22 @@
+{
+  "id": "workspace-trust",
+  "term": "Workspace trust",
+  "def": "A safeguard in editors and harnesses that asks the user to approve a folder before loading its project configuration or running code from it.",
+  "practice": "In an untrusted folder, project settings, hooks, MCP servers and similar features stay off (VS Code Restricted Mode, Gemini CLI trusted folders, Codex project trust, Claude Code's trust dialog); it is a first defense against a malicious repository.",
+  "aliases": [
+    "trusted folders",
+    "folder trust",
+    "project trust",
+    "Restricted Mode",
+    "trust dialog"
+  ],
+  "chapters": [
+    "sandboxes",
+    "secure-agent-design",
+    "claude-code",
+    "coding-harness-landscape",
+    "supply-chain-security",
+    "harness-permissions-hooks",
+    "coding-agent-security"
+  ]
+}

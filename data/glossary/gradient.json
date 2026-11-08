@@ -1,0 +1,17 @@
+{
+  "id": "gradient",
+  "term": "Gradient",
+  "def": "The vector of partial derivatives of a scalar function with respect to all of its inputs; it points in the direction of steepest increase.",
+  "practice": "Training moves parameters against the gradient of the loss, and the gradient's L2 norm is one of the first training-health signals engineers log.",
+  "aliases": [],
+  "chapters": [
+    "calculus-optimization",
+    "neural-networks",
+    "classical-ml",
+    "rl-primer",
+    "distributed-training",
+    "memory-math",
+    "eigenvectors-svd-pca",
+    "loss-functions"
+  ]
+}

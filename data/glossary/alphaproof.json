@@ -1,0 +1,12 @@
+{
+  "id": "alphaproof",
+  "term": "AlphaProof",
+  "def": "A Google DeepMind system that combines a pretrained language model with AlphaZero-style reinforcement learning to find and verify proofs in Lean.",
+  "practice": "With AlphaGeometry 2 it scored 28 of 42 at IMO 2024, silver level, on hand-formalized problems with up to three days per problem; the method appeared in Nature in November 2025.",
+  "aliases": [],
+  "chapters": [
+    "ai-for-science",
+    "rlvr-reasoning",
+    "ai-for-mathematics"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "meta-evaluation",
+  "term": "Meta-evaluation",
+  "def": "Evaluating an evaluator: measuring how well a metric or judge agrees with human judgments or with objective correctness.",
+  "practice": "Reported as TPR and TNR, Cohen’s kappa or rank correlation against human labels; on JudgeBench (2024), strong judges such as GPT-4o scored only slightly above random guessing on hard, objectively labeled pairs.",
+  "aliases": [
+    "evaluating the evaluator",
+    "judge evaluation",
+    "metric validation"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "metrics-graders",
+    "reward-modeling",
+    "computer-use-benchmarks",
+    "text-generation-metrics",
+    "judge-models-meta-evaluation",
+    "hallucination-factuality",
+    "scalable-oversight"
+  ]
+}

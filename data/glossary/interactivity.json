@@ -1,0 +1,15 @@
+{
+  "id": "interactivity",
+  "term": "Interactivity",
+  "def": "Generation speed seen by one user, in tokens per second per user, roughly the inverse of inter-token latency.",
+  "practice": "Hardware benchmarks such as InferenceX plot throughput per GPU against interactivity; larger batches buy throughput by giving up interactivity, so compare systems at the interactivity your product needs.",
+  "aliases": [
+    "tokens per second per user",
+    "tok/s/user"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "hardware",
+    "inference-benchmarking"
+  ]
+}

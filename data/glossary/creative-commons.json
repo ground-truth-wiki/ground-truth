@@ -1,0 +1,13 @@
+{
+  "id": "creative-commons",
+  "term": "Creative Commons license",
+  "def": "One of six standard public copyright licenses built from the elements Attribution (BY), ShareAlike (SA), NonCommercial (NC) and NoDerivatives (ND), alongside the CC0 public-domain dedication.",
+  "practice": "Common on datasets, for example Wikipedia text under CC BY-SA; the conditions bind only uses that need copyright permission, so whether they reach AI training depends on jurisdiction (not legal advice).",
+  "aliases": [
+    "CC license"
+  ],
+  "chapters": [
+    "data-governance",
+    "pretraining-data"
+  ]
+}

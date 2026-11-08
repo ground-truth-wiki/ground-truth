@@ -1,0 +1,17 @@
+{
+  "id": "hidden-size",
+  "term": "Hidden size",
+  "def": "The width of the residual stream: the length of the vector each token carries from one transformer block to the next.",
+  "practice": "Listed as hidden_size or d_model in model configs, for example 4,096 in Llama 2 7B and Llama 3 8B; per-block parameters grow with its square.",
+  "aliases": [
+    "d_model",
+    "model dimension"
+  ],
+  "chapters": [
+    "transformer-block",
+    "memory-math",
+    "fine-tuning-practice",
+    "architecture-choices",
+    "adversarial-ml"
+  ]
+}

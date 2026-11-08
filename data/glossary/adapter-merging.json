@@ -1,0 +1,16 @@
+{
+  "id": "adapter-merging",
+  "term": "Adapter merging",
+  "def": "Folding a trained LoRA adapter's low-rank update into the base model's weights, producing one standalone checkpoint that runs without adapter overhead.",
+  "practice": "Merge for single-model serving or export (merge_and_unload in PEFT); keep adapters separate to serve many fine-tunes on one base with multi-LoRA serving.",
+  "aliases": [
+    "merge_and_unload",
+    "merged adapter"
+  ],
+  "chapters": [
+    "fine-tuning-practice",
+    "distillation-merging",
+    "serving-engines",
+    "peft-methods"
+  ]
+}

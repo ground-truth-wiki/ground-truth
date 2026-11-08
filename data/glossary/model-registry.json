@@ -1,0 +1,16 @@
+{
+  "id": "model-registry",
+  "term": "Model registry",
+  "def": "A versioned catalog of trained models with metadata, lineage, aliases or stages and approval status, used as the single source from which models are promoted and deployed.",
+  "practice": "MLflow, SageMaker and Vertex AI each provide one; for fine-tuned or self-hosted models, register weights, adapters, eval results and approvals, and deploy only from the registry.",
+  "aliases": [
+    "model store"
+  ],
+  "chapters": [
+    "prompt-config-management",
+    "ci-cd-for-ai",
+    "fine-tuning-practice",
+    "supply-chain-security",
+    "mlops-foundations"
+  ]
+}

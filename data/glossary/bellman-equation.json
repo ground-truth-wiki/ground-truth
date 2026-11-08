@@ -1,0 +1,12 @@
+{
+  "id": "bellman-equation",
+  "term": "Bellman equation",
+  "def": "The recursion stating that a state's value equals the expected immediate reward plus the discounted value of the next state; its optimality form maximizes over actions.",
+  "practice": "Dynamic programming, TD learning and Q-learning all move value estimates toward the right-hand side of this equation, a step called a Bellman backup.",
+  "aliases": [
+    "Bellman optimality equation"
+  ],
+  "chapters": [
+    "rl-primer"
+  ]
+}

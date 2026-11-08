@@ -1,0 +1,15 @@
+{
+  "id": "web-bot-auth",
+  "term": "Web Bot Auth",
+  "def": "An IETF working group and draft protocol for bots and AI agents to authenticate to websites by signing requests with HTTP Message Signatures, with keys published at a Signature-Agent URL.",
+  "practice": "Lets a site tell a declared agent from an impersonator; still an Internet-Draft as of November 2026, though Visa's Trusted Agent Protocol already aligns with it.",
+  "aliases": [
+    "webbotauth"
+  ],
+  "chapters": [
+    "protocol-soup",
+    "computer-use-agents",
+    "agent-facing-web",
+    "agentic-commerce-protocols"
+  ]
+}

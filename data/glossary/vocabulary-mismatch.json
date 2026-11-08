@@ -1,0 +1,17 @@
+{
+  "id": "vocabulary-mismatch",
+  "term": "Vocabulary mismatch",
+  "def": "The problem that people describe the same concept with different words, so exact term matching misses relevant documents that use other wording.",
+  "practice": "The main reason for query expansion, document expansion, learned sparse models and dense retrieval; its mirror image, one word with several meanings, hurts keyword precision instead.",
+  "aliases": [
+    "vocabulary problem",
+    "lexical gap",
+    "term mismatch"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "query-understanding",
+    "embeddings",
+    "ir-foundations"
+  ]
+}

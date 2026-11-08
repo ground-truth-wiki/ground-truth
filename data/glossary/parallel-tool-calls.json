@@ -1,0 +1,13 @@
+{
+  "id": "parallel-tool-calls",
+  "term": "Parallel tool calls",
+  "def": "Several tool calls requested in a single model response, which the harness may run concurrently before returning all the results together.",
+  "practice": "Run independent read-only calls concurrently and keep side-effecting or order-dependent ones sequential; providers let you turn the feature off when order matters.",
+  "aliases": [
+    "parallel tool use"
+  ],
+  "chapters": [
+    "agent-tools",
+    "agent-loop"
+  ]
+}

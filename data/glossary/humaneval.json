@@ -1,0 +1,16 @@
+{
+  "id": "humaneval",
+  "term": "HumanEval",
+  "def": "OpenAI's 2021 benchmark of 164 hand-written Python problems, each a function signature and docstring, scored by running unit tests on the generated code.",
+  "practice": "Saturated by frontier models as of November 2026; HumanEval+ (EvalPlus) adds about 80 times more tests and changed model rankings, and repository-level benchmarks such as SWE-bench say more about real coding work.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy",
+    "metrics-graders",
+    "coding-agents",
+    "web-data-pipeline",
+    "base-model-evaluation",
+    "benchmark-validity",
+    "deduplication-decontamination"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "reference-model",
+  "term": "Reference model",
+  "def": "A frozen copy of the starting policy, usually the SFT model, against which the KL penalty in RLHF or the log-probability ratio in DPO is measured.",
+  "practice": "Keeps the trained model from drifting but costs memory and compute, unless its log-probabilities are precomputed or the method is reference-free, as ORPO and SimPO are.",
+  "aliases": [
+    "reference policy",
+    "ref model"
+  ],
+  "chapters": [
+    "preference-optimization",
+    "rlvr-reasoning",
+    "post-training-overview",
+    "policy-gradient-methods",
+    "dpo-and-relatives",
+    "llm-policy-gradients"
+  ]
+}

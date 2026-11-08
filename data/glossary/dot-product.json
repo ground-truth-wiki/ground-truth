@@ -1,0 +1,20 @@
+{
+  "id": "dot-product",
+  "term": "Dot product",
+  "def": "The sum of the element-wise products of two equal-length vectors, equal to the product of their lengths times the cosine of the angle between them.",
+  "practice": "Attention scores, similarity search and every output unit of a linear layer are dot products; for unit-length vectors it equals cosine similarity.",
+  "aliases": [
+    "inner product",
+    "scalar product"
+  ],
+  "chapters": [
+    "linear-algebra",
+    "attention",
+    "embeddings",
+    "vector-search",
+    "positional-encoding",
+    "high-dimensional-geometry",
+    "recurrent-networks",
+    "word-embeddings"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "saddle-point",
+  "term": "Saddle point",
+  "def": "A point where the gradient is zero but the function curves upward in some directions and downward in others, so it is neither a minimum nor a maximum.",
+  "practice": "In high-dimensional losses, saddle points and the plateaus around them, rather than poor local minima, have been argued to be the main obstacle for gradient descent.",
+  "aliases": [],
+  "chapters": [
+    "calculus-optimization",
+    "training-stability"
+  ]
+}

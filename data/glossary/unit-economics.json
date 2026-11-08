@@ -1,0 +1,18 @@
+{
+  "id": "unit-economics",
+  "term": "Unit economics",
+  "def": "Relating technology spend to units of business value, such as cost per task, per tenant or per case resolved, to judge whether a feature pays for itself.",
+  "practice": "For AI features the useful unit is usually cost per successful task, including retries, reasoning tokens and tool calls, reported as a distribution rather than a mean.",
+  "aliases": [
+    "unit metrics"
+  ],
+  "chapters": [
+    "cost-capacity",
+    "cost-engineering",
+    "back-of-envelope",
+    "ai-use-case-scoping",
+    "ai-pricing-unit-economics",
+    "measuring-ai-impact",
+    "ai-industry-map"
+  ]
+}

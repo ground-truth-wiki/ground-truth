@@ -1,0 +1,13 @@
+{
+  "id": "intersectional-fairness",
+  "term": "Intersectional fairness",
+  "def": "Evaluating fairness across combinations of attributes, such as gender and skin type together, because disparities can stay hidden when each attribute is examined alone.",
+  "practice": "Gender Shades (Buolamwini and Gebru, 2018) found commercial gender classifiers erred up to 34.7% for darker-skinned women versus 0.8% for lighter-skinned men; more slices mean smaller samples, so report intervals.",
+  "aliases": [
+    "intersectional evaluation"
+  ],
+  "chapters": [
+    "responsible-ai",
+    "eval-statistics"
+  ]
+}

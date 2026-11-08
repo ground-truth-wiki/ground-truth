@@ -1,0 +1,12 @@
+{
+  "id": "toolformer",
+  "term": "Toolformer",
+  "def": "A language model (Schick et al., 2023) that taught itself, through self-supervised training from a few demonstrations per API, when to call tools such as a calculator, search engines or a calendar.",
+  "practice": "Often cited with ReAct as an early milestone of tool use; today's function calling instead passes tool schemas in the prompt and is learned in post-training.",
+  "aliases": [],
+  "chapters": [
+    "agent-tools",
+    "function-calling-training",
+    "agent-research-lineage"
+  ]
+}

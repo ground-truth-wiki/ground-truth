@@ -1,0 +1,15 @@
+{
+  "id": "iso-27001",
+  "term": "ISO/IEC 27001",
+  "def": "The international standard specifying requirements for an information security management system (ISMS), covering risk assessment, security controls and continual improvement, against which accredited auditors certify organizations.",
+  "practice": "With SOC 2, the usual security baseline in enterprise vendor reviews; ISO/IEC 42001 applies the same management-system structure to AI.",
+  "aliases": [
+    "ISO 27001",
+    "ISO/IEC 27001:2022"
+  ],
+  "chapters": [
+    "enterprise-readiness",
+    "governance-regulation",
+    "ai-security-frameworks"
+  ]
+}

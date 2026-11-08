@@ -1,0 +1,16 @@
+{
+  "id": "dead-letter-queue",
+  "term": "Dead-letter queue",
+  "def": "A side queue holding messages that exhausted their delivery attempts or expired, so they can be inspected and replayed instead of being lost or blocking the main queue.",
+  "practice": "Route failed AI jobs (malformed outputs, repeated 400s, expired batch items) to a DLQ with the error and trace id, and alert on its depth.",
+  "aliases": [
+    "DLQ"
+  ],
+  "chapters": [
+    "reference-architecture",
+    "reliability-engineering",
+    "long-running-agents",
+    "async-batch-workloads"
+  ],
+  "abbr": "DLQ"
+}

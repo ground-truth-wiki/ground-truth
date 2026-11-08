@@ -1,0 +1,17 @@
+{
+  "id": "anomaly-detection",
+  "term": "Anomaly detection",
+  "def": "Identifying observations that deviate markedly from the bulk of the data, either within data that contain outliers or as new points that differ from clean normal data.",
+  "practice": "In AI systems it flags spend or token-rate spikes, runaway agent loops, abusive traffic and broken data feeds; the assumed share of anomalies sets the alert threshold.",
+  "aliases": [
+    "outlier detection"
+  ],
+  "chapters": [
+    "guardrails-control",
+    "cost-capacity",
+    "classical-ml",
+    "anomaly-drift-detection",
+    "time-series-forecasting",
+    "data-validation-drift"
+  ]
+}

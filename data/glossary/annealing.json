@@ -1,0 +1,21 @@
+{
+  "id": "annealing",
+  "term": "Annealing",
+  "def": "The final phase of pretraining in which the learning rate decays, often linearly to zero, usually while the data mix shifts toward the highest-quality sources.",
+  "practice": "OLMo 2 anneals on 50B to 300B curated tokens; Llama 3 also anneals a half-trained 8B model on 40B tokens to judge whether a new dataset helps.",
+  "aliases": [
+    "learning-rate annealing",
+    "cooldown",
+    "decay phase"
+  ],
+  "chapters": [
+    "pretraining-run",
+    "mid-training",
+    "pretraining-data",
+    "training-hyperparameters",
+    "data-mixing",
+    "base-model-evaluation",
+    "gateway-routing-in-depth",
+    "inference-benchmarking"
+  ]
+}

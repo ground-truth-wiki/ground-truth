@@ -1,0 +1,18 @@
+{
+  "id": "language-server-protocol",
+  "term": "Language Server Protocol",
+  "def": "An open JSON-RPC protocol between editors and language servers, which supply code intelligence such as completion, go-to-definition, find references and diagnostics, so one server works in many tools.",
+  "practice": "Coding harnesses connect agents to language servers for exact symbol navigation and type errors instead of text search alone, and the Agent Client Protocol borrows its editor-to-agent model.",
+  "aliases": [
+    "LSP"
+  ],
+  "chapters": [
+    "structured-code-retrieval",
+    "protocol-soup",
+    "coding-agents",
+    "harness-anatomy",
+    "coding-harness-landscape",
+    "agent-client-protocol"
+  ],
+  "abbr": "LSP"
+}

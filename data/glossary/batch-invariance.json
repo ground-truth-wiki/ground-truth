@@ -1,0 +1,17 @@
+{
+  "id": "batch-invariance",
+  "term": "Batch invariance",
+  "def": "The property that a kernel or model gives bit-identical results for a request no matter how many other requests share its batch.",
+  "practice": "Most inference kernels lack it, the main reason temperature-0 outputs vary with server load; vLLM and SGLang offer slower batch-invariant or deterministic modes, as of November 2026.",
+  "aliases": [
+    "batch-invariant"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "serving-engines",
+    "batching-scheduling",
+    "eval-statistics",
+    "floating-point-formats",
+    "inference-nondeterminism"
+  ]
+}

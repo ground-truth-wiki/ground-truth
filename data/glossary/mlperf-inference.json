@@ -1,0 +1,13 @@
+{
+  "id": "mlperf-inference",
+  "term": "MLPerf Inference",
+  "def": "MLCommons' industry benchmark suite for inference systems, with fixed models, accuracy targets and load scenarios: Offline, Server, SingleStream and MultiStream, plus an Interactive latency tier for LLMs.",
+  "practice": "LLM tests cap TTFT and TPOT per scenario, for example 3 s and 80 ms for GPT-OSS-120B in Server as of November 2026; compare results only within one round and division, with system details.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "latency-throughput",
+    "benchmark-literacy",
+    "inference-benchmarking"
+  ]
+}

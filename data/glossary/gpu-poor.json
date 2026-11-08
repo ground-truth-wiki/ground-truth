@@ -1,0 +1,12 @@
+{
+  "id": "gpu-poor",
+  "term": "GPU-poor",
+  "def": "Informal label for startups, labs and researchers with too few top accelerators to train frontier-scale models, as opposed to the 'GPU-rich' few with huge fleets.",
+  "practice": "SemiAnalysis popularized the split in August 2023, describing the rich as a handful of firms with more than 20,000 A100 or H100 GPUs; it now stands for unequal access to compute.",
+  "aliases": [],
+  "chapters": [
+    "small-local-models",
+    "open-weight-frontier",
+    "ai-industry-map"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "many-shot-icl",
+  "term": "Many-shot in-context learning",
+  "def": "In-context learning with hundreds or thousands of demonstrations in the prompt, made practical by long context windows.",
+  "practice": "Agarwal et al. (2024) report gains over few-shot on many tasks, but cost grows linearly with the examples, so cache the example block; the same effect enables many-shot jailbreaking.",
+  "aliases": [
+    "many-shot ICL",
+    "many-shot prompting",
+    "many-shot"
+  ],
+  "chapters": [
+    "in-context-learning",
+    "prompting-fundamentals",
+    "long-context",
+    "prompt-caching",
+    "jailbreaks-misuse",
+    "jailbreak-techniques"
+  ]
+}

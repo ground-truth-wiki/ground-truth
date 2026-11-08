@@ -1,0 +1,22 @@
+{
+  "id": "binary-cross-entropy",
+  "term": "Binary cross-entropy",
+  "def": "The loss for a predicted probability p against a 0 or 1 label y, −[y log p + (1 − y) log(1 − p)]: the cross-entropy between two Bernoulli distributions.",
+  "practice": "The standard loss for binary and multi-label classifiers; computing it from logits in one fused step, as PyTorch’s BCEWithLogitsLoss does, avoids the overflow and underflow of taking the log of a sigmoid.",
+  "aliases": [
+    "BCE",
+    "log loss",
+    "logistic loss"
+  ],
+  "chapters": [
+    "classical-ml",
+    "neural-networks",
+    "loss-functions",
+    "classification-metrics",
+    "linear-and-kernel-models",
+    "word-embeddings",
+    "pretraining-run",
+    "dpo-and-relatives"
+  ],
+  "abbr": "BCE"
+}

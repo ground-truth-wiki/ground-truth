@@ -1,0 +1,23 @@
+{
+  "id": "reference-based-evaluation",
+  "term": "Reference-based and reference-free evaluation",
+  "def": "Reference-based evaluation compares an output with a known correct answer; reference-free evaluation judges it from the input, the context or rules alone.",
+  "practice": "Correctness usually needs a reference, while faithfulness, format and safety checks can be reference-free, so they can run on live traffic.",
+  "aliases": [
+    "reference-based evaluation",
+    "reference-free evaluation",
+    "reference-based",
+    "reference-free",
+    "reference-guided grading"
+  ],
+  "chapters": [
+    "metrics-graders",
+    "llm-as-judge",
+    "online-evaluation",
+    "dpo-and-relatives",
+    "nlp-tasks",
+    "multimodal-evaluation",
+    "text-generation-metrics",
+    "judge-models-meta-evaluation"
+  ]
+}

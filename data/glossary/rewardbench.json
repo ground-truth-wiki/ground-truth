@@ -1,0 +1,13 @@
+{
+  "id": "rewardbench",
+  "term": "RewardBench",
+  "def": "A benchmark of prompts with chosen and rejected responses that measures how often a reward model scores the better response higher, across chat, reasoning and safety.",
+  "practice": "The first widely used reward model benchmark (2024); its harder successor, RewardBench 2 (2025), correlates strongly with best-of-n and PPO results, according to its authors.",
+  "aliases": [],
+  "chapters": [
+    "preference-optimization",
+    "benchmark-literacy",
+    "reward-modeling",
+    "judge-models-meta-evaluation"
+  ]
+}

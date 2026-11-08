@@ -1,0 +1,16 @@
+{
+  "id": "ai-incident-database",
+  "term": "AI Incident Database",
+  "def": "A public database, run by the Responsible AI Collaborative, that indexes real-world harms and near harms from deployed AI systems, modeled on incident databases in aviation and computer security.",
+  "practice": "Search it for incidents in your domain before launch; its reports are raw material for pre-mortems, threat models and eval cases.",
+  "aliases": [
+    "AIID"
+  ],
+  "chapters": [
+    "incidents-on-call",
+    "responsible-ai",
+    "ai-risk-management",
+    "ai-failure-casebook"
+  ],
+  "abbr": "AIID"
+}

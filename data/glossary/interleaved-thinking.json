@@ -1,0 +1,15 @@
+{
+  "id": "interleaved-thinking",
+  "term": "Interleaved thinking",
+  "def": "Reasoning a model does between tool calls within one assistant turn, so it can think about each tool result before choosing its next action.",
+  "practice": "Pass the thinking blocks back unchanged with the tool results; as of November 2026, Claude models with adaptive thinking interleave automatically, while some earlier Claude 4 models needed a beta header.",
+  "aliases": [
+    "thinking between tool calls"
+  ],
+  "chapters": [
+    "reasoning-models",
+    "planning-reasoning",
+    "agent-loop",
+    "function-calling-training"
+  ]
+}

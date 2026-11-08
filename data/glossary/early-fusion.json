@@ -1,0 +1,13 @@
+{
+  "id": "early-fusion",
+  "term": "Early fusion",
+  "def": "Feeding all modalities into one transformer as a shared token sequence from the first layer, instead of attaching a separately pretrained encoder through a projector (late fusion).",
+  "practice": "Lets one model read and write interleaved images and text, as in Chameleon, whose authors needed a dedicated recipe to keep training stable.",
+  "aliases": [],
+  "chapters": [
+    "vision-language-models",
+    "image-generation",
+    "vlm-architectures",
+    "autoregressive-image-generation"
+  ]
+}

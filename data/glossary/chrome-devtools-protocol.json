@@ -1,0 +1,17 @@
+{
+  "id": "chrome-devtools-protocol",
+  "term": "Chrome DevTools Protocol",
+  "def": "The protocol that Chromium-based browsers expose for remote inspection and control, used by DevTools itself and by automation tools such as Puppeteer and Playwright.",
+  "practice": "Browser agents often attach over CDP to a local, existing or hosted browser, and Chrome DevTools MCP uses it to give coding agents a live Chrome for testing and debugging.",
+  "aliases": [
+    "CDP"
+  ],
+  "chapters": [
+    "computer-use-agents",
+    "mcp-server-catalog",
+    "browser-automation-stack",
+    "computer-use-benchmarks",
+    "agent-facing-web"
+  ],
+  "abbr": "CDP"
+}

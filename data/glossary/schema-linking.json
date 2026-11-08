@@ -1,0 +1,11 @@
+{
+  "id": "schema-linking",
+  "term": "Schema linking",
+  "def": "In text-to-SQL, identifying which tables, columns and cell values in a database schema a natural-language question refers to.",
+  "practice": "For large schemas, retrieve candidate tables and columns by their descriptions before generating SQL; systems such as RAT-SQL and DIN-SQL treat linking as an explicit step.",
+  "aliases": [],
+  "chapters": [
+    "structured-code-retrieval",
+    "data-analysis-agents"
+  ]
+}

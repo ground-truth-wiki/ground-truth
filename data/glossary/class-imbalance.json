@@ -1,0 +1,18 @@
+{
+  "id": "class-imbalance",
+  "term": "Class imbalance",
+  "def": "A classification setting in which one class, the majority, is much more frequent than another, the minority.",
+  "practice": "Makes accuracy misleading; report per-class metrics and precision-recall curves, then consider class weights, resampling or threshold tuning.",
+  "aliases": [
+    "imbalanced data",
+    "imbalanced dataset",
+    "imbalanced classes",
+    "class-imbalanced dataset"
+  ],
+  "chapters": [
+    "classical-ml",
+    "eval-recipes",
+    "llm-as-judge",
+    "classification-metrics"
+  ]
+}

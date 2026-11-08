@@ -1,0 +1,16 @@
+{
+  "id": "structured-pruning",
+  "term": "Structured pruning",
+  "def": "Removing whole components of a network, such as feed-forward neurons, attention heads, embedding channels or entire layers, so the smaller dense model runs faster on standard hardware.",
+  "practice": "Usually followed by distillation to recover quality; NVIDIA's Minitron work found width pruning beat depth pruning after retraining, for models up to 15B parameters.",
+  "aliases": [
+    "width pruning",
+    "depth pruning",
+    "layer pruning"
+  ],
+  "chapters": [
+    "distillation-merging",
+    "small-local-models",
+    "llm-pruning"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ollama",
+  "term": "Ollama",
+  "def": "Open-source tool that downloads, manages and runs open-weight models locally behind a command line and a REST API, with llama.cpp among its backends.",
+  "practice": "A common first way to run local models and point apps or coding agents at them; its API listens on localhost port 11434 by default and also offers OpenAI-compatible endpoints.",
+  "aliases": [],
+  "chapters": [
+    "small-local-models",
+    "serving-engines",
+    "edge-on-device",
+    "chat-templates",
+    "local-inference",
+    "open-model-communities"
+  ]
+}

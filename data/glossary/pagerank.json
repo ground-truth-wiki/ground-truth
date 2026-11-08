@@ -1,0 +1,12 @@
+{
+  "id": "pagerank",
+  "term": "PageRank",
+  "def": "A link-analysis score in which a node's importance is the long-run probability that a random surfer, following links and occasionally jumping to a random node, is on it.",
+  "practice": "Gave early Google a query-independent quality signal; its personalized variant, which restarts from query entities, ranks graph nodes in graph-RAG methods such as HippoRAG.",
+  "aliases": [],
+  "chapters": [
+    "ir-foundations",
+    "advanced-rag",
+    "graph-rag"
+  ]
+}

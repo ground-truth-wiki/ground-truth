@@ -1,0 +1,13 @@
+{
+  "id": "temporal-knowledge-graph",
+  "term": "Temporal knowledge graph",
+  "def": "A knowledge graph whose facts carry time information, such as when each became true and when it was superseded, so it can answer both what is true now and what was true before.",
+  "practice": "Used for agent memory, for example by Zep's Graphiti, which invalidates outdated facts instead of deleting them; this helps resolve contradictions between old and new facts about a user.",
+  "aliases": [
+    "temporal context graph"
+  ],
+  "chapters": [
+    "agent-memory",
+    "agent-memory-architectures"
+  ]
+}

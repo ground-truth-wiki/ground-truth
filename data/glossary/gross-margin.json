@@ -1,0 +1,14 @@
+{
+  "id": "gross-margin",
+  "term": "Gross margin",
+  "def": "Revenue minus the direct cost of delivering the product, expressed as a share of revenue.",
+  "practice": "Inference is a direct cost for AI products, so margins sit below classic SaaS: a16z (2020) cited 50 to 60% versus 60 to 80% or more, and Bessemer (2025) about 25% for the fastest-growing AI startups.",
+  "aliases": [
+    "gross profit margin"
+  ],
+  "chapters": [
+    "cost-engineering",
+    "cost-capacity",
+    "ai-pricing-unit-economics"
+  ]
+}

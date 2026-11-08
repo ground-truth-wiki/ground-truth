@@ -1,0 +1,16 @@
+{
+  "id": "queueing-delay",
+  "term": "Queueing delay",
+  "def": "Time a request waits after arriving before the server starts processing it, for example for a free batch slot or enough KV-cache memory.",
+  "practice": "Under load it can dominate time to first token and grows sharply as utilization nears capacity; benchmark tools report client-side and server-side queue time separately.",
+  "aliases": [
+    "queue time",
+    "queuing delay",
+    "queueing time"
+  ],
+  "chapters": [
+    "latency-throughput",
+    "inference-fundamentals",
+    "batching-scheduling"
+  ]
+}

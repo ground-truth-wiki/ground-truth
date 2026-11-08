@@ -1,0 +1,15 @@
+{
+  "id": "super-step",
+  "term": "Super-step",
+  "def": "One synchronized round of graph execution in which all active nodes run, in parallel where possible, and their writes become visible to other nodes only when the round ends.",
+  "practice": "The model comes from Pregel and bulk synchronous parallel computing; LangGraph and Microsoft Agent Framework checkpoint at super-step boundaries, so an interrupted node reruns from its start and needs idempotent side effects.",
+  "aliases": [
+    "superstep"
+  ],
+  "chapters": [
+    "orchestration-frameworks",
+    "long-running-agents",
+    "durable-agent-execution",
+    "graph-workflow-runtimes"
+  ]
+}

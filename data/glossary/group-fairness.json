@@ -1,0 +1,12 @@
+{
+  "id": "group-fairness",
+  "term": "Group fairness",
+  "def": "Fairness defined as a statistical property that must hold across groups set by a sensitive attribute, such as equal selection rates or equal error rates; formalized as independence, separation or sufficiency.",
+  "practice": "The criteria conflict: when base rates differ, equal error rates and equal precision across groups cannot both hold except for a perfect predictor, so choose the one that matches the harm.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "eval-statistics",
+    "fairness-bias"
+  ]
+}

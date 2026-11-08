@@ -1,0 +1,13 @@
+{
+  "id": "openrouter",
+  "term": "OpenRouter",
+  "def": "A hosted service that offers many models from many providers behind one OpenAI-compatible API, routing each request across providers by price, throughput, latency and reliability.",
+  "practice": "Convenient for trying many models; set data_collection, ZDR and quantization filters explicitly, because by default it may route to providers that store or train on data or serve quantized weights.",
+  "aliases": [],
+  "chapters": [
+    "gateways-routers",
+    "choosing-a-model",
+    "cloud-ai-platforms",
+    "gateway-routing-in-depth"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "score-fusion",
+  "term": "Score fusion",
+  "def": "Combining several retrievers' scores into one ranking, usually by normalizing each score and taking a weighted sum (a convex combination), unlike rank-only methods such as RRF.",
+  "practice": "Bruch et al. (2022) found a tuned convex combination beat RRF in and out of domain with only a small labeled set for tuning, but it is more fragile than RRF when score distributions shift.",
+  "aliases": [
+    "weighted score fusion",
+    "linear fusion",
+    "relative score fusion"
+  ],
+  "chapters": [
+    "hybrid-retrieval"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "overall-evaluation-criterion",
+  "term": "Overall evaluation criterion",
+  "def": "The primary metric, or small weighted combination of metrics, that decides whether an online experiment succeeded, chosen to be measurable during the test and predictive of long-term value.",
+  "practice": "Agree on it before the experiment starts; for AI features, candidates include task success, accepted drafts or conversations resolved without escalation.",
+  "aliases": [
+    "OEC"
+  ],
+  "chapters": [
+    "online-evaluation",
+    "online-experiments"
+  ],
+  "abbr": "OEC"
+}

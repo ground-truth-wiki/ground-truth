@@ -1,0 +1,19 @@
+{
+  "id": "clip",
+  "term": "CLIP",
+  "def": "Contrastive Language-Image Pre-training: OpenAI's 2021 image and text encoders, trained contrastively on 400 million web image-caption pairs so matching images and captions land close together in one space.",
+  "practice": "Its image tower became a common vision encoder for VLMs, its text tower conditions diffusion models such as Stable Diffusion, and its similarity powers zero-shot classification, image search and CLIP score.",
+  "aliases": [
+    "Contrastive Language-Image Pre-training"
+  ],
+  "chapters": [
+    "representation-learning",
+    "vision-language-models",
+    "image-generation",
+    "multimodal-rag",
+    "self-supervised-methods",
+    "policy-gradient-methods",
+    "training-neural-networks",
+    "pretraining-run"
+  ]
+}

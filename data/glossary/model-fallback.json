@@ -1,0 +1,20 @@
+{
+  "id": "model-fallback",
+  "term": "Model fallback",
+  "def": "An alternative model or provider that a gateway or framework tries when the primary fails, is rate-limited, refuses on content policy or cannot fit the request in its context window.",
+  "practice": "Give every fallback the same eval evidence as the primary; an untested fallback that breaks the output format turns an outage into a correctness incident.",
+  "aliases": [
+    "fallback model",
+    "fallback chain"
+  ],
+  "chapters": [
+    "gateways-routers",
+    "reliability-engineering",
+    "incidents-on-call",
+    "cost-capacity",
+    "reference-architecture",
+    "small-local-models",
+    "agent-sdk-primitives",
+    "slos-error-budgets"
+  ]
+}

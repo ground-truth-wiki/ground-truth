@@ -1,0 +1,17 @@
+{
+  "id": "asynchronous-rl",
+  "term": "Asynchronous RL",
+  "def": "An RL training design in which rollout generation and gradient updates run concurrently on separate workers, so updates use samples from slightly older policy versions.",
+  "practice": "Keeps GPUs busy despite long, variable-length rollouts, with AReaL reporting up to 2.77x speedup over synchronous training, but needs staleness limits and off-policy corrections.",
+  "aliases": [
+    "async RL",
+    "asynchronous reinforcement learning"
+  ],
+  "chapters": [
+    "agentic-rl",
+    "rl-environment-harnesses",
+    "rlvr-reasoning",
+    "distributed-training",
+    "llm-policy-gradients"
+  ]
+}

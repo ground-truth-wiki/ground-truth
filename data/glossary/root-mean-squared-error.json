@@ -1,0 +1,23 @@
+{
+  "id": "root-mean-squared-error",
+  "term": "Root mean squared error",
+  "def": "The square root of the mean squared error (MSE), the average squared difference between predictions and true values, which puts the error back in the target's units.",
+  "practice": "MSE is the default regression loss; squaring penalizes large errors heavily, so both are sensitive to outliers, and minimizing them yields mean forecasts.",
+  "aliases": [
+    "RMSE",
+    "MSE",
+    "mean squared error",
+    "squared loss"
+  ],
+  "chapters": [
+    "neural-networks",
+    "classical-ml",
+    "distributions-and-estimation",
+    "loss-functions",
+    "classification-metrics",
+    "linear-and-kernel-models",
+    "autoencoders-latent-spaces",
+    "time-series-forecasting"
+  ],
+  "abbr": "RMSE"
+}

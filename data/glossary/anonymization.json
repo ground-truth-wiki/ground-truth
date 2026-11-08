@@ -1,0 +1,14 @@
+{
+  "id": "anonymization",
+  "term": "Anonymization",
+  "def": "Processing personal data so that people can no longer be identified by any means reasonably likely to be used, which takes the data outside data-protection law such as the GDPR.",
+  "practice": "Pseudonymized data that a key or extra data can re-identify is still personal data; regulators treat identifiability as a spectrum that shifts as new data becomes available.",
+  "aliases": [
+    "anonymisation"
+  ],
+  "chapters": [
+    "privacy",
+    "eval-datasets",
+    "data-governance"
+  ]
+}

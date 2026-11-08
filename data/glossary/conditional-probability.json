@@ -1,0 +1,12 @@
+{
+  "id": "conditional-probability",
+  "term": "Conditional probability",
+  "def": "The probability of an event A given that an event B has occurred, P(A | B) = P(A, B) / P(B): the joint probability divided by the probability of B.",
+  "practice": "A language model computes P(next token | context), so every change to the prompt changes what the output is conditioned on.",
+  "aliases": [],
+  "chapters": [
+    "probability-information",
+    "deep-generative-models",
+    "diffusion-flow-matching"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "image-preference-model",
+  "term": "Image preference model",
+  "def": "A model trained on human choices between generated images to predict which image people would prefer for a given prompt.",
+  "practice": "ImageReward, PickScore and HPS v2 serve as automatic metrics and as rewards for fine-tuning generators; like any reward model they can be over-optimized.",
+  "aliases": [],
+  "chapters": [
+    "image-generation"
+  ]
+}

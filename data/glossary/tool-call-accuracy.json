@@ -1,0 +1,17 @@
+{
+  "id": "tool-call-accuracy",
+  "term": "Tool-call accuracy",
+  "def": "Metrics for whether an agent called the right tools with the right arguments, checked against expected calls by name, arguments and order, or by executing the calls.",
+  "practice": "BFCL parses calls into a syntax tree or executes them, and tests relevance detection, where the right answer is no call; score tool choice, arguments and resulting state separately.",
+  "aliases": [
+    "tool correctness",
+    "function-calling accuracy",
+    "tool selection accuracy"
+  ],
+  "chapters": [
+    "evaluating-agents",
+    "eval-recipes",
+    "agent-tools",
+    "metrics-graders"
+  ]
+}

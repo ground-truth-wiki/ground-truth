@@ -1,0 +1,18 @@
+{
+  "id": "async-request-reply",
+  "term": "Asynchronous request-reply",
+  "def": "An API pattern for slow work: the server answers HTTP 202 with a status URL or operation id, runs the job in the background, and the client polls or receives a callback.",
+  "practice": "The usual shape for agent runs, deep research, media generation and batch jobs; Google's AIP-151 gives 10 seconds as a rule of thumb for when a method should return a long-running operation instead.",
+  "aliases": [
+    "async request-reply",
+    "long-running operation",
+    "LRO"
+  ],
+  "chapters": [
+    "reference-architecture",
+    "long-running-agents",
+    "deep-research",
+    "streaming",
+    "async-batch-workloads"
+  ]
+}

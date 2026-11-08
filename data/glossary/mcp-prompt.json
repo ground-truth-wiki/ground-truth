@@ -1,0 +1,11 @@
+{
+  "id": "mcp-prompt",
+  "term": "MCP prompt",
+  "def": "A reusable, server-defined message template with arguments, discovered with prompts/list and filled in with prompts/get, designed to be chosen explicitly by the user.",
+  "practice": "Hosts usually surface prompts as slash commands or menu items; user-controlled refers to who decides when a prompt runs, not who wrote its content.",
+  "aliases": [],
+  "chapters": [
+    "mcp-primitives",
+    "building-mcp-servers"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "counterfactual-explanation",
+  "term": "Counterfactual explanation",
+  "def": "An explanation of an individual automated decision that states the smallest change to the inputs that would have produced a different outcome, such as approval with a higher income.",
+  "practice": "Wachter et al. (2017) proposed it as a way to explain and contest decisions without disclosing the model; the change must be actionable to give real recourse. Not the same as counterfactual testing.",
+  "aliases": [],
+  "chapters": [
+    "responsible-ai",
+    "governance-regulation"
+  ]
+}

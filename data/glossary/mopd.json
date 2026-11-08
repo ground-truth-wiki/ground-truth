@@ -1,0 +1,17 @@
+{
+  "id": "mopd",
+  "term": "Multi-teacher on-policy distillation",
+  "def": "A post-training recipe that trains domain specialist teachers, for example for math, code or agents, with SFT and RL, then distills them into one student with on-policy distillation.",
+  "practice": "Xiaomi's MiMo-V2-Flash report (January 2026) first documented it; NVIDIA's Nemotron 3 Ultra and Zhipu's GLM-5 also use it, though labs are not unanimous, as of November 2026.",
+  "aliases": [
+    "MOPD"
+  ],
+  "chapters": [
+    "post-training-overview",
+    "distillation-merging",
+    "rlvr-reasoning",
+    "llm-distillation",
+    "model-merging-methods"
+  ],
+  "abbr": "MOPD"
+}

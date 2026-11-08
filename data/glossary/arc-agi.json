@@ -1,0 +1,20 @@
+{
+  "id": "arc-agi",
+  "term": "ARC-AGI",
+  "def": "Francois Chollet's benchmark of novel grid puzzles that measures fluid intelligence as skill-acquisition efficiency; ARC-AGI-2 (2025) is harder and ARC-AGI-3 (2026) uses interactive, turn-based environments.",
+  "practice": "Easy for people and hard for models: on ARC-AGI-3, humans solved every environment while frontier systems scored below 1% as of March 2026; the annual ARC Prize runs on Kaggle.",
+  "aliases": [
+    "Abstraction and Reasoning Corpus",
+    "ARC-AGI-2",
+    "ARC-AGI-3"
+  ],
+  "chapters": [
+    "benchmark-literacy",
+    "open-problems",
+    "benchmark-catalog",
+    "continual-learning",
+    "latent-reasoning",
+    "reasoning-debate",
+    "agi-timelines-risk"
+  ]
+}

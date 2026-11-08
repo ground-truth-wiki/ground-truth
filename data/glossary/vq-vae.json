@@ -1,0 +1,18 @@
+{
+  "id": "vq-vae",
+  "term": "Vector-quantized variational autoencoder",
+  "def": "An autoencoder whose encoder outputs are snapped to the nearest entry of a learned codebook, turning images or audio into sequences of discrete tokens.",
+  "practice": "Lets transformers model images and audio as token sequences; gradients bypass the non-differentiable lookup with a straight-through estimator, and VQGAN adds perceptual and adversarial losses for sharper images.",
+  "aliases": [
+    "VQ-VAE",
+    "vector-quantized VAE"
+  ],
+  "chapters": [
+    "image-generation",
+    "speech-audio",
+    "autoencoders-latent-spaces",
+    "autoregressive-image-generation",
+    "music-generation"
+  ],
+  "abbr": "VQ-VAE"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "chat-completions-api",
+  "term": "Chat Completions API",
+  "def": "OpenAI's original chat endpoint, which takes a list of role-tagged messages and returns a model reply; its request shape is the basis of most OpenAI-compatible APIs.",
+  "practice": "Still supported and widely emulated by serving engines, routers and clouds, but OpenAI recommends the Responses API for new projects.",
+  "aliases": [
+    "Chat Completions",
+    "/v1/chat/completions"
+  ],
+  "chapters": [
+    "model-apis",
+    "gateways-routers",
+    "serving-engines",
+    "model-types",
+    "api-shapes",
+    "cloud-ai-platforms",
+    "gateway-routing-in-depth",
+    "local-inference"
+  ]
+}

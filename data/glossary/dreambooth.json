@@ -1,0 +1,11 @@
+{
+  "id": "dreambooth",
+  "term": "DreamBooth",
+  "def": "Fine-tuning a text-to-image model on a few images of one subject so a unique identifier token reproduces it in new scenes, with a prior-preservation loss keeping the class general.",
+  "practice": "Used for product and character personalization, often with LoRA to keep files small; personalizing on a real person's likeness needs their consent.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "image-editing-control"
+  ]
+}

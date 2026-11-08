@@ -1,0 +1,13 @@
+{
+  "id": "xstest",
+  "term": "XSTest",
+  "def": "A test suite of 250 safe prompts that superficially resemble unsafe ones, plus 200 unsafe contrast prompts, for measuring exaggerated safety (over-refusal) in language models.",
+  "practice": "A quick over-refusal check after safety training or a fine-tune (Röttger et al., NAACL 2024); report it next to a harmful-compliance measure.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "safety-character-training",
+    "jailbreaks-misuse",
+    "fine-tuning-and-safety"
+  ]
+}

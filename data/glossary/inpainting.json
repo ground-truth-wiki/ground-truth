@@ -1,0 +1,11 @@
+{
+  "id": "inpainting",
+  "term": "Inpainting",
+  "def": "Regenerating only a masked region of an image so the new content blends with its surroundings; outpainting applies the same idea beyond the image borders.",
+  "practice": "Inpainting-specific checkpoints blend more naturally but are more likely to alter unmasked pixels, so pipelines paste the original back outside the mask when exact preservation matters.",
+  "aliases": [],
+  "chapters": [
+    "image-generation",
+    "image-editing-control"
+  ]
+}

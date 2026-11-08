@@ -1,0 +1,22 @@
+{
+  "id": "nvidia-hopper",
+  "term": "NVIDIA Hopper",
+  "def": "NVIDIA's data-center GPU architecture announced in 2022, behind the H100 and H200, which added FP8 tensor cores and fourth-generation NVLink at up to 900 GB/s per GPU.",
+  "practice": "Still a common baseline in serving benchmarks such as MLPerf Inference and in cloud pricing as of November 2026; the H200 raises memory to 141 GB of HBM3e from the H100's 80 GB.",
+  "aliases": [
+    "Hopper",
+    "H100",
+    "H200",
+    "H800"
+  ],
+  "chapters": [
+    "hardware",
+    "inference-fundamentals",
+    "latency-throughput",
+    "long-context",
+    "floating-point-formats",
+    "pretraining-run",
+    "compute-accounting",
+    "parallelism-strategies"
+  ]
+}
