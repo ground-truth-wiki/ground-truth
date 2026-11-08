@@ -26,7 +26,7 @@ A benchmark is a standardized exam. Once every top student scores 98%, it stops 
 ```
 
 ## How it works
-**Families of benchmarks.** Knowledge and reasoning (MMLU, MMLU-Pro, GPQA, Humanity’s Last Exam), math (GSM8K, MATH, AIME, FrontierMath), coding (HumanEval, SWE-bench Verified and Pro, LiveCodeBench, Terminal-Bench), agents and computer use (τ-bench, OSWorld, WebArena, BrowseComp, GAIA), long context (RULER), multimodal (MMMU), and preference arenas (LMArena).
+**Families of benchmarks.** Knowledge and reasoning (MMLU, MMLU-Pro, GPQA, Humanity’s Last Exam), math (GSM8K, MATH, AIME, FrontierMath), coding (HumanEval, SWE-bench Verified and Pro, LiveCodeBench, Terminal-Bench), agents and computer use (τ-bench, OSWorld, WebArena, BrowseComp, GAIA), long context (RULER), multimodal (MMMU), and preference arenas (Arena, formerly Chatbot Arena and LMArena).
 
 **Saturation.** When top models cluster near the ceiling, differences are noise and the benchmark no longer separates them.
 

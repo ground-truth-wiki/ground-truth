@@ -41,7 +41,7 @@ Prompting is giving instructions to a skilled contractor; fine-tuning is trainin
 
 **QLoRA.** Dettmers et al. (2023) train LoRA adapters on a 4-bit quantized base, making fine-tunes of large models possible on a single GPU. Variants such as DoRA refine the update.
 
-**Tooling.** Hugging Face TRL and PEFT, Unsloth, Axolotl and torchtune for open models; managed fine-tuning and reinforcement fine-tuning APIs from providers for hosted models.
+**Tooling.** Hugging Face TRL and PEFT, Unsloth and Axolotl for open models (torchtune stopped active development in July 2025); managed fine-tuning and reinforcement fine-tuning APIs from providers for hosted models. As of November 2026, OpenAI is winding down its self-serve fine-tuning, with no new jobs from 6 January 2027.
 
 **Serving adapters.** Engines can serve many LoRA adapters on one base model, switching per request. See [serving engines](#serving-engines).
 
