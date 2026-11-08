@@ -667,6 +667,26 @@ table.data{font-size:.85rem}
 .home-card h2{font-size:.78rem;letter-spacing:.02em}
 .home-card .big{font-size:1rem}
 
+/* Width and centering: the chapter and its outline form one centered block, and line widths grow with the screen */
+:root{--wide:100%;--main-max:960px;--rail-w:248px;--measure-narrow:62ch;--measure-normal:74ch;--measure-wide:96ch}
+@media (min-width:1440px){:root{--main-max:1040px;--measure-normal:82ch;--measure-wide:100ch}}
+@media (min-width:1800px){:root{--main-max:1120px;--rail-w:264px;--measure-normal:92ch;--measure-wide:110ch}}
+@media (min-width:1200px){
+  .layout{grid-template-columns:272px minmax(24px,1fr) minmax(0,var(--main-max)) var(--rail-w) minmax(24px,1fr)}
+  .layout.no-rail{grid-template-columns:272px minmax(24px,1fr) minmax(0,calc(var(--main-max) + var(--rail-w))) minmax(24px,1fr)}
+  .layout>.nav{grid-column:1;grid-row:1}
+  .layout>main{grid-column:3;grid-row:1}
+  .layout>.rail{grid-column:4;grid-row:1}
+}
+
+/* Focus mode: the chapter alone, centered, with a visible way back */
+.focus-mode .layout{grid-template-columns:minmax(16px,1fr) minmax(0,var(--main-max)) minmax(16px,1fr)!important}
+.focus-mode .layout>main{grid-column:2;grid-row:1;max-width:none;margin:0}
+.focus-exit{display:none;position:fixed;top:calc(env(safe-area-inset-top,0px) + var(--top) + 12px);right:16px;z-index:65;background:var(--surface)}
+.focus-exit kbd{margin-left:2px}
+.focus-mode .focus-exit{display:inline-flex}
+@media print{.focus-exit{display:none!important}}
+
 @media print{
   .top,.nav,.rail,.ch-actions,.banner,.ch-end .pn,.notes,.toast-wrap,.viz-foot button,.ctrls,.skip,.footer .np{display:none!important}
   .layout{display:block}
