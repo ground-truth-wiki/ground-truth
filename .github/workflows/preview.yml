@@ -1,0 +1,92 @@
+# Deploys a preview of every pull request that passed CI, and links it in a
+# comment. It uses the site CI already built (an artifact) and never checks
+# out or runs the pull request's code. Previews live on the preview address
+# (pr-<number>.<project>.pages.dev), never on the production domain.
+name: Preview
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+  issues: write
+
+env:
+  PAGES_PROJECT: ground-truth
+  WRANGLER: wrangler@4.158.0
+
+jobs:
+  preview:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check that Cloudflare is set up
+        id: cf
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$TOKEN" ] && [ -n "$ACCOUNT" ]; then echo "ready=true" >> "$GITHUB_OUTPUT"; else echo "::notice::Cloudflare is not set up yet (docs/DEPLOY.md), so there is no preview."; fi
+      - name: Download the built site
+        if: steps.cf.outputs.ready == 'true'
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+          path: artifacts
+      - name: Find the pull request
+        if: steps.cf.outputs.ready == 'true'
+        id: pr
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const fs = require('fs');
+            const raw = fs.readFileSync('artifacts/pr/number.txt', 'utf8').trim();
+            if (!/^[0-9]{1,7}$/.test(raw)) throw new Error('the artifact does not hold a pull request number');
+            // The artifact comes from pull request code, so check it against GitHub:
+            // the pull request must exist and its head must be the commit CI built.
+            const { data: pr } = await github.rest.pulls.get({ ...context.repo, pull_number: Number(raw) });
+            if (pr.head.sha !== context.payload.workflow_run.head_sha) throw new Error(`pull request #${raw} is not at the commit CI built`);
+            core.setOutput('number', String(pr.number));
+      - name: Remove host configuration from the artifact
+        if: steps.cf.outputs.ready == 'true'
+        # The files come from pull request code. Server-side code (_worker.js),
+        # routing (_routes.json) and redirects or headers are never deployed
+        # from a pull request.
+        run: rm -rf artifacts/site/_worker.js artifacts/site/_routes.json artifacts/site/_redirects artifacts/site/_headers artifacts/site/functions
+      - name: Deploy the preview
+        if: steps.cf.outputs.ready == 'true'
+        id: deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          site="$PWD/artifacts/site"
+          work="$(mktemp -d)" && cd "$work"
+          npx --yes "$WRANGLER" pages deploy "$site" --project-name "$PAGES_PROJECT" --branch "pr-$PR_NUMBER" --commit-hash "$HEAD_SHA" --commit-dirty=true | tee deploy.log
+          url=$(grep -oE 'https://pr-[0-9]+\.[a-z0-9-]+\.pages\.dev' deploy.log | head -1)
+          [ -n "$url" ] || url=$(grep -oE 'https://[a-z0-9-]+\.[a-z0-9-]+\.pages\.dev' deploy.log | tail -1)
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+      - name: Comment the preview link
+        if: steps.cf.outputs.ready == 'true' && steps.deploy.outputs.url != ''
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          URL: ${{ steps.deploy.outputs.url }}
+          NUMBER: ${{ steps.pr.outputs.number }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+        with:
+          script: |
+            const marker = '<!-- gt-preview -->';
+            const body = `${marker}\n**Preview:** ${process.env.URL}\n\nBuilt from ${process.env.SHA.slice(0, 7)}. The preview updates with every push that passes CI.`;
+            const issue_number = Number(process.env.NUMBER);
+            const comments = await github.paginate(github.rest.issues.listComments, { ...context.repo, issue_number, per_page: 100 });
+            const mine = comments.find((c) => c.user.type === 'Bot' && c.body.startsWith(marker));
+            if (mine) await github.rest.issues.updateComment({ ...context.repo, comment_id: mine.id, body });
+            else await github.rest.issues.createComment({ ...context.repo, issue_number, body });

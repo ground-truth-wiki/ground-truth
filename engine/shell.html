@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{{site.name}}</title>
-<meta name="description" content="{{site.description}}">
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}"><!-- @head -->
 <!-- @fonts -->
 <!-- @styles -->
 </head>
@@ -98,7 +98,7 @@
 </header>
 <div class="layout" id="layout">
   <nav class="nav" id="nav" aria-label="Contents"></nav>
-  <main id="main" tabindex="-1"><noscript><p>{{site.name}} needs JavaScript to render its chapters.</p></noscript></main>
+  <main id="main" tabindex="-1"><!-- @main --><noscript><p>{{site.name}} needs JavaScript to render its chapters.</p></noscript></main>
   <aside class="rail" id="rail" aria-label="On this page"></aside>
 </div>
 <div class="pal-wrap" id="pal" hidden>

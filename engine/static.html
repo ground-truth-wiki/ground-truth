@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{page.title}} · {{site.name}}</title>
+<meta name="description" content="{{page.description}}">
+<link rel="stylesheet" href="{{page.fonts}}">
+<link rel="stylesheet" href="{{page.styles}}">
+<style>
+  .static-page{max-width:calc(var(--measure) + 32px);margin:0 auto;padding:40px 16px 64px}
+  .static-page .prose{max-width:var(--measure)}
+  .static-page ul.people{columns:2;padding-left:1.2em}
+  @media (max-width:640px){.static-page ul.people{columns:1}}
+</style>
+<!-- @head -->
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="{{site.name}}, home">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="18" width="12" height="9" rx="4.5" fill="none" style="stroke:var(--ink)" stroke-width="2"/><rect x="18" y="18" width="12" height="9" rx="4.5" style="fill:var(--ink)"/><path d="M8 15.5C8 5.5 24 5.5 24 15.5" fill="none" style="stroke:var(--ui)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="15.5" r="2.2" style="fill:var(--ui)"/></svg>
+    <span>{{site.name}}</span>
+  </a>
+</header>
+<main class="static-page" id="main">
+<!-- @main -->
+</main>
+<footer class="footer static-page">
+  <p class="np"><a href="/">Home</a> · <a href="/contributors/">Contributors</a> · <a href="/impressum/">Impressum</a> · <a href="/privacy/">Privacy</a> · <a href="{{site.repository}}">GitHub</a></p>
+</footer>
+</body>
+</html>

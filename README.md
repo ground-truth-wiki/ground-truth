@@ -55,6 +55,7 @@ npm run dev        # http://localhost:8080, rebuilds on every change
 | Command | What it does |
 |---|---|
 | `npm run build` | Builds `dist/ground-truth.html`: the whole site in one file that works offline and contacts no server |
+| `npm run build:site` | Builds the published site into `dist/site/`: the app, one page per chapter, the sitemap and `llms.txt` ([docs/DEPLOY.md](docs/DEPLOY.md)) |
 | `npm run validate` | Checks every chapter, data file and link; errors name the file and line |
 | `npm run search -- <terms>` | Finds existing chapters and glossary terms |
 | `npm run new -- chapter <id> --book <n> --title "…"` | Starts a new chapter from the template |

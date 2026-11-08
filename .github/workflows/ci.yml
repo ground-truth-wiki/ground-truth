@@ -34,14 +34,26 @@ jobs:
       - run: npm run validate
       - run: npm run stats -- --check
       - run: npm run roundtrip
-      - run: npm run build
+      - run: npm run build:site
       - name: Upload the built site
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: site
-          path: dist/
+          path: dist/site/
           retention-days: 7
           if-no-files-found: error
+          include-hidden-files: false
+      - name: Record the pull request number for the preview
+        if: github.event_name == 'pull_request'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: mkdir -p dist/pr && printf '%s\n' "$PR_NUMBER" > dist/pr/number.txt
+      - if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: pr
+          path: dist/pr/
+          retention-days: 7
 
   pull-request:
     name: Pull request description

@@ -3,19 +3,28 @@
 // anything from a third-party server.
 import fs from 'node:fs';
 import path from 'node:path';
-import { createRequire } from 'node:module';
 import { ROOT } from './fsutil.mjs';
 
-const require = createRequire(path.join(ROOT, 'package.json'));
-const resolvePkg = (spec) => require.resolve(spec);
+// Files inside installed packages. Resolved by path rather than through each
+// package's "exports" map, which hides files such as licenses.
+function resolvePkg(spec) {
+  const file = path.join(ROOT, 'node_modules', ...spec.split('/'));
+  if (!fs.existsSync(file)) throw new Error(`${spec} not found; run npm install`);
+  return file;
+}
+// Exact versions from package.json; on the site they are part of the path,
+// so a new version is a new URL and files can be cached forever.
+const DEPS = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).dependencies;
+const v = (pkg) => `${pkg.split('/').pop()}@${DEPS[pkg]}`;
 
 export const LIBRARIES = {
-  marked: { pkg: 'marked/marked.min.js', site: 'vendor/marked.min.js', license: 'marked/LICENSE.md' },
-  highlight: { pkg: '@highlightjs/cdn-assets/highlight.min.js', site: 'vendor/highlight.min.js', license: '@highlightjs/cdn-assets/LICENSE' },
+  marked: { pkg: 'marked/marked.min.js', site: `vendor/${v('marked')}/marked.min.js`, license: 'marked/LICENSE.md' },
+  highlight: { pkg: '@highlightjs/cdn-assets/highlight.min.js', site: `vendor/highlight.js@${DEPS['@highlightjs/cdn-assets']}/highlight.min.js`, license: '@highlightjs/cdn-assets/LICENSE' },
   // Loaded on demand by the engine (window.GT_LIBS).
-  mathjax: { pkg: 'mathjax/es5/tex-svg.js', site: 'vendor/mathjax/tex-svg.js', license: 'mathjax/LICENSE', lazy: true },
-  mermaid: { pkg: 'mermaid/dist/mermaid.min.js', site: 'vendor/mermaid.min.js', license: 'mermaid/LICENSE', lazy: true }
+  mathjax: { pkg: 'mathjax/es5/tex-svg.js', site: `vendor/${v('mathjax')}/tex-svg.js`, license: 'mathjax/LICENSE', lazy: true },
+  mermaid: { pkg: 'mermaid/dist/mermaid.min.js', site: `vendor/${v('mermaid')}/mermaid.min.js`, license: 'mermaid/LICENSE', lazy: true }
 };
+export const FONTS_DIR = `vendor/fontsource@${DEPS['@fontsource-variable/literata']}`;
 
 // Fontsource packages (SIL Open Font License). Families keep the names the
 // engine's CSS asks for.
@@ -87,3 +96,10 @@ export function licenseFiles() {
 // Inline scripts must not contain a closing tag. The libraries contain none
 // today; escaping keeps it that way, and "<\/" means "</" in JavaScript.
 export const inlineScriptSafe = (code) => code.replace(/<\/script/gi, '<\\/script');
+
+export const libraryFile = (name) => resolvePkg(LIBRARIES[name].pkg);
+
+// Every license of the self-hosted libraries and fonts, for /vendor/LICENSES.txt.
+export function licensesText() {
+  return licenseFiles().map((l) => `===== ${l.name} =====\n\n${fs.readFileSync(l.file, 'utf8').trim()}\n`).join('\n');
+}

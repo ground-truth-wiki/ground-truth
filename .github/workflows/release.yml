@@ -1,0 +1,48 @@
+# On a version tag (v3.0.0 and so on): build both single files and publish a
+# GitHub release with the changelog entry of that version.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run roundtrip
+      - name: Build the offline and CDN single files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          npm run build:site -- --github
+          npm run build:cdn
+          cp dist/site/ground-truth.html "dist/ground-truth-${GITHUB_REF_NAME}.html"
+          cp dist/ground-truth-cdn.html "dist/ground-truth-${GITHUB_REF_NAME}-cdn.html"
+      - name: Write the release notes from the changelog
+        run: |
+          node -e '
+            const tag = process.env.GITHUB_REF_NAME, version = tag.replace(/^v/, "");
+            const e = JSON.parse(require("fs").readFileSync("data/changelog.json", "utf8")).entries.find((x) => x.version === version);
+            if (!e) { console.error("data/changelog.json has no entry for " + version + "; add one before tagging"); process.exit(1); }
+            const notes = [e.summary, "", "Released " + e.date + ". Chapters changed: " + (e.chapters.length ? e.chapters.join(", ") : "none") + ".", "",
+              "Files: ground-truth-" + tag + ".html is the whole site in one file that works offline and contacts no server; ground-truth-" + tag + "-cdn.html loads its libraries and fonts from public CDNs, like the original."];
+            require("fs").writeFileSync("notes.md", notes.join("\n") + "\n");'
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" "dist/ground-truth-${GITHUB_REF_NAME}.html" "dist/ground-truth-${GITHUB_REF_NAME}-cdn.html" --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
