@@ -1,0 +1,41 @@
+[
+  {
+    "id": "accelerator-architecture-1",
+    "chapter": "accelerator-architecture",
+    "q": "A decode step multiplies an 8,192 × 8,192 BF16 weight matrix by the vectors of 8 tokens on an H100. The profiler shows the tensor cores at about 3% of their peak while HBM bandwidth is nearly saturated. Which change raises the achieved TFLOP/s the most?",
+    "options": [
+      "Move to a GPU with twice the peak TFLOP/s and the same memory bandwidth",
+      "Process many more tokens per pass, so each byte of weights read feeds many more FLOPs",
+      "Raise occupancy by launching more warps per SM",
+      "Run the multiply on the CUDA cores instead, to skip tensor-core setup costs"
+    ],
+    "answer": 1,
+    "explain": "With M = 8 the product does about 8 FLOPs per byte, far below the H100’s ridge point of about 295, so reading the 128 MiB of weights sets the time (about 40 µs at 3.35 TB/s) while the math needs about 1 µs. More tokens per pass raise the intensity almost in proportion. A chip with twice the peak FLOP/s is the tempting answer, but a memory-bound kernel does not get faster when the compute roof rises; only more bandwidth or more work per byte helps."
+  },
+  {
+    "id": "accelerator-architecture-2",
+    "chapter": "accelerator-architecture",
+    "q": "On an A100 with 108 SMs, a matrix multiply splits into exactly 108 tiles, one per SM. A model change grows N slightly, and the same kernel now makes 117 tiles of the same size. What happens to throughput in useful FLOP/s?",
+    "options": [
+      "It rises about 8%, because there is 8% more work for the same GPU",
+      "It stays about the same, because the extra work is small",
+      "It roughly halves, because the 9 extra tiles run in a second wave while 99 SMs sit idle",
+      "It drops about 8%, because each tile has to do 8% more work"
+    ],
+    "answer": 2,
+    "explain": "Tiles run in waves of one per SM. 117 tiles need two waves, and the second keeps only 9 of 108 SMs (8.3%) busy, so the kernel takes about twice as long for 8% more work; NVIDIA’s matrix multiplication guide shows this exact case. The tempting answers assume that time grows smoothly with work, but on a GPU it grows in steps of whole waves."
+  },
+  {
+    "id": "accelerator-architecture-3",
+    "chapter": "accelerator-architecture",
+    "q": "An SRAM-centric accelerator holds about 0.5 GB on each chip and reads it far faster than a GPU reads HBM. What does serving a 70B-parameter model with 8-bit weights on it require?",
+    "options": [
+      "About 140 chips or more, joined by a fast chip-to-chip network, in exchange for high decode speed per user",
+      "One chip, because its bandwidth lets it stream the weights it cannot store",
+      "Nothing workable, because SRAM-centric chips can only run models that fit on a single chip",
+      "Two chips, because extra bandwidth makes up for missing capacity"
+    ],
+    "answer": 0,
+    "explain": "70 GB of weights at about 0.5 GB per chip means roughly 140 chips before any KV cache, so the model is split across many chips, as Cerebras does at layer boundaries across systems. Each chip reads its share from SRAM very fast, which is where the speed per user comes from. The tempting second option confuses bandwidth with capacity: bandwidth says how fast stored bytes can be read, not how many fit, and streaming weights from off-chip memory would bring back the slow memory the design avoids."
+  }
+]
