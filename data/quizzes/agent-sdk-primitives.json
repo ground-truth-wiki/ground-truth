@@ -1,0 +1,41 @@
+[
+  {
+    "id": "agent-sdk-primitives-1",
+    "chapter": "agent-sdk-primitives",
+    "q": "An agent built with the OpenAI Agents SDK often calls a send_email tool on its first turn. You add an input guardrail that flags abusive requests and keep the SDK’s default settings. A flagged request arrives. What can happen?",
+    "options": [
+      "The tripwire fires and the run halts, but the email may already have been sent, because the guardrail ran in parallel with the agent",
+      "Nothing reaches the model, because input guardrails always finish before the first model call",
+      "The email is sent and the run completes, because a tripwire only adds a warning to the trace",
+      "The run pauses for human approval, because a tripped guardrail becomes an interruption"
+    ],
+    "answer": 0,
+    "explain": "Input guardrails default to run_in_parallel=True, which saves latency but lets the agent spend tokens and run tools before the tripwire cancels it. The tempting second option describes blocking mode, which you must opt into with run_in_parallel=False. Tripwires halt the run with an exception; they are neither warnings nor approval pauses."
+  },
+  {
+    "id": "agent-sdk-primitives-2",
+    "chapter": "agent-sdk-primitives",
+    "q": "You pass a dataclass with the user’s account tier as the run context. Tools read it correctly, but the model keeps answering as if every user were on the free tier. What is the most likely cause?",
+    "options": [
+      "A handoff to another agent dropped the context object",
+      "The run context is local to your code: tools and hooks can read it, but it is never sent to the model",
+      "The SDK truncated the context object because it exceeded the model’s context window",
+      "Dataclasses cannot be serialized to JSON, so the SDK discarded the object"
+    ],
+    "answer": 1,
+    "explain": "The run context is dependency injection for your own code; the OpenAI Agents SDK docs state that the context object is not sent to the model. To let the model use the tier, put it in the instructions (for example, dynamic instructions that read the context) or return it from a tool. The handoff option is tempting because handoffs can filter conversation history, but the run context is shared by every agent and tool in the run, and the model never saw it in the first place."
+  },
+  {
+    "id": "agent-sdk-primitives-3",
+    "chapter": "agent-sdk-primitives",
+    "q": "A chat app stores every message and resends result.to_input_list() on each turn. A teammate also passes a server conversation_id, hoping to save bandwidth. What goes wrong?",
+    "options": [
+      "Nothing, because the SDK removes messages the server already holds",
+      "The run fails immediately, because conversation_id requires an SDK session",
+      "Earlier turns reach the model twice, because the server conversation already holds them and the app sends them again",
+      "Only the newest turn is kept, because conversation_id replaces client history"
+    ],
+    "answer": 2,
+    "explain": "Client-managed history and server-managed state are two strategies for the same job. The OpenAI Agents SDK docs advise one per conversation, because mixing them can duplicate context, which raises cost and confuses the model. The tempting first option assumes the SDK cleans up the overlap; it refuses a session combined with conversation_id in one run, but it cannot stop you resending history yourself."
+  }
+]
