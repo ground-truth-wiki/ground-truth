@@ -55,6 +55,7 @@ Do these steps in this order. Do not skip one, and stop where a step says to sto
    - New chapter: `npm run new -- chapter <id> --book <n> --title "Title"` (a seed; add `--full` for a full chapter)
    - New playbook: `npm run new -- playbook <id> --title "Title"`
    - New field note: `npm run new -- field-note <id> --title "Title"`
+   - A playbook or field note built from an organization's own published account: add `--public-record`, and follow the public-record rules in [STYLE_GUIDE.md](STYLE_GUIDE.md#playbooks-and-field-notes).
    - New glossary term: `npm run new -- term <id> --term "Name"`
    - A fix: edit the existing file. Never change an id; never delete a page.
 7. **Write it.** Follow [STYLE_GUIDE.md](STYLE_GUIDE.md) for text and [docs/VISUAL_LANGUAGE.md](docs/VISUAL_LANGUAGE.md) for visuals. Replace every `TODO:` the template left. Every factual claim needs a source the human can check; ask them for sources rather than supplying your own from memory. If they work for or are paid by a company, product or project the change is about, note it for the pull request (rule 5). When you review a chapter in full, set `reviewed` to the current month.
