@@ -40,9 +40,9 @@ When seeds or planned topics exist, books are worked on in this order (section 5
 | 18 | System design and case studies | 12 | 8 | 4 | 0 |
 | 19 | The frontier | 23 | 10 | 13 | 0 |
 | 20 | Reference and career | 14 | 11 | 3 | 0 |
-| 21 | Playbooks | 1 | 0 | 1 | 0 |
-| 22 | Field notes | 1 | 0 | 1 | 0 |
-| | **Total** | **425** | **223** | **202** | **0** |
+| 21 | Playbooks | 4 | 3 | 1 | 0 |
+| 22 | Field notes | 4 | 3 | 1 | 0 |
+| | **Total** | **431** | **229** | **202** | **0** |
 
 ## Part I: Understand the machine
 
@@ -597,9 +597,15 @@ Playbooks and field notes are not planned in advance: every real use case, deplo
 | # | Chapter | Status | Must cover |
 |---|---|---|---|
 | 21.1 | [About playbooks](../content/21-playbooks/about-playbooks.md) | seed | what a playbook is, what belongs here and what does not, how to add one with or without a coding agent, and how playbooks are reviewed |
+| 21.2 | [Human-in-the-loop coding agents in Jira at Atlassian](../content/21-playbooks/atlassian-hula-jira-agents.md) | full | public record (Atlassian paper, 2025): HULA's planner and coding agents with an engineer approving each stage; the rollout to 2,600 practitioners; the online funnel from plan to merged pull request; the practitioner survey; lessons on issue descriptions and on evaluating beyond unit tests |
+| 21.3 | [GOV.UK Chat: answering questions from government guidance](../content/21-playbooks/gov-uk-chat.md) | full | public record (GDS, 2026): two public pilots; accuracy judged against GOV.UK content standards, from 76% to 90%; answer rate and clarifying questions; jailbreak attempts and guardrails; the speed and accuracy trade-off |
+| 21.4 | [A randomized trial of ambient AI scribes at UCLA Health](../content/21-playbooks/ucla-ambient-scribes-trial.md) | full | public record (UCLA Health, 2025): a three-arm randomized trial of two ambient scribe products against usual documentation; note-writing time, burnout scores, errors in notes, a safety event; why the control arm matters |
 
 ### Book 22: Field notes
 
 | # | Chapter | Status | Must cover |
 |---|---|---|---|
 | 22.1 | [About field notes](../content/22-field-notes/about-field-notes.md) | seed | what a field note is, what belongs here and what does not, how to add one, and how field notes are reviewed |
+| 22.2 | [A widely used sepsis model meets its first external validation](../content/22-field-notes/epic-sepsis-model-validation.md) | full | public record (Michigan Medicine, JAMA Internal Medicine 2021): the Epic Sepsis Model's AUC, missed cases and alert burden against vendor-reported performance; the timing of predictions; validating models you did not build |
+| 22.3 | [Three infrastructure bugs that degraded Claude's answers](../content/22-field-notes/claude-quality-bugs-2025.md) | full | public record (Anthropic postmortem, 2025): a routing error, output corruption and an approximate top-k compiler bug; why evals missed them; exact top-k and continuous production evals |
+| 22.4 | [The New York City MyCity chatbot under audit](../content/22-field-notes/nyc-mycity-chatbot-audit.md) | full | public record (NYC Comptroller audit, 2025): user feedback, unanswered and inconsistent answers, response times, the dispute over how accuracy was counted, red-teaming records |
