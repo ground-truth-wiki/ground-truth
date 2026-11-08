@@ -1,0 +1,73 @@
+name: Share a playbook
+description: How your team used AI for a real problem, for people without a coding agent. A maintainer turns it into a page with you.
+title: "Playbook: "
+labels: [playbook, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Playbooks describe real work: what you tried, what happened and how you know. Please share only what you are allowed to share. Names of organizations are left out unless the organization agreed to be named (rule 7), and nothing is published before you approve the final page.
+  - type: input
+    id: industry
+    attributes:
+      label: Industry
+      description: Such as retail, healthcare, public sector, software.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What you needed to solve, and why it mattered.
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach
+      description: What you built or changed, step by step.
+    validations:
+      required: true
+  - type: textarea
+    id: stack
+    attributes:
+      label: Stack
+      description: Models, tools, frameworks and infrastructure you used.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results, and how you measured them
+      description: What changed, and how you know. Give numbers only if you measured them, and say how.
+    validations:
+      required: true
+  - type: textarea
+    id: failures
+    attributes:
+      label: What failed
+      description: What did not work, and what it taught you.
+    validations:
+      required: true
+  - type: textarea
+    id: differently
+    attributes:
+      label: What you would do differently
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Disclosure
+      description: Do you work for, or get paid by, a vendor of a product you mention (rule 5)? Name it, or write "none".
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent to publish
+      options:
+        - label: I am allowed to share this, and I agree that it is published under CC BY-SA 4.0 after I approve the final page.
+          required: true
+        - label: The organization is anonymized, or it agreed to be named.
+          required: true

@@ -1,0 +1,39 @@
+# Code owners review changes to their part of the repository; GitHub asks
+# them for a review automatically. Until stewards join, the owner reviews
+# everything. A steward is added to the line of their book (GOVERNANCE.md).
+
+*                                @7oaker
+
+# Books
+/content/00-start-here/           @7oaker
+/content/01-foundations/          @7oaker
+/content/02-transformer/          @7oaker
+/content/03-building-llms/        @7oaker
+/content/04-model-landscape/      @7oaker
+/content/05-prompt-and-context/   @7oaker
+/content/06-retrieval-rag/        @7oaker
+/content/07-data/                 @7oaker
+/content/08-multimodal/           @7oaker
+/content/09-agents/               @7oaker
+/content/10-agent-archetypes/     @7oaker
+/content/11-harnesses/            @7oaker
+/content/12-protocols/            @7oaker
+/content/13-frameworks/           @7oaker
+/content/14-evaluation/           @7oaker
+/content/15-inference/            @7oaker
+/content/16-llmops/               @7oaker
+/content/17-security-safety/      @7oaker
+/content/18-system-design/        @7oaker
+/content/19-frontier/             @7oaker
+/content/20-reference-career/     @7oaker
+
+# Data, engine and project files
+/data/                           @7oaker
+/engine/                         @7oaker
+/scripts/                        @7oaker
+/schemas/                        @7oaker
+/templates/                      @7oaker
+/.github/                        @7oaker
+/site.config.json                @7oaker
+/GOVERNANCE.md                   @7oaker
+/AGENTS.md                       @7oaker

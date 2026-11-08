@@ -1,0 +1,41 @@
+# Every Monday: list the chapters due for review in one tracking issue.
+# Runs only the repository's own code on main; no pull request code.
+name: Freshness report
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run --silent freshness > report.md
+      - name: Open or update the tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Freshness report
+        run: |
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --label outdated --search "\"$TITLE\" in:title" --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --repo "$GITHUB_REPOSITORY" --body-file report.md
+            echo "updated #$number"
+          elif grep -q "chapters are due for review" report.md; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --label outdated --body-file report.md
+          else
+            echo "nothing is due and there is no open tracking issue"
+          fi

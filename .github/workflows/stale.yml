@@ -1,0 +1,33 @@
+# Reminds authors of inactive pull requests and closes them a week later.
+# Issues never go stale, so wanted pages stay open until someone writes them.
+name: Stale pull requests
+
+on:
+  schedule:
+    - cron: '41 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/stale@4391f3da665fdf50b6810c1a66712fb9ba21aa93 # v11.0.0
+        with:
+          days-before-pr-stale: 21
+          days-before-pr-close: 7
+          stale-pr-label: stale
+          stale-pr-message: >
+            This pull request has had no activity for 21 days. If you are still working on it,
+            push a change or leave a comment and it stays open. Otherwise it will be closed
+            in 7 days; you can reopen it at any time.
+          close-pr-message: >
+            Closed after 28 days without activity. Thank you for the work so far: reopen it
+            whenever you want to continue, or ask in Discussions if you need help.
+          days-before-issue-stale: -1
+          days-before-issue-close: -1
+          exempt-issue-labels: wanted
