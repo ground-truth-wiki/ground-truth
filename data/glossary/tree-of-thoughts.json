@@ -4,9 +4,7 @@
   "def": "Exploring several candidate reasoning steps, scoring them and continuing from the best.",
   "practice": "Strong on puzzles with a scoring signal; many calls per step.",
   "aliases": [
-    "ToT",
-    "LATS",
-    "Graph of Thoughts"
+    "ToT"
   ],
   "chapters": [
     "planning-reasoning"

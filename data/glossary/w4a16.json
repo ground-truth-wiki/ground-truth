@@ -3,9 +3,7 @@
   "term": "W4A16",
   "def": "A quantization scheme with 4-bit weights and 16-bit activations.",
   "practice": "Saves memory and speeds memory-bound decode.",
-  "aliases": [
-    "W8A8"
-  ],
+  "aliases": [],
   "chapters": [
     "quantization"
   ]

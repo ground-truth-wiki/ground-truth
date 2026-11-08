@@ -3,9 +3,7 @@
   "term": "WebGPU",
   "def": "A browser API for GPU compute that lets models run client-side.",
   "practice": "WebLLM uses it to run models in the browser.",
-  "aliases": [
-    "WebLLM"
-  ],
+  "aliases": [],
   "chapters": [
     "edge-on-device"
   ]

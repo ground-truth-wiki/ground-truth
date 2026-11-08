@@ -3,9 +3,7 @@
   "term": "pass@k",
   "def": "The probability that at least one of k attempts succeeds.",
   "practice": "Report pass^k too for agents users rely on.",
-  "aliases": [
-    "pass^k"
-  ],
+  "aliases": [],
   "chapters": [
     "metrics-graders",
     "evaluating-agents"

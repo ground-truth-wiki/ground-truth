@@ -3,9 +3,7 @@
   "term": "Reflexion",
   "def": "Retrying a task with a short verbal lesson written after each failed attempt.",
   "practice": "Works when feedback is real, such as failing tests.",
-  "aliases": [
-    "self-refine"
-  ],
+  "aliases": [],
   "chapters": [
     "planning-reasoning"
   ]
