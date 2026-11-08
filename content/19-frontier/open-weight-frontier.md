@@ -26,7 +26,7 @@ Open-weight models are like generic medicines: arriving a little after the brand
 ```
 
 ## How it works
-**Who releases.** DeepSeek (V3, R1 in 2025, with open technical reports), Alibaba’s Qwen, Meta’s Llama, Mistral, Google’s Gemma, OpenAI’s gpt-oss (2025), Moonshot’s Kimi, Zhipu’s GLM, NVIDIA’s Nemotron, Microsoft’s Phi and others. Check current releases; the leaderboard changes monthly.
+**Who releases.** DeepSeek (V3 in December 2024 and R1 in January 2025, with open technical reports), Alibaba’s Qwen, Meta (the Llama series, then Muse Spark Open in October 2026), Mistral, Google’s Gemma, OpenAI’s gpt-oss (2025), Moonshot’s Kimi, Zhipu’s GLM, NVIDIA’s Nemotron, Microsoft’s Phi and others. Check current releases; the leaderboard changes monthly.
 
 **What “open” means.** Usually open weights, not open training data or code. Fully open efforts (such as AI2’s OLMo) also release data and training code.
 

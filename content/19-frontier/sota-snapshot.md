@@ -33,9 +33,9 @@ A state-of-the-art snapshot is a weather report, not a climate model: accurate f
 ```
 
 ## How it works
-**Models.** As of November 2026, Anthropic’s public lineup is Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus Claude Fable 5.1 in the Mythos tier with additional safeguards for biology, cybersecurity and LLM R&D; Claude Mythos Preview is available only to selected organizations through Project Glasswing (verified Nov 2026). Other frontier and open-weight labs release new generations several times a year; check their current lineups. See [frontier families](#frontier-families).
+**Models.** As of November 2026, Anthropic’s public lineup is Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus Claude Fable 5.1 in the Mythos tier with additional safeguards for biology, cybersecurity and LLM R&D; Claude Mythos 5.1, the same model with more permissive safeguards, is available only through Anthropic’s trusted-access programs (the Cyber and Life Sciences Verification Programs), and the earlier Mythos Preview is deprecated (verified Nov 2026). Other frontier and open-weight labs release new generations several times a year; check their current lineups. See [frontier families](#frontier-families).
 
-**Access can change.** In June 2026, US export controls led Anthropic to suspend access to Claude Fable 5 and Mythos 5 from 12 June; access was restored on 1 July after the controls were lifted (Anthropic’s statement: anthropic.com/news/fable-mythos-access). Plan for model availability as a dependency. See [governance](#governance-regulation).
+**Access can change.** In June 2026, US export controls led Anthropic to suspend access to Claude Fable 5 and Mythos 5 from 12 June. The controls were lifted on 30 June; Fable 5 returned worldwide on Anthropic’s own platforms on 1 July, and Mythos 5 first returned for a set of US organizations (Anthropic’s statements: anthropic.com/news/fable-mythos-access and anthropic.com/news/redeploying-fable-5). Plan for model availability as a dependency. See [governance](#governance-regulation).
 
 **Protocols and tools.** MCP’s latest specification is 2026-07-28, stateless and with multi round-trip requests; A2A reached 1.0 in March 2026; coding harnesses ship skills, plugins, subagents and sandboxing (verified Nov 2026). See [MCP spec history](#mcp-spec-history).
 
@@ -74,6 +74,7 @@ sota-snapshot
 ## Go deeper
 - Current model and system cards from frontier labs; Epoch AI’s data on model trends.
 - Anthropic’s statement on Fable and Mythos access, anthropic.com/news/fable-mythos-access.
+- Anthropic, “Redeploying Fable 5” (30 June 2026), anthropic.com/news/redeploying-fable-5.
 
 ## Related
 - [Frontier model families](#frontier-families)
