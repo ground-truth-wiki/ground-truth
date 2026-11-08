@@ -8,7 +8,10 @@
     "node": ">=20"
   },
   "scripts": {
-    "extract": "node scripts/extract.mjs"
+    "extract": "node scripts/extract.mjs",
+    "build": "node scripts/build.mjs",
+    "roundtrip": "node scripts/roundtrip.mjs",
+    "dev": "node scripts/dev.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"
