@@ -1,0 +1,41 @@
+[
+  {
+    "id": "data-formats-1",
+    "chapter": "data-formats",
+    "q": "A team writes chat logs to Parquet in arrival order. A query that reads 3 of 50 columns and filters on customer_id is still almost as slow as reading those columns in full. What is the most likely reason the filter skips so little?",
+    "options": [
+      "The row groups are too large; shrinking them to a few megabytes would let the statistics skip most of them",
+      "Unsorted data gives every row group a customer_id min and max that span nearly the whole range, so no group can be ruled out",
+      "The footer is written last, so the reader sees the statistics only after it has read the data",
+      "Compression hides the column statistics, so pushdown works only on uncompressed files"
+    ],
+    "answer": 1,
+    "explain": "Predicate pushdown skips a row group only when its min and max exclude the filter value. In arrival order, every group holds a mix of customers, so every range overlaps the filter and nothing is skipped; sorting or clustering by customer_id before writing fixes it. Smaller row groups are the tempting answer, but in shuffled data even small groups span most of the range, and many tiny groups add per-read overhead. The footer is written last but read first, and the row group statistics the reader needs live in that footer, not in the compressed pages."
+  },
+  {
+    "id": "data-formats-2",
+    "chapter": "data-formats",
+    "q": "Chat messages often contain multi-line text. Why can a JSON Lines reader still split a file on newline characters without breaking records?",
+    "options": [
+      "JSON Lines readers track open quotes, as CSV readers do, and ignore newlines inside a string",
+      "The .jsonl extension tells the parser to count braces instead of lines",
+      "JSON requires control characters inside strings to be escaped, so a compactly serialized record contains no raw newline",
+      "Fine-tuning APIs base64-encode each message before writing it"
+    ],
+    "answer": 2,
+    "explain": "RFC 8259 requires control characters, including the newline, to be escaped inside JSON strings, so a record serialized on one line never contains a raw newline byte, and splitting on newlines is safe. The tempting answer borrows from CSV, where quoted fields may hold real line breaks and readers must track quotes; that is exactly why line counts break for CSV. JSON Lines needs no such tracking, but only if records are written compactly: pretty-printed JSON adds real newlines between fields and breaks the file."
+  },
+  {
+    "id": "data-formats-3",
+    "chapter": "data-formats",
+    "q": "You stream a dataset with IterableDataset.shuffle(buffer_size=1000). Each of its shards holds about a million examples from a single source. Early training batches come almost entirely from one source. Why?",
+    "options": [
+      "The buffer mixes only nearby examples: shard order is shuffled, but a 1,000-example buffer filled from one large single-source shard holds only that source",
+      "shuffle does not change the shard order, so shards are always read in file order",
+      "Streaming datasets ignore shuffle, so examples arrive in their stored order",
+      "No seed was set, so the shuffle produced the same order as the original file"
+    ],
+    "answer": 0,
+    "explain": "IterableDataset.shuffle shuffles the order of the shards and then samples randomly from a fixed-size buffer. The buffer only ever contains the next 1,000 examples of the stream, which here all come from the first shard and its single source. The tempting answer is that shard order is not shuffled, but the Hugging Face docs say it is; the problem is that each shard is huge and uniform. Mix sources when writing shards, interleave datasets, or use more, smaller shards."
+  }
+]

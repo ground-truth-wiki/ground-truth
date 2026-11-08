@@ -1,0 +1,41 @@
+[
+  {
+    "id": "data-licensing-consent-1",
+    "chapter": "data-licensing-consent",
+    "q": "A hub dataset is labeled CC BY 4.0. It holds forum posts scraped from a site whose terms forbid automated collection, and the posts include usernames and email addresses. What does the CC BY label settle?",
+    "options": [
+      "Only what the publisher could grant for rights it holds; the site's terms and personal-data law remain separate questions",
+      "Everything: an open license allows any use, including commercial training",
+      "Nothing, because Creative Commons licenses cannot apply to datasets",
+      "The personal-data question, because a publisher must collect consent before choosing an open license"
+    ],
+    "answer": 0,
+    "explain": "A license grants only rights its licensor holds. The site's terms are a contract between the site and the scraper, and personal data needs its own lawful basis under laws such as the GDPR; a copyright license answers neither. The tempting answer, that an open license allows everything, treats one of the four questions as all four, and audits show hub license fields are often missing or wrong anyway."
+  },
+  {
+    "id": "data-licensing-consent-2",
+    "chapter": "data-licensing-consent",
+    "q": "Your crawler's token matches only the catch-all (*) group, which allows the page. The response carries the headers Content-Usage: train-ai=n and tdm-reservation: 1. What follows for training a model under EU law?",
+    "options": [
+      "robots.txt allows the fetch, so the site has consented to AI training",
+      "The Content-Usage header is binding everywhere because it is an IETF standard",
+      "The fetch is allowed, but the machine-readable reservation takes the content out of the Article 4 mining exception, so training needs permission or another basis",
+      "Rules written for other AI crawlers apply to yours too, so even fetching the page for a search index is forbidden"
+    ],
+    "answer": 2,
+    "explain": "RFC 9309 rules govern crawling and are not access authorization, let alone consent to a use. Under Article 4(3) of Directive 2019/790, a rightholder can reserve text and data mining by machine-readable means, and TDMRep is one way to do that; the Content-Usage header states a similar preference in the IETF AI preferences syntax, which is still a draft. The tempting answer treats permission to fetch as permission to train, which is exactly the gap the newer signals were made to close."
+  },
+  {
+    "id": "data-licensing-consent-3",
+    "chapter": "data-licensing-consent",
+    "q": "A company plans to fine-tune a model for its paid product and also release the weights for free. Candidates: CC BY-SA 4.0 Q&A pairs, CC BY-NC 4.0 dialogues and CDLA-Permissive-2.0 tables. Following the conservative reading in Creative Commons' training guidance, which plan holds up?",
+    "options": [
+      "Use all three, because licenses restrict only the raw data, never a model trained on it",
+      "Use the CDLA tables; use the BY-SA data only if the weights or outputs will be shared under CC BY-SA; leave out the BY-NC data",
+      "Use none of them, because any license condition makes data unusable for training",
+      "Use the BY-NC data too, because giving the weights away for free is non-commercial"
+    ],
+    "answer": 1,
+    "explain": "CDLA-Permissive-2.0 places results of computational analysis, including machine learning models, outside its restrictions. CC's guidance reads share-alike as reaching models or outputs based on the content when they are shared publicly, and says that with non-commercial data all stages, from copying the data during training to sharing the trained model, must not be for commercial gain, so a free release does not make training for a paid product non-commercial. The tempting answer, that licenses stop at the raw data, ignores that these conditions attach to every use that needs copyright permission, unless an exception applies."
+  }
+]
