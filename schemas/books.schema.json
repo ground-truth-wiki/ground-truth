@@ -12,7 +12,8 @@
     "books": { "type": "array", "items": { "type": "object", "required": ["n", "id", "title", "blurb", "hue", "stability"], "additionalProperties": false,
       "properties": { "n": { "type": "integer", "minimum": 0 }, "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "blurb": { "$ref": "#/$defs/text" },
         "hue": { "type": "number", "minimum": 0, "maximum": 360, "description": "Accent hue (OKLCH) used for the book in navigation, headers and cards." },
-        "stability": { "enum": [null, "evergreen", "moving", "volatile"], "description": "Set when the whole book is volatile, such as the model landscape." } } } }
+        "stability": { "enum": [null, "evergreen", "moving", "volatile"], "description": "Set when the whole book is volatile, such as the model landscape." },
+        "type": { "enum": ["playbook", "field-note"], "description": "Set on the book that holds every page of this type; npm run new puts new playbooks and field notes there." } } } }
   },
   "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
 }

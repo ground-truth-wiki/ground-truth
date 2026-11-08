@@ -4,26 +4,161 @@
   "title": "Chapter frontmatter",
   "description": "The YAML frontmatter at the top of every file in content/. Each field becomes a data-* attribute the engine reads.",
   "type": "object",
-  "required": ["id", "book", "order", "title", "level", "stability", "reviewed", "status", "tags", "visuals"],
+  "required": [
+    "id",
+    "book",
+    "order",
+    "title",
+    "level",
+    "stability",
+    "reviewed",
+    "status",
+    "tags",
+    "visuals"
+  ],
   "additionalProperties": false,
   "properties": {
-    "id": { "$ref": "#/$defs/id", "description": "Permanent, lowercase, hyphenated. Also the file name and the URL. Never change it; if you must, add the old id to data/aliases.json." },
-    "book": { "type": "integer", "minimum": 0, "description": "Book number, as in data/books.json." },
-    "order": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$", "description": "Position inside the book, such as \"9.2\". A quoted string, so \"9.10\" stays 9.10. Insert between two chapters with a third part, such as \"9.2.1\"." },
-    "title": { "type": "string", "minLength": 1 },
-    "level": { "enum": ["foundation", "practitioner", "expert", "frontier"] },
-    "stability": { "enum": ["evergreen", "moving", "volatile"], "description": "How fast the facts go stale. Sets the review schedule: volatile after 3 months, moving after 6, evergreen after 12." },
-    "reviewed": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$", "description": "Year and month of the last full review, quoted, such as \"2026-11\"." },
-    "status": { "enum": ["full", "seed"], "description": "seed: TL;DR, key ideas and planned visuals only. full: the complete chapter template." },
-    "tags": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+    "id": {
+      "$ref": "#/$defs/id",
+      "description": "Permanent, lowercase, hyphenated. Also the file name and the URL. Never change it; if you must, add the old id to data/aliases.json."
+    },
+    "book": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Book number, as in data/books.json."
+    },
+    "order": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$",
+      "description": "Position inside the book, such as \"9.2\". A quoted string, so \"9.10\" stays 9.10. Insert between two chapters with a third part, such as \"9.2.1\"."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "enum": [
+        "foundation",
+        "practitioner",
+        "expert",
+        "frontier"
+      ]
+    },
+    "stability": {
+      "enum": [
+        "evergreen",
+        "moving",
+        "volatile"
+      ],
+      "description": "How fast the facts go stale. Sets the review schedule: volatile after 3 months, moving after 6, evergreen after 12."
+    },
+    "reviewed": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$",
+      "description": "Year and month of the last full review, quoted, such as \"2026-11\"."
+    },
+    "status": {
+      "enum": [
+        "full",
+        "seed"
+      ],
+      "description": "seed: TL;DR, key ideas and planned visuals only. full: the complete chapter template."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
     "visuals": {
       "type": "array",
       "uniqueItems": true,
       "description": "Every visual in the body, as \"visual-id:form\". The form is the viz component, or the Mermaid diagram type (flowchart, sequence, state and so on).",
-      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$" }
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "type": {
+      "enum": [
+        "chapter",
+        "playbook",
+        "field-note"
+      ],
+      "description": "chapter (the default), playbook (Book 21: one real use case in one industry) or field-note (Book 22: a real deployment, postmortem or failure)."
+    },
+    "industry": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Playbooks and field notes: the industry, such as retail or healthcare."
+    },
+    "use_case": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Playbooks and field notes: the one use case, in a short phrase."
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Playbooks and field notes: the result in one line, only as measured."
+    },
+    "measured_how": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Playbooks and field notes: how the outcome was measured (metric, baseline, sample, period)."
+    },
+    "authors": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$"
+      },
+      "description": "GitHub handles of the people whose work the page describes, if they want to be named. Credits for writing the page come from the git history."
+    },
+    "prerequisites": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "description": "Chapter ids to read first. Wanted pages are allowed."
+    },
+    "replications": {
+      "type": "array",
+      "description": "Others who tried the same approach and reported back.",
+      "items": {
+        "type": "object",
+        "required": [
+          "by",
+          "date",
+          "result"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "by": {
+            "type": "string",
+            "minLength": 1,
+            "description": "GitHub handle or team (anonymized if needed)."
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])(-[0-3][0-9])?$"
+          },
+          "result": {
+            "type": "string",
+            "minLength": 1,
+            "description": "What they found, including how they measured it."
+          }
+        }
+      }
     }
   },
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    }
   }
 }

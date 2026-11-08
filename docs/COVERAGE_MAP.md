@@ -3,7 +3,7 @@
 What Ground Truth Wiki covers: every book and chapter, what each chapter must cover, and its status. It comes from section 4 of the editorial masterprompt (`source/editorial-masterprompt.md`) and drives two things:
 
 - **`continue`**, the maintainer command (AGENTS.md), which deepens seed chapters in the priority order below, then writes planned topics;
-- **wanted pages**: every row with status `planned` becomes a wanted page with an issue people can claim.
+- **wanted pages**: every row with status `planned` becomes a wanted page with an issue people can claim (`npm run wanted -- --sync`, then `npm run wanted -- --issues`).
 
 The status here must match the chapter's frontmatter; `npm run validate` warns when they drift apart.
 
@@ -40,7 +40,9 @@ When seeds or planned topics exist, books are worked on in this order (section 5
 | 18 | System design and case studies | 7 | 7 | 0 | 0 |
 | 19 | The frontier | 9 | 9 | 0 | 0 |
 | 20 | Reference and career | 10 | 10 | 0 | 0 |
-| | **Total** | **195** | **195** | **0** | **0** |
+| 21 | Playbooks | 1 | 0 | 1 | 0 |
+| 22 | Field notes | 1 | 0 | 1 | 0 |
+| | **Total** | **197** | **195** | **2** | **0** |
 
 ## Part I: Understand the machine
 
@@ -357,3 +359,19 @@ When seeds or planned topics exist, books are worked on in this order (section 5
 | 20.8 | [Interview prep](../content/20-reference-career/interview-prep.md) | full | fundamentals, system design, LLM-API coding, evals and debugging scenarios, with model answers. |
 | 20.9 | [Learning paths and the project ladder](../content/20-reference-career/project-ladder.md) | full | the paths (see features) plus a ladder of portfolio projects, from "chat with a PDF" to a multi-agent system with evals and observability. |
 | 20.10 | [Changelog and how to extend](../content/20-reference-career/changelog-extend.md) | full | see section 11. |
+
+## Part VI: In practice
+
+Playbooks and field notes are not planned in advance: every real use case, deployment or postmortem that follows the rulebook is welcome, so these books have no planned rows. Each starts with a page that explains what belongs there and how to contribute.
+
+### Book 21: Playbooks
+
+| # | Chapter | Status | Must cover |
+|---|---|---|---|
+| 21.1 | [About playbooks](../content/21-playbooks/about-playbooks.md) | seed | what a playbook is, what belongs here and what does not, how to add one with or without a coding agent, and how playbooks are reviewed |
+
+### Book 22: Field notes
+
+| # | Chapter | Status | Must cover |
+|---|---|---|---|
+| 22.1 | [About field notes](../content/22-field-notes/about-field-notes.md) | seed | what a field note is, what belongs here and what does not, how to add one, and how field notes are reviewed |

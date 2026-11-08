@@ -50,6 +50,14 @@
         19,
         20
       ]
+    },
+    {
+      "id": "part-6",
+      "title": "Part VI: In practice",
+      "books": [
+        21,
+        22
+      ]
     }
   ],
   "books": [
@@ -220,6 +228,24 @@
       "blurb": "The Glossary, acronyms, numbers to know, the Canon, cheat sheets, interview prep and the project ladder.",
       "hue": 252,
       "stability": null
+    },
+    {
+      "n": 21,
+      "id": "book-21",
+      "title": "Playbooks",
+      "blurb": "One real use case per page, by industry: the problem, the approach, the stack, the results and how they were measured, and what failed.",
+      "hue": 190,
+      "stability": null,
+      "type": "playbook"
+    },
+    {
+      "n": 22,
+      "id": "book-22",
+      "title": "Field notes",
+      "blurb": "Real deployments, postmortems and failures, written by the people who ran them, with what they measured and what they learned.",
+      "hue": 327,
+      "stability": null,
+      "type": "field-note"
     }
   ]
 }

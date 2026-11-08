@@ -17,8 +17,8 @@ import { yamlScalar } from './lib/chapters.mjs';
 // Chapter types. Playbooks and field notes live in their own books.
 const KINDS = {
   chapter: { seed: 'seed-chapter.md', full: 'chapter.md' },
-  playbook: { full: 'playbook.md', bookId: 'playbooks', type: 'playbook' },
-  'field-note': { full: 'field-note.md', bookId: 'field-notes', type: 'field-note' }
+  playbook: { full: 'playbook.md', type: 'playbook' },
+  'field-note': { full: 'field-note.md', type: 'field-note' }
 };
 const LEVELS = ['foundation', 'practitioner', 'expert', 'frontier'];
 const STABILITIES = ['evergreen', 'moving', 'volatile'];
@@ -61,9 +61,9 @@ if (aliases[id]) fail(`"${id}" is an old id that now points to "${aliases[id]}";
 
 const books = readJSON('data/books.json').books;
 let book;
-if (spec.bookId) {
-  const b = books.find((x) => x.id === spec.bookId);
-  if (!b) fail(`the ${kind} book ("${spec.bookId}") is not in data/books.json yet`);
+if (spec.type) {
+  const b = books.find((x) => x.type === spec.type);
+  if (!b) fail(`no book in data/books.json has type "${spec.type}"`);
   book = b.n;
 } else {
   book = Number(opt('book'));

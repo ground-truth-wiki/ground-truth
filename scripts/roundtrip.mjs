@@ -8,11 +8,10 @@
 // expected page is the source with those replacements, so any other
 // difference still fails.
 //
-// If the bytes differ, a structural comparison prints every difference:
-// chapter set, attributes and bodies, data (deep-equal), styles, engine and
-// segment order.
+// If the bytes differ, the code (engine, styles, shell) must still match, and
+// content changes since the source are listed. See the comment below.
 //
-//   node scripts/roundtrip.mjs
+//   node scripts/roundtrip.mjs [--strict]
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import { abs, exists, readJSON, writeText, fail } from './lib/fsutil.mjs';
@@ -65,49 +64,50 @@ if (built === expected) {
 }
 
 // ----- Structural comparison -----
-const diffs = [];
-const note = (msg) => diffs.push(msg);
+// Code (engine, styles, the page shell and its CDN tags) must match exactly:
+// a difference there is an unapproved engine change. Content (chapters and
+// data) grows with every contribution, so additions and edits since the
+// source are reported, and only a removal fails, because deleting content
+// needs the owner's approval. --strict fails on any difference.
+const code = [], content = [], removed = [];
 const A = scanSegments(expected), B = scanSegments(built);
-const label = (s) => isChapter(s) ? `chapter:${s.attrs['data-id']}` : isData(s) ? `data:${s.attrs.id}` : isEngine(s) ? 'engine' : s.kind === 'style' ? 'style' : s.kind === 'script' ? `script:${s.attrs.src}` : 'html';
-
-const orderA = A.map(label).filter((l) => l !== 'html'), orderB = B.map(label).filter((l) => l !== 'html');
-if (orderA.join() !== orderB.join()) {
-  const i = orderA.findIndex((l, k) => l !== orderB[k]);
-  note(`segment order differs at position ${i}: expected ${orderA[i]}, built ${orderB[i]}`);
-}
-const chapters = (segs) => new Map(segs.filter(isChapter).map((s) => [s.attrs['data-id'], s]));
-const ca = chapters(A), cb = chapters(B);
-for (const id of ca.keys()) if (!cb.has(id)) note(`chapter ${id}: missing from the build`);
-for (const id of cb.keys()) if (!ca.has(id)) note(`chapter ${id}: not in the source`);
-for (const [id, a] of ca) {
-  const b = cb.get(id);
-  if (!b) continue;
-  if (a.openTag !== b.openTag) note(`chapter ${id}: attributes differ\n    expected ${a.openTag}\n    built    ${b.openTag}`);
+const one = (segs, f) => segs.find(f);
+for (const [name, f] of [['styles', (s) => s.kind === 'style'], ['engine', isEngine]]) {
+  const a = one(A, f), b = one(B, f);
+  if (!a || !b) { code.push(`${name}: missing`); continue; }
   if (a.body !== b.body) {
-    const i = [...a.body].findIndex((ch, k) => ch !== b.body[k]);
-    note(`chapter ${id}: body differs at character ${i}\n    expected ${JSON.stringify(a.body.slice(Math.max(0, i - 30), i + 50))}\n    built    ${JSON.stringify(b.body.slice(Math.max(0, i - 30), i + 50))}`);
+    let i = [...a.body].findIndex((ch, k) => ch !== b.body[k]);
+    if (i < 0) i = Math.min(a.body.length, b.body.length);
+    code.push(`${name} differs at character ${i}\n      expected ${JSON.stringify(a.body.slice(Math.max(0, i - 40), i + 60))}\n      built    ${JSON.stringify(b.body.slice(Math.max(0, i - 40), i + 60))}`);
   }
 }
+const BOOK_MARKS = /<!-- BOOK \d+ (?:START|END) -->\n?/g;
+const shellOf = (segs) => segs.filter((s) => s.kind === 'html' || (s.kind === 'script' && s.attrs.src)).map((s) => (s.text || s.openTag + s.closeTag).replace(BOOK_MARKS, '')).join('').replace(/\n+/g, '\n');
+if (shellOf(A) !== shellOf(B)) code.push('the page shell (static HTML or CDN tags) differs');
+
+const chapters = (segs) => new Map(segs.filter(isChapter).map((s) => [s.attrs['data-id'], s]));
+const ca = chapters(A), cb = chapters(B);
+const aliases = (() => { const d = one(B, (s) => isData(s) && s.attrs.id === 'data-aliases'); return d ? JSON.parse(d.body) : {}; })();
+for (const id of ca.keys()) if (!cb.has(id)) (aliases[id] && cb.has(aliases[id]) ? content : removed).push(aliases[id] && cb.has(aliases[id]) ? `chapter ${id}: renamed to ${aliases[id]}` : `chapter ${id}: removed`);
+const added = [...cb.keys()].filter((id) => !ca.has(id));
+const changed = [...ca.keys()].filter((id) => cb.has(id) && (ca.get(id).openTag !== cb.get(id).openTag || ca.get(id).body !== cb.get(id).body));
+if (added.length) content.push(`${added.length} chapter(s) added: ${added.join(', ')}`);
+if (changed.length) content.push(`${changed.length} chapter(s) changed: ${changed.slice(0, 12).join(', ')}${changed.length > 12 ? ', …' : ''}`);
 const datas = (segs) => new Map(segs.filter(isData).map((s) => [s.attrs.id, s.body]));
 const da = datas(A), db = datas(B);
 for (const [id, a] of da) {
-  const b = db.get(id);
-  if (b === undefined) { note(`data ${id}: missing from the build`); continue; }
-  if (a === b) continue;
-  const deep = JSON.stringify(JSON.parse(a)) === JSON.stringify(JSON.parse(b));
-  note(`data ${id}: ${deep ? 'deep-equal, but serialized differently' : 'values differ'}`);
+  if (!db.has(id)) { removed.push(`data ${id}: removed`); continue; }
+  if (a !== db.get(id)) content.push(`data ${id}: changed`);
 }
-for (const id of db.keys()) if (!da.has(id)) note(`data ${id}: not in the source`);
-const one = (segs, f) => segs.find(f);
-for (const [name, f] of [['style', (s) => s.kind === 'style'], ['engine', isEngine]]) {
-  const a = one(A, f), b = one(B, f);
-  if (!a || !b) { note(`${name}: missing`); continue; }
-  if (a.body !== b.body) note(`${name}: differs (${a.body.length} vs ${b.body.length} characters)`);
-}
-const htmlA = A.filter((s) => s.kind === 'html').map((s) => s.text).join('\u0000');
-const htmlB = B.filter((s) => s.kind === 'html').map((s) => s.text).join('\u0000');
-if (htmlA !== htmlB) note('static HTML between elements differs');
+for (const id of db.keys()) if (!da.has(id)) content.push(`data ${id}: added`);
 
-console.log(`round trip: NOT byte-identical to ${versus} (expected ${Buffer.byteLength(expected)} bytes, built ${Buffer.byteLength(built)})`);
-console.log(diffs.length ? diffs.map((d) => '  - ' + d).join('\n') : '  - no structural difference found; the bytes differ only in whitespace or ordering outside elements');
-process.exit(1);
+const STRICT = process.argv.includes('--strict');
+const failed = code.length || removed.length || STRICT;
+console.log(`round trip: ${failed ? 'FAILED' : 'passed'}. The build is not byte-identical to ${versus}.`);
+console.log(`  code (engine, styles, shell): ${code.length ? 'DIFFERS' : 'identical'}`);
+for (const d of code) console.log(`    - ${d}`);
+console.log(`  content: ${content.length || removed.length ? 'changed since the source' : 'identical'}`);
+for (const d of [...removed.map((r) => r + ' (removing content needs the owner\'s approval)'), ...content]) console.log(`    - ${d}`);
+if (code.length) console.log('  An engine change must be marked gt: and added to build/roundtrip-allowlist.json (engine/README.md).');
+if (STRICT && !code.length && !removed.length) console.log('  --strict: every difference fails.');
+process.exit(failed ? 1 : 0);

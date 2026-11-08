@@ -11,7 +11,7 @@ Ground Truth Wiki is a static site on Cloudflare Pages, deployed by GitHub Actio
 | `index.html` | The full interactive app |
 | `<chapter-id>/index.html` | One page per chapter: its own title, a summary from its TL;DR, a canonical URL, link-preview tags, and the chapter text pre-rendered for search engines. It loads the same engine and content as the app, so readers get the interactive chapter. |
 | `404.html` | The app again: it resolves old ids and shows "no such page" for the rest |
-| `impressum/`, `privacy/`, `contributors/` | Static pages; the first two from `content/legal/`, the last from the git history |
+| `legal/impressum/`, `legal/privacy/`, `contributors/`, `wanted/` | Static pages: the legal pages from `content/legal/`, the contributors from the git history, and the wanted pages from `data/wanted.json` |
 | `assets/` | Content, engine, styles and font CSS, named by content hash |
 | `vendor/` | Self-hosted libraries and fonts, named by version, with their licenses |
 | `sitemap.xml`, `robots.txt`, `llms.txt`, `llms-full.txt` | For search engines and language models |

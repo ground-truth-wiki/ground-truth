@@ -62,7 +62,23 @@ Full chapters have 2 to 4 visuals, with the lead visual in the Intuition section
 
 ### Seed chapters
 
-A seed is a planned chapter that is not written in full yet. It holds a TL;DR, four to six key ideas, its planned visuals (with a quick lead diagram where that is cheap), one "Talk like an expert" line, related chapters, and a `> [!seed]` callout that says how to grow it. Start from [templates/seed-chapter.md](templates/seed-chapter.md) (`npm run new -- chapter <id> --book <n> --title "…"`).
+A seed is a planned chapter that is not written in full yet. It holds a TL;DR, four to six key ideas, its planned visuals (with a quick lead diagram where that is cheap), one "Talk like an expert" line and related chapters. The engine shows a "Seed chapter" banner on it that says how to grow it. Start from [templates/seed-chapter.md](templates/seed-chapter.md) (`npm run new -- chapter <id> --book <n> --title "…"`).
+
+### Playbooks and field notes
+
+Books 21 and 22 hold first-hand accounts of real work, one per page:
+
+- A **playbook** (`type: playbook`) shows how a team used AI for one use case in one industry: the problem, why this approach, the approach, the stack, results and how they were measured, what failed, and what they would do differently. Start from [templates/playbook.md](templates/playbook.md) (`npm run new -- playbook <id> --title "…"`).
+- A **field note** (`type: field-note`) tells what happened when something was deployed: the context, what happened, the impact and how it was measured, why it happened, what changed afterwards, and the lessons. Start from [templates/field-note.md](templates/field-note.md) (`npm run new -- field-note <id> --title "…"`).
+
+Both carry `industry`, `use_case`, `outcome` and `measured_how` in their frontmatter, and may list `authors` (GitHub handles of the people whose work it describes, if they want to be named), `prerequisites` (chapters to read first) and `replications` (others who tried the same and reported back, with `by`, `date` and `result`). They need no quiz.
+
+Their rules are strict, because they describe real organizations:
+
+- **Real work only.** Never hypothetical, composite or invented cases, companies, numbers or results.
+- **Measured means measured.** Results state the metric, the baseline, the sample and the period; say what was not measured.
+- **Anonymize** unless the organization agreed to be named (rule 7), and **disclose** ties to vendors (rule 5).
+- **Blameless:** describe systems and decisions, not the people who made them.
 
 ### Callouts
 
@@ -75,7 +91,6 @@ A seed is a planned chapter that is not written in full yet. It holds a TL;DR, f
 | `> [!insight] Title` | A non-obvious idea worth stopping for | 3 chapters |
 | `> [!try]` | Something to do in five minutes | 1 chapter |
 | `> [!expert]`, `> [!history]`, `> [!note]` | Expert framing, history, a side note | supported, unused so far |
-| `> [!seed]` | The seed notice | seed chapters only |
 
 ### Links, glossary and quizzes
 
