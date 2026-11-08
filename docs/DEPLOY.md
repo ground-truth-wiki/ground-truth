@@ -41,9 +41,9 @@ You need a free Cloudflare account. Everything else is done once, in this order.
    ```
 2. **Create the Pages project** (a maintainer's agent can do this after step 1):
    ```sh
-   npx wrangler@4.158.0 pages project create ground-truth --production-branch main
+   npx wrangler@4.158.0 pages project create ground-truth-wiki --production-branch main --force
    ```
-   Cloudflare gives the project an address such as `ground-truth.pages.dev`; if that name is taken, it adds a suffix. Note the address.
+   `--force` is needed once: as of November 2026, Wrangler creates new projects on Cloudflare Workers unless it is given, and this site's workflows deploy to Cloudflare Pages. Cloudflare derives the address from the project name, here `ground-truth-wiki.pages.dev`; if that name is taken, it adds a suffix. Note the address.
 3. **Store the account id** as a repository variable (not a secret; it is not sensitive):
    ```sh
    npx wrangler@4.158.0 whoami          # shows the Account ID
@@ -60,13 +60,13 @@ You need a free Cloudflare account. Everything else is done once, in this order.
    ```sh
    gh secret set CLOUDFLARE_API_TOKEN
    ```
-6. **Set the site address** in `site.config.json` (`siteUrl`), for example `https://ground-truth.pages.dev`, and merge that change. Canonical URLs, the sitemap and link previews use it.
+6. **Set the site address** in `site.config.json` (`siteUrl`), here `https://ground-truth-wiki.pages.dev`, and merge that change. Canonical URLs, the sitemap and link previews use it.
 
 The next push to `main` deploys the site.
 
 ## A custom domain later
 
-1. In the Cloudflare dashboard: **Workers & Pages**, the `ground-truth` project, **Custom domains**, **Set up a custom domain**, and enter the domain, such as `groundtruth.example.org`. If the domain's DNS is not on Cloudflare, Cloudflare shows the one CNAME record to add at your DNS provider. HTTPS certificates are issued automatically.
+1. In the Cloudflare dashboard: **Workers & Pages**, the `ground-truth-wiki` project, **Custom domains**, **Set up a custom domain**, and enter the domain, such as `groundtruth.example.org`. If the domain's DNS is not on Cloudflare, Cloudflare shows the one CNAME record to add at your DNS provider. HTTPS certificates are issued automatically.
 2. Change `siteUrl` in `site.config.json` to the new address and merge it.
 3. Optional: in the project's settings, keep the `pages.dev` address from being indexed by search engines by redirecting it to the custom domain (Cloudflare Bulk Redirects), so there is one canonical address.
 

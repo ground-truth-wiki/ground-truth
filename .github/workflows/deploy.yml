@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  PAGES_PROJECT: ground-truth
+  PAGES_PROJECT: ground-truth-wiki
   WRANGLER: wrangler@4.158.0
 
 jobs:
