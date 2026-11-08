@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "matrices.schema.json",
+  "title": "data/matrices.json",
+  "description": "Comparison matrices. Rows are objects keyed by column id; qualitative cells unless a fact is certain.",
+  "type": "object",
+  "required": ["matrices"],
+  "additionalProperties": false,
+  "properties": {
+    "matrices": { "type": "array", "items": { "type": "object", "required": ["id", "title", "chapter", "asof", "note", "columns", "rows"], "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "chapter": { "$ref": "#/$defs/id" },
+        "asof": { "$ref": "#/$defs/text", "description": "When the matrix was last checked." }, "note": { "type": "string" },
+        "columns": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "label"], "additionalProperties": false, "properties": { "id": { "type": "string", "minLength": 1 }, "label": { "$ref": "#/$defs/text" } } } },
+        "rows": { "type": "array", "items": { "type": "object", "additionalProperties": { "type": "string" } } }
+      } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

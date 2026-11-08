@@ -1,0 +1,17 @@
+{
+  "id": "TODO-unique-visual-id",
+  "component": "calculator",
+  "title": "TODO: State the takeaway, not the topic (\"Decode is memory-bound\", not \"Decode\")",
+  "caption": "TODO: What to notice. Say \"Illustrative.\" if the numbers are not measured.",
+  "alt": "TODO: A text description of what the visual shows.",
+  "data": "formula",
+  "try": "TODO: One suggested first move, such as \"raise the batch size to 8\".",
+  "inputs": { "tokens": 1000, "price_per_million": 3 },
+  "input_meta": { "tokens": { "label": "Tokens", "min": 0, "step": 100 }, "price_per_million": { "label": "Price per million tokens", "unit": "USD", "min": 0, "step": 0.1 } },
+  "outputs": [{ "id": "cost", "label": "Cost", "expr": "tokens * price_per_million / 1000000", "unit": "USD", "main": true }],
+  "assumptions": ["TODO: Every assumption the formula makes."],
+  "tests": [
+    { "inputs": { "tokens": 1000000 }, "expect": { "cost": 3 } },
+    { "inputs": { "tokens": 0 }, "expect": { "cost": 0 } }
+  ]
+}

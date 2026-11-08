@@ -285,7 +285,7 @@ function codeBlock(lang, body) {
 }
 
 /* ----- Lazy libraries: MathJax and Mermaid ----- */
-const LIBS = {
+const LIBS = W.GT_LIBS || { /* gt: self-hosted copies when the build provides them */
   mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js',
   mermaid: 'https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js'
 };

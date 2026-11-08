@@ -19,7 +19,8 @@ export const FIELDS = [
 // Values that a YAML 1.1 reader would not read back as plain strings.
 const AMBIGUOUS = /^(?:y|yes|n|no|true|false|on|off|null|~|[-+]?[0-9][0-9_.:eE+-]*)$/i;
 
-function scalar(value) {
+// A YAML scalar that every YAML reader reads back as the same string.
+export function yamlScalar(value) {
   const s = String(value);
   if (AMBIGUOUS.test(s)) return JSON.stringify(s);
   return YAML.stringify(s, { lineWidth: 0 }).replace(/\n$/, '');
@@ -31,9 +32,9 @@ export function emitFrontmatter(meta) {
     const v = meta[f.key];
     if (f.kind === 'integer') lines.push(`${f.key}: ${v}`);
     else if (f.kind === 'quoted') lines.push(`${f.key}: ${JSON.stringify(String(v))}`);
-    else if (f.kind === 'inline-list') lines.push(`${f.key}: [${v.map(scalar).join(', ')}]`);
-    else if (f.kind === 'block-list') lines.push(v.length ? `${f.key}:\n${v.map((x) => `  - ${scalar(x)}`).join('\n')}` : `${f.key}: []`);
-    else lines.push(`${f.key}: ${scalar(v)}`);
+    else if (f.kind === 'inline-list') lines.push(`${f.key}: [${v.map(yamlScalar).join(', ')}]`);
+    else if (f.kind === 'block-list') lines.push(v.length ? `${f.key}:\n${v.map((x) => `  - ${yamlScalar(x)}`).join('\n')}` : `${f.key}: []`);
+    else lines.push(`${f.key}: ${yamlScalar(v)}`);
   }
   for (const [k, v] of Object.entries(meta)) {
     if (!FIELDS.some((f) => f.key === k)) lines.push(YAML.stringify({ [k]: v }, { lineWidth: 0 }).replace(/\n$/, ''));

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "books.schema.json",
+  "title": "data/books.json",
+  "description": "Parts and books. A book's n is the number in its folder name (content/NN-slug) and in each chapter's book field.",
+  "type": "object",
+  "required": ["parts", "books"],
+  "additionalProperties": false,
+  "properties": {
+    "parts": { "type": "array", "items": { "type": "object", "required": ["id", "title", "books"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "books": { "type": "array", "items": { "type": "integer", "minimum": 0 } } } } },
+    "books": { "type": "array", "items": { "type": "object", "required": ["n", "id", "title", "blurb", "hue", "stability"], "additionalProperties": false,
+      "properties": { "n": { "type": "integer", "minimum": 0 }, "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "blurb": { "$ref": "#/$defs/text" },
+        "hue": { "type": "number", "minimum": 0, "maximum": 360, "description": "Accent hue (OKLCH) used for the book in navigation, headers and cards." },
+        "stability": { "enum": [null, "evergreen", "moving", "volatile"], "description": "Set when the whole book is volatile, such as the model landscape." } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

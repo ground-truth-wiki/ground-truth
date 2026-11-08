@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "apocrypha.schema.json",
+  "title": "data/apocrypha.json",
+  "description": "The Debates page: hot takes, each with the case for and against.",
+  "type": "object",
+  "required": ["takes"],
+  "additionalProperties": false,
+  "properties": {
+    "takes": { "type": "array", "items": { "type": "object", "required": ["id", "take", "for", "against", "chapters"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "take": { "$ref": "#/$defs/text" }, "for": { "$ref": "#/$defs/text" }, "against": { "$ref": "#/$defs/text" }, "chapters": { "$ref": "#/$defs/ids" } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

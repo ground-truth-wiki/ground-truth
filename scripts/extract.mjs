@@ -49,7 +49,10 @@ const DATA_LAYOUT = {
   'data-aliases': { file: 'data/aliases.json' }
 };
 
-const PLACEHOLDER = { styles: '<!-- @styles -->', chapters: '<!-- @chapters -->', data: '<!-- @data -->', engine: '<!-- @engine -->' };
+const PLACEHOLDER = {
+  styles: '<!-- @styles -->', chapters: '<!-- @chapters -->', data: '<!-- @data -->', engine: '<!-- @engine -->',
+  fonts: '<!-- @fonts -->', marked: '<!-- @lib:marked -->', highlight: '<!-- @lib:highlight -->', lazy: '<!-- @lib:lazy -->'
+};
 
 const assert = (cond, message) => { if (!cond) fail(message); };
 
@@ -139,11 +142,33 @@ const dataEnd = dataSegs[dataSegs.length - 1].end;
 assert(html.slice(dataStart, dataEnd) === dataSegs.map((s) => html.slice(s.start, s.end)).join('\n'), 'data blocks are not separated by single newlines');
 
 // ----- Shell -----
+// The font links and the two CDN scripts become placeholders too, so a build
+// can self-host them. "--cdn" builds put the original tags back (manifest.cdn).
+const fontsStart = html.indexOf('<link rel="preconnect" href="https://fonts.googleapis.com">');
+const fontsSheet = html.indexOf('<link rel="stylesheet" href="https://fonts.googleapis.com/');
+assert(fontsStart > 0 && fontsSheet > fontsStart, 'font links not found');
+const fontsEnd = html.indexOf('>', fontsSheet) + 1;
+const cdnScript = (needle) => {
+  const s = segments.filter((x) => x.kind === 'script' && typeof x.attrs.src === 'string' && x.attrs.src.includes(needle));
+  assert(s.length === 1, `expected one <script src> for ${needle}`);
+  return s[0];
+};
+const markedTag = cdnScript('marked@');
+const highlightTag = cdnScript('highlight.js/');
+const cdn = {
+  note: 'The original CDN tags, emitted by "--cdn" builds so the round trip can compare with the source.',
+  fonts: html.slice(fontsStart, fontsEnd),
+  marked: html.slice(markedTag.start, markedTag.end),
+  highlight: html.slice(highlightTag.start, highlightTag.end)
+};
 const cut = [
+  [fontsStart, fontsEnd, PLACEHOLDER.fonts],
   [style.start, style.end, PLACEHOLDER.styles],
   [regionStart, regionEnd, PLACEHOLDER.chapters],
   [dataStart, dataEnd, PLACEHOLDER.data],
-  [engine.start, engine.end, PLACEHOLDER.engine]
+  [markedTag.start, markedTag.end, PLACEHOLDER.marked],
+  [highlightTag.start, highlightTag.end, PLACEHOLDER.highlight],
+  [engine.start, engine.end, PLACEHOLDER.lazy + PLACEHOLDER.engine]
 ];
 let shell = '';
 let at = 0;
@@ -167,10 +192,10 @@ const manifest = {
     bodyLead: '\n',
     separator: '\n',
     bookStart: '<!-- BOOK {n} START -->',
-    bookEnd: '<!-- BOOK {n} END -->',
-    order
+    bookEnd: '<!-- BOOK {n} END -->'
   },
-  data: { separator: '\n', blocks: dataManifest }
+  data: { separator: '\n', blocks: dataManifest },
+  cdn
 };
 files.set('build/manifest.json', prettyJSON(manifest));
 

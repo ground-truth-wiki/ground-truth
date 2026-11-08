@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "presets.schema.json",
+  "title": "data/presets.json",
+  "description": "Workshop tools: playgrounds and calculators, each built from a visual or an inline spec.",
+  "type": "object",
+  "required": ["tools"],
+  "additionalProperties": false,
+  "properties": {
+    "tools": { "type": "array", "items": { "type": "object", "required": ["id", "kind", "title", "blurb", "chapter"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "kind": { "enum": ["playground", "calculator"] }, "title": { "$ref": "#/$defs/text" }, "blurb": { "$ref": "#/$defs/text" }, "chapter": { "$ref": "#/$defs/id" },
+        "viz": { "$ref": "#/$defs/id", "description": "Id of a visual in a chapter to reuse." }, "spec": { "type": "object", "description": "An inline visual spec." } } } }
+  },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

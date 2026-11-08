@@ -1,0 +1,8 @@
+{
+  "id": "{{id}}",
+  "term": "{{term}}",
+  "def": "TODO: One-line definition, precise enough for an expert and clear enough for a newcomer.",
+  "practice": "TODO: One line on what the term means in practice, such as a typical value or where it shows up.",
+  "aliases": [],
+  "chapters": []
+}

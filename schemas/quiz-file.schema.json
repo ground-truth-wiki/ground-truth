@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quiz-file.schema.json",
+  "title": "data/quizzes/<chapter-id>.json",
+  "description": "The quiz questions of one chapter, in order. The file name is the chapter id.",
+  "type": "array",
+  "minItems": 1,
+  "items": { "type": "object", "required": ["id", "chapter", "q", "options", "answer", "explain"], "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "#/$defs/id" },
+      "chapter": { "$ref": "#/$defs/id" },
+      "q": { "$ref": "#/$defs/text" },
+      "options": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/text" } },
+      "answer": { "type": "integer", "minimum": 0, "description": "Index of the correct option, counting from 0." },
+      "explain": { "$ref": "#/$defs/text" }
+    } },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

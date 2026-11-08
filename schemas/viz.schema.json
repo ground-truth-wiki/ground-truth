@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "viz.schema.json",
+  "title": "Visual spec (shared fields)",
+  "description": "The JSON inside a ```viz block. These fields are shared by every component; each component adds its own (see docs/VISUAL_LANGUAGE.md).",
+  "type": "object",
+  "required": ["id", "component", "title", "caption", "alt", "data"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Unique across the whole site, listed in the chapter's visuals." },
+    "component": { "type": "string", "description": "One of the components in engine.js." },
+    "title": { "type": "string", "minLength": 1, "description": "States the takeaway, not the topic." },
+    "caption": { "type": "string", "minLength": 1, "description": "What to notice." },
+    "alt": { "type": "string", "minLength": 1, "description": "A text description for screen readers and the \"Read as text\" view." },
+    "data": { "enum": ["formula", "real", "illustrative"], "description": "real needs source and asof; illustrative is labeled as such." },
+    "source": { "type": "string", "minLength": 1 },
+    "asof": { "type": "string", "minLength": 1 },
+    "try": { "type": "string", "description": "One suggested first move." },
+    "depicts": { "type": "string", "description": "The spec or version the visual shows." }
+  },
+  "if": { "properties": { "data": { "const": "real" } } },
+  "then": { "properties": { "source": { "type": "string" }, "asof": { "type": "string" } }, "required": ["source", "asof"] }
+}

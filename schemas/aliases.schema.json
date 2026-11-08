@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aliases.schema.json",
+  "title": "data/aliases.json",
+  "description": "Old chapter ids mapped to their new ids, so old links keep working. Never remove an entry.",
+  "type": "object",
+  "propertyNames": { "$ref": "#/$defs/id" },
+  "additionalProperties": { "$ref": "#/$defs/id" },
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "index.schema.json",
+  "title": "data/glossary/_index.json, data/quizzes/_index.json",
+  "description": "The original order of glossary terms or quiz questions. New items do not need to be listed: the build appends them in a fixed order.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/id" },
+  "uniqueItems": true,
+  "$defs": { "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } }, "text": { "type": "string", "minLength": 1 } }
+}
