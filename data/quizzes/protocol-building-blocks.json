@@ -1,0 +1,41 @@
+[
+  {
+    "id": "protocol-building-blocks-1",
+    "chapter": "protocol-building-blocks",
+    "q": "An MCP server receives a well-formed tools/call for a tool it has, but the month argument is \"2026-13\" and the tool cannot run. What should it send back?",
+    "options": [
+      "A result with isError: true and a message the model can use to fix its call",
+      "A JSON-RPC error with code -32602 (Invalid params)",
+      "A JSON-RPC error with a code from -32020 to -32099",
+      "A JSON-RPC notification describing the problem, with no response"
+    ],
+    "answer": 0,
+    "explain": "MCP separates protocol errors (an unknown tool, a request that breaks the message schema) from tool execution errors such as bad argument values, which go back as a normal result with isError: true so the model can read them and retry. -32602 is tempting because the argument is invalid, but MCP uses it for broken requests such as an unknown tool, and models recover less well from protocol errors. Codes -32020 to -32099 are only for errors the MCP specification itself defines, and a request always gets exactly one response."
+  },
+  {
+    "id": "protocol-building-blocks-2",
+    "chapter": "protocol-building-blocks",
+    "q": "A tool author writes a tuple as \"items\": [{\"type\": \"number\"}, {\"type\": \"number\"}], as in draft-07, but leaves out $schema. What happens in an MCP 2026-07-28 host?",
+    "options": [
+      "The schema is read as 2020-12, where items takes a single schema, so it is invalid and should be rejected",
+      "The host spots draft-07 syntax and switches to the draft-07 dialect for that schema",
+      "Nothing changes, because 2020-12 is backward compatible with draft-07",
+      "The tuple is ignored and any array passes validation"
+    ],
+    "answer": 0,
+    "explain": "Without $schema, MCP assumes JSON Schema 2020-12, and schemas must be valid in their declared or default dialect. In 2020-12, tuples moved to prefixItems and items must be one schema, so an array under items makes the schema invalid. The tempting answer, automatic detection, is not part of MCP: only $schema picks the dialect. 2020-12 is not backward compatible with draft-07 on this point, so validation does change."
+  },
+  {
+    "id": "protocol-building-blocks-3",
+    "chapter": "protocol-building-blocks",
+    "q": "An agent can read files through a remote MCP server, but a write returns 403 with WWW-Authenticate: Bearer error=\"insufficient_scope\", scope=\"files:write\". What is the right next step?",
+    "options": [
+      "Re-authorize asking for the scopes it already had plus files:write, then retry the write a limited number of times",
+      "Wait with exponential backoff and retry the same request with the same token",
+      "Re-authorize asking only for files:write, since that is the scope the challenge names",
+      "Send the refresh token to the MCP server to get a broader access token"
+    ],
+    "answer": 0,
+    "explain": "A 403 means the server refuses these credentials, and RFC 9110 says not to repeat the request with the same ones. MCP's step-up flow asks the client to request the union of its previous scopes and the challenged ones, then retry only a few times. Asking for files:write alone is tempting because the challenge names it, but it would drop the read permission the agent still needs. Backoff is the answer to a 429, not a 403, and refresh tokens go only to the authorization server, never to a resource server."
+  }
+]
