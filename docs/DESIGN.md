@@ -52,7 +52,7 @@ Radii are `--r-sm: 6px`, `--r-md: 10px` and `--r-lg: 14px`. The header is `--top
 
 ### Layout and breakpoints
 
-Three columns from 1,200 px: navigation (272 px, on `--bg`), the chapter on the white reading surface, and on this page (236 px). Below that, "On this page" becomes a drawer, and below 900 px the navigation does too. Further breakpoints at 760, 700, 640 and 420 px tune tables, the hero and the search palette. Print styles (`@media print`) give clean chapter and cheat-sheet printouts.
+Three columns from 1,200 px: navigation (272 px, on `--bg`) at the left edge, then the chapter and its outline as one block centered in the remaining space. The chapter column grows with the screen (`--main-max`: 960 px, 1,040 px from 1,440 px, 1,120 px from 1,800 px) and so does the line width (`--measure-normal`: 74, 82 and 92 characters); visuals and tables use the full column. Readers can pick narrow, normal or wide lines, and the three widths follow the screen too. Focus mode hides the navigation and the outline, centers the chapter, and shows an "Exit focus mode" button; Esc also leaves it. Below that, "On this page" becomes a drawer, and below 900 px the navigation does too. Further breakpoints at 760, 700, 640 and 420 px tune tables, the hero and the search palette. Print styles (`@media print`) give clean chapter and cheat-sheet printouts.
 
 ### Chapter pages and navigation
 
