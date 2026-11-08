@@ -26,20 +26,21 @@ All values live as CSS variables in [engine/styles.css](../engine/styles.css). C
 | Body text | Literata (variable, optical sizes, with italics) | Iowan Old Style, Palatino, Georgia |
 | Code | JetBrains Mono (400 and 600) | SFMono-Regular, Menlo, Consolas |
 
-The fonts are self-hosted (SIL Open Font License); see `scripts/lib/vendor.mjs`. The body measure is `--measure: 68ch`, and readers can change text size and line width in Preferences.
+The fonts are self-hosted (SIL Open Font License); see `scripts/lib/vendor.mjs`. Body text is 16 px Literata with a line height of 1.7, the interface is set at 15 px, and chapter titles at about 37 px on a desktop. The body measure is `--measure: 68ch`, and readers can change text size and line width in Preferences.
 
 ### Color
 
 | Token | Light | Dark |
 |---|---|---|
-| `--bg` | `#F7F8FB` | `#11151D` |
+| `--paper` (reading surface) | `#FFFFFF` | `#11151D` |
+| `--bg` (navigation and fields) | `#F6F7F9` | `#11151D` |
 | `--surface` | `#FFFFFF` | `#171C26` |
-| `--ink` | `#171A21` | `#E8EBF1` |
-| `--ink-2` | `#363C48` | `#C5CBD6` |
+| `--ink` | `#14171D` | `#E8EBF1` |
+| `--ink-2` | `#394049` | `#C5CBD6` |
 | `--link` | `oklch(46% .16 262)` | `oklch(79% .11 262)` |
 | `--acc` | `oklch(47% .15 var(--acc-h))` | `oklch(80% .11 var(--acc-h))` |
 
-The theme follows the system setting until the reader picks one; both themes are complete, not an inverted afterthought.
+The light theme is the default, whatever the system setting. Readers can switch to dark with the theme button, or choose dark or "Match the system" in Preferences; both themes are complete, not an inverted afterthought.
 
 **Book accents.** Each book has a hue in `data/books.json` (`hue`, from 0 to 360). Book pages and chapters set `--acc-h` to it, so the accent, its background and its line color all follow from one number. The 21 hues are spread around the color wheel so neighbouring books differ. A new book picks a hue that is not close to its neighbours'.
 
@@ -51,7 +52,17 @@ Radii are `--r-sm: 6px`, `--r-md: 10px` and `--r-lg: 14px`. The header is `--top
 
 ### Layout and breakpoints
 
-Three columns from 1,200 px (navigation, chapter, on this page). Below that, "On this page" becomes a drawer, and below 900 px the navigation does too. Further breakpoints at 760, 700, 640 and 420 px tune tables, the hero and the search palette. Print styles (`@media print`) give clean chapter and cheat-sheet printouts.
+Three columns from 1,200 px: navigation (272 px, on `--bg`), the chapter on the white reading surface, and on this page (236 px). Below that, "On this page" becomes a drawer, and below 900 px the navigation does too. Further breakpoints at 760, 700, 640 and 420 px tune tables, the hero and the search palette. Print styles (`@media print`) give clean chapter and cheat-sheet printouts.
+
+### Chapter pages and navigation
+
+A chapter opens with its breadcrumbs, its book and number, the title, one quiet line of facts (level, reading time, stability, review date, status, tags) and one tool strip between hairlines. Deep dives, the chapters with a three-part number such as 2.3.1, are indented and set smaller in the navigation, and book maps leave them out and list them below, so the main path through a book stays visible.
+
+These rules are the design layer at the end of `engine/styles.css`, marked `gt: reading layout`; they override the original rules above them.
+
+### Brand
+
+The mark is a faceted compass arrow. In the header it is an inline SVG whose four facets use `--mark-1` to `--mark-4`, so it works in both themes. The favicon is a 48 px PNG embedded in `engine/shell.html` and `engine/static.html`; `docs/assets/apple-touch-icon.png` (180 px) and `docs/assets/icon-512.png` hold the same icon for devices and other uses.
 
 ### Icons
 

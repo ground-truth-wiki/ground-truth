@@ -8,7 +8,7 @@
 //   404.html                 the app, routing unknown and old addresses
 //   contributors/, wanted/, legal/impressum/, legal/privacy/
 //   assets/, vendor/         shared, content-hashed and versioned files
-//   sitemap.xml, robots.txt, llms.txt, llms-full.txt, og.png, _headers, _redirects
+//   sitemap.xml, robots.txt, llms.txt, llms-full.txt, og.png, apple-touch-icon.png, _headers, _redirects
 //   ground-truth.html        the offline single file
 //
 //   node scripts/build-site.mjs [--github]
@@ -102,6 +102,7 @@ assets.fonts = addAsset('fonts', 'css', fontCSS(faces, (f) => `/${FONTS_DIR}/${f
 for (const name of Object.keys(LIBRARIES)) copy(LIBRARIES[name].site, libraryFile(name));
 put('vendor/LICENSES.txt', licensesText());
 copy('og.png', abs('docs/assets/social-preview.png'));
+copy('apple-touch-icon.png', abs('docs/assets/apple-touch-icon.png'));
 
 // ----- Page heads -----
 function head({ url, title, description, type = 'website', robots }) {
@@ -118,7 +119,7 @@ function head({ url, title, description, type = 'website', robots }) {
     '<meta property="og:image:width" content="1280">',
     '<meta property="og:image:height" content="640">',
     '<meta name="twitter:card" content="summary_large_image">',
-    `<link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="2" y="18" width="12" height="9" rx="4.5" fill="none" stroke="#171A21" stroke-width="2"/><rect x="18" y="18" width="12" height="9" rx="4.5" fill="#171A21"/><path d="M8 15.5C8 5.5 24 5.5 24 15.5" fill="none" stroke="#3B5BDB" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="15.5" r="2.2" fill="#3B5BDB"/></svg>')}">`
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">'
   ].filter((x) => x !== null).join('\n');
 }
 const sitePage = (page) => renderPage(project, { mode: 'site', page, assets });

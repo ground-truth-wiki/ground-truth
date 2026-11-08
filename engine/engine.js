@@ -1639,11 +1639,12 @@ let pendingScroll = null, routeStart = 0, firstRoute = true, curChapter = null;
 const mqDark = W.matchMedia ? W.matchMedia('(prefers-color-scheme: dark)') : { matches: false, addEventListener() { } };
 const mqMotion = W.matchMedia ? W.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false, addEventListener() { } };
 function prefs() { return Store.s.prefs; }
-function effectiveTheme() { const t = prefs().theme || 'system'; return t === 'system' ? (mqDark.matches ? 'dark' : 'light') : t; }
+function effectiveTheme() { const t = prefs().theme || 'light'; /* gt: light theme by default */ return t === 'system' ? (mqDark.matches ? 'dark' : 'light') : t; }
 function reduceMotion() { const m = prefs().motion || 'system'; return m === 'reduce' || (m === 'system' && mqMotion.matches); }
 function applyPrefs() {
   const p = prefs(), r = D.documentElement;
-  if (p.theme === 'light' || p.theme === 'dark') r.setAttribute('data-theme', p.theme); else r.removeAttribute('data-theme');
+  const th = p.theme || 'light'; /* gt: light theme by default */
+  if (th === 'light' || th === 'dark') r.setAttribute('data-theme', th); else r.removeAttribute('data-theme');
   r.style.setProperty('--fscale', String(p.fscale || 1));
   r.style.setProperty('--measure', { narrow: '60ch', normal: '68ch', wide: '80ch' }[p.width || 'normal']);
   r.classList.toggle('reduce-motion', reduceMotion());
@@ -1677,7 +1678,7 @@ function buildNav() {
       row.addEventListener('click', e => { if (e.target.closest('.ti-caret')) { toggleBook(li); return; } li.setAttribute('aria-expanded', 'true'); location.hash = 'book-' + n; });
       const group = el('ul', { role: 'group' });
       b.chapters.forEach(c => {
-        const ci = el('li', { role: 'treeitem', class: 'ti-ch' + (Store.s.read[c.id] ? ' is-read' : '') + (c.status === 'full' ? ' is-full' : ''), 'aria-level': '2', tabindex: '-1', 'data-href': '#' + c.id, 'data-id': c.id, 'aria-label': c.order + ' ' + c.title + (c.status === 'seed' ? ', seed' : '') });
+        const ci = el('li', { role: 'treeitem', class: 'ti-ch' + (Store.s.read[c.id] ? ' is-read' : '') + (c.status === 'full' ? ' is-full' : '') + (String(c.order).split('.').length > 2 ? ' is-deep' : '') /* gt: deep dives indented */, 'aria-level': '2', tabindex: '-1', 'data-href': '#' + c.id, 'data-id': c.id, 'aria-label': c.order + ' ' + c.title + (c.status === 'seed' ? ', seed' : '') });
         ci.append(el('a', { class: 'ti-row', href: '#' + c.id, tabindex: '-1' }, el('span', { class: 'num', text: c.order }), el('span', { class: 't', text: c.title }), el('span', { class: 'seed-dot', title: c.status === 'full' ? 'Full chapter' : 'Seed chapter' }), icon('ic-check', 'sm tick')));
         group.append(ci);
       });
@@ -2125,10 +2126,11 @@ function pageHome(main) {
 
 /* ----- Book page ----- */
 function bookMapSpec(b) {
-  const ids = new Set(b.chapters.map(c => c.id)), edges = [], has = new Set();
-  b.chapters.forEach(c => { (linkIndex().out[c.id] || new Set()).forEach(t => { if (ids.has(t) && cmpOrder(CHMAP[t].order, c.order) < 0) { edges.push([t, c.id]); has.add(c.id); has.add(t); } }); });
-  b.chapters.forEach((c, i) => { if (!has.has(c.id) && i > 0) edges.push([b.chapters[i - 1].id, c.id]); });
-  return { title: 'Book map', alt: 'How the chapters of Book ' + b.n + ' build on each other', nodes: b.chapters.map(c => ({ id: c.id, label: c.order + ' ' + c.title, link: '#' + c.id, status: c.status, done: !!Store.s.read[c.id] })), edges, per_row: 3, node_w: 190 };
+  const chs = b.chapters.filter(c => String(c.order).split('.').length < 3); /* gt: the map shows the main chapters; deep dives are listed below it */
+  const ids = new Set(chs.map(c => c.id)), edges = [], has = new Set();
+  chs.forEach(c => { (linkIndex().out[c.id] || new Set()).forEach(t => { if (ids.has(t) && cmpOrder(CHMAP[t].order, c.order) < 0) { edges.push([t, c.id]); has.add(c.id); has.add(t); } }); });
+  chs.forEach((c, i) => { if (!has.has(c.id) && i > 0) edges.push([chs[i - 1].id, c.id]); });
+  return { title: 'Book map', alt: 'How the chapters of Book ' + b.n + ' build on each other', nodes: chs.map(c => ({ id: c.id, label: c.order + ' ' + c.title, link: '#' + c.id, status: c.status, done: !!Store.s.read[c.id] })), edges, per_row: 3, node_w: 190 };
 }
 function pageBook(arg, main) {
   const b = BOOKMAP[+arg]; if (!b || !/^\d+$/.test(arg)) return false;
@@ -2139,7 +2141,7 @@ function pageBook(arg, main) {
     el('div', { class: 'row', style: 'margin-bottom:8px' }, el('span', { class: 'chip', text: pr.r + ' of ' + pr.n + ' read' }), el('span', { class: 'chip', text: b.chapters.filter(c => c.status === 'full').length + ' full chapters' }), b.stability ? el('span', { class: 'chip stab-' + b.stability }, el('span', { class: 'dot' }), STAB_TXT[b.stability]) : null, el('a', { class: 'btn sm', href: '#boss-' + b.n }, 'Boss quiz')),
     el('div', { class: 'bar', style: 'max-width:420px;margin-bottom:18px' }, el('i', { style: 'width:' + Math.round(pr.f * 100) + '%' })));
   const spec = bookMapSpec(b);
-  const sh = vizShell(Object.assign({ id: 'bookmap-' + b.n, component: 'graph', data: 'concept', caption: 'Arrows point from a chapter to the chapters that build on it. A green tick means you have read it; a dashed border means it is still a seed.' }, { title: 'How Book ' + b.n + '’s chapters build on each other' }));
+  const sh = vizShell(Object.assign({ id: 'bookmap-' + b.n, component: 'graph', data: 'concept', caption: 'Arrows point from a chapter to the chapters that build on it. A green tick means you have read it; a dashed border means it is still a seed. Deep dives are left out of the map and listed below it.' /* gt: deep dives listed below the map */ }, { title: 'How Book ' + b.n + '’s chapters build on each other' }));
   $('.kind', sh.fig).replaceWith(el('span', { class: 'kind' }, el('b', { text: 'Generated from cross-links.' })));
   sh.body.replaceChildren(drawGraph(spec)); sh.setText(() => '<ul>' + spec.edges.map(e => '<li>' + esc(CHMAP[e[0]].title) + ' leads to ' + esc(CHMAP[e[1]].title) + '</li>').join('') + '</ul>');
   main.append(sh.fig);
@@ -2341,7 +2343,7 @@ function pagePrefs(main) {
   const reset = el('button', { class: 'btn', type: 'button', text: 'Reset all progress' });
   reset.addEventListener('click', () => { if (!armed) { armed = true; reset.textContent = 'Click again to erase everything'; reset.style.borderColor = 'var(--bad)'; setTimeout(() => { armed = false; reset.textContent = 'Reset all progress'; reset.style.borderColor = ''; }, 5000); return; } Store.reset(); applyPrefs(); refreshNavTicks(); updateLevelChip(); toast('Progress reset'); route(); });
   main.append(el('div', { class: 'prefs-grid' },
-    el('fieldset', {}, el('legend', { text: 'Theme' }), radio('theme', [['Match the system', 'system'], ['Light', 'light'], ['Dark', 'dark']], p.theme || 'system', v => setPref('theme', v))),
+    el('fieldset', {}, el('legend', { text: 'Theme' }), radio('theme', [['Match the system', 'system'], ['Light', 'light'], ['Dark', 'dark']], p.theme || 'light', /* gt: light theme by default */ v => setPref('theme', v))),
     el('fieldset', {}, el('legend', { text: 'Reading' }), el('div', { class: 'ctl' }, el('label', { for: fsId }, el('span', { text: 'Text size' }), fo), fsr), el('p', { class: 'small', style: 'margin:8px 0 4px', text: 'Line width' }), radio('width', [['Narrow', 'narrow'], ['Normal', 'normal'], ['Wide', 'wide']], p.width || 'normal', v => setPref('width', v))),
     el('fieldset', {}, el('legend', { text: 'Motion' }), radio('motion', [['Match the system', 'system'], ['Reduce motion', 'reduce'], ['Allow motion', 'full']], p.motion || 'system', v => setPref('motion', v)), el('p', { class: 'small muted', text: 'Nothing ever animates on its own; steppers move only when you press play or step.' })),
     el('fieldset', {}, el('legend', { text: 'Export progress' }), exp, el('div', { class: 'row', style: 'margin-top:6px' }, copyBtn(() => JSON.stringify(Store.s), 'Copy progress JSON'))),
