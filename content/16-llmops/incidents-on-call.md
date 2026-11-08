@@ -98,3 +98,4 @@ incidents-on-call
 - [Observability and tracing](#observability-tracing)
 - [SLOs and error budgets for AI systems](#slos-error-budgets)
 - [Public AI failures and incidents: a casebook](#ai-failure-casebook)
+- [Field note: three infrastructure bugs that degraded Claude's answers](#claude-quality-bugs-2025)
