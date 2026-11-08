@@ -1,0 +1,41 @@
+[
+  {
+    "id": "language-modeling-1",
+    "chapter": "language-modeling",
+    "q": "A bigram model is trained without smoothing. A held-out sentence contains the pair “want want”, which never occurred in training, although both words are in the vocabulary and every other pair in the sentence is common. What is the model’s perplexity on that sentence?",
+    "options": [
+      "Slightly higher than without that pair, because one bad prediction is averaged with many good ones",
+      "Lower, because the model skips pairs it has never seen",
+      "Infinite, because the pair gets probability 0, so the whole sentence does, and perplexity is the inverse of that probability",
+      "Unchanged, because perplexity only counts words that are missing from the vocabulary"
+    ],
+    "answer": 2,
+    "explain": "Perplexity is the inverse probability of the test text, normalized by its length. A product with one zero factor is zero, so its inverse is infinite; in log space, one term is minus infinity. The tempting answer, a modest increase from averaging, only holds for a smoothed model, where the unseen pair gets a small but nonzero probability. That difference is exactly why smoothing, interpolation and back-off exist."
+  },
+  {
+    "id": "language-modeling-2",
+    "chapter": "language-modeling",
+    "q": "Which statement is true of both a trigram model and a modern LLM?",
+    "options": [
+      "Both look at exactly the previous two tokens when predicting the next one",
+      "Both split a sequence’s probability into next-token probabilities and are judged by how much probability they give to held-out text",
+      "Both estimate their probabilities by counting how often token sequences occur in the training text",
+      "Both give zero probability to any sequence that never appeared in training"
+    ],
+    "answer": 1,
+    "explain": "The chain rule factorization, the likelihood objective (perplexity is the exponential of the average negative log-likelihood) and the sampling loop carry over unchanged. What changed is how each conditional is computed. The tempting option about counting describes only the trigram model: an LLM computes each conditional with a neural network over every earlier token in its context window, learned by gradient descent, and its softmax gives every token some nonzero probability, which also rules out the last option. Even a trigram model gives a new sentence nonzero probability if all its trigrams were seen."
+  },
+  {
+    "id": "language-modeling-3",
+    "chapter": "language-modeling",
+    "q": "A neural language model was trained on text containing “The cat is walking in the bedroom” but never “A dog was running in a room”. Why can it still give the second sentence a fairly high probability when a trigram model cannot?",
+    "options": [
+      "It has a longer context, so it sees the whole sentence at once",
+      "It stores every training sentence and looks up the closest one",
+      "It applies add-one smoothing to every unseen sequence",
+      "Its learned word vectors put “dog” near “cat”, “a” near “the” and “room” near “bedroom”, and a smooth function gives similar inputs similar probabilities"
+    ],
+    "answer": 3,
+    "explain": "This is the argument of Bengio et al. (2003): words with similar roles get nearby feature vectors, so probability learned from one sentence spreads to its many similar neighbors. The tempting answer is the longer context, but the two sentences are short and share no bigram or trigram at all, so a count table with more context would still see nothing familiar. Add-one smoothing spreads probability evenly over all unseen events; it has no idea that a dog resembles a cat."
+  }
+]

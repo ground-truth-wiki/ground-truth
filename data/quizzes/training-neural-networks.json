@@ -1,0 +1,41 @@
+[
+  {
+    "id": "training-neural-networks-1",
+    "chapter": "training-neural-networks",
+    "q": "You train with micro-batches of 16 on one GPU and accumulate 8 of them per optimizer step. The data loader yields 4,000 micro-batches per epoch. You set a cosine schedule with T_max = 4,000 × epochs and call sched.step() after every optimizer step. What happens to the learning rate?",
+    "options": [
+      "It decays eight times too fast and reaches its minimum after an eighth of the run",
+      "It follows the intended curve, because schedulers count epochs, not steps",
+      "It barely decays: the run ends an eighth of the way through the schedule, with the learning rate still about 96% of its peak",
+      "The effective batch drops back to 16, so the schedule stops mattering"
+    ],
+    "answer": 2,
+    "explain": "The loader yields 4,000 micro-batches per epoch, but the optimizer, and the scheduler with it, steps only 4,000 ÷ 8 = 500 times. The run ends at one eighth of T_max, where the cosine factor is ½(1 + cos(π/8)) ≈ 0.96. Decaying eight times too fast is the opposite bug: it happens when the schedule is sized in optimizer steps but stepped on every micro-batch."
+  },
+  {
+    "id": "training-neural-networks-2",
+    "chapter": "training-neural-networks",
+    "q": "A freshly initialized classifier for 100 balanced classes reports a cross-entropy of 9.8 on its first batch, before any optimizer step. What is the most useful conclusion?",
+    "options": [
+      "The learning rate is too high, so lower it before training",
+      "The initial predictions are confidently wrong, for example from a badly scaled last layer or unnormalized inputs; fix that first, because a model that knows nothing should score about ln 100 ≈ 4.6",
+      "Nothing is wrong: the loss will come down once training starts",
+      "The model is too small to represent 100 classes"
+    ],
+    "answer": 1,
+    "explain": "A model with no knowledge should spread probability evenly over the classes, which gives a loss of ln 100 ≈ 4.61. A much higher loss means it already puts very low probability on the right classes with confidence, which points to initialization or input scaling. Blaming the learning rate is tempting, but no optimizer step has run yet, so the learning rate cannot have touched the weights or this number."
+  },
+  {
+    "id": "training-neural-networks-3",
+    "chapter": "training-neural-networks",
+    "q": "After 20 epochs, training loss and validation loss are both high, nearly equal and barely moving. A teammate proposes more dropout and stronger weight decay. What is the better next move?",
+    "options": [
+      "Agree: flat curves mean overfitting, so regularize harder",
+      "Stop training earlier to keep a better checkpoint",
+      "Check the test-set loss to confirm the diagnosis",
+      "Treat it as underfitting: check that the pipeline can overfit one small batch, then add capacity and ease off regularization"
+    ],
+    "answer": 3,
+    "explain": "High and nearly equal curves mean the model does not even fit the training data, so it underfits: it may be too simple. Dropout and weight decay make fitting harder and push in the wrong direction. Overfitting looks different: training loss falls well below validation loss. Checking the test set would spend your one honest estimate on a question the validation curve already answers."
+  }
+]

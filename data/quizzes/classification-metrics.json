@@ -1,0 +1,41 @@
+[
+  {
+    "id": "classification-metrics-1",
+    "chapter": "classification-metrics",
+    "q": "A guard model scores 0.97 ROC AUC on a test set where 1% of prompts are unsafe. Which check best tells you whether reviewers will drown in false alarms?",
+    "options": [
+      "Average precision and the precision at the planned threshold, on data with production prevalence",
+      "ROC AUC again, on a rebalanced test set with 50% unsafe prompts",
+      "Accuracy, because at 1% prevalence it is the most sensitive metric",
+      "Balanced accuracy, because it corrects for class imbalance"
+    ],
+    "answer": 0,
+    "explain": "ROC AUC and balanced accuracy are built from rates within each true class, so prevalence does not move them; with 99% negatives, even a small false positive rate can make most alarms false. Precision and average precision include prevalence. Rebalancing the test set is the tempting fix, but it hides exactly the false-alarm load you will see in production."
+  },
+  {
+    "id": "classification-metrics-2",
+    "chapter": "classification-metrics",
+    "q": "A fraud model was trained on data undersampled to 50% fraud, and it gives a transaction a score of 0.8. Real traffic has 0.5% fraud. What should you do before comparing the score with your cost threshold?",
+    "options": [
+      "Nothing: undersampling leaves ROC AUC unchanged, so 0.8 is still the probability of fraud",
+      "Map the score back to the real base rate (or upweight during training); here it corresponds to about 2%, not 80%",
+      "Fit temperature scaling on the undersampled training data to fix the probabilities",
+      "Raise the threshold to 0.99 for every model trained on resampled data"
+    ],
+    "answer": 1,
+    "explain": "Training at a 50% base rate inflates probabilities. Elkan's Theorem 2 gives p′ = b′(p − pb) ÷ (b − pb + b′p − bb′) = 0.005 × 0.4 ÷ 0.1015 ≈ 0.02. The tempting answer confuses ranking with probability: resampling can leave the ranking, and so ROC AUC, intact while the probabilities are badly off. Calibrating on training data makes things worse, and a fixed 0.99 threshold ignores both the base rate and the costs."
+  },
+  {
+    "id": "classification-metrics-3",
+    "chapter": "classification-metrics",
+    "q": "You build 90% conformal prediction sets for a ticket classifier, calibrated on 1,000 tickets from last year. This quarter, customers write about a new product line. What does the coverage guarantee promise now?",
+    "options": [
+      "At least 90%, because conformal prediction is distribution-free and works with any model",
+      "At least 90% for every product line separately",
+      "Nothing firm: the guarantee needs calibration and test data from the same distribution, so recalibrate on recent tickets",
+      "Exactly 90%, because 1,000 calibration examples remove sampling error"
+    ],
+    "answer": 2,
+    "explain": "Split conformal guarantees coverage of at least 1 − α (and at most 1 − α + 1/(n+1) when scores have no ties) when calibration and test points are i.i.d. (more generally, exchangeable). Distribution-free means no assumption about what that distribution is, not that it may change between calibration and use. Even without drift, the guarantee is marginal, averaged over inputs, not per group."
+  }
+]
