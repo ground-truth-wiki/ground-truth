@@ -87,7 +87,7 @@ agent-ux
 ```
 
 ## Go deeper
-- This Bible’s [AI product and UX](#ai-product-ux) chapter for the broader design principles.
+- The [AI product and UX](#ai-product-ux) chapter for the broader design principles.
 - AG-UI and MCP Apps documentation, for protocols that carry agent state and UI to front ends.
 
 ## Related

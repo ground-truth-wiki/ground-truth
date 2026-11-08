@@ -78,7 +78,7 @@ agentic-rl
 ```
 
 ## Go deeper
-- This Bible’s [RL environment harnesses](#rl-environment-harnesses) chapter.
+- The [RL environment harnesses](#rl-environment-harnesses) chapter.
 - Technical reports of recent coding and agent models, which increasingly describe agentic RL.
 
 ## Related

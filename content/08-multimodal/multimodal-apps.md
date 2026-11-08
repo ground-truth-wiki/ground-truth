@@ -76,7 +76,7 @@ multimodal-apps
 ```
 
 ## Go deeper
-- This Bible’s Book 8 chapters on each modality.
+- The Book 8 chapters on each modality.
 
 ## Related
 - [Vision-language models](#vision-language-models)

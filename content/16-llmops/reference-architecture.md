@@ -95,7 +95,7 @@ reference-architecture
 ```
 
 ## Go deeper
-- This Bible’s [system design method](#system-design-method) and [reference architectures](#reference-architectures) chapters.
+- The [system design method](#system-design-method) and [reference architectures](#reference-architectures) chapters.
 - Public engineering write-ups of production AI systems, read in [public write-ups](#public-writeups).
 
 ## Related

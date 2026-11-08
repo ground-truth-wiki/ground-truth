@@ -47,7 +47,7 @@ A threat model is a map of a building marked with every door, window and vent, a
 **OWASP Top 10 for LLM Applications.** A community list of the most common risk categories, updated periodically; its 2025 edition is a useful checklist:
 
 ```viz
-{"id":"owasp-tree","component":"tree","title":"The 2025 OWASP Top 10 for LLM applications, each linked to where this Bible covers it","caption":"Expand for a one-line description. Check owasp.org for the current edition; the list is revised as practice changes.","alt":"Tree of the ten OWASP risk categories for LLM applications in the 2025 edition.","data":"illustrative","depicts":"OWASP Top 10 for LLM Applications, 2025 edition","open":0,"root":{"label":"OWASP Top 10 for LLM applications (2025)","children":[
+{"id":"owasp-tree","component":"tree","title":"The 2025 OWASP Top 10 for LLM applications, each linked to where Ground Truth covers it","caption":"Expand for a one-line description. Check owasp.org for the current edition; the list is revised as practice changes.","alt":"Tree of the ten OWASP risk categories for LLM applications in the 2025 edition.","data":"illustrative","depicts":"OWASP Top 10 for LLM Applications, 2025 edition","open":0,"root":{"label":"OWASP Top 10 for LLM applications (2025)","children":[
 {"label":"LLM01 Prompt injection","children":[{"label":"Instructions in inputs or content that override intended behavior","link":"#prompt-injection"}]},
 {"label":"LLM02 Sensitive information disclosure","children":[{"label":"Leaking personal data, secrets or confidential content","link":"#privacy"}]},
 {"label":"LLM03 Supply chain","children":[{"label":"Compromised models, datasets, packages and plugins","link":"#supply-chain-security"}]},

@@ -98,7 +98,7 @@ ci-cd-for-ai
 
 ## Go deeper
 - Your CI platform’s documentation for required checks and path filters.
-- This Bible’s [eval harnesses](#eval-harnesses) and [eval tooling](#eval-tooling) chapters.
+- The [eval harnesses](#eval-harnesses) and [eval tooling](#eval-tooling) chapters.
 
 ## Related
 - [Why evals are the core skill](#why-evals)

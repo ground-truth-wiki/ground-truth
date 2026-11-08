@@ -73,7 +73,7 @@ data-strategy
 ```
 
 ## Go deeper
-- This Bible’s [data flywheel](#data-flywheel) and [eval datasets](#eval-datasets) chapters.
+- The [data flywheel](#data-flywheel) and [eval datasets](#eval-datasets) chapters.
 
 ## Related
 - [The data flywheel](#data-flywheel)

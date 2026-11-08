@@ -75,7 +75,7 @@ choosing-a-model
 ```
 
 ## Go deeper
-- This Bible’s [benchmark literacy](#benchmark-literacy) and [cost engineering](#cost-engineering) chapters.
+- The [benchmark literacy](#benchmark-literacy) and [cost engineering](#cost-engineering) chapters.
 
 ## Related
 - [Frontier model families](#frontier-families)

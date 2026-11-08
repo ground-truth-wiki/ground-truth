@@ -40,7 +40,7 @@ A map with blank regions is more useful than one that pretends to be complete; t
 {"label":"Economic and social effects","children":[{"label":"Work, education, information quality and concentration of power","link":"#governance-regulation"}]}]}}
 ```
 
-**Big debates.** How far current methods scale; whether reasoning models truly reason or pattern-match; open versus closed release; how fast automation reaches broad work; how to govern frontier systems. The [Apocrypha](#apocrypha) collects hot takes with counterarguments.
+**Big debates.** How far current methods scale; whether reasoning models truly reason or pattern-match; open versus closed release; how fast automation reaches broad work; how to govern frontier systems. The [Debates](#apocrypha) page collects hot takes with counterarguments.
 
 ## In practice
 - Design around current limits: verification, approvals and evals for what models cannot guarantee.

@@ -60,7 +60,7 @@ anti-patterns
 ```
 
 ## Go deeper
-- This Bible’s [lessons from public write-ups](#public-writeups) and [framework anti-patterns](#framework-anti-patterns).
+- The [lessons from public write-ups](#public-writeups) and [framework anti-patterns](#framework-anti-patterns).
 
 ## Related
 - [Framework anti-patterns](#framework-anti-patterns)

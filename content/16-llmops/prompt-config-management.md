@@ -80,7 +80,7 @@ prompt-config-management
 
 ## Go deeper
 - Your eval or observability platform’s prompt-management documentation.
-- This Bible’s [CI/CD for AI](#ci-cd-for-ai) chapter for gates and rollouts.
+- The [CI/CD for AI](#ci-cd-for-ai) chapter for gates and rollouts.
 
 ## Related
 - [CI/CD for AI](#ci-cd-for-ai)

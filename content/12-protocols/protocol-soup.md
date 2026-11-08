@@ -96,7 +96,7 @@ protocol-soup
 
 ## Go deeper
 - Project pages and repositories for AG-UI, MCP Apps, the Agent Client Protocol, AGENTS.md, Agent Skills (`agentskills/agentskills`, verified Nov 2026), llms.txt and NLWeb.
-- This Bible’s [protocol matrix](#matrix-protocols) for a dated comparison.
+- The [protocol matrix](#matrix-protocols) for a dated comparison.
 
 ## Related
 - [Why protocols](#why-protocols)

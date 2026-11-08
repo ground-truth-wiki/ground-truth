@@ -80,7 +80,7 @@ research-analyst-agents
 
 ## Go deeper
 - Your data platform’s documentation on AI analysts and semantic layers.
-- This Bible’s [deep research](#deep-research) chapter for source-based research.
+- The [deep research](#deep-research) chapter for source-based research.
 
 ## Related
 - [Deep research systems](#deep-research)

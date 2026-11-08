@@ -85,7 +85,7 @@ orchestration-frameworks
 
 ## Go deeper
 - LangGraph, LlamaIndex, CrewAI, Microsoft Agent Framework, Pydantic AI, Mastra and Vercel AI SDK documentation.
-- This Bible’s [framework anti-patterns](#framework-anti-patterns) chapter.
+- The [framework anti-patterns](#framework-anti-patterns) chapter.
 
 ## Related
 - [The landscape map](#framework-landscape)

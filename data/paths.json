@@ -3,7 +3,7 @@
     {
       "id": "zero-to-ai-engineer",
       "title": "Zero to AI Engineer in 12 weeks",
-      "blurb": "The spine of the Bible: models, prompting, retrieval, agents, protocols, evals, inference and security, about four chapters a week.",
+      "blurb": "The spine of Ground Truth: models, prompting, retrieval, agents, protocols, evals, inference and security, about four chapters a week.",
       "steps": [
         "ai-engineer-role",
         "ai-engineering-stack",

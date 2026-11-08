@@ -77,7 +77,7 @@ system-design-method
 ```
 
 ## Go deeper
-- This Bible’s [reference architectures](#reference-architectures) and [decision guides](#decision-guides).
+- The [reference architectures](#reference-architectures) and [decision guides](#decision-guides).
 
 ## Related
 - [Reference architecture](#reference-architecture)

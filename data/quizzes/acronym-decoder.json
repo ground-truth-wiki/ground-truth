@@ -18,7 +18,7 @@
     "q": "How is the decoder kept complete?",
     "options": [
       "Manually",
-      "It is generated from Lexicon terms that have abbreviations",
+      "It is generated from glossary terms that have abbreviations",
       "From search logs",
       "It is not"
     ],

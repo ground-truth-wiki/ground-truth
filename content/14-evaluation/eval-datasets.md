@@ -98,7 +98,7 @@ eval-datasets
 
 ## Go deeper
 - Hamel Husain and Shreya Shankar’s guidance on building eval datasets from traces.
-- This Bible’s [benchmark literacy](#benchmark-literacy) chapter on contamination.
+- The [benchmark literacy](#benchmark-literacy) chapter on contamination.
 
 ## Related
 - [Why evals are the core skill](#why-evals)

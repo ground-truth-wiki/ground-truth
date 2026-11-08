@@ -69,7 +69,7 @@ decision-guides
 ```
 
 ## Go deeper
-- This Bible’s decision wizards and comparison matrices in the [Workshop](#workshop) and [Matrices](#matrices) pages.
+- The decision wizards and comparison matrices in the [Workshop](#workshop) and [Matrices](#matrices) pages.
 
 ## Related
 - [The AI system design method](#system-design-method)

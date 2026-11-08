@@ -2,7 +2,7 @@
   {
     "id": "qcg-1",
     "chapter": "commandments-guide",
-    "q": "What makes a commandment more useful than a bare rule?",
+    "q": "What makes a principle more useful than a bare rule?",
     "options": [
       "Brevity",
       "A reason and a link to the evidence, so you know when it applies",
@@ -15,7 +15,7 @@
   {
     "id": "qcg-2",
     "chapter": "commandments-guide",
-    "q": "How many Commandments sheets are there?",
+    "q": "How many cheat sheets are there?",
     "options": [
       "5",
       "10",
@@ -28,7 +28,7 @@
   {
     "id": "qcg-3",
     "chapter": "commandments-guide",
-    "q": "What should you do when you disagree with a commandment?",
+    "q": "What should you do when you disagree with a principle?",
     "options": [
       "Ignore it",
       "Read its chapter and test the disagreement on evidence",

@@ -1,0 +1,845 @@
+{
+  "note": "Approved differences between the build and source/bible-v2.0.0.html. Each entry is an exact replacement inside one scope, applied in order, with the number of times it must apply. See docs/migration/RENAME_PLAN.md.",
+  "entries": [
+    {
+      "scope": "styles",
+      "from": "/* ===== The AI Engineer's Bible: engine styles ===== */",
+      "to": "/* ===== Ground Truth Wiki: engine styles ===== */",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<title>The AI Engineer’s Bible</title>",
+      "to": "<title>Ground Truth Wiki</title>",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<meta name=\"description\" content=\"A course, a reference and a playground for becoming a state-of-the-art AI engineer.\">",
+      "to": "<meta name=\"description\" content=\"An open, community-reviewed course, reference and playground for AI engineering.\">",
+      "count": 1,
+      "change": "site description"
+    },
+    {
+      "scope": "shell",
+      "from": "aria-label=\"The AI Engineer’s Bible, home\"",
+      "to": "aria-label=\"Ground Truth Wiki, home\"",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<span>The AI Engineer’s Bible</span>",
+      "to": "<span>Ground Truth Wiki</span>",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "shell",
+      "from": "<noscript><p>The AI Engineer’s Bible needs JavaScript",
+      "to": "<noscript><p>Ground Truth Wiki needs JavaScript",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "data:data-meta",
+      "from": "\"title\": \"The AI Engineer’s Bible\"",
+      "to": "\"title\": \"Ground Truth Wiki\"",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "engine",
+      "from": "/* ===== The AI Engineer's Bible: engine core ===== */",
+      "to": "/* ===== Ground Truth Wiki: engine core ===== */",
+      "count": 1,
+      "change": "site name"
+    },
+    {
+      "scope": "engine",
+      "from": "let hasRail = false, title = 'The AI Engineer’s Bible';",
+      "to": "let hasRail = false, title = META.title || ''; /* gt: site name from data-meta */",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "el('p', {}, 'The AI Engineer’s Bible, version ' + (m.version",
+      "to": "el('p', {}, /* gt: site name from data-meta */ (m.title || '') + ', version ' + (m.version",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "const toks = ['The', ' AI', ' Engineer', '’s', ' Bible'];\n  const sal = [0.3, 1.5, 1.7, 0.4, 1.6];",
+      "to": "/* gt: the hero tokens come from the site name in data-meta */\n  const toks = String(META.title || '').split(/(?= )/);\n  const sal = toks.map((t, i) => [1.2, 1.7, 0.9, 1.5, 0.6][i % 5]);",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "engine",
+      "from": "'aria-label': 'The AI Engineer’s Bible' });",
+      "to": "'aria-label': META.title || '' }); /* gt: site name from data-meta */",
+      "count": 1,
+      "change": "engine: site name from data-meta"
+    },
+    {
+      "scope": "chapters",
+      "from": "The Lexicon is the Bible’s glossary:",
+      "to": "The Glossary is Ground Truth’s dictionary:",
+      "count": 1,
+      "change": "project name, glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Every acronym in the Bible, expanded and linked to its Lexicon entry, generated from the Lexicon so",
+      "to": "Every acronym in Ground Truth, expanded and linked to its glossary entry, generated from the Glossary so",
+      "count": 1,
+      "change": "project name, glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Each node is a Book of this Bible.",
+      "to": "Each node is a Book of Ground Truth.",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "How to use this Bible",
+      "to": "How to use Ground Truth",
+      "count": 8,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "This Bible’s ",
+      "to": "The ",
+      "count": 31,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "The Bible is a city:",
+      "to": "Ground Truth is a city:",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Diagram of the Bible’s structure",
+      "to": "Diagram of Ground Truth’s structure",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Your first hour with the Bible",
+      "to": "Your first hour with Ground Truth",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Experts use the Bible as a map",
+      "to": "Experts use Ground Truth as a map",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Every model in this Bible is",
+      "to": "Every model in Ground Truth is",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "where this Bible covers it",
+      "to": "where Ground Truth covers it",
+      "count": 3,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "the line this Bible uses",
+      "to": "the line Ground Truth uses",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "chapters of this Bible as dated",
+      "to": "chapters of Ground Truth as dated",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "a debate the Bible covers",
+      "to": "a debate Ground Truth covers",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "turns this Bible into a curriculum",
+      "to": "turns Ground Truth into a curriculum",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Every version of the Bible is recorded",
+      "to": "Every version of Ground Truth is recorded",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Ways to extend the Bible",
+      "to": "Ways to extend Ground Truth",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "ways to extend the Bible:",
+      "to": "ways to extend Ground Truth:",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[Lexicon](#lexicon-guide)",
+      "to": "[Glossary](#lexicon-guide)",
+      "count": 5,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[Lexicon](#lexicon)",
+      "to": "[Glossary](#lexicon)",
+      "count": 2,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "the Lexicon, Genesis, the Workshop and the Commandments",
+      "to": "the Glossary, the Timeline, the Workshop and the Cheat sheets",
+      "count": 1,
+      "change": "glossary, timeline and cheat sheet names"
+    },
+    {
+      "scope": "chapters",
+      "from": "the Lexicon, Genesis and Workshop",
+      "to": "the Glossary, Timeline and Workshop",
+      "count": 1,
+      "change": "glossary and timeline names"
+    },
+    {
+      "scope": "chapters",
+      "from": "SOTA, Canon, Lexicon",
+      "to": "SOTA, Canon, Glossary",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "click for the Lexicon entry.",
+      "to": "click for the glossary entry.",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "a Lexicon of several hundred terms",
+      "to": "a glossary of several hundred terms",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "built from Lexicon entries",
+      "to": "built from glossary entries",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "every Lexicon term",
+      "to": "every glossary term",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "grows with the Lexicon.",
+      "to": "grows with the Glossary.",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "quizzes, Lexicon terms and links.",
+      "to": "quizzes, glossary terms and links.",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapter:lexicon-guide",
+      "from": "data-title=\"Lexicon\"",
+      "to": "data-title=\"Glossary\"",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "The Lexicon is the index at the back",
+      "to": "The Glossary is the index at the back",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "What a Lexicon entry contains",
+      "to": "What a glossary entry contains",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "a rendered Lexicon entry",
+      "to": "a rendered glossary entry",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Aliases let the Lexicon recognize",
+      "to": "Aliases let the Glossary recognize",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Tree of Lexicon term families",
+      "to": "Tree of glossary term families",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Search the Lexicon from anywhere",
+      "to": "Search the Glossary from anywhere",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "the Lexicon holds several hundred terms",
+      "to": "the Glossary holds several hundred terms",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[Genesis](#genesis) timeline",
+      "to": "the [Timeline](#genesis)",
+      "count": 1,
+      "change": "timeline name"
+    },
+    {
+      "scope": "chapters",
+      "from": "events from Genesis",
+      "to": "events from the Timeline",
+      "count": 2,
+      "change": "timeline name"
+    },
+    {
+      "scope": "chapters",
+      "from": "from Genesis entries marked",
+      "to": "from timeline entries marked",
+      "count": 2,
+      "change": "timeline name"
+    },
+    {
+      "scope": "chapters",
+      "from": "- [Genesis](#genesis), the timeline the Canon is drawn from.",
+      "to": "- The [Timeline](#genesis), which the Canon is drawn from.",
+      "count": 1,
+      "change": "timeline name"
+    },
+    {
+      "scope": "chapters",
+      "from": "a Commandments sheet",
+      "to": "a cheat sheet",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[The Commandments](#commandments-guide)",
+      "to": "[Cheat sheets](#commandments-guide)",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[Commandments](#commandments-guide)",
+      "to": "[Cheat sheets](#commandments-guide)",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[Commandments](#commandments)",
+      "to": "[Cheat sheets](#commandments)",
+      "count": 2,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapter:commandments-guide",
+      "from": "data-title=\"The Commandments\"",
+      "to": "data-title=\"Cheat sheets\"",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "> The Commandments are one-screen cheat sheets for",
+      "to": "> The cheat sheets are one-screen summaries for",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Commandments are a pilot’s checklist",
+      "to": "Cheat sheets are a pilot’s checklist",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "Tree of the fourteen Commandments sheets",
+      "to": "Tree of the fourteen cheat sheets",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "\"label\":\"The Commandments\"",
+      "to": "\"label\":\"Cheat sheets\"",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "A commandment is a rule plus the reason you can check",
+      "to": "A principle is a rule plus the reason you can check",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "chapters",
+      "from": "a bare rule and a commandment with its reason",
+      "to": "a bare rule and a principle with its reason",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "chapters",
+      "from": "\"A commandment\"",
+      "to": "\"A principle\"",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "chapters",
+      "from": "commandments should be argued with",
+      "to": "principles should be argued with",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "chapters",
+      "from": "agrees on the Commandments ships faster",
+      "to": "agrees on the cheat sheets ships faster",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "[The evals Commandments](#cmd-evals)",
+      "to": "[The evals cheat sheet](#cmd-evals)",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "chapters",
+      "from": "The [Apocrypha](#apocrypha) collects",
+      "to": "The [Debates](#apocrypha) page collects",
+      "count": 1,
+      "change": "debates name"
+    },
+    {
+      "scope": "chapters",
+      "from": "the [Apocrypha](#apocrypha) collects",
+      "to": "the [Debates](#apocrypha) page collects",
+      "count": 1,
+      "change": "debates name"
+    },
+    {
+      "scope": "chapters",
+      "from": "The [Apocrypha](#apocrypha) and",
+      "to": "The [Debates](#apocrypha) page and",
+      "count": 1,
+      "change": "debates name"
+    },
+    {
+      "scope": "data:data-books",
+      "from": "how to use this Bible.",
+      "to": "how to use Ground Truth.",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-books",
+      "from": "The Lexicon, acronyms,",
+      "to": "The Glossary, acronyms,",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "data:data-paths",
+      "from": "The spine of the Bible:",
+      "to": "The spine of Ground Truth:",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "What does this Bible recommend",
+      "to": "What does Ground Truth recommend",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "find anything in the Bible?",
+      "to": "find anything in Ground Truth?",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "does the Bible offer?",
+      "to": "does Ground Truth offer?",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "as the Bible grows?",
+      "to": "as Ground Truth grows?",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "generated from Lexicon terms that have",
+      "to": "generated from glossary terms that have",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "links to Lexicon terms?",
+      "to": "links to glossary terms?",
+      "count": 1,
+      "change": "glossary name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "What makes a commandment more useful",
+      "to": "What makes a principle more useful",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "How many Commandments sheets are there?",
+      "to": "How many cheat sheets are there?",
+      "count": 1,
+      "change": "cheat sheet name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "disagree with a commandment?",
+      "to": "disagree with a principle?",
+      "count": 1,
+      "change": "cheat sheet item name"
+    },
+    {
+      "scope": "data:data-quizzes",
+      "from": "Genesis entries marked as canon",
+      "to": "Timeline entries marked as canon",
+      "count": 1,
+      "change": "timeline name"
+    },
+    {
+      "scope": "shell",
+      "from": "aria-label=\"Search the Bible\"",
+      "to": "aria-label=\"Search Ground Truth Wiki\"",
+      "count": 1,
+      "change": "project name"
+    },
+    {
+      "scope": "engine",
+      "from": "and how to use this Bible.' })",
+      "to": "and how to use ' + META.title + '.' }) /* gt: site name */",
+      "count": 1,
+      "change": "engine: project name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'Curated routes through the Bible. ",
+      "to": "text: /* gt: site name */ 'Curated routes through ' + META.title + '. ",
+      "count": 1,
+      "change": "engine: project name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'This Bible is one HTML file built to grow. ",
+      "to": "text: /* gt: site name */ META.title + ' is one HTML file built to grow. ",
+      "count": 1,
+      "change": "engine: project name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'Every diagram in the Bible speaks one language. ",
+      "to": "text: /* gt: site name */ 'Every diagram in ' + META.title + ' speaks one language. ",
+      "count": 1,
+      "change": "engine: project name"
+    },
+    {
+      "scope": "engine",
+      "from": "'Open in the Lexicon'",
+      "to": "'Open in the Glossary'",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "sub: 'Commandments'",
+      "to": "sub: 'Cheat sheets'",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Lexicon', 'lexicon']",
+      "to": "['Glossary', 'lexicon']",
+      "count": 2,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Genesis timeline', 'genesis']",
+      "to": "['Timeline', 'genesis']",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "['The Commandments', 'commandments']",
+      "to": "['Cheat sheets', 'commandments']",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "['The Apocrypha', 'apocrypha']",
+      "to": "['Debates', 'apocrypha']",
+      "count": 1,
+      "change": "engine: debates name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Genesis', 'genesis']",
+      "to": "['Timeline', 'genesis']",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Lexicon', '#lexicon']",
+      "to": "['Glossary', '#lexicon']",
+      "count": 2,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Genesis timeline', '#genesis']",
+      "to": "['Timeline', '#genesis']",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "['term', 'Lexicon']",
+      "to": "['term', 'Glossary']",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "['sheet', 'Commandments']",
+      "to": "['sheet', 'Cheat sheets']",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "['event', 'Genesis']",
+      "to": "['event', 'Timeline']",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "browse the Lexicon.'",
+      "to": "browse the Glossary.'",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "' entries, drawn from Genesis items marked as canon.",
+      "to": "' entries, drawn from Timeline items marked as canon.",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "+ ' commandments' }",
+      "to": "+ ' principles' }",
+      "count": 1,
+      "change": "engine: cheat sheet item name"
+    },
+    {
+      "scope": "engine",
+      "from": "'The Lexicon holds '",
+      "to": "'The Glossary holds '",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'Open the Lexicon' }",
+      "to": "text: 'Open the Glossary' }",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'The Lexicon' }",
+      "to": "text: 'Glossary' }",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "' · Lexicon'",
+      "to": "' · Glossary'",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'Back to the Lexicon' }",
+      "to": "text: 'Back to the Glossary' }",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'Genesis' }",
+      "to": "text: 'Timeline' }",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "sec('The Commandments',",
+      "to": "sec('Cheat sheets',",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'The Commandments' }",
+      "to": "text: 'Cheat sheets' }",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "['Commandments', '#commandments']",
+      "to": "['Cheat sheets', '#commandments']",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "text: 'The Apocrypha' }",
+      "to": "text: 'Debates' }",
+      "count": 1,
+      "change": "engine: debates name"
+    },
+    {
+      "scope": "engine",
+      "from": "chapters, Lexicon, Genesis, quizzes.",
+      "to": "chapters, Glossary, Timeline, quizzes.",
+      "count": 1,
+      "change": "engine: glossary and timeline names"
+    },
+    {
+      "scope": "engine",
+      "from": "explicit Lexicon link",
+      "to": "explicit glossary link",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "lexicon: 'Lexicon'",
+      "to": "lexicon: 'Glossary'",
+      "count": 1,
+      "change": "engine: glossary name"
+    },
+    {
+      "scope": "engine",
+      "from": "genesis: 'Genesis'",
+      "to": "genesis: 'Timeline'",
+      "count": 1,
+      "change": "engine: timeline name"
+    },
+    {
+      "scope": "engine",
+      "from": "commandments: 'Commandments'",
+      "to": "commandments: 'Cheat sheets'",
+      "count": 1,
+      "change": "engine: cheat sheet name"
+    },
+    {
+      "scope": "engine",
+      "from": "apocrypha: 'Apocrypha'",
+      "to": "apocrypha: 'Debates'",
+      "count": 1,
+      "change": "engine: debates name"
+    }
+  ]
+}

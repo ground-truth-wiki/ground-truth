@@ -72,7 +72,7 @@ frontier-families
 
 ## Go deeper
 - Each developer’s current model overview, model cards and system cards.
-- This Bible’s [state-of-the-art snapshot](#sota-snapshot) for a dated view.
+- The [state-of-the-art snapshot](#sota-snapshot) for a dated view.
 
 ## Related
 - [Choosing a model](#choosing-a-model)

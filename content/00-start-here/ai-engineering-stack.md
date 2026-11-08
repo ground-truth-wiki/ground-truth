@@ -111,7 +111,7 @@ ai-engineering-stack
 ## Go deeper
 - Anthropic, “Building effective agents” (December 2024), an essay on composing models, tools and workflows. Search for the title on anthropic.com.
 - Chip Huyen, *AI Engineering* (O’Reilly, 2025), a book-length treatment of building on foundation models.
-- This Bible’s [Reference architecture](#reference-architecture) chapter turns the stack into a deployable diagram.
+- The [Reference architecture](#reference-architecture) chapter turns the stack into a deployable diagram.
 
 ## Related
 - [What an AI engineer is](#ai-engineer-role)

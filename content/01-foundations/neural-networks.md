@@ -16,7 +16,7 @@ visuals:
 > A neural network is layers of linear transformations separated by nonlinear activations, trained by backpropagation to minimize a loss. Depth lets networks build features from features; residual connections and normalization make very deep networks trainable. Transformers are a particular arrangement of these parts.
 
 ## Why it matters
-Every model in this Bible is a neural network. Knowing forward passes, losses, gradients and the role of activations, normalization and residuals makes architecture papers, training failures and fine-tuning settings understandable.
+Every model in Ground Truth is a neural network. Knowing forward passes, losses, gradients and the role of activations, normalization and residuals makes architecture papers, training failures and fine-tuning settings understandable.
 
 ## Intuition
 A network is an assembly line of simple workers. Each multiplies its inputs by weights, adds them up and passes a squashed result on. Training is the foreman going back down the line after each mistake, telling each worker how to adjust.

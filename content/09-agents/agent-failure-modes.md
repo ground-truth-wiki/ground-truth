@@ -89,7 +89,7 @@ agent-failure-modes
 
 ## Go deeper
 - Cemri et al., “Why Do Multi-Agent LLM Systems Fail?” (2025), a taxonomy of multi-agent failures.
-- This Bible’s [error analysis](#error-analysis) chapter for the reading-and-counting method.
+- The [error analysis](#error-analysis) chapter for the reading-and-counting method.
 
 ## Related
 - [Error analysis first](#error-analysis)

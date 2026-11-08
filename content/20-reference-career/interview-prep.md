@@ -72,7 +72,7 @@ interview-prep
 ```
 
 ## Go deeper
-- This Bible’s [system design method](#system-design-method) and [back-of-the-envelope estimation](#back-of-envelope).
+- The [system design method](#system-design-method) and [back-of-the-envelope estimation](#back-of-envelope).
 
 ## Related
 - [Talking shop](#talking-shop)

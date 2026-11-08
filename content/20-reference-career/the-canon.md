@@ -13,7 +13,7 @@ visuals:
   - paper-reading:tree
 ---
 > [!tldr]
-> The Canon is the reading list of papers and essays that working practitioners assume you know, in chronological order, each with why it matters. It is generated from Genesis entries marked as canon and grows with the field. Read for the one idea each contributes, and verify citations before you cite them.
+> The Canon is the reading list of papers and essays that working practitioners assume you know, in chronological order, each with why it matters. It is generated from timeline entries marked as canon and grows with the field. Read for the one idea each contributes, and verify citations before you cite them.
 
 ## Why it matters
 Shared reading creates shared vocabulary and judgment. Knowing the lineage of ideas, from word vectors to attention to scale to alignment to agents, makes new papers easier to place and hype easier to spot.
@@ -45,7 +45,7 @@ canon
 
 ## Numbers to know
 > [!number]
-> Fact: the Canon is generated from Genesis entries marked canon; its count grows with each version.
+> Fact: the Canon is generated from timeline entries marked canon; its count grows with each version.
 
 ## Pitfalls and anti-patterns
 > [!pitfall] Citing from memory
@@ -63,11 +63,11 @@ the-canon
 ```
 
 ## Go deeper
-- [Genesis](#genesis), the timeline the Canon is drawn from.
+- The [Timeline](#genesis), which the Canon is drawn from.
 
 ## Related
 - [Lessons from public engineering write-ups](#public-writeups)
 - [Who’s who and where to learn](#whos-who)
 - [Talking shop](#talking-shop)
 - [Watchlist](#watchlist)
-- [How to use this Bible](#how-to-use)
+- [How to use Ground Truth](#how-to-use)

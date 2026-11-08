@@ -101,7 +101,7 @@ deep-research
 
 ## Go deeper
 - Anthropic engineering, “How we built our multi-agent research system” (June 2025).
-- This Bible’s [advanced RAG](#advanced-rag) and [grounding](#grounding-citations) chapters.
+- The [advanced RAG](#advanced-rag) and [grounding](#grounding-citations) chapters.
 
 ## Related
 - [Research and analyst agents](#research-analyst-agents)

@@ -34,7 +34,7 @@ A recipe is a workflow: the steps are written down and anyone can follow them. A
 ```
 
 ## How it works
-**The working definition.** Anthropic’s essay “Building effective agents” (December 2024) draws the line this Bible uses: in **workflows**, models and tools are orchestrated through predefined code paths; in **agents**, the model dynamically directs its own process and tool use. Both are “agentic systems”; they differ in who holds control.
+**The working definition.** Anthropic’s essay “Building effective agents” (December 2024) draws the line Ground Truth uses: in **workflows**, models and tools are orchestrated through predefined code paths; in **agents**, the model dynamically directs its own process and tool use. Both are “agentic systems”; they differ in who holds control.
 
 **What makes something an agent.** Four ingredients: a model that can choose actions, tools that let actions affect the world, a [loop](#agent-loop) that feeds results back, and a stop condition. Remove the loop and you have a tool-using assistant; remove the model’s choice and you have a workflow.
 
