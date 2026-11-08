@@ -8,10 +8,12 @@ Legal notice for this website.
 
 ## Responsible for this website
 
-[NAME]
-[ADDRESS]
+Klaus Siebeneicher\
+Am Sonnenhang 2\
+3243 St. Leonhard am Forst\
+Austria
 
-Email: [EMAIL]
+Email: [klaus@7eicher.net](mailto:klaus@7eicher.net)
 
 ## What this website is
 
