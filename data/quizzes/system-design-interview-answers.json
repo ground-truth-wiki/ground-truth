@@ -1,0 +1,41 @@
+[
+  {
+    "id": "system-design-interview-answers-1",
+    "chapter": "system-design-interview-answers",
+    "q": "You are asked to design an internal assistant that answers questions from company documents, and you have already named the RAG blueprint. Which next move best shows the interview layer rather than the blueprint?",
+    "options": [
+      "Explaining in detail how embeddings and approximate nearest-neighbor search work",
+      "Saying that permissions are enforced as a filter inside the retrieval query, and describing a leak test run by users who must not see a document",
+      "Proposing a planner agent with specialist subagents for each department",
+      "Comparing three vector databases and their features"
+    ],
+    "answer": 1,
+    "explain": "The blueprint already contains retrieval; what gets graded is finding where its defining component fails (permissions) and how you would prove it does not. Explaining embeddings is the most tempting wrong answer: it shows knowledge, but it repeats the blueprint and says nothing about what can go wrong or how you would know."
+  },
+  {
+    "id": "system-design-interview-answers-2",
+    "chapter": "system-design-interview-answers",
+    "q": "Your estimate for a smart compose feature comes to billions of suggestion requests a day, with a latency budget of tens of milliseconds per suggestion. What does this most directly imply for the design?",
+    "options": [
+      "Use the largest hosted model available and rely on prompt caching to cut the cost",
+      "Retrieve from the user's past emails on every keystroke before generating",
+      "Serve a small model you control, close to the user, and show a suggestion only above a confidence threshold",
+      "Have an LLM judge check each suggestion before it is shown"
+    ],
+    "answer": 2,
+    "explain": "Volume times per-call price makes a large hosted model far too expensive, and the latency budget leaves no room for a large remote model or extra calls; Gmail's Smart Compose chose an LSTM language model over a higher-quality Transformer because of a 60 ms 90th-percentile latency target and very high request volume, and showed a suggestion only above a confidence threshold. Prompt caching is the tempting wrong answer: it lowers the price of repeated input, but not the number of requests or the latency of a large model."
+  },
+  {
+    "id": "system-design-interview-answers-3",
+    "chapter": "system-design-interview-answers",
+    "q": "A support agent that issues refunds completes 90% of simulated conversations in a single run. The interviewer asks if it is ready for real customers. Which answer is strongest?",
+    "options": [
+      "Yes, because 90% is above the target success rate",
+      "Switch to a larger model first, then launch",
+      "Launch with a notice telling customers that the agent can make mistakes",
+      "Run each scenario several times and measure pass^k, check the database state and policy compliance after each action, then launch behind hard limits with escalation"
+    ],
+    "answer": 3,
+    "explain": "One-run success hides inconsistency, and customers experience every run: if each run succeeds 90% of the time independently, all 8 of 8 succeed only about 43% of the time. pass^k, from τ-bench, measures exactly that, and limits in code contain the failures that remain. Accepting the 90% is the tempting wrong answer because it treats single-run accuracy as reliability."
+  }
+]
