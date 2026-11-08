@@ -1,0 +1,41 @@
+[
+  {
+    "id": "model-types-1",
+    "chapter": "model-types",
+    "q": "You self-host an open-weight instruct model and build prompts by hand as plain text: \"User: … Assistant:\". Replies ramble and sometimes continue the user’s question instead of answering it. What is the most likely cause?",
+    "options": [
+      "The weights are really a base model, so the model was never post-trained to answer",
+      "The context window is too small for the conversation",
+      "The prompt lacks the control tokens and generation prompt of the model’s chat template, so the model does not see the turn structure it was trained on",
+      "The sampling temperature is too high"
+    ],
+    "answer": 2,
+    "explain": "A chat model still just continues a token sequence. Its chat template marks turns with specific control tokens, and with add_generation_prompt it appends an assistant header, so the model knows a reply starts; without them, quality drops and it may continue the user’s text. Render prompts with the tokenizer’s apply_chat_template. The tempting answer is a base model, because the symptoms look the same, but an instruct model fed the wrong format behaves like one. Fix the format before you suspect the weights."
+  },
+  {
+    "id": "model-types-2",
+    "chapter": "model-types",
+    "q": "A mixture-of-experts model has 235B total and 22B active parameters. Compared with a dense 22B model at the same precision, what should you expect?",
+    "options": [
+      "The same memory for weights and the same compute per token",
+      "About the same compute per token, but roughly ten times the memory for weights",
+      "Roughly ten times the compute per token, but the same memory for weights",
+      "Roughly ten times both the memory and the compute per token"
+    ],
+    "answer": 1,
+    "explain": "Every expert must be stored, so weight memory follows the 235B total. Each token passes through only the experts the router picks, so forward compute follows the 22B active parameters, about 2 FLOPs per active parameter. The tempting mistake is to size hardware by the active count, as if the model were a 22B dense model; it will not fit."
+  },
+  {
+    "id": "model-types-3",
+    "chapter": "model-types",
+    "q": "A model page lists a 1M-token context window and a 128K-token max output. You send a 300K-token prompt to a model with thinking on and ask for a long report. The response stops at the output limit after only a short visible answer. Why?",
+    "options": [
+      "The prompt plus the report exceeded the 1M-token context window",
+      "The model’s knowledge cutoff stopped it from writing about recent material",
+      "Max output applies only to visible text, so the server truncated the report for another reason",
+      "Thinking tokens count toward the max output budget, so long thinking left little room for visible text"
+    ],
+    "answer": 3,
+    "explain": "Thinking tokens are part of the output: they are billed as output and count toward max output. A long think can use most of the budget before the visible answer starts. The tempting answer is the context window, but 300K input plus at most 128K output fits easily in 1M; the binding limit here is max output, not the window."
+  }
+]
