@@ -1,0 +1,15 @@
+{
+  "id": "tool-call",
+  "term": "Tool call",
+  "def": "A structured request from a model asking the application to run a named function with given arguments.",
+  "practice": "The application executes it and returns the result as a message tied to the call’s id.",
+  "aliases": [
+    "function calling",
+    "tool use",
+    "tool calls"
+  ],
+  "chapters": [
+    "agent-tools",
+    "agent-loop"
+  ]
+}

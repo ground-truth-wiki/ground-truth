@@ -1,0 +1,11 @@
+{
+  "id": "rmsnorm",
+  "term": "RMSNorm",
+  "def": "A normalization that rescales activations by their root mean square, without subtracting the mean.",
+  "practice": "Cheaper than LayerNorm and standard in recent transformers.",
+  "aliases": [],
+  "chapters": [
+    "transformer-block",
+    "neural-networks"
+  ]
+}

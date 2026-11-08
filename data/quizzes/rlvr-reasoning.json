@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b3-3",
+    "chapter": "rlvr-reasoning",
+    "q": "What makes a reward “verifiable” in RLVR?",
+    "options": [
+      "A human rates every answer",
+      "A program can check the answer, such as a math result or passing tests",
+      "The model grades itself",
+      "It is always 1"
+    ],
+    "answer": 1,
+    "explain": "Verifiable rewards come from automatic checks."
+  },
+  {
+    "id": "qrv-1",
+    "chapter": "rlvr-reasoning",
+    "q": "In GRPO, how is a sample’s advantage computed?",
+    "options": [
+      "From a value model",
+      "Relative to the other samples in its group: reward minus group mean, divided by the standard deviation",
+      "From human ratings",
+      "Randomly"
+    ],
+    "answer": 1,
+    "explain": "Group-relative baselines replace the critic."
+  },
+  {
+    "id": "qrv-2",
+    "chapter": "rlvr-reasoning",
+    "q": "What makes a reward “verifiable”?",
+    "options": [
+      "A human checks it",
+      "A program checks the outcome, such as an answer match or passing tests",
+      "A judge model rates it",
+      "It is always 1"
+    ],
+    "answer": 1,
+    "explain": "Automatic checks scale and resist subjectivity."
+  },
+  {
+    "id": "qrv-3",
+    "chapter": "rlvr-reasoning",
+    "q": "Why do all-correct or all-wrong groups teach nothing?",
+    "options": [
+      "They are too long",
+      "Every sample gets the same advantage of zero",
+      "They break the verifier",
+      "They use too many tokens"
+    ],
+    "answer": 1,
+    "explain": "Training problems need the right difficulty."
+  }
+]

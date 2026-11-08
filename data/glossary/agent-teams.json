@@ -1,0 +1,11 @@
+{
+  "id": "agent-teams",
+  "term": "Agent teams",
+  "def": "A Claude Code research preview in which several Claude instances collaborate on one task.",
+  "practice": "Verified in the November 2026 changelog.",
+  "aliases": [],
+  "chapters": [
+    "claude-code",
+    "multi-agent"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "product-quantization",
+  "term": "Product quantization",
+  "def": "Compressing vectors by splitting them into sub-vectors and replacing each with the nearest centroid code.",
+  "practice": "Cuts index memory sharply; often combined with IVF.",
+  "aliases": [
+    "PQ"
+  ],
+  "chapters": [
+    "vector-search"
+  ]
+}

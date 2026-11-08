@@ -1,0 +1,10 @@
+{
+  "id": "multiple-comparisons",
+  "term": "Multiple comparisons",
+  "def": "The inflation of false positives when many variants are compared on the same data.",
+  "practice": "Confirm winners on held-out data or correct for it.",
+  "aliases": [],
+  "chapters": [
+    "eval-statistics"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "escalation",
+  "term": "Escalation",
+  "def": "An agent handing a task to a person, with a summary of what was tried and what is needed.",
+  "practice": "A good escalation saves the human from rereading the transcript.",
+  "aliases": [
+    "handoff to a human"
+  ],
+  "chapters": [
+    "human-in-the-loop",
+    "support-agents"
+  ]
+}

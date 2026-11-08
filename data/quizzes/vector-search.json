@@ -1,0 +1,41 @@
+[
+  {
+    "id": "vs-1",
+    "chapter": "vector-search",
+    "q": "What does ef_search control in HNSW?",
+    "options": [
+      "The number of layers",
+      "The size of the candidate list at query time, trading latency for recall",
+      "The embedding dimension",
+      "The number of documents"
+    ],
+    "answer": 1,
+    "explain": "It is the main query-time knob."
+  },
+  {
+    "id": "vs-2",
+    "chapter": "vector-search",
+    "q": "How do you measure an ANN index’s recall?",
+    "options": [
+      "Ask users",
+      "Compare its top k with exact brute-force results on sample queries",
+      "Count vectors",
+      "Check latency"
+    ],
+    "answer": 1,
+    "explain": "Exact search on a sample is the ground truth."
+  },
+  {
+    "id": "vs-3",
+    "chapter": "vector-search",
+    "q": "Why can very selective filters hurt HNSW search?",
+    "options": [
+      "They add vectors",
+      "Filtering during traversal can disconnect the graph, returning too few results",
+      "They increase dimensions",
+      "They disable quantization"
+    ],
+    "answer": 1,
+    "explain": "Test with your real filter mix."
+  }
+]

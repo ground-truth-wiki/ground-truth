@@ -1,0 +1,10 @@
+{
+  "id": "platform-model",
+  "term": "Platform model",
+  "def": "A model built into an operating system and exposed to apps through system APIs.",
+  "practice": "Saves download size; limited customization.",
+  "aliases": [],
+  "chapters": [
+    "edge-on-device"
+  ]
+}

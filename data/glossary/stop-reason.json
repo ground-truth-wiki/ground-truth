@@ -1,0 +1,14 @@
+{
+  "id": "stop-reason",
+  "term": "Stop reason",
+  "def": "The API field that says why generation stopped, such as a finished turn, a tool request or a token limit.",
+  "practice": "Handle every value explicitly in your loop.",
+  "aliases": [
+    "stop_reason",
+    "finish reason"
+  ],
+  "chapters": [
+    "agent-loop",
+    "model-apis"
+  ]
+}

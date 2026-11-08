@@ -1,0 +1,12 @@
+{
+  "id": "mitre-atlas",
+  "term": "MITRE ATLAS",
+  "def": "A knowledge base of adversary tactics and techniques against AI systems.",
+  "practice": "Use alongside OWASP for threat modeling.",
+  "aliases": [
+    "ATLAS"
+  ],
+  "chapters": [
+    "threat-modeling"
+  ]
+}

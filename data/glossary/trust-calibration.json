@@ -1,0 +1,12 @@
+{
+  "id": "trust-calibration",
+  "term": "Trust calibration",
+  "def": "Matching how much users rely on a system to how reliable it actually is.",
+  "practice": "",
+  "aliases": [
+    "over-reliance"
+  ],
+  "chapters": [
+    "ai-product-ux"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "vibe-coding",
+  "term": "Vibe coding",
+  "def": "Accepting AI-generated code without reading it closely, a term Andrej Karpathy popularized in 2025.",
+  "practice": "Fine for prototypes; risky for code you maintain.",
+  "aliases": [],
+  "chapters": [
+    "working-with-coding-agents"
+  ]
+}

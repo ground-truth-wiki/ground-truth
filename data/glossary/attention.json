@@ -1,0 +1,14 @@
+{
+  "id": "attention",
+  "term": "Attention",
+  "def": "The operation that lets each token build its representation from a weighted mix of other tokens, using query-key similarity.",
+  "practice": "Its memory and compute costs explain most long-context limits.",
+  "aliases": [
+    "self-attention",
+    "scaled dot-product attention"
+  ],
+  "chapters": [
+    "attention",
+    "long-context"
+  ]
+}

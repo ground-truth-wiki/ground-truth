@@ -1,0 +1,12 @@
+{
+  "id": "continuous-batching",
+  "term": "Continuous batching",
+  "def": "Scheduling that adds and removes sequences from a batch at every decoding step instead of waiting for the whole batch.",
+  "practice": "Standard in modern serving engines; large throughput gains over static batching.",
+  "aliases": [
+    "in-flight batching"
+  ],
+  "chapters": [
+    "batching-scheduling"
+  ]
+}

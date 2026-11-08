@@ -1,0 +1,14 @@
+{
+  "id": "sft",
+  "term": "Supervised fine-tuning",
+  "def": "Training on example prompts and responses so the model follows instructions.",
+  "practice": "Data quality matters more than quantity.",
+  "aliases": [
+    "SFT",
+    "instruction tuning"
+  ],
+  "chapters": [
+    "sft"
+  ],
+  "abbr": "SFT"
+}

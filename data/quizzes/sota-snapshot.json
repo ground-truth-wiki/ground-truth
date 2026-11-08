@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qss-1",
+    "chapter": "sota-snapshot",
+    "q": "Why should every capability claim carry a date?",
+    "options": [
+      "Style",
+      "Model capabilities and lineups change every few months",
+      "It is required",
+      "Dates are short"
+    ],
+    "answer": 1,
+    "explain": "Snapshots age quickly."
+  },
+  {
+    "id": "qss-2",
+    "chapter": "sota-snapshot",
+    "q": "What still limits frontier agents most, as of late 2026?",
+    "options": [
+      "Typing speed",
+      "Reliability on long tasks, verification and prompt injection",
+      "Tokenizers",
+      "Font rendering"
+    ],
+    "answer": 1,
+    "explain": "Capability grew faster than reliability."
+  },
+  {
+    "id": "qss-3",
+    "chapter": "sota-snapshot",
+    "q": "What happened to Claude Fable 5 and Mythos 5 access in June 2026?",
+    "options": [
+      "They were retired",
+      "Access was suspended from 12 June to comply with US export controls and restored on 1 July after the controls were lifted",
+      "They became open weights",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Model availability is a dependency to plan for."
+  }
+]

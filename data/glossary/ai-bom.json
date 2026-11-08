@@ -1,0 +1,13 @@
+{
+  "id": "ai-bom",
+  "term": "AI bill of materials",
+  "def": "An inventory of the models, datasets, adapters, packages, servers and skills an AI system depends on.",
+  "practice": "Lets you answer “are we affected?” fast.",
+  "aliases": [
+    "AI-BOM",
+    "AIBOM"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

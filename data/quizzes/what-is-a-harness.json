@@ -1,0 +1,41 @@
+[
+  {
+    "id": "harn-1",
+    "chapter": "what-is-a-harness",
+    "q": "A paper reports a model’s agentic benchmark score. What is missing if it names no harness?",
+    "options": [
+      "Nothing",
+      "Tools, prompts and budgets that can change the score as much as the model",
+      "The model’s name",
+      "The date of training"
+    ],
+    "answer": 1,
+    "explain": "For agents, the score belongs to model plus harness."
+  },
+  {
+    "id": "harn-2",
+    "chapter": "what-is-a-harness",
+    "q": "Which harness produces training signal rather than work or scores?",
+    "options": [
+      "Agent harness",
+      "Eval harness",
+      "RL environment harness",
+      "Test harness"
+    ],
+    "answer": 2,
+    "explain": "RL harnesses run rollouts and compute rewards for training."
+  },
+  {
+    "id": "harn-3",
+    "chapter": "what-is-a-harness",
+    "q": "What is another common name for an agent harness?",
+    "options": [
+      "Scaffold",
+      "Tokenizer",
+      "Optimizer",
+      "Embedding"
+    ],
+    "answer": 0,
+    "explain": "Scaffold and harness are used interchangeably for the code around the model."
+  }
+]

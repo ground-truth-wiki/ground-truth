@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qtk2-1",
+    "chapter": "talking-shop",
+    "q": "What does a strong answer to a hard question usually name?",
+    "options": [
+      "A brand",
+      "The layer, the eval, the cost and the failure mode",
+      "A framework",
+      "A paper"
+    ],
+    "answer": 1,
+    "explain": "Frame before answering."
+  },
+  {
+    "id": "qtk2-2",
+    "chapter": "talking-shop",
+    "q": "Asked to improve RAG answers, what should come first?",
+    "options": [
+      "A bigger model",
+      "Reading failures and separating retrieval recall from faithfulness",
+      "An agent",
+      "A rewrite"
+    ],
+    "answer": 1,
+    "explain": "Diagnose before prescribing."
+  },
+  {
+    "id": "qtk2-3",
+    "chapter": "talking-shop",
+    "q": "What is a red flag of shallow knowledge?",
+    "options": [
+      "Saying “it depends” with a plan to measure",
+      "Confident prescriptions with no diagnosis or eval",
+      "Asking clarifying questions",
+      "Citing sources"
+    ],
+    "answer": 1,
+    "explain": "Evidence beats confidence."
+  }
+]

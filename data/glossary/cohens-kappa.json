@@ -1,0 +1,14 @@
+{
+  "id": "cohens-kappa",
+  "term": "Cohen’s kappa",
+  "def": "An agreement statistic between two raters that corrects for agreement expected by chance.",
+  "practice": "Report it instead of raw agreement on imbalanced labels.",
+  "aliases": [
+    "kappa",
+    "inter-annotator agreement"
+  ],
+  "chapters": [
+    "llm-as-judge",
+    "labeling-annotation"
+  ]
+}

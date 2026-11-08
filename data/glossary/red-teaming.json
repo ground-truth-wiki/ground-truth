@@ -1,0 +1,12 @@
+{
+  "id": "red-teaming",
+  "term": "Red teaming",
+  "def": "Attacking your own system, manually and with automated tools, to find failures before others do.",
+  "practice": "Red-team the whole system, tools included.",
+  "aliases": [
+    "red team"
+  ],
+  "chapters": [
+    "red-teaming"
+  ]
+}

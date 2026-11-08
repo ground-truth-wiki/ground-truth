@@ -1,0 +1,13 @@
+{
+  "id": "chat-template",
+  "term": "Chat template",
+  "def": "The model-specific format, with special tokens, that marks roles and turns in a conversation.",
+  "practice": "Train and serve with exactly the same template.",
+  "aliases": [
+    "chat templates"
+  ],
+  "chapters": [
+    "sft",
+    "model-specific-notes"
+  ]
+}

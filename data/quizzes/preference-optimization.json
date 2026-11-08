@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b3-2",
+    "chapter": "preference-optimization",
+    "q": "What does DPO remove compared with classic RLHF?",
+    "options": [
+      "The preference data",
+      "The separate reward model and RL loop",
+      "The base model",
+      "The tokenizer"
+    ],
+    "answer": 1,
+    "explain": "DPO optimizes the policy directly on preference pairs."
+  },
+  {
+    "id": "qpo-1",
+    "chapter": "preference-optimization",
+    "q": "What does DPO remove compared with classic RLHF?",
+    "options": [
+      "Preference data",
+      "The separate reward model and RL sampling loop",
+      "The SFT model",
+      "Evaluation"
+    ],
+    "answer": 1,
+    "explain": "A closed-form loss on preference pairs."
+  },
+  {
+    "id": "qpo-2",
+    "chapter": "preference-optimization",
+    "q": "Why add a KL penalty in RLHF?",
+    "options": [
+      "To speed up",
+      "To keep the policy close to the SFT model and limit reward hacking",
+      "To add data",
+      "To reduce tokens"
+    ],
+    "answer": 1,
+    "explain": "Overoptimizing a learned reward exploits its errors."
+  },
+  {
+    "id": "qpo-3",
+    "chapter": "preference-optimization",
+    "q": "Which side effect is common in preference-trained models?",
+    "options": [
+      "Shorter answers always",
+      "Length bias and sycophancy",
+      "No style",
+      "Faster decoding"
+    ],
+    "answer": 1,
+    "explain": "Comparisons often favor long, agreeable answers."
+  }
+]

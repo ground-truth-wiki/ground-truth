@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b15-3",
+    "chapter": "latency-throughput",
+    "q": "A response takes 400 ms to first token and then 500 tokens at 20 ms each. How long in total?",
+    "options": [
+      "0.9 s",
+      "5.4 s",
+      "10.4 s",
+      "20.4 s"
+    ],
+    "answer": 2,
+    "explain": "400 + 500 × 20 = 10,400 ms."
+  },
+  {
+    "id": "lt-1",
+    "chapter": "latency-throughput",
+    "q": "What is goodput?",
+    "options": [
+      "Total tokens per second",
+      "Throughput that meets latency targets",
+      "GPU utilization",
+      "Requests per day"
+    ],
+    "answer": 1,
+    "explain": "Requests that miss their SLO do not count."
+  },
+  {
+    "id": "lt-2",
+    "chapter": "latency-throughput",
+    "q": "Requests arrive at 10 per second and each takes 4 seconds. About how many are in flight?",
+    "options": [
+      "4",
+      "10",
+      "40",
+      "400"
+    ],
+    "answer": 2,
+    "explain": "Little’s law: 10 × 4 = 40."
+  },
+  {
+    "id": "lt-3",
+    "chapter": "latency-throughput",
+    "q": "Why report p95 and p99 latency rather than the average?",
+    "options": [
+      "They are smaller",
+      "Heavy tails from long prompts and queueing are invisible in averages",
+      "Averages are illegal",
+      "They are easier to compute"
+    ],
+    "answer": 1,
+    "explain": "Users experience the tail."
+  }
+]

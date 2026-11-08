@@ -1,0 +1,10 @@
+{
+  "id": "safe-completion",
+  "term": "Safe completion",
+  "def": "Answering a sensitive request as helpfully as possible within safety limits instead of refusing outright.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training"
+  ]
+}

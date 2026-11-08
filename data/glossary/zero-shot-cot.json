@@ -1,0 +1,10 @@
+{
+  "id": "zero-shot-cot",
+  "term": "Zero-shot chain of thought",
+  "def": "Eliciting step-by-step reasoning with an instruction such as “let’s think step by step”, without worked examples.",
+  "practice": "Helps non-reasoning models on multi-step problems.",
+  "aliases": [],
+  "chapters": [
+    "reasoning-prompts"
+  ]
+}

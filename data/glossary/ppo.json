@@ -1,0 +1,14 @@
+{
+  "id": "ppo",
+  "term": "Proximal Policy Optimization",
+  "def": "A reinforcement-learning algorithm that limits how far each update moves the policy.",
+  "practice": "Long the workhorse of RLHF.",
+  "aliases": [
+    "PPO"
+  ],
+  "chapters": [
+    "rl-primer",
+    "preference-optimization"
+  ],
+  "abbr": "PPO"
+}

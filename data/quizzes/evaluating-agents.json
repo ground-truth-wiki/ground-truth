@@ -1,0 +1,41 @@
+[
+  {
+    "id": "eag-1",
+    "chapter": "evaluating-agents",
+    "q": "Why grade an agent’s final state rather than its final message?",
+    "options": [
+      "Messages are long",
+      "Agents can claim success they did not achieve",
+      "States are prettier",
+      "It is cheaper"
+    ],
+    "answer": 1,
+    "explain": "Check the database, files or tests."
+  },
+  {
+    "id": "eag-2",
+    "chapter": "evaluating-agents",
+    "q": "Two runs reach the same outcome, but one attempted a destructive command. Which evaluation catches this?",
+    "options": [
+      "Outcome evaluation",
+      "Trajectory evaluation",
+      "Latency measurement",
+      "Token counting"
+    ],
+    "answer": 1,
+    "explain": "Grade the path, not only the destination."
+  },
+  {
+    "id": "eag-3",
+    "chapter": "evaluating-agents",
+    "q": "What does a simulated user add to agent evals?",
+    "options": [
+      "Lower cost only",
+      "Repeatable multi-turn tests with a hidden goal the agent must discover",
+      "Faster models",
+      "Fewer tools"
+    ],
+    "answer": 1,
+    "explain": "τ-bench-style simulators make conversations testable."
+  }
+]

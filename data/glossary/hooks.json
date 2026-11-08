@@ -1,0 +1,13 @@
+{
+  "id": "hooks",
+  "term": "Hooks",
+  "def": "User-defined code a harness runs at lifecycle events, such as before or after a tool call.",
+  "practice": "Turn policy into code: block, rewrite or log actions.",
+  "aliases": [
+    "hook"
+  ],
+  "chapters": [
+    "harness-anatomy",
+    "claude-code"
+  ]
+}

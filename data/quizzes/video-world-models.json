@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qvw-1",
+    "chapter": "video-world-models",
+    "q": "What distinguishes a world model from a video generator?",
+    "options": [
+      "Resolution",
+      "It predicts how the environment changes in response to actions",
+      "Audio",
+      "Color"
+    ],
+    "answer": 1,
+    "explain": "Action-conditioned prediction."
+  },
+  {
+    "id": "qvw-2",
+    "chapter": "video-world-models",
+    "q": "What do NeRF and Gaussian splatting do?",
+    "options": [
+      "Generate text",
+      "Reconstruct 3D scenes from photos for viewing from new angles",
+      "Transcribe audio",
+      "Compress video"
+    ],
+    "answer": 1,
+    "explain": "3D reconstruction."
+  },
+  {
+    "id": "qvw-3",
+    "chapter": "video-world-models",
+    "q": "What is a common failure of generated video?",
+    "options": [
+      "Too few colors",
+      "Physics and object-permanence errors",
+      "No motion",
+      "Too much audio"
+    ],
+    "answer": 1,
+    "explain": "Visual quality is not physical correctness."
+  }
+]

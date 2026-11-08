@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qmi-1",
+    "chapter": "mech-interp",
+    "q": "What is superposition?",
+    "options": [
+      "A training trick",
+      "Networks storing more features than they have dimensions by overlapping them",
+      "Two models at once",
+      "A quantization format"
+    ],
+    "answer": 1,
+    "explain": "It makes neurons polysemantic."
+  },
+  {
+    "id": "qmi-2",
+    "chapter": "mech-interp",
+    "q": "What does a sparse autoencoder do in interpretability?",
+    "options": [
+      "Compresses weights",
+      "Decomposes activations into many sparse, more interpretable features",
+      "Generates text",
+      "Trains faster"
+    ],
+    "answer": 1,
+    "explain": "Dictionary learning on activations."
+  },
+  {
+    "id": "qmi-3",
+    "chapter": "mech-interp",
+    "q": "How do you show a feature causes a behavior rather than merely correlating with it?",
+    "options": [
+      "Look at its top examples",
+      "Intervene, for example with activation patching, ablation or steering, and measure the effect",
+      "Rename it",
+      "Train longer"
+    ],
+    "answer": 1,
+    "explain": "Interventions test causation."
+  }
+]

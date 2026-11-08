@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qae-1",
+    "chapter": "ai-engineer-role",
+    "q": "What is an AI engineer’s core skill?",
+    "options": [
+      "Training models from scratch",
+      "Turning probabilistic models into reliable software",
+      "Writing prompts only",
+      "Designing GPUs"
+    ],
+    "answer": 1,
+    "explain": "Systems, evals and operations."
+  },
+  {
+    "id": "qae-2",
+    "chapter": "ai-engineer-role",
+    "q": "Who popularized the term “AI engineer” in 2023?",
+    "options": [
+      "Geoffrey Hinton",
+      "Shawn Wang (swyx)",
+      "Andrej Karpathy",
+      "Yann LeCun"
+    ],
+    "answer": 1,
+    "explain": "“The Rise of the AI Engineer”."
+  },
+  {
+    "id": "qae-3",
+    "chapter": "ai-engineer-role",
+    "q": "Where do AI engineers spend much of their time?",
+    "options": [
+      "Only on prompts",
+      "On evals, data and integration",
+      "On hardware",
+      "On marketing"
+    ],
+    "answer": 1,
+    "explain": "Production is mostly systems work."
+  }
+]

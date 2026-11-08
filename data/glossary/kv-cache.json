@@ -1,0 +1,13 @@
+{
+  "id": "kv-cache",
+  "term": "KV cache",
+  "def": "Stored key and value vectors for every past token in every layer, so generation does not recompute them for each new token.",
+  "practice": "It often dominates GPU memory at long context; grouped-query attention and quantization shrink it.",
+  "aliases": [
+    "key-value cache"
+  ],
+  "chapters": [
+    "kv-cache",
+    "memory-math"
+  ]
+}

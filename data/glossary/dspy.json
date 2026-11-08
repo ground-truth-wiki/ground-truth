@@ -1,0 +1,11 @@
+{
+  "id": "dspy",
+  "term": "DSPy",
+  "def": "A framework that expresses LLM pipelines as modules with signatures and optimizes their prompts and examples against a metric.",
+  "practice": "Needs a good metric and data to be worth it.",
+  "aliases": [],
+  "chapters": [
+    "prompt-optimization",
+    "orchestration-frameworks"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "json-rpc",
+  "term": "JSON-RPC",
+  "def": "A lightweight remote-procedure-call format in JSON: requests with an id, method and params; responses with a result or error; notifications without an id.",
+  "practice": "MCP messages are JSON-RPC 2.0, so any JSON-RPC tooling can inspect them.",
+  "aliases": [
+    "JSON-RPC 2.0"
+  ],
+  "chapters": [
+    "mcp-architecture",
+    "mcp-transports"
+  ]
+}

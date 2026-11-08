@@ -1,0 +1,13 @@
+{
+  "id": "bpe",
+  "term": "Byte-pair encoding",
+  "def": "A tokenizer-training method that repeatedly merges the most frequent adjacent pair of symbols.",
+  "practice": "Most LLM tokenizers are byte-level BPE variants.",
+  "aliases": [
+    "BPE"
+  ],
+  "chapters": [
+    "tokenization"
+  ],
+  "abbr": "BPE"
+}

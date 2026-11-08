@@ -1,0 +1,13 @@
+{
+  "id": "open-weights",
+  "term": "Open weights",
+  "def": "Model parameters published for download, under licenses that range from permissive to restrictive.",
+  "practice": "Not the same as open source or open data.",
+  "aliases": [
+    "open-weight models"
+  ],
+  "chapters": [
+    "open-weight-frontier",
+    "frontier-families"
+  ]
+}

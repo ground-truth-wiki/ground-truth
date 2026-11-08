@@ -1,0 +1,10 @@
+{
+  "id": "memory-consolidation",
+  "term": "Memory consolidation",
+  "def": "Merging duplicates, resolving contradictions and expiring stale items in a memory store.",
+  "practice": "Without it, old memories outvote current reality.",
+  "aliases": [],
+  "chapters": [
+    "agent-memory"
+  ]
+}

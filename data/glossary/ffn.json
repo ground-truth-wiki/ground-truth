@@ -1,0 +1,15 @@
+{
+  "id": "ffn",
+  "term": "Feed-forward network",
+  "def": "The per-token multilayer perceptron inside each transformer block, holding most of the parameters.",
+  "practice": "SwiGLU is the common variant; MoE replaces it with many experts.",
+  "aliases": [
+    "FFN",
+    "MLP layer"
+  ],
+  "chapters": [
+    "transformer-block",
+    "mixture-of-experts"
+  ],
+  "abbr": "FFN"
+}

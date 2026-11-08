@@ -1,0 +1,12 @@
+{
+  "id": "context-precision",
+  "term": "Context precision and recall",
+  "def": "Whether retrieved context contains what a correct answer needs (recall) and little else (precision).",
+  "practice": "Needs reference answers or labels.",
+  "aliases": [
+    "context recall"
+  ],
+  "chapters": [
+    "rag-evaluation"
+  ]
+}

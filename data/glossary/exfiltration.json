@@ -1,0 +1,13 @@
+{
+  "id": "exfiltration",
+  "term": "Exfiltration",
+  "def": "Moving data out of a system without authorization, for example through a URL, email or rendered image.",
+  "practice": "Assume any URL the agent can emit is a channel.",
+  "aliases": [
+    "data exfiltration"
+  ],
+  "chapters": [
+    "prompt-injection",
+    "sandboxes"
+  ]
+}

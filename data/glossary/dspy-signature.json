@@ -1,0 +1,10 @@
+{
+  "id": "dspy-signature",
+  "term": "DSPy signature",
+  "def": "A declaration of a DSPy module’s inputs and outputs, such as question -> answer.",
+  "practice": "The optimizer decides how to prompt it.",
+  "aliases": [],
+  "chapters": [
+    "prompt-optimization"
+  ]
+}

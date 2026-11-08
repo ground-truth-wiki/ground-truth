@@ -1,0 +1,12 @@
+{
+  "id": "stdio-transport",
+  "term": "stdio transport",
+  "def": "The MCP transport in which the host runs the server as a subprocess and exchanges messages over standard input and output.",
+  "practice": "Simple and local; the server runs with your permissions.",
+  "aliases": [
+    "stdio"
+  ],
+  "chapters": [
+    "mcp-transports"
+  ]
+}

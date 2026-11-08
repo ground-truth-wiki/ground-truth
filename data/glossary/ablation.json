@@ -1,0 +1,13 @@
+{
+  "id": "ablation",
+  "term": "Ablation",
+  "def": "Removing or changing one component of a system and re-measuring, to learn what that component contributes.",
+  "practice": "Change one thing at a time and judge by the eval.",
+  "aliases": [
+    "ablations",
+    "ablation study"
+  ],
+  "chapters": [
+    "harness-engineering"
+  ]
+}

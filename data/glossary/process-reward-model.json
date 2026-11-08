@@ -1,0 +1,12 @@
+{
+  "id": "process-reward-model",
+  "term": "Process reward model",
+  "def": "A model that scores intermediate reasoning steps rather than only final answers.",
+  "practice": "",
+  "aliases": [
+    "PRM"
+  ],
+  "chapters": [
+    "test-time-scaling"
+  ]
+}

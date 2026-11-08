@@ -1,0 +1,12 @@
+{
+  "id": "data-flow-diagram",
+  "term": "Data-flow diagram",
+  "def": "A diagram of components, data stores, external entities and the data moving between them, with trust boundaries marked.",
+  "practice": "The starting point of a threat model.",
+  "aliases": [
+    "DFD"
+  ],
+  "chapters": [
+    "threat-modeling"
+  ]
+}

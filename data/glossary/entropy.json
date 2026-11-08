@@ -1,0 +1,10 @@
+{
+  "id": "entropy",
+  "term": "Entropy",
+  "def": "The expected surprise of a probability distribution, measured in bits or nats.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "probability-information"
+  ]
+}

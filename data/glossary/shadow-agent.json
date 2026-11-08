@@ -1,0 +1,12 @@
+{
+  "id": "shadow-agent",
+  "term": "Shadow agent",
+  "def": "An automation or agent built outside governance, often with personal credentials and unknown permissions.",
+  "practice": "Inventory them.",
+  "aliases": [
+    "shadow automation"
+  ],
+  "chapters": [
+    "low-code-builders"
+  ]
+}

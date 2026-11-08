@@ -1,0 +1,10 @@
+{
+  "id": "lethal-trifecta",
+  "term": "Lethal trifecta",
+  "def": "Simon Willison’s name for an agent with private data access, exposure to untrusted content and a way to send data out.",
+  "practice": "Remove any one leg to break data-theft attacks.",
+  "aliases": [],
+  "chapters": [
+    "prompt-injection"
+  ]
+}

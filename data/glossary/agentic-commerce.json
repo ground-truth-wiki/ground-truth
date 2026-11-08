@@ -1,0 +1,12 @@
+{
+  "id": "agentic-commerce",
+  "term": "Agentic commerce",
+  "def": "Agents browsing, buying and paying on a user’s behalf with delegated, limited and revocable authority.",
+  "practice": "Needs spending caps and merchant allowlists from day one.",
+  "aliases": [
+    "agent payments"
+  ],
+  "chapters": [
+    "protocol-soup"
+  ]
+}

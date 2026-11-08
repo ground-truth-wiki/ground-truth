@@ -1,0 +1,12 @@
+{
+  "id": "critical-capability-level",
+  "term": "Critical Capability Level",
+  "def": "A threshold in Google DeepMind’s Frontier Safety Framework that triggers specific mitigations.",
+  "practice": "",
+  "aliases": [
+    "CCL"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks"
+  ]
+}

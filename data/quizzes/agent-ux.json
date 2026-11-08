@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ux-1",
+    "chapter": "agent-ux",
+    "q": "Why is a visible, editable plan valuable?",
+    "options": [
+      "It looks modern",
+      "It is the cheapest place to catch a misunderstanding, before work starts",
+      "It replaces evals",
+      "It reduces token use"
+    ],
+    "answer": 1,
+    "explain": "Correcting a plan costs seconds; correcting finished work costs minutes or hours."
+  },
+  {
+    "id": "ux-2",
+    "chapter": "agent-ux",
+    "q": "What should a good progress stream show?",
+    "options": [
+      "Raw reasoning tokens",
+      "Readable steps, what each found, and problems as they appear",
+      "Only a spinner",
+      "The full transcript"
+    ],
+    "answer": 1,
+    "explain": "Summarized activity builds trust; raw monologue is noise."
+  },
+  {
+    "id": "ux-3",
+    "chapter": "agent-ux",
+    "q": "Why put the work product in an artifact pane?",
+    "options": [
+      "To save tokens",
+      "Users can edit it directly instead of describing edits in chat",
+      "It hides mistakes",
+      "It is required by APIs"
+    ],
+    "answer": 1,
+    "explain": "Direct editing is faster and clearer than chat instructions."
+  }
+]

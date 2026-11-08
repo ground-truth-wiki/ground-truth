@@ -1,0 +1,12 @@
+{
+  "id": "client-id-metadata-document",
+  "term": "Client ID metadata document",
+  "def": "A registration approach in which a client’s id is a URL pointing to a document that describes the client.",
+  "practice": "Added to MCP authorization in 2025-11-25.",
+  "aliases": [
+    "CIMD"
+  ],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

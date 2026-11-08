@@ -1,0 +1,13 @@
+{
+  "id": "jailbreak",
+  "term": "Jailbreak",
+  "def": "A prompt or technique that gets a model to violate its safety policies.",
+  "practice": "Distinct from injection, which attacks users through the model.",
+  "aliases": [
+    "jailbreaks",
+    "jailbreaking"
+  ],
+  "chapters": [
+    "jailbreaks-misuse"
+  ]
+}

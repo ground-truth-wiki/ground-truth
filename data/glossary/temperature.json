@@ -1,0 +1,10 @@
+{
+  "id": "temperature",
+  "term": "Temperature",
+  "def": "A divisor applied to logits before softmax; lower values sharpen the distribution, higher values flatten it.",
+  "practice": "Near zero for extraction and code, higher for brainstorming.",
+  "aliases": [],
+  "chapters": [
+    "decoding-sampling"
+  ]
+}

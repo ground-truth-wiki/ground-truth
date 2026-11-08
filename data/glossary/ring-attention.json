@@ -1,0 +1,12 @@
+{
+  "id": "ring-attention",
+  "term": "Ring attention",
+  "def": "Splitting a long sequence across devices that pass key and value blocks around a ring.",
+  "practice": "",
+  "aliases": [
+    "context parallelism"
+  ],
+  "chapters": [
+    "long-context"
+  ]
+}

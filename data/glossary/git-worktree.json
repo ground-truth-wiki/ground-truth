@@ -1,0 +1,14 @@
+{
+  "id": "git-worktree",
+  "term": "Git worktree",
+  "def": "A second working directory attached to the same Git repository, on its own branch.",
+  "practice": "Lets several agents work in parallel without colliding.",
+  "aliases": [
+    "worktrees",
+    "worktree"
+  ],
+  "chapters": [
+    "working-with-coding-agents",
+    "coding-agents"
+  ]
+}

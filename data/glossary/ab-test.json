@@ -1,0 +1,12 @@
+{
+  "id": "ab-test",
+  "term": "A/B test",
+  "def": "Randomly splitting users between variants and comparing outcomes.",
+  "practice": "Define guardrail metrics before you start.",
+  "aliases": [
+    "A/B testing"
+  ],
+  "chapters": [
+    "online-evaluation"
+  ]
+}

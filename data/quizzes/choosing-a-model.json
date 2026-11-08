@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b4-2",
+    "chapter": "choosing-a-model",
+    "q": "What is the best first step when choosing a model for a feature?",
+    "options": [
+      "Pick the top of a leaderboard",
+      "Run two or three candidates on your own eval set",
+      "Choose the cheapest",
+      "Choose the newest"
+    ],
+    "answer": 1,
+    "explain": "Your own eval answers the question that matters."
+  },
+  {
+    "id": "qcm-1",
+    "chapter": "choosing-a-model",
+    "q": "What should be checked first when choosing a model?",
+    "options": [
+      "Benchmarks",
+      "Hard constraints such as data terms, regions, modalities and context length",
+      "Price",
+      "Brand"
+    ],
+    "answer": 1,
+    "explain": "Constraints eliminate options before quality matters."
+  },
+  {
+    "id": "qcm-2",
+    "chapter": "choosing-a-model",
+    "q": "Model B costs a third as much per call as model A but is less accurate. How do you compare them?",
+    "options": [
+      "By price per call",
+      "By cost per correct answer, including the cost of handling failures",
+      "By speed only",
+      "By benchmark rank"
+    ],
+    "answer": 1,
+    "explain": "Failures cost money too."
+  },
+  {
+    "id": "qcm-3",
+    "chapter": "choosing-a-model",
+    "q": "Why give each finalist its own tuned prompt in an evaluation?",
+    "options": [
+      "To be fair, since prompts do not transfer perfectly between models",
+      "To save time",
+      "It is required",
+      "To hide differences"
+    ],
+    "answer": 0,
+    "explain": "Each model deserves its best prompt."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "gqa",
+  "term": "Grouped-query attention",
+  "def": "Attention in which groups of query heads share one key-value head, shrinking the KV cache.",
+  "practice": "The common default in open models; size memory by KV heads, not query heads.",
+  "aliases": [
+    "GQA"
+  ],
+  "chapters": [
+    "attention",
+    "kv-cache"
+  ],
+  "abbr": "GQA"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "plan-1",
+    "chapter": "planning-reasoning",
+    "q": "What is the main weakness of ReWOO-style planning, which writes every tool call up front?",
+    "options": [
+      "It needs more model calls than ReAct",
+      "It cannot change course when an early result should alter the plan",
+      "It cannot use tools",
+      "It requires a reasoning model"
+    ],
+    "answer": 1,
+    "explain": "Planning without observations saves calls but cannot react to surprises."
+  },
+  {
+    "id": "plan-2",
+    "chapter": "planning-reasoning",
+    "q": "When does Reflexion-style self-critique help most?",
+    "options": [
+      "When the critique is grounded in real feedback such as failing tests",
+      "When the model is asked to try harder",
+      "On simple lookups",
+      "When no feedback is available"
+    ],
+    "answer": 0,
+    "explain": "Reflection without an external signal often just rephrases the same mistake."
+  },
+  {
+    "id": "plan-3",
+    "chapter": "planning-reasoning",
+    "q": "Why does an externalized plan, such as a to-do file, still help reasoning models?",
+    "options": [
+      "It makes them think faster",
+      "It survives compaction, crashes and handoffs, so the goal is not lost",
+      "It replaces tools",
+      "It lowers token prices"
+    ],
+    "answer": 1,
+    "explain": "Thinking tokens disappear with the context; a written plan persists."
+  }
+]

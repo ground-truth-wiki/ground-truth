@@ -1,0 +1,11 @@
+{
+  "id": "confused-deputy",
+  "term": "Confused deputy",
+  "def": "A system tricked into using its own authority on behalf of someone who should not have it.",
+  "practice": "Token passthrough in MCP servers creates one.",
+  "aliases": [],
+  "chapters": [
+    "mcp-authorization",
+    "prompt-injection"
+  ]
+}

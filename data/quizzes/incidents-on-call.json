@@ -1,0 +1,41 @@
+[
+  {
+    "id": "inc-1",
+    "chapter": "incidents-on-call",
+    "q": "Which signal catches the most damaging AI incidents that errors miss?",
+    "options": [
+      "CPU usage",
+      "Sampled quality scores such as faithfulness or judge ratings",
+      "Disk space",
+      "Uptime"
+    ],
+    "answer": 1,
+    "explain": "Silent regressions return HTTP 200."
+  },
+  {
+    "id": "inc-2",
+    "chapter": "incidents-on-call",
+    "q": "What should be ready before an agent incident happens?",
+    "options": [
+      "A new model",
+      "A kill switch or feature flag that takes effect in under a minute",
+      "A press release",
+      "A bigger budget"
+    ],
+    "answer": 1,
+    "explain": "Runaway agents cannot wait for a deploy."
+  },
+  {
+    "id": "inc-3",
+    "chapter": "incidents-on-call",
+    "q": "How should every AI incident review end?",
+    "options": [
+      "With blame",
+      "With new eval cases and a fix to the gate that missed it",
+      "With a model switch",
+      "With nothing"
+    ],
+    "answer": 1,
+    "explain": "Otherwise the same failure returns."
+  }
+]

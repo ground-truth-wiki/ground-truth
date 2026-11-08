@@ -1,0 +1,88 @@
+{
+  "facts": [
+    {
+      "text": "A token is about four characters of English, or roughly three quarters of a word. That is a rule of thumb: code, numbers and many other languages use more tokens per word.",
+      "chapter": "tokenization"
+    },
+    {
+      "text": "The KV cache for one 128k-token sequence on a 70B-class model with grouped-query attention is about 40 GiB in 16-bit precision, before you count the weights.",
+      "chapter": "kv-cache"
+    },
+    {
+      "text": "Training compute is roughly 6 × parameters × tokens FLOPs; a forward pass at inference is about 2 × parameters FLOPs per token.",
+      "chapter": "scaling-laws"
+    },
+    {
+      "text": "Reciprocal rank fusion uses only ranks, not scores, so it merges keyword and vector results without calibrating them. The usual constant k = 60 comes from the 2009 paper that introduced it.",
+      "chapter": "hybrid-retrieval"
+    },
+    {
+      "text": "Decoding is usually memory-bandwidth-bound: every new token reads all the weights once, so batching more requests is how you buy throughput.",
+      "chapter": "inference-fundamentals"
+    },
+    {
+      "text": "Simon Willison coined the term “prompt injection” in September 2022, by analogy with SQL injection.",
+      "chapter": "prompt-injection"
+    },
+    {
+      "text": "Anthropic announced MCP in November 2024; the first specification version is dated 2024-11-05.",
+      "chapter": "mcp-spec-history"
+    },
+    {
+      "text": "Since the 2026-07-28 specification, MCP is stateless: no initialize handshake, and every request carries its protocol version and client capabilities (verified Nov 2026).",
+      "chapter": "mcp-architecture"
+    },
+    {
+      "text": "FlashAttention computes exact attention without ever writing the full attention matrix to slow GPU memory. It is an IO trick, not an approximation.",
+      "chapter": "long-context"
+    },
+    {
+      "text": "pass@k rewards succeeding once in k tries; pass^k demands success every time, which is closer to what an agent’s users experience.",
+      "chapter": "metrics-graders"
+    },
+    {
+      "text": "The Chinchilla paper (2022) found compute-optimal training uses roughly 20 tokens per parameter. Many modern models train on far more to make inference cheaper.",
+      "chapter": "scaling-laws"
+    },
+    {
+      "text": "In “Lost in the Middle” (2023), models used facts at the start and end of a long context better than facts in the middle.",
+      "chapter": "long-context"
+    },
+    {
+      "text": "Binary quantization stores one bit per embedding dimension, 32 times smaller than float32. Systems usually rescore the top results with full-precision vectors.",
+      "chapter": "embeddings"
+    },
+    {
+      "text": "LoRA with rank 16 on a 4096 × 4096 weight matrix trains 131,072 values instead of about 16.8 million.",
+      "chapter": "fine-tuning-practice"
+    },
+    {
+      "text": "Two labelers who each mark 90% of items positive agree about 82% of the time by pure chance. That is why Cohen’s kappa, not raw agreement, is the standard.",
+      "chapter": "labeling-annotation"
+    },
+    {
+      "text": "Rich Sutton’s 2019 essay “The Bitter Lesson” argues that general methods that scale with computation beat hand-built knowledge in the long run.",
+      "chapter": "mental-models"
+    },
+    {
+      "text": "Speculative decoding, done with the standard acceptance rule, produces exactly the target model’s output distribution. The draft model changes only how fast you get there.",
+      "chapter": "speculative-decoding"
+    },
+    {
+      "text": "Prompt caching rewards append-only context: change one token early in the prompt and everything after it misses the cache.",
+      "chapter": "prompt-caching"
+    },
+    {
+      "text": "The OWASP Top 10 for LLM Applications lists prompt injection as risk number one (LLM01).",
+      "chapter": "threat-modeling"
+    },
+    {
+      "text": "A2A 1.0.0 shipped on 12 March 2026 with breaking changes, and 1.0.1 followed on 26 May 2026 (verified Nov 2026).",
+      "chapter": "a2a"
+    },
+    {
+      "text": "Claude Code’s MCP tool search defers MCP tool definitions once they would exceed 10% of the context window (verified Nov 2026).",
+      "chapter": "claude-code"
+    }
+  ]
+}

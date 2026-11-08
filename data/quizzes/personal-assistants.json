@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pa-1",
+    "chapter": "personal-assistants",
+    "q": "Why separate read and send permissions for email?",
+    "options": [
+      "Sending is slower",
+      "An assistant that can read and send can be instructed by any incoming email to forward data",
+      "Reading is expensive",
+      "Providers require it"
+    ],
+    "answer": 1,
+    "explain": "Breaking the lethal trifecta."
+  },
+  {
+    "id": "pa-2",
+    "chapter": "personal-assistants",
+    "q": "How should proactive assistant actions arrive?",
+    "options": [
+      "As completed actions",
+      "As proposals the user can accept, edit or dismiss",
+      "As emails to others",
+      "Silently"
+    ],
+    "answer": 1,
+    "explain": "Proposals keep users in control."
+  },
+  {
+    "id": "pa-3",
+    "chapter": "personal-assistants",
+    "q": "What must users be able to do with assistant memory?",
+    "options": [
+      "Nothing",
+      "View, edit and delete it",
+      "Only export it",
+      "Only add to it"
+    ],
+    "answer": 1,
+    "explain": "Visible, editable memory builds trust."
+  }
+]

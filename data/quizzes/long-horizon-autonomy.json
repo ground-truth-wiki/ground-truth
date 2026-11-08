@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b19-1",
+    "chapter": "long-horizon-autonomy",
+    "q": "What did METR measure as the “time horizon” of AI agents?",
+    "options": [
+      "Model training time",
+      "The length of tasks, in human expert time, that agents complete at a given reliability",
+      "The context window",
+      "Latency"
+    ],
+    "answer": 1,
+    "explain": "Horizons are tied to a success-rate threshold, often 50%."
+  },
+  {
+    "id": "qlh-1",
+    "chapter": "long-horizon-autonomy",
+    "q": "What trend did METR report in 2025?",
+    "options": [
+      "Task length flat",
+      "The length of tasks models complete at 50% success doubling roughly every seven months",
+      "Benchmarks saturating",
+      "Costs rising"
+    ],
+    "answer": 1,
+    "explain": "An exponential trend."
+  },
+  {
+    "id": "qlh-2",
+    "chapter": "long-horizon-autonomy",
+    "q": "At 95% success per step, roughly how often does a 10-step task succeed?",
+    "options": [
+      "95%",
+      "80%",
+      "60%",
+      "10%"
+    ],
+    "answer": 2,
+    "explain": "0.95¹⁰ ≈ 0.60."
+  },
+  {
+    "id": "qlh-3",
+    "chapter": "long-horizon-autonomy",
+    "q": "Why is a 50% task horizon not the same as delegable work?",
+    "options": [
+      "It is too long",
+      "Half of those tasks fail; production needs high reliability across runs",
+      "It is measured in hours",
+      "It ignores cost"
+    ],
+    "answer": 1,
+    "explain": "Look at pass^k."
+  }
+]

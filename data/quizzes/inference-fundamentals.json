@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b15-1",
+    "chapter": "inference-fundamentals",
+    "q": "Why is decoding at batch size 1 memory-bandwidth-bound?",
+    "options": [
+      "It uses no memory",
+      "Each step reads every weight for very little arithmetic per byte",
+      "Attention is disabled",
+      "The GPU is idle"
+    ],
+    "answer": 1,
+    "explain": "About two FLOPs per weight per token cannot keep compute units busy."
+  },
+  {
+    "id": "if-1",
+    "chapter": "inference-fundamentals",
+    "q": "Why is decode usually memory-bound?",
+    "options": [
+      "It uses no memory",
+      "Each step reads all the weights to produce one token per sequence, doing little arithmetic per byte",
+      "It runs on CPUs",
+      "It processes the whole prompt at once"
+    ],
+    "answer": 1,
+    "explain": "Low arithmetic intensity means bandwidth limits speed."
+  },
+  {
+    "id": "if-2",
+    "chapter": "inference-fundamentals",
+    "q": "Which phase dominates time to first token?",
+    "options": [
+      "Decode",
+      "Prefill (plus queueing)",
+      "Tokenization",
+      "Streaming"
+    ],
+    "answer": 1,
+    "explain": "TTFT ≈ queue + prefill."
+  },
+  {
+    "id": "if-3",
+    "chapter": "inference-fundamentals",
+    "q": "Why does batching speed up decode throughput?",
+    "options": [
+      "It skips layers",
+      "One read of the weights serves every sequence in the batch",
+      "It lowers precision",
+      "It removes the KV cache"
+    ],
+    "answer": 1,
+    "explain": "Batching raises arithmetic intensity."
+  }
+]

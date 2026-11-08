@@ -1,0 +1,12 @@
+{
+  "id": "contrastive-learning",
+  "term": "Contrastive learning",
+  "def": "Training that pulls matching pairs together and pushes non-matching pairs apart in embedding space.",
+  "practice": "How CLIP and most embedding models are trained.",
+  "aliases": [
+    "InfoNCE"
+  ],
+  "chapters": [
+    "representation-learning"
+  ]
+}

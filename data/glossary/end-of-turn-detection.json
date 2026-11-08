@@ -1,0 +1,12 @@
+{
+  "id": "end-of-turn-detection",
+  "term": "End-of-turn detection",
+  "def": "Deciding when a speaker has finished their turn, beyond simple silence detection.",
+  "practice": "Too early interrupts users; too late adds latency.",
+  "aliases": [
+    "turn detection"
+  ],
+  "chapters": [
+    "voice-agents"
+  ]
+}

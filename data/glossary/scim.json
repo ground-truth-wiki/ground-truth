@@ -1,0 +1,11 @@
+{
+  "id": "scim",
+  "term": "SCIM",
+  "def": "A standard for automatically provisioning and removing users from a customer’s identity provider.",
+  "practice": "Expected by enterprise buyers alongside SSO.",
+  "aliases": [],
+  "chapters": [
+    "enterprise-readiness"
+  ],
+  "abbr": "SCIM"
+}

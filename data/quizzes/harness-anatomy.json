@@ -1,0 +1,41 @@
+[
+  {
+    "id": "har-1",
+    "chapter": "harness-anatomy",
+    "q": "Which harness part turns a policy such as “never run rm -rf” into a guarantee rather than a request?",
+    "options": [
+      "The system prompt",
+      "A hook or sandbox rule enforced in code",
+      "The model choice",
+      "The interface"
+    ],
+    "answer": 1,
+    "explain": "Prompts ask; hooks, permissions and sandboxes enforce."
+  },
+  {
+    "id": "har-2",
+    "chapter": "harness-anatomy",
+    "q": "What does progressive disclosure mean for skills?",
+    "options": [
+      "Skills are shown to users gradually",
+      "Only a skill’s name and description load by default; its body loads when relevant",
+      "Skills are disabled until paid for",
+      "Skills replace tools"
+    ],
+    "answer": 1,
+    "explain": "It keeps many skills available at almost no context cost."
+  },
+  {
+    "id": "har-3",
+    "chapter": "harness-anatomy",
+    "q": "Why can the same model score very differently in two harnesses?",
+    "options": [
+      "Models change between runs",
+      "Tools, prompts, budgets and context management differ, and they affect results as much as the model",
+      "Harnesses use different tokenizers",
+      "Benchmarks are random"
+    ],
+    "answer": 1,
+    "explain": "Model plus harness equals product; always report both."
+  }
+]

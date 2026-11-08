@@ -1,0 +1,10 @@
+{
+  "id": "dynamic-benchmark",
+  "term": "Dynamic benchmark",
+  "def": "A benchmark refreshed with new items over time to resist contamination.",
+  "practice": "LiveCodeBench is an example.",
+  "aliases": [],
+  "chapters": [
+    "benchmark-literacy"
+  ]
+}

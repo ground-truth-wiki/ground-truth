@@ -1,0 +1,14 @@
+{
+  "id": "subagent",
+  "term": "Subagent",
+  "def": "An agent spawned by another agent with its own fresh context, a narrow brief and a limited tool set.",
+  "practice": "Use subagents to isolate noisy work such as searching or reading large files.",
+  "aliases": [
+    "subagents",
+    "sub-agent"
+  ],
+  "chapters": [
+    "multi-agent",
+    "claude-code"
+  ]
+}

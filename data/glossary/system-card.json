@@ -1,0 +1,14 @@
+{
+  "id": "system-card",
+  "term": "System card",
+  "def": "A document published with a model describing its capabilities, evaluations, risks and mitigations.",
+  "practice": "Look for elicitation effort and thresholds assessed.",
+  "aliases": [
+    "model card",
+    "system cards"
+  ],
+  "chapters": [
+    "frontier-safety-frameworks",
+    "responsible-ai"
+  ]
+}

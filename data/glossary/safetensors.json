@@ -1,0 +1,10 @@
+{
+  "id": "safetensors",
+  "term": "safetensors",
+  "def": "A model file format that stores only tensors and metadata, so loading cannot execute code.",
+  "practice": "Prefer it to pickle-based checkpoints.",
+  "aliases": [],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

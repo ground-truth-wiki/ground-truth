@@ -1,0 +1,12 @@
+{
+  "id": "automated-research",
+  "term": "Automated research",
+  "def": "AI systems that propose, run and evaluate experiments with little human involvement.",
+  "practice": "",
+  "aliases": [
+    "AI scientist"
+  ],
+  "chapters": [
+    "self-improving-systems"
+  ]
+}

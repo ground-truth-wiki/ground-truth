@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b1-3",
+    "chapter": "classical-ml",
+    "q": "Why is raw accuracy misleading on imbalanced data?",
+    "options": [
+      "It cannot be computed",
+      "Predicting the majority class scores well while missing every minority case",
+      "It ignores the training set",
+      "It is always 50%"
+    ],
+    "answer": 1,
+    "explain": "Use per-class precision and recall instead."
+  },
+  {
+    "id": "qcl-1",
+    "chapter": "classical-ml",
+    "q": "Why is accuracy misleading on imbalanced data?",
+    "options": [
+      "It is hard to compute",
+      "Predicting the majority class scores high while missing the cases that matter",
+      "It ignores true negatives",
+      "It is always low"
+    ],
+    "answer": 1,
+    "explain": "Use per-class precision and recall."
+  },
+  {
+    "id": "qcl-2",
+    "chapter": "classical-ml",
+    "q": "With 80 true positives and 40 false negatives, what is recall?",
+    "options": [
+      "0.8",
+      "0.67",
+      "0.4",
+      "0.94"
+    ],
+    "answer": 1,
+    "explain": "80 ÷ 120 ≈ 0.67."
+  },
+  {
+    "id": "qcl-3",
+    "chapter": "classical-ml",
+    "q": "What should you compare an LLM against on tabular prediction?",
+    "options": [
+      "Nothing",
+      "A gradient-boosted tree baseline",
+      "A random guess only",
+      "A larger LLM"
+    ],
+    "answer": 1,
+    "explain": "Trees remain strong on tabular data."
+  }
+]

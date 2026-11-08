@@ -1,0 +1,13 @@
+{
+  "id": "diffusion",
+  "term": "Diffusion model",
+  "def": "A generative model that learns to reverse a gradual noising process.",
+  "practice": "Most image and video generators are diffusion or flow models.",
+  "aliases": [
+    "diffusion models",
+    "denoising diffusion"
+  ],
+  "chapters": [
+    "image-generation"
+  ]
+}

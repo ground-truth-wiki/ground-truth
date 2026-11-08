@@ -1,0 +1,10 @@
+{
+  "id": "perplexity",
+  "term": "Perplexity",
+  "def": "The exponential of the average cross-entropy per token; roughly the effective number of choices per token.",
+  "practice": "Compare only on the same text and tokenizer.",
+  "aliases": [],
+  "chapters": [
+    "probability-information"
+  ]
+}

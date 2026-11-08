@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cap-1",
+    "chapter": "cost-capacity",
+    "q": "What is the most useful unit for agent costs?",
+    "options": [
+      "Cost per token",
+      "Cost per task",
+      "Cost per server",
+      "Cost per employee"
+    ],
+    "answer": 1,
+    "explain": "Agents make many calls per task."
+  },
+  {
+    "id": "cap-2",
+    "chapter": "cost-capacity",
+    "q": "Peak demand is 8,000 output tokens per second, each GPU serves 2,500 at your SLO, and you target 70% utilization. How many GPUs before spares?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "answer": 2,
+    "explain": "8,000 ÷ (2,500 × 0.7) ≈ 4.6, so 5."
+  },
+  {
+    "id": "cap-3",
+    "chapter": "cost-capacity",
+    "q": "Why enforce per-tenant budgets?",
+    "options": [
+      "For accounting only",
+      "So one tenant’s runaway usage cannot exhaust shared quota and budget for everyone",
+      "To slow the product",
+      "They are required by law"
+    ],
+    "answer": 1,
+    "explain": "Budgets are also a reliability control."
+  }
+]

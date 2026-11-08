@@ -1,0 +1,11 @@
+{
+  "id": "server-discover",
+  "term": "server/discover",
+  "def": "The MCP method, required of servers since 2026-07-28, that returns a server’s information and capabilities.",
+  "practice": "Replaces learning capabilities from the old initialize handshake (verified Nov 2026).",
+  "aliases": [],
+  "chapters": [
+    "mcp-architecture",
+    "mcp-spec-history"
+  ]
+}

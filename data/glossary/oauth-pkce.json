@@ -1,0 +1,13 @@
+{
+  "id": "oauth-pkce",
+  "term": "OAuth 2.1 with PKCE",
+  "def": "The authorization framework used by remote MCP servers, with proof keys protecting the code exchange.",
+  "practice": "Request audience-bound tokens; never pass tokens through.",
+  "aliases": [
+    "OAuth",
+    "PKCE"
+  ],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

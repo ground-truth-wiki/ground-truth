@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mg-1",
+    "chapter": "metrics-graders",
+    "q": "Which grader is the gold standard for code and agent state?",
+    "options": [
+      "ROUGE",
+      "Execution: run tests or check the final state",
+      "An LLM judge",
+      "Length"
+    ],
+    "answer": 1,
+    "explain": "Execution checks the outcome directly."
+  },
+  {
+    "id": "mg-2",
+    "chapter": "metrics-graders",
+    "q": "Why are BLEU and ROUGE weak for open-ended generation?",
+    "options": [
+      "They are slow",
+      "They reward word overlap with a reference, not truth, and penalize correct paraphrases",
+      "They need GPUs",
+      "They only work in English"
+    ],
+    "answer": 1,
+    "explain": "Overlap is not quality."
+  },
+  {
+    "id": "mg-3",
+    "chapter": "metrics-graders",
+    "q": "At a per-attempt success rate of 0.8, what is pass^3?",
+    "options": [
+      "0.99",
+      "0.80",
+      "about 0.51",
+      "about 0.24"
+    ],
+    "answer": 2,
+    "explain": "0.8³ ≈ 0.512."
+  }
+]

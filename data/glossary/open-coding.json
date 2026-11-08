@@ -1,0 +1,10 @@
+{
+  "id": "open-coding",
+  "term": "Open coding",
+  "def": "Writing free-form notes on what went wrong in each trace, before defining categories.",
+  "practice": "Note the first failure, not the last.",
+  "aliases": [],
+  "chapters": [
+    "error-analysis"
+  ]
+}

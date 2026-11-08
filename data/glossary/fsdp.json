@@ -1,0 +1,14 @@
+{
+  "id": "fsdp",
+  "term": "Fully sharded data parallel",
+  "def": "Data parallelism that shards parameters, gradients and optimizer state across devices, gathering them when needed.",
+  "practice": "PyTorch’s FSDP and DeepSpeed’s ZeRO are the common implementations.",
+  "aliases": [
+    "FSDP",
+    "ZeRO"
+  ],
+  "chapters": [
+    "distributed-training"
+  ],
+  "abbr": "FSDP"
+}

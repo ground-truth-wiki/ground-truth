@@ -1,0 +1,14 @@
+{
+  "id": "orchestrator",
+  "term": "Orchestrator",
+  "def": "In multi-agent systems, the agent that plans subtasks, delegates them to subagents and synthesizes their results.",
+  "practice": "Keep its context clean: it should read summaries, not raw material.",
+  "aliases": [
+    "lead agent",
+    "orchestrator-workers"
+  ],
+  "chapters": [
+    "multi-agent",
+    "workflow-patterns"
+  ]
+}

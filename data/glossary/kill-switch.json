@@ -1,0 +1,11 @@
+{
+  "id": "kill-switch",
+  "term": "Kill switch",
+  "def": "A way to stop an AI feature or all agents immediately from outside.",
+  "practice": "Have one before launch.",
+  "aliases": [],
+  "chapters": [
+    "guardrails-control",
+    "incidents-on-call"
+  ]
+}

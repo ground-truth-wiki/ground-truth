@@ -1,0 +1,13 @@
+{
+  "id": "eval-harness",
+  "term": "Eval harness",
+  "def": "A framework that runs a model or agent on a dataset with fixed settings, scores the outputs and logs results.",
+  "practice": "Report its name and version with every score.",
+  "aliases": [
+    "evaluation harness"
+  ],
+  "chapters": [
+    "what-is-a-harness",
+    "eval-harnesses"
+  ]
+}

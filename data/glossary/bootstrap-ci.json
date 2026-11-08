@@ -1,0 +1,12 @@
+{
+  "id": "bootstrap-ci",
+  "term": "Bootstrap interval",
+  "def": "A confidence interval computed by resampling cases with replacement many times.",
+  "practice": "Works for any metric.",
+  "aliases": [
+    "bootstrap"
+  ],
+  "chapters": [
+    "eval-statistics"
+  ]
+}

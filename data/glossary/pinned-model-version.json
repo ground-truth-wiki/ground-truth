@@ -1,0 +1,11 @@
+{
+  "id": "pinned-model-version",
+  "term": "Pinned model version",
+  "def": "A specific, dated model identifier used instead of an alias such as “latest”.",
+  "practice": "Prevents provider updates from changing behavior silently.",
+  "aliases": [],
+  "chapters": [
+    "prompt-config-management",
+    "ci-cd-for-ai"
+  ]
+}

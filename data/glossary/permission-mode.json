@@ -1,0 +1,13 @@
+{
+  "id": "permission-mode",
+  "term": "Permission mode",
+  "def": "A harness setting that decides which actions need approval and which run automatically.",
+  "practice": "Use stricter modes for unfamiliar repositories and production systems.",
+  "aliases": [
+    "permission modes"
+  ],
+  "chapters": [
+    "claude-code",
+    "harness-anatomy"
+  ]
+}

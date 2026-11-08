@@ -1,0 +1,11 @@
+{
+  "id": "claude-md",
+  "term": "CLAUDE.md",
+  "def": "The Markdown instruction file Claude Code loads into context, at user, project and directory level.",
+  "practice": "Keep it short; move procedures into skills.",
+  "aliases": [],
+  "chapters": [
+    "claude-code",
+    "harness-anatomy"
+  ]
+}

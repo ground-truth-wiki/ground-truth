@@ -1,0 +1,41 @@
+[
+  {
+    "id": "he-1",
+    "chapter": "harness-engineering",
+    "q": "What is an ablation in harness engineering?",
+    "options": [
+      "Replacing the model",
+      "Removing or changing one harness part and rerunning the eval to measure its effect",
+      "Adding more tools at once",
+      "Lowering the temperature"
+    ],
+    "answer": 1,
+    "explain": "One change at a time, judged by the eval, shows which parts earn their place."
+  },
+  {
+    "id": "he-2",
+    "chapter": "harness-engineering",
+    "q": "Why re-run ablations when you upgrade the model?",
+    "options": [
+      "Licenses change",
+      "Tricks that helped the old model can hurt the new one",
+      "Evals expire",
+      "Tools stop working"
+    ],
+    "answer": 1,
+    "explain": "Harness choices are tuned to a model; re-check them on every upgrade."
+  },
+  {
+    "id": "he-3",
+    "chapter": "harness-engineering",
+    "q": "Why run each eval task several times before comparing harness variants?",
+    "options": [
+      "To use more tokens",
+      "Agent runs are nondeterministic, so single runs can hide or invent differences",
+      "Benchmarks require it",
+      "To warm caches"
+    ],
+    "answer": 1,
+    "explain": "Measure the noise, then compare with intervals."
+  }
+]

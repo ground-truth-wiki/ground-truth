@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mm-1",
+    "chapter": "multimodal-rag",
+    "q": "What does a ColPali-style retriever index?",
+    "options": [
+      "OCR text",
+      "Page images as many patch vectors",
+      "Only captions",
+      "Audio"
+    ],
+    "answer": 1,
+    "explain": "It embeds page images directly and matches with late interaction."
+  },
+  {
+    "id": "mm-2",
+    "chapter": "multimodal-rag",
+    "q": "Why might OCR fail to answer “did revenue fall in Q3?” from a chart?",
+    "options": [
+      "OCR is slow",
+      "OCR reads labels and numbers but loses which value belongs to which bar and the visual trend",
+      "Charts have no text",
+      "OCR only reads English"
+    ],
+    "answer": 1,
+    "explain": "The answer is in the visual relationships."
+  },
+  {
+    "id": "mm-3",
+    "chapter": "multimodal-rag",
+    "q": "How should audio and video usually be made retrievable?",
+    "options": [
+      "Embed raw waveforms only",
+      "Transcribe with timestamps, segment, embed segments and return timestamps",
+      "Ignore them",
+      "Convert to PDF"
+    ],
+    "answer": 1,
+    "explain": "Timestamps let users jump to the moment."
+  }
+]

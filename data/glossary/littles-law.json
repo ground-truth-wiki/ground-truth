@@ -1,0 +1,10 @@
+{
+  "id": "littles-law",
+  "term": "Little’s law",
+  "def": "In a stable system, items in flight equal arrival rate times average time in the system.",
+  "practice": "Sizes concurrency from traffic and latency.",
+  "aliases": [],
+  "chapters": [
+    "latency-throughput"
+  ]
+}

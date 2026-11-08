@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qip-1",
+    "chapter": "interview-prep",
+    "q": "How much of a system design interview should go to requirements and evaluation?",
+    "options": [
+      "None",
+      "About a third",
+      "All of it",
+      "A minute"
+    ],
+    "answer": 1,
+    "explain": "Before drawing components."
+  },
+  {
+    "id": "qip-2",
+    "chapter": "interview-prep",
+    "q": "What makes a portfolio project convincing?",
+    "options": [
+      "Many features",
+      "An eval, traces, cost numbers and documented failures and fixes",
+      "A logo",
+      "A long README"
+    ],
+    "answer": 1,
+    "explain": "Evidence of engineering."
+  },
+  {
+    "id": "qip-3",
+    "chapter": "interview-prep",
+    "q": "What should you prepare as stories?",
+    "options": [
+      "Jokes",
+      "A diagnosed failure, a trade-off and a reversed decision",
+      "Your CV",
+      "Benchmarks"
+    ],
+    "answer": 1,
+    "explain": "Judgment shows in stories."
+  }
+]

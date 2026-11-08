@@ -1,0 +1,10 @@
+{
+  "id": "tool-poisoning",
+  "term": "Tool poisoning",
+  "def": "Hiding malicious instructions in a tool’s description, which the model reads even if the user does not.",
+  "practice": "Review descriptions of third-party servers like code.",
+  "aliases": [],
+  "chapters": [
+    "mcp-security"
+  ]
+}

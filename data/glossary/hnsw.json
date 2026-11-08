@@ -1,0 +1,11 @@
+{
+  "id": "hnsw",
+  "term": "HNSW",
+  "def": "Hierarchical Navigable Small World graphs: a layered graph index for fast approximate nearest-neighbor search.",
+  "practice": "Fast and accurate but memory-hungry; tune M and ef.",
+  "aliases": [],
+  "chapters": [
+    "vector-search",
+    "vector-databases"
+  ]
+}

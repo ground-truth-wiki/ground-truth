@@ -1,0 +1,13 @@
+{
+  "id": "model-backdoor",
+  "term": "Model backdoor",
+  "def": "Hidden behavior implanted through poisoned training data that activates on a trigger.",
+  "practice": "Evaluate third-party models and fine-tunes before deployment.",
+  "aliases": [
+    "backdoor",
+    "data poisoning"
+  ],
+  "chapters": [
+    "supply-chain-security"
+  ]
+}

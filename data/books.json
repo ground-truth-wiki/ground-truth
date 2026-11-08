@@ -1,0 +1,225 @@
+{
+  "parts": [
+    {
+      "id": "part-1",
+      "title": "Part I: Understand the machine",
+      "books": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "part-2",
+      "title": "Part II: Build with models",
+      "books": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "part-3",
+      "title": "Part III: Build agents",
+      "books": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "part-4",
+      "title": "Part IV: Ship, measure, protect",
+      "books": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "part-5",
+      "title": "Part V: Frontier and reference",
+      "books": [
+        19,
+        20
+      ]
+    }
+  ],
+  "books": [
+    {
+      "n": 0,
+      "id": "book-0",
+      "title": "Start here",
+      "blurb": "What the job is, the whole stack on one page, the mental models that matter, and how to use this Bible.",
+      "hue": 22,
+      "stability": null
+    },
+    {
+      "n": 1,
+      "id": "book-1",
+      "title": "Foundations, math and machine learning",
+      "blurb": "The math and machine learning every later chapter leans on, taught for engineers rather than for exams.",
+      "hue": 160,
+      "stability": null
+    },
+    {
+      "n": 2,
+      "id": "book-2",
+      "title": "Inside the transformer",
+      "blurb": "Tokens, positions, attention, the KV cache and decoding: how a model turns text into the next token.",
+      "hue": 297,
+      "stability": null
+    },
+    {
+      "n": 3,
+      "id": "book-3",
+      "title": "How LLMs are built",
+      "blurb": "From web crawl to aligned assistant: data, scaling, distributed training, fine-tuning, preference optimization and RL.",
+      "hue": 75,
+      "stability": null
+    },
+    {
+      "n": 4,
+      "id": "book-4",
+      "title": "The model landscape",
+      "blurb": "A dated snapshot of who makes what, how to read benchmarks, and how to choose and call a model.",
+      "hue": 212,
+      "stability": "volatile"
+    },
+    {
+      "n": 5,
+      "id": "book-5",
+      "title": "Prompt and context engineering",
+      "blurb": "Writing instructions models follow, and curating everything else that enters the context window.",
+      "hue": 350,
+      "stability": null
+    },
+    {
+      "n": 6,
+      "id": "book-6",
+      "title": "Retrieval and knowledge (RAG)",
+      "blurb": "RAG from first principles to production: parsing, chunking, embeddings, search, reranking, grounding and evaluation.",
+      "hue": 127,
+      "stability": null
+    },
+    {
+      "n": 7,
+      "id": "book-7",
+      "title": "Data for AI",
+      "blurb": "Labels, synthetic data, governance and pipelines: the data work behind every good system.",
+      "hue": 265,
+      "stability": null
+    },
+    {
+      "n": 8,
+      "id": "book-8",
+      "title": "Multimodal and generative media",
+      "blurb": "Vision, documents, images, video and speech: models that see, hear and make.",
+      "hue": 42,
+      "stability": null
+    },
+    {
+      "n": 9,
+      "id": "book-9",
+      "title": "Agents, core concepts",
+      "blurb": "The loop, tools, workflows, planning, memory, multi-agent systems, control, failure modes and UX.",
+      "hue": 180,
+      "stability": null
+    },
+    {
+      "n": 10,
+      "id": "book-10",
+      "title": "Agent archetypes",
+      "blurb": "Coding, computer-use, research, voice, support, personal, extraction and embodied agents.",
+      "hue": 317,
+      "stability": null
+    },
+    {
+      "n": 11,
+      "id": "book-11",
+      "title": "Harnesses",
+      "blurb": "The software around the model that turns it into an agent, with Claude Code as the case study.",
+      "hue": 95,
+      "stability": null
+    },
+    {
+      "n": 12,
+      "id": "book-12",
+      "title": "Protocols and standards",
+      "blurb": "MCP in depth, A2A, and the other protocols that connect models, tools, agents and interfaces.",
+      "hue": 232,
+      "stability": null
+    },
+    {
+      "n": 13,
+      "id": "book-13",
+      "title": "Frameworks and SDKs",
+      "blurb": "Provider SDKs, agent frameworks, low-code builders and gateways, and when to use none of them.",
+      "hue": 10,
+      "stability": null
+    },
+    {
+      "n": 14,
+      "id": "book-14",
+      "title": "Evaluation",
+      "blurb": "The core skill: error analysis, datasets, graders, LLM judges, agent evals and the statistics behind them.",
+      "hue": 147,
+      "stability": null
+    },
+    {
+      "n": 15,
+      "id": "book-15",
+      "title": "Inference and performance",
+      "blurb": "Prefill and decode, memory math, batching, speculative decoding, quantization, serving engines, hardware and cost.",
+      "hue": 285,
+      "stability": null
+    },
+    {
+      "n": 16,
+      "id": "book-16",
+      "title": "LLMOps and production",
+      "blurb": "Architecture, reliability, streaming, tracing, CI/CD, cost, enterprise readiness and incidents.",
+      "hue": 62,
+      "stability": null
+    },
+    {
+      "n": 17,
+      "id": "book-17",
+      "title": "Security, safety and alignment",
+      "blurb": "Threat models, prompt injection, secure agent design, red teaming, alignment and regulation.",
+      "hue": 200,
+      "stability": null
+    },
+    {
+      "n": 18,
+      "id": "book-18",
+      "title": "System design and case studies",
+      "blurb": "A design method, twelve reference architectures, estimation and decision guides.",
+      "hue": 337,
+      "stability": null
+    },
+    {
+      "n": 19,
+      "id": "book-19",
+      "title": "The frontier",
+      "blurb": "What is true at the review date, where the field is heading, and the debates worth following.",
+      "hue": 115,
+      "stability": "volatile"
+    },
+    {
+      "n": 20,
+      "id": "book-20",
+      "title": "Reference and career",
+      "blurb": "The Lexicon, acronyms, numbers to know, the Canon, cheat sheets, interview prep and the project ladder.",
+      "hue": 252,
+      "stability": null
+    }
+  ]
+}

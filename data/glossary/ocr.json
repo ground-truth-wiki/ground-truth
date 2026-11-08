@@ -1,0 +1,14 @@
+{
+  "id": "ocr",
+  "term": "Optical character recognition",
+  "def": "Converting images of text into machine-readable characters.",
+  "practice": "Cheap and literal; pair it with layout analysis for complex pages.",
+  "aliases": [
+    "OCR"
+  ],
+  "chapters": [
+    "ingestion-parsing",
+    "document-screen-understanding"
+  ],
+  "abbr": "OCR"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "subscriptions-listen",
+  "term": "subscriptions/listen",
+  "def": "The MCP 2026-07-28 method that delivers list and resource change notifications, replacing the HTTP GET stream and resource subscribe calls.",
+  "practice": "Verified in the November 2026 changelog.",
+  "aliases": [],
+  "chapters": [
+    "mcp-client-features",
+    "mcp-transports"
+  ]
+}

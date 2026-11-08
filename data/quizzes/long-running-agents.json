@@ -1,0 +1,41 @@
+[
+  {
+    "id": "long-1",
+    "chapter": "long-running-agents",
+    "q": "After a crash, how does a durable execution engine avoid repeating finished work?",
+    "options": [
+      "It reruns everything faster",
+      "It replays a journal of recorded step results, skipping completed steps",
+      "It asks the user",
+      "It restarts the model"
+    ],
+    "answer": 1,
+    "explain": "Completed steps return their recorded results on replay."
+  },
+  {
+    "id": "long-2",
+    "chapter": "long-running-agents",
+    "q": "What makes it safe to retry “open a pull request” after a crash?",
+    "options": [
+      "A longer timeout",
+      "An idempotency key, so the repeated request is recognized",
+      "A bigger model",
+      "Deleting the branch"
+    ],
+    "answer": 1,
+    "explain": "Idempotent side effects can run twice without happening twice."
+  },
+  {
+    "id": "long-3",
+    "chapter": "long-running-agents",
+    "q": "Which progress-file entry helps a fresh session most?",
+    "options": [
+      "“Made good progress”",
+      "A decision with its reason, such as keeping v1 keys until December because customers pin old configs",
+      "The full transcript",
+      "A motivational note"
+    ],
+    "answer": 1,
+    "explain": "Decisions without reasons get undone by the next session."
+  }
+]

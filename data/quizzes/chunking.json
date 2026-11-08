@@ -1,0 +1,41 @@
+[
+  {
+    "id": "chunk-1",
+    "chapter": "chunking",
+    "q": "Why does fixed-size chunking often hurt retrieval?",
+    "options": [
+      "It is slow",
+      "It cuts through sentences, tables and sections, producing chunks that make no sense alone",
+      "It cannot use overlap",
+      "It needs a GPU"
+    ],
+    "answer": 1,
+    "explain": "Boundaries that ignore structure create orphaned fragments that match poorly."
+  },
+  {
+    "id": "chunk-2",
+    "chapter": "chunking",
+    "q": "What does contextual retrieval add to each chunk before indexing?",
+    "options": [
+      "A random id",
+      "A short generated note situating the chunk in its document",
+      "The full document",
+      "A summary of the whole corpus"
+    ],
+    "answer": 1,
+    "explain": "The note resolves references like “it” and adds the document and section context."
+  },
+  {
+    "id": "chunk-3",
+    "chapter": "chunking",
+    "q": "In small-to-big retrieval, what is returned to the model?",
+    "options": [
+      "Only the small matched chunk",
+      "The larger parent section of the matched chunk",
+      "The whole corpus",
+      "Nothing; it reranks only"
+    ],
+    "answer": 1,
+    "explain": "Small chunks match precisely; their parents give the model enough context."
+  }
+]

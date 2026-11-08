@@ -1,0 +1,12 @@
+{
+  "id": "guardrails",
+  "term": "Guardrails",
+  "def": "Checks and limits around a model or agent: filters, policies, budgets, permissions and sandboxes.",
+  "practice": "Enforce in code; prompts are requests, not guarantees.",
+  "aliases": [
+    "guardrail"
+  ],
+  "chapters": [
+    "guardrails-control"
+  ]
+}

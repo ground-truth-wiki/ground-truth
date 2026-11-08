@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mcp-1",
+    "chapter": "mcp-architecture",
+    "q": "In the MCP 2026-07-28 specification, how does a server learn the client’s protocol version and capabilities?",
+    "options": [
+      "From the initialize handshake at the start of the session",
+      "From the _meta field carried on each request",
+      "From an Mcp-Session-Id header",
+      "It does not need them"
+    ],
+    "answer": 1,
+    "explain": "The stateless design removed the handshake and sessions; every request carries its version and capabilities in `_meta`."
+  },
+  {
+    "id": "mcp-2",
+    "chapter": "mcp-architecture",
+    "q": "How many MCP clients does a host create when it connects to three servers?",
+    "options": [
+      "One shared client",
+      "Three, one per server",
+      "Six, two per server",
+      "It depends on the transport"
+    ],
+    "answer": 1,
+    "explain": "A host creates one client per server connection."
+  },
+  {
+    "id": "mcp-3",
+    "chapter": "mcp-architecture",
+    "q": "Why do stateless requests make remote MCP servers easier to scale?",
+    "options": [
+      "They use fewer tokens",
+      "Any replica behind a load balancer can answer any request, because nothing depends on earlier messages",
+      "They avoid JSON-RPC",
+      "They require no authorization"
+    ],
+    "answer": 1,
+    "explain": "Without sessions, requests are self-contained, like ordinary stateless web services."
+  }
+]

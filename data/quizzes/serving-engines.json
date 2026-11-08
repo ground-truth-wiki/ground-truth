@@ -1,0 +1,41 @@
+[
+  {
+    "id": "srv-1",
+    "chapter": "serving-engines",
+    "q": "What API do most serving engines expose?",
+    "options": [
+      "SOAP",
+      "An OpenAI-compatible HTTP API",
+      "gRPC only",
+      "A Python function"
+    ],
+    "answer": 1,
+    "explain": "OpenAI-compatible endpoints make engines interchangeable for clients."
+  },
+  {
+    "id": "srv-2",
+    "chapter": "serving-engines",
+    "q": "Why benchmark engines with real prompts and output lengths?",
+    "options": [
+      "Synthetic prompts are slower",
+      "Uniform synthetic traffic overstates throughput and hides latency tails",
+      "It is required",
+      "Engines reject synthetic data"
+    ],
+    "answer": 1,
+    "explain": "Real traffic has long tails."
+  },
+  {
+    "id": "srv-3",
+    "chapter": "serving-engines",
+    "q": "Which engine is built for local inference on laptops and CPUs?",
+    "options": [
+      "TensorRT-LLM",
+      "llama.cpp",
+      "NVIDIA Dynamo",
+      "Triton"
+    ],
+    "answer": 1,
+    "explain": "llama.cpp runs GGUF models on CPUs, Apple Silicon and consumer GPUs."
+  }
+]

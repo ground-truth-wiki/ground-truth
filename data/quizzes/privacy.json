@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pv-1",
+    "chapter": "privacy",
+    "q": "Where is personal data most often forgotten in AI systems?",
+    "options": [
+      "The UI",
+      "Logs, traces, vector indexes, memory and eval sets",
+      "The model weights only",
+      "The CDN"
+    ],
+    "answer": 1,
+    "explain": "Every copy needs redaction, retention and deletion."
+  },
+  {
+    "id": "pv-2",
+    "chapter": "privacy",
+    "q": "Why is fine-tuning on raw transcripts risky?",
+    "options": [
+      "It is slow",
+      "Models can memorize rare strings and reproduce them",
+      "It is illegal everywhere",
+      "It needs GPUs"
+    ],
+    "answer": 1,
+    "explain": "Training-data extraction attacks have recovered memorized text."
+  },
+  {
+    "id": "pv-3",
+    "chapter": "privacy",
+    "q": "What must a deletion request reach?",
+    "options": [
+      "The main database only",
+      "Every copy: indexes, caches, memory, logs and eval sets",
+      "Only backups",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Copies outlive deletions unless you track them."
+  }
+]

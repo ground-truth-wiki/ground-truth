@@ -1,0 +1,10 @@
+{
+  "id": "warmup",
+  "term": "Learning-rate warmup",
+  "def": "Increasing the learning rate gradually at the start of training to avoid unstable early steps.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "calculus-optimization"
+  ]
+}

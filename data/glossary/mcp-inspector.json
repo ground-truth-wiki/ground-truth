@@ -1,0 +1,12 @@
+{
+  "id": "mcp-inspector",
+  "term": "MCP Inspector",
+  "def": "A developer tool for connecting to an MCP server, listing and calling its tools, and watching raw protocol messages.",
+  "practice": "The first stop when testing a server.",
+  "aliases": [
+    "Inspector"
+  ],
+  "chapters": [
+    "building-mcp-servers"
+  ]
+}

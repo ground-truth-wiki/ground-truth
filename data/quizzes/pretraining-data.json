@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qpd-1",
+    "chapter": "pretraining-data",
+    "q": "Why deduplicate pretraining data?",
+    "options": [
+      "To add tokens",
+      "To reduce memorization and wasted compute and improve quality",
+      "To translate it",
+      "For licensing only"
+    ],
+    "answer": 1,
+    "explain": "Duplicates distort training."
+  },
+  {
+    "id": "qpd-2",
+    "chapter": "pretraining-data",
+    "q": "What is decontamination?",
+    "options": [
+      "Removing viruses",
+      "Removing benchmark test items from training data",
+      "Removing code",
+      "Removing long documents"
+    ],
+    "answer": 1,
+    "explain": "Keeps evaluations honest."
+  },
+  {
+    "id": "qpd-3",
+    "chapter": "pretraining-data",
+    "q": "What did FineWeb-Edu and DCLM show?",
+    "options": [
+      "Bigger crawls always win",
+      "Model-based quality filtering improves results over heuristics alone",
+      "Code hurts models",
+      "Books are unnecessary"
+    ],
+    "answer": 1,
+    "explain": "Quality filtering pays."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "filtered-search",
+  "term": "Filtered vector search",
+  "def": "Approximate nearest-neighbor search restricted by metadata such as tenant, date or permissions.",
+  "practice": "Test with your real filters; selective filters can cut recall.",
+  "aliases": [
+    "metadata filtering"
+  ],
+  "chapters": [
+    "vector-search",
+    "vector-databases"
+  ]
+}

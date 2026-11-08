@@ -1,0 +1,14 @@
+{
+  "id": "residual-stream",
+  "term": "Residual stream",
+  "def": "The running vector each token carries through a transformer, to which every block adds its update.",
+  "practice": "Interpretability research reads and edits it to understand and steer models.",
+  "aliases": [
+    "residual connection",
+    "residual connections"
+  ],
+  "chapters": [
+    "transformer-block",
+    "mech-interp"
+  ]
+}

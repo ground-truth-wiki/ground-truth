@@ -1,0 +1,13 @@
+{
+  "id": "zdr",
+  "term": "Zero data retention",
+  "def": "A provider arrangement under which prompts and outputs are not stored after processing.",
+  "practice": "Often required for sensitive enterprise data.",
+  "aliases": [
+    "ZDR"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ],
+  "abbr": "ZDR"
+}

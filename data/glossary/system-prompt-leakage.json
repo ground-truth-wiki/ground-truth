@@ -1,0 +1,12 @@
+{
+  "id": "system-prompt-leakage",
+  "term": "System prompt leakage",
+  "def": "Extraction of a system prompt’s contents by users or attackers.",
+  "practice": "Never put secrets in system prompts.",
+  "aliases": [
+    "prompt leakage"
+  ],
+  "chapters": [
+    "jailbreaks-misuse"
+  ]
+}

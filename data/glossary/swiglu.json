@@ -1,0 +1,11 @@
+{
+  "id": "swiglu",
+  "term": "SwiGLU",
+  "def": "A gated feed-forward variant combining a SiLU (swish) activation with a gating projection.",
+  "practice": "Standard in modern LLMs; it uses three weight matrices instead of two.",
+  "aliases": [],
+  "chapters": [
+    "transformer-block",
+    "neural-networks"
+  ]
+}

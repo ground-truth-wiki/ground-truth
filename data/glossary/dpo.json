@@ -1,0 +1,13 @@
+{
+  "id": "dpo",
+  "term": "Direct Preference Optimization",
+  "def": "Optimizing a model directly on preference pairs without a separate reward model or RL loop.",
+  "practice": "Simpler and more stable than PPO-based RLHF for many uses.",
+  "aliases": [
+    "DPO"
+  ],
+  "chapters": [
+    "preference-optimization"
+  ],
+  "abbr": "DPO"
+}

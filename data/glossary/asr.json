@@ -1,0 +1,15 @@
+{
+  "id": "asr",
+  "term": "Automatic speech recognition",
+  "def": "Converting speech to text.",
+  "practice": "Streaming ASR trades accuracy for latency.",
+  "aliases": [
+    "ASR",
+    "speech-to-text"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents"
+  ],
+  "abbr": "ASR"
+}

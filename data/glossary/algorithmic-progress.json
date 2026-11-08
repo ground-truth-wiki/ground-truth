@@ -1,0 +1,12 @@
+{
+  "id": "algorithmic-progress",
+  "term": "Algorithmic progress",
+  "def": "Gains in capability per unit of compute from better methods rather than better hardware.",
+  "practice": "",
+  "aliases": [
+    "effective compute"
+  ],
+  "chapters": [
+    "new-architectures"
+  ]
+}

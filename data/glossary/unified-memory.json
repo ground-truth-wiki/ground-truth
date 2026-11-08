@@ -1,0 +1,11 @@
+{
+  "id": "unified-memory",
+  "term": "Unified memory",
+  "def": "A design, as in Apple Silicon, where CPU and GPU share one memory pool.",
+  "practice": "Lets laptops hold large quantized models.",
+  "aliases": [],
+  "chapters": [
+    "hardware",
+    "edge-on-device"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "so-1",
+    "chapter": "structured-outputs",
+    "q": "What does JSON mode guarantee?",
+    "options": [
+      "The output matches your schema",
+      "The output is syntactically valid JSON",
+      "The values are correct",
+      "No hallucination"
+    ],
+    "answer": 1,
+    "explain": "Valid JSON is not the same as the right shape."
+  },
+  {
+    "id": "so-2",
+    "chapter": "structured-outputs",
+    "q": "How does constrained decoding enforce a schema?",
+    "options": [
+      "It edits the output afterwards",
+      "It masks tokens that would violate the schema at each step",
+      "It asks the model nicely",
+      "It retries until valid"
+    ],
+    "answer": 1,
+    "explain": "Invalid continuations are impossible."
+  },
+  {
+    "id": "so-3",
+    "chapter": "structured-outputs",
+    "q": "What must you still check after schema-constrained output?",
+    "options": [
+      "Nothing",
+      "Semantic rules such as valid ids and consistent dates",
+      "The JSON syntax",
+      "The token count"
+    ],
+    "answer": 1,
+    "explain": "Schemas guarantee shape, not truth."
+  }
+]

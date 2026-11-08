@@ -1,0 +1,10 @@
+{
+  "id": "rug-pull",
+  "term": "Rug pull",
+  "def": "A server that changes its tool definitions maliciously after it was approved.",
+  "practice": "Pin versions, hash definitions and re-approve on change.",
+  "aliases": [],
+  "chapters": [
+    "mcp-security"
+  ]
+}

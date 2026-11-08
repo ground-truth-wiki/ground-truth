@@ -1,0 +1,11 @@
+{
+  "id": "plan-mode",
+  "term": "Plan mode",
+  "def": "An agent mode that explores and proposes a plan without changing anything.",
+  "practice": "Start unfamiliar work here, then approve the plan.",
+  "aliases": [],
+  "chapters": [
+    "claude-code",
+    "working-with-coding-agents"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qmm-1",
+    "chapter": "multimodal-apps",
+    "q": "Why convert media to text once and store it?",
+    "options": [
+      "Text is prettier",
+      "To avoid resending costly images or audio every turn and to enable search",
+      "It is required",
+      "To delete the media"
+    ],
+    "answer": 1,
+    "explain": "Cache conversions."
+  },
+  {
+    "id": "qmm-2",
+    "chapter": "multimodal-apps",
+    "q": "When might native multimodal input beat conversion to text?",
+    "options": [
+      "Never",
+      "When layout, tone or visual detail matter for the answer",
+      "Always",
+      "Only for audio"
+    ],
+    "answer": 1,
+    "explain": "Conversion loses information."
+  },
+  {
+    "id": "qmm-3",
+    "chapter": "multimodal-apps",
+    "q": "What privacy issue is specific to multimodal inputs?",
+    "options": [
+      "None",
+      "Photos, screens and recordings often contain personal data that is easy to overlook",
+      "They are encrypted",
+      "They are small"
+    ],
+    "answer": 1,
+    "explain": "Apply the same controls as text."
+  }
+]

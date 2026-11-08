@@ -1,0 +1,13 @@
+{
+  "id": "colbert",
+  "term": "ColBERT",
+  "def": "A late-interaction retrieval model that keeps one vector per token and matches query and document tokens at search time.",
+  "practice": "A middle ground between bi-encoders and cross-encoders.",
+  "aliases": [
+    "late interaction"
+  ],
+  "chapters": [
+    "reranking",
+    "multimodal-rag"
+  ]
+}

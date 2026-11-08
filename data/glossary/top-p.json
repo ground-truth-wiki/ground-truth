@@ -1,0 +1,12 @@
+{
+  "id": "top-p",
+  "term": "Top-p sampling",
+  "def": "Sampling from the smallest set of tokens whose probabilities sum to at least p.",
+  "practice": "Also called nucleus sampling; often combined with temperature.",
+  "aliases": [
+    "nucleus sampling"
+  ],
+  "chapters": [
+    "decoding-sampling"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tool-1",
+    "chapter": "agent-tools",
+    "q": "Who executes a tool call?",
+    "options": [
+      "The model, inside the provider’s servers",
+      "The harness or application, after the model requests it",
+      "The user’s browser",
+      "The vector database"
+    ],
+    "answer": 1,
+    "explain": "The model only emits a request with arguments. Your code runs the tool, with your permissions and checks."
+  },
+  {
+    "id": "tool-2",
+    "chapter": "agent-tools",
+    "q": "Which change to a tool definition most reduces wrong-tool errors when many tools are loaded?",
+    "options": [
+      "Shorter descriptions",
+      "Specific names and descriptions that say when to use the tool and how it differs from similar ones",
+      "Removing the input schema",
+      "Returning more data per call"
+    ],
+    "answer": 1,
+    "explain": "The model chooses tools from their names and descriptions; ambiguity between overlapping tools is the top cause of wrong picks."
+  },
+  {
+    "id": "tool-3",
+    "chapter": "agent-tools",
+    "q": "A tool returns 30,000 tokens of log output. What is the better design?",
+    "options": [
+      "Return it all; models have long context",
+      "Truncate or paginate in the harness, say what was cut, and let the model ask for more",
+      "Return nothing",
+      "Convert it to base64"
+    ],
+    "answer": 1,
+    "explain": "Large results crowd the context and degrade later steps. Bound results and make truncation visible."
+  }
+]

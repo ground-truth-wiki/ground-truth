@@ -1,0 +1,10 @@
+{
+  "id": "graceful-degradation",
+  "term": "Graceful degradation",
+  "def": "Keeping a reduced but useful service when a dependency fails.",
+  "practice": "Design the degraded mode in advance.",
+  "aliases": [],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

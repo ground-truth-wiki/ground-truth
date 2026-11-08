@@ -1,0 +1,12 @@
+{
+  "id": "runbook",
+  "term": "Runbook",
+  "def": "A written procedure for detecting, mitigating and communicating a known kind of incident.",
+  "practice": "Write them for provider outages, quality regressions and runaway agents.",
+  "aliases": [
+    "runbooks"
+  ],
+  "chapters": [
+    "incidents-on-call"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ds-1",
+    "chapter": "disaggregated-serving",
+    "q": "What does disaggregated serving separate?",
+    "options": [
+      "Training and inference",
+      "Prefill and decode, onto different GPU pools",
+      "Users and admins",
+      "Text and images"
+    ],
+    "answer": 1,
+    "explain": "Each phase is sized for its own bottleneck."
+  },
+  {
+    "id": "ds-2",
+    "chapter": "disaggregated-serving",
+    "q": "Why is tensor parallelism usually kept within one server?",
+    "options": [
+      "Licensing",
+      "It exchanges partial results every layer and needs very fast links",
+      "It needs CPUs",
+      "It cannot use GPUs"
+    ],
+    "answer": 1,
+    "explain": "Communication would dominate over slow links."
+  },
+  {
+    "id": "ds-3",
+    "chapter": "disaggregated-serving",
+    "q": "What extra cost does disaggregation add?",
+    "options": [
+      "Model retraining",
+      "Transferring the KV cache from prefill to decode workers",
+      "More tokenizers",
+      "Lower accuracy"
+    ],
+    "answer": 1,
+    "explain": "Gigabytes per long request need fast interconnects."
+  }
+]

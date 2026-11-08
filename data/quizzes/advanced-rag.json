@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ar-1",
+    "chapter": "advanced-rag",
+    "q": "Which question type is GraphRAG best suited to?",
+    "options": [
+      "Looking up a refund window",
+      "Global questions such as “what are the main themes across these documents?”",
+      "Exact error codes",
+      "Single-fact lookups"
+    ],
+    "answer": 1,
+    "explain": "Community summaries answer questions no single chunk can."
+  },
+  {
+    "id": "ar-2",
+    "chapter": "advanced-rag",
+    "q": "What does CRAG add to basic RAG?",
+    "options": [
+      "A larger index",
+      "Grading retrieved documents and falling back to other sources when they are poor",
+      "A new embedding model",
+      "Graph construction"
+    ],
+    "answer": 1,
+    "explain": "Corrective RAG checks evidence quality before generating."
+  },
+  {
+    "id": "ar-3",
+    "chapter": "advanced-rag",
+    "q": "What must agentic retrieval always have?",
+    "options": [
+      "A knowledge graph",
+      "A budget on searches and tokens per question",
+      "Multiple vector databases",
+      "Fine-tuning"
+    ],
+    "answer": 1,
+    "explain": "An agent unsure of its evidence will search forever without one."
+  }
+]

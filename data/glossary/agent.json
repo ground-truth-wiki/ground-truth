@@ -1,0 +1,14 @@
+{
+  "id": "agent",
+  "term": "Agent",
+  "def": "A system in which a model decides its own next actions in a loop, calling tools and reading results until the task is done.",
+  "practice": "If code decides the steps, it is a workflow; if the model decides, it is an agent.",
+  "aliases": [
+    "agents",
+    "AI agent"
+  ],
+  "chapters": [
+    "what-is-an-agent",
+    "agent-loop"
+  ]
+}

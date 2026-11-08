@@ -1,0 +1,41 @@
+[
+  {
+    "id": "wf-1",
+    "chapter": "workflow-patterns",
+    "q": "You need to send billing questions, technical questions and small talk to different prompts and models. Which pattern fits?",
+    "options": [
+      "Prompt chaining",
+      "Routing",
+      "Evaluator and optimizer",
+      "Orchestrator and workers"
+    ],
+    "answer": 1,
+    "explain": "Routing classifies the input first and hands it to a specialized handler, often saving cost on easy cases."
+  },
+  {
+    "id": "wf-2",
+    "chapter": "workflow-patterns",
+    "q": "What separates orchestrator and workers from parallelization?",
+    "options": [
+      "Orchestrators use bigger models",
+      "The subtasks are decided by a model at runtime rather than fixed in code",
+      "Workers cannot call tools",
+      "Parallelization always uses voting"
+    ],
+    "answer": 1,
+    "explain": "In parallelization you fix the split in advance; an orchestrator decides it per input."
+  },
+  {
+    "id": "wf-3",
+    "chapter": "workflow-patterns",
+    "q": "When does the evaluator and optimizer pattern work best?",
+    "options": [
+      "When quality is subjective and unmeasurable",
+      "When clear criteria exist and iteration measurably improves the result",
+      "When latency must be minimal",
+      "When there is no stop condition"
+    ],
+    "answer": 1,
+    "explain": "It needs an evaluator that applies criteria the generator misses, and a hard iteration cap."
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "oe-1",
+    "chapter": "online-evaluation",
+    "q": "What is shadow traffic?",
+    "options": [
+      "Traffic at night",
+      "Running a new version on copies of real requests without showing its outputs to users",
+      "Bot traffic",
+      "A canary"
+    ],
+    "answer": 1,
+    "explain": "Realistic and safe, at double the inference cost."
+  },
+  {
+    "id": "oe-2",
+    "chapter": "online-evaluation",
+    "q": "Roughly how many users per arm does an A/B test need to detect a 2-point change in a 10% rate?",
+    "options": [
+      "about 360",
+      "about 3,600",
+      "about 36,000",
+      "about 36"
+    ],
+    "answer": 1,
+    "explain": "16 × 0.1 × 0.9 ÷ 0.02² = 3,600."
+  },
+  {
+    "id": "oe-3",
+    "chapter": "online-evaluation",
+    "q": "What is wrong with stopping an A/B test as soon as p < 0.05?",
+    "options": [
+      "Nothing",
+      "Repeated peeking inflates false positives",
+      "It is too slow",
+      "It needs more arms"
+    ],
+    "answer": 1,
+    "explain": "Fix the sample size or use sequential methods."
+  }
+]

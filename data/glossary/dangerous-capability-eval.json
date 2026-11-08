@@ -1,0 +1,11 @@
+{
+  "id": "dangerous-capability-eval",
+  "term": "Dangerous-capability evaluation",
+  "def": "Expert-built tests of whether a model provides meaningful uplift in high-risk areas such as biology or cyber operations.",
+  "practice": "Tied to thresholds in frontier safety frameworks.",
+  "aliases": [],
+  "chapters": [
+    "safety-evals",
+    "frontier-safety-frameworks"
+  ]
+}

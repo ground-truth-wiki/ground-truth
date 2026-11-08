@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rr-1",
+    "chapter": "reranking",
+    "q": "Why are cross-encoders used only on a few dozen candidates?",
+    "options": [
+      "They are inaccurate",
+      "They must process each query and passage pair together at query time, which is expensive",
+      "They need GPUs for indexing",
+      "They cannot read long text"
+    ],
+    "answer": 1,
+    "explain": "Accurate but costly per pair."
+  },
+  {
+    "id": "rr-2",
+    "chapter": "reranking",
+    "q": "With 50 candidates, a batch size of 16 and 40 ms per batch, how long does reranking take?",
+    "options": [
+      "40 ms",
+      "120 ms",
+      "160 ms",
+      "800 ms"
+    ],
+    "answer": 2,
+    "explain": "ceil(50 / 16) = 4 batches × 40 ms = 160 ms."
+  },
+  {
+    "id": "rr-3",
+    "chapter": "reranking",
+    "q": "A reranker does not improve answers. What should you check first?",
+    "options": [
+      "Its license",
+      "Whether first-stage retrieval returned the right passage at all",
+      "Its color",
+      "Model temperature"
+    ],
+    "answer": 1,
+    "explain": "A reranker can only reorder what retrieval returned."
+  }
+]

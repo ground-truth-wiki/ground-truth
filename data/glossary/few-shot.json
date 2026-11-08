@@ -1,0 +1,13 @@
+{
+  "id": "few-shot",
+  "term": "Few-shot prompting",
+  "def": "Including a few input and output examples in the prompt to teach format and judgment.",
+  "practice": "Diverse examples beat many similar ones.",
+  "aliases": [
+    "few-shot examples",
+    "in-context examples"
+  ],
+  "chapters": [
+    "prompting-fundamentals"
+  ]
+}

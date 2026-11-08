@@ -1,0 +1,41 @@
+[
+  {
+    "id": "of-1",
+    "chapter": "orchestration-frameworks",
+    "q": "What does a checkpointer in a graph framework enable?",
+    "options": [
+      "Faster models",
+      "Pausing for human input, resuming after crashes and replaying runs",
+      "Cheaper tokens",
+      "Better embeddings"
+    ],
+    "answer": 1,
+    "explain": "State is saved after each step."
+  },
+  {
+    "id": "of-2",
+    "chapter": "orchestration-frameworks",
+    "q": "Why must you be able to see a framework’s prompts in traces?",
+    "options": [
+      "For style",
+      "Frameworks may inject their own prompts, and you cannot debug quality without seeing them",
+      "To count tokens only",
+      "They are always identical"
+    ],
+    "answer": 1,
+    "explain": "Hidden prompts cause hidden failures."
+  },
+  {
+    "id": "of-3",
+    "chapter": "orchestration-frameworks",
+    "q": "What is a good way to choose between two frameworks?",
+    "options": [
+      "Read their homepages",
+      "Prototype the same small task in both with tracing on, and read what each sends to the model",
+      "Pick the newest",
+      "Count GitHub stars"
+    ],
+    "answer": 1,
+    "explain": "A one-day prototype reveals the fit."
+  }
+]

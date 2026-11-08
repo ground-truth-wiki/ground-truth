@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b4-3",
+    "chapter": "reasoning-models",
+    "q": "When does extra reasoning effort usually help least?",
+    "options": [
+      "Competition math",
+      "Multi-step planning",
+      "Simple lookups and short factual answers",
+      "Hard coding tasks"
+    ],
+    "answer": 2,
+    "explain": "Easy tasks gain little from thinking and pay latency and cost."
+  },
+  {
+    "id": "qrm-1",
+    "chapter": "reasoning-models",
+    "q": "When are reasoning modes least worth their cost?",
+    "options": [
+      "Hard math",
+      "Simple lookups and formatting",
+      "Planning",
+      "Debugging"
+    ],
+    "answer": 1,
+    "explain": "Easy tasks barely benefit."
+  },
+  {
+    "id": "qrm-2",
+    "chapter": "reasoning-models",
+    "q": "How are thinking tokens usually billed?",
+    "options": [
+      "Free",
+      "As output tokens",
+      "As input tokens",
+      "Per minute"
+    ],
+    "answer": 1,
+    "explain": "They add cost and latency."
+  },
+  {
+    "id": "qrm-3",
+    "chapter": "reasoning-models",
+    "q": "Why not treat visible reasoning as proof of how a model decided?",
+    "options": [
+      "It is encrypted",
+      "Research found reasoning traces often omit factors that influenced the answer",
+      "It is always wrong",
+      "It is too short"
+    ],
+    "answer": 1,
+    "explain": "Faithfulness is not guaranteed."
+  }
+]

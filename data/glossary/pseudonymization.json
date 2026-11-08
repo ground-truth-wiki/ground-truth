@@ -1,0 +1,12 @@
+{
+  "id": "pseudonymization",
+  "term": "Pseudonymization",
+  "def": "Replacing identifying values with placeholders or tokens, with the mapping kept separately.",
+  "practice": "Lets models and logs work without real identities.",
+  "aliases": [
+    "redaction"
+  ],
+  "chapters": [
+    "privacy"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "stride",
+  "term": "STRIDE",
+  "def": "A threat categorization: spoofing, tampering, repudiation, information disclosure, denial of service and elevation of privilege.",
+  "practice": "Still useful for AI, with AI-specific instances.",
+  "aliases": [],
+  "chapters": [
+    "threat-modeling"
+  ]
+}

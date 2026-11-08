@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qas-1",
+    "chapter": "ai-for-science",
+    "q": "What was recognized with the 2024 Nobel Prize in Chemistry?",
+    "options": [
+      "Transformers",
+      "AlphaFold’s protein structure prediction, together with computational protein design",
+      "GPT-4",
+      "Weather models"
+    ],
+    "answer": 1,
+    "explain": "A landmark of AI for science."
+  },
+  {
+    "id": "qas-2",
+    "chapter": "ai-for-science",
+    "q": "Where does AI for science progress fastest?",
+    "options": [
+      "Where results are hard to check",
+      "Where data is abundant and results can be verified automatically",
+      "Only in biology",
+      "Only in math"
+    ],
+    "answer": 1,
+    "explain": "Verification drives progress."
+  },
+  {
+    "id": "qas-3",
+    "chapter": "ai-for-science",
+    "q": "How should AI-generated hypotheses be treated?",
+    "options": [
+      "As results",
+      "As leads that need independent verification",
+      "As fiction",
+      "As proofs"
+    ],
+    "answer": 1,
+    "explain": "Plausible is not validated."
+  }
+]

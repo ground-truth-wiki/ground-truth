@@ -1,0 +1,11 @@
+{
+  "id": "self-consistency",
+  "term": "Self-consistency",
+  "def": "Sampling several reasoning paths and taking the majority answer.",
+  "practice": "A simple way to trade compute for accuracy.",
+  "aliases": [],
+  "chapters": [
+    "reasoning-prompts",
+    "reasoning-models"
+  ]
+}

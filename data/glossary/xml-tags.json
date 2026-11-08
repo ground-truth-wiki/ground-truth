@@ -1,0 +1,11 @@
+{
+  "id": "xml-tags",
+  "term": "XML tags",
+  "def": "Labeled tags such as <contract> or <question> used to separate the parts of a prompt.",
+  "practice": "Recommended in Anthropic’s guides; refer to tags by name in instructions.",
+  "aliases": [],
+  "chapters": [
+    "prompting-fundamentals",
+    "model-specific-notes"
+  ]
+}

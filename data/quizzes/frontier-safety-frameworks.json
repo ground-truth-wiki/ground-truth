@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fsf-1",
+    "chapter": "frontier-safety-frameworks",
+    "q": "What do frontier safety frameworks commit developers to?",
+    "options": [
+      "Open-sourcing models",
+      "Evaluating dangerous capabilities and applying stronger safeguards, or pausing, when thresholds are crossed",
+      "Lower prices",
+      "Specific model sizes"
+    ],
+    "answer": 1,
+    "explain": "Thresholds trigger safeguards."
+  },
+  {
+    "id": "fsf-2",
+    "chapter": "frontier-safety-frameworks",
+    "q": "What are Anthropic’s capability tiers called?",
+    "options": [
+      "Critical Capability Levels",
+      "AI Safety Levels (ASLs)",
+      "Preparedness grades",
+      "Risk classes"
+    ],
+    "answer": 1,
+    "explain": "Modeled on biosafety levels."
+  },
+  {
+    "id": "fsf-3",
+    "chapter": "frontier-safety-frameworks",
+    "q": "Why compare framework definitions rather than labels?",
+    "options": [
+      "Labels are copyrighted",
+      "Terms such as ASL-3, High and CCL are defined differently by different developers",
+      "Definitions are shorter",
+      "Labels change daily"
+    ],
+    "answer": 1,
+    "explain": "Similar words, different thresholds."
+  }
+]

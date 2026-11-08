@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rt-1",
+    "chapter": "red-teaming",
+    "q": "What should every confirmed red-team finding produce?",
+    "options": [
+      "A blog post",
+      "At least one regression case that runs on every release",
+      "A new model",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Findings without regression tests return."
+  },
+  {
+    "id": "rt-2",
+    "chapter": "red-teaming",
+    "q": "What do automated red-teaming tools add?",
+    "options": [
+      "Depth on subtle harms",
+      "Breadth: thousands of attack variants quickly",
+      "Legal sign-off",
+      "Model training"
+    ],
+    "answer": 1,
+    "explain": "Humans find depth; tools find breadth."
+  },
+  {
+    "id": "rt-3",
+    "chapter": "red-teaming",
+    "q": "What should be fixed first after an injection finding against an agent?",
+    "options": [
+      "The exact prompt string",
+      "The architecture, such as removing a tool from that task or adding an approval",
+      "The font",
+      "The logging level"
+    ],
+    "answer": 1,
+    "explain": "Patch the class of attack, not one string."
+  }
+]

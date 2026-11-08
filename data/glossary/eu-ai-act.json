@@ -1,0 +1,10 @@
+{
+  "id": "eu-ai-act",
+  "term": "EU AI Act",
+  "def": "The European Union’s risk-based law on AI systems and general-purpose AI models, in force since August 2024 with staged application.",
+  "practice": "Know whether you are a provider or a deployer.",
+  "aliases": [],
+  "chapters": [
+    "governance-regulation"
+  ]
+}

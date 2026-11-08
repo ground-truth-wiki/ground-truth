@@ -1,0 +1,10 @@
+{
+  "id": "minhash",
+  "term": "MinHash",
+  "def": "A technique for quickly estimating similarity between documents, used for near-duplicate removal.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "pretraining-data"
+  ]
+}

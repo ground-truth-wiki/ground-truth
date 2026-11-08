@@ -1,0 +1,12 @@
+{
+  "id": "colpali",
+  "term": "ColPali",
+  "def": "A visual document retriever that embeds page images as patch vectors and matches queries by late interaction.",
+  "practice": "Finds answers in charts and layouts without OCR.",
+  "aliases": [
+    "visual document retrieval"
+  ],
+  "chapters": [
+    "multimodal-rag"
+  ]
+}

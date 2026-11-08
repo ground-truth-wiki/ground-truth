@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b8-2",
+    "chapter": "image-generation",
+    "q": "What does a higher classifier-free guidance scale usually do?",
+    "options": [
+      "Speeds up sampling",
+      "Increases adherence to the prompt at the cost of diversity",
+      "Reduces image size",
+      "Removes watermarks"
+    ],
+    "answer": 1,
+    "explain": "Guidance trades diversity for prompt adherence."
+  },
+  {
+    "id": "qig-1",
+    "chapter": "image-generation",
+    "q": "What does classifier-free guidance strengthen?",
+    "options": [
+      "Speed",
+      "The influence of the prompt, at some cost in diversity",
+      "Resolution",
+      "Safety filtering"
+    ],
+    "answer": 1,
+    "explain": "A key quality knob."
+  },
+  {
+    "id": "qig-2",
+    "chapter": "image-generation",
+    "q": "What does latent diffusion do for efficiency?",
+    "options": [
+      "Uses more pixels",
+      "Runs the denoising in a compressed latent space",
+      "Skips the prompt",
+      "Uses CPUs"
+    ],
+    "answer": 1,
+    "explain": "Rombach et al., 2022."
+  },
+  {
+    "id": "qig-3",
+    "chapter": "image-generation",
+    "q": "What helps label generated images?",
+    "options": [
+      "File names",
+      "C2PA content credentials and watermarks such as SynthID",
+      "Larger images",
+      "Lower resolution"
+    ],
+    "answer": 1,
+    "explain": "Provenance metadata and watermarks."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "adamw",
+  "term": "AdamW",
+  "def": "The Adam optimizer with decoupled weight decay, using running averages of gradients and squared gradients.",
+  "practice": "The default optimizer for training and fine-tuning transformers.",
+  "aliases": [
+    "Adam"
+  ],
+  "chapters": [
+    "calculus-optimization"
+  ]
+}

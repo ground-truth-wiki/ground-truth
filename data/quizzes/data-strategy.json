@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qdg2-1",
+    "chapter": "data-strategy",
+    "q": "Why is data a more durable advantage than model choice?",
+    "options": [
+      "Models are free",
+      "Competitors can call the same models but cannot easily copy your data, labels and evals",
+      "Data never changes",
+      "Models are slow"
+    ],
+    "answer": 1,
+    "explain": "Data compounds."
+  },
+  {
+    "id": "qdg2-2",
+    "chapter": "data-strategy",
+    "q": "What should exist on day one of an AI product?",
+    "options": [
+      "A fine-tuned model",
+      "An eval set and a logging plan with consent",
+      "A data lake",
+      "A GPU cluster"
+    ],
+    "answer": 1,
+    "explain": "They enable everything else."
+  },
+  {
+    "id": "qdg2-3",
+    "chapter": "data-strategy",
+    "q": "What is data lineage?",
+    "options": [
+      "Model ancestry",
+      "A record of where each dataset came from and what it may be used for",
+      "A labeling tool",
+      "A compression method"
+    ],
+    "answer": 1,
+    "explain": "Needed for governance."
+  }
+]

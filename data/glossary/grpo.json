@@ -1,0 +1,13 @@
+{
+  "id": "grpo",
+  "term": "Group Relative Policy Optimization",
+  "def": "An RL algorithm that scores a group of sampled answers relative to each other instead of training a value model.",
+  "practice": "Introduced in DeepSeekMath; widely used for reasoning training.",
+  "aliases": [
+    "GRPO"
+  ],
+  "chapters": [
+    "rlvr-reasoning"
+  ],
+  "abbr": "GRPO"
+}

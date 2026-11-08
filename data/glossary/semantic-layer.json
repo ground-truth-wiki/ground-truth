@@ -1,0 +1,10 @@
+{
+  "id": "semantic-layer",
+  "term": "Semantic layer",
+  "def": "A curated set of business definitions (metrics, dimensions, terms) between questions and the database.",
+  "practice": "Stops models from inventing what “active customer” means.",
+  "aliases": [],
+  "chapters": [
+    "structured-code-retrieval"
+  ]
+}

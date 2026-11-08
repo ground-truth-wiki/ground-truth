@@ -1,0 +1,12 @@
+{
+  "id": "annotation-queue",
+  "term": "Annotation queue",
+  "def": "A workflow where sampled interactions are reviewed and labeled by people.",
+  "practice": "The curation step of the data flywheel.",
+  "aliases": [
+    "review queue"
+  ],
+  "chapters": [
+    "data-flywheel"
+  ]
+}

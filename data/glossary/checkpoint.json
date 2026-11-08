@@ -1,0 +1,13 @@
+{
+  "id": "checkpoint",
+  "term": "Checkpoint",
+  "def": "A saved snapshot of a run’s state from which it can resume.",
+  "practice": "Checkpoint after each unit of work and before risky actions.",
+  "aliases": [
+    "checkpoints",
+    "checkpointing"
+  ],
+  "chapters": [
+    "long-running-agents"
+  ]
+}

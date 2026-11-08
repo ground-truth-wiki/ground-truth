@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qz-1",
+    "chapter": "quantization",
+    "q": "About how much weight memory does a 70B model need at 4 bits per weight?",
+    "options": [
+      "140 GB",
+      "70 GB",
+      "35 GB",
+      "9 GB"
+    ],
+    "answer": 2,
+    "explain": "70 × 4 ÷ 8 = 35 GB, plus a little for scales."
+  },
+  {
+    "id": "qz-2",
+    "chapter": "quantization",
+    "q": "What does W4A16 mean?",
+    "options": [
+      "4 GPUs, 16 layers",
+      "4-bit weights with 16-bit activations",
+      "4-bit activations, 16-bit weights",
+      "A model version"
+    ],
+    "answer": 1,
+    "explain": "Weights are quantized; arithmetic runs after dequantizing."
+  },
+  {
+    "id": "qz-3",
+    "chapter": "quantization",
+    "q": "Why is perplexity alone a poor check of a quantized model?",
+    "options": [
+      "It is slow",
+      "Small perplexity changes can hide large drops on reasoning, code or rare languages",
+      "It is always zero",
+      "It needs labels"
+    ],
+    "answer": 1,
+    "explain": "Evaluate on tasks."
+  }
+]

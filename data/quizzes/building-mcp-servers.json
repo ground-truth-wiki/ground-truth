@@ -1,0 +1,41 @@
+[
+  {
+    "id": "build-1",
+    "chapter": "building-mcp-servers",
+    "q": "In FastMCP, where does a tool’s input schema come from?",
+    "options": [
+      "A separate YAML file",
+      "The function’s type hints",
+      "The model",
+      "The transport"
+    ],
+    "answer": 1,
+    "explain": "Type hints become the JSON Schema; the docstring becomes the description."
+  },
+  {
+    "id": "build-2",
+    "chapter": "building-mcp-servers",
+    "q": "Which testing step catches problems unit tests miss?",
+    "options": [
+      "Linting",
+      "Watching a real agent use the server and reading the transcripts",
+      "Measuring CPU",
+      "Counting tools"
+    ],
+    "answer": 1,
+    "explain": "Agents reveal wrong-tool picks, bad arguments and oversized results."
+  },
+  {
+    "id": "build-3",
+    "chapter": "building-mcp-servers",
+    "q": "Why keep tool definitions stable between releases?",
+    "options": [
+      "To save disk",
+      "Changes break hosts’ prompt caches and may trigger re-approval prompts",
+      "Because schemas cannot change",
+      "To avoid tests"
+    ],
+    "answer": 1,
+    "explain": "Stable definitions help caching and trust."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "microvm",
+  "term": "MicroVM",
+  "def": "A lightweight virtual machine with its own kernel, such as Firecracker, used to isolate untrusted code.",
+  "practice": "Stronger isolation than containers, still fast to start.",
+  "aliases": [
+    "Firecracker"
+  ],
+  "chapters": [
+    "sandboxes"
+  ]
+}

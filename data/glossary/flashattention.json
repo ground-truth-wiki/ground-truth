@@ -1,0 +1,11 @@
+{
+  "id": "flashattention",
+  "term": "FlashAttention",
+  "def": "An IO-aware kernel that computes exact attention in tiles without writing the full score matrix to slow memory.",
+  "practice": "The default fast attention kernel in most stacks.",
+  "aliases": [],
+  "chapters": [
+    "long-context",
+    "attention"
+  ]
+}

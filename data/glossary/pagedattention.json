@@ -1,0 +1,11 @@
+{
+  "id": "pagedattention",
+  "term": "PagedAttention",
+  "def": "Storing KV caches in fixed-size blocks with a block table, like virtual memory, to avoid fragmentation and enable sharing.",
+  "practice": "The core idea behind vLLM.",
+  "aliases": [],
+  "chapters": [
+    "batching-scheduling",
+    "kv-cache"
+  ]
+}

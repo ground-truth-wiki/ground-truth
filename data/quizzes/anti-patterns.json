@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b18-3",
+    "chapter": "anti-patterns",
+    "q": "Which is an anti-pattern?",
+    "options": [
+      "Tracing every model call",
+      "An agent loop with no step or cost budget",
+      "Writing evals before features",
+      "Caching stable prompt prefixes"
+    ],
+    "answer": 1,
+    "explain": "Unbounded loops produce runaway cost and hangs."
+  },
+  {
+    "id": "qap-1",
+    "chapter": "anti-patterns",
+    "q": "What is demo-driven development?",
+    "options": [
+      "Writing demos",
+      "Tuning a system on a few happy examples and shipping without real evals",
+      "Using demos in sales",
+      "Recording videos"
+    ],
+    "answer": 1,
+    "explain": "Demos reward the impressive, not the reliable."
+  },
+  {
+    "id": "qap-2",
+    "chapter": "anti-patterns",
+    "q": "Why is “instructions as security” an anti-pattern?",
+    "options": [
+      "Instructions are long",
+      "A manipulated model can ignore prompt rules; enforcement belongs in code and infrastructure",
+      "Instructions are expensive",
+      "They slow responses"
+    ],
+    "answer": 1,
+    "explain": "Prompts are requests."
+  },
+  {
+    "id": "qap-3",
+    "chapter": "anti-patterns",
+    "q": "What cures the “no off switch” anti-pattern?",
+    "options": [
+      "A bigger model",
+      "Feature flags and kill switches that work in under a minute",
+      "More logs",
+      "A rewrite"
+    ],
+    "answer": 1,
+    "explain": "Runaway agents cannot wait for a deploy."
+  }
+]

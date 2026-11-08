@@ -1,0 +1,10 @@
+{
+  "id": "permitted-use",
+  "term": "Permitted use",
+  "def": "The uses a dataset may be put to under its consent basis, license and contracts.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "data-governance"
+  ]
+}

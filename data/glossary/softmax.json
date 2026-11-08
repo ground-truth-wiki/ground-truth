@@ -1,0 +1,11 @@
+{
+  "id": "softmax",
+  "term": "Softmax",
+  "def": "A function that turns a vector of scores into probabilities that are positive and sum to one.",
+  "practice": "Used for attention weights and for next-token probabilities.",
+  "aliases": [],
+  "chapters": [
+    "attention",
+    "decoding-sampling"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "blast-radius",
+  "term": "Blast radius",
+  "def": "How much damage an action, or a compromised component, can cause.",
+  "practice": "Gate actions and design permissions by blast radius.",
+  "aliases": [],
+  "chapters": [
+    "human-in-the-loop",
+    "secure-agent-design"
+  ]
+}

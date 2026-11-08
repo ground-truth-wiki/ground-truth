@@ -1,0 +1,10 @@
+{
+  "id": "durable-execution",
+  "term": "Durable execution",
+  "def": "Persisting each step of a workflow so it can resume after crashes without repeating completed work.",
+  "practice": "Essential for long-running agents.",
+  "aliases": [],
+  "chapters": [
+    "long-running-agents"
+  ]
+}

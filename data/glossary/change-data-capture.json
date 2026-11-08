@@ -1,0 +1,13 @@
+{
+  "id": "change-data-capture",
+  "term": "Change-data capture",
+  "def": "Streaming create, update and delete events from a source system so downstream indexes stay in sync.",
+  "practice": "Pair with periodic reconciliation to catch missed events.",
+  "aliases": [
+    "CDC"
+  ],
+  "chapters": [
+    "production-rag"
+  ],
+  "abbr": "CDC"
+}

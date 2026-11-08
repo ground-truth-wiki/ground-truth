@@ -1,0 +1,11 @@
+{
+  "id": "instruction-hierarchy",
+  "term": "Instruction hierarchy",
+  "def": "The ranking of instruction sources a model should follow: system above user above tool content.",
+  "practice": "Train and test it to resist injection.",
+  "aliases": [],
+  "chapters": [
+    "safety-character-training",
+    "prompt-injection"
+  ]
+}

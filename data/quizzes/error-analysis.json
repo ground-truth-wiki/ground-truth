@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ea-1",
+    "chapter": "error-analysis",
+    "q": "In open coding, which failure should you note for each trace?",
+    "options": [
+      "The last error",
+      "The first thing that went wrong",
+      "Only formatting issues",
+      "The average quality"
+    ],
+    "answer": 1,
+    "explain": "Later errors often cascade from the first one."
+  },
+  {
+    "id": "ea-2",
+    "chapter": "error-analysis",
+    "q": "What is the right moment to choose your eval metrics?",
+    "options": [
+      "Before reading any outputs",
+      "After error analysis shows which failures actually occur",
+      "After launch only",
+      "Never; use public benchmarks"
+    ],
+    "answer": 1,
+    "explain": "Generic metrics rarely match real failures; read first, then measure."
+  },
+  {
+    "id": "ea-3",
+    "chapter": "error-analysis",
+    "q": "After axial coding, the counts are 31, 22, 14, 9, 7, 5 and 4. What does this shape suggest?",
+    "options": [
+      "Every category matters equally",
+      "A few categories cause most failures, so fix those first",
+      "The data is wrong",
+      "You need more categories"
+    ],
+    "answer": 1,
+    "explain": "Failure distributions are usually lopsided; prioritize the head."
+  }
+]

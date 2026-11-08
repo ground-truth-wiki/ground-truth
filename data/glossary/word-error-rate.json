@@ -1,0 +1,13 @@
+{
+  "id": "word-error-rate",
+  "term": "Word error rate",
+  "def": "The share of words a transcript gets wrong through substitutions, deletions and insertions.",
+  "practice": "",
+  "aliases": [
+    "WER"
+  ],
+  "chapters": [
+    "speech-audio"
+  ],
+  "abbr": "WER"
+}

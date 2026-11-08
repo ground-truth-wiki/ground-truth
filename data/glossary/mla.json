@@ -1,0 +1,14 @@
+{
+  "id": "mla",
+  "term": "Multi-head latent attention",
+  "def": "Attention that stores a compressed latent per token instead of full keys and values, expanding it per head when needed.",
+  "practice": "Introduced in DeepSeek-V2 to cut cache size further than GQA.",
+  "aliases": [
+    "MLA"
+  ],
+  "chapters": [
+    "attention",
+    "kv-cache"
+  ],
+  "abbr": "MLA"
+}

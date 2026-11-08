@@ -1,0 +1,10 @@
+{
+  "id": "arithmetic-intensity",
+  "term": "Arithmetic intensity",
+  "def": "FLOPs performed per byte of memory moved.",
+  "practice": "Low intensity means memory-bound; decode at small batch is the classic case.",
+  "aliases": [],
+  "chapters": [
+    "inference-fundamentals"
+  ]
+}

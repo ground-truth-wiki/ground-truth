@@ -1,0 +1,13 @@
+{
+  "id": "logits",
+  "term": "Logits",
+  "def": "The raw, unnormalized scores a model outputs for every vocabulary token before softmax.",
+  "practice": "Logit bias and constrained decoding edit them directly.",
+  "aliases": [
+    "logit"
+  ],
+  "chapters": [
+    "decoding-sampling",
+    "structured-outputs"
+  ]
+}

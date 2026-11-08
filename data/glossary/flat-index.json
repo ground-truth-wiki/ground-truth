@@ -1,0 +1,13 @@
+{
+  "id": "flat-index",
+  "term": "Flat index",
+  "def": "Brute-force vector search that compares the query with every vector: perfect recall, linear cost.",
+  "practice": "Fine longer than most teams expect, and the ground truth for measuring ANN recall.",
+  "aliases": [
+    "brute-force search",
+    "exact search"
+  ],
+  "chapters": [
+    "vector-search"
+  ]
+}

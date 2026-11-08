@@ -1,0 +1,13 @@
+{
+  "id": "paired-test",
+  "term": "Paired test",
+  "def": "A statistical comparison of two systems using per-case differences on the same cases.",
+  "practice": "Detects smaller differences than comparing averages.",
+  "aliases": [
+    "paired comparison",
+    "McNemar’s test"
+  ],
+  "chapters": [
+    "eval-statistics"
+  ]
+}

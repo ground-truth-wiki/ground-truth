@@ -1,0 +1,12 @@
+{
+  "id": "blueprint",
+  "term": "Blueprint",
+  "def": "A reusable starting design for a common kind of AI product.",
+  "practice": "",
+  "aliases": [
+    "reference blueprint"
+  ],
+  "chapters": [
+    "reference-architectures"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "tensor-parallelism",
+  "term": "Tensor parallelism",
+  "def": "Splitting individual weight matrices across devices so each computes part of every layer.",
+  "practice": "Needs fast interconnect; used to serve models larger than one GPU.",
+  "aliases": [],
+  "chapters": [
+    "disaggregated-serving",
+    "distributed-training"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qpl-1",
+    "chapter": "project-ladder",
+    "q": "What should every rung of the project ladder ship with?",
+    "options": [
+      "A logo",
+      "An eval, traces and a cost estimate",
+      "A video",
+      "A blog post"
+    ],
+    "answer": 1,
+    "explain": "Measurement before features."
+  },
+  {
+    "id": "qpl-2",
+    "chapter": "project-ladder",
+    "q": "How many learning paths does the Bible offer?",
+    "options": [
+      "3",
+      "8",
+      "14",
+      "21"
+    ],
+    "answer": 1,
+    "explain": "Eight curated paths."
+  },
+  {
+    "id": "qpl-3",
+    "chapter": "project-ladder",
+    "q": "What distinguishes a portfolio project from a toy demo?",
+    "options": [
+      "Fancier UI",
+      "Evidence: evals, failures, costs and decisions",
+      "More code",
+      "Longer prompts"
+    ],
+    "answer": 1,
+    "explain": "Show you can engineer, not just demo."
+  }
+]

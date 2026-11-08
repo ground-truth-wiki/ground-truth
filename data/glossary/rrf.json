@@ -1,0 +1,13 @@
+{
+  "id": "rrf",
+  "term": "Reciprocal rank fusion",
+  "def": "Fusing ranked lists by summing 1 ÷ (k + rank) for each document across lists.",
+  "practice": "Needs no score calibration; k = 60 is the usual default.",
+  "aliases": [
+    "RRF"
+  ],
+  "chapters": [
+    "hybrid-retrieval"
+  ],
+  "abbr": "RRF"
+}

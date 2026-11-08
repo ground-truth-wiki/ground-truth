@@ -1,0 +1,10 @@
+{
+  "id": "time-horizon",
+  "term": "Task time horizon",
+  "def": "The length, in human working time, of tasks an AI system completes at a given success rate.",
+  "practice": "METR tracks the 50% horizon.",
+  "aliases": [],
+  "chapters": [
+    "long-horizon-autonomy"
+  ]
+}

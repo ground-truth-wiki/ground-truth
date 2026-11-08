@@ -1,0 +1,358 @@
+{
+  "paths": [
+    {
+      "id": "zero-to-ai-engineer",
+      "title": "Zero to AI Engineer in 12 weeks",
+      "blurb": "The spine of the Bible: models, prompting, retrieval, agents, protocols, evals, inference and security, about four chapters a week.",
+      "steps": [
+        "ai-engineer-role",
+        "ai-engineering-stack",
+        "mental-models",
+        "how-to-use",
+        "linear-algebra",
+        "probability-information",
+        "neural-networks",
+        "tokenization",
+        "attention",
+        "transformer-block",
+        "kv-cache",
+        "decoding-sampling",
+        "model-apis",
+        "prompting-fundamentals",
+        "structured-outputs",
+        "prompt-caching",
+        "context-engineering",
+        "rag-fundamentals",
+        "chunking",
+        "embeddings",
+        "vector-search",
+        "hybrid-retrieval",
+        "reranking",
+        "rag-evaluation",
+        "what-is-an-agent",
+        "agent-loop",
+        "agent-tools",
+        "workflow-patterns",
+        "agent-memory",
+        "multi-agent",
+        "guardrails-control",
+        "agent-failure-modes",
+        "why-protocols",
+        "mcp-architecture",
+        "mcp-primitives",
+        "harness-anatomy",
+        "why-evals",
+        "error-analysis",
+        "llm-as-judge",
+        "eval-statistics",
+        "inference-fundamentals",
+        "cost-engineering",
+        "reliability-engineering",
+        "observability-tracing",
+        "prompt-injection",
+        "secure-agent-design",
+        "system-design-method",
+        "project-ladder"
+      ],
+      "weeks": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        8,
+        9,
+        9,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
+        11,
+        11,
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "rag-specialist",
+      "title": "RAG Specialist",
+      "blurb": "Every stage of retrieval, from parsing a PDF to permission-aware production search and deep research.",
+      "steps": [
+        "rag-fundamentals",
+        "ingestion-parsing",
+        "chunking",
+        "embeddings",
+        "vector-search",
+        "vector-databases",
+        "hybrid-retrieval",
+        "query-understanding",
+        "reranking",
+        "advanced-rag",
+        "structured-code-retrieval",
+        "multimodal-rag",
+        "grounding-citations",
+        "rag-evaluation",
+        "production-rag",
+        "deep-research"
+      ]
+    },
+    {
+      "id": "agent-architect",
+      "title": "Agent Architect",
+      "blurb": "Design agents that finish the job: loops, tools, workflows, memory, multi-agent systems, control and evaluation.",
+      "steps": [
+        "what-is-an-agent",
+        "agent-loop",
+        "agent-tools",
+        "workflow-patterns",
+        "planning-reasoning",
+        "agent-memory",
+        "multi-agent",
+        "long-running-agents",
+        "human-in-the-loop",
+        "guardrails-control",
+        "agent-failure-modes",
+        "agent-ux",
+        "evaluating-agents",
+        "reference-architectures"
+      ]
+    },
+    {
+      "id": "harness-mcp-builder",
+      "title": "Harness and MCP Builder",
+      "blurb": "Build the software around the model and the protocols that connect it, down to OAuth flows and sandboxes.",
+      "steps": [
+        "what-is-a-harness",
+        "harness-anatomy",
+        "claude-code",
+        "skills-plugins",
+        "sandboxes",
+        "build-your-own-harness",
+        "why-protocols",
+        "mcp-architecture",
+        "mcp-primitives",
+        "mcp-client-features",
+        "mcp-transports",
+        "mcp-authorization",
+        "mcp-security",
+        "building-mcp-servers",
+        "mcp-at-scale",
+        "a2a"
+      ]
+    },
+    {
+      "id": "inference-infra",
+      "title": "Inference and Infra",
+      "blurb": "Why decode is memory-bound and what to do about it: batching, caching, speculation, quantization, hardware and cost.",
+      "steps": [
+        "inference-fundamentals",
+        "latency-throughput",
+        "memory-math",
+        "kv-cache",
+        "batching-scheduling",
+        "speculative-decoding",
+        "quantization",
+        "disaggregated-serving",
+        "serving-engines",
+        "hardware",
+        "cost-engineering",
+        "edge-on-device",
+        "back-of-envelope"
+      ]
+    },
+    {
+      "id": "security-safety",
+      "title": "Security and Safety",
+      "blurb": "Threat models, injection, secure agent design, supply chains, red teaming, alignment and the rules that govern it all.",
+      "steps": [
+        "threat-modeling",
+        "prompt-injection",
+        "secure-agent-design",
+        "mcp-security",
+        "sandboxes",
+        "jailbreaks-misuse",
+        "supply-chain-security",
+        "privacy",
+        "red-teaming",
+        "safety-evals",
+        "alignment-concepts",
+        "frontier-safety-frameworks",
+        "governance-regulation",
+        "responsible-ai"
+      ]
+    },
+    {
+      "id": "interview-sprint",
+      "title": "Interview Sprint in 2 weeks",
+      "blurb": "Sixteen chapters that cover what AI engineering interviews actually probe, ending in model answers.",
+      "steps": [
+        "ai-engineering-stack",
+        "attention",
+        "kv-cache",
+        "decoding-sampling",
+        "rag-fundamentals",
+        "chunking",
+        "agent-loop",
+        "agent-tools",
+        "context-engineering",
+        "error-analysis",
+        "llm-as-judge",
+        "inference-fundamentals",
+        "system-design-method",
+        "back-of-envelope",
+        "numbers-to-know",
+        "interview-prep"
+      ],
+      "weeks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "talk-like-a-researcher",
+      "title": "Talk Like a Researcher",
+      "blurb": "The ideas, papers and debates researchers assume you know, so you can follow and join the conversation.",
+      "steps": [
+        "mental-models",
+        "scaling-laws",
+        "attention",
+        "mixture-of-experts",
+        "preference-optimization",
+        "rlvr-reasoning",
+        "mech-interp",
+        "beyond-transformers",
+        "test-time-scaling",
+        "alignment-concepts",
+        "open-problems",
+        "the-canon",
+        "talking-shop"
+      ]
+    }
+  ],
+  "ladder": [
+    {
+      "title": "Chat with a PDF",
+      "desc": "Parse, chunk, embed, retrieve and answer with citations. Then break it on purpose with tables and scanned pages.",
+      "chapters": [
+        "rag-fundamentals",
+        "chunking",
+        "grounding-citations"
+      ]
+    },
+    {
+      "title": "A structured extractor with a review queue",
+      "desc": "Pull typed fields from messy documents, validate them against a schema, and route low-confidence items to a human.",
+      "chapters": [
+        "structured-outputs",
+        "document-extraction"
+      ]
+    },
+    {
+      "title": "Hybrid search with reranking and a retrieval eval",
+      "desc": "BM25 plus vectors, fused with RRF, reranked with a cross-encoder, measured with recall@k and nDCG on a labeled set.",
+      "chapters": [
+        "hybrid-retrieval",
+        "reranking",
+        "rag-evaluation"
+      ]
+    },
+    {
+      "title": "A tool-using agent from scratch",
+      "desc": "The loop in about 100 lines: tools, stop conditions, budgets and a trace you can read. No framework.",
+      "chapters": [
+        "agent-loop",
+        "agent-tools"
+      ]
+    },
+    {
+      "title": "An MCP server for a system you use daily",
+      "desc": "Expose a real system as tools and resources, test it with the Inspector, and use it from two different hosts.",
+      "chapters": [
+        "building-mcp-servers",
+        "mcp-primitives"
+      ]
+    },
+    {
+      "title": "An eval harness with a calibrated judge",
+      "desc": "Error analysis on 100 traces, a binary rubric, a judge checked against your labels, and confidence intervals on the result.",
+      "chapters": [
+        "error-analysis",
+        "llm-as-judge",
+        "eval-statistics"
+      ]
+    },
+    {
+      "title": "A sandboxed coding or research agent",
+      "desc": "Run code in a sandbox with egress limits, trace every step, and enforce token and time budgets.",
+      "chapters": [
+        "sandboxes",
+        "observability-tracing",
+        "guardrails-control"
+      ]
+    },
+    {
+      "title": "Self-host a model for one workload",
+      "desc": "Serve a quantized open model, measure TTFT and throughput, and find the break-even against an API.",
+      "chapters": [
+        "serving-engines",
+        "quantization",
+        "cost-engineering"
+      ]
+    },
+    {
+      "title": "A multi-agent system you can defend",
+      "desc": "Orchestrator and workers with evals, tracing, a cost budget and a red-team suite, plus a written case for why it needs to be multi-agent.",
+      "chapters": [
+        "multi-agent",
+        "evaluating-agents",
+        "red-teaming"
+      ]
+    }
+  ]
+}

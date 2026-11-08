@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rag-1",
+    "chapter": "rag-fundamentals",
+    "q": "A RAG system gives wrong answers. What should you measure first?",
+    "options": [
+      "Answer fluency",
+      "Whether the right passages were retrieved, such as recall@k",
+      "The model’s temperature",
+      "Latency"
+    ],
+    "answer": 1,
+    "explain": "Separate retrieval misses from generation misses; if the passage is not retrieved, the generator cannot use it."
+  },
+  {
+    "id": "rag-2",
+    "chapter": "rag-fundamentals",
+    "q": "Which need is RAG best suited for?",
+    "options": [
+      "Teaching a consistent output style",
+      "Answering from large, changing, private documents with citations",
+      "Speeding up decoding",
+      "Reducing model size"
+    ],
+    "answer": 1,
+    "explain": "RAG grounds answers in fresh, private, citable sources; style is better taught by prompting or fine-tuning."
+  },
+  {
+    "id": "rag-3",
+    "chapter": "rag-fundamentals",
+    "q": "Where should access control be enforced in permission-aware RAG?",
+    "options": [
+      "After generation, by hiding answers",
+      "At retrieval time, filtering what the user may see",
+      "Only in the user interface",
+      "In the embedding model"
+    ],
+    "answer": 1,
+    "explain": "Filter at query time, or answers can leak documents the user should not see."
+  }
+]

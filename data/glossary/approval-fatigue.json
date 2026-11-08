@@ -1,0 +1,10 @@
+{
+  "id": "approval-fatigue",
+  "term": "Approval fatigue",
+  "def": "The tendency to approve prompts without reading them when they appear too often.",
+  "practice": "Fewer, more specific approvals protect more.",
+  "aliases": [],
+  "chapters": [
+    "human-in-the-loop"
+  ]
+}

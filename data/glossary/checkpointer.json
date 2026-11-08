@@ -1,0 +1,10 @@
+{
+  "id": "checkpointer",
+  "term": "Checkpointer",
+  "def": "A component that saves a workflow’s state after each step so runs can pause, resume and replay.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "orchestration-frameworks"
+  ]
+}

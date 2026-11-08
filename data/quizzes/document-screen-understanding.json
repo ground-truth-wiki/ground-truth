@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qdu-1",
+    "chapter": "document-screen-understanding",
+    "q": "What does OCR do well?",
+    "options": [
+      "Interpret checkboxes",
+      "Copy characters cheaply and literally from clean scans",
+      "Understand charts",
+      "Infer dates"
+    ],
+    "answer": 1,
+    "explain": "Literal and cheap."
+  },
+  {
+    "id": "qdu-2",
+    "chapter": "document-screen-understanding",
+    "q": "Why must VLM-extracted numbers be validated?",
+    "options": [
+      "They are slow",
+      "Plausible misreads pass unnoticed without rules or reference checks",
+      "They are always wrong",
+      "Validation is required by law"
+    ],
+    "answer": 1,
+    "explain": "Validate with arithmetic and reference data."
+  },
+  {
+    "id": "qdu-3",
+    "chapter": "document-screen-understanding",
+    "q": "What do computer-use agents read alongside screenshots, where available?",
+    "options": [
+      "Source code",
+      "The accessibility tree",
+      "Audio",
+      "Logs"
+    ],
+    "answer": 1,
+    "explain": "Structure plus pixels."
+  }
+]

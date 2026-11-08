@@ -1,0 +1,12 @@
+{
+  "id": "nist-ai-rmf",
+  "term": "NIST AI Risk Management Framework",
+  "def": "A voluntary US framework for managing AI risks, published in January 2023.",
+  "practice": "A common reference for enterprise AI governance.",
+  "aliases": [
+    "AI RMF"
+  ],
+  "chapters": [
+    "governance-regulation"
+  ]
+}

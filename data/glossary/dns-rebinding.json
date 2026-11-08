@@ -1,0 +1,10 @@
+{
+  "id": "dns-rebinding",
+  "term": "DNS rebinding",
+  "def": "An attack that lets a malicious web page reach services on a user’s localhost.",
+  "practice": "Local HTTP servers must validate the Origin header and bind to loopback.",
+  "aliases": [],
+  "chapters": [
+    "mcp-transports"
+  ]
+}

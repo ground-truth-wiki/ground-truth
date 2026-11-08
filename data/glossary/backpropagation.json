@@ -1,0 +1,13 @@
+{
+  "id": "backpropagation",
+  "term": "Backpropagation",
+  "def": "Computing gradients of a loss with respect to every parameter by applying the chain rule backward through the network.",
+  "practice": "Autograd frameworks do it automatically.",
+  "aliases": [
+    "backprop"
+  ],
+  "chapters": [
+    "calculus-optimization",
+    "neural-networks"
+  ]
+}

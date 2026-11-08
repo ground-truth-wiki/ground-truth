@@ -1,0 +1,12 @@
+{
+  "id": "exponential-backoff",
+  "term": "Exponential backoff",
+  "def": "Waiting progressively longer between retries, usually doubling each time up to a cap.",
+  "practice": "Pair it with jitter.",
+  "aliases": [
+    "backoff"
+  ],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

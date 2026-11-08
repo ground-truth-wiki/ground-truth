@@ -1,0 +1,12 @@
+{
+  "id": "layout-aware-parsing",
+  "term": "Layout-aware parsing",
+  "def": "Document parsing that recovers reading order, headings, lists and tables instead of raw text in drawing order.",
+  "practice": "Essential for PDFs with columns and tables.",
+  "aliases": [
+    "layout parsing"
+  ],
+  "chapters": [
+    "ingestion-parsing"
+  ]
+}

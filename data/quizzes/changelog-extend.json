@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qce-1",
+    "chapter": "changelog-extend",
+    "q": "Which rule keeps links working as the Bible grows?",
+    "options": [
+      "Renumbering chapters",
+      "Chapter ids are permanent and renamed ids map through aliases",
+      "Deleting old chapters",
+      "Random ids"
+    ],
+    "answer": 1,
+    "explain": "Stable ids, stable links."
+  },
+  {
+    "id": "qce-2",
+    "chapter": "changelog-extend",
+    "q": "What must every update do?",
+    "options": [
+      "Delete content",
+      "Bump the version, add a changelog entry and update review dates",
+      "Change the theme",
+      "Reset progress"
+    ],
+    "answer": 1,
+    "explain": "Recorded and dated."
+  },
+  {
+    "id": "qce-3",
+    "chapter": "changelog-extend",
+    "q": "What happens to a seed when its chapter is deepened?",
+    "options": [
+      "It is kept beside the full chapter",
+      "Its body is replaced by the full chapter and its status set to full",
+      "It is deleted with its id",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Ids stay; content grows."
+  }
+]

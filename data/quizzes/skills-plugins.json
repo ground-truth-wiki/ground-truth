@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sk-1",
+    "chapter": "skills-plugins",
+    "q": "Which part of a skill is always in the agent’s context?",
+    "options": [
+      "The whole folder",
+      "The scripts’ code",
+      "The name and description",
+      "Nothing"
+    ],
+    "answer": 2,
+    "explain": "Everything else loads only when the task needs it."
+  },
+  {
+    "id": "sk-2",
+    "chapter": "skills-plugins",
+    "q": "When a skill runs a script, what enters the context?",
+    "options": [
+      "The script’s source code",
+      "Only the script’s output",
+      "The whole repository",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Code runs in the environment; only output is read."
+  },
+  {
+    "id": "sk-3",
+    "chapter": "skills-plugins",
+    "q": "What is the main security risk of installing a third-party skill?",
+    "options": [
+      "It is slow",
+      "It contains instructions the agent will follow and scripts it may run",
+      "It uses too many tokens",
+      "It cannot be updated"
+    ],
+    "answer": 1,
+    "explain": "Review skills like code and pin versions."
+  }
+]

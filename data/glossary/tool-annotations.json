@@ -1,0 +1,13 @@
+{
+  "id": "tool-annotations",
+  "term": "Tool annotations",
+  "def": "Optional MCP hints describing tool behavior, such as read-only, destructive, idempotent or open-world.",
+  "practice": "Hints only: do not trust them from unknown servers.",
+  "aliases": [
+    "readOnlyHint",
+    "destructiveHint"
+  ],
+  "chapters": [
+    "mcp-primitives"
+  ]
+}

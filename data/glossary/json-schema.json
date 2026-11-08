@@ -1,0 +1,12 @@
+{
+  "id": "json-schema",
+  "term": "JSON Schema",
+  "def": "A vocabulary for describing the shape of JSON data: types, required fields, enums and bounds.",
+  "practice": "Tool inputs and structured outputs are described in JSON Schema; MCP 2026-07-28 allows any 2020-12 keyword.",
+  "aliases": [],
+  "chapters": [
+    "mcp-primitives",
+    "structured-outputs",
+    "agent-tools"
+  ]
+}

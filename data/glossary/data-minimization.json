@@ -1,0 +1,10 @@
+{
+  "id": "data-minimization",
+  "term": "Data minimization",
+  "def": "Collecting and keeping only the personal data a purpose needs.",
+  "practice": "The cheapest privacy control.",
+  "aliases": [],
+  "chapters": [
+    "privacy"
+  ]
+}

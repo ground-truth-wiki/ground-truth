@@ -1,0 +1,10 @@
+{
+  "id": "cost-attribution",
+  "term": "Cost attribution",
+  "def": "Tagging usage by feature, tenant and user so spend can be explained and managed.",
+  "practice": "Needed for budgets and pricing.",
+  "aliases": [],
+  "chapters": [
+    "cost-capacity"
+  ]
+}

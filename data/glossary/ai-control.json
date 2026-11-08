@@ -1,0 +1,10 @@
+{
+  "id": "ai-control",
+  "term": "AI control",
+  "def": "Designing deployments that remain safe even if a model attempts to subvert them.",
+  "practice": "Monitoring, restricted permissions and trusted checks.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

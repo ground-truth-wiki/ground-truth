@@ -1,0 +1,41 @@
+[
+  {
+    "id": "po-1",
+    "chapter": "prompt-optimization",
+    "q": "What does a prompt optimizer maximize?",
+    "options": [
+      "Prompt length",
+      "Whatever the metric measures on the training data",
+      "User satisfaction directly",
+      "Latency"
+    ],
+    "answer": 1,
+    "explain": "A bad metric produces a bad prompt."
+  },
+  {
+    "id": "po-2",
+    "chapter": "prompt-optimization",
+    "q": "Why keep a held-out test set when optimizing prompts?",
+    "options": [
+      "To save money",
+      "The dev score keeps rising after real quality stops improving; the held-out set reveals overfitting",
+      "It is required by DSPy",
+      "To train faster"
+    ],
+    "answer": 1,
+    "explain": "Report on data the optimizer never saw."
+  },
+  {
+    "id": "po-3",
+    "chapter": "prompt-optimization",
+    "q": "In DSPy, what is a signature?",
+    "options": [
+      "A cryptographic key",
+      "A declaration of a module’s inputs and outputs, such as question -> answer",
+      "A model version",
+      "A test case"
+    ],
+    "answer": 1,
+    "explain": "Signatures say what a step does; optimizers decide how to prompt it."
+  }
+]

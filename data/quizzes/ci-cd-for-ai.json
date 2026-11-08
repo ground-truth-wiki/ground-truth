@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b16-2",
+    "chapter": "ci-cd-for-ai",
+    "q": "What should happen when a prompt change regresses the eval suite?",
+    "options": [
+      "Ship it and monitor",
+      "The eval gate blocks it until fixed or explicitly accepted",
+      "Delete the eval",
+      "Lower the threshold"
+    ],
+    "answer": 1,
+    "explain": "Treat prompt and model changes like code changes."
+  },
+  {
+    "id": "cicd-1",
+    "chapter": "ci-cd-for-ai",
+    "q": "Which changes should trigger the full eval suite?",
+    "options": [
+      "Only code changes",
+      "Prompt, model, retrieval, tool and guardrail changes",
+      "Only README edits",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Behavior changes need behavior tests."
+  },
+  {
+    "id": "cicd-2",
+    "chapter": "ci-cd-for-ai",
+    "q": "Why compare against the main branch rather than only a fixed threshold?",
+    "options": [
+      "It is faster",
+      "A fixed threshold lets real regressions pass while scores stay above it",
+      "It is required by GitHub",
+      "To save cost"
+    ],
+    "answer": 1,
+    "explain": "Paired comparison with main detects drops."
+  },
+  {
+    "id": "cicd-3",
+    "chapter": "ci-cd-for-ai",
+    "q": "Why set per-slice thresholds?",
+    "options": [
+      "To use more compute",
+      "So a large regression in one slice cannot hide behind an overall gain",
+      "To slow merges",
+      "They are simpler"
+    ],
+    "answer": 1,
+    "explain": "Averages hide slice regressions."
+  }
+]

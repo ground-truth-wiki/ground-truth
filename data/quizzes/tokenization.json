@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qtk-1",
+    "chapter": "tokenization",
+    "q": "About how many characters per token does English prose average with modern tokenizers?",
+    "options": [
+      "1",
+      "4",
+      "10",
+      "25"
+    ],
+    "answer": 1,
+    "explain": "About four characters or three quarters of a word."
+  },
+  {
+    "id": "qtk-2",
+    "chapter": "tokenization",
+    "q": "Why can the same text cost more in some languages?",
+    "options": [
+      "Prices differ by language",
+      "Tokenizers trained mostly on English split other scripts into more tokens",
+      "Models refuse them",
+      "Unicode is expensive"
+    ],
+    "answer": 1,
+    "explain": "Token counts, not characters, set cost."
+  },
+  {
+    "id": "qtk-3",
+    "chapter": "tokenization",
+    "q": "What does byte-level BPE guarantee?",
+    "options": [
+      "Perfect arithmetic",
+      "Any text can be encoded without unknown tokens",
+      "Shorter sequences",
+      "One token per word"
+    ],
+    "answer": 1,
+    "explain": "It starts from the 256 byte values."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "rejection-sampling",
+  "term": "Rejection sampling",
+  "def": "Generating many candidates and keeping only those that pass a check, such as a verifier.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "synthetic-data",
+    "rlvr-reasoning"
+  ]
+}

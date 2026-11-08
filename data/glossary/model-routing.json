@@ -1,0 +1,13 @@
+{
+  "id": "model-routing",
+  "term": "Model routing",
+  "def": "Sending each request to a model chosen by difficulty, cost or capability.",
+  "practice": "A cascade escalates to a stronger model on low confidence.",
+  "aliases": [
+    "cascade"
+  ],
+  "chapters": [
+    "choosing-a-model",
+    "gateways-routers"
+  ]
+}

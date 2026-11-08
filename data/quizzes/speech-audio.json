@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b8-3",
+    "chapter": "speech-audio",
+    "q": "Which pipeline usually has lower latency for a voice agent?",
+    "options": [
+      "Speech-to-text, then an LLM, then text-to-speech, all non-streaming",
+      "A speech-to-speech model or a fully streaming cascade",
+      "Sending audio files by email",
+      "Batch transcription"
+    ],
+    "answer": 1,
+    "explain": "Streaming every stage, or skipping text entirely, cuts time to first audio."
+  },
+  {
+    "id": "qsa-1",
+    "chapter": "speech-audio",
+    "q": "How is ASR accuracy usually measured?",
+    "options": [
+      "BLEU",
+      "Word error rate",
+      "Perplexity",
+      "F1"
+    ],
+    "answer": 1,
+    "explain": "WER on your own audio."
+  },
+  {
+    "id": "qsa-2",
+    "chapter": "speech-audio",
+    "q": "Why split long recordings with voice activity detection?",
+    "options": [
+      "To save disk",
+      "To drop silence and transcribe chunks in parallel",
+      "To change voices",
+      "To translate"
+    ],
+    "answer": 1,
+    "explain": "Faster batch transcription."
+  },
+  {
+    "id": "qsa-3",
+    "chapter": "speech-audio",
+    "q": "What is essential before cloning a voice?",
+    "options": [
+      "A GPU",
+      "Consent and safeguards against misuse",
+      "A bigger model",
+      "Music"
+    ],
+    "answer": 1,
+    "explain": "Voice cloning carries real misuse risk."
+  }
+]

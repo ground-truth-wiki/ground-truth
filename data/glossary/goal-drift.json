@@ -1,0 +1,10 @@
+{
+  "id": "goal-drift",
+  "term": "Goal drift",
+  "def": "An agent gradually working on something other than the task it was given.",
+  "practice": "Restate the goal in a progress file and re-read it after compaction.",
+  "aliases": [],
+  "chapters": [
+    "agent-failure-modes"
+  ]
+}

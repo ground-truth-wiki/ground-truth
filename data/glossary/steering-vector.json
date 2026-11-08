@@ -1,0 +1,12 @@
+{
+  "id": "steering-vector",
+  "term": "Steering vector",
+  "def": "A direction added to a model’s activations to change its behavior.",
+  "practice": "A research tool for control and for testing what features do.",
+  "aliases": [
+    "activation steering"
+  ],
+  "chapters": [
+    "mech-interp"
+  ]
+}

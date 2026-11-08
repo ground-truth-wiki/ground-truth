@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b7-1",
+    "chapter": "labeling-annotation",
+    "q": "Two labelers agree 82% of the time, exactly the rate expected by chance. What is Cohen’s kappa?",
+    "options": [
+      "0.82",
+      "0.5",
+      "0",
+      "1"
+    ],
+    "answer": 2,
+    "explain": "Kappa measures agreement beyond chance: none here."
+  },
+  {
+    "id": "qla2-1",
+    "chapter": "labeling-annotation",
+    "q": "What does Cohen’s kappa correct for?",
+    "options": [
+      "Missing labels",
+      "Agreement expected by chance",
+      "Label imbalance only",
+      "Annotator speed"
+    ],
+    "answer": 1,
+    "explain": "Raw agreement overstates consistency."
+  },
+  {
+    "id": "qla2-2",
+    "chapter": "labeling-annotation",
+    "q": "Two annotators agree 85% of the time with 50% expected by chance. What is kappa?",
+    "options": [
+      "0.35",
+      "0.5",
+      "0.7",
+      "0.85"
+    ],
+    "answer": 2,
+    "explain": "(0.85 − 0.5) ÷ (1 − 0.5) = 0.7."
+  },
+  {
+    "id": "qla2-3",
+    "chapter": "labeling-annotation",
+    "q": "Agreement in a pilot is low. What should you fix first?",
+    "options": [
+      "The annotators",
+      "The guidelines and examples",
+      "The tool",
+      "The model"
+    ],
+    "answer": 1,
+    "explain": "Ambiguity is the usual cause."
+  }
+]

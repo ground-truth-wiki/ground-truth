@@ -1,0 +1,13 @@
+{
+  "id": "background-agent",
+  "term": "Background agent",
+  "def": "An agent started by a schedule or event that works without a person watching and reports back.",
+  "practice": "Needs budgets, notifications and a kill switch.",
+  "aliases": [
+    "ambient agent",
+    "background agents"
+  ],
+  "chapters": [
+    "long-running-agents"
+  ]
+}

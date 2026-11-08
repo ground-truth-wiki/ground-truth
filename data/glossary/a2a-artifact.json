@@ -1,0 +1,10 @@
+{
+  "id": "a2a-artifact",
+  "term": "A2A artifact",
+  "def": "An output produced by an A2A task, made of parts such as text, files or structured data.",
+  "practice": "Validate artifacts like any external input.",
+  "aliases": [],
+  "chapters": [
+    "a2a"
+  ]
+}

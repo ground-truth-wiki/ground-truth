@@ -1,0 +1,13 @@
+{
+  "id": "codeact",
+  "term": "Code as action",
+  "def": "Letting an agent act by writing code that calls tools, instead of one JSON tool call at a time.",
+  "practice": "Composes steps and keeps intermediate data out of context; needs a sandbox.",
+  "aliases": [
+    "CodeAct"
+  ],
+  "chapters": [
+    "agent-tools",
+    "sandboxes"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "barge-in",
+  "term": "Barge-in",
+  "def": "A user interrupting an agent while it speaks, which should stop the agent immediately.",
+  "practice": "Discard the unspoken rest of the reply.",
+  "aliases": [],
+  "chapters": [
+    "voice-agents"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "multi-head-attention",
+  "term": "Multi-head attention",
+  "def": "Running several smaller attention operations in parallel, each with its own projections, and combining their results.",
+  "practice": "Head count and head dimension appear in every model config.",
+  "aliases": [
+    "MHA",
+    "attention heads"
+  ],
+  "chapters": [
+    "attention",
+    "transformer-block"
+  ],
+  "abbr": "MHA"
+}

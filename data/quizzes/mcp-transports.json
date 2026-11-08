@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tr-1",
+    "chapter": "mcp-transports",
+    "q": "In a stdio MCP server, where must debug logs go?",
+    "options": [
+      "stdout",
+      "stderr",
+      "A tool result",
+      "The system prompt"
+    ],
+    "answer": 1,
+    "explain": "stdout carries only protocol messages; anything else corrupts the stream."
+  },
+  {
+    "id": "tr-2",
+    "chapter": "mcp-transports",
+    "q": "What changed for Streamable HTTP in 2026-07-28?",
+    "options": [
+      "It was removed",
+      "Protocol sessions and SSE stream resumability were removed",
+      "It became stdio-only",
+      "It stopped using JSON-RPC"
+    ],
+    "answer": 1,
+    "explain": "Requests are self-contained; a dropped stream means retry (verified Nov 2026)."
+  },
+  {
+    "id": "tr-3",
+    "chapter": "mcp-transports",
+    "q": "Why should a local HTTP MCP server validate the Origin header?",
+    "options": [
+      "To speed it up",
+      "To stop malicious web pages reaching it through DNS rebinding",
+      "To support streaming",
+      "To log users"
+    ],
+    "answer": 1,
+    "explain": "The specification calls this out for servers on localhost."
+  }
+]

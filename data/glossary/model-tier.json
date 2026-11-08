@@ -1,0 +1,12 @@
+{
+  "id": "model-tier",
+  "term": "Model tier",
+  "def": "A size and price level within a model family, such as flagship, mid-size and small.",
+  "practice": "",
+  "aliases": [
+    "tiers"
+  ],
+  "chapters": [
+    "frontier-families"
+  ]
+}

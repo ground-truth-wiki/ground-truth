@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a2a-1",
+    "chapter": "a2a",
+    "q": "What does an A2A agent card describe?",
+    "options": [
+      "The model’s weights",
+      "An agent’s skills, endpoint, capabilities and security schemes",
+      "The user’s profile",
+      "A tool’s JSON schema only"
+    ],
+    "answer": 1,
+    "explain": "Cards are how clients discover and choose agents."
+  },
+  {
+    "id": "a2a-2",
+    "chapter": "a2a",
+    "q": "When should the other side be an A2A agent rather than an MCP tool?",
+    "options": [
+      "When it is a fast, typed function",
+      "When it is an independent agent with its own reasoning, policy and long-running work",
+      "When it has no network access",
+      "Never"
+    ],
+    "answer": 1,
+    "explain": "MCP for tools, A2A for peers."
+  },
+  {
+    "id": "a2a-3",
+    "chapter": "a2a",
+    "q": "How does a client answer an A2A task that needs more input?",
+    "options": [
+      "It starts a new task",
+      "It sends a message on the same task",
+      "It cancels the task",
+      "It calls an MCP tool"
+    ],
+    "answer": 1,
+    "explain": "The answer continues the existing task."
+  }
+]

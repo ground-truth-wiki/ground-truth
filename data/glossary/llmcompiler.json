@@ -1,0 +1,12 @@
+{
+  "id": "llmcompiler",
+  "term": "LLMCompiler",
+  "def": "A planner that builds a dependency graph of tool calls and runs independent calls in parallel.",
+  "practice": "Cuts latency when calls are independent.",
+  "aliases": [
+    "parallel function calling"
+  ],
+  "chapters": [
+    "planning-reasoning"
+  ]
+}

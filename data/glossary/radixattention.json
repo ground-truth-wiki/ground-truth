@@ -1,0 +1,10 @@
+{
+  "id": "radixattention",
+  "term": "RadixAttention",
+  "def": "SGLang’s prefix-caching scheme that stores shared prompt prefixes in a radix tree.",
+  "practice": "Large wins for agents and chat with repeated prefixes.",
+  "aliases": [],
+  "chapters": [
+    "batching-scheduling"
+  ]
+}

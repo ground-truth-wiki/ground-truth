@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qwl-1",
+    "chapter": "watchlist",
+    "q": "Which sources should come first on a watchlist?",
+    "options": [
+      "Social media",
+      "Primary sources such as release notes, model cards and specification repositories",
+      "Rumors",
+      "Ads"
+    ],
+    "answer": 1,
+    "explain": "Primary over secondary."
+  },
+  {
+    "id": "qwl-2",
+    "chapter": "watchlist",
+    "q": "What relevance test filters AI news?",
+    "options": [
+      "Is it popular?",
+      "Does it change a model, tool, protocol, price, law or risk my system depends on?",
+      "Is it long?",
+      "Is it new?"
+    ],
+    "answer": 1,
+    "explain": "Most news does not affect your system."
+  },
+  {
+    "id": "qwl-3",
+    "chapter": "watchlist",
+    "q": "What should a relevant model release trigger?",
+    "options": [
+      "A rewrite",
+      "An eval run on your suite before deciding",
+      "Nothing",
+      "A press release"
+    ],
+    "answer": 1,
+    "explain": "Turn news into evidence."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "swe-bench",
+  "term": "SWE-bench",
+  "def": "A benchmark of real GitHub issues in which agents must produce patches that pass hidden tests.",
+  "practice": "Scores depend heavily on the harness.",
+  "aliases": [
+    "SWE-bench Verified"
+  ],
+  "chapters": [
+    "coding-agents",
+    "eval-harnesses"
+  ]
+}

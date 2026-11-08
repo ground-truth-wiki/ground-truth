@@ -1,0 +1,14 @@
+{
+  "id": "chain-of-thought",
+  "term": "Chain of thought",
+  "def": "Prompting a model to reason step by step before answering.",
+  "practice": "Largely built into reasoning models now.",
+  "aliases": [
+    "CoT",
+    "step-by-step reasoning"
+  ],
+  "chapters": [
+    "reasoning-prompts"
+  ],
+  "abbr": "CoT"
+}

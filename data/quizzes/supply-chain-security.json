@@ -1,0 +1,41 @@
+[
+  {
+    "id": "scs-1",
+    "chapter": "supply-chain-security",
+    "q": "Why is loading a pickle-based checkpoint risky?",
+    "options": [
+      "It is slow",
+      "Unpickling can execute arbitrary code from the file",
+      "It uses more memory",
+      "It changes the weights"
+    ],
+    "answer": 1,
+    "explain": "Prefer safetensors or weights_only=True."
+  },
+  {
+    "id": "scs-2",
+    "chapter": "supply-chain-security",
+    "q": "What is slopsquatting?",
+    "options": [
+      "A training technique",
+      "Registering package names that models hallucinate, so agents install malicious code",
+      "A prompt format",
+      "A serving optimization"
+    ],
+    "answer": 1,
+    "explain": "Review every new dependency, especially agent-suggested ones."
+  },
+  {
+    "id": "scs-3",
+    "chapter": "supply-chain-security",
+    "q": "What does an AI bill of materials let you do?",
+    "options": [
+      "Train faster",
+      "Answer quickly whether you are affected when a model, dataset or package is compromised",
+      "Reduce token costs",
+      "Avoid evals"
+    ],
+    "answer": 1,
+    "explain": "Inventory makes incident response possible."
+  }
+]

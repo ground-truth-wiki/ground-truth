@@ -1,0 +1,13 @@
+{
+  "id": "compaction",
+  "term": "Compaction",
+  "def": "Summarizing or pruning an agent’s history when the context fills up, keeping decisions and open threads and dropping raw tool output.",
+  "practice": "It lets long-running agents continue past the context window.",
+  "aliases": [
+    "context compaction"
+  ],
+  "chapters": [
+    "context-engineering",
+    "long-running-agents"
+  ]
+}

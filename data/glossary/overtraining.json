@@ -1,0 +1,10 @@
+{
+  "id": "overtraining",
+  "term": "Overtraining",
+  "def": "Training a model on far more tokens than compute-optimal, to make it cheaper to serve.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "scaling-laws"
+  ]
+}

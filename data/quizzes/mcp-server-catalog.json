@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cat-1",
+    "chapter": "mcp-server-catalog",
+    "q": "Which MCP server is usually the safest choice for a SaaS product you use?",
+    "options": [
+      "The most-starred community server",
+      "The vendor-official server for that product",
+      "Any server with “official” in its name",
+      "A server that requests full access"
+    ],
+    "answer": 1,
+    "explain": "Prefer servers maintained by the owner of the wrapped system, and check scopes."
+  },
+  {
+    "id": "cat-2",
+    "chapter": "mcp-server-catalog",
+    "q": "What is the main risk of a browser-automation MCP server?",
+    "options": [
+      "It is slow",
+      "Every page it reads is untrusted input that may carry injected instructions",
+      "It cannot click",
+      "It uses too little memory"
+    ],
+    "answer": 1,
+    "explain": "Browsers bring the open web into the agent’s context."
+  },
+  {
+    "id": "cat-3",
+    "chapter": "mcp-server-catalog",
+    "q": "What does a registry listing guarantee about a server?",
+    "options": [
+      "That it is secure",
+      "That it was audited",
+      "Only that it can be discovered; provenance and code still need checking",
+      "That it is free"
+    ],
+    "answer": 2,
+    "explain": "A listing is discovery, not endorsement."
+  }
+]

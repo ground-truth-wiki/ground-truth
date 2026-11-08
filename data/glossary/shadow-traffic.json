@@ -1,0 +1,12 @@
+{
+  "id": "shadow-traffic",
+  "term": "Shadow traffic",
+  "def": "Running a new system version on copies of real requests without showing its outputs to users.",
+  "practice": "Realistic comparison without user risk.",
+  "aliases": [
+    "shadow mode"
+  ],
+  "chapters": [
+    "online-evaluation"
+  ]
+}

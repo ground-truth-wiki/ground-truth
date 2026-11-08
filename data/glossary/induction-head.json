@@ -1,0 +1,13 @@
+{
+  "id": "induction-head",
+  "term": "Induction head",
+  "def": "An attention head that finds an earlier occurrence of the current token and copies what followed it.",
+  "practice": "A key mechanism of in-context learning.",
+  "aliases": [
+    "induction heads"
+  ],
+  "chapters": [
+    "mech-interp",
+    "attention"
+  ]
+}

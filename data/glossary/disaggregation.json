@@ -1,0 +1,12 @@
+{
+  "id": "disaggregation",
+  "term": "Prefill-decode disaggregation",
+  "def": "Running prefill and decode on separate GPU pools and transferring KV caches between them.",
+  "practice": "Lets each phase be sized and tuned for its bottleneck.",
+  "aliases": [
+    "disaggregated serving"
+  ],
+  "chapters": [
+    "disaggregated-serving"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "progressive-disclosure",
+  "term": "Progressive disclosure",
+  "def": "Loading only a short description by default and the full content only when a task needs it.",
+  "practice": "How skills keep their context cost near zero until used.",
+  "aliases": [],
+  "chapters": [
+    "skills-plugins",
+    "context-engineering"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "smoke-suite",
+  "term": "Smoke suite",
+  "def": "A small, fast set of eval cases run on every commit to catch obvious breakage.",
+  "practice": "Keep it under a few minutes.",
+  "aliases": [],
+  "chapters": [
+    "ci-cd-for-ai"
+  ]
+}

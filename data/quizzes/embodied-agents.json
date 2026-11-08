@@ -1,0 +1,41 @@
+[
+  {
+    "id": "emb-1",
+    "chapter": "embodied-agents",
+    "q": "What does a vision-language-action model output?",
+    "options": [
+      "Text only",
+      "Robot actions such as joint or gripper commands",
+      "Images",
+      "Sound"
+    ],
+    "answer": 1,
+    "explain": "It maps observations and instructions to actions."
+  },
+  {
+    "id": "emb-2",
+    "chapter": "embodied-agents",
+    "q": "Why do embodied systems often use a planner plus a low-level policy?",
+    "options": [
+      "Fashion",
+      "Thinking and moving run on different time scales; control needs many commands per second",
+      "To save memory",
+      "Robots cannot read"
+    ],
+    "answer": 1,
+    "explain": "Hierarchies match the time scales."
+  },
+  {
+    "id": "emb-3",
+    "chapter": "embodied-agents",
+    "q": "What is the sim-to-real gap?",
+    "options": [
+      "A pricing gap",
+      "Behavior learned in simulation failing to transfer to real robots",
+      "A network delay",
+      "A dataset license"
+    ],
+    "answer": 1,
+    "explain": "Friction, lighting and noise differ in reality."
+  }
+]

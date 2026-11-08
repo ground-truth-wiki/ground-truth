@@ -1,0 +1,10 @@
+{
+  "id": "reference-servers",
+  "term": "Reference servers",
+  "def": "A small set of example MCP servers maintained by the MCP project, such as filesystem, fetch and memory.",
+  "practice": "Examples of good practice, not production dependencies.",
+  "aliases": [],
+  "chapters": [
+    "mcp-server-catalog"
+  ]
+}

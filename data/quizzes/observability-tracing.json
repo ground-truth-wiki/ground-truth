@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b16-3",
+    "chapter": "observability-tracing",
+    "q": "What is the unit of an agent trace?",
+    "options": [
+      "A token",
+      "A span for each model call, tool call or retrieval",
+      "A user",
+      "A prompt template"
+    ],
+    "answer": 1,
+    "explain": "Nested spans show where time, tokens and errors occur."
+  },
+  {
+    "id": "obs-1",
+    "chapter": "observability-tracing",
+    "q": "What must every model-call span record to tie quality changes to causes?",
+    "options": [
+      "The user’s password",
+      "The prompt and model versions used",
+      "The GPU serial number",
+      "Nothing"
+    ],
+    "answer": 1,
+    "explain": "Versions connect behavior to changes."
+  },
+  {
+    "id": "obs-2",
+    "chapter": "observability-tracing",
+    "q": "Why use OpenTelemetry’s generative-AI conventions?",
+    "options": [
+      "They are faster",
+      "Traces become portable across tools and vendors",
+      "They encrypt data",
+      "They are mandatory"
+    ],
+    "answer": 1,
+    "explain": "Standard attribute names avoid lock-in."
+  },
+  {
+    "id": "obs-3",
+    "chapter": "observability-tracing",
+    "q": "How should full prompt and response payloads be stored?",
+    "options": [
+      "Forever, unredacted",
+      "Sampled, redacted and retained briefly",
+      "Never",
+      "In the browser"
+    ],
+    "answer": 1,
+    "explain": "Traces contain user data."
+  }
+]

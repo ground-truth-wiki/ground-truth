@@ -1,0 +1,10 @@
+{
+  "id": "rewoo",
+  "term": "ReWOO",
+  "def": "Reasoning without observation: planning every tool call up front with placeholders, then running the calls and solving from the evidence.",
+  "practice": "Fewer model calls and parallel tools; no mid-course correction.",
+  "aliases": [],
+  "chapters": [
+    "planning-reasoning"
+  ]
+}

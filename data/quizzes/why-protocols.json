@@ -1,0 +1,41 @@
+[
+  {
+    "id": "proto-1",
+    "chapter": "why-protocols",
+    "q": "With 10 hosts and 50 services, how many integrations does a shared protocol need instead of 500?",
+    "options": [
+      "50",
+      "60",
+      "450",
+      "5,000"
+    ],
+    "answer": 1,
+    "explain": "N + M = 10 + 50 = 60."
+  },
+  {
+    "id": "proto-2",
+    "chapter": "why-protocols",
+    "q": "Which protocol fits delegating work to an independent agent with its own reasoning and state?",
+    "options": [
+      "MCP",
+      "A2A",
+      "llms.txt",
+      "AGENTS.md"
+    ],
+    "answer": 1,
+    "explain": "MCP is for tools and data; A2A is for peer agents."
+  },
+  {
+    "id": "proto-3",
+    "chapter": "why-protocols",
+    "q": "When is wrapping a function in an MCP server not worth it?",
+    "options": [
+      "When many hosts need it",
+      "When only your own single application calls it",
+      "When it needs authorization",
+      "When it returns structured data"
+    ],
+    "answer": 1,
+    "explain": "A protocol pays off with reuse; for one app a plain tool is simpler."
+  }
+]

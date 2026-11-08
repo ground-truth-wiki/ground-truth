@@ -1,0 +1,41 @@
+[
+  {
+    "id": "gc-1",
+    "chapter": "grounding-citations",
+    "q": "What is the cheapest reliable groundedness check?",
+    "options": [
+      "Asking users",
+      "Verifying that each quoted span exists in the cited source",
+      "A larger model",
+      "Rerunning the query"
+    ],
+    "answer": 1,
+    "explain": "Exact-quote checks cost almost nothing and catch fabricated quotes."
+  },
+  {
+    "id": "gc-2",
+    "chapter": "grounding-citations",
+    "q": "Why give the model permission to say “the sources don’t say”?",
+    "options": [
+      "It shortens answers",
+      "Without it, the model fills gaps from memory",
+      "It is required by APIs",
+      "It improves retrieval"
+    ],
+    "answer": 1,
+    "explain": "Abstention is better than invention."
+  },
+  {
+    "id": "gc-3",
+    "chapter": "grounding-citations",
+    "q": "What makes a citation useful to a user?",
+    "options": [
+      "A document title only",
+      "A link to the specific passage or page, ideally with a quote",
+      "A footnote number",
+      "A confidence score"
+    ],
+    "answer": 1,
+    "explain": "Users should verify in seconds, not search a whole file."
+  }
+]

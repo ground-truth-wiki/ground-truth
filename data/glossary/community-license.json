@@ -1,0 +1,10 @@
+{
+  "id": "community-license",
+  "term": "Community license",
+  "def": "A model license that allows commercial use under conditions such as user-count limits or acceptable-use rules.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "open-weight-frontier"
+  ]
+}

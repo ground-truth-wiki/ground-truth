@@ -1,0 +1,11 @@
+{
+  "id": "rlaif",
+  "term": "RLAIF",
+  "def": "Reinforcement learning from AI feedback, where model judgments replace some human preference labels.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "preference-optimization"
+  ],
+  "abbr": "RLAIF"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "premature-completion",
+  "term": "Premature completion",
+  "def": "An agent declaring success without verifying that the task is done.",
+  "practice": "Require verification, such as passing tests, before finishing.",
+  "aliases": [
+    "premature done"
+  ],
+  "chapters": [
+    "agent-failure-modes"
+  ]
+}

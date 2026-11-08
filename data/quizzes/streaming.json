@@ -1,0 +1,41 @@
+[
+  {
+    "id": "stm-1",
+    "chapter": "streaming",
+    "q": "Why might users see a long pause and then the whole answer at once?",
+    "options": [
+      "The model is slow",
+      "A proxy or load balancer is buffering the stream",
+      "The browser is old",
+      "Tokens are large"
+    ],
+    "answer": 1,
+    "explain": "Disable buffering on streaming routes."
+  },
+  {
+    "id": "stm-2",
+    "chapter": "streaming",
+    "q": "When should streamed tool-call arguments be parsed?",
+    "options": [
+      "On every delta",
+      "When the content block is complete",
+      "Never",
+      "Before the request"
+    ],
+    "answer": 1,
+    "explain": "Partial JSON is not valid JSON."
+  },
+  {
+    "id": "stm-3",
+    "chapter": "streaming",
+    "q": "What should happen when a user closes the tab mid-stream?",
+    "options": [
+      "Nothing",
+      "Cancel the upstream request to stop generating and billing tokens",
+      "Restart the request",
+      "Email the answer"
+    ],
+    "answer": 1,
+    "explain": "Abandoned streams cost money."
+  }
+]

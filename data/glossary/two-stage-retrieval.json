@@ -1,0 +1,11 @@
+{
+  "id": "two-stage-retrieval",
+  "term": "Two-stage retrieval",
+  "def": "Cheap, broad retrieval for recall followed by expensive reranking for precision.",
+  "practice": "Retrieve wide, rerank narrow.",
+  "aliases": [],
+  "chapters": [
+    "reranking",
+    "rag-fundamentals"
+  ]
+}

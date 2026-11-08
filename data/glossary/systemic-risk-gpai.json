@@ -1,0 +1,12 @@
+{
+  "id": "systemic-risk-gpai",
+  "term": "General-purpose model with systemic risk",
+  "def": "Under the EU AI Act, a general-purpose model presumed to have systemic risk, for example above 10²⁵ training FLOP, with extra obligations.",
+  "practice": "",
+  "aliases": [
+    "GPAI with systemic risk"
+  ],
+  "chapters": [
+    "governance-regulation"
+  ]
+}

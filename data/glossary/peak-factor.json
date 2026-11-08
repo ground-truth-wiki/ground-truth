@@ -1,0 +1,10 @@
+{
+  "id": "peak-factor",
+  "term": "Peak factor",
+  "def": "The ratio of peak to average traffic, used to size capacity.",
+  "practice": "Often 2 to 5.",
+  "aliases": [],
+  "chapters": [
+    "back-of-envelope"
+  ]
+}

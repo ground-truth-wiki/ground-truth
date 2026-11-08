@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sb-1",
+    "chapter": "sandboxes",
+    "q": "Which sandbox setting matters most for stopping data exfiltration?",
+    "options": [
+      "CPU limits",
+      "Default-deny network egress with an allowlist",
+      "A larger disk",
+      "Read-only system prompt"
+    ],
+    "answer": 1,
+    "explain": "Egress is the way out; close it and stolen data has nowhere to go."
+  },
+  {
+    "id": "sb-2",
+    "chapter": "sandboxes",
+    "q": "What weakness do containers have compared with microVMs?",
+    "options": [
+      "They are slower to start",
+      "They share the host kernel, so a kernel exploit can escape",
+      "They cannot run Linux",
+      "They have no filesystem"
+    ],
+    "answer": 1,
+    "explain": "MicroVMs give each workload its own kernel."
+  },
+  {
+    "id": "sb-3",
+    "chapter": "sandboxes",
+    "q": "Which is a sandbox anti-pattern?",
+    "options": [
+      "One sandbox per task",
+      "Mounting the home directory for convenience",
+      "Short-lived scoped credentials",
+      "Destroying the sandbox after the task"
+    ],
+    "answer": 1,
+    "explain": "The home directory holds SSH keys, cloud credentials and browser profiles."
+  }
+]

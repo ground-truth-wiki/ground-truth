@@ -1,0 +1,10 @@
+{
+  "id": "diffusion-lm",
+  "term": "Diffusion language model",
+  "def": "A model that generates text by iteratively refining many positions in parallel rather than left to right.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "beyond-transformers"
+  ]
+}

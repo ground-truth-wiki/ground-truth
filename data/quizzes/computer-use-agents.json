@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b10-2",
+    "chapter": "computer-use-agents",
+    "q": "Why are browser agents especially exposed to prompt injection?",
+    "options": [
+      "Browsers are slow",
+      "Every page they read is untrusted content that may contain instructions",
+      "They cannot use tools",
+      "They run offline"
+    ],
+    "answer": 1,
+    "explain": "Web content is attacker-controllable input."
+  },
+  {
+    "id": "cua-1",
+    "chapter": "computer-use-agents",
+    "q": "When should you prefer an API or MCP server over computer use?",
+    "options": [
+      "Never",
+      "Whenever one exists for the task",
+      "Only for images",
+      "Only on weekends"
+    ],
+    "answer": 1,
+    "explain": "Computer use is slower and less reliable."
+  },
+  {
+    "id": "cua-2",
+    "chapter": "computer-use-agents",
+    "q": "Why run computer-use agents in an isolated browser profile?",
+    "options": [
+      "It is faster",
+      "Your everyday profile has logged-in sessions that injected instructions could abuse",
+      "Profiles are required",
+      "To save memory"
+    ],
+    "answer": 1,
+    "explain": "Isolate sessions and credentials."
+  },
+  {
+    "id": "cua-3",
+    "chapter": "computer-use-agents",
+    "q": "What advantage does acting on an accessibility tree have over screenshots?",
+    "options": [
+      "Works on any app",
+      "Fewer tokens and precise element references instead of pixel coordinates",
+      "No need for a browser",
+      "It is always available"
+    ],
+    "answer": 1,
+    "explain": "Structure is precise where it exists."
+  }
+]

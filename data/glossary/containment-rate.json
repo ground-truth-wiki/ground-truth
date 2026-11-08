@@ -1,0 +1,12 @@
+{
+  "id": "containment-rate",
+  "term": "Containment rate",
+  "def": "The share of support conversations resolved without a human.",
+  "practice": "Track it with resolution quality, not alone.",
+  "aliases": [
+    "deflection rate"
+  ],
+  "chapters": [
+    "support-agents"
+  ]
+}

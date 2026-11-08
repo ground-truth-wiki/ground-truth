@@ -1,0 +1,41 @@
+[
+  {
+    "id": "we-1",
+    "chapter": "why-evals",
+    "q": "What should an eval set be built from first?",
+    "options": [
+      "Generic metrics chosen up front",
+      "Real outputs read by people, with failures turned into cases",
+      "The demo script",
+      "Public benchmarks only"
+    ],
+    "answer": 1,
+    "explain": "Start from errors you actually see."
+  },
+  {
+    "id": "we-2",
+    "chapter": "why-evals",
+    "q": "A new model scores 3 points higher overall. What should you check before switching?",
+    "options": [
+      "Nothing",
+      "Per-slice results, since one slice may have regressed sharply",
+      "Its logo",
+      "Its context length only"
+    ],
+    "answer": 1,
+    "explain": "Averages hide slice regressions."
+  },
+  {
+    "id": "we-3",
+    "chapter": "why-evals",
+    "q": "Which layer of evaluation should run on every commit?",
+    "options": [
+      "A/B tests",
+      "Human review",
+      "Cheap code-based assertions",
+      "Expert panels"
+    ],
+    "answer": 2,
+    "explain": "Cheap checks run often; expensive ones run less."
+  }
+]

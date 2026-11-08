@@ -1,0 +1,11 @@
+{
+  "id": "openai-compatible-api",
+  "term": "OpenAI-compatible API",
+  "def": "An HTTP API that follows OpenAI’s request and response formats, offered by most serving engines and many providers.",
+  "practice": "Lets clients switch backends with a base-URL change.",
+  "aliases": [],
+  "chapters": [
+    "serving-engines",
+    "model-apis"
+  ]
+}

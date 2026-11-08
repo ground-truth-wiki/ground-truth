@@ -1,0 +1,41 @@
+[
+  {
+    "id": "byo-1",
+    "chapter": "build-your-own-harness",
+    "q": "In the illustrative build, why did adding permissions not raise the eval score?",
+    "options": [
+      "Permissions are useless",
+      "They prevent damage rather than improve task success, so measure safety separately",
+      "The eval was broken",
+      "The model ignored them"
+    ],
+    "answer": 1,
+    "explain": "Not every valuable part shows up in a success metric."
+  },
+  {
+    "id": "byo-2",
+    "chapter": "build-your-own-harness",
+    "q": "What is the first part to build?",
+    "options": [
+      "A plugin system",
+      "The loop with a stop rule and a budget",
+      "A dashboard",
+      "Subagents"
+    ],
+    "answer": 1,
+    "explain": "Everything else attaches to the loop."
+  },
+  {
+    "id": "byo-3",
+    "chapter": "build-your-own-harness",
+    "q": "What makes debugging your own harness practical?",
+    "options": [
+      "A bigger model",
+      "A trace log you can replay from any step",
+      "More tools",
+      "A framework"
+    ],
+    "answer": 1,
+    "explain": "Replay turns hypotheses into cheap experiments."
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rfa-1",
+    "chapter": "reference-architecture",
+    "q": "Why route all model calls through a model gateway?",
+    "options": [
+      "It is required by providers",
+      "Central routing, fallbacks, keys, caching and cost accounting instead of reimplementing them everywhere",
+      "It makes models smarter",
+      "It removes latency"
+    ],
+    "answer": 1,
+    "explain": "One interface to many models."
+  },
+  {
+    "id": "rfa-2",
+    "chapter": "reference-architecture",
+    "q": "Which component should most teams build rather than buy?",
+    "options": [
+      "The vector database",
+      "The orchestrator: prompts, workflows and agent logic",
+      "The tracing backend",
+      "The GPU drivers"
+    ],
+    "answer": 1,
+    "explain": "That is where differentiation lives."
+  },
+  {
+    "id": "rfa-3",
+    "chapter": "reference-architecture",
+    "q": "What should propagate end to end through every hop?",
+    "options": [
+      "API keys",
+      "A trace id",
+      "User passwords",
+      "Model weights"
+    ],
+    "answer": 1,
+    "explain": "Trace context ties the whole request together."
+  }
+]

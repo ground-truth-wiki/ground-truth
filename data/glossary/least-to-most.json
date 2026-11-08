@@ -1,0 +1,12 @@
+{
+  "id": "least-to-most",
+  "term": "Least-to-most prompting",
+  "def": "Solving a hard problem by first decomposing it into simpler sub-problems and answering them in order.",
+  "practice": "A prompting form of decomposition.",
+  "aliases": [
+    "query decomposition"
+  ],
+  "chapters": [
+    "reasoning-prompts"
+  ]
+}

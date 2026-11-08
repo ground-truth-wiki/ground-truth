@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sad-1",
+    "chapter": "secure-agent-design",
+    "q": "In the dual LLM pattern, which model sees untrusted content?",
+    "options": [
+      "The privileged model",
+      "The quarantined model, which has no tools",
+      "Both",
+      "Neither"
+    ],
+    "answer": 1,
+    "explain": "Untrusted text never reaches the model that acts."
+  },
+  {
+    "id": "sad-2",
+    "chapter": "secure-agent-design",
+    "q": "Which three capabilities together form the lethal trifecta?",
+    "options": [
+      "Speed, memory and tools",
+      "Private data, untrusted content and external communication",
+      "Images, audio and text",
+      "Search, code and chat"
+    ],
+    "answer": 1,
+    "explain": "Remove one to break the exfiltration path."
+  },
+  {
+    "id": "sad-3",
+    "chapter": "secure-agent-design",
+    "q": "How should model output be treated before reaching a shell, browser or database?",
+    "options": [
+      "As trusted",
+      "As untrusted input: escaped, validated and never executed blindly",
+      "As a system prompt",
+      "As encrypted"
+    ],
+    "answer": 1,
+    "explain": "Improper output handling is an OWASP Top 10 risk."
+  }
+]

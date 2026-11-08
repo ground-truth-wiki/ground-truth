@@ -1,0 +1,13 @@
+{
+  "id": "sse",
+  "term": "Server-sent events",
+  "def": "A one-way HTTP streaming protocol used by most model APIs to stream tokens.",
+  "practice": "Handle every event type, including errors mid-stream.",
+  "aliases": [
+    "SSE"
+  ],
+  "chapters": [
+    "streaming"
+  ],
+  "abbr": "SSE"
+}

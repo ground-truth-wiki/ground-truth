@@ -1,0 +1,41 @@
+[
+  {
+    "id": "eh-1",
+    "chapter": "eval-harnesses",
+    "q": "Run A scores 48% and Run B 67% on the same benchmark with the same model. What should you check first?",
+    "options": [
+      "The model name",
+      "Whether harness version, prompt template, attempts and budget match",
+      "The date",
+      "The GPU type"
+    ],
+    "answer": 1,
+    "explain": "Configurations that differ make scores incomparable."
+  },
+  {
+    "id": "eh-2",
+    "chapter": "eval-harnesses",
+    "q": "In Inspect, what three things does a Task combine?",
+    "options": [
+      "Model, GPU and price",
+      "Dataset, solver and scorer",
+      "Prompt, temperature and seed",
+      "Tools, memory and plan"
+    ],
+    "answer": 1,
+    "explain": "Task(dataset=..., solver=..., scorer=...) is the core structure."
+  },
+  {
+    "id": "eh-3",
+    "chapter": "eval-harnesses",
+    "q": "What should an eval harness store besides scores?",
+    "options": [
+      "Nothing",
+      "Every sample’s full trace and the configuration that produced it",
+      "Only failures",
+      "Only the final answer"
+    ],
+    "answer": 1,
+    "explain": "Traces make scores debuggable; configs make them reproducible."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "mcp-apps",
+  "term": "MCP Apps",
+  "def": "An MCP extension that lets servers ship interactive user interfaces to hosts.",
+  "practice": "Turns tool results into small apps inside the host.",
+  "aliases": [],
+  "chapters": [
+    "mcp-at-scale",
+    "protocol-soup"
+  ]
+}

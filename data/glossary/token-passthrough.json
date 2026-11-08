@@ -1,0 +1,10 @@
+{
+  "id": "token-passthrough",
+  "term": "Token passthrough",
+  "def": "A server forwarding a token it received to another service instead of obtaining its own.",
+  "practice": "Forbidden in MCP authorization; breaks audience checks and attribution.",
+  "aliases": [],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

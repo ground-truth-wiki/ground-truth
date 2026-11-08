@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qpw-1",
+    "chapter": "public-writeups",
+    "q": "What do many public write-ups recommend before multi-agent systems?",
+    "options": [
+      "Bigger models",
+      "Simple workflows and single agents",
+      "More tools",
+      "Fine-tuning"
+    ],
+    "answer": 1,
+    "explain": "Start simple."
+  },
+  {
+    "id": "qpw-2",
+    "chapter": "public-writeups",
+    "q": "On which topic do well-known write-ups openly disagree?",
+    "options": [
+      "Evals",
+      "Multi-agent architectures",
+      "Prompt injection",
+      "Caching"
+    ],
+    "answer": 1,
+    "explain": "Parallel research agents versus shared-context single agents."
+  },
+  {
+    "id": "qpw-3",
+    "chapter": "public-writeups",
+    "q": "Which lessons age fastest?",
+    "options": [
+      "Lessons about evals",
+      "Lessons about specific model limitations",
+      "Lessons about security",
+      "Lessons about context"
+    ],
+    "answer": 1,
+    "explain": "Models change quickly; principles last longer."
+  }
+]

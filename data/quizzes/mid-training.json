@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qmt-1",
+    "chapter": "mid-training",
+    "q": "What is annealing in mid-training?",
+    "options": [
+      "Cooling GPUs",
+      "Decaying the learning rate while shifting the mix toward the highest-quality data",
+      "Removing layers",
+      "Quantizing"
+    ],
+    "answer": 1,
+    "explain": "Small, excellent data has big effects late in training."
+  },
+  {
+    "id": "qmt-2",
+    "chapter": "mid-training",
+    "q": "Why replay general data during continued pretraining?",
+    "options": [
+      "To save tokens",
+      "To limit catastrophic forgetting of general skills",
+      "To speed up training",
+      "It is required"
+    ],
+    "answer": 1,
+    "explain": "Domain-only training erodes general ability."
+  },
+  {
+    "id": "qmt-3",
+    "chapter": "mid-training",
+    "q": "When is continued pretraining better than fine-tuning?",
+    "options": [
+      "When behavior is the gap",
+      "When large unlabeled domain corpora exist and knowledge is the gap",
+      "Always",
+      "Never"
+    ],
+    "answer": 1,
+    "explain": "Fine-tuning shapes behavior; continued pretraining adds knowledge."
+  }
+]

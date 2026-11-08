@@ -1,0 +1,41 @@
+[
+  {
+    "id": "att-1",
+    "chapter": "attention",
+    "q": "Why are attention scores divided by the square root of the head dimension?",
+    "options": [
+      "To save memory",
+      "To keep score magnitudes moderate so softmax does not saturate",
+      "To apply the causal mask",
+      "To normalize the values"
+    ],
+    "answer": 1,
+    "explain": "Without scaling, large dot products push softmax toward one-hot weights and tiny gradients."
+  },
+  {
+    "id": "att-2",
+    "chapter": "attention",
+    "q": "In a decoder, what does the causal mask do?",
+    "options": [
+      "Hides padding tokens only",
+      "Prevents each token from attending to later tokens",
+      "Removes the first token",
+      "Doubles the context length"
+    ],
+    "answer": 1,
+    "explain": "Each position may see only itself and earlier positions."
+  },
+  {
+    "id": "att-3",
+    "chapter": "attention",
+    "q": "A model has 64 query heads and 8 key-value heads. How much smaller is its KV cache than full multi-head attention with 64 KV heads?",
+    "options": [
+      "2×",
+      "4×",
+      "8×",
+      "64×"
+    ],
+    "answer": 2,
+    "explain": "The cache scales with KV heads: 64 ÷ 8 = 8×."
+  }
+]

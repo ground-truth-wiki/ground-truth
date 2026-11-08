@@ -1,0 +1,12 @@
+{
+  "id": "journal-replay",
+  "term": "Journal replay",
+  "def": "Re-running a durable workflow by returning recorded results for completed steps and continuing from the first unfinished one.",
+  "practice": "How durable execution engines recover from crashes.",
+  "aliases": [
+    "replay"
+  ],
+  "chapters": [
+    "long-running-agents"
+  ]
+}

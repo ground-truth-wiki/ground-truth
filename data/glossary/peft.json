@@ -1,0 +1,13 @@
+{
+  "id": "peft",
+  "term": "Parameter-efficient fine-tuning",
+  "def": "Fine-tuning methods that train a small number of added or selected parameters.",
+  "practice": "LoRA is the most common.",
+  "aliases": [
+    "PEFT"
+  ],
+  "chapters": [
+    "fine-tuning-practice"
+  ],
+  "abbr": "PEFT"
+}

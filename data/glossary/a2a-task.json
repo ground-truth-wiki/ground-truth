@@ -1,0 +1,12 @@
+{
+  "id": "a2a-task",
+  "term": "A2A task",
+  "def": "The unit of work in A2A: created by a message, identified by an id, and moving through lifecycle states until it completes, fails or is canceled.",
+  "practice": "Long tasks use streaming or push notifications.",
+  "aliases": [
+    "task lifecycle"
+  ],
+  "chapters": [
+    "a2a"
+  ]
+}

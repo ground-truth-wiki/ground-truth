@@ -1,0 +1,41 @@
+[
+  {
+    "id": "vdb-1",
+    "chapter": "vector-databases",
+    "q": "What is the main advantage of pgvector for a team already on Postgres?",
+    "options": [
+      "Highest possible speed",
+      "No new infrastructure, with SQL filters and transactions next to relational data",
+      "Built-in reranking",
+      "Unlimited scale"
+    ],
+    "answer": 1,
+    "explain": "Least new infrastructure is a real advantage."
+  },
+  {
+    "id": "vdb-2",
+    "chapter": "vector-databases",
+    "q": "Which test best predicts production behavior in a vector database bake-off?",
+    "options": [
+      "Unfiltered queries on random vectors",
+      "Real queries with real filters, updates and deletions",
+      "Import speed only",
+      "Logo quality"
+    ],
+    "answer": 1,
+    "explain": "Production pain is in filters, updates and tenancy."
+  },
+  {
+    "id": "vdb-3",
+    "chapter": "vector-databases",
+    "q": "What does a million 1,024-dimension float32 vectors take before index overhead?",
+    "options": [
+      "About 4 MB",
+      "About 400 MB",
+      "About 4 GB",
+      "About 40 GB"
+    ],
+    "answer": 2,
+    "explain": "1M × 1,024 × 4 bytes ≈ 4.1 GB."
+  }
+]

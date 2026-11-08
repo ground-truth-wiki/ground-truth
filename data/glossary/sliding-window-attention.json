@@ -1,0 +1,12 @@
+{
+  "id": "sliding-window-attention",
+  "term": "Sliding-window attention",
+  "def": "Attention restricted to a fixed number of recent tokens.",
+  "practice": "Often alternated with full-attention layers.",
+  "aliases": [
+    "local attention"
+  ],
+  "chapters": [
+    "long-context"
+  ]
+}

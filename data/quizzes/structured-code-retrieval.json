@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sc-1",
+    "chapter": "structured-code-retrieval",
+    "q": "Why should text-to-SQL use a semantic layer?",
+    "options": [
+      "It makes queries faster",
+      "It fixes business definitions such as “active customer” so the model does not invent them",
+      "It removes the need for a schema",
+      "It encrypts data"
+    ],
+    "answer": 1,
+    "explain": "Agreed definitions make answers consistent and correct."
+  },
+  {
+    "id": "sc-2",
+    "chapter": "structured-code-retrieval",
+    "q": "What is the safest way to run model-generated SQL?",
+    "options": [
+      "On the primary database with an admin role",
+      "On a read-only replica with a restricted role, SELECT only, a row limit and a timeout",
+      "In the browser",
+      "After removing semicolons"
+    ],
+    "answer": 1,
+    "explain": "Contain the blast radius of any bad query."
+  },
+  {
+    "id": "sc-3",
+    "chapter": "structured-code-retrieval",
+    "q": "Which method finds exact function names and error strings in code best?",
+    "options": [
+      "Embeddings only",
+      "Lexical search such as grep, ideally driven by an agent",
+      "Image search",
+      "BM25 over commit messages"
+    ],
+    "answer": 1,
+    "explain": "Exact identifiers need exact matching."
+  }
+]

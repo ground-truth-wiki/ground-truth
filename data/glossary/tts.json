@@ -1,0 +1,15 @@
+{
+  "id": "tts",
+  "term": "Text-to-speech",
+  "def": "Converting text to spoken audio.",
+  "practice": "Latency to first audio decides how natural a voice agent feels.",
+  "aliases": [
+    "TTS",
+    "speech synthesis"
+  ],
+  "chapters": [
+    "speech-audio",
+    "voice-agents"
+  ],
+  "abbr": "TTS"
+}

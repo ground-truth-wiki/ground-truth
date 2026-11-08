@@ -1,0 +1,12 @@
+{
+  "id": "trust-boundary",
+  "term": "Trust boundary",
+  "def": "A point where data crosses between parts of a system with different levels of trust.",
+  "practice": "In AI systems, every text channel into a model is one.",
+  "aliases": [
+    "trust boundaries"
+  ],
+  "chapters": [
+    "threat-modeling"
+  ]
+}

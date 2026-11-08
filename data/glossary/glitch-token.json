@@ -1,0 +1,10 @@
+{
+  "id": "glitch-token",
+  "term": "Glitch token",
+  "def": "A token that appeared rarely in training, so the model behaves strangely when it sees it.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "tokenization"
+  ]
+}

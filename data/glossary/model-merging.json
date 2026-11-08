@@ -1,0 +1,13 @@
+{
+  "id": "model-merging",
+  "term": "Model merging",
+  "def": "Combining fine-tuned models by arithmetic on their weights, such as interpolation or task-vector methods.",
+  "practice": "Cheap way to combine skills; verify with evals.",
+  "aliases": [
+    "TIES",
+    "SLERP"
+  ],
+  "chapters": [
+    "distillation-merging"
+  ]
+}

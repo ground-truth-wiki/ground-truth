@@ -1,0 +1,10 @@
+{
+  "id": "json-mode",
+  "term": "JSON mode",
+  "def": "An API option that guarantees syntactically valid JSON output, without enforcing a schema.",
+  "practice": "Prefer schema-constrained modes when available.",
+  "aliases": [],
+  "chapters": [
+    "structured-outputs"
+  ]
+}

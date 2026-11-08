@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ra-1",
+    "chapter": "responsible-ai",
+    "q": "Why report error rates per group?",
+    "options": [
+      "It looks thorough",
+      "Averages can hide much worse performance for specific groups",
+      "It is faster",
+      "It removes bias"
+    ],
+    "answer": 1,
+    "explain": "Slice to find the failures averages hide."
+  },
+  {
+    "id": "ra-2",
+    "chapter": "responsible-ai",
+    "q": "What is a counterfactual fairness test?",
+    "options": [
+      "Asking the model if it is fair",
+      "Changing only one attribute, such as a name, and checking whether outputs change when they should not",
+      "Using more data",
+      "Removing names"
+    ],
+    "answer": 1,
+    "explain": "Matched pairs reveal unwanted sensitivity."
+  },
+  {
+    "id": "ra-3",
+    "chapter": "responsible-ai",
+    "q": "What does a model card document?",
+    "options": [
+      "Pricing",
+      "Intended use, evaluation results and limitations",
+      "Source code",
+      "Training hardware only"
+    ],
+    "answer": 1,
+    "explain": "Mitchell et al., 2019."
+  }
+]

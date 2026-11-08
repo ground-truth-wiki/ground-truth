@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pc-1",
+    "chapter": "prompt-caching",
+    "q": "Why does a timestamp at the top of a prompt break caching?",
+    "options": [
+      "Timestamps are large",
+      "Caches match from the first token, so any change early invalidates everything after it",
+      "Providers reject timestamps",
+      "It changes the model"
+    ],
+    "answer": 1,
+    "explain": "Put variable content last."
+  },
+  {
+    "id": "pc-2",
+    "chapter": "prompt-caching",
+    "q": "In the illustrative calculator, why can caching cost more at a 0% hit rate?",
+    "options": [
+      "Reads are expensive",
+      "Every request pays the cache-write premium without ever reading from the cache",
+      "Tokens double",
+      "Caching disables batching"
+    ],
+    "answer": 1,
+    "explain": "Write premiums only pay off with reuse."
+  },
+  {
+    "id": "pc-3",
+    "chapter": "prompt-caching",
+    "q": "Why do agents benefit most from prompt caching?",
+    "options": [
+      "They use smaller models",
+      "Each turn resends the whole history, so most input is a repeated prefix",
+      "They never use tools",
+      "They have no system prompt"
+    ],
+    "answer": 1,
+    "explain": "Append-only histories turn into cache hits."
+  }
+]

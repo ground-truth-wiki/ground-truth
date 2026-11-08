@@ -1,0 +1,13 @@
+{
+  "id": "rlvr",
+  "term": "Reinforcement learning with verifiable rewards",
+  "def": "RL in which a program checks answers, such as math results or passing tests, and provides the reward.",
+  "practice": "How reasoning models are trained.",
+  "aliases": [
+    "RLVR"
+  ],
+  "chapters": [
+    "rlvr-reasoning"
+  ],
+  "abbr": "RLVR"
+}

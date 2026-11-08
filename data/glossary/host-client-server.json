@@ -1,0 +1,14 @@
+{
+  "id": "host-client-server",
+  "term": "Host, client and server",
+  "def": "MCP’s three roles: the host application, one client per server connection inside it, and servers that expose capabilities.",
+  "practice": "Hosts own policy and the model; clients are connectors.",
+  "aliases": [
+    "MCP host",
+    "MCP client",
+    "MCP server"
+  ],
+  "chapters": [
+    "mcp-architecture"
+  ]
+}

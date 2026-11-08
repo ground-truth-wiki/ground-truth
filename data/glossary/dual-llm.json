@@ -1,0 +1,14 @@
+{
+  "id": "dual-llm",
+  "term": "Dual-LLM pattern",
+  "def": "Separating a privileged model that plans and calls tools from a quarantined model that reads untrusted content.",
+  "practice": "CaMeL is a rigorous version with capability tracking.",
+  "aliases": [
+    "CaMeL",
+    "quarantined LLM"
+  ],
+  "chapters": [
+    "secure-agent-design",
+    "prompt-injection"
+  ]
+}

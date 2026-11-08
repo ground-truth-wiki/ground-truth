@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qrp-1",
+    "chapter": "rl-primer",
+    "q": "In RL for language models, what is the policy?",
+    "options": [
+      "The reward model",
+      "The language model choosing tokens or actions",
+      "The dataset",
+      "The tokenizer"
+    ],
+    "answer": 1,
+    "explain": "The model is the policy."
+  },
+  {
+    "id": "qrp-2",
+    "chapter": "rl-primer",
+    "q": "What is credit assignment?",
+    "options": [
+      "Billing",
+      "Working out which earlier actions earned a later reward",
+      "Choosing a GPU",
+      "Labeling data"
+    ],
+    "answer": 1,
+    "explain": "Hard for long outputs and agents."
+  },
+  {
+    "id": "qrp-3",
+    "chapter": "rl-primer",
+    "q": "What does on-policy learning use?",
+    "options": [
+      "Fixed preference data",
+      "Samples from the current model",
+      "Human demonstrations only",
+      "Random data"
+    ],
+    "answer": 1,
+    "explain": "PPO and GRPO are on-policy; DPO is off-policy."
+  }
+]

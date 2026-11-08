@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b16-1",
+    "chapter": "reliability-engineering",
+    "q": "Why add jitter to retry backoff?",
+    "options": [
+      "To make retries faster",
+      "To stop many clients retrying in lockstep and overwhelming a recovering service",
+      "To log errors",
+      "To bypass rate limits"
+    ],
+    "answer": 1,
+    "explain": "Randomized delays spread retries out."
+  },
+  {
+    "id": "rel-1",
+    "chapter": "reliability-engineering",
+    "q": "Which error should not be retried unchanged?",
+    "options": [
+      "429 rate limit",
+      "503 service unavailable",
+      "400 invalid request",
+      "529 overloaded"
+    ],
+    "answer": 2,
+    "explain": "The same bad request fails the same way."
+  },
+  {
+    "id": "rel-2",
+    "chapter": "reliability-engineering",
+    "q": "Why add jitter to exponential backoff?",
+    "options": [
+      "To slow everything down",
+      "So many clients do not retry at the same moment and overwhelm a recovering service",
+      "To save tokens",
+      "It is required by HTTP"
+    ],
+    "answer": 1,
+    "explain": "Jitter prevents thundering herds."
+  },
+  {
+    "id": "rel-3",
+    "chapter": "reliability-engineering",
+    "q": "At 99.5% success per call, roughly how often does a 30-call task succeed without retries?",
+    "options": [
+      "99.5%",
+      "About 95%",
+      "About 86%",
+      "About 50%"
+    ],
+    "answer": 2,
+    "explain": "0.995³⁰ ≈ 0.86."
+  }
+]

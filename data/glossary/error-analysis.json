@@ -1,0 +1,10 @@
+{
+  "id": "error-analysis",
+  "term": "Error analysis",
+  "def": "Reading real outputs, describing failures in plain words, grouping them into categories and counting them.",
+  "practice": "The first and most important step of any eval effort.",
+  "aliases": [],
+  "chapters": [
+    "error-analysis"
+  ]
+}

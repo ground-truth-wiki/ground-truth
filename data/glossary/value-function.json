@@ -1,0 +1,12 @@
+{
+  "id": "value-function",
+  "term": "Value function",
+  "def": "An estimate of the expected future reward from a state or a state–action pair.",
+  "practice": "",
+  "aliases": [
+    "Q-function"
+  ],
+  "chapters": [
+    "rl-primer"
+  ]
+}

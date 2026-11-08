@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cst-1",
+    "chapter": "cost-engineering",
+    "q": "What is usually the single biggest cost lever?",
+    "options": [
+      "Shorter variable names",
+      "Using the smallest model that passes your evals for each task",
+      "Lower temperature",
+      "More retries"
+    ],
+    "answer": 1,
+    "explain": "Right-sizing beats most other optimizations."
+  },
+  {
+    "id": "cst-2",
+    "chapter": "cost-engineering",
+    "q": "When does self-hosting usually beat an API?",
+    "options": [
+      "At any volume",
+      "At high, steady volume with good GPU utilization",
+      "For prototypes",
+      "When traffic is spiky and low"
+    ],
+    "answer": 1,
+    "explain": "Fixed GPU costs need volume to amortize."
+  },
+  {
+    "id": "cst-3",
+    "chapter": "cost-engineering",
+    "q": "How are reasoning tokens billed?",
+    "options": [
+      "Free",
+      "As output tokens",
+      "As input tokens",
+      "Per request"
+    ],
+    "answer": 1,
+    "explain": "They can dominate cost on reasoning models."
+  }
+]

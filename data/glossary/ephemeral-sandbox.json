@@ -1,0 +1,10 @@
+{
+  "id": "ephemeral-sandbox",
+  "term": "Ephemeral sandbox",
+  "def": "A sandbox created for one task and destroyed afterwards, so no state leaks between tasks or users.",
+  "practice": "Persist only declared outputs.",
+  "aliases": [],
+  "chapters": [
+    "sandboxes"
+  ]
+}

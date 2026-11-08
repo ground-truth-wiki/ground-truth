@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qdg-1",
+    "chapter": "decision-guides",
+    "q": "What is the default answer to prompt, retrieval or fine-tuning?",
+    "options": [
+      "Fine-tuning",
+      "Prompting first; retrieval for knowledge gaps; fine-tuning for behavior, cost or latency gaps at volume",
+      "Retrieval always",
+      "None"
+    ],
+    "answer": 1,
+    "explain": "Start simple, add with evidence."
+  },
+  {
+    "id": "qdg-2",
+    "chapter": "decision-guides",
+    "q": "What makes a decision record useful later?",
+    "options": [
+      "Its length",
+      "Alternatives, evidence and the trigger that would reopen it",
+      "Its author",
+      "Its format"
+    ],
+    "answer": 1,
+    "explain": "Decisions become reopenable for the right reasons."
+  },
+  {
+    "id": "qdg-3",
+    "chapter": "decision-guides",
+    "q": "When should you keep the default despite an alternative scoring higher?",
+    "options": [
+      "Never",
+      "When the difference is within the eval’s confidence interval",
+      "Always",
+      "When the alternative is newer"
+    ],
+    "answer": 1,
+    "explain": "Noise is not evidence."
+  }
+]

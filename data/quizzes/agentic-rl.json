@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qar-1",
+    "chapter": "agentic-rl",
+    "q": "What makes agentic RL expensive?",
+    "options": [
+      "Tokenizers",
+      "Each rollout runs a real environment for many steps, so sandboxes become a bottleneck",
+      "Small models",
+      "Short prompts"
+    ],
+    "answer": 1,
+    "explain": "Environment throughput often limits training."
+  },
+  {
+    "id": "qar-2",
+    "chapter": "agentic-rl",
+    "q": "What should agentic RL reward?",
+    "options": [
+      "The agent’s claim of success",
+      "Verified outcomes such as tests passing or the target state reached",
+      "Length",
+      "Tool count"
+    ],
+    "answer": 1,
+    "explain": "Agents learn to claim success otherwise."
+  },
+  {
+    "id": "qar-3",
+    "chapter": "agentic-rl",
+    "q": "Why evaluate a trained agent in the harness you will deploy?",
+    "options": [
+      "Harnesses are identical",
+      "Models learn the tools and formats of their training harness and may behave differently elsewhere",
+      "It is cheaper",
+      "To skip evals"
+    ],
+    "answer": 1,
+    "explain": "Harness coupling."
+  }
+]

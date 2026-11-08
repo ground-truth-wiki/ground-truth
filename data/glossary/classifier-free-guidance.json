@@ -1,0 +1,13 @@
+{
+  "id": "classifier-free-guidance",
+  "term": "Classifier-free guidance",
+  "def": "Mixing conditional and unconditional predictions during sampling to strengthen prompt adherence.",
+  "practice": "The guidance scale trades adherence against diversity.",
+  "aliases": [
+    "CFG",
+    "guidance scale"
+  ],
+  "chapters": [
+    "image-generation"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mcp-registry",
+  "term": "MCP registry",
+  "def": "A catalog of MCP servers with metadata for discovery, such as the official MCP registry or a company’s internal list.",
+  "practice": "A listing is not an endorsement; check publisher and code.",
+  "aliases": [
+    "server registry"
+  ],
+  "chapters": [
+    "mcp-server-catalog",
+    "mcp-at-scale"
+  ]
+}

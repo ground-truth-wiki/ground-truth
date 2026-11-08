@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qcn-1",
+    "chapter": "the-canon",
+    "q": "Where is the Canon generated from?",
+    "options": [
+      "Search logs",
+      "Genesis entries marked as canon",
+      "User votes",
+      "Random papers"
+    ],
+    "answer": 1,
+    "explain": "It grows with the timeline."
+  },
+  {
+    "id": "qcn-2",
+    "chapter": "the-canon",
+    "q": "What should you take away from each canon paper?",
+    "options": [
+      "Every detail",
+      "The one idea it contributes, in your own words",
+      "Its author list",
+      "Its page count"
+    ],
+    "answer": 1,
+    "explain": "Read for ideas."
+  },
+  {
+    "id": "qcn-3",
+    "chapter": "the-canon",
+    "q": "Why verify citations before citing?",
+    "options": [
+      "Style",
+      "Titles, authors and years drift in memory",
+      "Papers change",
+      "It is optional"
+    ],
+    "answer": 1,
+    "explain": "Check the original."
+  }
+]

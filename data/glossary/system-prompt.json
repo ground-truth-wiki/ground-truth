@@ -1,0 +1,13 @@
+{
+  "id": "system-prompt",
+  "term": "System prompt",
+  "def": "Instructions placed before the conversation that set role, rules, style and policy.",
+  "practice": "Keep it stable for caching and at the right level of detail.",
+  "aliases": [
+    "system message"
+  ],
+  "chapters": [
+    "prompting-fundamentals",
+    "context-engineering"
+  ]
+}

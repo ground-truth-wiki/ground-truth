@@ -1,0 +1,13 @@
+{
+  "id": "hybrid-search",
+  "term": "Hybrid search",
+  "def": "Combining lexical and vector retrieval and fusing their rankings.",
+  "practice": "Beats either alone on most real query mixes.",
+  "aliases": [
+    "hybrid retrieval"
+  ],
+  "chapters": [
+    "hybrid-retrieval",
+    "rag-fundamentals"
+  ]
+}

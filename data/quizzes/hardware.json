@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hwr-1",
+    "chapter": "hardware",
+    "q": "Which accelerator specification most limits single-sequence decode speed?",
+    "options": [
+      "Peak FLOPs",
+      "Memory bandwidth",
+      "Clock speed",
+      "PCIe lanes"
+    ],
+    "answer": 1,
+    "explain": "Decode reads all weights per token."
+  },
+  {
+    "id": "hwr-2",
+    "chapter": "hardware",
+    "q": "Why keep tensor parallelism within one server or NVLink domain?",
+    "options": [
+      "It is cheaper",
+      "It exchanges data every layer and needs the fastest links",
+      "It needs CPUs",
+      "It avoids memory"
+    ],
+    "answer": 1,
+    "explain": "Slower links make communication dominate."
+  },
+  {
+    "id": "hwr-3",
+    "chapter": "hardware",
+    "q": "How should you compare accelerators for a serving workload?",
+    "options": [
+      "By list price per hour",
+      "By cost per million tokens at your latency target with your engine",
+      "By FLOPs",
+      "By brand"
+    ],
+    "answer": 1,
+    "explain": "Translate everything into tokens per dollar at your SLO."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "jitter",
+  "term": "Jitter",
+  "def": "Randomness added to retry delays so many clients do not retry at the same moment.",
+  "practice": "Prevents thundering herds.",
+  "aliases": [
+    "full jitter"
+  ],
+  "chapters": [
+    "reliability-engineering"
+  ]
+}

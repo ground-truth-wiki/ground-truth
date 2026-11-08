@@ -1,0 +1,10 @@
+{
+  "id": "kl-penalty",
+  "term": "KL penalty",
+  "def": "A term that penalizes a policy for moving away from a reference model during RL fine-tuning.",
+  "practice": "Limits reward hacking.",
+  "aliases": [],
+  "chapters": [
+    "preference-optimization"
+  ]
+}

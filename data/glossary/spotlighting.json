@@ -1,0 +1,11 @@
+{
+  "id": "spotlighting",
+  "term": "Spotlighting",
+  "def": "Marking untrusted text with delimiters, encodings or labels so the model treats it as data.",
+  "practice": "Lowers attack success; not a boundary on its own.",
+  "aliases": [],
+  "chapters": [
+    "prompt-injection",
+    "secure-agent-design"
+  ]
+}

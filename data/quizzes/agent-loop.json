@@ -1,0 +1,54 @@
+[
+  {
+    "id": "loop-1",
+    "chapter": "agent-loop",
+    "q": "In the Anthropic Messages API, what tells your loop that the model wants a tool run?",
+    "options": [
+      "The response contains the word “tool”",
+      "stop_reason is \"tool_use\"",
+      "The HTTP status is 202",
+      "The model returns an empty message"
+    ],
+    "answer": 1,
+    "explain": "The stop reason says why generation stopped; `tool_use` means the content includes one or more tool requests."
+  },
+  {
+    "id": "loop-2",
+    "chapter": "agent-loop",
+    "q": "A tool raises an exception mid-run. What should a well-built harness usually do?",
+    "options": [
+      "Crash the run so a human notices",
+      "Retry the same call forever",
+      "Return the error to the model as a tool result marked as an error",
+      "Silently drop the call"
+    ],
+    "answer": 2,
+    "explain": "Errors are information. Returning them lets the model recover, while budgets prevent endless retries."
+  },
+  {
+    "id": "loop-3",
+    "chapter": "agent-loop",
+    "q": "Why does the total input-token cost of an agent run grow faster than the number of turns?",
+    "options": [
+      "Models charge more per token later in a conversation",
+      "Each call re-sends the entire history, so later calls read everything before them",
+      "Tool results are billed twice",
+      "The system prompt grows each turn"
+    ],
+    "answer": 1,
+    "explain": "Summing a growing history across calls gives roughly quadratic growth, which is why caching and compaction matter."
+  },
+  {
+    "id": "loop-4",
+    "chapter": "agent-loop",
+    "q": "Which exit must every production agent loop have, besides the model ending its turn?",
+    "options": [
+      "A sentiment check",
+      "A step or cost budget enforced in code",
+      "A second model that approves every step",
+      "A random stop"
+    ],
+    "answer": 1,
+    "explain": "Without a hard budget, a confused model can loop until your bill or your users notice."
+  }
+]

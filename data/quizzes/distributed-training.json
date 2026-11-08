@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qdt-1",
+    "chapter": "distributed-training",
+    "q": "About how many bytes per parameter does mixed-precision Adam training need for model state?",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "64"
+    ],
+    "answer": 2,
+    "explain": "Weights, gradients, master weights and two moments."
+  },
+  {
+    "id": "qdt-2",
+    "chapter": "distributed-training",
+    "q": "What does ZeRO or FSDP shard?",
+    "options": [
+      "Only the data",
+      "Optimizer states, gradients and parameters across data-parallel workers",
+      "Only activations",
+      "The tokenizer"
+    ],
+    "answer": 1,
+    "explain": "Memory per GPU falls roughly with the number of GPUs."
+  },
+  {
+    "id": "qdt-3",
+    "chapter": "distributed-training",
+    "q": "Why keep tensor parallelism within one server?",
+    "options": [
+      "Licensing",
+      "It exchanges data within every layer and needs very fast links",
+      "It needs CPUs",
+      "It is slower"
+    ],
+    "answer": 1,
+    "explain": "Cross-node links make communication dominate."
+  }
+]

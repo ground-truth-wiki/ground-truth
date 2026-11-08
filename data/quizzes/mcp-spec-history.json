@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hist-1",
+    "chapter": "mcp-spec-history",
+    "q": "Which MCP version replaced HTTP+SSE with Streamable HTTP?",
+    "options": [
+      "2024-11-05",
+      "2025-03-26",
+      "2025-06-18",
+      "2026-07-28"
+    ],
+    "answer": 1,
+    "explain": "Streamable HTTP arrived in 2025-03-26; HTTP+SSE was formally deprecated in 2026-07-28."
+  },
+  {
+    "id": "hist-2",
+    "chapter": "mcp-spec-history",
+    "q": "A tutorial tells you to send initialize and keep a session id. What does that tell you?",
+    "options": [
+      "It describes 2026-07-28",
+      "It predates the 2026-07-28 stateless redesign",
+      "It is about A2A",
+      "It is about stdio only"
+    ],
+    "answer": 1,
+    "explain": "The handshake and sessions were removed in 2026-07-28 (verified Nov 2026)."
+  },
+  {
+    "id": "hist-3",
+    "chapter": "mcp-spec-history",
+    "q": "What did the 2026-07-28 feature-lifecycle policy formalize?",
+    "options": [
+      "Faster releases",
+      "Marking features deprecated before removing them, with a migration window",
+      "Version numbers instead of dates",
+      "Vendor certification"
+    ],
+    "answer": 1,
+    "explain": "Deprecation before removal gives implementers time to migrate."
+  }
+]

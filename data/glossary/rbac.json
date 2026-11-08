@@ -1,0 +1,13 @@
+{
+  "id": "rbac",
+  "term": "Role-based access control",
+  "def": "Granting permissions to roles rather than individuals.",
+  "practice": "A baseline enterprise requirement.",
+  "aliases": [
+    "RBAC"
+  ],
+  "chapters": [
+    "enterprise-readiness"
+  ],
+  "abbr": "RBAC"
+}

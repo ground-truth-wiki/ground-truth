@@ -1,0 +1,10 @@
+{
+  "id": "self-rag",
+  "term": "Self-RAG",
+  "def": "A method that trains a model to decide when to retrieve and to critique whether retrieved passages support its output.",
+  "practice": "One of several self-checking RAG designs.",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag"
+  ]
+}

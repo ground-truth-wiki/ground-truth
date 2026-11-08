@@ -1,0 +1,12 @@
+{
+  "id": "fill-in-the-middle",
+  "term": "Fill-in-the-middle",
+  "def": "Training code models to complete text between a given prefix and suffix, used for editor autocomplete.",
+  "practice": "",
+  "aliases": [
+    "FIM"
+  ],
+  "chapters": [
+    "specialist-models"
+  ]
+}

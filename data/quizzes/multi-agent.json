@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ma-1",
+    "chapter": "multi-agent",
+    "q": "What is the main benefit of giving a subagent its own context?",
+    "options": [
+      "It makes the model smarter",
+      "The lead receives a compact summary instead of all raw material, keeping its context clean",
+      "It removes the need for tools",
+      "It lowers total token use"
+    ],
+    "answer": 1,
+    "explain": "Context isolation is the key benefit. Total tokens usually rise, not fall."
+  },
+  {
+    "id": "ma-2",
+    "chapter": "multi-agent",
+    "q": "Which task is the weakest candidate for a multi-agent design?",
+    "options": [
+      "Surveying regulations across ten countries",
+      "Comparing twenty vendors on the same criteria",
+      "Refactoring one tightly coupled module",
+      "Collecting citations for a literature review"
+    ],
+    "answer": 2,
+    "explain": "Deep, coupled work suffers from lossy handoffs and conflicting edits; wide, parallel reading benefits most."
+  },
+  {
+    "id": "ma-3",
+    "chapter": "multi-agent",
+    "q": "Anthropic reported that its multi-agent research system used roughly how many times the tokens of a chat interaction?",
+    "options": [
+      "About 1.5×",
+      "About 4×",
+      "About 15×",
+      "About 100×"
+    ],
+    "answer": 2,
+    "explain": "About 15× for the multi-agent system, and about 4× for single agents, in its June 2025 write-up."
+  }
+]

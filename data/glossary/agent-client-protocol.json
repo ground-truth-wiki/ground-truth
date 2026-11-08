@@ -1,0 +1,11 @@
+{
+  "id": "agent-client-protocol",
+  "term": "Agent Client Protocol",
+  "def": "A protocol connecting code editors to coding agents, so one agent can run inside many editors.",
+  "practice": "One of several protocols abbreviated ACP; always expand it.",
+  "aliases": [],
+  "chapters": [
+    "protocol-soup",
+    "coding-harness-landscape"
+  ]
+}

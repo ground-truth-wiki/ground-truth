@@ -1,0 +1,12 @@
+{
+  "id": "cross-server-shadowing",
+  "term": "Cross-server shadowing",
+  "def": "One MCP server’s descriptions instructing the model about another server’s tools.",
+  "practice": "Load only the servers a task needs; isolate high-value tools.",
+  "aliases": [
+    "tool shadowing"
+  ],
+  "chapters": [
+    "mcp-security"
+  ]
+}

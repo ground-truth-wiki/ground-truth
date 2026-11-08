@@ -1,0 +1,11 @@
+{
+  "id": "context-isolation",
+  "term": "Context isolation",
+  "def": "Giving a sub-task its own fresh context so noise from it never reaches the main agent.",
+  "practice": "The main measurable benefit of subagents.",
+  "aliases": [],
+  "chapters": [
+    "multi-agent",
+    "context-engineering"
+  ]
+}

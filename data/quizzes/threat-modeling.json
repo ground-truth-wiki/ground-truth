@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tm-1",
+    "chapter": "threat-modeling",
+    "q": "In an AI data-flow diagram, what counts as a trust boundary?",
+    "options": [
+      "Only the network edge",
+      "Every channel that brings text into the model’s context, including retrieved documents and tool results",
+      "Only user input",
+      "Nothing inside your service"
+    ],
+    "answer": 1,
+    "explain": "Indirect inputs carry instructions too."
+  },
+  {
+    "id": "tm-2",
+    "chapter": "threat-modeling",
+    "q": "Which STRIDE category covers an injected email making an agent send data to an attacker?",
+    "options": [
+      "Spoofing",
+      "Repudiation",
+      "Information disclosure",
+      "Denial of service"
+    ],
+    "answer": 2,
+    "explain": "It is exfiltration of data."
+  },
+  {
+    "id": "tm-3",
+    "chapter": "threat-modeling",
+    "q": "What is the key agent question in a threat model?",
+    "options": [
+      "How large is the model?",
+      "If the model is fully manipulated, what can it reach and do?",
+      "Which font does the UI use?",
+      "How many users are there?"
+    ],
+    "answer": 1,
+    "explain": "Bound the impact of a successful manipulation."
+  }
+]

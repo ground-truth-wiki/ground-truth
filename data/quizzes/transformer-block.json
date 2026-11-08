@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qtb-1",
+    "chapter": "transformer-block",
+    "q": "Roughly how many parameters does each transformer layer have?",
+    "options": [
+      "d",
+      "2d",
+      "12d²",
+      "d³"
+    ],
+    "answer": 2,
+    "explain": "About 4d² in attention and 8d² in the feed-forward layer."
+  },
+  {
+    "id": "qtb-2",
+    "chapter": "transformer-block",
+    "q": "What does the residual connection do?",
+    "options": [
+      "Removes tokens",
+      "Adds each sublayer’s output back to the stream, making deep networks trainable",
+      "Normalizes inputs",
+      "Routes experts"
+    ],
+    "answer": 1,
+    "explain": "The residual stream carries information through the stack."
+  },
+  {
+    "id": "qtb-3",
+    "chapter": "transformer-block",
+    "q": "With d = 768, 12 layers and a tied 50,257-token vocabulary, about how many parameters?",
+    "options": [
+      "12 million",
+      "124 million",
+      "1.2 billion",
+      "7 billion"
+    ],
+    "answer": 1,
+    "explain": "That is GPT-2 small."
+  }
+]

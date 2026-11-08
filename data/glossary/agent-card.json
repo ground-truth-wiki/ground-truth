@@ -1,0 +1,12 @@
+{
+  "id": "agent-card",
+  "term": "Agent card",
+  "def": "An A2A document describing an agent’s skills, endpoint, modalities and authentication requirements.",
+  "practice": "The discovery mechanism for A2A agents.",
+  "aliases": [
+    "agent cards"
+  ],
+  "chapters": [
+    "a2a"
+  ]
+}

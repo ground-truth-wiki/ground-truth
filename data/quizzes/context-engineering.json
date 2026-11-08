@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ctx-1",
+    "chapter": "context-engineering",
+    "q": "Which content is usually the bulkiest and least useful part of a long agent context?",
+    "options": [
+      "The system prompt",
+      "Old tool results",
+      "The user’s latest message",
+      "Tool definitions"
+    ],
+    "answer": 1,
+    "explain": "Tool outputs dominate token counts and go stale quickly; clear or summarize them after use."
+  },
+  {
+    "id": "ctx-2",
+    "chapter": "context-engineering",
+    "q": "Why should you avoid editing earlier messages in an agent’s history?",
+    "options": [
+      "It is not allowed by APIs",
+      "It invalidates the prompt cache and can confuse the model about what happened",
+      "It increases output length",
+      "It disables tools"
+    ],
+    "answer": 1,
+    "explain": "Append-only context keeps cache hits high and the history coherent."
+  },
+  {
+    "id": "ctx-3",
+    "chapter": "context-engineering",
+    "q": "What is the main purpose of compaction?",
+    "options": [
+      "To make outputs shorter",
+      "To keep a long-running task going by summarizing history into decisions and next steps",
+      "To compress model weights",
+      "To remove the system prompt"
+    ],
+    "answer": 1,
+    "explain": "Compaction resets the context to a summary so work can continue past the window."
+  }
+]

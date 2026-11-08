@@ -1,0 +1,1671 @@
+{
+  "eras": [
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "from": "1943",
+      "to": "1986",
+      "blurb": "Neurons as logic, learning machines, and two waves of optimism.",
+      "chapters": [
+        "neural-networks",
+        "mental-models"
+      ]
+    },
+    {
+      "id": "learning",
+      "title": "Machine learning matures",
+      "from": "1987",
+      "to": "2011",
+      "blurb": "Statistical learning, LSTMs, GPUs and the data that would power deep learning.",
+      "chapters": [
+        "classical-ml",
+        "neural-networks"
+      ]
+    },
+    {
+      "id": "deep",
+      "title": "The deep learning boom",
+      "from": "2012",
+      "to": "2016",
+      "blurb": "Convolutional nets, embeddings, attention and game-playing agents.",
+      "chapters": [
+        "representation-learning",
+        "rl-primer"
+      ]
+    },
+    {
+      "id": "transformer",
+      "title": "Transformers and scale",
+      "from": "2017",
+      "to": "2021",
+      "blurb": "One architecture, scaling laws and retrieval.",
+      "chapters": [
+        "attention",
+        "scaling-laws"
+      ]
+    },
+    {
+      "id": "assistants",
+      "title": "Assistants for everyone",
+      "from": "2022",
+      "to": "2023",
+      "blurb": "Instruction tuning, RLHF and chat assistants reach the public.",
+      "chapters": [
+        "preference-optimization",
+        "prompting-fundamentals"
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "The agent era",
+      "from": "2024",
+      "to": "2026",
+      "blurb": "Reasoning models, coding agents and the protocols that connect them.",
+      "chapters": [
+        "agent-loop",
+        "mcp-architecture"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "models",
+      "label": "Models"
+    },
+    {
+      "id": "techniques",
+      "label": "Techniques"
+    },
+    {
+      "id": "agents",
+      "label": "Agents and tools"
+    },
+    {
+      "id": "protocols",
+      "label": "Protocols and standards"
+    },
+    {
+      "id": "infra",
+      "label": "Infrastructure and hardware"
+    },
+    {
+      "id": "safety",
+      "label": "Safety and policy"
+    },
+    {
+      "id": "culture",
+      "label": "Culture"
+    }
+  ],
+  "events": [
+    {
+      "id": "mcculloch-pitts",
+      "date": "1943",
+      "approx": false,
+      "track": "techniques",
+      "title": "A logical model of the neuron",
+      "text": "McCulloch and Pitts describe neurons as threshold logic units, the first mathematical model of a neural network.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": true,
+      "ref": "McCulloch and Pitts, “A Logical Calculus of the Ideas Immanent in Nervous Activity” (1943)"
+    },
+    {
+      "id": "turing-1950",
+      "date": "1950",
+      "approx": false,
+      "track": "culture",
+      "title": "Can machines think?",
+      "text": "Turing proposes the imitation game as a practical test of machine intelligence.",
+      "chapters": [
+        "mental-models"
+      ],
+      "canon": true,
+      "ref": "Turing, “Computing Machinery and Intelligence” (1950)"
+    },
+    {
+      "id": "dartmouth",
+      "date": "1956",
+      "approx": false,
+      "track": "culture",
+      "title": "The field gets its name",
+      "text": "The Dartmouth summer workshop launches “artificial intelligence” as a research field.",
+      "chapters": [
+        "ai-engineer-role"
+      ],
+      "canon": false
+    },
+    {
+      "id": "perceptron",
+      "date": "1958",
+      "approx": false,
+      "track": "techniques",
+      "title": "The perceptron",
+      "text": "Rosenblatt’s perceptron learns weights from examples, the ancestor of every neural network.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": true,
+      "ref": "Rosenblatt, “The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain” (1958)"
+    },
+    {
+      "id": "eliza",
+      "date": "1966",
+      "approx": false,
+      "track": "agents",
+      "title": "ELIZA",
+      "text": "Weizenbaum’s pattern-matching chatbot shows how readily people attribute understanding to a machine.",
+      "chapters": [
+        "ai-product-ux"
+      ],
+      "canon": false
+    },
+    {
+      "id": "perceptrons-book",
+      "date": "1969",
+      "approx": false,
+      "track": "culture",
+      "title": "Perceptrons, the book",
+      "text": "Minsky and Papert prove limits of single-layer perceptrons, and neural network research cools.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ai-winter-1",
+      "date": "1974",
+      "approx": true,
+      "track": "culture",
+      "title": "The first AI winter",
+      "text": "Funding falls after early promises go unmet.",
+      "chapters": [
+        "open-problems"
+      ],
+      "canon": false
+    },
+    {
+      "id": "backprop-1986",
+      "date": "1986",
+      "approx": false,
+      "track": "techniques",
+      "title": "Backpropagation popularized",
+      "text": "Rumelhart, Hinton and Williams show backpropagation training multi-layer networks with useful internal representations.",
+      "chapters": [
+        "calculus-optimization",
+        "neural-networks"
+      ],
+      "canon": true,
+      "ref": "Rumelhart, Hinton and Williams, “Learning representations by back-propagating errors” (1986)"
+    },
+    {
+      "id": "ai-winter-2",
+      "date": "1987",
+      "approx": true,
+      "track": "culture",
+      "title": "The second AI winter",
+      "text": "The expert-systems market collapses and AI funding contracts again.",
+      "chapters": [
+        "open-problems"
+      ],
+      "canon": false
+    },
+    {
+      "id": "lecun-1989",
+      "date": "1989",
+      "approx": false,
+      "track": "techniques",
+      "title": "Convolutional networks read digits",
+      "text": "LeCun and colleagues train convolutional networks with backpropagation to recognize handwritten digits.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "td-gammon",
+      "date": "1992",
+      "approx": false,
+      "track": "agents",
+      "title": "TD-Gammon",
+      "text": "Tesauro’s program learns strong backgammon by self-play with temporal-difference learning.",
+      "chapters": [
+        "rl-primer"
+      ],
+      "canon": false
+    },
+    {
+      "id": "lstm",
+      "date": "1997",
+      "approx": false,
+      "track": "techniques",
+      "title": "Long short-term memory",
+      "text": "Hochreiter and Schmidhuber introduce the LSTM, letting recurrent networks learn long-range dependencies.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": true,
+      "ref": "Hochreiter and Schmidhuber, “Long Short-Term Memory” (1997)"
+    },
+    {
+      "id": "deep-blue",
+      "date": "1997-05",
+      "approx": false,
+      "track": "agents",
+      "title": "Deep Blue beats Kasparov",
+      "text": "IBM’s chess machine defeats the world champion in a six-game match.",
+      "chapters": [
+        "mental-models"
+      ],
+      "canon": false
+    },
+    {
+      "id": "lenet",
+      "date": "1998",
+      "approx": false,
+      "track": "techniques",
+      "title": "Gradient-based document recognition",
+      "text": "LeCun et al. consolidate convolutional networks for document recognition.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": true,
+      "ref": "LeCun et al., “Gradient-Based Learning Applied to Document Recognition” (1998)"
+    },
+    {
+      "id": "nplm",
+      "date": "2003",
+      "approx": false,
+      "track": "techniques",
+      "title": "A neural language model",
+      "text": "Bengio and colleagues learn word embeddings jointly with a neural language model.",
+      "chapters": [
+        "representation-learning"
+      ],
+      "canon": true,
+      "ref": "Bengio et al., “A Neural Probabilistic Language Model” (2003)"
+    },
+    {
+      "id": "dbn",
+      "date": "2006",
+      "approx": false,
+      "track": "techniques",
+      "title": "Deep networks return",
+      "text": "Hinton and colleagues train deep belief networks layer by layer, reviving interest in depth.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "cuda",
+      "date": "2007",
+      "approx": false,
+      "track": "infra",
+      "title": "CUDA",
+      "text": "NVIDIA opens its GPUs to general-purpose programming.",
+      "chapters": [
+        "hardware"
+      ],
+      "canon": false
+    },
+    {
+      "id": "imagenet",
+      "date": "2009",
+      "approx": false,
+      "track": "culture",
+      "title": "ImageNet",
+      "text": "A large labeled image dataset sets up the benchmark that deep learning would win.",
+      "chapters": [
+        "pretraining-data"
+      ],
+      "canon": true,
+      "ref": "Deng et al., “ImageNet: A Large-Scale Hierarchical Image Database” (2009)"
+    },
+    {
+      "id": "rrf-paper",
+      "date": "2009",
+      "approx": false,
+      "track": "techniques",
+      "title": "Reciprocal rank fusion",
+      "text": "Cormack and colleagues show that summing reciprocal ranks beats more complex fusion methods.",
+      "chapters": [
+        "hybrid-retrieval"
+      ],
+      "canon": false
+    },
+    {
+      "id": "alexnet",
+      "date": "2012",
+      "approx": false,
+      "track": "models",
+      "title": "AlexNet",
+      "text": "A GPU-trained convolutional network wins ImageNet by a wide margin and starts the deep learning boom.",
+      "chapters": [
+        "neural-networks",
+        "hardware"
+      ],
+      "canon": true,
+      "ref": "Krizhevsky, Sutskever and Hinton, “ImageNet Classification with Deep Convolutional Neural Networks” (2012)"
+    },
+    {
+      "id": "word2vec",
+      "date": "2013",
+      "approx": false,
+      "track": "techniques",
+      "title": "word2vec",
+      "text": "Word vectors learned from context capture meaning as geometry.",
+      "chapters": [
+        "representation-learning",
+        "embeddings"
+      ],
+      "canon": true,
+      "ref": "Mikolov et al., “Efficient Estimation of Word Representations in Vector Space” (2013)"
+    },
+    {
+      "id": "vae",
+      "date": "2013",
+      "approx": false,
+      "track": "techniques",
+      "title": "Variational autoencoders",
+      "text": "A principled way to learn latent variable generative models with neural networks.",
+      "chapters": [
+        "image-generation"
+      ],
+      "canon": true,
+      "ref": "Kingma and Welling, “Auto-Encoding Variational Bayes” (2013)"
+    },
+    {
+      "id": "gan",
+      "date": "2014",
+      "approx": false,
+      "track": "techniques",
+      "title": "Generative adversarial networks",
+      "text": "A generator and a discriminator trained against each other produce realistic images.",
+      "chapters": [
+        "image-generation"
+      ],
+      "canon": true,
+      "ref": "Goodfellow et al., “Generative Adversarial Nets” (2014)"
+    },
+    {
+      "id": "seq2seq",
+      "date": "2014",
+      "approx": false,
+      "track": "techniques",
+      "title": "Sequence to sequence",
+      "text": "Encoder-decoder networks translate whole sentences end to end.",
+      "chapters": [
+        "transformer-block"
+      ],
+      "canon": true,
+      "ref": "Sutskever, Vinyals and Le, “Sequence to Sequence Learning with Neural Networks” (2014)"
+    },
+    {
+      "id": "bahdanau",
+      "date": "2014",
+      "approx": false,
+      "track": "techniques",
+      "title": "Attention for translation",
+      "text": "A decoder learns to attend to relevant source words, the idea transformers would build on.",
+      "chapters": [
+        "attention"
+      ],
+      "canon": true,
+      "ref": "Bahdanau, Cho and Bengio, “Neural Machine Translation by Jointly Learning to Align and Translate” (2014)"
+    },
+    {
+      "id": "adam",
+      "date": "2014",
+      "approx": false,
+      "track": "techniques",
+      "title": "The Adam optimizer",
+      "text": "Adaptive per-parameter step sizes become the default way to train deep networks.",
+      "chapters": [
+        "calculus-optimization"
+      ],
+      "canon": true,
+      "ref": "Kingma and Ba, “Adam: A Method for Stochastic Optimization” (2014)"
+    },
+    {
+      "id": "resnet",
+      "date": "2015",
+      "approx": false,
+      "track": "techniques",
+      "title": "Residual networks",
+      "text": "Skip connections let networks hundreds of layers deep train reliably.",
+      "chapters": [
+        "neural-networks",
+        "transformer-block"
+      ],
+      "canon": true,
+      "ref": "He et al., “Deep Residual Learning for Image Recognition” (2015)"
+    },
+    {
+      "id": "bpe-nmt",
+      "date": "2015",
+      "approx": false,
+      "track": "techniques",
+      "title": "Subword tokenization",
+      "text": "Byte-pair encoding of subwords handles rare words in translation, and becomes the basis of LLM tokenizers.",
+      "chapters": [
+        "tokenization"
+      ],
+      "canon": true,
+      "ref": "Sennrich, Haddow and Birch, “Neural Machine Translation of Rare Words with Subword Units” (2015)"
+    },
+    {
+      "id": "distill-2015",
+      "date": "2015",
+      "approx": false,
+      "track": "techniques",
+      "title": "Knowledge distillation",
+      "text": "Small students learn from the soft outputs of large teachers.",
+      "chapters": [
+        "distillation-merging"
+      ],
+      "canon": true,
+      "ref": "Hinton, Vinyals and Dean, “Distilling the Knowledge in a Neural Network” (2015)"
+    },
+    {
+      "id": "alphago",
+      "date": "2016-03",
+      "approx": false,
+      "track": "agents",
+      "title": "AlphaGo beats Lee Sedol",
+      "text": "Deep networks plus tree search defeat a top Go professional.",
+      "chapters": [
+        "rl-primer"
+      ],
+      "canon": true,
+      "ref": "Silver et al., “Mastering the game of Go with deep neural networks and tree search” (2016)"
+    },
+    {
+      "id": "hnsw-paper",
+      "date": "2016",
+      "approx": false,
+      "track": "techniques",
+      "title": "HNSW",
+      "text": "Layered small-world graphs make approximate nearest-neighbor search fast at scale.",
+      "chapters": [
+        "vector-search"
+      ],
+      "canon": false
+    },
+    {
+      "id": "tpu",
+      "date": "2016-05",
+      "approx": false,
+      "track": "infra",
+      "title": "The TPU",
+      "text": "Google announces its Tensor Processing Unit, a chip built for neural networks.",
+      "chapters": [
+        "hardware"
+      ],
+      "canon": false
+    },
+    {
+      "id": "transformer",
+      "date": "2017-06",
+      "approx": false,
+      "track": "models",
+      "title": "Attention Is All You Need",
+      "text": "The transformer replaces recurrence with attention and becomes the architecture of modern AI.",
+      "chapters": [
+        "attention",
+        "transformer-block"
+      ],
+      "canon": true,
+      "ref": "Vaswani et al., “Attention Is All You Need” (2017)"
+    },
+    {
+      "id": "rlhf-2017",
+      "date": "2017-06",
+      "approx": false,
+      "track": "techniques",
+      "title": "Learning from human preferences",
+      "text": "Agents learn complex behaviors from human comparisons of their trajectories.",
+      "chapters": [
+        "preference-optimization"
+      ],
+      "canon": true,
+      "ref": "Christiano et al., “Deep Reinforcement Learning from Human Preferences” (2017)"
+    },
+    {
+      "id": "ppo",
+      "date": "2017-07",
+      "approx": false,
+      "track": "techniques",
+      "title": "PPO",
+      "text": "A stable policy-gradient algorithm that later powers RLHF.",
+      "chapters": [
+        "rl-primer"
+      ],
+      "canon": true,
+      "ref": "Schulman et al., “Proximal Policy Optimization Algorithms” (2017)"
+    },
+    {
+      "id": "moe-2017",
+      "date": "2017-01",
+      "approx": false,
+      "track": "techniques",
+      "title": "Sparsely gated experts",
+      "text": "Routing tokens to a few of many experts scales parameters without scaling compute.",
+      "chapters": [
+        "mixture-of-experts"
+      ],
+      "canon": true,
+      "ref": "Shazeer et al., “Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer” (2017)"
+    },
+    {
+      "id": "gpt-1",
+      "date": "2018-06",
+      "approx": false,
+      "track": "models",
+      "title": "Generative pre-training",
+      "text": "Pretraining a transformer on unlabeled text, then fine-tuning, beats task-specific models.",
+      "chapters": [
+        "pretraining-data"
+      ],
+      "canon": true,
+      "ref": "Radford et al., “Improving Language Understanding by Generative Pre-Training” (2018)"
+    },
+    {
+      "id": "bert",
+      "date": "2018-10",
+      "approx": false,
+      "track": "models",
+      "title": "BERT",
+      "text": "Bidirectional masked-language pretraining sets new records across language understanding tasks.",
+      "chapters": [
+        "transformer-block",
+        "embeddings"
+      ],
+      "canon": true,
+      "ref": "Devlin et al., “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding” (2018)"
+    },
+    {
+      "id": "gpt-2",
+      "date": "2019-02",
+      "approx": false,
+      "track": "models",
+      "title": "GPT-2",
+      "text": "A larger language model shows zero-shot multitask ability, and its staged release starts a debate on openness.",
+      "chapters": [
+        "frontier-families"
+      ],
+      "canon": true,
+      "ref": "Radford et al., “Language Models are Unsupervised Multitask Learners” (2019)"
+    },
+    {
+      "id": "bitter-lesson",
+      "date": "2019-03",
+      "approx": false,
+      "track": "culture",
+      "title": "The Bitter Lesson",
+      "text": "Sutton argues that general methods that scale with compute beat hand-built knowledge.",
+      "chapters": [
+        "mental-models"
+      ],
+      "canon": true,
+      "ref": "Sutton, “The Bitter Lesson” (2019 essay)"
+    },
+    {
+      "id": "t5",
+      "date": "2019-10",
+      "approx": false,
+      "track": "models",
+      "title": "T5",
+      "text": "Every NLP task cast as text-to-text, with a systematic study of transfer learning.",
+      "chapters": [
+        "transformer-block"
+      ],
+      "canon": true,
+      "ref": "Raffel et al., “Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer” (2019)"
+    },
+    {
+      "id": "kaplan",
+      "date": "2020-01",
+      "approx": false,
+      "track": "techniques",
+      "title": "Scaling laws",
+      "text": "Loss falls as a smooth power law in parameters, data and compute.",
+      "chapters": [
+        "scaling-laws"
+      ],
+      "canon": true,
+      "ref": "Kaplan et al., “Scaling Laws for Neural Language Models” (2020)"
+    },
+    {
+      "id": "gpt-3",
+      "date": "2020-05",
+      "approx": false,
+      "track": "models",
+      "title": "GPT-3 and in-context learning",
+      "text": "A 175-billion-parameter model learns tasks from a few examples in the prompt.",
+      "chapters": [
+        "prompting-fundamentals"
+      ],
+      "canon": true,
+      "ref": "Brown et al., “Language Models are Few-Shot Learners” (2020)"
+    },
+    {
+      "id": "rag-paper",
+      "date": "2020-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "Retrieval-augmented generation",
+      "text": "Retrieved passages are combined with a generator, naming the RAG pattern.",
+      "chapters": [
+        "rag-fundamentals"
+      ],
+      "canon": true,
+      "ref": "Lewis et al., “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks” (2020)"
+    },
+    {
+      "id": "dpr",
+      "date": "2020-04",
+      "approx": false,
+      "track": "techniques",
+      "title": "Dense passage retrieval",
+      "text": "Learned dense embeddings beat BM25 for open-domain question answering.",
+      "chapters": [
+        "embeddings",
+        "rag-fundamentals"
+      ],
+      "canon": true,
+      "ref": "Karpukhin et al., “Dense Passage Retrieval for Open-Domain Question Answering” (2020)"
+    },
+    {
+      "id": "ddpm",
+      "date": "2020-06",
+      "approx": false,
+      "track": "techniques",
+      "title": "Denoising diffusion",
+      "text": "Diffusion models generate high-quality images by learning to reverse noise.",
+      "chapters": [
+        "image-generation"
+      ],
+      "canon": true,
+      "ref": "Ho, Jain and Abbeel, “Denoising Diffusion Probabilistic Models” (2020)"
+    },
+    {
+      "id": "vit",
+      "date": "2020-10",
+      "approx": false,
+      "track": "models",
+      "title": "Vision transformers",
+      "text": "Images become sequences of patches, and transformers match convolutional networks.",
+      "chapters": [
+        "vision-language-models"
+      ],
+      "canon": true,
+      "ref": "Dosovitskiy et al., “An Image is Worth 16x16 Words” (2020)"
+    },
+    {
+      "id": "clip",
+      "date": "2021-01",
+      "approx": false,
+      "track": "models",
+      "title": "CLIP",
+      "text": "Contrastive training on image-text pairs aligns vision and language in one embedding space.",
+      "chapters": [
+        "representation-learning"
+      ],
+      "canon": true,
+      "ref": "Radford et al., “Learning Transferable Visual Models From Natural Language Supervision” (2021)"
+    },
+    {
+      "id": "lora",
+      "date": "2021-06",
+      "approx": false,
+      "track": "techniques",
+      "title": "LoRA",
+      "text": "Low-rank adapters make fine-tuning large models cheap.",
+      "chapters": [
+        "fine-tuning-practice"
+      ],
+      "canon": true,
+      "ref": "Hu et al., “LoRA: Low-Rank Adaptation of Large Language Models” (2021)"
+    },
+    {
+      "id": "rope",
+      "date": "2021-04",
+      "approx": false,
+      "track": "techniques",
+      "title": "Rotary position embeddings",
+      "text": "Positions encoded as rotations become the standard for LLMs.",
+      "chapters": [
+        "positional-encoding"
+      ],
+      "canon": true,
+      "ref": "Su et al., “RoFormer: Enhanced Transformer with Rotary Position Embedding” (2021)"
+    },
+    {
+      "id": "alphafold",
+      "date": "2021-07",
+      "approx": false,
+      "track": "models",
+      "title": "AlphaFold 2",
+      "text": "Protein structure prediction reaches experimental accuracy for many proteins.",
+      "chapters": [
+        "ai-for-science"
+      ],
+      "canon": true,
+      "ref": "Jumper et al., “Highly accurate protein structure prediction with AlphaFold” (2021)"
+    },
+    {
+      "id": "cot",
+      "date": "2022-01",
+      "approx": false,
+      "track": "techniques",
+      "title": "Chain of thought",
+      "text": "Prompting models to reason step by step improves multi-step problems.",
+      "chapters": [
+        "reasoning-prompts"
+      ],
+      "canon": true,
+      "ref": "Wei et al., “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models” (2022)"
+    },
+    {
+      "id": "instructgpt",
+      "date": "2022-03",
+      "approx": false,
+      "track": "techniques",
+      "title": "InstructGPT",
+      "text": "RLHF makes a smaller model preferred over a much larger base model.",
+      "chapters": [
+        "preference-optimization"
+      ],
+      "canon": true,
+      "ref": "Ouyang et al., “Training language models to follow instructions with human feedback” (2022)"
+    },
+    {
+      "id": "chinchilla",
+      "date": "2022-03",
+      "approx": false,
+      "track": "techniques",
+      "title": "Chinchilla",
+      "text": "Compute-optimal models need about 20 tokens per parameter; earlier models were under-trained.",
+      "chapters": [
+        "scaling-laws"
+      ],
+      "canon": true,
+      "ref": "Hoffmann et al., “Training Compute-Optimal Large Language Models” (2022)"
+    },
+    {
+      "id": "h100",
+      "date": "2022-03",
+      "approx": false,
+      "track": "infra",
+      "title": "The H100 GPU",
+      "text": "NVIDIA announces the H100 with FP8 support for transformer workloads.",
+      "chapters": [
+        "hardware"
+      ],
+      "canon": false
+    },
+    {
+      "id": "flashattention",
+      "date": "2022-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "FlashAttention",
+      "text": "IO-aware exact attention makes long sequences much faster.",
+      "chapters": [
+        "long-context"
+      ],
+      "canon": true,
+      "ref": "Dao et al., “FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness” (2022)"
+    },
+    {
+      "id": "injection-term",
+      "date": "2022-09",
+      "approx": false,
+      "track": "safety",
+      "title": "“Prompt injection” is named",
+      "text": "Simon Willison names the attack by analogy with SQL injection.",
+      "chapters": [
+        "prompt-injection"
+      ],
+      "canon": false
+    },
+    {
+      "id": "superposition",
+      "date": "2022-09",
+      "approx": false,
+      "track": "techniques",
+      "title": "Toy models of superposition",
+      "text": "Networks pack more features than dimensions into overlapping directions.",
+      "chapters": [
+        "mech-interp"
+      ],
+      "canon": true,
+      "ref": "Elhage et al., “Toy Models of Superposition” (2022)"
+    },
+    {
+      "id": "react",
+      "date": "2022-10",
+      "approx": false,
+      "track": "agents",
+      "title": "ReAct",
+      "text": "Interleaving reasoning and tool actions becomes the template for agents.",
+      "chapters": [
+        "agent-loop"
+      ],
+      "canon": true,
+      "ref": "Yao et al., “ReAct: Synergizing Reasoning and Acting in Language Models” (2022)"
+    },
+    {
+      "id": "speculative",
+      "date": "2022-11",
+      "approx": false,
+      "track": "techniques",
+      "title": "Speculative decoding",
+      "text": "Drafting and verifying tokens speeds up generation without changing outputs.",
+      "chapters": [
+        "speculative-decoding"
+      ],
+      "canon": true,
+      "ref": "Leviathan, Kalman and Matias, “Fast Inference from Transformers via Speculative Decoding” (2022)"
+    },
+    {
+      "id": "chatgpt",
+      "date": "2022-11",
+      "approx": false,
+      "track": "culture",
+      "title": "ChatGPT",
+      "text": "OpenAI launches ChatGPT and conversational AI reaches the mass market.",
+      "chapters": [
+        "ai-product-ux"
+      ],
+      "canon": false
+    },
+    {
+      "id": "cai",
+      "date": "2022-12",
+      "approx": false,
+      "track": "safety",
+      "title": "Constitutional AI",
+      "text": "Training with AI feedback guided by written principles.",
+      "chapters": [
+        "safety-character-training"
+      ],
+      "canon": true,
+      "ref": "Bai et al., “Constitutional AI: Harmlessness from AI Feedback” (2022)"
+    },
+    {
+      "id": "nist-rmf",
+      "date": "2023-01",
+      "approx": false,
+      "track": "safety",
+      "title": "NIST AI RMF 1.0",
+      "text": "The US National Institute of Standards and Technology publishes its AI Risk Management Framework.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "greshake",
+      "date": "2023-02",
+      "approx": false,
+      "track": "safety",
+      "title": "Indirect prompt injection",
+      "text": "Researchers show attacks on real LLM-integrated apps through content they retrieve.",
+      "chapters": [
+        "prompt-injection"
+      ],
+      "canon": true,
+      "ref": "Greshake et al., “Not what you’ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection” (2023)"
+    },
+    {
+      "id": "llama",
+      "date": "2023-02",
+      "approx": false,
+      "track": "models",
+      "title": "LLaMA",
+      "text": "Meta’s release catalyzes the open-weight ecosystem.",
+      "chapters": [
+        "open-weight-frontier"
+      ],
+      "canon": true,
+      "ref": "Touvron et al., “LLaMA: Open and Efficient Foundation Language Models” (2023)"
+    },
+    {
+      "id": "toolformer",
+      "date": "2023-02",
+      "approx": false,
+      "track": "agents",
+      "title": "Toolformer",
+      "text": "A model teaches itself when to call APIs.",
+      "chapters": [
+        "agent-tools"
+      ],
+      "canon": true,
+      "ref": "Schick et al., “Toolformer: Language Models Can Teach Themselves to Use Tools” (2023)"
+    },
+    {
+      "id": "gpt-4",
+      "date": "2023-03",
+      "approx": false,
+      "track": "models",
+      "title": "GPT-4",
+      "text": "OpenAI releases GPT-4, a large step in capability.",
+      "chapters": [
+        "frontier-families"
+      ],
+      "canon": false
+    },
+    {
+      "id": "claude-1",
+      "date": "2023-03",
+      "approx": false,
+      "track": "models",
+      "title": "Claude",
+      "text": "Anthropic releases its first Claude models.",
+      "chapters": [
+        "frontier-families"
+      ],
+      "canon": false
+    },
+    {
+      "id": "dpo",
+      "date": "2023-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "Direct Preference Optimization",
+      "text": "Preference training without a reward model or RL loop.",
+      "chapters": [
+        "preference-optimization"
+      ],
+      "canon": true,
+      "ref": "Rafailov et al., “Direct Preference Optimization: Your Language Model is Secretly a Reward Model” (2023)"
+    },
+    {
+      "id": "vllm",
+      "date": "2023-06",
+      "approx": false,
+      "track": "infra",
+      "title": "vLLM and PagedAttention",
+      "text": "Paged KV-cache memory makes high-throughput open serving practical.",
+      "chapters": [
+        "batching-scheduling",
+        "kv-cache"
+      ],
+      "canon": true,
+      "ref": "Kwon et al., “Efficient Memory Management for Large Language Model Serving with PagedAttention” (2023)"
+    },
+    {
+      "id": "lost-middle",
+      "date": "2023-07",
+      "approx": false,
+      "track": "techniques",
+      "title": "Lost in the middle",
+      "text": "Models use the start and end of long contexts better than the middle.",
+      "chapters": [
+        "long-context"
+      ],
+      "canon": true,
+      "ref": "Liu et al., “Lost in the Middle: How Language Models Use Long Contexts” (2023)"
+    },
+    {
+      "id": "rsp",
+      "date": "2023-09",
+      "approx": false,
+      "track": "safety",
+      "title": "Responsible Scaling Policy",
+      "text": "Anthropic ties capability thresholds to required safeguards.",
+      "chapters": [
+        "frontier-safety-frameworks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "swe-bench",
+      "date": "2023-10",
+      "approx": false,
+      "track": "agents",
+      "title": "SWE-bench",
+      "text": "Real GitHub issues become the benchmark for coding agents.",
+      "chapters": [
+        "coding-agents"
+      ],
+      "canon": true,
+      "ref": "Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?” (2023)"
+    },
+    {
+      "id": "bletchley",
+      "date": "2023-11",
+      "approx": false,
+      "track": "safety",
+      "title": "Bletchley Park summit",
+      "text": "The UK hosts the first international AI Safety Summit.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mamba",
+      "date": "2023-12",
+      "approx": false,
+      "track": "techniques",
+      "title": "Mamba",
+      "text": "Selective state-space models offer linear-time sequence modeling.",
+      "chapters": [
+        "beyond-transformers"
+      ],
+      "canon": true,
+      "ref": "Gu and Dao, “Mamba: Linear-Time Sequence Modeling with Selective State Spaces” (2023)"
+    },
+    {
+      "id": "mixtral",
+      "date": "2023-12",
+      "approx": false,
+      "track": "models",
+      "title": "Mixtral 8x7B",
+      "text": "Mistral releases a sparse mixture-of-experts open-weight model.",
+      "chapters": [
+        "mixture-of-experts"
+      ],
+      "canon": false
+    },
+    {
+      "id": "iso42001",
+      "date": "2023-12",
+      "approx": false,
+      "track": "safety",
+      "title": "ISO/IEC 42001",
+      "text": "The first certifiable AI management system standard is published.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "grpo",
+      "date": "2024-02",
+      "approx": false,
+      "track": "techniques",
+      "title": "GRPO",
+      "text": "DeepSeekMath introduces group-relative policy optimization for reasoning.",
+      "chapters": [
+        "rlvr-reasoning"
+      ],
+      "canon": true,
+      "ref": "Shao et al., “DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models” (2024)"
+    },
+    {
+      "id": "graphrag",
+      "date": "2024-04",
+      "approx": false,
+      "track": "techniques",
+      "title": "GraphRAG",
+      "text": "Entity graphs and community summaries answer global questions over a corpus.",
+      "chapters": [
+        "advanced-rag"
+      ],
+      "canon": true,
+      "ref": "Edge et al., “From Local to Global: A Graph RAG Approach to Query-Focused Summarization” (2024)"
+    },
+    {
+      "id": "scaling-mono",
+      "date": "2024-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "Scaling monosemanticity",
+      "text": "Sparse autoencoders extract interpretable features from a production model.",
+      "chapters": [
+        "mech-interp"
+      ],
+      "canon": true,
+      "ref": "Templeton et al., “Scaling Monosemanticity” (2024)"
+    },
+    {
+      "id": "eu-ai-act",
+      "date": "2024-08",
+      "approx": false,
+      "track": "safety",
+      "title": "EU AI Act in force",
+      "text": "The European Union’s AI Act enters into force, with obligations phased in over years.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "o1",
+      "date": "2024-09",
+      "approx": false,
+      "track": "models",
+      "title": "Reasoning models",
+      "text": "OpenAI previews o1, popularizing models that think before answering.",
+      "chapters": [
+        "reasoning-models"
+      ],
+      "canon": false
+    },
+    {
+      "id": "contextual-retrieval",
+      "date": "2024-09",
+      "approx": false,
+      "track": "techniques",
+      "title": "Contextual retrieval",
+      "text": "Anthropic shows that prepending chunk context cuts failed retrievals.",
+      "chapters": [
+        "chunking"
+      ],
+      "canon": false
+    },
+    {
+      "id": "computer-use",
+      "date": "2024-10",
+      "approx": false,
+      "track": "agents",
+      "title": "Computer use",
+      "text": "Anthropic releases a beta that lets Claude operate a computer through screenshots and input actions.",
+      "chapters": [
+        "computer-use-agents"
+      ],
+      "canon": false
+    },
+    {
+      "id": "nobel-2024",
+      "date": "2024-10",
+      "approx": false,
+      "track": "culture",
+      "title": "Nobel prizes for AI",
+      "text": "Physics honors Hopfield and Hinton; Chemistry honors Baker, Hassabis and Jumper.",
+      "chapters": [
+        "ai-for-science"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-launch",
+      "date": "2024-11",
+      "approx": false,
+      "track": "protocols",
+      "title": "Model Context Protocol",
+      "text": "Anthropic open-sources MCP; the first specification is dated 2024-11-05.",
+      "chapters": [
+        "mcp-spec-history",
+        "mcp-architecture"
+      ],
+      "canon": false
+    },
+    {
+      "id": "effective-agents",
+      "date": "2024-12",
+      "approx": false,
+      "track": "agents",
+      "title": "Building effective agents",
+      "text": "Anthropic’s essay distinguishes workflows from agents and names five workflow patterns.",
+      "chapters": [
+        "workflow-patterns",
+        "what-is-an-agent"
+      ],
+      "canon": true,
+      "ref": "Anthropic, “Building effective agents” (2024 essay)"
+    },
+    {
+      "id": "deepseek-v3",
+      "date": "2024-12",
+      "approx": false,
+      "track": "models",
+      "title": "DeepSeek-V3",
+      "text": "A 671-billion-parameter MoE with 37 billion active parameters, released with open weights.",
+      "chapters": [
+        "mixture-of-experts",
+        "open-weight-frontier"
+      ],
+      "canon": false
+    },
+    {
+      "id": "deepseek-r1",
+      "date": "2025-01",
+      "approx": false,
+      "track": "models",
+      "title": "DeepSeek-R1",
+      "text": "Reinforcement learning produces an open reasoning model rivaling closed ones.",
+      "chapters": [
+        "rlvr-reasoning"
+      ],
+      "canon": true,
+      "ref": "DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning” (2025)"
+    },
+    {
+      "id": "claude-code-preview",
+      "date": "2025-02",
+      "approx": false,
+      "track": "agents",
+      "title": "Claude Code",
+      "text": "Anthropic previews an agentic coding tool for the terminal.",
+      "chapters": [
+        "claude-code"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-2025-03",
+      "date": "2025-03",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP 2025-03-26",
+      "text": "Streamable HTTP and an OAuth 2.1-based authorization framework arrive.",
+      "chapters": [
+        "mcp-spec-history",
+        "mcp-transports"
+      ],
+      "canon": false
+    },
+    {
+      "id": "metr-horizon",
+      "date": "2025-03",
+      "approx": false,
+      "track": "techniques",
+      "title": "Task horizons measured",
+      "text": "METR reports the length of tasks AI can complete doubling roughly every seven months.",
+      "chapters": [
+        "long-horizon-autonomy"
+      ],
+      "canon": false
+    },
+    {
+      "id": "a2a-launch",
+      "date": "2025-04",
+      "approx": false,
+      "track": "protocols",
+      "title": "Agent2Agent",
+      "text": "Google announces A2A for agent-to-agent communication.",
+      "chapters": [
+        "a2a"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-2025-06",
+      "date": "2025-06",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP 2025-06-18",
+      "text": "Structured tool output, elicitation and resource links are added.",
+      "chapters": [
+        "mcp-spec-history",
+        "mcp-primitives"
+      ],
+      "canon": false
+    },
+    {
+      "id": "multiagent-debate",
+      "date": "2025-06",
+      "approx": false,
+      "track": "agents",
+      "title": "The multi-agent debate",
+      "text": "Anthropic and Cognition publish opposing write-ups on when to build multi-agent systems.",
+      "chapters": [
+        "multi-agent"
+      ],
+      "canon": false
+    },
+    {
+      "id": "trifecta",
+      "date": "2025-06",
+      "approx": false,
+      "track": "safety",
+      "title": "The lethal trifecta",
+      "text": "Simon Willison names the combination of private data, untrusted content and exfiltration.",
+      "chapters": [
+        "prompt-injection"
+      ],
+      "canon": false
+    },
+    {
+      "id": "imo-2025",
+      "date": "2025-07",
+      "approx": false,
+      "track": "culture",
+      "title": "Gold-medal math",
+      "text": "AI systems reach gold-medal level at the International Mathematical Olympiad.",
+      "chapters": [
+        "ai-for-science"
+      ],
+      "canon": false
+    },
+    {
+      "id": "eu-gpai",
+      "date": "2025-08",
+      "approx": false,
+      "track": "safety",
+      "title": "EU rules for general-purpose models",
+      "text": "EU AI Act obligations for general-purpose AI models begin to apply.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "agents-md",
+      "date": "2025-08",
+      "approx": true,
+      "track": "protocols",
+      "title": "AGENTS.md",
+      "text": "A shared instruction-file convention spreads across coding agents.",
+      "chapters": [
+        "coding-harness-landscape"
+      ],
+      "canon": false
+    },
+    {
+      "id": "gpt-oss",
+      "date": "2025-08",
+      "approx": false,
+      "track": "models",
+      "title": "Open weights from OpenAI",
+      "text": "OpenAI releases open-weight gpt-oss models.",
+      "chapters": [
+        "open-weight-frontier"
+      ],
+      "canon": false
+    },
+    {
+      "id": "context-essay",
+      "date": "2025-09",
+      "approx": false,
+      "track": "techniques",
+      "title": "Context engineering",
+      "text": "Anthropic publishes “Effective context engineering for AI agents”.",
+      "chapters": [
+        "context-engineering"
+      ],
+      "canon": true,
+      "ref": "Anthropic, “Effective context engineering for AI agents” (2025 essay)"
+    },
+    {
+      "id": "agent-skills",
+      "date": "2025-10",
+      "approx": false,
+      "track": "protocols",
+      "title": "Agent Skills",
+      "text": "Anthropic introduces skills: folders with a SKILL.md file loaded on demand.",
+      "chapters": [
+        "skills-plugins"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-2025-11",
+      "date": "2025-11",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP 2025-11-25",
+      "text": "Experimental tasks, URL-mode elicitation and client ID metadata documents.",
+      "chapters": [
+        "mcp-spec-history"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-foundation",
+      "date": "2025-12",
+      "approx": true,
+      "track": "protocols",
+      "title": "MCP moves to a foundation",
+      "text": "MCP is contributed to a Linux Foundation effort for agentic AI (verify the current structure).",
+      "chapters": [
+        "protocol-governance"
+      ],
+      "canon": false
+    },
+    {
+      "id": "a2a-1",
+      "date": "2026-03",
+      "approx": false,
+      "track": "protocols",
+      "title": "A2A 1.0.0",
+      "text": "A2A reaches 1.0 with breaking specification changes (verified Nov 2026).",
+      "chapters": [
+        "a2a"
+      ],
+      "canon": false
+    },
+    {
+      "id": "a2a-101",
+      "date": "2026-05",
+      "approx": false,
+      "track": "protocols",
+      "title": "A2A 1.0.1",
+      "text": "A patch release follows on 26 May 2026 (verified Nov 2026).",
+      "chapters": [
+        "a2a"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mcp-2026",
+      "date": "2026-07",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP 2026-07-28: stateless",
+      "text": "No handshake, no sessions, server/discover and multi round-trip requests (verified Nov 2026).",
+      "chapters": [
+        "mcp-architecture",
+        "mcp-client-features"
+      ],
+      "canon": false
+    },
+    {
+      "id": "claude-code-2026",
+      "date": "2026-11",
+      "approx": false,
+      "track": "agents",
+      "title": "Claude Code 2.1.317",
+      "text": "Agent teams, an auto permission mode, scheduled tasks, plugins and MCP tool search (verified Nov 2026).",
+      "chapters": [
+        "claude-code"
+      ],
+      "canon": false
+    },
+    {
+      "id": "reflexion",
+      "date": "2023-03",
+      "approx": false,
+      "track": "techniques",
+      "title": "Reflexion",
+      "text": "Agents improve by writing verbal lessons from failed attempts and retrying with them.",
+      "chapters": [
+        "planning-reasoning"
+      ],
+      "canon": true,
+      "ref": "Shinn et al., “Reflexion: Language Agents with Verbal Reinforcement Learning” (2023)"
+    },
+    {
+      "id": "generative-agents",
+      "date": "2023-04",
+      "approx": false,
+      "track": "agents",
+      "title": "Generative agents",
+      "text": "Simulated characters keep a memory stream retrieved by recency, importance and relevance.",
+      "chapters": [
+        "agent-memory"
+      ],
+      "canon": true,
+      "ref": "Park et al., “Generative Agents: Interactive Simulacra of Human Behavior” (2023)"
+    },
+    {
+      "id": "tree-of-thoughts",
+      "date": "2023-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "Tree of Thoughts",
+      "text": "Searching over branching reasoning steps improves planning puzzles.",
+      "chapters": [
+        "planning-reasoning"
+      ],
+      "canon": true,
+      "ref": "Yao et al., “Tree of Thoughts: Deliberate Problem Solving with Large Language Models” (2023)"
+    },
+    {
+      "id": "memgpt",
+      "date": "2023-10",
+      "approx": false,
+      "track": "agents",
+      "title": "MemGPT",
+      "text": "The context window is managed like an operating system’s memory hierarchy, paging facts in and out.",
+      "chapters": [
+        "agent-memory"
+      ],
+      "canon": true,
+      "ref": "Packer et al., “MemGPT: Towards LLMs as Operating Systems” (2023)"
+    },
+    {
+      "id": "tool-poisoning",
+      "date": "2025-04",
+      "approx": true,
+      "track": "safety",
+      "title": "Tool poisoning attacks",
+      "text": "Researchers show hidden instructions in MCP tool descriptions steering agents to leak data.",
+      "chapters": [
+        "mcp-security"
+      ],
+      "canon": false
+    },
+    {
+      "id": "us-eo-14110",
+      "date": "2023-10",
+      "approx": false,
+      "track": "safety",
+      "title": "US Executive Order 14110",
+      "text": "A broad US executive order on AI safety, security and trust; revoked in January 2025.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "seoul-summit",
+      "date": "2024-05",
+      "approx": false,
+      "track": "safety",
+      "title": "Seoul AI summit",
+      "text": "Frontier developers sign commitments to publish safety frameworks.",
+      "chapters": [
+        "frontier-safety-frameworks",
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "us-eo-revoked",
+      "date": "2025-01",
+      "approx": false,
+      "track": "safety",
+      "title": "Executive Order 14110 revoked",
+      "text": "The incoming US administration revokes the 2023 AI executive order.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "eu-prohibitions",
+      "date": "2025-02",
+      "approx": false,
+      "track": "safety",
+      "title": "EU AI Act prohibitions apply",
+      "text": "Bans on unacceptable-risk AI practices take effect.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "paris-summit",
+      "date": "2025-02",
+      "approx": false,
+      "track": "safety",
+      "title": "Paris AI Action Summit",
+      "text": "An international summit emphasizing adoption and innovation alongside safety.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "asl3",
+      "date": "2025-05",
+      "approx": false,
+      "track": "safety",
+      "title": "ASL-3 protections activated",
+      "text": "Anthropic activates ASL-3 safeguards for Claude Opus 4 as a precaution.",
+      "chapters": [
+        "frontier-safety-frameworks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "gpai-code",
+      "date": "2025-07",
+      "approx": false,
+      "track": "safety",
+      "title": "EU GPAI Code of Practice",
+      "text": "A voluntary code to help general-purpose model providers meet AI Act obligations.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "us-action-plan",
+      "date": "2025-07",
+      "approx": false,
+      "track": "safety",
+      "title": "America’s AI Action Plan",
+      "text": "A US federal plan focused on innovation, infrastructure and international AI policy.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ca-sb53",
+      "date": "2025-09",
+      "approx": false,
+      "track": "safety",
+      "title": "California SB 53",
+      "text": "A state law requiring transparency from large frontier AI developers.",
+      "chapters": [
+        "governance-regulation",
+        "frontier-safety-frameworks"
+      ],
+      "canon": false
+    },
+    {
+      "id": "model-export-controls",
+      "date": "2026-06",
+      "approx": false,
+      "track": "safety",
+      "title": "Export controls reach model access",
+      "text": "US export controls lead Anthropic to suspend access to two frontier models from 12 to 30 June 2026; access is restored on 1 July.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "Anthropic statement, anthropic.com/news/fable-mythos-access"
+    },
+    {
+      "id": "eu-high-risk",
+      "date": "2026-08",
+      "approx": false,
+      "track": "safety",
+      "title": "EU high-risk obligations scheduled",
+      "text": "Most high-risk system obligations are scheduled to apply; delays were proposed in late 2025 (verify current dates).",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false
+    }
+  ]
+}

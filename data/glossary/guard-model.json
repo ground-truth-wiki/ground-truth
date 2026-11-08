@@ -1,0 +1,13 @@
+{
+  "id": "guard-model",
+  "term": "Guard model",
+  "def": "A classifier model that screens inputs or outputs against a safety or content policy.",
+  "practice": "Calibrate it on your data; measure false positives.",
+  "aliases": [
+    "Llama Guard",
+    "moderation model"
+  ],
+  "chapters": [
+    "guardrails-control"
+  ]
+}

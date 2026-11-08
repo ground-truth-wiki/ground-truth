@@ -1,0 +1,10 @@
+{
+  "id": "ambient-assistant",
+  "term": "Ambient assistant",
+  "def": "An assistant that acts on triggers such as new emails or upcoming events, rather than only on prompts.",
+  "practice": "Proactive actions should arrive as proposals.",
+  "aliases": [],
+  "chapters": [
+    "personal-assistants"
+  ]
+}

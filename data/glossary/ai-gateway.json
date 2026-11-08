@@ -1,0 +1,13 @@
+{
+  "id": "ai-gateway",
+  "term": "AI gateway",
+  "def": "A proxy between applications and model providers offering one API, failover, caching, logging and spend controls.",
+  "practice": "Install it before your first outage.",
+  "aliases": [
+    "LLM gateway",
+    "model router"
+  ],
+  "chapters": [
+    "gateways-routers"
+  ]
+}

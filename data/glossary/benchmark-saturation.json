@@ -1,0 +1,12 @@
+{
+  "id": "benchmark-saturation",
+  "term": "Benchmark saturation",
+  "def": "When top models approach a benchmark’s ceiling so it no longer separates them.",
+  "practice": "Move to harder or fresher evaluations.",
+  "aliases": [
+    "saturated"
+  ],
+  "chapters": [
+    "benchmark-literacy"
+  ]
+}

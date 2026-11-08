@@ -1,0 +1,10 @@
+{
+  "id": "automated-red-teaming",
+  "term": "Automated red teaming",
+  "def": "Using models and tools to generate and run attacks at scale.",
+  "practice": "Breadth to complement human depth.",
+  "aliases": [],
+  "chapters": [
+    "red-teaming"
+  ]
+}

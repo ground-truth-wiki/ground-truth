@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b19-3",
+    "chapter": "open-weight-frontier",
+    "q": "What is the difference between open weights and open source?",
+    "options": [
+      "None",
+      "Open weights publish parameters; open source also implies open code, data or permissive terms",
+      "Open source is always smaller",
+      "Open weights are always free to use for any purpose"
+    ],
+    "answer": 1,
+    "explain": "Check licenses: open weights can carry restrictions."
+  },
+  {
+    "id": "qow-1",
+    "chapter": "open-weight-frontier",
+    "q": "What does “open weights” usually not include?",
+    "options": [
+      "The weights",
+      "Training data and full training code",
+      "A license",
+      "Inference code"
+    ],
+    "answer": 1,
+    "explain": "Open weights differ from fully open."
+  },
+  {
+    "id": "qow-2",
+    "chapter": "open-weight-frontier",
+    "q": "What should you check before shipping an open model?",
+    "options": [
+      "Its stars",
+      "Its license and acceptable-use policy",
+      "Its logo",
+      "Its release month"
+    ],
+    "answer": 1,
+    "explain": "Community licenses add conditions."
+  },
+  {
+    "id": "qow-3",
+    "chapter": "open-weight-frontier",
+    "q": "Why do teams choose open weights?",
+    "options": [
+      "They are always better",
+      "Data control, customization, offline use and cost at high volume",
+      "No operations needed",
+      "They are newer"
+    ],
+    "answer": 1,
+    "explain": "Trade-off: you run serving and safety."
+  }
+]

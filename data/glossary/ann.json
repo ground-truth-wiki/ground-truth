@@ -1,0 +1,14 @@
+{
+  "id": "ann",
+  "term": "Approximate nearest neighbor search",
+  "def": "Finding vectors close to a query quickly by accepting that a few true neighbors may be missed.",
+  "practice": "Tune for recall at your latency budget.",
+  "aliases": [
+    "ANN",
+    "vector search"
+  ],
+  "chapters": [
+    "vector-search"
+  ],
+  "abbr": "ANN"
+}

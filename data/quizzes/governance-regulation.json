@@ -1,0 +1,41 @@
+[
+  {
+    "id": "gr-1",
+    "chapter": "governance-regulation",
+    "q": "Under the EU AI Act, which tier carries the heaviest obligations for deployed systems?",
+    "options": [
+      "Minimal risk",
+      "Transparency",
+      "High-risk systems",
+      "Prohibited practices have obligations to comply with"
+    ],
+    "answer": 2,
+    "explain": "High-risk systems need risk management, documentation, oversight and more; prohibited practices are banned outright."
+  },
+  {
+    "id": "gr-2",
+    "chapter": "governance-regulation",
+    "q": "Above what training compute are general-purpose models presumed to have systemic risk under the EU AI Act?",
+    "options": [
+      "10¹⁸ FLOP",
+      "10²¹ FLOP",
+      "10²⁵ FLOP",
+      "10³⁰ FLOP"
+    ],
+    "answer": 2,
+    "explain": "The presumption threshold is 10²⁵ FLOP."
+  },
+  {
+    "id": "gr-3",
+    "chapter": "governance-regulation",
+    "q": "What is the first question to answer for an AI feature’s regulatory obligations?",
+    "options": [
+      "Which GPU it uses",
+      "Your role (provider, deployer) and the use case",
+      "The model’s name",
+      "Its latency"
+    ],
+    "answer": 1,
+    "explain": "Role and use case decide obligations; jurisdiction follows."
+  }
+]

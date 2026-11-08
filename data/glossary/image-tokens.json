@@ -1,0 +1,10 @@
+{
+  "id": "image-tokens",
+  "term": "Image tokens",
+  "def": "The token-like vectors an image becomes inside a multimodal model, and the units it is billed in.",
+  "practice": "",
+  "aliases": [],
+  "chapters": [
+    "vision-language-models"
+  ]
+}

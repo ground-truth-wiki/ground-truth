@@ -1,0 +1,12 @@
+{
+  "id": "protected-resource-metadata",
+  "term": "Protected-resource metadata",
+  "def": "A document (RFC 9728) published by a resource server that names the authorization servers it trusts.",
+  "practice": "MCP servers point to it in their 401 responses.",
+  "aliases": [
+    "RFC 9728"
+  ],
+  "chapters": [
+    "mcp-authorization"
+  ]
+}

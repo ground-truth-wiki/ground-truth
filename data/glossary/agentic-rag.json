@@ -1,0 +1,11 @@
+{
+  "id": "agentic-rag",
+  "term": "Agentic RAG",
+  "def": "Retrieval performed by an agent that decides when and what to search, iterating until it has enough evidence.",
+  "practice": "Retrieval moved inside the agent loop rather than disappearing.",
+  "aliases": [],
+  "chapters": [
+    "advanced-rag",
+    "deep-research"
+  ]
+}

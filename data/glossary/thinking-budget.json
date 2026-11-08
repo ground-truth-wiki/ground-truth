@@ -1,0 +1,12 @@
+{
+  "id": "thinking-budget",
+  "term": "Thinking budget",
+  "def": "A limit on how many tokens a reasoning model may spend thinking before it answers.",
+  "practice": "",
+  "aliases": [
+    "effort level"
+  ],
+  "chapters": [
+    "reasoning-models"
+  ]
+}

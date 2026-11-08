@@ -1,0 +1,10 @@
+{
+  "id": "wilson-interval",
+  "term": "Wilson interval",
+  "def": "A confidence interval for proportions that behaves well near 0% and 100%.",
+  "practice": "Preferable to the simple normal interval at extremes.",
+  "aliases": [],
+  "chapters": [
+    "eval-statistics"
+  ]
+}

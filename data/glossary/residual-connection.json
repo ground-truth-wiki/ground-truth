@@ -1,0 +1,12 @@
+{
+  "id": "residual-connection",
+  "term": "Residual connection",
+  "def": "Adding a layer’s input to its output so information and gradients flow through deep networks.",
+  "practice": "",
+  "aliases": [
+    "skip connection"
+  ],
+  "chapters": [
+    "neural-networks"
+  ]
+}

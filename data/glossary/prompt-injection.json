@@ -1,0 +1,13 @@
+{
+  "id": "prompt-injection",
+  "term": "Prompt injection",
+  "def": "Untrusted text taking control of a model by posing as instructions.",
+  "practice": "Unsolved; defend by limiting what a hijacked model can do.",
+  "aliases": [
+    "indirect prompt injection",
+    "injection"
+  ],
+  "chapters": [
+    "prompt-injection"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "learned-router",
+  "term": "Learned router",
+  "def": "A classifier that predicts which model should handle a request, usually to send easy requests to cheaper models.",
+  "practice": "",
+  "aliases": [
+    "RouteLLM"
+  ],
+  "chapters": [
+    "gateways-routers"
+  ]
+}

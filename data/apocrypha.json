@@ -1,0 +1,121 @@
+{
+  "takes": [
+    {
+      "id": "multi-agent-is-context",
+      "take": "Most multi-agent systems are context management in disguise.",
+      "for": "The measurable wins come from giving each sub-task a clean, focused context and from reading in parallel. The “team of agents” framing adds little beyond that, and it multiplies tokens.",
+      "against": "Separation also changes behavior. An independent reviewer catches errors that one long context rationalizes away, and parallel exploration finds options a single trajectory never tries.",
+      "chapters": [
+        "multi-agent",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "while-loop",
+      "take": "You don’t need a framework; you need a while loop.",
+      "for": "The agent loop is about fifty lines. Frameworks hide prompts, make debugging opaque and churn their APIs faster than you can upgrade.",
+      "against": "Durable execution, tracing, streaming, retries, human approvals and multi-provider support are real work. A mature framework encodes production lessons you would otherwise relearn the hard way.",
+      "chapters": [
+        "agent-loop",
+        "framework-anti-patterns"
+      ]
+    },
+    {
+      "id": "rag-is-dead",
+      "take": "RAG is dead; long context killed it.",
+      "for": "With million-token windows and prompt caching, putting the whole corpus in the prompt is simpler and never suffers a retrieval miss.",
+      "against": "Cost and latency grow with context, quality degrades with distractors, corpora outgrow any window, and permissions and freshness need a retrieval step anyway.",
+      "chapters": [
+        "rag-fundamentals",
+        "long-context"
+      ]
+    },
+    {
+      "id": "fine-tuning-mistake",
+      "take": "Fine-tuning is usually a mistake for application teams.",
+      "for": "Prompting, retrieval and evals deliver most of the wins, and a fine-tune pins you to an old base model while the frontier moves.",
+      "against": "For narrow, high-volume tasks a fine-tuned small model can be cheaper, faster and more consistent, and reinforcement fine-tuning can teach behavior no prompt reliably produces.",
+      "chapters": [
+        "fine-tuning-practice",
+        "decision-guides"
+      ]
+    },
+    {
+      "id": "judges-are-vibes",
+      "take": "LLM judges are vibes with extra steps.",
+      "for": "Uncalibrated judges carry position, verbosity and self-preference biases, and they drift when the judge model changes.",
+      "against": "A judge checked against human labels on one specific, binary criterion is a measurement instrument with known error rates. It scales review that humans cannot.",
+      "chapters": [
+        "llm-as-judge"
+      ]
+    },
+    {
+      "id": "prompting-dead",
+      "take": "Prompt engineering is dead.",
+      "for": "Modern models follow plain instructions, and optimizers plus context engineering matter more than clever phrasing.",
+      "against": "Specifying a task clearly never dies. The work moved from tricks to writing good specs, examples and tool descriptions, and those still swing results by wide margins.",
+      "chapters": [
+        "prompting-fundamentals",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "ignore-leaderboards",
+      "take": "Benchmarks are broken, so ignore leaderboards.",
+      "for": "Saturation, contamination and tuning to a benchmark’s format make public scores poor predictors of your use case.",
+      "against": "Well-built benchmarks still track coarse capability trends, and fresh held-out ones catch regressions. The fix is reading them critically, not ignoring them.",
+      "chapters": [
+        "benchmark-literacy"
+      ]
+    },
+    {
+      "id": "injection-solved",
+      "take": "Better models will solve prompt injection.",
+      "for": "Models keep improving at telling instructions from data, and adversarial training hardens them further.",
+      "against": "While instructions and data share one channel, a capable attacker finds a phrasing that works some of the time. Reliable defenses remove capabilities rather than asking the model to behave.",
+      "chapters": [
+        "prompt-injection",
+        "secure-agent-design"
+      ]
+    },
+    {
+      "id": "vibe-coding",
+      "take": "Vibe-coded software is fine for production if the tests pass.",
+      "for": "Tests define behavior. If they pass, it should not matter who or what wrote the code.",
+      "against": "Tests cover what someone thought to test. Unreviewed code accumulates security holes, duplicated logic and design debt that no test suite catches.",
+      "chapters": [
+        "working-with-coding-agents"
+      ]
+    },
+    {
+      "id": "scaling-wall",
+      "take": "Scaling has hit a wall.",
+      "for": "High-quality pretraining text is finite, the returns per order of magnitude of compute look smaller, and training costs keep ballooning.",
+      "against": "New axes keep appearing: RL post-training, test-time compute, synthetic data and better architectures. Measured capabilities kept rising through 2025 and 2026.",
+      "chapters": [
+        "scaling-laws",
+        "open-problems"
+      ]
+    },
+    {
+      "id": "start-as-workflow",
+      "take": "Every agent should start life as a workflow.",
+      "for": "Fixed code paths are cheaper, testable and predictable, and most tasks people call agentic have known steps.",
+      "against": "Open-ended tasks with unknown steps, such as coding and research, are exactly where agents beat workflows. Forcing them into fixed branches produces brittle software.",
+      "chapters": [
+        "what-is-an-agent",
+        "workflow-patterns"
+      ]
+    },
+    {
+      "id": "mcp-ceremony",
+      "take": "MCP is function calling with extra ceremony.",
+      "for": "For one app calling its own functions, MCP adds a process boundary and a protocol for no gain.",
+      "against": "The value is the N×M problem: one server works in every compliant host with standard discovery, auth and consent. For purely internal functions, a plain function is indeed fine.",
+      "chapters": [
+        "why-protocols",
+        "mcp-architecture"
+      ]
+    }
+  ]
+}

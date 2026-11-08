@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qup-1",
+    "chapter": "unstructured-pipelines",
+    "q": "What makes pipeline steps safe to rerun?",
+    "options": [
+      "Speed",
+      "Idempotency keyed by document id and version",
+      "Logging",
+      "Compression"
+    ],
+    "answer": 1,
+    "explain": "Reruns must not duplicate results."
+  },
+  {
+    "id": "qup-2",
+    "chapter": "unstructured-pipelines",
+    "q": "What is a common silent pipeline failure?",
+    "options": [
+      "Too many logs",
+      "Deleted documents remaining in the index",
+      "Fast ingestion",
+      "Small chunks"
+    ],
+    "answer": 1,
+    "explain": "Reconcile counts against sources."
+  },
+  {
+    "id": "qup-3",
+    "chapter": "unstructured-pipelines",
+    "q": "What should run after pipeline changes?",
+    "options": [
+      "Nothing",
+      "A retrieval regression eval",
+      "A model retrain",
+      "A rewrite"
+    ],
+    "answer": 1,
+    "explain": "Parsing and chunking changes move recall."
+  }
+]

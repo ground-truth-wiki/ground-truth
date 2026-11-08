@@ -1,0 +1,54 @@
+[
+  {
+    "id": "b15-2",
+    "chapter": "speculative-decoding",
+    "q": "With the standard acceptance rule, how does speculative decoding change the output distribution?",
+    "options": [
+      "It makes outputs more random",
+      "It does not change it; only speed changes",
+      "It always picks the draft’s tokens",
+      "It lowers quality"
+    ],
+    "answer": 1,
+    "explain": "Verification keeps the target model’s distribution exactly."
+  },
+  {
+    "id": "sd-1",
+    "chapter": "speculative-decoding",
+    "q": "Does correct speculative decoding change output quality?",
+    "options": [
+      "Yes, it lowers it",
+      "No, the verification rule keeps the target model’s distribution",
+      "Only at high temperature",
+      "Only for code"
+    ],
+    "answer": 1,
+    "explain": "It is lossless by construction."
+  },
+  {
+    "id": "sd-2",
+    "chapter": "speculative-decoding",
+    "q": "At acceptance rate 0.8 and draft length 4, about how many tokens does each target pass yield?",
+    "options": [
+      "1.0",
+      "2.0",
+      "3.4",
+      "5.0"
+    ],
+    "answer": 2,
+    "explain": "(1 − 0.8⁵) ÷ 0.2 ≈ 3.36."
+  },
+  {
+    "id": "sd-3",
+    "chapter": "speculative-decoding",
+    "q": "When does speculative decoding help least?",
+    "options": [
+      "At batch size 1",
+      "At high batch sizes, when compute is already busy",
+      "For code",
+      "With a good drafter"
+    ],
+    "answer": 1,
+    "explain": "Spare compute is what speculation spends."
+  }
+]

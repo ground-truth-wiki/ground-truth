@@ -1,0 +1,12 @@
+{
+  "id": "scaling-laws",
+  "term": "Scaling laws",
+  "def": "Empirical power laws relating model loss to parameters, data and compute.",
+  "practice": "Use them to choose model size and training length for a budget.",
+  "aliases": [
+    "scaling law"
+  ],
+  "chapters": [
+    "scaling-laws"
+  ]
+}

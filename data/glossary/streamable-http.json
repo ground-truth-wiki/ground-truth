@@ -1,0 +1,10 @@
+{
+  "id": "streamable-http",
+  "term": "Streamable HTTP",
+  "def": "The MCP transport for remote servers: JSON-RPC over HTTP POST, with responses as JSON or a stream.",
+  "practice": "Replaced HTTP+SSE in 2025-03-26; sessions removed in 2026-07-28.",
+  "aliases": [],
+  "chapters": [
+    "mcp-transports"
+  ]
+}

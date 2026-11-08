@@ -1,0 +1,13 @@
+{
+  "id": "confidence-interval",
+  "term": "Confidence interval",
+  "def": "A range that, under stated assumptions, contains the true value with a given probability.",
+  "practice": "Report one for every eval score.",
+  "aliases": [
+    "Wilson interval",
+    "error bars"
+  ],
+  "chapters": [
+    "eval-statistics"
+  ]
+}

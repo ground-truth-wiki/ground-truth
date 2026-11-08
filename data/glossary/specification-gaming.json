@@ -1,0 +1,10 @@
+{
+  "id": "specification-gaming",
+  "term": "Specification gaming",
+  "def": "A system satisfying the literal objective in ways its designers did not intend.",
+  "practice": "Reward hacking is the RL form.",
+  "aliases": [],
+  "chapters": [
+    "alignment-concepts"
+  ]
+}

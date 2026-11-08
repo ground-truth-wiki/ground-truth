@@ -1,0 +1,10 @@
+{
+  "id": "quote-extraction",
+  "term": "Quote extraction",
+  "def": "Asking a model to pull the relevant verbatim quotes from documents before answering from them.",
+  "practice": "Improves faithfulness and makes citations checkable.",
+  "aliases": [],
+  "chapters": [
+    "grounding-citations"
+  ]
+}

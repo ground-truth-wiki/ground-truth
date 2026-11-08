@@ -1,0 +1,13 @@
+{
+  "id": "agent-skills",
+  "term": "Agent Skills",
+  "def": "An open format for packaging know-how as folders with a SKILL.md file that agents load only when relevant.",
+  "practice": "Review third-party skills like code; they can include scripts.",
+  "aliases": [
+    "SKILL.md"
+  ],
+  "chapters": [
+    "skills-plugins",
+    "claude-code"
+  ]
+}

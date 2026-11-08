@@ -1,0 +1,41 @@
+[
+  {
+    "id": "jb-1",
+    "chapter": "jailbreaks-misuse",
+    "q": "What distinguishes a jailbreak from prompt injection?",
+    "options": [
+      "Nothing",
+      "A jailbreak targets the model’s safety training directly; injection makes an application misbehave through untrusted content",
+      "Injection only uses images",
+      "Jailbreaks need code"
+    ],
+    "answer": 1,
+    "explain": "Different attackers, different defenses."
+  },
+  {
+    "id": "jb-2",
+    "chapter": "jailbreaks-misuse",
+    "q": "Why should no secrets ever go in a system prompt?",
+    "options": [
+      "They waste tokens",
+      "System prompts are extracted routinely",
+      "It slows the model",
+      "Providers forbid it"
+    ],
+    "answer": 1,
+    "explain": "Assume leakage."
+  },
+  {
+    "id": "jb-3",
+    "chapter": "jailbreaks-misuse",
+    "q": "Which defense catches gradual multi-turn escalation?",
+    "options": [
+      "Per-message keyword filters",
+      "Conversation-level monitoring",
+      "Shorter system prompts",
+      "Higher temperature"
+    ],
+    "answer": 1,
+    "explain": "Escalation is visible only across turns."
+  }
+]

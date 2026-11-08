@@ -1,0 +1,14 @@
+{
+  "id": "tpot",
+  "term": "Time per output token",
+  "def": "The average time between output tokens during decode.",
+  "practice": "Total latency ≈ TTFT + output tokens × TPOT.",
+  "aliases": [
+    "TPOT",
+    "inter-token latency"
+  ],
+  "chapters": [
+    "latency-throughput"
+  ],
+  "abbr": "TPOT"
+}
