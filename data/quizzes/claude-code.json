@@ -28,14 +28,14 @@
   {
     "id": "cc-3",
     "chapter": "claude-code",
-    "q": "When do Claude Code MCP tool definitions get deferred to tool search?",
+    "q": "By default, when do Claude Code MCP tool definitions get deferred to tool search?",
     "options": [
-      "Always",
-      "Once they would exceed 10% of the context window",
+      "Always, on supported models",
+      "Only once they would exceed 10% of the context window",
       "Never",
       "Only in headless mode"
     ],
-    "answer": 1,
-    "explain": "Verified in the November 2026 changelog."
+    "answer": 0,
+    "explain": "Tool search is on by default; the 10% threshold applies only with ENABLE_TOOL_SEARCH=auto (verified in the MCP docs, November 2026)."
   }
 ]

@@ -66,7 +66,7 @@ open-problems
 ```
 
 ## Go deeper
-- Research agendas from frontier labs and academic groups, and the International AI Safety Report (2025).
+- Research agendas from frontier labs and academic groups, and the International AI Safety Report (2025; second edition February 2026).
 
 ## Related
 - [Long-horizon autonomy](#long-horizon-autonomy)

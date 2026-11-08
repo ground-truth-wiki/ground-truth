@@ -27,7 +27,7 @@ Choosing a coding agent is like choosing how to work with a contractor. A termin
 {"id":"cli","label":"Terminal agents","sub":"your machine, your checkout","role":"agent","x":0,"y":0,"w":185,"h":60,"link":"#claude-code"},
 {"id":"ide","label":"Editor agents","sub":"inside the editor","role":"agent","x":207,"y":0,"w":185,"h":60,"link":"#working-with-coding-agents"},
 {"id":"cloud","label":"Cloud agents","sub":"remote sandbox, opens PRs","role":"agent","x":414,"y":0,"w":186,"h":60,"link":"#long-running-agents"},
-{"id":"cli2","label":"Claude Code, Codex CLI,\nGemini CLI, Aider, OpenCode","align":"center","glyph":false,"x":0,"y":96,"w":185,"h":56},
+{"id":"cli2","label":"Claude Code, Codex CLI,\nAntigravity CLI,\nAider, OpenCode","align":"center","glyph":false,"x":0,"y":96,"w":185,"h":56},
 {"id":"ide2","label":"Cursor, Copilot, Windsurf,\nCline, Roo Code, Kiro","align":"center","glyph":false,"x":207,"y":96,"w":185,"h":56},
 {"id":"cloud2","label":"Devin, Jules, Codex cloud,\nFactory, hosted modes","align":"center","glyph":false,"x":414,"y":96,"w":186,"h":56},
 {"id":"t1","label":"Fast loop; runs as you","align":"center","glyph":false,"x":0,"y":160,"w":185,"h":38},
@@ -37,7 +37,7 @@ Choosing a coding agent is like choosing how to work with a contractor. A termin
 ```
 
 ## How it works
-**Terminal agents** run in your shell against your checkout: Claude Code, Codex CLI, Gemini CLI, Aider, OpenCode, Goose, Amp and others. They are scriptable, fast to iterate with, and run with your permissions, so sandboxing matters. See [sandboxes](#sandboxes).
+**Terminal agents** run in your shell against your checkout: Claude Code, Codex CLI, Antigravity CLI (Google’s successor to Gemini CLI, announced May 2026), Aider, OpenCode, Goose, Amp and others. They are scriptable, fast to iterate with, and run with your permissions, so sandboxing matters. See [sandboxes](#sandboxes).
 
 **Editor agents** live in an IDE: Cursor, GitHub Copilot, Windsurf, Cline, Roo Code, Kilo Code, Kiro and others. They make inline review easy and bind you to an editor. The Agent Client Protocol lets some terminal agents appear inside editors too. See [the alphabet soup](#protocol-soup).
 

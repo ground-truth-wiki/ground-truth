@@ -40,7 +40,7 @@ Training is building a cathedral with a huge crew. You can give each crew a full
 
 **Model parallelism.** Tensor parallelism (Megatron-LM) splits layers within a fast-interconnect domain; pipeline parallelism (GPipe, PipeDream) splits the stack; expert parallelism spreads MoE experts. Large runs combine them (“3D parallelism”). See [disaggregated serving](#disaggregated-serving) for the inference side.
 
-**Saving memory and time.** Activation checkpointing recomputes activations in the backward pass instead of storing them; mixed precision uses BF16, and frontier runs increasingly FP8 (DeepSeek-V3 reported FP8 training at scale); fused kernels and FlashAttention cut memory traffic. See [long context](#long-context).
+**Saving memory and time.** Activation checkpointing recomputes activations in the backward pass instead of storing them; mixed precision uses BF16, and frontier runs increasingly FP8 (DeepSeek-V3 reported FP8 training at scale), and 4-bit NVFP4 pretraining has been demonstrated (NVIDIA, 2025: a 12B model on 10T tokens, comparable to an FP8 baseline); fused kernels and FlashAttention cut memory traffic. See [long context](#long-context).
 
 **Efficiency and failures.** Model FLOPs utilization (MFU), the share of peak compute doing useful work, is a common efficiency metric. At thousands of GPUs, hardware failures happen daily; large runs report hundreds of interruptions over weeks, so checkpointing, fast restarts and health checks are core engineering.
 

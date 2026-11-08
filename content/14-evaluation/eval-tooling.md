@@ -40,7 +40,7 @@ Eval tools are a lab bench: a microscope (trace viewer), sample storage (dataset
 
 **Graders.** Built-in scorers plus your own code checks and judge prompts, with tools for calibrating judges against human labels.
 
-**The landscape.** Open-source and commercial options include Langfuse, Arize Phoenix, Braintrust, LangSmith, Weights & Biases Weave, Promptfoo, DeepEval, Inspect, OpenAI Evals and Humanloop-style platforms, plus general observability vendors adding LLM features. Coverage overlaps; check current features and pricing.
+**The landscape.** Open-source and commercial options include Langfuse, Arize Phoenix, Braintrust, LangSmith, Weights & Biases Weave, Promptfoo, DeepEval, Inspect and OpenAI Evals, plus general observability vendors adding LLM features. As of November 2026, Promptfoo is part of OpenAI and Langfuse part of ClickHouse; both remain open source. Coverage overlaps; check current features and pricing.
 
 ```viz
 {"id":"eval-tooling-matrix","component":"matrix","matrix":"eval-tools","title":"Eval and observability tools by focus, openness and best fit","caption":"Sortable and filterable. Dated and qualitative as of November 2026; this market changes quickly.","alt":"Table of eval and observability tools with focus, openness and best fit.","data":"illustrative","depicts":"As of November 2026"}

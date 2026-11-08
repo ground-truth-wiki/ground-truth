@@ -32,7 +32,7 @@ On-device models are a pocket calculator; cloud models are a supercomputer you r
 ## How it works
 **Models.** Small open models (Gemma, Llama, Qwen, Phi, SmolLM and others) and platform models built into operating systems. Quantized to about 4 bits, a 3B model needs roughly 1.5 to 2 GB. See [small and local models](#small-local-models).
 
-**Runtimes.** llama.cpp and tools built on it for cross-platform CPU and GPU inference; Apple’s MLX and Core ML on Apple devices; ONNX Runtime and DirectML on Windows; ExecuTorch and Google’s LiteRT for mobile; WebGPU-based libraries such as WebLLM in browsers.
+**Runtimes.** llama.cpp and tools built on it for cross-platform CPU and GPU inference; Apple’s MLX and Core ML on Apple devices; ONNX Runtime through Windows ML on Windows (DirectML is in sustained engineering as of November 2026); ExecuTorch and Google’s LiteRT for mobile; WebGPU-based libraries such as WebLLM in browsers.
 
 **Platform models.** Operating systems now expose built-in models: Apple’s Foundation Models framework gives apps access to its on-device model, and Android’s AICore provides Gemini Nano on supported devices. They save download size and are tuned for the hardware, with limits on customization.
 

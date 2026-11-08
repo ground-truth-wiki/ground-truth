@@ -3,9 +3,7 @@
   "term": "NVLink",
   "def": "NVIDIA’s high-bandwidth interconnect between GPUs within a server or rack.",
   "practice": "Keeps tensor parallelism fast.",
-  "aliases": [
-    "NVL72"
-  ],
+  "aliases": [],
   "chapters": [
     "hardware",
     "disaggregated-serving"

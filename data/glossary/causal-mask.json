@@ -3,9 +3,7 @@
   "term": "Causal mask",
   "def": "A mask that prevents each token from attending to later tokens, so a decoder predicts only from the past.",
   "practice": "Forgetting it in custom code leaks the future into training.",
-  "aliases": [
-    "attention mask"
-  ],
+  "aliases": [],
   "chapters": [
     "attention"
   ]

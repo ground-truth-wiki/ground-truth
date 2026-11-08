@@ -36,9 +36,9 @@ Model families are like car lineups: each maker offers a flagship, a mid-range w
 "edges":[{"from":"small","to":"mid","label":"escalate"},{"from":"mid","to":"large","label":"escalate"}]}
 ```
 
-**Closed frontier labs.** Anthropic (Claude), OpenAI (GPT) and Google DeepMind (Gemini) lead most frontier benchmarks and offer APIs, consumer apps and enterprise platforms. As of November 2026, Anthropic’s public models are Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus Claude Fable 5.1 in the Mythos tier with additional safeguards; a Mythos Preview model is available only to selected organizations (verified Nov 2026).
+**Closed frontier labs.** Anthropic (Claude), OpenAI (GPT) and Google DeepMind (Gemini) lead most frontier benchmarks and offer APIs, consumer apps and enterprise platforms. As of November 2026, Anthropic’s public models are Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus Claude Fable 5.1 in the Mythos tier with additional safeguards; the same model with more permissive safeguards, Claude Mythos 5.1, is available only through Anthropic’s trusted-access programs, and the earlier Mythos Preview is deprecated (verified Nov 2026).
 
-**Open-weight families.** Meta (Llama), DeepSeek, Alibaba (Qwen), Mistral, Google (Gemma), OpenAI (gpt-oss, 2025), Moonshot (Kimi), Zhipu (GLM), Microsoft (Phi), NVIDIA (Nemotron) and others release weights under various licenses. See [the open-weight frontier](#open-weight-frontier).
+**Open-weight families.** Meta (Llama, then Muse Spark Open in October 2026), DeepSeek, Alibaba (Qwen), Mistral, Google (Gemma), OpenAI (gpt-oss, 2025), Moonshot (Kimi), Zhipu (GLM), Microsoft (Phi), NVIDIA (Nemotron) and others release weights under various licenses. See [the open-weight frontier](#open-weight-frontier).
 
 **What differs between families.** Strengths by task (coding, long context, multimodal, multilingual), reasoning controls, tool-use reliability, context length, pricing, data terms, regional availability and safety behavior. See [model-specific notes](#model-specific-notes).
 

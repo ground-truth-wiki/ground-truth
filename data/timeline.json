@@ -1653,19 +1653,20 @@
         "governance-regulation"
       ],
       "canon": false,
-      "ref": "Anthropic statement, anthropic.com/news/fable-mythos-access"
+      "ref": "Anthropic statements, anthropic.com/news/fable-mythos-access and anthropic.com/news/redeploying-fable-5"
     },
     {
       "id": "eu-high-risk",
-      "date": "2026-08",
+      "date": "2026-07",
       "approx": false,
       "track": "safety",
-      "title": "EU high-risk obligations scheduled",
-      "text": "Most high-risk system obligations are scheduled to apply; delays were proposed in late 2025 (verify current dates).",
+      "title": "EU high-risk obligations postponed",
+      "text": "The AI Omnibus (Regulation (EU) 2026/1744) enters into force on 27 July and moves high-risk obligations to 2 December 2027 (Annex III) and 2 August 2028 (regulated products).",
       "chapters": [
         "governance-regulation"
       ],
-      "canon": false
+      "canon": false,
+      "ref": "Regulation (EU) 2026/1744, Official Journal of the EU, 24 July 2026"
     }
   ]
 }

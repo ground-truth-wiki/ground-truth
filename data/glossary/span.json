@@ -4,8 +4,7 @@
   "def": "One timed operation within a trace, such as a model call or tool call, with its attributes.",
   "practice": "Nest spans per agent step to see where time and tokens go.",
   "aliases": [
-    "spans",
-    "trace"
+    "spans"
   ],
   "chapters": [
     "observability-tracing"

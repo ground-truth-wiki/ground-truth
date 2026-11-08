@@ -27,7 +27,7 @@ Calling a busy restaurant: if the line is engaged, wait a little and try again, 
 ```
 
 ## How it works
-**Classify errors.** Rate limits and overloads (HTTP 429, and provider overload codes such as Anthropic’s 529) and transient server errors (500, 502, 503) are retryable. Invalid requests (400), authentication errors (401, 403), context-length errors and content refusals are not: retrying the same request fails the same way.
+**Classify errors.** Rate limits and overloads (HTTP 429, and provider overload codes such as Anthropic’s 529) and transient server errors and timeouts (500, 502, 503, 504) are retryable. Invalid requests (400), authentication errors (401, 403), context-length errors and content refusals are not: retrying the same request fails the same way. Neither is a 429 that signals an exhausted quota, credit balance or spend cap (as of November 2026, OpenAI and Anthropic both return some of these as 429s): it keeps failing until the limit changes, so fail fast and alert.
 
 ```viz
 {"id":"error-tree","component":"tree","title":"The error type decides the response: wait, retry, fall back, fix or stop","caption":"Expand an error class. Respect a Retry-After header when the provider sends one.","alt":"Decision tree mapping model API error classes to retry, fallback, fix or stop responses.","data":"illustrative","open":1,"root":{"label":"What failed?","children":[
@@ -65,13 +65,13 @@ stateDiagram-v2
 ## In practice
 ```python
 # Pseudocode: retry policy for model calls.
-RETRYABLE = {429, 500, 502, 503, 529}
+RETRYABLE = {429, 500, 502, 503, 504, 529}
 def call_with_retries(request, max_attempts=5, base=0.5, cap=8.0):
     for attempt in range(1, max_attempts + 1):
         try:
             return gateway.call(request, idempotency_key=request.id, timeout=60)
         except ApiError as e:
-            if e.status not in RETRYABLE or attempt == max_attempts:
+            if e.status not in RETRYABLE or e.is_quota_or_spend_cap or attempt == max_attempts:
                 raise
             delay = e.retry_after or random.uniform(0, min(cap, base * 2 ** (attempt - 1)))
             sleep(delay)                                  # full jitter

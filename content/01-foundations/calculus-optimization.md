@@ -30,15 +30,15 @@ Training is walking down a foggy mountain by feel: the gradient tells you which 
 
 **Stochastic gradient descent.** Estimate the gradient on a mini-batch and step against it; noise from small batches can help generalization.
 
-**Momentum and Adam.** Momentum averages past gradients to smooth the path; Adam (Kingma and Ba, 2014) also scales each parameter’s step by a running estimate of its gradient magnitude; AdamW (Loshchilov and Hutter, 2017) decouples weight decay. Newer optimizers such as Muon are being explored at scale.
+**Momentum and Adam.** Momentum averages past gradients to smooth the path; Adam (Kingma and Ba, 2014) also scales each parameter’s step by a running estimate of its gradient magnitude; AdamW (Loshchilov and Hutter, 2017) decouples weight decay. Newer optimizers now run at scale: Muon, which orthogonalizes momentum updates for hidden-layer weight matrices, pretrained the 1-trillion-parameter Kimi K2 as the variant MuonClip (2025), and as of November 2026 it ships in torch.optim.
 
 ```viz
 {"id":"optimizer-compare","component":"compare","title":"Plain SGD versus Adam on the same problem","caption":"Simplified. Hover the marks.","alt":"Comparison of stochastic gradient descent and Adam in how they choose step sizes.","data":"illustrative","mono":false,"a":{"title":"SGD with momentum","text":"One learning rate for every parameter. Steps follow the averaged gradient. Sensitive to scale differences between parameters; often generalizes well with careful tuning.","mono":false},"b":{"title":"Adam or AdamW","text":"Each parameter gets its own effective step size from running averages of the gradient and its square. Robust to scale differences; the default for transformers. Costs two extra values per parameter of memory.","mono":false},"links":[{"a":"One learning rate for every parameter.","b":"Each parameter gets its own effective step size","note":"Adaptive steps handle parameters with very different gradient scales."},{"b":"Costs two extra values per parameter of memory.","note":"Part of the 16 bytes per parameter of training state."}]}
 ```
 
-**Stability tools.** Warmup avoids large early steps; decay (cosine or linear) refines late; gradient clipping caps rare huge gradients; weight decay limits weight growth; mixed precision with loss scaling avoids underflow. See [distributed training](#distributed-training).
+**Stability tools.** Warmup avoids large early steps; decay (cosine or linear) refines late; gradient clipping caps rare huge gradients; weight decay limits weight growth; mixed precision with loss scaling avoids underflow in FP16, while BF16 has FP32’s exponent range and usually needs no loss scaling. See [distributed training](#distributed-training).
 
-**Loss landscapes.** High-dimensional losses have many good minima; flat minima tend to generalize better; large learning rates can cause loss spikes and divergence.
+**Loss landscapes.** High-dimensional losses have many good minima; flat minima are often linked to better generalization (Keskar et al., 2016), though sharpness depends on how the network is parametrized (Dinh et al., 2017), so the link is debated; large learning rates can cause loss spikes and divergence.
 
 ## In practice
 - For fine-tuning, start with the recipe’s learning rate and warmup; lower the learning rate first if loss spikes.

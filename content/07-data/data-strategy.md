@@ -51,7 +51,7 @@ flowchart LR
 ## In practice
 - Start with an eval set and a logging plan on day one.
 - Decide ownership: who curates, labels and approves data uses.
-- Track lineage: where each dataset came from and what it is allowed for. See [data governance](#data-governance).
+- Track lineage (where each dataset came from and what was built from it) and permitted use (what it may be used for). See [data governance](#data-governance).
 
 ## Numbers to know
 > [!number]

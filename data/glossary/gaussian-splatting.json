@@ -3,9 +3,7 @@
   "term": "Gaussian splatting",
   "def": "A 3D scene representation of many small Gaussians, rendered quickly from new viewpoints.",
   "practice": "",
-  "aliases": [
-    "NeRF"
-  ],
+  "aliases": [],
   "chapters": [
     "video-world-models"
   ]

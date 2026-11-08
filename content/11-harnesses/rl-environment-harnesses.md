@@ -36,7 +36,7 @@ An RL environment is a flight simulator with a scoring examiner. The pilot (the 
 
 **Verifiers.** Programs that turn outcomes into rewards: run hidden tests, compare a math answer, check a database state, or ask a calibrated judge. Verifiable rewards are what make RL on reasoning and coding tasks work. See [RLVR](#rlvr-reasoning).
 
-**Environment hubs.** Shared collections of environments with common interfaces are emerging; OpenEnv is one effort to standardize them (verify current status). Reusable environments let teams train and evaluate on the same tasks.
+**Environment hubs.** Shared collections of environments with common interfaces are emerging; OpenEnv, launched by Meta’s PyTorch team and Hugging Face in October 2025, is one effort to standardize them: each environment is a Docker image exposing `reset`, `step` and `state`, and as of November 2026 the project is still in early development (verified Nov 2026). Reusable environments let teams train and evaluate on the same tasks.
 
 **Rollout frameworks.** veRL, OpenRLHF, TRL, SkyRL, ART and others manage the expensive part: sampling many trajectories in parallel from thousands of sandboxes, scoring them and feeding a trainer. See [agentic RL](#agentic-rl).
 

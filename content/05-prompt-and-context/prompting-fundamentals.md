@@ -42,7 +42,7 @@ Brief the model the way you would brief a brilliant contractor who has never see
 
 **Say what to do.** “Write in flowing prose paragraphs” works better than “don’t use bullet points”. Negative instructions can prime the behavior they forbid, and they leave the alternative unspecified.
 
-**Output control and prefill.** Specify format, length and tone explicitly; for machine-readable output, use [structured outputs](#structured-outputs). Where the API allows it, starting the assistant’s reply yourself (prefill) locks the format, for example by beginning with `{`.
+**Output control and prefill.** Specify format, length and tone explicitly; for machine-readable output, use [structured outputs](#structured-outputs). Where the API allows it (open-weight models and some hosted APIs; Claude models from 4.6 on reject it, as of November 2026), starting the assistant’s reply yourself (prefill) locks the format, for example by beginning with `{`.
 
 ## In practice
 ```viz
@@ -91,7 +91,7 @@ prompting-fundamentals
 ```
 
 ## Go deeper
-- Anthropic’s prompt engineering guide at docs.claude.com.
+- Anthropic’s prompting best practices at platform.claude.com/docs.
 - OpenAI’s and Google’s prompting guides for their model families.
 
 ## Related

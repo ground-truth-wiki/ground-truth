@@ -35,12 +35,14 @@ A trace is a flight recorder for each request: every instrument reading and ever
 ## How it works
 **What to capture.** For every model call: model name and version, prompt template and version, inputs and outputs (sampled and redacted), token counts by type, latency (TTFT and total), finish reason and cost. For retrievals: query, filters, candidate counts and returned ids. For tools: name, arguments, result size, errors and duration. Tie them together with one trace id per request, and a session id across turns.
 
-**OpenTelemetry.** The OpenTelemetry project defines semantic conventions for generative AI, with standard attribute names for model, token usage and finish reasons, and instrumentation libraries such as OpenLLMetry and OpenInference emit them automatically for common SDKs. Using the standard keeps traces portable between tools. The conventions are still evolving; check the current attribute names.
+**OpenTelemetry.** The OpenTelemetry project defines semantic conventions for generative AI, with standard attribute names for model, token usage and finish reasons, and instrumentation libraries such as OpenLLMetry emit them automatically for common SDKs, with their own extensions. OpenInference, the convention Arize Phoenix uses, instead defines its own attribute names on OpenTelemetry spans, so its traces need a mapping to be compared. Using the standard keeps traces portable between tools. The conventions are still evolving; check the current attribute names.
 
 ```json
 {
-  "name": "chat provider/model-id",
+  "name": "chat model-id",
   "attributes": {
+    "gen_ai.operation.name": "chat",
+    "gen_ai.provider.name": "provider-name",
     "gen_ai.request.model": "model-id",
     "gen_ai.usage.input_tokens": 6900,
     "gen_ai.usage.output_tokens": 310,
@@ -98,7 +100,7 @@ observability-tracing
 ```
 
 ## Go deeper
-- OpenTelemetry semantic conventions for generative AI.
+- OpenTelemetry semantic conventions for generative AI, which moved to the open-telemetry/semantic-conventions-genai repository in June 2026 (Development status, no tagged release, as of November 2026).
 - OpenLLMetry and OpenInference instrumentation documentation.
 
 ## Related

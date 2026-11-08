@@ -35,7 +35,7 @@ A network is an assembly line of simple workers. Each multiplies its inputs by w
 **Layers and activations.** A layer computes Wx + b; an activation (ReLU, GELU, SiLU) adds nonlinearity, without which stacked layers collapse into one linear map.
 
 ```viz
-{"id":"activation-chart","component":"chart","type":"line","title":"ReLU and GELU agree for large inputs and differ near zero","caption":"Formula view: ReLU(x) = max(0, x); GELU(x) ≈ x·Φ(x), a smooth version used in many transformers.","alt":"Line chart comparing ReLU and GELU activation functions from x = −3 to 3.","data":"formula","x":{"label":"Input x"},"y":{"label":"Output","min":-0.5,"max":3},"series":[{"name":"ReLU","points":[[-3,0],[-2,0],[-1,0],[0,0],[1,1],[2,2],[3,3]]},{"name":"GELU","points":[[-3,-0.004],[-2,-0.045],[-1,-0.159],[0,0],[1,0.841],[2,1.955],[3,2.996]]}]}
+{"id":"activation-chart","component":"chart","type":"line","title":"ReLU and GELU agree for large inputs and differ near zero","caption":"Formula view: ReLU(x) = max(0, x); GELU(x) = x·Φ(x), a smooth version used in many transformers.","alt":"Line chart comparing ReLU and GELU activation functions from x = −3 to 3.","data":"formula","x":{"label":"Input x"},"y":{"label":"Output","min":-0.5,"max":3},"series":[{"name":"ReLU","points":[[-3,0],[-2,0],[-1,0],[0,0],[1,1],[2,2],[3,3]]},{"name":"GELU","points":[[-3,-0.004],[-2,-0.045],[-1,-0.159],[0,0],[1,0.841],[2,1.955],[3,2.996]]}]}
 ```
 
 **Losses.** Cross-entropy for classification and language modeling; mean squared error for regression. See [probability and information theory](#probability-information).

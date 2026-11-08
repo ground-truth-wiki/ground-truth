@@ -39,7 +39,7 @@ Think of a hotel. The front desk (authorization server) checks your identity and
 
 **Discovery.** An unauthenticated request gets a 401 whose `WWW-Authenticate` header points to the server’s **protected-resource metadata** (RFC 9728). That document lists the trusted authorization servers, whose own metadata gives the authorize and token endpoints. Clients need no hard-coded configuration.
 
-**Client registration.** A client needs a client identity at the authorization server. Options have included pre-registration, **dynamic client registration** (RFC 7591), and, since 2025-11-25, **client ID metadata documents**, where the client id is a URL to a document describing the client. Check the current specification for the recommended order.
+**Client registration.** A client needs a client identity at the authorization server. The recommended order is pre-registered client information if the client has it; then, since 2025-11-25, **client ID metadata documents**, where the client id is a URL to a document describing the client, if the authorization server advertises support; then **dynamic client registration** (RFC 7591), deprecated in 2026-07-28 and kept for backward compatibility, with an appropriate `application_type`; and finally asking the user for client details (as of November 2026).
 
 **The flow.** Authorization code with **PKCE**: the client generates a secret verifier, sends its hash as the code challenge, and proves possession of the verifier when exchanging the code. The **resource indicator** (RFC 8707) names the MCP server, so the issued token is **audience-bound** to it.
 

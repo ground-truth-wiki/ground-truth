@@ -32,15 +32,15 @@ An accelerator is a factory: compute units are the machines, memory capacity is 
 - **Low-precision compute** (FP8, FP4) speeds prefill and training, if software uses it. See [quantization](#quantization).
 - **Interconnect** (NVLink within a server or rack, InfiniBand or Ethernet across them) decides how well models and training jobs scale across chips.
 
-**NVIDIA.** Hopper (H100, H200) and Blackwell (B200, GB200) generations dominate; the CUDA software ecosystem is their biggest advantage. Rack-scale systems such as GB200 NVL72 put 72 GPUs in one NVLink domain, which suits very large models and expert parallelism.
+**NVIDIA.** Hopper (H100, H200), Blackwell (B200, GB200) and Blackwell Ultra (B300, GB300) generations dominate, and the next one, Vera Rubin, is ramping up at partners as of November 2026; the CUDA software ecosystem is their biggest advantage. Rack-scale systems such as GB200 NVL72 put 72 GPUs in one NVLink domain, which suits very large models and expert parallelism.
 
-**AMD.** Instinct MI300X and MI325X offer large memory capacity; ROCm support in vLLM, SGLang and PyTorch has matured, though new models and kernels can arrive later than on CUDA.
+**AMD.** Instinct MI300X, MI325X and, since mid-2025, the MI350 series (MI350X and MI355X, with 288 GB of HBM3E at 8 TB/s and FP6 and FP4 support) offer large memory capacity; ROCm support in vLLM, SGLang and PyTorch has matured, though new models and kernels can arrive later than on CUDA.
 
 **Google TPUs.** Designed for large-scale training and serving with JAX and XLA, connected in pods; available through Google Cloud.
 
 **AWS Trainium and Inferentia.** Amazon’s chips for training and inference, used through the Neuron SDK; attractive pricing on AWS for supported models.
 
-**Specialized inference chips.** Groq’s LPU, Cerebras’s wafer-scale engine and others trade generality for very high decode speeds, usually offered as hosted APIs.
+**Specialized inference chips.** Groq’s LPU, Cerebras’s wafer-scale engine and others trade generality for very high decode speeds, usually offered as hosted APIs; since a December 2025 licensing deal with Groq, NVIDIA also builds LPUs into its Groq 3 LPX racks, which pair with Vera Rubin (as of November 2026).
 
 **Consumer and edge hardware.** Apple Silicon’s unified memory lets laptops hold large quantized models; phones and PCs add neural processing units. See [edge and on-device AI](#edge-on-device).
 
