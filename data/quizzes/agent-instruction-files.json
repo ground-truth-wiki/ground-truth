@@ -1,0 +1,41 @@
+[
+  {
+    "id": "agent-instruction-files-1",
+    "chapter": "agent-instruction-files",
+    "q": "A team’s CLAUDE.md says “Never run git push --force”. Weeks later the agent force-pushes anyway during a messy rebase. What is the right fix?",
+    "options": [
+      "Rewrite the line in capital letters and move it to the top of the file",
+      "Add a deny permission rule or a PreToolUse hook that blocks the command, and keep the sentence only as an explanation",
+      "Copy the same line into AGENTS.md so that two files say it",
+      "Move the line into a path-scoped rule so it loads closer to the code"
+    ],
+    "answer": 1,
+    "explain": "Instruction files are context: the model reads them and usually complies, but nothing stops a call it decides to make. Permission rules, hooks and the sandbox are enforced by the harness whatever the model decides. Emphasis or a better position may raise adherence, which makes the first option tempting, but it is still a request, not a lock. Duplicating the line or scoping it changes where the text sits, not whether it is enforced."
+  },
+  {
+    "id": "agent-instruction-files-2",
+    "chapter": "agent-instruction-files",
+    "q": "You start Codex in packages/web. The root AGENTS.md says “use npm” and packages/web/AGENTS.md says “use pnpm”. What reaches the model?",
+    "options": [
+      "Only packages/web/AGENTS.md, because the nearest file replaces the others",
+      "Only the root AGENTS.md, because the project root always takes precedence",
+      "Both files, joined from the root down, so the web file comes later and is meant to override, but the model still sees both instructions",
+      "Neither file, because Codex refuses to load contradictory instruction files"
+    ],
+    "answer": 2,
+    "explain": "Codex walks from the project root down to the working directory and joins one file per directory, so packages/web/AGENTS.md appears later and overrides the root file by position. “Nearest wins” is implemented by ordering, not by dropping files, which is why the first option is the tempting mistake: the root instruction is still in context, and the model is the one that resolves the conflict. The robust fix is to remove the contradiction from the files."
+  },
+  {
+    "id": "agent-instruction-files-3",
+    "chapter": "agent-instruction-files",
+    "q": "A pull request to an open-source project changes only AGENTS.md, adding a short “Testing” section. The diff looks harmless. What is the strongest reason to review it as carefully as a code change?",
+    "options": [
+      "Agents execute AGENTS.md as a shell script when a session starts",
+      "Contributors’ agents will load it as instructions, and invisible Unicode characters can hide extra instructions that a diff view does not show",
+      "Agents rank AGENTS.md above the user’s own chat prompt",
+      "Changing AGENTS.md invalidates every contributor’s prompt cache"
+    ],
+    "answer": 1,
+    "explain": "An instruction file is a prompt that runs with the contributor’s permissions in every session whose agent reads it. Pillar Security’s “Rules File Backdoor” research showed instructions hidden in rules files with invisible Unicode that reviewers could not see. The first option is tempting because agents may run the commands the file lists, but the file itself is text, not a script; the danger is that it steers the model. The third is wrong: the AGENTS.md convention says the user’s explicit prompt overrides the file."
+  }
+]
