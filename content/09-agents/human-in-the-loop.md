@@ -99,6 +99,7 @@ human-in-the-loop
 - [Durable execution for agents in depth](#durable-agent-execution)
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
 - [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)
+- [Playbook: human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
 
 ## Deep dives
 
