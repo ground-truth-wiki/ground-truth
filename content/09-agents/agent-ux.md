@@ -96,3 +96,7 @@ agent-ux
 - [Streaming](#streaming)
 - [Grounding and citations](#grounding-citations)
 - [Planning and reasoning strategies](#planning-reasoning)
+- [Autonomy levels and human oversight](#autonomy-and-oversight)
+- [Turn-taking, interruptions and latency in voice agents](#voice-turn-taking)
+- [Agent interface protocols: AG-UI, MCP Apps and generative UI specs](#agent-ui-protocols)
+- [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)

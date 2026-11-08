@@ -95,3 +95,10 @@ what-is-an-agent
 - [Human in the loop](#human-in-the-loop)
 - [Mental models that matter](#mental-models)
 - [Evaluating agents](#evaluating-agents)
+- [Autonomy levels and human oversight](#autonomy-and-oversight)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Language agents: research lineage and the CoALA framework](#agent-research-lineage)

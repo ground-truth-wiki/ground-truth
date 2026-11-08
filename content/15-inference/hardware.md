@@ -93,3 +93,18 @@ hardware
 - [Distributed training](#distributed-training)
 - [Cost engineering](#cost-engineering)
 - [Serving engines](#serving-engines)
+- [Floating-point formats and numerical precision](#floating-point-formats)
+- [Deep learning frameworks: PyTorch, JAX and Keras](#dl-frameworks)
+- [Parallelism strategies and collective communication](#parallelism-strategies)
+- [Mixed and low-precision training](#low-precision-training)
+- [Benchmarking inference servers](#inference-benchmarking)
+- [Energy, power and AI data centers](#ai-energy)
+- [Compute governance: chips, supply chains and export controls](#compute-governance)
+- [The AI industry map: labs, clouds, chips and money](#ai-industry-map)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [How GPUs and accelerators run neural networks](#accelerator-architecture)
+- [GPU kernels and ML compilers](#gpu-kernels-compilers)

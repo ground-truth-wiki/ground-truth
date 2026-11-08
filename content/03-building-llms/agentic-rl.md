@@ -87,3 +87,12 @@ agentic-rl
 - [Evaluating agents](#evaluating-agents)
 - [Long-horizon autonomy](#long-horizon-autonomy)
 - [Reinforcement learning primer](#rl-primer)
+- [MDPs, Bellman equations and value-based RL](#value-based-rl)
+- [Policy-gradient algorithms for LLMs: from REINFORCE to GRPO and beyond](#llm-policy-gradients)
+- [Training environments for coding agents](#swe-training-environments)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Training models for tool use and function calling](#function-calling-training)

@@ -83,3 +83,13 @@ unstructured-pipelines
 - [Data quality and governance](#data-governance)
 - [Reliability engineering](#reliability-engineering)
 - [Chunking](#chunking)
+- [Building a web-scale text pipeline](#web-data-pipeline)
+- [Data validation, drift and skew](#data-validation-drift)
+- [Data formats for AI datasets](#data-formats)
+- [Data lakes, warehouses and lakehouses](#data-lakehouses)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Pipeline orchestration and processing engines](#data-pipeline-orchestration)

@@ -99,3 +99,5 @@ data-flywheel
 - [Fine-tuning in practice](#fine-tuning-practice)
 - [Privacy](#privacy)
 - [Data strategy](#data-strategy)
+- [Active learning and weak supervision](#active-learning-weak-supervision)
+- [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)

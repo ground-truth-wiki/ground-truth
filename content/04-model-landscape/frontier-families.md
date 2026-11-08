@@ -80,3 +80,16 @@ frontier-families
 - [Small and local models](#small-local-models)
 - [The open-weight frontier](#open-weight-frontier)
 - [Benchmark literacy](#benchmark-literacy)
+- [Architecture choices in modern LLMs](#architecture-choices)
+- [Model types: base, instruct, reasoning and omni](#model-types)
+- [Model versions, previews and deprecations](#model-lifecycle)
+- [Multilingual and low-resource language models](#multilingual-models)
+- [Open models: history, communities and the release debate](#open-model-communities)
+- [The AI industry map: labs, clouds, chips and money](#ai-industry-map)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Model licenses and openness definitions](#model-licenses)
+- [Reading model cards and system cards](#model-documentation)

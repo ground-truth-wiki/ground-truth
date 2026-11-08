@@ -117,3 +117,13 @@ agent-memory
 - [Personal and ambient assistants](#personal-assistants)
 - [RAG fundamentals](#rag-fundamentals)
 - [Privacy](#privacy)
+- [Knowledge graphs and ontologies](#knowledge-graphs)
+- [Language agents: research lineage and the CoALA framework](#agent-research-lineage)
+- [Prompt injection attacks and defenses in depth](#prompt-injection-techniques)
+- [Continual learning and test-time adaptation](#continual-learning)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Agent memory architectures and benchmarks](#agent-memory-architectures)

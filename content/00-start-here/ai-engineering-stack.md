@@ -120,3 +120,4 @@ ai-engineering-stack
 - [Context engineering](#context-engineering)
 - [The agent loop](#agent-loop)
 - [Why evals are the core skill](#why-evals)
+- [MLOps and LLMOps foundations](#mlops-foundations)

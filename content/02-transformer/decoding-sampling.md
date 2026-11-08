@@ -80,3 +80,13 @@ decoding-sampling
 - [Probability and information theory](#probability-information)
 - [Reasoning prompts](#reasoning-prompts)
 - [The transformer block](#transformer-block)
+- [Distributions, estimation and sampling](#distributions-and-estimation)
+- [The transformer end to end](#transformer-overview)
+- [Structured generation engines](#structured-generation-engines)
+- [Hallucination and factuality](#hallucination-factuality)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Nondeterminism and reproducible inference](#inference-nondeterminism)

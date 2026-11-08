@@ -88,3 +88,10 @@ support-agents
 - [Voice and realtime agents](#voice-agents)
 - [Evaluating agents](#evaluating-agents)
 - [Guardrails and control](#guardrails-control)
+- [Telephony and transport for voice agents](#voice-telephony)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)

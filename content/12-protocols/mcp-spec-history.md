@@ -93,3 +93,4 @@ mcp-spec-history
 - [MCP client features and round trips](#mcp-client-features)
 - [Governance and ecosystem](#protocol-governance)
 - [The Canon](#the-canon)
+- [MCP extensions: the framework and the official extensions](#mcp-extensions)

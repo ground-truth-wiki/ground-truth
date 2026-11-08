@@ -109,3 +109,10 @@ observability-tracing
 - [Privacy](#privacy)
 - [Cost and capacity](#cost-capacity)
 - [Reference architecture](#reference-architecture)
+- [Data validation, drift and skew](#data-validation-drift)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [OpenTelemetry GenAI semantic conventions](#otel-genai-conventions)

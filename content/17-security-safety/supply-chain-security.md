@@ -96,3 +96,12 @@ supply-chain-security
 - [Skills, plugins and extension ecosystems](#skills-plugins)
 - [Open weights and the open ecosystem](#open-weight-frontier)
 - [Fine-tuning in practice](#fine-tuning-practice)
+- [Model hubs and the Hugging Face ecosystem](#hugging-face-ecosystem)
+- [Dataset versioning and lineage](#dataset-versioning-lineage)
+- [Adversarial machine learning](#adversarial-ml)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Model theft and weight security](#model-theft)

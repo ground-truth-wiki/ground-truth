@@ -85,3 +85,5 @@ inference-fundamentals
 - [Memory math](#memory-math)
 - [Batching and scheduling](#batching-scheduling)
 - [Hardware](#hardware)
+- [Benchmarking inference servers](#inference-benchmarking)
+- [How GPUs and accelerators run neural networks](#accelerator-architecture)

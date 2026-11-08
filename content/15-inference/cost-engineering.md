@@ -87,3 +87,7 @@ cost-engineering
 - [Choosing a model](#choosing-a-model)
 - [Gateways and routers](#gateways-routers)
 - [Back-of-envelope estimation](#back-of-envelope)
+- [Gateway keys, routing and failover in depth](#gateway-routing-in-depth)
+- [Energy, power and AI data centers](#ai-energy)
+- [Asynchronous and batch AI workloads](#async-batch-workloads)
+- [AI pricing and unit economics](#ai-pricing-unit-economics)

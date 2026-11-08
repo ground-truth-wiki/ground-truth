@@ -86,3 +86,11 @@ reranking
 - [Evaluating RAG](#rag-evaluation)
 - [RAG fundamentals](#rag-fundamentals)
 - [LLM-as-judge done right](#llm-as-judge)
+- [Recommender systems](#recommender-systems)
+- [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Learning to rank](#learning-to-rank)

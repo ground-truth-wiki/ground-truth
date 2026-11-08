@@ -83,3 +83,16 @@ choosing-a-model
 - [Cost engineering](#cost-engineering)
 - [Gateways and routers](#gateways-routers)
 - [Specialist models](#specialist-models)
+- [Model types: base, instruct, reasoning and omni](#model-types)
+- [Model licenses and openness definitions](#model-licenses)
+- [The benchmark catalog](#benchmark-catalog)
+- [Arenas and leaderboards](#arenas-leaderboards)
+- [Cloud AI platforms and inference providers](#cloud-ai-platforms)
+- [Multilingual and low-resource language models](#multilingual-models)
+- [The AI industry map: labs, clouds, chips and money](#ai-industry-map)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Model versions, previews and deprecations](#model-lifecycle)

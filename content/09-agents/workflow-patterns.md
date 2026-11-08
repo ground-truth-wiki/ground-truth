@@ -95,3 +95,6 @@ workflow-patterns
 - [Multi-agent systems](#multi-agent)
 - [Planning and reasoning strategies](#planning-reasoning)
 - [Decision guides](#decision-guides)
+- [Multi-agent orchestration patterns](#multi-agent-patterns)
+- [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)
+- [Graph workflow runtimes: state, super-steps and checkpoints](#graph-workflow-runtimes)

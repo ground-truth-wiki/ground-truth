@@ -107,3 +107,4 @@ error-analysis
 - [LLM-as-judge done right](#llm-as-judge)
 - [Agent failure modes](#agent-failure-modes)
 - [Observability and tracing](#observability-tracing)
+- [Clustering and dimensionality reduction](#clustering-dimensionality-reduction)

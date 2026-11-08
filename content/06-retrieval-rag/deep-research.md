@@ -109,3 +109,5 @@ deep-research
 - [Advanced RAG architectures](#advanced-rag)
 - [Grounding and citations](#grounding-citations)
 - [Evaluating agents](#evaluating-agents)
+- [Web search and hosted retrieval services](#web-search-hosted-retrieval)
+- [AI scientist agents and autonomous labs](#ai-scientist-agents)

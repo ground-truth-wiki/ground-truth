@@ -85,3 +85,18 @@ image-generation
 - [Multimodal applications](#multimodal-apps)
 - [Responsible AI in practice](#responsible-ai)
 - [Beyond the transformer](#beyond-transformers)
+- [Convolutional neural networks](#convolutional-networks)
+- [Autoencoders and latent spaces](#autoencoders-latent-spaces)
+- [Deep generative models: VAEs, GANs, flows and their successors](#deep-generative-models)
+- [Video generation models](#video-generation)
+- [Music and sound generation](#music-generation)
+- [Evaluating multimodal and generative models](#multimodal-evaluation)
+- [Synthetic media, provenance and deepfakes](#synthetic-media-provenance)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Diffusion and flow matching](#diffusion-flow-matching)
+- [Image editing, control and personalization](#image-editing-control)
+- [Visual tokenizers and autoregressive image generation](#autoregressive-image-generation)

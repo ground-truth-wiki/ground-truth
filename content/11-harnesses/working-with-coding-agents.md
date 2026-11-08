@@ -105,3 +105,4 @@ working-with-coding-agents
 - [The coding-harness landscape](#coding-harness-landscape)
 - [Planning and reasoning strategies](#planning-reasoning)
 - [Sandboxes and execution environments](#sandboxes)
+- [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)

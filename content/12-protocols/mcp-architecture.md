@@ -119,3 +119,10 @@ mcp-architecture
 - [MCP transports](#mcp-transports)
 - [MCP spec history](#mcp-spec-history)
 - [Building MCP servers](#building-mcp-servers)
+- [Protocol building blocks: JSON-RPC, JSON Schema, HTTP streams and OAuth](#protocol-building-blocks)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [MCP extensions: the framework and the official extensions](#mcp-extensions)

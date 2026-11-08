@@ -93,3 +93,13 @@ specialist-models
 - [AI for science](#ai-for-science)
 - [Choosing a model](#choosing-a-model)
 - [Document and screen understanding](#document-screen-understanding)
+- [Linear models, kernels and other classic learners](#linear-and-kernel-models)
+- [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
+- [AI for biology: proteins, design and genomic models](#ai-for-biology)
+- [AI for weather, climate and materials](#ai-for-physical-sciences)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Classic NLP tasks: classification, tagging, extractive QA, summarization and translation](#nlp-tasks)

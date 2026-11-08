@@ -104,3 +104,11 @@ privacy
 - [Production RAG](#production-rag)
 - [Observability and tracing](#observability-tracing)
 - [Governance and regulation](#governance-regulation)
+- [RAG security: poisoning, inversion and leakage](#rag-security)
+- [Adversarial machine learning](#adversarial-ml)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Privacy-preserving machine learning](#privacy-preserving-ml)

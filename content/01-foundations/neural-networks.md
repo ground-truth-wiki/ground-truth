@@ -79,3 +79,17 @@ neural-networks
 - [Classical ML essentials](#classical-ml)
 - [Representation learning](#representation-learning)
 - [Linear algebra for AI](#linear-algebra)
+- [Loss functions](#loss-functions)
+- [Automatic differentiation](#automatic-differentiation)
+- [Training neural networks in practice](#training-neural-networks)
+- [What a language model is: from n-grams to neural networks](#language-modeling)
+- [Deep learning frameworks: PyTorch, JAX and Keras](#dl-frameworks)
+- [Graph neural networks](#graph-neural-networks)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Making deep networks trainable: initialization, normalization and residuals](#trainable-deep-networks)
+- [Convolutional neural networks](#convolutional-networks)
+- [Recurrent networks, LSTMs and sequence-to-sequence models](#recurrent-networks)

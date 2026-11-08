@@ -87,3 +87,4 @@ batching-scheduling
 - [Serving engines](#serving-engines)
 - [Latency and throughput](#latency-throughput)
 - [Disaggregated serving](#disaggregated-serving)
+- [Routing and autoscaling model servers](#inference-fleet-scaling)

@@ -106,3 +106,9 @@ kv-cache
 - [Batching and scheduling](#batching-scheduling)
 - [Prompt caching and token economics](#prompt-caching)
 - [Quantization](#quantization)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [KV-cache compression, eviction and offloading](#kv-cache-compression)

@@ -78,3 +78,15 @@ tokenization
 - [Cost engineering](#cost-engineering)
 - [Prompt caching](#prompt-caching)
 - [Numbers every AI engineer should know](#numbers-to-know)
+- [What a language model is: from n-grams to neural networks](#language-modeling)
+- [The transformer end to end](#transformer-overview)
+- [Multilingual and low-resource language models](#multilingual-models)
+- [Chat templates, message roles and prompt formats](#chat-templates)
+- [Visual tokenizers and autoregressive image generation](#autoregressive-image-generation)
+- [Neural audio codecs and audio tokens](#audio-codecs-tokens)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Training and using tokenizers](#tokenizers-in-practice)

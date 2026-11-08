@@ -93,3 +93,8 @@ safety-evals
 - [Prompt injection](#prompt-injection)
 - [Frontier safety frameworks](#frontier-safety-frameworks)
 - [Responsible AI in practice](#responsible-ai)
+- [Reading model cards and system cards](#model-documentation)
+- [Jailbreak attacks and defenses in depth](#jailbreak-techniques)
+- [Scheming, sandbagging and evaluation awareness](#scheming-evaluations)
+- [Dangerous-capability evaluations](#dangerous-capability-evals)
+- [Fairness metrics and bias measurement](#fairness-bias)

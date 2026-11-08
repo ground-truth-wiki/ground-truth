@@ -89,3 +89,5 @@ prompt-caching
 - [The KV cache](#kv-cache)
 - [Batching and scheduling](#batching-scheduling)
 - [Model APIs in practice](#model-apis)
+- [In-context learning and example design](#in-context-learning)
+- [Compaction, context editing and reasoning state](#context-compaction)

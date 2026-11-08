@@ -85,3 +85,12 @@ computer-use-agents
 - [Sandboxes and execution environments](#sandboxes)
 - [Human in the loop](#human-in-the-loop)
 - [Evaluating agents](#evaluating-agents)
+- [Visual grounding, detection and segmentation](#visual-grounding)
+- [The web for agents: llms.txt, NLWeb, signed agents and content preferences](#agent-facing-web)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Browser automation for agents: Playwright, CDP and agent libraries](#browser-automation-stack)
+- [Computer-use and web agent benchmarks](#computer-use-benchmarks)

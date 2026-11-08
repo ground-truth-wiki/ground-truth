@@ -75,3 +75,11 @@ positional-encoding
 - [Tokenization](#tokenization)
 - [Mid-training](#mid-training)
 - [Linear algebra for AI](#linear-algebra)
+- [Word embeddings: from word2vec to contextual representations](#word-embeddings)
+- [Long-context extension during training](#long-context-training)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [RoPE scaling and context extension](#rope-scaling)

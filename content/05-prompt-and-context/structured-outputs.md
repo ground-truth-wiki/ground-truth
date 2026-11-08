@@ -102,3 +102,9 @@ structured-outputs
 - [Document-processing and extraction pipelines](#document-extraction)
 - [Prompting fundamentals](#prompting-fundamentals)
 - [Grounding and citations](#grounding-citations)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Structured generation engines](#structured-generation-engines)

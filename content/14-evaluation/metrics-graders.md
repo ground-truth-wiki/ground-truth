@@ -109,3 +109,14 @@ metrics-graders
 - [Statistics for evals](#eval-statistics)
 - [Structured outputs](#structured-outputs)
 - [Why evals are the core skill](#why-evals)
+- [Classification and regression metrics](#classification-metrics)
+- [Classic NLP tasks: classification, tagging, extractive QA, summarization and translation](#nlp-tasks)
+- [Evaluating multimodal and generative models](#multimodal-evaluation)
+- [Judge models, juries and meta-evaluation](#judge-models-meta-evaluation)
+- [Agent eval metrics and benchmark design](#agent-eval-metrics)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Reference-based text metrics: from BLEU to COMET](#text-generation-metrics)

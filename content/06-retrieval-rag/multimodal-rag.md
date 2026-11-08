@@ -83,3 +83,5 @@ multimodal-rag
 - [Ingestion and parsing](#ingestion-parsing)
 - [RAG fundamentals](#rag-fundamentals)
 - [Multimodal applications](#multimodal-apps)
+- [Vision-language model architectures and training](#vlm-architectures)
+- [Video understanding](#video-understanding)

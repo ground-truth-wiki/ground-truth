@@ -83,3 +83,19 @@ benchmark-literacy
 - [Statistics for evals](#eval-statistics)
 - [Pretraining data](#pretraining-data)
 - [State-of-the-art snapshot](#sota-snapshot)
+- [Evaluating models during pretraining](#base-model-evaluation)
+- [Retrieval benchmarks and test collections](#retrieval-test-collections)
+- [Deduplication and decontamination](#deduplication-decontamination)
+- [Evaluating multimodal and generative models](#multimodal-evaluation)
+- [Coding-agent benchmarks: SWE-bench, Terminal-Bench and their harnesses](#coding-agent-benchmarks)
+- [Computer-use and web agent benchmarks](#computer-use-benchmarks)
+- [Measuring time horizons and AI R&D capability](#measuring-time-horizons)
+- [Do language models reason? The evidence on both sides](#reasoning-debate)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [The benchmark catalog](#benchmark-catalog)
+- [How benchmarks are built and why they break](#benchmark-validity)
+- [Arenas and leaderboards](#arenas-leaderboards)

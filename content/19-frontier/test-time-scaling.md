@@ -72,3 +72,14 @@ test-time-scaling
 - [Scaling laws and compute](#scaling-laws)
 - [Reasoning prompts](#reasoning-prompts)
 - [Cost engineering](#cost-engineering)
+- [Model-based RL, planning and Monte Carlo tree search](#planning-mcts)
+- [Reward models and preference data](#reward-modeling)
+- [Training reasoning models: cold starts, distillation and length control](#reasoning-training-recipes)
+- [Latent reasoning and recurrent depth](#latent-reasoning)
+- [AI for mathematics and formal theorem proving](#ai-for-mathematics)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Test-time search, sampling and verification](#test-time-search)

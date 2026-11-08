@@ -85,3 +85,5 @@ framework-landscape
 - [Low-code and visual builders](#low-code-builders)
 - [Selection guide and matrix](#framework-selection)
 - [Framework anti-patterns](#framework-anti-patterns)
+- [Agent SDK primitives: runners, tools, guardrails, sessions and tracing](#agent-sdk-primitives)
+- [Managed agent platforms and hosted harnesses](#managed-agent-platforms)

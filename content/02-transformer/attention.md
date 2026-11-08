@@ -119,3 +119,7 @@ attention
 - [Embeddings and position](#positional-encoding)
 - [Efficient attention and long context](#long-context)
 - [Linear algebra for AI](#linear-algebra)
+- [Tensors, shapes and broadcasting](#tensors-and-shapes)
+- [Recurrent networks, LSTMs and sequence-to-sequence models](#recurrent-networks)
+- [The transformer end to end](#transformer-overview)
+- [Sparse and local attention](#sparse-and-local-attention)

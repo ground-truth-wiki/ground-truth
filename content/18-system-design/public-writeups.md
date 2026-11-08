@@ -72,3 +72,9 @@ public-writeups
 - [Multi-agent systems](#multi-agent)
 - [Error analysis first](#error-analysis)
 - [The Canon](#the-canon)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Public AI failures and incidents: a casebook](#ai-failure-casebook)

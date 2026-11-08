@@ -108,3 +108,14 @@ threat-modeling
 - [Supply chain and model security](#supply-chain-security)
 - [Red teaming](#red-teaming)
 - [MCP security](#mcp-security)
+- [RAG security: poisoning, inversion and leakage](#rag-security)
+- [Model theft and weight security](#model-theft)
+- [AI risk management and impact assessments](#ai-risk-management)
+- [Adversarial machine learning](#adversarial-ml)
+- [Public AI failures and incidents: a casebook](#ai-failure-casebook)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [AI security frameworks and standards](#ai-security-frameworks)

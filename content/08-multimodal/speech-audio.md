@@ -85,3 +85,17 @@ speech-audio
 - [Multimodal applications](#multimodal-apps)
 - [Specialist models](#specialist-models)
 - [Privacy](#privacy)
+- [Autoencoders and latent spaces](#autoencoders-latent-spaces)
+- [Deep generative models: VAEs, GANs, flows and their successors](#deep-generative-models)
+- [Diffusion and flow matching](#diffusion-flow-matching)
+- [Synthetic media, provenance and deepfakes](#synthetic-media-provenance)
+- [Turn-taking, interruptions and latency in voice agents](#voice-turn-taking)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Speech recognition models](#speech-recognition)
+- [Speech synthesis and voice cloning](#speech-synthesis)
+- [Neural audio codecs and audio tokens](#audio-codecs-tokens)
+- [Music and sound generation](#music-generation)

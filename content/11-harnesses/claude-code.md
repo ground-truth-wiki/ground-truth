@@ -131,3 +131,7 @@ claude-code
 - [The coding-harness landscape](#coding-harness-landscape)
 - [Working effectively with coding agents](#working-with-coding-agents)
 - [Sandboxes and execution environments](#sandboxes)
+- [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
+- [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)
+- [OS-level sandboxing for agents](#os-level-sandboxing)
+- [Embedding agent harnesses in your application](#embedded-agent-harnesses)

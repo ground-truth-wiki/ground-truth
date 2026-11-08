@@ -96,3 +96,4 @@ grounding-citations
 - [Agent UX](#agent-ux)
 - [AI product and UX](#ai-product-ux)
 - [Structured outputs](#structured-outputs)
+- [Hallucination and factuality](#hallucination-factuality)

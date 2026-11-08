@@ -89,3 +89,18 @@ pretraining-data
 - [Mid-training](#mid-training)
 - [Benchmark literacy](#benchmark-literacy)
 - [Data strategy](#data-strategy)
+- [Training and using tokenizers](#tokenizers-in-practice)
+- [The pretraining run, end to end](#pretraining-run)
+- [Evaluating models during pretraining](#base-model-evaluation)
+- [Data licensing, copyright and consent](#data-licensing-consent)
+- [Deduplication and decontamination](#deduplication-decontamination)
+- [Data selection and attribution](#data-selection-attribution)
+- [Copyright and AI: training, outputs and litigation](#ai-copyright)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Building a web-scale text pipeline](#web-data-pipeline)
+- [Data mixtures, repetition and curricula](#data-mixing)
+- [Open pretraining datasets](#open-pretraining-datasets)

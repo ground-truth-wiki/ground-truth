@@ -74,3 +74,14 @@ open-problems
 - [Prompt injection](#prompt-injection)
 - [Mechanistic interpretability](#mech-interp)
 - [Watchlist](#watchlist)
+- [Energy, power and AI data centers](#ai-energy)
+- [Continual learning and test-time adaptation](#continual-learning)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Scaling trends and limits: compute, cost, data and power](#scaling-trends-limits)
+- [Do language models reason? The evidence on both sides](#reasoning-debate)
+- [Measuring AI's economic impact](#economic-impact-evidence)
+- [AGI, timelines and the catastrophic-risk debate](#agi-timelines-risk)

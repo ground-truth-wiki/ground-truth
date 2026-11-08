@@ -77,3 +77,6 @@ decision-guides
 - [What an agent is](#what-is-an-agent)
 - [Cost engineering](#cost-engineering)
 - [Selection guide and matrix](#framework-selection)
+- [Decision trees, ensembles and gradient boosting](#trees-and-ensembles)
+- [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)
+- [AI pricing and unit economics](#ai-pricing-unit-economics)

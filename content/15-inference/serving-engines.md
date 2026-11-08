@@ -101,3 +101,17 @@ serving-engines
 - [Disaggregated serving](#disaggregated-serving)
 - [Hardware](#hardware)
 - [Edge and on-device AI](#edge-on-device)
+- [Nondeterminism and reproducible inference](#inference-nondeterminism)
+- [Parameter-efficient fine-tuning methods](#peft-methods)
+- [Model hubs and the Hugging Face ecosystem](#hugging-face-ecosystem)
+- [Structured generation engines](#structured-generation-engines)
+- [Benchmarking inference servers](#inference-benchmarking)
+- [Serving mixture-of-experts models](#moe-serving)
+- [GPU kernels and ML compilers](#gpu-kernels-compilers)
+- [Running models locally](#local-inference)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Routing and autoscaling model servers](#inference-fleet-scaling)

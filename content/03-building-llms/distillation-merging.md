@@ -82,3 +82,14 @@ distillation-merging
 - [Quantization](#quantization)
 - [Supervised fine-tuning](#sft)
 - [Cost engineering](#cost-engineering)
+- [Information theory for language models](#information-theory-for-llms)
+- [Synthetic data recipes](#synthetic-data-recipes)
+- [Model theft and weight security](#model-theft)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Distillation for LLMs: soft labels, on-policy and multi-teacher](#llm-distillation)
+- [Model merging methods](#model-merging-methods)
+- [Pruning and structured compression](#llm-pruning)

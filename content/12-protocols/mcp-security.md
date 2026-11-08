@@ -105,3 +105,5 @@ mcp-security
 - [Supply chain and model security](#supply-chain-security)
 - [MCP at scale](#mcp-at-scale)
 - [Sandboxes and execution environments](#sandboxes)
+- [Securing coding agents](#coding-agent-security)
+- [Prompt injection attacks and defenses in depth](#prompt-injection-techniques)

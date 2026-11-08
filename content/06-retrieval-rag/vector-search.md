@@ -105,3 +105,11 @@ vector-search
 - [Lexical and hybrid retrieval](#hybrid-retrieval)
 - [Production RAG](#production-rag)
 - [Linear algebra for AI](#linear-algebra)
+- [High-dimensional geometry](#high-dimensional-geometry)
+- [Recommender systems](#recommender-systems)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Vector index internals](#vector-index-internals)

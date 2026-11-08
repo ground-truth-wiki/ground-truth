@@ -97,3 +97,4 @@ ingestion-parsing
 - [Unstructured data pipelines](#unstructured-pipelines)
 - [RAG fundamentals](#rag-fundamentals)
 - [Production RAG](#production-rag)
+- [OCR and document parsing models](#document-ocr-models)

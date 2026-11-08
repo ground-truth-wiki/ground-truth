@@ -80,3 +80,14 @@ rl-primer
 - [Agentic RL and environments](#agentic-rl)
 - [RL environment harnesses](#rl-environment-harnesses)
 - [Alignment concepts](#alignment-concepts)
+- [World models](#world-models)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Multi-armed and contextual bandits](#bandits)
+- [MDPs, Bellman equations and value-based RL](#value-based-rl)
+- [Policy gradients, actor-critic and PPO](#policy-gradient-methods)
+- [Model-based RL, planning and Monte Carlo tree search](#planning-mcts)
+- [Imitation learning and offline RL](#imitation-offline-rl)

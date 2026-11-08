@@ -93,3 +93,12 @@ jailbreaks-misuse
 - [Safety evals](#safety-evals)
 - [Guardrails and control](#guardrails-control)
 - [Alignment concepts](#alignment-concepts)
+- [How fine-tuning changes safety](#fine-tuning-and-safety)
+- [Guard models and content moderation](#guard-models-moderation)
+- [Adversarial machine learning](#adversarial-ml)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Jailbreak attacks and defenses in depth](#jailbreak-techniques)

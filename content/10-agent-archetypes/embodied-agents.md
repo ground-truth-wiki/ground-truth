@@ -93,3 +93,14 @@ embodied-agents
 - [Reinforcement learning primer](#rl-primer)
 - [Guardrails and control](#guardrails-control)
 - [Agentic RL and environments](#agentic-rl)
+- [Imitation learning and offline RL](#imitation-offline-rl)
+- [Diffusion and flow matching](#diffusion-flow-matching)
+- [World models](#world-models)
+- [3D reconstruction and generation](#three-d-generation)
+- [Visual grounding, detection and segmentation](#visual-grounding)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Vision-language-action models, robot data and sim-to-real](#vla-models)

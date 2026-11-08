@@ -85,3 +85,14 @@ long-context
 - [Embeddings and position](#positional-encoding)
 - [Context engineering](#context-engineering)
 - [Beyond the transformer](#beyond-transformers)
+- [RoPE scaling and context extension](#rope-scaling)
+- [KV-cache compression, eviction and offloading](#kv-cache-compression)
+- [Linear attention and hybrid models](#linear-attention-hybrids)
+- [Long-context extension during training](#long-context-training)
+- [How GPUs and accelerators run neural networks](#accelerator-architecture)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Sparse and local attention](#sparse-and-local-attention)

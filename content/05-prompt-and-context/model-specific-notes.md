@@ -80,3 +80,10 @@ model-specific-notes
 - [Model APIs in practice](#model-apis)
 - [CI/CD for AI](#ci-cd-for-ai)
 - [Supervised fine-tuning](#sft)
+- [Prompt sensitivity and robust prompt testing](#prompt-robustness)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Chat templates, message roles and prompt formats](#chat-templates)

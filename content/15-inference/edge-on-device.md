@@ -89,3 +89,13 @@ edge-on-device
 - [Hardware](#hardware)
 - [Serving engines](#serving-engines)
 - [Privacy](#privacy)
+- [Quantization methods in depth](#quantization-methods)
+- [GPU kernels and ML compilers](#gpu-kernels-compilers)
+- [Energy, power and AI data centers](#ai-energy)
+- [Privacy-preserving machine learning](#privacy-preserving-ml)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Running models locally](#local-inference)

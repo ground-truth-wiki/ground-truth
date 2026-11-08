@@ -86,3 +86,15 @@ mech-interp
 - [Attention step by step](#attention)
 - [Representation learning](#representation-learning)
 - [Safety evals](#safety-evals)
+- [High-dimensional geometry](#high-dimensional-geometry)
+- [Autoencoders and latent spaces](#autoencoders-latent-spaces)
+- [Explaining model predictions](#model-interpretability)
+- [In-context learning and example design](#in-context-learning)
+- [Data selection and attribution](#data-selection-attribution)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Sparse autoencoders, transcoders and circuit tracing](#sae-circuit-tracing)
+- [Probes, lenses and steering](#probes-and-steering)

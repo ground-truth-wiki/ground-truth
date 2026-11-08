@@ -82,3 +82,7 @@ sota-snapshot
 - [The open-weight frontier](#open-weight-frontier)
 - [Watchlist](#watchlist)
 - [Open problems and big debates](#open-problems)
+- [A short history of AI](#history-of-ai)
+- [The benchmark catalog](#benchmark-catalog)
+- [Scaling trends and limits: compute, cost, data and power](#scaling-trends-limits)
+- [Measuring AI's economic impact](#economic-impact-evidence)

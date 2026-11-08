@@ -84,3 +84,14 @@ transformer-block
 - [Memory math](#memory-math)
 - [Neural networks](#neural-networks)
 - [Embeddings and position](#positional-encoding)
+- [Tensors, shapes and broadcasting](#tensors-and-shapes)
+- [Making deep networks trainable: initialization, normalization and residuals](#trainable-deep-networks)
+- [The transformer end to end](#transformer-overview)
+- [Training stability: loss spikes and divergence](#training-stability)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
+- [Architecture choices in modern LLMs](#architecture-choices)

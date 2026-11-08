@@ -87,3 +87,4 @@ harness-engineering
 - [Evaluating agents](#evaluating-agents)
 - [Tool use and tool design](#agent-tools)
 - [Statistics for evals](#eval-statistics)
+- [Inside coding agents: localization, editing and verification](#coding-agent-internals)

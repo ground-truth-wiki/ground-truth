@@ -76,3 +76,10 @@ document-screen-understanding
 - [Vision-language models](#vision-language-models)
 - [Multimodal RAG](#multimodal-rag)
 - [Computer-use and browser agents](#computer-use-agents)
+- [Visual grounding, detection and segmentation](#visual-grounding)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [OCR and document parsing models](#document-ocr-models)

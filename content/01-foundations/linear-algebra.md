@@ -73,3 +73,12 @@ linear-algebra
 - [Fine-tuning in practice](#fine-tuning-practice)
 - [Probability and information theory](#probability-information)
 - [The transformer block](#transformer-block)
+- [Parameter-efficient fine-tuning methods](#peft-methods)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Tensors, shapes and broadcasting](#tensors-and-shapes)
+- [Eigenvectors, SVD and PCA](#eigenvectors-svd-pca)
+- [High-dimensional geometry](#high-dimensional-geometry)

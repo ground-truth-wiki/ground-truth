@@ -94,3 +94,5 @@ eval-recipes
 - [Evaluating agents](#evaluating-agents)
 - [Metrics and graders](#metrics-graders)
 - [LLM-as-judge done right](#llm-as-judge)
+- [Reference-based text metrics: from BLEU to COMET](#text-generation-metrics)
+- [Hallucination and factuality](#hallucination-factuality)

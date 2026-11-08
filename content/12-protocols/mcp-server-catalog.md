@@ -97,3 +97,5 @@ mcp-server-catalog
 - [Building MCP servers](#building-mcp-servers)
 - [MCP architecture](#mcp-architecture)
 - [Sandboxes and execution environments](#sandboxes)
+- [Browser automation for agents: Playwright, CDP and agent libraries](#browser-automation-stack)
+- [Publishing and discovering MCP servers: the registry, server.json and bundles](#mcp-registry-and-packaging)

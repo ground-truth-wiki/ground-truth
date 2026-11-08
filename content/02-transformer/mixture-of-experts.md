@@ -80,3 +80,10 @@ mixture-of-experts
 - [Memory math](#memory-math)
 - [Scaling laws and compute](#scaling-laws)
 - [Frontier model families](#frontier-families)
+- [Serving mixture-of-experts models](#moe-serving)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [MoE routing and load balancing](#moe-routing)

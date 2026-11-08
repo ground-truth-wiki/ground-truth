@@ -69,3 +69,4 @@ ai-engineer-role
 - [How to use Ground Truth](#how-to-use)
 - [Interview prep](#interview-prep)
 - [Learning paths and the project ladder](#project-ladder)
+- [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)

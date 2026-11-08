@@ -136,3 +136,10 @@ harness-anatomy
 - [Sandboxes and execution environments](#sandboxes)
 - [Build your own harness](#build-your-own-harness)
 - [Context engineering](#context-engineering)
+- [OS-level sandboxing for agents](#os-level-sandboxing)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)

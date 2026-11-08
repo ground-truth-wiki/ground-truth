@@ -76,3 +76,21 @@ classical-ml
 - [Probability and information theory](#probability-information)
 - [Building eval datasets](#eval-datasets)
 - [Eval recipes by system type](#eval-recipes)
+- [Explaining model predictions](#model-interpretability)
+- [Time series and forecasting](#time-series-forecasting)
+- [Recommender systems](#recommender-systems)
+- [Learning to rank](#learning-to-rank)
+- [Feature stores and training-serving consistency](#feature-stores)
+- [Fairness metrics and bias measurement](#fairness-bias)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Classification and regression metrics](#classification-metrics)
+- [Validation, tuning and leakage](#validation-tuning)
+- [Feature engineering and preprocessing](#feature-engineering)
+- [Linear models, kernels and other classic learners](#linear-and-kernel-models)
+- [Decision trees, ensembles and gradient boosting](#trees-and-ensembles)
+- [Clustering and dimensionality reduction](#clustering-dimensionality-reduction)
+- [Anomaly detection and distribution shift](#anomaly-drift-detection)

@@ -78,3 +78,10 @@ whos-who
 - [Lessons from public engineering write-ups](#public-writeups)
 - [Learning paths and the project ladder](#project-ladder)
 - [Interview prep](#interview-prep)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [The AI industry map: labs, clouds, chips and money](#ai-industry-map)
+- [Courses and textbooks: a curriculum map](#learning-resources)

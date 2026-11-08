@@ -88,3 +88,10 @@ research-analyst-agents
 - [Sandboxes and execution environments](#sandboxes)
 - [Grounding and citations](#grounding-citations)
 - [Statistics for evals](#eval-statistics)
+- [AI scientist agents and autonomous labs](#ai-scientist-agents)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Data-analysis and notebook agents](#data-analysis-agents)

@@ -95,3 +95,6 @@ structured-code-retrieval
 - [Advanced RAG architectures](#advanced-rag)
 - [Structured outputs](#structured-outputs)
 - [RAG fundamentals](#rag-fundamentals)
+- [Knowledge graphs and ontologies](#knowledge-graphs)
+- [Inside coding agents: localization, editing and verification](#coding-agent-internals)
+- [Data-analysis and notebook agents](#data-analysis-agents)

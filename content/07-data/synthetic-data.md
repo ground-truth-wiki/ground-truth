@@ -79,3 +79,11 @@ synthetic-data
 - [Distillation, merging and compression](#distillation-merging)
 - [Building eval datasets](#eval-datasets)
 - [Labeling and annotation](#labeling-annotation)
+- [Data selection and attribution](#data-selection-attribution)
+- [Privacy-preserving machine learning](#privacy-preserving-ml)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Synthetic data recipes](#synthetic-data-recipes)

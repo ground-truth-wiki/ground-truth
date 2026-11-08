@@ -97,3 +97,5 @@ agent-failure-modes
 - [Evaluating agents](#evaluating-agents)
 - [The agent loop](#agent-loop)
 - [Context engineering](#context-engineering)
+- [Can LLMs plan? Classical planners, search and verifiers](#llm-planning-debate)
+- [Multi-agent orchestration patterns](#multi-agent-patterns)

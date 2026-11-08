@@ -107,3 +107,4 @@ build-your-own-harness
 - [Sandboxes and execution environments](#sandboxes)
 - [Learning paths and the project ladder](#project-ladder)
 - [Harness engineering](#harness-engineering)
+- [Embedding agent harnesses in your application](#embedded-agent-harnesses)

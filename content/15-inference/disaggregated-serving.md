@@ -96,3 +96,12 @@ disaggregated-serving
 - [Mixture of experts](#mixture-of-experts)
 - [Distributed training](#distributed-training)
 - [Serving engines](#serving-engines)
+- [MoE routing and load balancing](#moe-routing)
+- [Parallelism strategies and collective communication](#parallelism-strategies)
+- [Routing and autoscaling model servers](#inference-fleet-scaling)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Serving mixture-of-experts models](#moe-serving)

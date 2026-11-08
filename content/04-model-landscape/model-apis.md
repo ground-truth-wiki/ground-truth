@@ -89,3 +89,14 @@ model-apis
 - [Prompt caching](#prompt-caching)
 - [Gateways and routers](#gateways-routers)
 - [Tool use and tool design](#agent-tools)
+- [Model types: base, instruct, reasoning and omni](#model-types)
+- [Web search and hosted retrieval services](#web-search-hosted-retrieval)
+- [Data formats for AI datasets](#data-formats)
+- [Rate limits, quotas and overload control](#rate-limits-overload)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Chat Completions, Responses and Messages](#api-shapes)
+- [Cloud AI platforms and inference providers](#cloud-ai-platforms)

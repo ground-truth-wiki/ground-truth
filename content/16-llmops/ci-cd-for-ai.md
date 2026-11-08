@@ -106,3 +106,8 @@ ci-cd-for-ai
 - [Prompt and config management](#prompt-config-management)
 - [Statistics for evals](#eval-statistics)
 - [Safety evals](#safety-evals)
+- [Model versions, previews and deprecations](#model-lifecycle)
+- [Cloud agents, CI and review bots](#cloud-and-ci-coding-agents)
+- [Online controlled experiments for AI features](#online-experiments)
+- [MLOps and LLMOps foundations](#mlops-foundations)
+- [SLOs and error budgets for AI systems](#slos-error-budgets)

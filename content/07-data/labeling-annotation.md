@@ -78,3 +78,10 @@ labeling-annotation
 - [Building eval datasets](#eval-datasets)
 - [Supervised fine-tuning](#sft)
 - [Synthetic data](#synthetic-data)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Label quality: agreement, aggregation and label errors](#label-quality)
+- [Active learning and weak supervision](#active-learning-weak-supervision)

@@ -80,3 +80,4 @@ project-ladder
 - [Build your own harness](#build-your-own-harness)
 - [Changelog and how to extend](#changelog-extend)
 - [What an AI engineer is](#ai-engineer-role)
+- [Courses and textbooks: a curriculum map](#learning-resources)

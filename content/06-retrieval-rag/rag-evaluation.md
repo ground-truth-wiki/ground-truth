@@ -102,3 +102,11 @@ rag-evaluation
 - [Building eval datasets](#eval-datasets)
 - [LLM-as-judge done right](#llm-as-judge)
 - [Grounding and citations](#grounding-citations)
+- [Graph RAG methods](#graph-rag)
+- [Hallucination and factuality](#hallucination-factuality)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Retrieval benchmarks and test collections](#retrieval-test-collections)

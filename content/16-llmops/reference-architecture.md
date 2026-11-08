@@ -104,3 +104,12 @@ reference-architecture
 - [Observability and tracing](#observability-tracing)
 - [Reliability engineering](#reliability-engineering)
 - [System design method](#system-design-method)
+- [Pipeline orchestration and processing engines](#data-pipeline-orchestration)
+- [Feature stores and training-serving consistency](#feature-stores)
+- [MLOps and LLMOps foundations](#mlops-foundations)
+
+## Deep dives
+
+Optional depth on this chapter’s topics, for readers who need it:
+
+- [Asynchronous and batch AI workloads](#async-batch-workloads)

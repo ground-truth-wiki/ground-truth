@@ -68,3 +68,4 @@ anti-patterns
 - [Why evals are the core skill](#why-evals)
 - [Decision guides](#decision-guides)
 - [Incidents and on-call](#incidents-on-call)
+- [Public AI failures and incidents: a casebook](#ai-failure-casebook)
