@@ -54,7 +54,7 @@ Evaluating an agent is like evaluating a new driver. You check that they reach t
 
 **Environments.** Agents need sandboxed copies of the systems they act on: test databases, mock APIs, containerized repositories. See [sandboxes](#sandboxes) and [eval harnesses](#eval-harnesses).
 
-**Benchmarks.** SWE-bench (Verified and Pro variants) for software engineering, Terminal-Bench for terminal tasks, τ-bench and τ²-bench for tool-using customer agents, OSWorld for computer use, WebArena for web tasks, GAIA and BrowseComp for research and browsing. Public benchmarks test general capability; your own tasks decide fitness for your product. See [benchmark literacy](#benchmark-literacy).
+**Benchmarks.** SWE-bench Pro for software engineering (OpenAI stopped reporting SWE-bench Verified in February 2026, citing contamination and flawed tests), Terminal-Bench for terminal tasks, τ-bench and τ²-bench for tool-using customer agents, OSWorld for computer use, WebArena for web tasks, GAIA and BrowseComp for research and browsing. Public benchmarks test general capability; your own tasks decide fitness for your product. See [benchmark literacy](#benchmark-literacy).
 
 **Reliability and cost.** Run each task several times; report pass@1, pass^k, tokens, time and dollars per task. A slower, more reliable agent may be the better product.
 

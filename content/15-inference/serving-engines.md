@@ -32,7 +32,7 @@ A serving engine is the kitchen around a recipe. The recipe (the weights) is the
 - **vLLM** popularized PagedAttention; broad model and hardware support, prefix caching, speculative decoding, structured outputs, multi-LoRA serving and disaggregated prefill.
 - **SGLang** introduced RadixAttention prefix caching and a fast runtime for structured generation and agent workloads; strong on large mixture-of-experts models.
 - **TensorRT-LLM** compiles models into optimized engines for NVIDIA GPUs, with FP8 and FP4 support; often fastest on NVIDIA hardware, at the cost of a build step.
-- **Text Generation Inference** from Hugging Face and **LMDeploy** are other mature options; check their current maintenance status.
+- **LMDeploy** is another mature option; check its current maintenance status. Hugging Face’s **Text Generation Inference** is in maintenance mode as of November 2026, and Hugging Face now recommends vLLM, SGLang, llama.cpp or MLX instead.
 
 **Local engines.** llama.cpp runs GGUF-quantized models on CPUs, Apple Silicon and consumer GPUs; Ollama and LM Studio wrap it in friendly tools; Apple’s MLX runs models efficiently on Macs. See [edge and on-device AI](#edge-on-device).
 

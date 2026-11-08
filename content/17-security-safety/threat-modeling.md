@@ -44,21 +44,23 @@ A threat model is a map of a building marked with every door, window and vent, a
 {"id":"stride-matrix","component":"matrix","matrix":"stride-ai","title":"The six STRIDE categories, each with its AI-specific threats and first defenses","caption":"Filter by a word such as “injection” or “logs”. A checklist to walk through for every data-flow diagram.","alt":"Table mapping STRIDE categories to AI-specific threats, examples and first defenses.","data":"illustrative"}
 ```
 
-**OWASP Top 10 for LLM Applications.** A community list of the most common risk categories, updated periodically; its 2025 edition is a useful checklist:
+**OWASP Top 10 for LLM Applications.** A community list of the most common risk categories, updated periodically; its 2026 edition (August 2026) is a useful checklist. It reordered the 2025 list, lifting excessive agency to third, and widened system prompt leakage into hidden context exposure; both numberings circulate, so quote IDs with their year (LLM08:2026, not LLM08):
 
 ```viz
-{"id":"owasp-tree","component":"tree","title":"The 2025 OWASP Top 10 for LLM applications, each linked to where Ground Truth covers it","caption":"Expand for a one-line description. Check owasp.org for the current edition; the list is revised as practice changes.","alt":"Tree of the ten OWASP risk categories for LLM applications in the 2025 edition.","data":"illustrative","depicts":"OWASP Top 10 for LLM Applications, 2025 edition","open":0,"root":{"label":"OWASP Top 10 for LLM applications (2025)","children":[
+{"id":"owasp-tree","component":"tree","title":"The 2026 OWASP Top 10 for LLM applications, each linked to where Ground Truth covers it","caption":"Expand for a one-line description. As of November 2026; check genai.owasp.org for the current edition, since the list is revised as practice changes.","alt":"Tree of the ten OWASP risk categories for LLM applications in the 2026 edition.","data":"illustrative","depicts":"OWASP Top 10 for LLM Applications, 2026 edition (as of November 2026)","open":0,"root":{"label":"OWASP Top 10 for LLM applications (2026)","children":[
 {"label":"LLM01 Prompt injection","children":[{"label":"Instructions in inputs or content that override intended behavior","link":"#prompt-injection"}]},
 {"label":"LLM02 Sensitive information disclosure","children":[{"label":"Leaking personal data, secrets or confidential content","link":"#privacy"}]},
-{"label":"LLM03 Supply chain","children":[{"label":"Compromised models, datasets, packages and plugins","link":"#supply-chain-security"}]},
-{"label":"LLM04 Data and model poisoning","children":[{"label":"Manipulated training, fine-tuning or retrieval data","link":"#supply-chain-security"}]},
-{"label":"LLM05 Improper output handling","children":[{"label":"Passing model output to browsers, shells or databases unchecked","link":"#secure-agent-design"}]},
-{"label":"LLM06 Excessive agency","children":[{"label":"Agents with more tools, permissions or autonomy than they need","link":"#guardrails-control"}]},
-{"label":"LLM07 System prompt leakage","children":[{"label":"Secrets or logic exposed through the system prompt","link":"#jailbreaks-misuse"}]},
-{"label":"LLM08 Vector and embedding weaknesses","children":[{"label":"Poisoned or leaky retrieval stores, broken access control","link":"#production-rag"}]},
-{"label":"LLM09 Misinformation","children":[{"label":"Confident, wrong output trusted by people or systems","link":"#grounding-citations"}]},
-{"label":"LLM10 Unbounded consumption","children":[{"label":"Runaway cost, denial of service and model extraction","link":"#cost-capacity"}]}]}}
+{"label":"LLM03 Excessive agency","children":[{"label":"Agents with more tools, permissions or autonomy than they need","link":"#guardrails-control"}]},
+{"label":"LLM04 Supply chain","children":[{"label":"Compromised models, datasets, packages and plugins","link":"#supply-chain-security"}]},
+{"label":"LLM05 Data and model poisoning","children":[{"label":"Manipulated training, fine-tuning or retrieval data","link":"#supply-chain-security"}]},
+{"label":"LLM06 Unbounded consumption","children":[{"label":"Runaway cost, denial of service and model extraction","link":"#cost-capacity"}]},
+{"label":"LLM07 Misinformation","children":[{"label":"Confident, wrong output trusted by people or systems","link":"#grounding-citations"}]},
+{"label":"LLM08 Hidden context exposure","children":[{"label":"System prompts, tool schemas and other hidden context extracted or inferred","link":"#jailbreaks-misuse"}]},
+{"label":"LLM09 Vector and embedding weaknesses","children":[{"label":"Poisoned or leaky retrieval stores, broken access control","link":"#production-rag"}]},
+{"label":"LLM10 Improper output handling","children":[{"label":"Passing model output to browsers, shells or databases unchecked","link":"#secure-agent-design"}]}]}}
 ```
+
+**OWASP Top 10 for Agentic Applications.** Its companion list (December 2025, IDs ASI01 to ASI10) covers what changes once the model acts on its own, from agent goal hijack to rogue agents. The LLM list's 2026 preface says to use both for agents.
 
 **MITRE ATLAS.** A knowledge base of adversary tactics and techniques against AI systems, modeled on ATT&CK, useful for red-team planning and mapping incidents. **NIST’s AI Risk Management Framework** frames risk governance more broadly. See [governance](#governance-regulation).
 
@@ -96,6 +98,7 @@ threat-modeling
 
 ## Go deeper
 - OWASP Top 10 for LLM Applications, current edition, at owasp.org.
+- OWASP Top 10 for Agentic Applications, at genai.owasp.org.
 - MITRE ATLAS at atlas.mitre.org.
 - Shostack, *Threat Modeling: Designing for Security* (2014).
 

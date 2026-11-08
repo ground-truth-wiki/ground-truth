@@ -5,7 +5,7 @@
     "q": "What do frontier safety frameworks commit developers to?",
     "options": [
       "Open-sourcing models",
-      "Evaluating dangerous capabilities and applying stronger safeguards, or pausing, when thresholds are crossed",
+      "Evaluating dangerous capabilities and applying stronger safeguards, or in some frameworks pausing, when thresholds are crossed",
       "Lower prices",
       "Specific model sizes"
     ],
@@ -15,7 +15,7 @@
   {
     "id": "fsf-2",
     "chapter": "frontier-safety-frameworks",
-    "q": "What are Anthropic’s capability tiers called?",
+    "q": "What does Anthropic’s Responsible Scaling Policy call its levels of safeguards?",
     "options": [
       "Critical Capability Levels",
       "AI Safety Levels (ASLs)",
