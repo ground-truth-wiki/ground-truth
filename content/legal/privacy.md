@@ -8,17 +8,18 @@ description: How Ground Truth Wiki handles your data. It sets no cookies, runs n
 
 ## Who is responsible
 
-[NAME]
-[ADDRESS]
+Klaus Siebeneicher\
+Am Sonnenhang 2\
+3243 St. Leonhard am Forst\
+Austria
 
-Email: [EMAIL]
+Email: [klaus@7eicher.net](mailto:klaus@7eicher.net)
 
 ## Hosting
 
 This website is a set of static files hosted on Cloudflare Pages, a service of Cloudflare, Inc. When you open a page, your browser sends a request to Cloudflare's servers. Like every web server, they receive your IP address, the address of the page, your browser's user agent and the time, in order to deliver the page and to protect the service against attacks. We have not enabled any analytics or logging of visits. Cloudflare's own handling of this data is described in its [privacy policy](https://www.cloudflare.com/privacypolicy/).
 
-Legal basis: [LEGAL BASIS]
-<!-- For example: Art. 6(1)(f) GDPR, the legitimate interest in delivering this website securely. Confirm with your own advice before publishing. -->
+Legal basis: Art. 6(1)(f) GDPR, the legitimate interest in delivering this website securely.
 
 ## No cookies, no analytics, no third parties
 
@@ -39,6 +40,6 @@ Contributions happen on GitHub, where GitHub's privacy statement applies. When y
 
 ## Your rights
 
-Under the General Data Protection Regulation you have the right to access, rectify and erase your personal data, to restrict and object to its processing, and to data portability. You can also lodge a complaint with a data protection authority; in Austria, that is the Datenschutzbehörde. To exercise these rights, write to [EMAIL].
+Under the General Data Protection Regulation you have the right to access, rectify and erase your personal data, to restrict and object to its processing, and to data portability. You can also lodge a complaint with a data protection authority; in Austria, that is the Datenschutzbehörde. To exercise these rights, write to [klaus@7eicher.net](mailto:klaus@7eicher.net).
 
-Last updated: [DATE]
+Last updated: 8 November 2026
