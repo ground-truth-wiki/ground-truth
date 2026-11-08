@@ -112,6 +112,19 @@
       "ref": "McCulloch and Pitts, “A Logical Calculus of the Ideas Immanent in Nervous Activity” (1943)"
     },
     {
+      "id": "shannon-1948",
+      "date": "1948",
+      "approx": false,
+      "track": "techniques",
+      "title": "Information theory",
+      "text": "Shannon’s “A Mathematical Theory of Communication” introduces information entropy, the quantity behind cross-entropy loss and perplexity.",
+      "chapters": [
+        "probability-information"
+      ],
+      "canon": false,
+      "ref": "Shannon, “A Mathematical Theory of Communication” (1948)"
+    },
+    {
       "id": "turing-1950",
       "date": "1950",
       "approx": false,
@@ -224,6 +237,19 @@
       "canon": false
     },
     {
+      "id": "q-learning",
+      "date": "1989",
+      "approx": false,
+      "track": "techniques",
+      "title": "Q-learning",
+      "text": "Watkins’s PhD thesis introduces Q-learning, learning action values from delayed rewards, the basis later scaled up in deep Q-networks.",
+      "chapters": [
+        "rl-primer"
+      ],
+      "canon": false,
+      "ref": "Watkins, “Learning from Delayed Rewards” (PhD thesis, University of Cambridge, 1989)"
+    },
+    {
       "id": "td-gammon",
       "date": "1992",
       "approx": false,
@@ -234,6 +260,19 @@
         "rl-primer"
       ],
       "canon": false
+    },
+    {
+      "id": "okapi-bm25",
+      "date": "1994",
+      "approx": false,
+      "track": "techniques",
+      "title": "Okapi BM25",
+      "text": "The Okapi team describes the BM25 ranking function at TREC-3; it is still the standard keyword scorer in hybrid search.",
+      "chapters": [
+        "hybrid-retrieval"
+      ],
+      "canon": false,
+      "ref": "Robertson et al., “Okapi at TREC-3” (1994)"
     },
     {
       "id": "lstm",
@@ -274,6 +313,32 @@
       "ref": "LeCun et al., “Gradient-Based Learning Applied to Document Recognition” (1998)"
     },
     {
+      "id": "gradient-boosting",
+      "date": "2001",
+      "approx": false,
+      "track": "techniques",
+      "title": "Gradient boosting",
+      "text": "Friedman frames boosting as gradient descent in function space, with boosted regression trees as the workhorse.",
+      "chapters": [
+        "classical-ml"
+      ],
+      "canon": false,
+      "ref": "Friedman, “Greedy Function Approximation: A Gradient Boosting Machine” (2001)"
+    },
+    {
+      "id": "bleu",
+      "date": "2002-07",
+      "approx": false,
+      "track": "techniques",
+      "title": "BLEU",
+      "text": "An automatic metric scores machine translations against human references and sets the template for reference-based evaluation of generated text.",
+      "chapters": [
+        "metrics-graders"
+      ],
+      "canon": false,
+      "ref": "Papineni et al., “Bleu: a Method for Automatic Evaluation of Machine Translation” (2002)"
+    },
+    {
       "id": "nplm",
       "date": "2003",
       "approx": false,
@@ -309,6 +374,19 @@
         "hardware"
       ],
       "canon": false
+    },
+    {
+      "id": "common-crawl",
+      "date": "2008",
+      "approx": false,
+      "track": "infra",
+      "title": "Common Crawl",
+      "text": "A free web crawl, collected regularly since 2008, becomes the raw material of open pretraining corpora such as FineWeb.",
+      "chapters": [
+        "pretraining-data"
+      ],
+      "canon": false,
+      "ref": "Common Crawl, “Overview” (commoncrawl.org)"
     },
     {
       "id": "imagenet",
@@ -375,6 +453,19 @@
       ],
       "canon": true,
       "ref": "Kingma and Welling, “Auto-Encoding Variational Bayes” (2013)"
+    },
+    {
+      "id": "adversarial-examples",
+      "date": "2013-12",
+      "approx": false,
+      "track": "safety",
+      "title": "Adversarial examples",
+      "text": "Szegedy et al. show that imperceptible perturbations make neural networks misclassify, and that the same perturbations fool other networks.",
+      "chapters": [
+        "threat-modeling"
+      ],
+      "canon": false,
+      "ref": "Szegedy et al., “Intriguing properties of neural networks” (2013)"
     },
     {
       "id": "gan",
@@ -469,6 +560,73 @@
       "ref": "Hinton, Vinyals and Dean, “Distilling the Knowledge in a Neural Network” (2015)"
     },
     {
+      "id": "dqn",
+      "date": "2015-02",
+      "approx": false,
+      "track": "agents",
+      "title": "Deep Q-networks",
+      "text": "A DeepMind agent learns Atari games from raw pixels and the score alone, reaching human-level play in many of them.",
+      "chapters": [
+        "rl-primer"
+      ],
+      "canon": false,
+      "ref": "Mnih et al., “Human-level control through deep reinforcement learning” (2015)"
+    },
+    {
+      "id": "batch-norm",
+      "date": "2015-02",
+      "approx": false,
+      "track": "techniques",
+      "title": "Batch normalization",
+      "text": "Normalizing layer inputs per mini-batch allows much higher learning rates and far fewer training steps.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": false,
+      "ref": "Ioffe and Szegedy, “Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift” (2015)"
+    },
+    {
+      "id": "tensorflow",
+      "date": "2015-11",
+      "approx": false,
+      "track": "infra",
+      "title": "TensorFlow open-sourced",
+      "text": "Google releases its machine learning library under the Apache 2.0 license.",
+      "chapters": [
+        "neural-networks"
+      ],
+      "canon": false,
+      "ref": "Dean and Monga, “TensorFlow: Google’s latest machine learning system, open sourced for everyone” (Google Research blog, 2015)"
+    },
+    {
+      "id": "openai-founded",
+      "date": "2015-12",
+      "approx": false,
+      "track": "culture",
+      "title": "OpenAI founded",
+      "text": "OpenAI starts as a nonprofit; it adds a capped-profit arm in 2019 and adopts a public benefit corporation structure in 2025.",
+      "chapters": [
+        "whos-who",
+        "frontier-families"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “OpenAI”"
+    },
+    {
+      "id": "ml-technical-debt",
+      "date": "2015-12",
+      "approx": false,
+      "track": "techniques",
+      "title": "Hidden technical debt in ML",
+      "text": "Sculley et al. show that ML systems accrue their own maintenance costs: entanglement, hidden feedback loops, undeclared consumers and data dependencies.",
+      "chapters": [
+        "reference-architecture",
+        "ci-cd-for-ai"
+      ],
+      "canon": false,
+      "ref": "Sculley et al., “Hidden Technical Debt in Machine Learning Systems” (2015)"
+    },
+    {
       "id": "alphago",
       "date": "2016-03",
       "approx": false,
@@ -494,6 +652,20 @@
       "canon": false
     },
     {
+      "id": "tay",
+      "date": "2016-03",
+      "approx": false,
+      "track": "safety",
+      "title": "Tay taken offline",
+      "text": "A coordinated attack gets Microsoft’s learning chatbot to post offensive content within 24 hours of launch, and it is taken offline.",
+      "chapters": [
+        "public-writeups",
+        "responsible-ai"
+      ],
+      "canon": false,
+      "ref": "Microsoft blog, Peter Lee, “Learning from Tay’s introduction” (2016)"
+    },
+    {
       "id": "tpu",
       "date": "2016-05",
       "approx": false,
@@ -504,6 +676,45 @@
         "hardware"
       ],
       "canon": false
+    },
+    {
+      "id": "machine-bias",
+      "date": "2016-05",
+      "approx": false,
+      "track": "safety",
+      "title": "Machine Bias",
+      "text": "ProPublica finds a criminal risk score falsely flagging Black defendants at almost twice the rate of white defendants, a turning point in the fairness debate.",
+      "chapters": [
+        "responsible-ai"
+      ],
+      "canon": false,
+      "ref": "Angwin et al., “Machine Bias” (ProPublica, 2016)"
+    },
+    {
+      "id": "concrete-problems",
+      "date": "2016-06",
+      "approx": false,
+      "track": "safety",
+      "title": "Concrete problems in AI safety",
+      "text": "Amodei et al. name five research problems: side effects, reward hacking, scalable supervision, safe exploration and distributional shift.",
+      "chapters": [
+        "alignment-concepts"
+      ],
+      "canon": false,
+      "ref": "Amodei et al., “Concrete Problems in AI Safety” (2016)"
+    },
+    {
+      "id": "faiss",
+      "date": "2017-02",
+      "approx": false,
+      "track": "infra",
+      "title": "Billion-scale vector search",
+      "text": "Facebook AI Research runs similarity search over a billion vectors on GPUs, the work behind the GPU version of the Faiss library.",
+      "chapters": [
+        "vector-search"
+      ],
+      "canon": false,
+      "ref": "Johnson, Douze and Jégou, “Billion-scale similarity search with GPUs” (2017)"
     },
     {
       "id": "transformer",
@@ -559,6 +770,19 @@
       "ref": "Shazeer et al., “Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer” (2017)"
     },
     {
+      "id": "mixed-precision",
+      "date": "2017-10",
+      "approx": false,
+      "track": "techniques",
+      "title": "Mixed-precision training",
+      "text": "An FP32 master copy of the weights plus loss scaling lets networks train in half precision.",
+      "chapters": [
+        "distributed-training"
+      ],
+      "canon": false,
+      "ref": "Micikevicius et al., “Mixed Precision Training” (2017)"
+    },
+    {
       "id": "gpt-1",
       "date": "2018-06",
       "approx": false,
@@ -586,6 +810,19 @@
       "ref": "Devlin et al., “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding” (2018)"
     },
     {
+      "id": "model-cards",
+      "date": "2018-10",
+      "approx": false,
+      "track": "safety",
+      "title": "Model cards",
+      "text": "Mitchell et al. propose short documents reporting a model’s intended use and its evaluation across conditions and demographic groups.",
+      "chapters": [
+        "responsible-ai"
+      ],
+      "canon": false,
+      "ref": "Mitchell et al., “Model Cards for Model Reporting” (2018)"
+    },
+    {
       "id": "gpt-2",
       "date": "2019-02",
       "approx": false,
@@ -610,6 +847,19 @@
       ],
       "canon": true,
       "ref": "Sutton, “The Bitter Lesson” (2019 essay)"
+    },
+    {
+      "id": "megatron-lm",
+      "date": "2019-09",
+      "approx": false,
+      "track": "infra",
+      "title": "Megatron-LM",
+      "text": "Intra-layer tensor parallelism trains transformers of up to 8.3 billion parameters on 512 GPUs.",
+      "chapters": [
+        "distributed-training"
+      ],
+      "canon": false,
+      "ref": "Shoeybi et al., “Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism” (2019)"
     },
     {
       "id": "t5",
@@ -691,6 +941,19 @@
       "ref": "Ho, Jain and Abbeel, “Denoising Diffusion Probabilistic Models” (2020)"
     },
     {
+      "id": "mmlu",
+      "date": "2020-09",
+      "approx": false,
+      "track": "culture",
+      "title": "MMLU",
+      "text": "A 57-task knowledge test, from elementary mathematics to law, becomes a headline number for language models.",
+      "chapters": [
+        "benchmark-literacy"
+      ],
+      "canon": false,
+      "ref": "Hendrycks et al., “Measuring Massive Multitask Language Understanding” (2020)"
+    },
+    {
       "id": "vit",
       "date": "2020-10",
       "approx": false,
@@ -715,6 +978,20 @@
       ],
       "canon": true,
       "ref": "Radford et al., “Learning Transferable Visual Models From Natural Language Supervision” (2021)"
+    },
+    {
+      "id": "anthropic-founded",
+      "date": "2021-01",
+      "approx": false,
+      "track": "culture",
+      "title": "Anthropic founded",
+      "text": "Former OpenAI employees found Anthropic as a public benefit corporation.",
+      "chapters": [
+        "whos-who",
+        "frontier-families"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “Anthropic”"
     },
     {
       "id": "lora",
@@ -743,6 +1020,20 @@
       "ref": "Su et al., “RoFormer: Enhanced Transformer with Rotary Position Embedding” (2021)"
     },
     {
+      "id": "github-copilot",
+      "date": "2021-06",
+      "approx": false,
+      "track": "agents",
+      "title": "GitHub Copilot",
+      "text": "A technical preview of an AI pair programmer powered by OpenAI Codex brings model-written code into the editor.",
+      "chapters": [
+        "coding-harness-landscape",
+        "coding-agents"
+      ],
+      "canon": false,
+      "ref": "GitHub blog, Copilot technical preview announcement (29 June 2021)"
+    },
+    {
       "id": "alphafold",
       "date": "2021-07",
       "approx": false,
@@ -754,6 +1045,74 @@
       ],
       "canon": true,
       "ref": "Jumper et al., “Highly accurate protein structure prediction with AlphaFold” (2021)"
+    },
+    {
+      "id": "codex-humaneval",
+      "date": "2021-07",
+      "approx": false,
+      "track": "models",
+      "title": "Codex and HumanEval",
+      "text": "OpenAI’s code model paper introduces HumanEval, measuring the functional correctness of programs written from docstrings.",
+      "chapters": [
+        "benchmark-literacy",
+        "coding-agents"
+      ],
+      "canon": false,
+      "ref": "Chen et al., “Evaluating Large Language Models Trained on Code” (2021)"
+    },
+    {
+      "id": "foundation-models",
+      "date": "2021-08",
+      "approx": false,
+      "track": "culture",
+      "title": "“Foundation models” is coined",
+      "text": "Bommasani et al. name models trained on broad data at scale and adaptable to a wide range of downstream tasks.",
+      "chapters": [
+        "ai-engineer-role",
+        "frontier-families"
+      ],
+      "canon": false,
+      "ref": "Bommasani et al., “On the Opportunities and Risks of Foundation Models” (2021)"
+    },
+    {
+      "id": "flan",
+      "date": "2021-09",
+      "approx": false,
+      "track": "techniques",
+      "title": "Instruction tuning",
+      "text": "Fine-tuning a 137B model on over 60 tasks phrased as instructions substantially improves zero-shot performance on unseen tasks.",
+      "chapters": [
+        "sft"
+      ],
+      "canon": false,
+      "ref": "Wei et al., “Finetuned Language Models Are Zero-Shot Learners” (2021)"
+    },
+    {
+      "id": "webgpt",
+      "date": "2021-12",
+      "approx": false,
+      "track": "agents",
+      "title": "WebGPT",
+      "text": "GPT-3 is fine-tuned to answer questions in a text-based browser, collecting references to support its answers.",
+      "chapters": [
+        "deep-research",
+        "what-is-an-agent"
+      ],
+      "canon": false,
+      "ref": "Nakano et al., “WebGPT: Browser-assisted question-answering with human feedback” (2021)"
+    },
+    {
+      "id": "latent-diffusion",
+      "date": "2021-12",
+      "approx": false,
+      "track": "techniques",
+      "title": "Latent diffusion",
+      "text": "Running diffusion in a pretrained autoencoder’s latent space cuts compute sharply; Stable Diffusion builds on it.",
+      "chapters": [
+        "image-generation"
+      ],
+      "canon": false,
+      "ref": "Rombach et al., “High-Resolution Image Synthesis with Latent Diffusion Models” (2021)"
     },
     {
       "id": "cot",
@@ -820,6 +1179,19 @@
       "ref": "Dao et al., “FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness” (2022)"
     },
     {
+      "id": "orca-scheduling",
+      "date": "2022-07",
+      "approx": false,
+      "track": "infra",
+      "title": "Iteration-level scheduling",
+      "text": "Orca schedules one model iteration at a time instead of whole requests, the idea behind continuous batching.",
+      "chapters": [
+        "batching-scheduling"
+      ],
+      "canon": false,
+      "ref": "Yu et al., “Orca: A Distributed Serving System for Transformer-Based Generative Models” (2022)"
+    },
+    {
       "id": "injection-term",
       "date": "2022-09",
       "approx": false,
@@ -845,6 +1217,20 @@
       "ref": "Elhage et al., “Toy Models of Superposition” (2022)"
     },
     {
+      "id": "rfc-9309",
+      "date": "2022-09",
+      "approx": false,
+      "track": "protocols",
+      "title": "robots.txt standardized",
+      "text": "The IETF publishes the Robots Exclusion Protocol as RFC 9309, the signal sites use to tell crawlers what they may access.",
+      "chapters": [
+        "pretraining-data",
+        "data-governance"
+      ],
+      "canon": false,
+      "ref": "Koster et al., RFC 9309, “Robots Exclusion Protocol” (2022)"
+    },
+    {
       "id": "react",
       "date": "2022-10",
       "approx": false,
@@ -856,6 +1242,47 @@
       ],
       "canon": true,
       "ref": "Yao et al., “ReAct: Synergizing Reasoning and Acting in Language Models” (2022)"
+    },
+    {
+      "id": "chip-export-controls",
+      "date": "2022-10",
+      "approx": false,
+      "track": "safety",
+      "title": "US chip export controls",
+      "text": "The US restricts exports of advanced computing chips and chipmaking equipment to China, and US persons’ support for Chinese fabs.",
+      "chapters": [
+        "governance-regulation",
+        "hardware"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “United States New Export Controls on Advanced Computing and Semiconductors to China”"
+    },
+    {
+      "id": "langchain",
+      "date": "2022-10",
+      "approx": false,
+      "track": "agents",
+      "title": "LangChain",
+      "text": "Harrison Chase launches LangChain, an open-source framework for chaining model calls, tools and retrieval.",
+      "chapters": [
+        "framework-landscape",
+        "orchestration-frameworks"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “LangChain”"
+    },
+    {
+      "id": "gptq",
+      "date": "2022-10",
+      "approx": false,
+      "track": "techniques",
+      "title": "GPTQ",
+      "text": "One-shot post-training quantization takes 175B-parameter GPT models to 3 or 4 bits with little accuracy loss, enough to run on one GPU.",
+      "chapters": [
+        "quantization"
+      ],
+      "canon": false,
+      "ref": "Frantar et al., “GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers” (2022)"
     },
     {
       "id": "speculative",
@@ -894,6 +1321,33 @@
       ],
       "canon": true,
       "ref": "Bai et al., “Constitutional AI: Harmlessness from AI Feedback” (2022)"
+    },
+    {
+      "id": "self-instruct",
+      "date": "2022-12",
+      "approx": false,
+      "track": "techniques",
+      "title": "Self-Instruct",
+      "text": "A model bootstraps instruction-tuning data from its own generations, improving GPT-3 by 33 points on Super-NaturalInstructions.",
+      "chapters": [
+        "synthetic-data",
+        "sft"
+      ],
+      "canon": false,
+      "ref": "Wang et al., “Self-Instruct: Aligning Language Models with Self-Generated Instructions” (2022)"
+    },
+    {
+      "id": "whisper",
+      "date": "2022-12",
+      "approx": false,
+      "track": "models",
+      "title": "Whisper",
+      "text": "OpenAI releases speech recognition models trained on 680,000 hours of multilingual, multitask weak supervision.",
+      "chapters": [
+        "speech-audio"
+      ],
+      "canon": false,
+      "ref": "Radford et al., “Robust Speech Recognition via Large-Scale Weak Supervision” (2022)"
     },
     {
       "id": "nist-rmf",
@@ -971,6 +1425,20 @@
       "canon": false
     },
     {
+      "id": "pause-letter",
+      "date": "2023-03",
+      "approx": false,
+      "track": "culture",
+      "title": "The pause letter",
+      "text": "A Future of Life Institute open letter calls on labs to pause training systems more powerful than GPT-4 for at least six months.",
+      "chapters": [
+        "governance-regulation",
+        "alignment-concepts"
+      ],
+      "canon": false,
+      "ref": "Future of Life Institute, “Pause Giant AI Experiments: An Open Letter” (2023)"
+    },
+    {
       "id": "dpo",
       "date": "2023-05",
       "approx": false,
@@ -982,6 +1450,33 @@
       ],
       "canon": true,
       "ref": "Rafailov et al., “Direct Preference Optimization: Your Language Model is Secretly a Reward Model” (2023)"
+    },
+    {
+      "id": "qlora",
+      "date": "2023-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "QLoRA",
+      "text": "Backpropagating through a frozen 4-bit base into LoRA adapters fits fine-tuning of a 65B model on one 48 GB GPU.",
+      "chapters": [
+        "fine-tuning-practice"
+      ],
+      "canon": false,
+      "ref": "Dettmers et al., “QLoRA: Efficient Finetuning of Quantized LLMs” (2023)"
+    },
+    {
+      "id": "process-supervision",
+      "date": "2023-05",
+      "approx": false,
+      "track": "techniques",
+      "title": "Process supervision",
+      "text": "Rewarding each reasoning step beats rewarding only the final answer on MATH; OpenAI releases 800,000 step-level labels as PRM800K.",
+      "chapters": [
+        "rlvr-reasoning",
+        "test-time-scaling"
+      ],
+      "canon": false,
+      "ref": "Lightman et al., “Let’s Verify Step by Step” (2023)"
     },
     {
       "id": "vllm",
@@ -998,6 +1493,34 @@
       "ref": "Kwon et al., “Efficient Memory Management for Large Language Model Serving with PagedAttention” (2023)"
     },
     {
+      "id": "llm-as-judge",
+      "date": "2023-06",
+      "approx": false,
+      "track": "techniques",
+      "title": "LLM-as-a-judge",
+      "text": "Using MT-Bench and the crowdsourced Chatbot Arena, LMSYS shows GPT-4 judges agreeing with human preferences over 80% of the time.",
+      "chapters": [
+        "llm-as-judge",
+        "benchmark-literacy"
+      ],
+      "canon": false,
+      "ref": "Zheng et al., “Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena” (2023)"
+    },
+    {
+      "id": "mata-avianca",
+      "date": "2023-06",
+      "approx": false,
+      "track": "safety",
+      "title": "Sanctions for invented citations",
+      "text": "A US federal court sanctions lawyers who filed a brief citing nonexistent cases generated by ChatGPT.",
+      "chapters": [
+        "grounding-citations",
+        "responsible-ai"
+      ],
+      "canon": false,
+      "ref": "Mata v. Avianca, Inc. (S.D.N.Y. 2023)"
+    },
+    {
       "id": "lost-middle",
       "date": "2023-07",
       "approx": false,
@@ -1009,6 +1532,32 @@
       ],
       "canon": true,
       "ref": "Liu et al., “Lost in the Middle: How Language Models Use Long Contexts” (2023)"
+    },
+    {
+      "id": "llama-2",
+      "date": "2023-07",
+      "approx": false,
+      "track": "models",
+      "title": "Llama 2",
+      "text": "Meta releases Llama 2 free for research and commercial use; the OSI says its license is not open source.",
+      "chapters": [
+        "open-weight-frontier"
+      ],
+      "canon": false,
+      "ref": "Open Source Initiative, “Meta’s LLaMa 2 license is not Open Source” (2023)"
+    },
+    {
+      "id": "gcg",
+      "date": "2023-07",
+      "approx": false,
+      "track": "safety",
+      "title": "Universal adversarial suffixes",
+      "text": "Automatically searched suffixes jailbreak open models and transfer to ChatGPT, Bard and Claude.",
+      "chapters": [
+        "jailbreaks-misuse"
+      ],
+      "canon": false,
+      "ref": "Zou et al., “Universal and Transferable Adversarial Attacks on Aligned Language Models” (2023)"
     },
     {
       "id": "rsp",
@@ -1036,6 +1585,19 @@
       "ref": "Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?” (2023)"
     },
     {
+      "id": "dspy",
+      "date": "2023-10",
+      "approx": false,
+      "track": "techniques",
+      "title": "DSPy",
+      "text": "LM pipelines become declarative programs that a compiler optimizes against a metric, instead of hand-tuned prompts.",
+      "chapters": [
+        "prompt-optimization"
+      ],
+      "canon": false,
+      "ref": "Khattab et al., “DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines” (2023)"
+    },
+    {
       "id": "bletchley",
       "date": "2023-11",
       "approx": false,
@@ -1046,6 +1608,19 @@
         "governance-regulation"
       ],
       "canon": false
+    },
+    {
+      "id": "openai-board-crisis",
+      "date": "2023-11",
+      "approx": false,
+      "track": "culture",
+      "title": "OpenAI board crisis",
+      "text": "OpenAI’s board removes Sam Altman as CEO on 17 November; he returns on 21 November.",
+      "chapters": [
+        "whos-who"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “OpenAI”"
     },
     {
       "id": "mamba",
@@ -1085,6 +1660,34 @@
       "canon": false
     },
     {
+      "id": "laion-takedown",
+      "date": "2023-12",
+      "approx": false,
+      "track": "safety",
+      "title": "LAION-5B withdrawn",
+      "text": "LAION takes down its LAION-5B image dataset after links to suspected CSAM are found; a cleaned version follows in August 2024.",
+      "chapters": [
+        "data-governance",
+        "image-generation"
+      ],
+      "canon": false,
+      "ref": "LAION blog, Re-LAION-5B announcement (30 August 2024)"
+    },
+    {
+      "id": "sleeper-agents",
+      "date": "2024-01",
+      "approx": false,
+      "track": "safety",
+      "title": "Sleeper agents",
+      "text": "Backdoored behavior in LLMs survives standard safety training, and adversarial training can teach models to hide it.",
+      "chapters": [
+        "alignment-concepts",
+        "supply-chain-security"
+      ],
+      "canon": false,
+      "ref": "Hubinger et al., “Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training” (2024)"
+    },
+    {
       "id": "grpo",
       "date": "2024-02",
       "approx": false,
@@ -1096,6 +1699,48 @@
       ],
       "canon": true,
       "ref": "Shao et al., “DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models” (2024)"
+    },
+    {
+      "id": "air-canada-chatbot",
+      "date": "2024-02",
+      "approx": false,
+      "track": "safety",
+      "title": "An airline answers for its chatbot",
+      "text": "A Canadian tribunal holds Air Canada liable for its website chatbot’s wrong answer on bereavement fares.",
+      "chapters": [
+        "support-agents",
+        "incidents-on-call"
+      ],
+      "canon": false,
+      "ref": "Moffatt v. Air Canada, 2024 BCCRT 149"
+    },
+    {
+      "id": "devin",
+      "date": "2024-03",
+      "approx": false,
+      "track": "agents",
+      "title": "Devin",
+      "text": "Cognition announces an autonomous coding agent that resolves 13.86% of issues on a SWE-bench subset end to end.",
+      "chapters": [
+        "coding-harness-landscape",
+        "coding-agents"
+      ],
+      "canon": false,
+      "ref": "Cognition, “Introducing Devin” (2024)"
+    },
+    {
+      "id": "blackwell",
+      "date": "2024-03",
+      "approx": false,
+      "track": "infra",
+      "title": "NVIDIA Blackwell",
+      "text": "NVIDIA announces Blackwell, with a second-generation Transformer Engine and 4-bit floating point inference.",
+      "chapters": [
+        "hardware",
+        "quantization"
+      ],
+      "canon": false,
+      "ref": "NVIDIA newsroom, Blackwell platform announcement (18 March 2024)"
     },
     {
       "id": "graphrag",
@@ -1111,6 +1756,20 @@
       "ref": "Edge et al., “From Local to Global: A Graph RAG Approach to Query-Focused Summarization” (2024)"
     },
     {
+      "id": "instruction-hierarchy",
+      "date": "2024-04",
+      "approx": false,
+      "track": "safety",
+      "title": "The instruction hierarchy",
+      "text": "OpenAI trains models to prioritize system instructions over user and third-party input, improving robustness to prompt injection.",
+      "chapters": [
+        "safety-character-training",
+        "prompt-injection"
+      ],
+      "canon": false,
+      "ref": "Wallace et al., “The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions” (2024)"
+    },
+    {
       "id": "scaling-mono",
       "date": "2024-05",
       "approx": false,
@@ -1124,6 +1783,33 @@
       "ref": "Templeton et al., “Scaling Monosemanticity” (2024)"
     },
     {
+      "id": "swe-agent",
+      "date": "2024-05",
+      "approx": false,
+      "track": "agents",
+      "title": "Agent-computer interfaces",
+      "text": "SWE-agent shows that commands designed for language-model agents improve how they edit code and resolve SWE-bench issues.",
+      "chapters": [
+        "harness-engineering",
+        "coding-agents"
+      ],
+      "canon": false,
+      "ref": "Yang et al., “SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering” (2024)"
+    },
+    {
+      "id": "fineweb",
+      "date": "2024-06",
+      "approx": false,
+      "track": "culture",
+      "title": "FineWeb",
+      "text": "A 15-trillion-token dataset from 96 Common Crawl snapshots is released, and its educational subset lifts benchmark scores sharply.",
+      "chapters": [
+        "pretraining-data"
+      ],
+      "canon": false,
+      "ref": "Penedo et al., “The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale” (2024)"
+    },
+    {
       "id": "eu-ai-act",
       "date": "2024-08",
       "approx": false,
@@ -1134,6 +1820,33 @@
         "governance-regulation"
       ],
       "canon": false
+    },
+    {
+      "id": "prompt-caching",
+      "date": "2024-08",
+      "approx": false,
+      "track": "infra",
+      "title": "Prompt caching",
+      "text": "Anthropic launches prompt caching in beta, cutting cost by up to 90% and latency by up to 85% for long prompts; OpenAI adds caching in October.",
+      "chapters": [
+        "prompt-caching",
+        "cost-engineering"
+      ],
+      "canon": false,
+      "ref": "Anthropic, prompt caching announcement (claude.com/blog/prompt-caching); OpenAI API changelog, 1 October 2024"
+    },
+    {
+      "id": "structured-outputs",
+      "date": "2024-08",
+      "approx": false,
+      "track": "techniques",
+      "title": "Structured Outputs",
+      "text": "OpenAI’s API begins making outputs reliably adhere to developer-supplied JSON Schemas.",
+      "chapters": [
+        "structured-outputs"
+      ],
+      "canon": false,
+      "ref": "OpenAI API changelog, 6 August 2024"
     },
     {
       "id": "o1",
@@ -1158,6 +1871,19 @@
         "chunking"
       ],
       "canon": false
+    },
+    {
+      "id": "coe-ai-convention",
+      "date": "2024-09",
+      "approx": false,
+      "track": "safety",
+      "title": "First international AI treaty",
+      "text": "The Council of Europe’s Framework Convention on AI is signed in Vilnius; non-European states such as the US, Japan and Canada are among its signatories.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "Council of Europe, “Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law” (2024)"
     },
     {
       "id": "computer-use",
@@ -1197,6 +1923,20 @@
       "canon": false
     },
     {
+      "id": "tulu-3-rlvr",
+      "date": "2024-11",
+      "approx": false,
+      "track": "techniques",
+      "title": "Tulu 3 and RLVR",
+      "text": "A fully open post-training recipe, with data and code, introduces reinforcement learning with verifiable rewards.",
+      "chapters": [
+        "rlvr-reasoning",
+        "preference-optimization"
+      ],
+      "canon": false,
+      "ref": "Lambert et al., “Tulu 3: Pushing Frontiers in Open Language Model Post-Training” (2024)"
+    },
+    {
       "id": "effective-agents",
       "date": "2024-12",
       "approx": false,
@@ -1224,6 +1964,47 @@
       "canon": false
     },
     {
+      "id": "in-context-scheming",
+      "date": "2024-12",
+      "approx": false,
+      "track": "safety",
+      "title": "In-context scheming",
+      "text": "Frontier models given a goal in context disable oversight, try to exfiltrate what they believe are their weights and sandbag in tests.",
+      "chapters": [
+        "alignment-concepts",
+        "safety-evals"
+      ],
+      "canon": false,
+      "ref": "Meinke et al., “Frontier Models are Capable of In-context Scheming” (2024)"
+    },
+    {
+      "id": "deep-research",
+      "date": "2024-12",
+      "approx": false,
+      "track": "agents",
+      "title": "Deep research agents",
+      "text": "Google’s Gemini Deep Research plans a multi-step search, browses the web and writes a report linked to its sources.",
+      "chapters": [
+        "deep-research"
+      ],
+      "canon": false,
+      "ref": "Google blog, Gemini Deep Research announcement (11 December 2024)"
+    },
+    {
+      "id": "o3-arc-agi",
+      "date": "2024-12",
+      "approx": false,
+      "track": "models",
+      "title": "o3 on ARC-AGI",
+      "text": "A preview of OpenAI’s o3 scores 75.7% on ARC-AGI-1 within the compute budget and 87.5% with 172 times more compute.",
+      "chapters": [
+        "test-time-scaling",
+        "benchmark-literacy"
+      ],
+      "canon": false,
+      "ref": "ARC Prize blog, o3 results on ARC-AGI-Pub (20 December 2024)"
+    },
+    {
       "id": "deepseek-r1",
       "date": "2025-01",
       "approx": false,
@@ -1237,6 +2018,20 @@
       "ref": "DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning” (2025)"
     },
     {
+      "id": "intl-ai-safety-report",
+      "date": "2025-01",
+      "approx": false,
+      "track": "safety",
+      "title": "International AI Safety Report",
+      "text": "Mandated at Bletchley, 100 experts with an advisory panel nominated by 30 nations, the UN, OECD and EU publish the first edition.",
+      "chapters": [
+        "governance-regulation",
+        "frontier-safety-frameworks"
+      ],
+      "canon": false,
+      "ref": "Bengio et al., “International AI Safety Report” (2025)"
+    },
+    {
       "id": "claude-code-preview",
       "date": "2025-02",
       "approx": false,
@@ -1247,6 +2042,33 @@
         "claude-code"
       ],
       "canon": false
+    },
+    {
+      "id": "claude-3-7-hybrid",
+      "date": "2025-02",
+      "approx": false,
+      "track": "models",
+      "title": "Hybrid reasoning",
+      "text": "Claude 3.7 Sonnet answers directly or thinks at length in one model, which Anthropic calls the first hybrid reasoning model.",
+      "chapters": [
+        "reasoning-models"
+      ],
+      "canon": false,
+      "ref": "Anthropic, Claude 3.7 Sonnet announcement (24 February 2025)"
+    },
+    {
+      "id": "emergent-misalignment",
+      "date": "2025-02",
+      "approx": false,
+      "track": "safety",
+      "title": "Emergent misalignment",
+      "text": "Fine-tuning a model to write insecure code without saying so makes it act misaligned on unrelated prompts.",
+      "chapters": [
+        "alignment-concepts",
+        "safety-character-training"
+      ],
+      "canon": false,
+      "ref": "Betley et al., “Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs” (2025)"
     },
     {
       "id": "mcp-2025-03",
@@ -1274,6 +2096,33 @@
       "canon": false
     },
     {
+      "id": "responses-agents-sdk",
+      "date": "2025-03",
+      "approx": false,
+      "track": "agents",
+      "title": "Responses API and Agents SDK",
+      "text": "OpenAI releases an API for building agents with built-in tools, and an orchestration SDK.",
+      "chapters": [
+        "provider-agent-sdks"
+      ],
+      "canon": false,
+      "ref": "OpenAI API changelog, 11 March 2025"
+    },
+    {
+      "id": "camel",
+      "date": "2025-03",
+      "approx": false,
+      "track": "safety",
+      "title": "CaMeL",
+      "text": "A protective layer fixes control flow from the trusted query and uses capabilities so untrusted data cannot steer an agent.",
+      "chapters": [
+        "secure-agent-design",
+        "prompt-injection"
+      ],
+      "canon": false,
+      "ref": "Debenedetti et al., “Defeating Prompt Injections by Design” (2025)"
+    },
+    {
       "id": "a2a-launch",
       "date": "2025-04",
       "approx": false,
@@ -1284,6 +2133,20 @@
         "a2a"
       ],
       "canon": false
+    },
+    {
+      "id": "alphaevolve",
+      "date": "2025-05",
+      "approx": false,
+      "track": "agents",
+      "title": "AlphaEvolve",
+      "text": "An evolutionary coding agent recovers 0.7% of Google’s compute and beats Strassen’s 1969 result for 4×4 complex matrices.",
+      "chapters": [
+        "self-improving-systems",
+        "ai-for-science"
+      ],
+      "canon": false,
+      "ref": "Google DeepMind, “AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms” (2025)"
     },
     {
       "id": "mcp-2025-06",
@@ -1323,6 +2186,32 @@
       "canon": false
     },
     {
+      "id": "bartz-fair-use",
+      "date": "2025-06",
+      "approx": false,
+      "track": "safety",
+      "title": "Training ruled fair use",
+      "text": "In Bartz v. Anthropic a US court finds training on books to be fair use, but sends the pirated library copies to trial.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "Bartz v. Anthropic (N.D. Cal., 23 June 2025)"
+    },
+    {
+      "id": "echoleak",
+      "date": "2025-06",
+      "approx": false,
+      "track": "safety",
+      "title": "EchoLeak",
+      "text": "A zero-click prompt injection in Microsoft 365 Copilot, delivered by email, can exfiltrate enterprise data (CVE-2025-32711).",
+      "chapters": [
+        "prompt-injection"
+      ],
+      "canon": false,
+      "ref": "Aim Labs disclosure of CVE-2025-32711, as reported by SOC Prime (2025)"
+    },
+    {
       "id": "imo-2025",
       "date": "2025-07",
       "approx": false,
@@ -1333,6 +2222,34 @@
         "ai-for-science"
       ],
       "canon": false
+    },
+    {
+      "id": "metr-dev-rct",
+      "date": "2025-07",
+      "approx": false,
+      "track": "culture",
+      "title": "AI slowed expert developers",
+      "text": "In METR’s randomized trial, early-2025 AI tools made experienced open-source developers 19% slower, though they believed they were faster.",
+      "chapters": [
+        "coding-agents",
+        "open-problems"
+      ],
+      "canon": false,
+      "ref": "Becker et al., “Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity” (2025)"
+    },
+    {
+      "id": "replit-db-deletion",
+      "date": "2025-07",
+      "approx": false,
+      "track": "safety",
+      "title": "An agent deletes production data",
+      "text": "Replit’s coding agent deletes a live database during a code freeze; Replit promises dev/prod separation and a planning-only mode.",
+      "chapters": [
+        "human-in-the-loop",
+        "secure-agent-design"
+      ],
+      "canon": false,
+      "ref": "Fortune, report on Replit’s coding agent deleting a production database (23 July 2025)"
     },
     {
       "id": "eu-gpai",
@@ -1384,6 +2301,33 @@
       "ref": "Anthropic, “Effective context engineering for AI agents” (2025 essay)"
     },
     {
+      "id": "mcp-registry",
+      "date": "2025-09",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP Registry",
+      "text": "An official open catalog and API of public MCP servers launches in preview, for public and private subregistries to build on.",
+      "chapters": [
+        "mcp-server-catalog",
+        "mcp-at-scale"
+      ],
+      "canon": false,
+      "ref": "MCP blog, “Introducing the MCP Registry” (2025)"
+    },
+    {
+      "id": "anthropic-settlement",
+      "date": "2025-09",
+      "approx": false,
+      "track": "safety",
+      "title": "USD 1.5 billion settlement",
+      "text": "Anthropic agrees to pay USD 1.5 billion to settle authors’ claims over pirated books; final court approval follows in July 2026.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "Wikipedia, “Bartz v. Anthropic”"
+    },
+    {
       "id": "agent-skills",
       "date": "2025-10",
       "approx": false,
@@ -1408,6 +2352,19 @@
       "canon": false
     },
     {
+      "id": "ai-espionage",
+      "date": "2025-11",
+      "approx": false,
+      "track": "safety",
+      "title": "Agent-run espionage",
+      "text": "Anthropic disrupts a campaign it attributes to a Chinese state-sponsored group, which used Claude Code for 80 to 90% of intrusions on about 30 targets.",
+      "chapters": [
+        "jailbreaks-misuse"
+      ],
+      "canon": false,
+      "ref": "Anthropic, report on disrupting an AI-orchestrated cyber espionage campaign (13 November 2025)"
+    },
+    {
       "id": "mcp-foundation",
       "date": "2025-12",
       "approx": true,
@@ -1420,6 +2377,74 @@
       "canon": false
     },
     {
+      "id": "eo-14365",
+      "date": "2025-12",
+      "approx": false,
+      "track": "safety",
+      "title": "Executive Order 14365",
+      "text": "A US executive order sets up a task force to challenge state AI laws and seeks a federal framework that preempts them.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "Executive Order 14365, “Ensuring a National Policy Framework for Artificial Intelligence” (2025)"
+    },
+    {
+      "id": "agent-skills-standard",
+      "date": "2025-12",
+      "approx": false,
+      "track": "protocols",
+      "title": "Agent Skills, an open standard",
+      "text": "Anthropic publishes the skills format as an open standard at agentskills.io, for use across agent products.",
+      "chapters": [
+        "skills-plugins",
+        "protocol-governance"
+      ],
+      "canon": false,
+      "ref": "The Decoder, “Anthropic publishes Agent Skills as an open standard for AI platforms” (2025); agentskills.io"
+    },
+    {
+      "id": "claude-constitution",
+      "date": "2026-01",
+      "approx": false,
+      "track": "safety",
+      "title": "Claude’s constitution",
+      "text": "Anthropic publishes the full constitution that guides Claude’s values and behavior, under a CC0 public domain dedication.",
+      "chapters": [
+        "safety-character-training"
+      ],
+      "canon": false,
+      "ref": "Anthropic, claude-constitution repository (January 2026)"
+    },
+    {
+      "id": "mcp-apps",
+      "date": "2026-01",
+      "approx": false,
+      "track": "protocols",
+      "title": "MCP Apps",
+      "text": "The first official MCP extension lets tools return interactive UI that hosts render in a sandboxed iframe.",
+      "chapters": [
+        "mcp-at-scale",
+        "agent-ux"
+      ],
+      "canon": false,
+      "ref": "MCP blog, “MCP Apps - Bringing UI Capabilities To MCP Clients” (2026)"
+    },
+    {
+      "id": "swe-bench-verified-retired",
+      "date": "2026-02",
+      "approx": false,
+      "track": "culture",
+      "title": "SWE-bench Verified retired",
+      "text": "OpenAI stops reporting SWE-bench Verified, citing flawed tests and contamination, and recommends SWE-bench Pro instead.",
+      "chapters": [
+        "benchmark-literacy",
+        "coding-agents"
+      ],
+      "canon": false,
+      "ref": "OpenAI, “Why we no longer evaluate SWE-bench Verified” (2026)"
+    },
+    {
       "id": "a2a-1",
       "date": "2026-03",
       "approx": false,
@@ -1430,6 +2455,20 @@
         "a2a"
       ],
       "canon": false
+    },
+    {
+      "id": "mythos-glasswing",
+      "date": "2026-04",
+      "approx": false,
+      "track": "safety",
+      "title": "A frontier model held back",
+      "text": "Anthropic gives Claude Mythos Preview only to Project Glasswing partners for defensive security work, citing its skill at finding and exploiting vulnerabilities.",
+      "chapters": [
+        "frontier-safety-frameworks",
+        "frontier-families"
+      ],
+      "canon": false,
+      "ref": "Anthropic, “Project Glasswing” (2026)"
     },
     {
       "id": "a2a-101",
@@ -1455,6 +2494,47 @@
         "mcp-client-features"
       ],
       "canon": false
+    },
+    {
+      "id": "eu-ai-omnibus",
+      "date": "2026-07",
+      "approx": false,
+      "track": "safety",
+      "title": "EU AI Omnibus in force",
+      "text": "Amendments to the AI Act move high-risk obligations to December 2027 and August 2028, and add a ban, from December 2026, on AI that generates non-consensual intimate imagery or CSAM.",
+      "chapters": [
+        "governance-regulation"
+      ],
+      "canon": false,
+      "ref": "European Commission, “AI Act” policy page"
+    },
+    {
+      "id": "eu-transparency",
+      "date": "2026-08",
+      "approx": false,
+      "track": "safety",
+      "title": "EU transparency rules apply",
+      "text": "AI Act Article 50 applies: synthetic audio, images, video and text must be machine-readably marked, and deepfakes disclosed.",
+      "chapters": [
+        "governance-regulation",
+        "responsible-ai"
+      ],
+      "canon": false,
+      "ref": "EU AI Act, Article 50"
+    },
+    {
+      "id": "openai-critical-cyber",
+      "date": "2026-09",
+      "approx": false,
+      "track": "safety",
+      "title": "First Critical cyber rating",
+      "text": "OpenAI rates a model, Astra, Critical for cybersecurity under its Preparedness Framework for the first time and holds back full cyber capabilities at launch.",
+      "chapters": [
+        "frontier-safety-frameworks",
+        "safety-evals"
+      ],
+      "canon": false,
+      "ref": "SecurityWeek, “OpenAI’s Astra becomes first model to cross Critical cybersecurity threshold” (2026)"
     },
     {
       "id": "claude-code-2026",
