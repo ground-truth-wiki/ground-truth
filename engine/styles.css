@@ -556,6 +556,117 @@ h1[tabindex="-1"]:focus,main:focus,[tabindex="-1"].h-anchor:focus{outline:none}
 .only-mobile-row{display:none!important}
 @media (max-width:899px){.only-mobile-row{display:flex!important}}
 
+/* ===== gt: reading layout (design layer) =====
+   Light theme by default, 16px body text, a white reading surface and quieter chrome.
+   These rules override the ones above; the role colors of the visual language are unchanged. */
+:root{
+  --wide:760px;
+  --bg:#F6F7F9; --surface:#FFFFFF; --surface-2:#F0F2F5; --surface-3:#E5E8ED;
+  --ink:#14171D; --ink-2:#394049; --muted:#646C79; --line:#E3E6EB; --line-2:#CBD1DA;
+  --paper:#FFFFFF;
+  --mark-1:#8B929D; --mark-2:#545B66; --mark-3:#2A2F37; --mark-4:#3B414A;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --paper:#11151D; --mark-1:#EEF0F3; --mark-2:#A7ACB5; --mark-3:#6C727C; --mark-4:#858B95; } }
+:root[data-theme="dark"]{ --paper:#11151D; --mark-1:#EEF0F3; --mark-2:#A7ACB5; --mark-3:#6C727C; --mark-4:#858B95; }
+
+body{font-size:15px;background:var(--paper)}
+body::before{background:var(--paper)}
+
+/* Top bar */
+.top{background:var(--paper);gap:12px;padding:0 16px}
+.brand{gap:9px;font-size:.97rem;font-weight:680;letter-spacing:-.012em}
+.brand-mark{width:26px;height:26px}
+.top-search{max-width:520px;height:36px;margin:0 auto;border-radius:8px;border-color:var(--line);background:var(--bg);font-size:.9rem}
+.top-search:hover{border-color:var(--line-2);background:var(--paper)}
+.icon-btn{width:36px;height:36px;border-radius:8px}
+.lvl-chip{height:32px;font-size:.78rem;padding:0 10px;border-color:var(--line);color:var(--muted)}
+
+/* Layout */
+.layout{grid-template-columns:272px minmax(0,1fr) 236px;background:var(--paper)}
+.layout.no-rail{grid-template-columns:272px minmax(0,1fr)}
+.nav{background:var(--bg);padding:10px 8px 40px}
+main{padding:30px clamp(16px,4vw,56px) 110px}
+.rail{padding:32px 18px 40px;font-size:.8rem}
+@media (max-width:1199px){ .layout,.layout.no-rail{grid-template-columns:256px minmax(0,1fr)} }
+@media (max-width:899px){ .layout,.layout.no-rail{grid-template-columns:minmax(0,1fr)} .top{padding:0 10px;gap:8px} main{padding-top:18px} }
+
+/* Navigation: books stand out, chapters are quieter, deep dives quieter still */
+.nav-filter input,.field{height:34px;border-radius:8px;font-size:.85rem;border-color:var(--line)}
+.nav-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 4px;padding:4px 2px 10px}
+.nav-links a{border:0;border-radius:6px;padding:5px 8px;font-size:.82rem;color:var(--ink-2)}
+.nav-links a:hover,.nav-links a[aria-current="page"]{background:var(--surface-3);color:var(--ink)}
+.part-title{font-size:.72rem;font-weight:650;color:var(--muted);margin:18px 10px 4px;letter-spacing:.02em}
+.ti-row{gap:7px;padding:4px 8px;border-radius:6px;font-size:.84rem;line-height:1.32}
+.ti-row:hover{background:var(--surface-3)}
+.ti-book>.ti-row{font-weight:600}
+.ti-ch>.ti-row{padding-left:32px;font-size:.8rem}
+.ti-ch .num{min-width:2.5em;font-size:.74rem}
+.ti-ch.is-deep>.ti-row{padding-left:44px;color:var(--muted);font-size:.77rem}
+.ti-ch.is-deep>.ti-row:hover{color:var(--ink)}
+.ti-ch.current>.ti-row{background:var(--acc-bg);color:var(--ink);font-weight:550;box-shadow:inset 2px 0 0 var(--acc-solid)}
+.ti-count{font-size:.7rem}
+
+/* Generic controls */
+.btn{min-height:34px;padding:5px 12px;border-radius:8px;font-size:.85rem;font-weight:550}
+.btn.sm{min-height:30px;padding:4px 10px;font-size:.8rem}
+.chip{font-size:.76rem;padding:4px 8px}
+.tile,.home-card,.pn a,.table-wrap{border-radius:10px}
+.tile h3{font-size:.97rem}
+.tile p{font-size:.85rem}
+.page-h{font-size:clamp(1.75rem,3vw,2.3rem);font-weight:700;letter-spacing:-.022em;line-height:1.12}
+.lede{font-size:1rem;max-width:68ch}
+.sec-h{font-size:1.1rem;margin:32px 0 10px}
+.crumbs{font-size:.78rem;gap:5px;margin-bottom:10px}
+table.data{font-size:.85rem}
+
+/* Chapter header: title, one quiet line of facts, one tool strip */
+.ch-head{margin-bottom:26px}
+.ch-num{font-size:.8rem;font-weight:600;color:var(--muted);gap:7px}
+.ch-num .ic{color:var(--acc)}
+.ch-title{font-size:clamp(1.8rem,3.2vw,2.35rem);line-height:1.12;letter-spacing:-.022em;font-weight:700;margin:6px 0 12px;max-width:30ch}
+.ch-meta{gap:4px 16px;margin:0 0 14px;align-items:center}
+.ch-meta .chip{border:0;background:none;padding:0;font-size:.8rem;color:var(--muted);gap:6px}
+.ch-meta .chip .dot{width:7px;height:7px}
+.ch-meta .chip.stab-evergreen .dot{background:var(--ok)}
+.ch-meta .chip.stab-moving .dot{background:var(--warn)}
+.ch-meta .chip.stab-volatile .dot{background:var(--bad)}
+.ch-meta button.chip{cursor:pointer}
+.ch-meta button.chip:hover{color:var(--link);text-decoration:underline}
+.ch-actions{gap:2px;padding:6px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ch-actions .btn.sm{border-color:transparent;background:transparent;color:var(--ink-2);font-weight:500}
+.ch-actions .btn.sm:hover{background:var(--surface-2);color:var(--ink)}
+.ch-actions .btn[aria-pressed="true"]{border-color:transparent;background:var(--ui-bg);color:var(--ui)}
+.ch-actions .icon-btn{width:32px;height:32px;color:var(--muted)}
+.ch-actions .icon-btn:hover{color:var(--ink)}
+.banner{border-radius:8px;font-size:.86rem;padding:10px 14px;background:var(--bg)}
+
+/* Reading column */
+.prose{font-size:calc(1rem * var(--fscale));line-height:1.7}
+.prose h2{font-size:1.4em;font-weight:680;letter-spacing:-.014em;margin:2.1em 0 .55em}
+.prose h3{font-size:1.14em;font-weight:650;margin:1.7em 0 .45em}
+.tldr{border-left-width:3px;border-radius:0 8px 8px 0;padding:12px 16px;font-size:1em;margin:0 0 2em}
+.tldr .lbl{font-size:.74rem;letter-spacing:.02em}
+.callout{border-radius:8px;padding:11px 16px 11px 44px;font-size:.95em}
+.callout .c-title{font-size:.85rem}
+.viz{border-radius:10px;font-size:14px;padding:14px 16px 12px}
+.viz-title{font-size:.97rem}
+.ch-end{margin-top:56px}
+
+/* Right column */
+.rail h2{font-size:.72rem;font-weight:650;color:var(--muted);letter-spacing:.02em;margin:0 0 8px}
+.rail section{margin-bottom:26px}
+.rail li a,.rail li button{padding:3px 0 3px 10px;font-size:.8rem;line-height:1.38;color:var(--muted)}
+.rail li a:hover,.rail li button:hover{color:var(--ink)}
+.rail li.on>button{color:var(--ink)}
+
+/* Home */
+.hero{padding:6px 0 24px;margin-bottom:28px}
+.hero-title{font-size:clamp(2.3rem,5.6vw,4.2rem);margin:4px 0 8px}
+.hero-gen{font-size:clamp(1.05rem,1.8vw,1.3rem)}
+.hero-lab{border-radius:10px}
+.home-card h2{font-size:.78rem;letter-spacing:.02em}
+.home-card .big{font-size:1rem}
+
 @media print{
   .top,.nav,.rail,.ch-actions,.banner,.ch-end .pn,.notes,.toast-wrap,.viz-foot button,.ctrls,.skip,.footer .np{display:none!important}
   .layout{display:block}
