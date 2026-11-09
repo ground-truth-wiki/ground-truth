@@ -93,6 +93,7 @@ voice-agents
 - [Neural audio codecs and audio tokens](#audio-codecs-tokens)
 - [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)
 - [Playbook: DB Regio Bus: a phone voicebot that books on-demand buses](#db-regio-rufbus-voicebot)
+- [Field note: Presto Voice: an SEC order on drive-thru AI that relied on human agents](#sec-presto-voice-ordering)
 
 ## Deep dives
 

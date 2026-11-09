@@ -48,3 +48,4 @@ Experts talk about **untrusted input**, **repository-borne configuration**, **co
 - [MCP security](#mcp-security)
 - [Supply chain and model security](#supply-chain-security)
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
+- [Field note: Prompt injections that bypassed tool confirmation in VS Code agent mode](#github-vscode-prompt-injection-safeguards)

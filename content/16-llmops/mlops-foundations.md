@@ -154,3 +154,4 @@ mlops-foundations
 - [The data flywheel](#data-flywheel)
 - [Observability and tracing](#observability-tracing)
 - [Fine-tuning in practice](#fine-tuning-practice)
+- [Field note: SepsisWatch at Duke: what it took to put a sepsis model into practice](#duke-algorithm-journey-map)

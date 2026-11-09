@@ -99,6 +99,8 @@ supply-chain-security
 - [Model hubs and the Hugging Face ecosystem](#hugging-face-ecosystem)
 - [Dataset versioning and lineage](#dataset-versioning-lineage)
 - [Adversarial machine learning](#adversarial-ml)
+- [Field note: LiteLLM's March 2026 supply chain incident: two malicious releases on PyPI](#litellm-supply-chain-incident)
+- [Field note: Vercel's April 2026 security incident: a third-party AI tool as the way in](#vercel-april-2026-security-incident)
 
 ## Deep dives
 

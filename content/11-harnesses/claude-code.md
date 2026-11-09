@@ -135,3 +135,4 @@ claude-code
 - [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)
 - [OS-level sandboxing for agents](#os-level-sandboxing)
 - [Embedding agent harnesses in your application](#embedded-agent-harnesses)
+- [Field note: three Claude Code changes behind reports of worse responses](#claude-code-quality-reports-2026)

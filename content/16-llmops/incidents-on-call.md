@@ -107,3 +107,5 @@ incidents-on-call
 - [Playbook: Uber Genie: a RAG copilot for on-call Slack channels](#uber-genie-on-call-copilot)
 - [Playbook: Root cause isolation at Meta with a fine-tuned Llama 2 ranker](#meta-ai-root-cause-isolation)
 - [Playbook: Meta's DrP: on-call investigation playbooks written as code](#meta-drp-investigations)
+- [Field note: Cloudflare's November 2025 outage: a bot-scoring model's feature file doubles in size](#cloudflare-november-2025-outage)
+- [Field note: Spotify: when the volume of change outgrows verification](#spotify-quality-at-higher-velocity)

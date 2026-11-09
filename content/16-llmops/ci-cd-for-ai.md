@@ -111,3 +111,4 @@ ci-cd-for-ai
 - [Online controlled experiments for AI features](#online-experiments)
 - [MLOps and LLMOps foundations](#mlops-foundations)
 - [SLOs and error budgets for AI systems](#slos-error-budgets)
+- [Field note: OpenAI's December 2024 outage: a telemetry rollout overwhelms the Kubernetes control plane](#openai-december-2024-outage)
