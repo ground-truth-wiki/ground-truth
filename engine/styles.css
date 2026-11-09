@@ -687,6 +687,9 @@ table.data{font-size:.85rem}
 .focus-mode .focus-exit{display:inline-flex}
 @media print{.focus-exit{display:none!important}}
 
+/* Visuals: room for the borders of boxes that sit on the edge of a diagram */
+.viz-body{padding:3px}
+
 @media print{
   .top,.nav,.rail,.ch-actions,.banner,.ch-end .pn,.notes,.toast-wrap,.viz-foot button,.ctrls,.skip,.footer .np{display:none!important}
   .layout{display:block}
