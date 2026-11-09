@@ -22,13 +22,13 @@ Research is where agents first delivered value to non-engineers: a report in min
 A research team: a lead splits the question, researchers read in parallel and bring back notes with sources, the lead notices gaps and sends them out again, then writes the report from the notes and has an editor check every footnote.
 
 ```viz
-{"id":"deep-research-loop","component":"stepper","title":"Plan, fan out, read, reflect, repeat, then write from evidence and check every citation","caption":"Step through a research run. The reflection step is what separates deep research from one-shot RAG: it notices what is still missing.","alt":"Stepper through a deep research loop: plan, parallel search, evidence extraction, reflection, a second round, outline, writing and citation verification.","data":"illustrative","diagram":{"w":600,"h":150,"nodes":[
-{"id":"plan","label":"Plan","sub":"sub-questions","role":"agent","x":0,"y":0,"w":130,"h":56},
-{"id":"search","label":"Search","sub":"parallel subagents","role":"tool","x":155,"y":0,"w":130,"h":56,"link":"#multi-agent"},
-{"id":"read","label":"Read and extract","sub":"evidence notes","role":"data","x":310,"y":0,"w":130,"h":56},
-{"id":"reflect","label":"Reflect","sub":"gaps, conflicts","role":"model","x":465,"y":0,"w":135,"h":56},
-{"id":"write","label":"Write","sub":"outline, sections","role":"model","x":310,"y":94,"w":130,"h":56},
-{"id":"verify","label":"Verify","sub":"every citation","role":"agent","x":465,"y":94,"w":135,"h":56,"link":"#grounding-citations"}],
+{"id":"deep-research-loop","component":"stepper","title":"Plan, fan out, read, reflect, repeat, then write from evidence and check every citation","caption":"Step through a research run. The reflection step is what separates deep research from one-shot RAG: it notices what is still missing.","alt":"Stepper through a deep research loop: plan, parallel search, evidence extraction, reflection, a second round, outline, writing and citation verification.","data":"illustrative","diagram":{"w":660,"h":150,"nodes":[
+{"id":"plan","label":"Plan","sub":"sub-questions","role":"agent","x":0,"y":0,"w":140,"h":56},
+{"id":"search","label":"Search","sub":"parallel subagents","role":"tool","x":165,"y":0,"w":140,"h":56,"link":"#multi-agent"},
+{"id":"read","label":"Read and extract","sub":"evidence notes","role":"data","x":330,"y":0,"w":150,"h":56},
+{"id":"reflect","label":"Reflect","sub":"gaps, conflicts","role":"model","x":505,"y":0,"w":155,"h":56},
+{"id":"write","label":"Write","sub":"outline, sections","role":"model","x":330,"y":94,"w":150,"h":56},
+{"id":"verify","label":"Verify","sub":"every citation","role":"agent","x":505,"y":94,"w":155,"h":56,"link":"#grounding-citations"}],
 "edges":[{"from":"plan","to":"search"},{"from":"search","to":"read"},{"from":"read","to":"reflect"},{"from":"reflect","to":"search","curve":-40,"label":"gaps"},{"from":"reflect","to":"write","label":"enough"},{"from":"write","to":"verify"}]},
 "frames":[
 {"label":"Plan","highlight":["plan"],"caption":"The question “How are EU and US rules on general-purpose AI models diverging?” becomes four sub-questions with a source plan for each."},

@@ -22,13 +22,13 @@ These frameworks shape which models are released, with what safeguards, and on w
 Think of biosafety levels for laboratories. The more dangerous the organism, the stricter the containment, and the rules are written down before anyone starts work. Frontier safety frameworks apply the same idea to AI capabilities.
 
 ```viz
-{"id":"capability-thresholds","component":"diagram","title":"Evaluate, compare with thresholds, and match safeguards to capability, or pause","caption":"The shared structure of frontier safety frameworks, simplified. Not every framework has the pause branch: as of November 2026, OpenAI’s (April 2025 version) still calls for halting development at Critical until safeguards are specified, while Anthropic’s RSP no longer commits to pausing. Names and thresholds differ between developers; see the matrix below.","alt":"Diagram of a frontier safety framework: capability evaluations feed a threshold decision, which leads to standard safeguards, stronger deployment and security safeguards, or a pause.","data":"illustrative","w":600,"h":230,"nodes":[
+{"id":"capability-thresholds","component":"diagram","title":"Evaluate, compare with thresholds, and match safeguards to capability, or pause","caption":"The shared structure of frontier safety frameworks, simplified. Not every framework has the pause branch: as of November 2026, OpenAI’s (April 2025 version) still calls for halting development at Critical until safeguards are specified, while Anthropic’s RSP no longer commits to pausing. Names and thresholds differ between developers; see the matrix below.","alt":"Diagram of a frontier safety framework: capability evaluations feed a threshold decision, which leads to standard safeguards, stronger deployment and security safeguards, or a pause.","data":"illustrative","w":700,"h":230,"nodes":[
 {"id":"model","label":"New model","role":"model","x":0,"y":86,"w":130,"h":56},
 {"id":"evals","label":"Capability evaluations","sub":"bio, cyber, AI R&D…","role":"tool","x":160,"y":86,"w":160,"h":56,"link":"#safety-evals"},
-{"id":"thr","label":"Threshold crossed?","role":"agent","x":350,"y":86,"w":110,"h":56},
-{"id":"std","label":"Standard safeguards","role":"data","x":490,"y":0,"w":110,"h":56},
-{"id":"strong","label":"Stronger safeguards","sub":"deployment, security","role":"untrusted","x":490,"y":86,"w":110,"h":56},
-{"id":"pause","label":"Pause until safeguards exist","role":"human","x":490,"y":172,"w":110,"h":56}],
+{"id":"thr","label":"Threshold crossed?","role":"agent","x":350,"y":86,"w":130,"h":56},
+{"id":"std","label":"Standard safeguards","role":"data","x":520,"y":0,"w":180,"h":56},
+{"id":"strong","label":"Stronger safeguards","sub":"deployment, security","role":"untrusted","x":520,"y":86,"w":180,"h":56},
+{"id":"pause","label":"Pause until safeguards exist","role":"human","x":520,"y":172,"w":180,"h":56}],
 "edges":[{"from":"model","to":"evals"},{"from":"evals","to":"thr"},{"from":"thr","to":"std","label":"no"},{"from":"thr","to":"strong","label":"yes"},{"from":"thr","to":"pause","style":"dashed","label":"cannot meet"}]}
 ```
 

@@ -22,12 +22,12 @@ Many small models people use daily were distilled from larger ones, and merging 
 Distillation is an apprentice learning from a master’s work, not only from the textbook. Merging is blending two experts’ notebooks into one, which works surprisingly often when both started from the same textbook.
 
 ```viz
-{"id":"distill-diagram","component":"diagram","title":"A student learns from the teacher’s answers or full probability distributions","caption":"Two common forms of distillation. Click a box for related chapters.","alt":"Diagram of knowledge distillation: prompts go to a teacher model, whose outputs or logits train a smaller student model, evaluated on the target task.","data":"illustrative","w":600,"h":180,"nodes":[
+{"id":"distill-diagram","component":"diagram","title":"A student learns from the teacher’s answers or full probability distributions","caption":"Two common forms of distillation. Click a box for related chapters.","alt":"Diagram of knowledge distillation: prompts go to a teacher model, whose outputs or logits train a smaller student model, evaluated on the target task.","data":"illustrative","w":640,"h":180,"nodes":[
 {"id":"prompts","label":"Task prompts","role":"data","x":0,"y":62,"w":130,"h":56},
 {"id":"teacher","label":"Teacher","sub":"large model","role":"model","x":170,"y":0,"w":150,"h":56},
 {"id":"outs","label":"Outputs or logits","role":"context","x":360,"y":0,"w":150,"h":56},
 {"id":"student","label":"Student","sub":"small model","role":"model","x":360,"y":124,"w":150,"h":56,"link":"#small-local-models"},
-{"id":"eval","label":"Eval","role":"tool","x":540,"y":124,"w":60,"h":56,"link":"#why-evals"}],
+{"id":"eval","label":"Eval","role":"tool","x":540,"y":124,"w":100,"h":56,"link":"#why-evals"}],
 "edges":[{"from":"prompts","to":"teacher"},{"from":"teacher","to":"outs"},{"from":"outs","to":"student","label":"train"},{"from":"prompts","to":"student","style":"dashed"},{"from":"student","to":"eval"}]}
 ```
 

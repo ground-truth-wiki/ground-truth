@@ -22,13 +22,13 @@ Customer support is one of the largest deployments of AI agents, with clear econ
 A support agent is a new hire on the help desk with access to the policy binder and a few systems. They should solve what the binder covers, ask a supervisor when it does not, and never promise what the policy does not allow.
 
 ```viz
-{"id":"support-flow","component":"diagram","title":"Resolve within policy, escalate with context, and sample everything for quality","caption":"An illustrative support agent architecture. Click a component for the chapter behind it.","alt":"Diagram of a support agent: inbound channels, classification and retrieval, an agent with policy-limited tools, a policy and confidence check, resolution or escalation to a human with a summary, and quality sampling.","data":"illustrative","w":600,"h":230,"nodes":[
+{"id":"support-flow","component":"diagram","title":"Resolve within policy, escalate with context, and sample everything for quality","caption":"An illustrative support agent architecture. Click a component for the chapter behind it.","alt":"Diagram of a support agent: inbound channels, classification and retrieval, an agent with policy-limited tools, a policy and confidence check, resolution or escalation to a human with a summary, and quality sampling.","data":"illustrative","w":720,"h":230,"nodes":[
 {"id":"in","label":"Chat, email, voice","role":"human","x":0,"y":80,"w":120,"h":56,"link":"#voice-agents"},
-{"id":"ctx","label":"Classify and retrieve","sub":"intent, account, policy","role":"data","x":150,"y":80,"w":140,"h":56,"link":"#rag-fundamentals"},
-{"id":"agent","label":"Agent with tools","sub":"lookup, refund up to limit","role":"agent","x":320,"y":80,"w":140,"h":56,"link":"#agent-tools"},
-{"id":"resolve","label":"Resolve","role":"data","x":490,"y":0,"w":110,"h":56},
-{"id":"human","label":"Human agent","sub":"with summary","role":"human","x":490,"y":160,"w":110,"h":56,"link":"#human-in-the-loop"},
-{"id":"qa","label":"Quality sampling","role":"tool","x":320,"y":180,"w":140,"h":46,"link":"#online-evaluation"}],
+{"id":"ctx","label":"Classify and retrieve","sub":"intent, account, policy","role":"data","x":145,"y":80,"w":180,"h":56,"link":"#rag-fundamentals"},
+{"id":"agent","label":"Agent with tools","sub":"lookup, refund up to limit","role":"agent","x":355,"y":80,"w":180,"h":56,"link":"#agent-tools"},
+{"id":"resolve","label":"Resolve","role":"data","x":570,"y":0,"w":150,"h":56},
+{"id":"human","label":"Human agent","sub":"with summary","role":"human","x":570,"y":160,"w":150,"h":56,"link":"#human-in-the-loop"},
+{"id":"qa","label":"Quality sampling","role":"tool","x":355,"y":180,"w":180,"h":46,"link":"#online-evaluation"}],
 "edges":[{"from":"in","to":"ctx"},{"from":"ctx","to":"agent"},{"from":"agent","to":"resolve","label":"within policy"},{"from":"agent","to":"human","label":"escalate"},{"from":"agent","to":"qa","style":"dashed"}]}
 ```
 
