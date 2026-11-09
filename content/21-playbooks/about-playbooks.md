@@ -117,6 +117,20 @@ Grouped by the industry of the organization. Each page says at the top whether i
 ### Healthcare
 
 - [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)
+- [AI in Danish breast screening: one reader for likely normal mammograms](#capital-region-denmark-ai-mammography)
+- [Ambient voice technology across NHS care settings: the GOSH Phase 4 evaluation](#gosh-ambient-voice-technology)
+- [TREWS: sepsis alerts, provider confirmation and patient outcomes at five hospitals](#johns-hopkins-trews-sepsis-alerts)
+- [Kaiser Permanente's Advance Alert Monitor: early warnings with nurse review](#kaiser-advance-alert-monitor)
+- [Kaiser Permanente: the first year of an AI scribe for clinical notes](#kaiser-ambient-ai-scribes)
+- [Ambient voice technology for clinical notes at the London Ambulance Service](#london-ambulance-ambient-voice)
+- [MASAI: AI triage and detection support in Swedish mammography screening](#masai-ai-mammography-screening)
+- [Ambient AI documentation pilots at Mass General Brigham and Emory Healthcare](#mass-general-emory-ambient-documentation)
+- [Antibiogo: a smartphone app that reads antibiotic susceptibility tests](#msf-antibiogo)
+- [Northwestern Medicine: generative draft reports for radiographs](#northwestern-ai-radiograph-reporting)
+- [NYUTron: a language model trained on clinical notes predicts hospital readmissions](#nyu-langone-nyutron)
+- [PubMed Best Match: learning to rank for biomedical literature search](#pubmed-best-match)
+- [AI-drafted replies to patient messages at UC San Diego Health](#ucsd-ai-drafted-patient-replies)
+- [Testing an ambient AI scribe in a randomized trial before rollout at UW Health](#uw-ambient-documentation-studies)
 
 ### Public sector
 

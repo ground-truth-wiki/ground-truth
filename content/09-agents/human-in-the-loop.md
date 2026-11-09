@@ -101,6 +101,11 @@ human-in-the-loop
 - [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)
 - [Playbook: human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
 - [Playbook: Google: drafting security incident summaries with an LLM](#google-incident-response-genai)
+- [Playbook: AI in Danish breast screening: one reader for likely normal mammograms](#capital-region-denmark-ai-mammography)
+- [Playbook: TREWS: sepsis alerts, provider confirmation and patient outcomes at five hospitals](#johns-hopkins-trews-sepsis-alerts)
+- [Playbook: Kaiser Permanente's Advance Alert Monitor: early warnings with nurse review](#kaiser-advance-alert-monitor)
+- [Playbook: MASAI: AI triage and detection support in Swedish mammography screening](#masai-ai-mammography-screening)
+- [Playbook: Northwestern Medicine: generative draft reports for radiographs](#northwestern-ai-radiograph-reporting)
 
 ## Deep dives
 
