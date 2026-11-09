@@ -48,3 +48,5 @@ Experts read a case for its **entry vector**, the **trust boundary** it crossed,
 - [Prompt injection attacks and defenses in depth](#prompt-injection-techniques)
 - [Supply chain and model security](#supply-chain-security)
 - [Hallucination and factuality](#hallucination-factuality)
+- [Field note: a widely used sepsis model meets its first external validation](#epic-sepsis-model-validation)
+- [Field note: the New York City MyCity chatbot under audit](#nyc-mycity-chatbot-audit)

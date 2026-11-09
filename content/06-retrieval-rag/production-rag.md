@@ -118,6 +118,7 @@ production-rag
 - [Enterprise readiness](#enterprise-readiness)
 - [Evaluating RAG](#rag-evaluation)
 - [Pipeline orchestration and processing engines](#data-pipeline-orchestration)
+- [Playbook: GOV.UK Chat, answering questions from government guidance](#gov-uk-chat)
 
 ## Deep dives
 

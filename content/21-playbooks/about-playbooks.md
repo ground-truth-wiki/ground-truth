@@ -12,7 +12,7 @@ visuals: []
 type: playbook
 ---
 > [!tldr]
-> A playbook shows how one team used AI for one real use case in one industry: the problem, the approach, the stack, the results and how they were measured, and what failed. This book is new and waits for its first playbooks; this page explains what belongs here and how to add one.
+> A playbook shows how one team used AI for one real use case in one industry: the problem, the approach, the stack, the results and how they were measured, and what failed. This book is new; this page explains what belongs here and how to add one.
 
 ## What belongs here
 
@@ -49,3 +49,6 @@ Practitioners trust a playbook more for its "what failed" section than for its r
 - [Why evals are the core skill](#why-evals)
 - [Error analysis first](#error-analysis)
 - [Lessons from public engineering write-ups](#public-writeups)
+- [Human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
+- [GOV.UK Chat: answering questions from government guidance](#gov-uk-chat)
+- [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

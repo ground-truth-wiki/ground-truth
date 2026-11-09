@@ -48,3 +48,4 @@ Experts say **OEC**, **guardrail metrics**, **minimum detectable effect**, **SRM
 - [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
 - [Multi-armed and contextual bandits](#bandits)
 - [The data flywheel](#data-flywheel)
+- [Playbook: a randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

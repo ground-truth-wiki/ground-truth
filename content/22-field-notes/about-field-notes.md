@@ -48,3 +48,6 @@ The most useful field notes end with a change someone else can copy: a new eval,
 - [Agent failure modes](#agent-failure-modes)
 - [Reliability engineering](#reliability-engineering)
 - [Lessons from public engineering write-ups](#public-writeups)
+- [A widely used sepsis model meets its first external validation](#epic-sepsis-model-validation)
+- [Three infrastructure bugs that degraded Claude's answers](#claude-quality-bugs-2025)
+- [The New York City MyCity chatbot under audit](#nyc-mycity-chatbot-audit)
