@@ -48,3 +48,4 @@ Experts talk about **inertia**, **linkage**, **core points and noise**, **soft a
 - [Error analysis first](#error-analysis)
 - [High-dimensional geometry](#high-dimensional-geometry)
 - [Word embeddings: from word2vec to contextual representations](#word-embeddings)
+- [Playbook: Dropbox: AI summaries and answers in web file previews](#dropbox-file-preview-ai-answers)

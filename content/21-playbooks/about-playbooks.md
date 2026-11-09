@@ -47,6 +47,28 @@ Grouped by the industry of the organization. Each page says at the top whether i
 - [Converting Enzyme tests to React Testing Library at Slack: an AST codemod plus an LLM](#slack-enzyme-to-rtl-migration)
 - [Zoominfo: a four-phase evaluation and rollout of GitHub Copilot](#zoominfo-copilot-study)
 
+### AI and cloud providers
+
+- [RCAgent: root cause analysis of Flink jobs with a locally hosted LLM agent](#alibaba-rcagent-root-cause)
+- [Cloudflare's Infire: an in-house inference engine in Rust for edge GPUs](#cloudflare-infire-inference-engine)
+- [Cursor's fast apply: a fine-tuned model and speculative edits for whole-file code edits](#cursor-fast-apply-speculative-edits)
+- [Dropbox Dash: adapting an LLM relevance judge to cheaper models with DSPy](#dropbox-dash-relevance-judge-dspy)
+- [Dropbox: AI summaries and answers in web file previews](#dropbox-file-preview-ai-answers)
+- [Dropbox: choosing an embedding model for multilingual file search](#dropbox-semantic-search-model-selection)
+- [Xpert: recommending the first incident query to Microsoft's on-call engineers](#microsoft-xpert-incident-queries)
+
+### Finance and insurance
+
+- [ANZ Bank: a controlled GitHub Copilot experiment before rollout](#anz-bank-copilot-study)
+- [Grab Hubble: LLM-written table docs and a chatbot for data discovery](#grab-data-discovery-llm)
+- [Grab: tagging sensitive data columns with an LLM](#grab-llm-data-classification)
+- [Grab's Catwalk: replacing a legacy ONNX server with NVIDIA Triton](#grab-triton-model-serving)
+- [Nubank: customer-support agents built around evaluation](#nubank-support-agents-evaluation)
+- [Ramp Research: an agentic data analyst in Slack](#ramp-research-agent)
+- [Ramp Sheets: agents that write monitors, triage alerts and propose fixes](#ramp-sheets-self-maintaining)
+- [Uber invoice processing: OCR and GPT-4 with human review](#uber-invoice-processing)
+- [Upstart's credit model under the CFPB's first No-Action Letter](#upstart-cfpb-fair-lending)
+
 ### Healthcare
 
 - [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

@@ -97,3 +97,4 @@ document-extraction
 - [The data flywheel](#data-flywheel)
 - [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)
 - [OCR and document parsing models](#document-ocr-models)
+- [Playbook: Uber invoice processing: OCR and GPT-4 with human review](#uber-invoice-processing)

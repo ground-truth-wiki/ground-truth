@@ -89,6 +89,7 @@ support-agents
 - [Evaluating agents](#evaluating-agents)
 - [Guardrails and control](#guardrails-control)
 - [Telephony and transport for voice agents](#voice-telephony)
+- [Playbook: Nubank: customer-support agents built around evaluation](#nubank-support-agents-evaluation)
 
 ## Deep dives
 
