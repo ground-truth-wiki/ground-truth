@@ -49,3 +49,4 @@ The vocabulary: **learned simulator**, **emulator** and **surrogate model**, **r
 - [Neural networks](#neural-networks)
 - [Playbook: ECMWF's AIFS: running a machine-learning weather model in operations](#ecmwf-aifs-operational)
 - [Playbook: Google's flood forecasting: from gauged rivers in India and Bangladesh to ungauged basins worldwide](#google-flood-forecasting)
+- [Field note: ECMWF's AIFS 1.1.0: bounding the outputs to fix precipitation forecasts](#ecmwf-aifs-precipitation-fix)

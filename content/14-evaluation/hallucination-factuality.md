@@ -157,3 +157,4 @@ hallucination-factuality
 - [LLM-as-judge done right](#llm-as-judge)
 - [Judge models, juries and meta-evaluation](#judge-models-meta-evaluation)
 - [Decoding and sampling](#decoding-sampling)
+- [Field note: Fake case citations in two English cases: the High Court on lawyers and generative AI](#ayinde-high-court-fake-citations)

@@ -101,6 +101,7 @@ supply-chain-security
 - [Adversarial machine learning](#adversarial-ml)
 - [Field note: LiteLLM's March 2026 supply chain incident: two malicious releases on PyPI](#litellm-supply-chain-incident)
 - [Field note: Vercel's April 2026 security incident: a third-party AI tool as the way in](#vercel-april-2026-security-incident)
+- [Field note: Microsoft's SAS token exposure: an internal storage URL shared in a public AI repository](#microsoft-sas-token-exposure)
 
 ## Deep dives
 
