@@ -6,13 +6,16 @@ import { unescapeAttr } from './format.mjs';
 export function scanSegments(html) {
   const segments = [];
   const open = /<(script|style)\b([^>]*)>/gi;
-  const lower = html.toLowerCase();
   let pos = 0;
   let m;
   while ((m = open.exec(html))) {
     const tag = m[1].toLowerCase();
     const bodyStart = m.index + m[0].length;
-    const closeAt = lower.indexOf(`</${tag}`, bodyStart);
+    // gt: search the page itself, case-insensitively. Offsets taken from html.toLowerCase() drift after a
+    // character whose lowercase form is longer, such as the Turkish "İ", and cut every later segment wrong.
+    const close = new RegExp(`</${tag}`, 'gi');
+    close.lastIndex = bodyStart;
+    const closeAt = close.exec(html)?.index ?? -1;
     if (closeAt < 0) throw new Error(`unclosed <${tag}> at offset ${m.index}`);
     const end = html.indexOf('>', closeAt) + 1;
     if (m.index > pos) segments.push({ kind: 'html', start: pos, end: m.index, text: html.slice(pos, m.index) });
