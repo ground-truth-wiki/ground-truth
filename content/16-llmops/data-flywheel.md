@@ -103,3 +103,4 @@ data-flywheel
 - [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
 - [Playbook: Shopify Sidekick: post-training an open model to take over a frontier model's subagent](#shopify-open-model-task-experts)
 - [Playbook: Zalando: mapping supplier spreadsheets with a RAG flywheel](#zalando-rag-data-ingestion)
+- [Playbook: Uber's Legal Redlining Agent: reviewing contract redlines inside Word](#uber-legal-redlining-agent)

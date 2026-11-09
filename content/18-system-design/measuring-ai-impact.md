@@ -58,3 +58,5 @@ The vocabulary: **unit of value**, **guardrail metric**, **acceptance rate**, **
 - [Playbook: ambient AI documentation pilots at Mass General Brigham and Emory Healthcare](#mass-general-emory-ambient-documentation)
 - [Playbook: AI-drafted replies to patient messages at UC San Diego Health](#ucsd-ai-drafted-patient-replies)
 - [Playbook: testing an ambient AI scribe in a randomized trial before rollout at UW Health](#uw-ambient-documentation-studies)
+- [Playbook: Ashurst's generative AI trials: measuring first drafts in a law firm](#ashurst-generative-ai-trials)
+- [Playbook: Panasonic Connect's ConnectAI: one year of a company-wide AI assistant](#panasonic-connect-generative-ai)

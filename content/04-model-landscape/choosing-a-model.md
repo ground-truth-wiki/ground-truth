@@ -90,6 +90,7 @@ choosing-a-model
 - [Cloud AI platforms and inference providers](#cloud-ai-platforms)
 - [Multilingual and low-resource language models](#multilingual-models)
 - [The AI industry map: labs, clouds, chips and money](#ai-industry-map)
+- [Playbook: Japan's Digital Agency: testing generative AI on government work](#japan-digital-agency-genai-validation)
 
 ## Deep dives
 

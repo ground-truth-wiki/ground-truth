@@ -47,3 +47,5 @@ The vocabulary: **learned simulator**, **emulator** and **surrogate model**, **r
 - [AI scientist agents and autonomous labs](#ai-scientist-agents)
 - [Image generation](#image-generation)
 - [Neural networks](#neural-networks)
+- [Playbook: ECMWF's AIFS: running a machine-learning weather model in operations](#ecmwf-aifs-operational)
+- [Playbook: Google's flood forecasting: from gauged rivers in India and Bangladesh to ungauged basins worldwide](#google-flood-forecasting)

@@ -106,6 +106,7 @@ human-in-the-loop
 - [Playbook: Kaiser Permanente's Advance Alert Monitor: early warnings with nurse review](#kaiser-advance-alert-monitor)
 - [Playbook: MASAI: AI triage and detection support in Swedish mammography screening](#masai-ai-mammography-screening)
 - [Playbook: Northwestern Medicine: generative draft reports for radiographs](#northwestern-ai-radiograph-reporting)
+- [Playbook: DfT's Consultation Analysis Tool: LLM thematic analysis of consultation responses](#dft-consultation-analysis-tool)
 
 ## Deep dives
 

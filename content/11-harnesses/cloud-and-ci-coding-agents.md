@@ -56,3 +56,4 @@ Experts talk about **headless mode**, **setup steps**, **egress allowlists**, **
 - [Playbook: Meta: mutation-guided test generation for privacy hardening](#meta-mutation-guided-test-generation)
 - [Playbook: TestGen-LLM: extending human-written unit tests with LLMs at Meta](#meta-testgen-llm)
 - [Playbook: Verification loops and an LLM judge for Spotify's background coding agent](#spotify-background-coding-agents)
+- [Playbook: Beko: an LLM code review bot on pull requests, measured in three projects](#beko-automated-code-review)

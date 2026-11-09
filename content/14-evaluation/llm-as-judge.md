@@ -120,6 +120,7 @@ llm-as-judge
 - [Playbook: Allegro: judging search relevance with LLMs in four languages](#allegro-search-relevance-llm-judge)
 - [Playbook: Shopify Sidekick: tool sprawl, calibrated LLM judges and reward hacking in a merchant assistant](#shopify-sidekick-agentic-lessons)
 - [Playbook: Zalando: an LLM judge checks search quality before new markets launch](#zalando-search-quality-ai-judge)
+- [Playbook: the CS50 Duck: an AI tutor built to guide students, not hand out answers](#cs50-ai-teaching-assistant)
 
 ## Deep dives
 

@@ -48,3 +48,4 @@ Experts say **high- and low-resource languages**, **token premium** or **fertili
 - [Jailbreaks and misuse](#jailbreaks-misuse)
 - [Pretraining data](#pretraining-data)
 - [Playbook: MinT: open machine translation on CPUs for Wikipedia translators](#wikimedia-mint-translation)
+- [Playbook: Farmer.Chat: answering smallholder farmers' questions in Kenya](#digital-green-farmer-chat)

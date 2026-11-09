@@ -80,6 +80,7 @@ ai-for-science
 - [Graph neural networks](#graph-neural-networks)
 - [Evolutionary program search with LLMs](#evolutionary-program-search)
 - [AI scientist agents and autonomous labs](#ai-scientist-agents)
+- [Playbook: BTSbot: a CNN that scans sky-survey alerts and triggers spectroscopic follow-up](#ztf-btsbot)
 
 ## Deep dives
 
