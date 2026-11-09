@@ -48,6 +48,7 @@ Every concept with a shape gets a visual, and the visual comes before the prose 
 - **Color never carries meaning alone.** Pair it with a shape, a label or a pattern (untrusted content also carries a hatch pattern).
 - **The style is flat:** no gradients or shadows, thin consistent strokes, rounded corners, and labels at least 12 px at phone width.
 - **Labels fit their boxes.** The engine measures each box label in the browser: a label that is too wide first shrinks a little (never below 12 px), then wraps onto more lines, and only as a last resort is squeezed. Squeezed text looks condensed, so give boxes room: labels average about 7 px per character, plus 46 px when the box shows a role icon (20 px without one). Check new diagrams at desktop width.
+- **Arrow labels stay off the lines.** The engine places each arrow label at the nearest spot beside its arrow that covers no line, box or other label, and keeps a label where it is when that spot is already free (including one moved with `dx` and `dy`). On a very short arrow between close boxes the label can end up above or below the gap, so leave some space between boxes whose arrow carries a label.
 - **The legend** at `#visual-legend` teaches the language once, and every visual links to it.
 
 ## Where visuals live

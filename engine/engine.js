@@ -550,9 +550,47 @@ function fitBoxLabels(svg) {
     });
   });
 }
-if ('MutationObserver' in W) new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(nd => { /* gt: fit box labels whenever a diagram is drawn */
+/* gt: an arrow label moves to the nearest spot beside its arrow that covers no line, box or other label. Labels that already sit free stay put. */
+function placeEdgeLabels(svg) {
+  if (!svg.isConnected) return;
+  const vb = (svg.getAttribute('viewBox') || '').split(/\s+/).map(Number), VW = vb[2] || 1e9, VH = vb[3] || 1e9;
+  const rect = r => ({ x: +r.getAttribute('x'), y: +r.getAttribute('y'), w: +r.getAttribute('width'), h: +r.getAttribute('height') });
+  const boxes = Array.from(svg.querySelectorAll('rect.n-box')).map(rect);
+  const geo = p => { const v = (p.getAttribute('d').match(/-?[\d.]+/g) || []).map(Number); return v.length === 6 ? { s: [v[0], v[1]], c: [v[2], v[3]], e: [v[4], v[5]] } : v.length === 4 ? { s: [v[0], v[1]], e: [v[2], v[3]] } : null; };
+  const at = (g, t) => [0, 1].map(i => g.c ? (1 - t) * (1 - t) * g.s[i] + 2 * (1 - t) * t * g.c[i] + t * t * g.e[i] : g.s[i] + (g.e[i] - g.s[i]) * t);
+  const dir = (g, t) => [0, 1].map(i => g.c ? 2 * (1 - t) * (g.c[i] - g.s[i]) + 2 * t * (g.e[i] - g.c[i]) : g.e[i] - g.s[i]);
+  const hitSeg = (r, a, c) => { let t0 = 0, t1 = 1; const dx = c[0] - a[0], dy = c[1] - a[1]; for (const [p, q] of [[-dx, a[0] - r.x], [dx, r.x + r.w - a[0]], [-dy, a[1] - r.y], [dy, r.y + r.h - a[1]]]) { if (p === 0) { if (q < 0) return false; } else { const u = q / p; if (p < 0) { if (u > t1) return false; if (u > t0) t0 = u; } else { if (u < t0) return false; if (u < t1) t1 = u; } } } return true; };
+  const ov = (a, b) => a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
+  const edges = Array.from(svg.querySelectorAll('path.edge')).map(p => ({ p, g: geo(p) })).filter(o => o.g);
+  const segs = edges.map(o => { const n = o.g.c ? 8 : 1, pts = []; for (let i = 0; i <= n; i++) pts.push(at(o.g, i / n)); return { p: o.p, pts }; });
+  const placed = Array.from(svg.querySelectorAll('text.grp-lab')).map(t => { const b = t.getBBox(); return { x: b.x, y: b.y, w: b.width, h: b.height }; });
+  edges.forEach(({ p, g }) => {
+    const lab = p.parentNode.querySelector('text.lab'); if (!lab) return;
+    const bb = lab.getBBox(); if (!bb.width) return;
+    const hw = bb.width / 2 + 2, hh = bb.height / 2, cx0 = bb.x + bb.width / 2, cy0 = bb.y + bb.height / 2;
+    const cands = [{ cx: cx0, cy: cy0, cost: 0 }];
+    [0.5, 0.4, 0.6, 0.3, 0.7].forEach((t, k) => {
+      const m = at(g, t), d = dir(g, t), L = Math.hypot(d[0], d[1]) || 1, nx = -d[1] / L, ny = d[0] / L, off = hw * Math.abs(nx) + hh * Math.abs(ny) + 3;
+      [1, -1].forEach(sd => [0, 6, 12, 18, 24, 32, 40, 48].forEach(ex => cands.push({ cx: m[0] + sd * nx * (off + ex), cy: m[1] + sd * ny * (off + ex), cost: 1 + k * 1.5 + ex * 0.22 + (sd * ny > 0 ? 0.5 : 0) })));
+      [[-1, 0], [1, 0], [0, -1], [0, 1], [-1, -1], [1, -1], [-1, 1], [1, 1]].forEach(([sx, sy]) => cands.push({ cx: m[0] + sx * (hw + 3), cy: m[1] + sy * (hh + 3), cost: 1.5 + k * 1.5 }));
+    });
+    let best = null;
+    cands.forEach(c => {
+      const r = { x: c.cx - hw, y: c.cy - hh, w: 2 * hw, h: 2 * hh };
+      let sc = c.cost;
+      boxes.forEach(b => { if (ov(r, b)) sc += 100; });
+      placed.forEach(b => { if (ov(r, b)) sc += 60; });
+      segs.forEach(sg => { for (let i = 1; i < sg.pts.length; i++) if (hitSeg(r, sg.pts[i - 1], sg.pts[i])) { sc += sg.p === p ? 40 : 25; break; } });
+      if (r.x < 0 || r.y < 0 || r.x + r.w > VW || r.y + r.h > VH) sc += 30;
+      if (!best || sc < best.sc) best = { sc, r, c };
+    });
+    placed.push(best.r);
+    if (best.c.cx !== cx0 || best.c.cy !== cy0) { lab.setAttribute('x', (+lab.getAttribute('x') + best.c.cx - cx0).toFixed(1)); lab.setAttribute('y', (+lab.getAttribute('y') + best.c.cy - cy0).toFixed(1)); }
+  });
+}
+if ('MutationObserver' in W) new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(nd => { /* gt: fit box labels and place arrow labels whenever a diagram is drawn */
   if (nd.nodeType !== 1) return;
-  (nd.matches('svg.dg, svg.seq') ? [nd] : Array.from(nd.querySelectorAll('svg.dg, svg.seq'))).forEach(sg => (D.fonts && D.fonts.status !== 'loaded' ? D.fonts.ready : Promise.resolve()).then(() => fitBoxLabels(sg)));
+  (nd.matches('svg.dg, svg.seq') ? [nd] : Array.from(nd.querySelectorAll('svg.dg, svg.seq'))).forEach(sg => (D.fonts && D.fonts.status !== 'loaded' ? D.fonts.ready : Promise.resolve()).then(() => { fitBoxLabels(sg); if (sg.classList.contains('dg')) placeEdgeLabels(sg); }));
 }))).observe(D.documentElement, { childList: true, subtree: true });
 function lazy(node, fn) { node._mount = () => { node._mount = null; fn(); }; if (vizIO) vizIO.observe(node); else setTimeout(() => node._mount && node._mount(), 0); }
 function kindBadge(spec) {
