@@ -89,6 +89,31 @@ Grouped by the industry of the organization. Each page says at the top whether i
 - [Zalando: an LLM judge checks search quality before new markets launch](#zalando-search-quality-ai-judge)
 - [Zalando: migrating B2B apps between UI component libraries with GPT-4o](#zalando-ui-library-migration)
 
+### Travel, mobility and delivery
+
+- [DB Regio Bus: a phone voicebot that books on-demand buses](#db-regio-rufbus-voicebot)
+- [RCACopilot: predicting root cause categories of cloud incidents at Microsoft](#microsoft-rcacopilot)
+- [Uber FixrLeak: repairing Java resource leaks with AST checks and an LLM](#uber-fixrleak)
+- [Uber Genie: a RAG copilot for on-call Slack channels](#uber-genie-on-call-copilot)
+- [Uber PerfInsights: finding Go performance antipatterns with LLMs](#uber-perfinsights)
+- [Uber QueryGPT: generating SQL from natural-language questions](#uber-querygpt)
+- [Uber AutoCover: generating and repairing software tests with a multi-agent pipeline](#uber-test-generation-agents)
+- [uReview: Uber's in-house AI code reviewer with graded and filtered comments](#uber-ureview-code-review)
+
+### Media, social and gaming
+
+- [LinkedIn's assistant for jobs and the feed: what came easy and where it struggled](#linkedin-generative-ai-product-lessons)
+- [LinkedIn's SQL Bot: text-to-SQL over an enterprise data lake](#linkedin-sql-bot)
+- [Root cause isolation at Meta with a fine-tuned Llama 2 ranker](#meta-ai-root-cause-isolation)
+- [CodeCompose: fine-tuned code completion at Meta](#meta-codecompose)
+- [Meta's DrP: on-call investigation playbooks written as code](#meta-drp-investigations)
+- [Meta: mutation-guided test generation for privacy hardening](#meta-mutation-guided-test-generation)
+- [TestGen-LLM: extending human-written unit tests with LLMs at Meta](#meta-testgen-llm)
+- [Roblox's voice safety classifier: moderating live voice chat in 30 languages](#roblox-voice-safety-classifier)
+- [Verification loops and an LLM judge for Spotify's background coding agent](#spotify-background-coding-agents)
+- [Spotify GLIDE: generative retrieval with Semantic IDs for podcast discovery](#spotify-podcast-generative-retrieval)
+- [MinT: open machine translation on CPUs for Wikipedia translators](#wikimedia-mint-translation)
+
 ### Healthcare
 
 - [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

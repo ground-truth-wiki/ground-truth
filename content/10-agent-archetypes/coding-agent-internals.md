@@ -49,3 +49,4 @@ Experts talk about **fault localization**, **repository maps**, **edit formats**
 - [Structured and code retrieval](#structured-code-retrieval)
 - [Training environments for coding agents](#swe-training-environments)
 - [Playbook: migrating int32 IDs to int64 at Google with an LLM](#google-code-migrations-llm)
+- [Playbook: Uber FixrLeak: repairing Java resource leaks with AST checks and an LLM](#uber-fixrleak)

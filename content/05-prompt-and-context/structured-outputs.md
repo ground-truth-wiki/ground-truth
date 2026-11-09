@@ -102,6 +102,7 @@ structured-outputs
 - [Document-processing and extraction pipelines](#document-extraction)
 - [Prompting fundamentals](#prompting-fundamentals)
 - [Grounding and citations](#grounding-citations)
+- [Playbook: LinkedIn's assistant for jobs and the feed: what came easy and where it struggled](#linkedin-generative-ai-product-lessons)
 
 ## Deep dives
 

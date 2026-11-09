@@ -52,3 +52,7 @@ Experts talk about **headless mode**, **setup steps**, **egress allowlists**, **
 - [Playbook: BitsAI-CR: two-stage LLM code review at ByteDance](#bytedance-bitsai-code-review)
 - [Playbook: AutoCommenter: LLM best-practice comments in Google's code review](#google-autocommenter-code-review)
 - [Playbook: GetYourGuide's Automerge: an AI pipeline that fixes and merges dependency updates](#getyourguide-ai-pull-request-workflow)
+- [Playbook: uReview: Uber's in-house AI code reviewer with graded and filtered comments](#uber-ureview-code-review)
+- [Playbook: Meta: mutation-guided test generation for privacy hardening](#meta-mutation-guided-test-generation)
+- [Playbook: TestGen-LLM: extending human-written unit tests with LLMs at Meta](#meta-testgen-llm)
+- [Playbook: Verification loops and an LLM judge for Spotify's background coding agent](#spotify-background-coding-agents)

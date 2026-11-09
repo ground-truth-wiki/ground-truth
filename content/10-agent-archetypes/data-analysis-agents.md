@@ -49,3 +49,5 @@ Experts talk about **execution accuracy**, **schema linking**, **grain**, **join
 - [Evaluating agents](#evaluating-agents)
 - [Playbook: Salesforce Horizon Agent: text-to-SQL in Slack with consensus voting](#salesforce-text-to-sql)
 - [Playbook: Ramp Research: an agentic data analyst in Slack](#ramp-research-agent)
+- [Playbook: Uber QueryGPT: generating SQL from natural-language questions](#uber-querygpt)
+- [Playbook: LinkedIn's SQL Bot: text-to-SQL over an enterprise data lake](#linkedin-sql-bot)
