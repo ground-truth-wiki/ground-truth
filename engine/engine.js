@@ -512,6 +512,48 @@ const ROLES = ['model', 'context', 'token', 'tool', 'data', 'agent', 'human', 'e
 const ROLE_TXT = { model: 'Model', context: 'Context window', token: 'Token', tool: 'Tool', data: 'Data store', agent: 'Agent', human: 'Human', external: 'External service', untrusted: 'Untrusted content' };
 const INTERACTIVE = new Set(['stepper', 'sequence', 'explorer', 'calculator', 'embedding-map', 'budget', 'code-walk', 'tree', 'compare', 'tokens', 'trace', 'wizard', 'heatmap-explorer', 'graph', 'diagram-variants', 'timeline', 'matrix']);
 const vizIO = ('IntersectionObserver' in W) ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { vizIO.unobserve(e.target); if (e.target._mount) e.target._mount(); } }), { rootMargin: '400px 0px' }) : null;
+/* gt: box labels are measured in the browser. A label wider than its box first shrinks a little, then wraps onto more lines, and only as a last resort is squeezed. Text never drops below 12px. */
+function fitBoxLabels(svg) {
+  if (!svg.isConnected) return;
+  const len = t => t.getComputedTextLength();
+  svg.querySelectorAll('rect.n-box').forEach(box => {
+    const ts = Array.from(box.parentNode.children).filter(t => t.tagName === 'text' && t.getAttribute('text-anchor') !== 'end');
+    if (!ts.length) return;
+    const bx = +box.getAttribute('x'), by = +box.getAttribute('y'), bw = +box.getAttribute('width'), bh = +box.getAttribute('height');
+    const tx = +ts[0].getAttribute('x'), room = ts[0].getAttribute('text-anchor') === 'middle' ? 2 * Math.min(tx - bx, bx + bw - tx) - 14 : bx + bw - tx - 8;
+    if (room < 24 || ts.every(t => len(t) <= room + 0.5)) return;
+    const items = ts.map(t => ({ t, text: t.textContent, fs: parseFloat(getComputedStyle(t).fontSize) || 14 }));
+    const size = (it, k) => Math.max(12, it.fs * k);
+    const fits = (it, k, str) => { it.t.style.fontSize = size(it, k) + 'px'; it.t.textContent = str; return len(it.t) <= room; };
+    const wrap = (it, k) => { const rows = []; let cur = ''; it.text.split(' ').forEach(w => { const nx = cur ? cur + ' ' + w : w; if (cur && !fits(it, k, nx)) { rows.push(cur); cur = w; } else cur = nx; }); rows.push(cur); return rows; };
+    const height = plan => plan.reduce((a, r) => a + r.rows.length * size(r.it, r.k) * 1.2, 0);
+    let plan = null;
+    for (const k of [0.94, 0.88]) if (!plan && items.every(it => fits(it, k, it.text))) plan = items.map(it => ({ it, k, rows: [it.text] }));
+    for (const k of [1, 0.94, 0.88]) {
+      if (plan) break;
+      const p = items.map(it => ({ it, k, rows: wrap(it, k) }));
+      if (p.every(r => r.rows.every(str => fits(r.it, k, str))) && height(p) <= bh - 4) plan = p;
+    }
+    const squeeze = !plan;
+    if (squeeze) plan = items.map(it => ({ it, k: 0.88, rows: [it.text] }));
+    let y = by + (bh - height(plan)) / 2;
+    plan.forEach(r => {
+      const fs = size(r.it, r.k), lh = fs * 1.2;
+      let prev = null;
+      r.rows.forEach(str => {
+        const t = prev ? r.it.t.cloneNode(false) : r.it.t;
+        t.textContent = str; t.style.fontSize = fs + 'px'; t.setAttribute('y', (y + lh / 2 + fs * 0.35).toFixed(1));
+        if (prev) prev.after(t);
+        if (squeeze && len(t) > room) { t.setAttribute('textLength', room); t.setAttribute('lengthAdjust', 'spacingAndGlyphs'); }
+        prev = t; y += lh;
+      });
+    });
+  });
+}
+if ('MutationObserver' in W) new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(nd => { /* gt: fit box labels whenever a diagram is drawn */
+  if (nd.nodeType !== 1) return;
+  (nd.matches('svg.dg, svg.seq') ? [nd] : Array.from(nd.querySelectorAll('svg.dg, svg.seq'))).forEach(sg => (D.fonts && D.fonts.status !== 'loaded' ? D.fonts.ready : Promise.resolve()).then(() => fitBoxLabels(sg)));
+}))).observe(D.documentElement, { childList: true, subtree: true });
 function lazy(node, fn) { node._mount = () => { node._mount = null; fn(); }; if (vizIO) vizIO.observe(node); else setTimeout(() => node._mount && node._mount(), 0); }
 function kindBadge(spec) {
   if (spec.data === 'real') return el('span', { class: 'kind' }, el('b', { text: 'Real data.' }), ' ', spec.source ? 'Source: ' + spec.source + '.' : '', spec.asof ? ' As of ' + spec.asof + '.' : '');

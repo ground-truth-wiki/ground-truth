@@ -47,6 +47,7 @@ Every concept with a shape gets a visual, and the visual comes before the prose 
   In a spec, a node takes its role with `"role": "model"` and so on. The colors are CSS variables (`--r-model` and so on) from a colorblind-safe palette based on Okabe-Ito, and stay separate from the book accent colors.
 - **Color never carries meaning alone.** Pair it with a shape, a label or a pattern (untrusted content also carries a hatch pattern).
 - **The style is flat:** no gradients or shadows, thin consistent strokes, rounded corners, and labels at least 12 px at phone width.
+- **Labels fit their boxes.** The engine measures each box label in the browser: a label that is too wide first shrinks a little (never below 12 px), then wraps onto more lines, and only as a last resort is squeezed. Squeezed text looks condensed, so give boxes room: labels average about 7 px per character, plus 46 px when the box shows a role icon (20 px without one). Check new diagrams at desktop width.
 - **The legend** at `#visual-legend` teaches the language once, and every visual links to it.
 
 ## Where visuals live

@@ -81,17 +81,17 @@ The IDF log((N − df + 0.5)/(df + 0.5)) goes negative for terms in over half th
 **End to end.**
 
 ```viz
-{"id":"ir-foundations-engine","component":"diagram","title":"A search engine builds its index offline and answers every query online through the same analyzer","caption":"The classic pipeline, after Manning, Raghavan and Schütze. Click a stage for the chapter that covers its job in RAG. Dashed arrows are lookups into data built offline.","alt":"Diagram with two rows. Offline: crawl, parse, analyze and index, plus a PageRank score computed from the link graph. Online: the user's query is analyzed with the same analyzer, matched against postings, ranked with BM25 and other signals including PageRank, and served as a results page.","data":"illustrative","w":600,"h":222,"groups":[{"label":"Offline: build the index","x":0,"y":0,"w":600,"h":92},{"label":"Online: answer a query","x":0,"y":126,"w":600,"h":96}],"nodes":[
-{"id":"crawl","label":"Crawl","sub":"fetch pages","role":"external","x":8,"y":28,"w":104,"h":52},
-{"id":"parse","label":"Parse","sub":"text, links","x":128,"y":28,"w":104,"h":52,"link":"#ingestion-parsing"},
-{"id":"analyze","label":"Analyze","sub":"tokens to terms","x":248,"y":28,"w":104,"h":52},
-{"id":"index","label":"Index","sub":"postings, df","role":"data","x":368,"y":28,"w":104,"h":52,"link":"#vector-databases"},
-{"id":"pagerank","label":"PageRank","sub":"link authority","role":"data","x":488,"y":28,"w":104,"h":52},
-{"id":"query","label":"Query","sub":"user's words","role":"human","x":8,"y":158,"w":104,"h":52},
-{"id":"qanalyze","label":"Analyze","sub":"same analyzer","x":128,"y":158,"w":104,"h":52,"link":"#query-understanding"},
-{"id":"retrieve","label":"Retrieve","sub":"walk postings","x":248,"y":158,"w":104,"h":52,"link":"#hybrid-retrieval"},
-{"id":"rank","label":"Rank","sub":"BM25, signals","x":368,"y":158,"w":104,"h":52,"link":"#reranking"},
-{"id":"serve","label":"Serve","sub":"results page","x":488,"y":158,"w":104,"h":52,"link":"#rag-fundamentals"}],
+{"id":"ir-foundations-engine","component":"diagram","title":"A search engine builds its index offline and answers every query online through the same analyzer","caption":"The classic pipeline, after Manning, Raghavan and Schütze. Click a stage for the chapter that covers its job in RAG. Dashed arrows are lookups into data built offline.","alt":"Diagram with two rows. Offline: crawl, parse, analyze and index, plus a PageRank score computed from the link graph. Online: the user's query is analyzed with the same analyzer, matched against postings, ranked with BM25 and other signals including PageRank, and served as a results page.","data":"illustrative","w":640,"h":222,"groups":[{"label":"Offline: build the index","x":0,"y":0,"w":600,"h":92},{"label":"Online: answer a query","x":0,"y":126,"w":600,"h":96}],"nodes":[
+{"id":"crawl","label":"Crawl","sub":"fetch pages","role":"external","x":4,"y":28,"w":116,"h":52},
+{"id":"parse","label":"Parse","sub":"text, links","x":132,"y":28,"w":116,"h":52,"link":"#ingestion-parsing"},
+{"id":"analyze","label":"Analyze","sub":"tokens to terms","x":260,"y":28,"w":116,"h":52},
+{"id":"index","label":"Index","sub":"postings, df","role":"data","x":388,"y":28,"w":116,"h":52,"link":"#vector-databases"},
+{"id":"pagerank","label":"PageRank","sub":"link authority","role":"data","x":516,"y":28,"w":116,"h":52},
+{"id":"query","label":"Query","sub":"user's words","role":"human","x":4,"y":158,"w":116,"h":52},
+{"id":"qanalyze","label":"Analyze","sub":"same analyzer","x":132,"y":158,"w":116,"h":52,"link":"#query-understanding"},
+{"id":"retrieve","label":"Retrieve","sub":"walk postings","x":260,"y":158,"w":116,"h":52,"link":"#hybrid-retrieval"},
+{"id":"rank","label":"Rank","sub":"BM25, signals","x":388,"y":158,"w":116,"h":52,"link":"#reranking"},
+{"id":"serve","label":"Serve","sub":"results page","x":516,"y":158,"w":116,"h":52,"link":"#rag-fundamentals"}],
 "edges":[{"from":"crawl","to":"parse"},{"from":"parse","to":"analyze"},{"from":"analyze","to":"index"},{"from":"query","to":"qanalyze"},{"from":"qanalyze","to":"retrieve"},{"from":"retrieve","to":"rank"},{"from":"rank","to":"serve"},{"from":"index","to":"retrieve","style":"dashed"},{"from":"pagerank","to":"rank","style":"dashed"}]}
 ```
 

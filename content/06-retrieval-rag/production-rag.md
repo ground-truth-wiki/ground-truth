@@ -26,11 +26,11 @@ A demo is a printed encyclopedia. Production is a newsroom archive: new stories 
 {"id":"prod-rag-arch","component":"diagram","title":"Two paths share one index: changes flow in continuously, and every query is filtered by who is asking","caption":"The ingestion path at the top keeps the index current, including deletions; the query path at the bottom applies the user’s permissions before ranking. Click a component for its chapter.","alt":"Production RAG architecture with an ingestion path from sources through change capture and workers to an index, and a query path from an authenticated user through permission filtering, retrieval, reranking and generation.","data":"illustrative","w":600,"h":250,"nodes":[
 {"id":"src","label":"Source systems","sub":"docs, tickets, wikis","role":"external","x":0,"y":0,"w":150,"h":56},
 {"id":"cdc","label":"Change events","sub":"create, update, delete","x":175,"y":0,"w":150,"h":56},
-{"id":"work","label":"Ingestion workers","sub":"parse, chunk, embed","role":"tool","x":350,"y":0,"w":150,"h":56,"link":"#ingestion-parsing"},
-{"id":"idx","label":"Index","sub":"vectors, keywords, ACLs","role":"data","x":350,"y":96,"w":150,"h":56,"link":"#vector-databases"},
+{"id":"work","label":"Ingestion workers","sub":"parse, chunk, embed","role":"tool","x":350,"y":0,"w":175,"h":56,"link":"#ingestion-parsing"},
+{"id":"idx","label":"Index","sub":"vectors, keywords, ACLs","role":"data","x":350,"y":96,"w":175,"h":56,"link":"#vector-databases"},
 {"id":"user","label":"User","sub":"identity, groups","role":"human","x":0,"y":194,"w":150,"h":56},
 {"id":"q","label":"Query service","sub":"permission filter","role":"agent","x":175,"y":194,"w":150,"h":56},
-{"id":"gen","label":"Rerank and generate","role":"model","x":350,"y":194,"w":150,"h":56,"link":"#reranking"},
+{"id":"gen","label":"Rerank and generate","role":"model","x":350,"y":194,"w":175,"h":56,"link":"#reranking"},
 {"id":"cache","label":"Caches","sub":"embeddings, answers","role":"data","x":175,"y":96,"w":150,"h":56}],
 "edges":[{"from":"src","to":"cdc"},{"from":"cdc","to":"work"},{"from":"work","to":"idx"},{"from":"user","to":"q"},{"from":"q","to":"idx","label":"filtered search"},{"from":"idx","to":"gen","style":"dashed"},{"from":"q","to":"cache","style":"dashed"}]}
 ```

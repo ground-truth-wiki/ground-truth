@@ -25,9 +25,9 @@ Each block is a meeting followed by private study. In attention, every token lis
 {"id":"block-diagram","component":"diagram","title":"One transformer block: normalize, attend, add; normalize, think, add","caption":"A pre-norm decoder block. The residual stream runs straight through; each sublayer reads from it and adds its result back. Click a part for its chapter.","alt":"Diagram of a pre-norm transformer block with RMSNorm, self-attention, a residual add, a second RMSNorm, a feed-forward network and another residual add.","data":"illustrative","w":600,"h":150,"nodes":[
 {"id":"in","label":"Residual stream","role":"context","x":0,"y":47,"w":110,"h":56},
 {"id":"n1","label":"RMSNorm","x":135,"y":0,"w":90,"h":44},
-{"id":"att","label":"Self-attention","sub":"GQA, RoPE","role":"model","x":245,"y":0,"w":120,"h":44,"link":"#attention"},
+{"id":"att","label":"Self-attention","sub":"GQA, RoPE","role":"model","x":245,"y":0,"w":160,"h":44,"link":"#attention"},
 {"id":"n2","label":"RMSNorm","x":135,"y":106,"w":90,"h":44},
-{"id":"ffn","label":"Feed-forward","sub":"SwiGLU or MoE","role":"model","x":245,"y":106,"w":120,"h":44,"link":"#mixture-of-experts"},
+{"id":"ffn","label":"Feed-forward","sub":"SwiGLU or MoE","role":"model","x":245,"y":106,"w":160,"h":44,"link":"#mixture-of-experts"},
 {"id":"out","label":"Residual stream","role":"context","x":490,"y":47,"w":110,"h":56}],
 "edges":[{"from":"in","to":"n1"},{"from":"n1","to":"att"},{"from":"att","to":"out","label":"add"},{"from":"in","to":"n2"},{"from":"n2","to":"ffn"},{"from":"ffn","to":"out","label":"add"},{"from":"in","to":"out","style":"dashed"}]}
 ```

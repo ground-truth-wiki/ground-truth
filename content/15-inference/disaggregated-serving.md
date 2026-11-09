@@ -41,12 +41,12 @@ A busy restaurant splits its kitchen: one station preps orders in bulk, another 
 **Disaggregated prefill and decode.** DistServe (Zhong et al., 2024), Splitwise (Patel et al., 2024) and Mooncake (Moonshot AI, 2024) showed that running prefill and decode on separate pools improves goodput: prefill GPUs batch long prompts for compute efficiency, decode GPUs keep many sequences streaming, and each pool scales with its own demand.
 
 ```viz
-{"id":"disagg-diagram","component":"diagram","title":"Prefill and decode run on separate pools, joined by a fast KV cache transfer","caption":"A simplified disaggregated deployment. The router sends new requests to prefill, the finished KV cache moves to a decode worker, and tokens stream back from there. Click a component for its chapter.","alt":"Diagram of disaggregated serving: a router, a prefill pool, a KV cache transfer over a fast interconnect, a decode pool and streaming responses.","data":"illustrative","w":600,"h":200,"nodes":[
+{"id":"disagg-diagram","component":"diagram","title":"Prefill and decode run on separate pools, joined by a fast KV cache transfer","caption":"A simplified disaggregated deployment. The router sends new requests to prefill, the finished KV cache moves to a decode worker, and tokens stream back from there. Click a component for its chapter.","alt":"Diagram of disaggregated serving: a router, a prefill pool, a KV cache transfer over a fast interconnect, a decode pool and streaming responses.","data":"illustrative","w":640,"h":200,"nodes":[
 {"id":"router","label":"Router","sub":"prefix-aware","role":"agent","x":0,"y":72,"w":130,"h":56,"link":"#gateways-routers"},
-{"id":"prefill","label":"Prefill pool","sub":"compute-bound, big batches","role":"model","x":170,"y":0,"w":160,"h":60},
-{"id":"xfer","label":"KV transfer","sub":"NVLink, RDMA","role":"data","x":170,"y":140,"w":160,"h":56,"link":"#kv-cache"},
-{"id":"decode","label":"Decode pool","sub":"memory-bound, many streams","role":"model","x":370,"y":72,"w":160,"h":60},
-{"id":"user","label":"Stream","role":"human","x":550,"y":80,"w":50,"h":44}],
+{"id":"prefill","label":"Prefill pool","sub":"compute-bound, big batches","role":"model","x":160,"y":0,"w":160,"h":60},
+{"id":"xfer","label":"KV transfer","sub":"NVLink, RDMA","role":"data","x":160,"y":140,"w":160,"h":56,"link":"#kv-cache"},
+{"id":"decode","label":"Decode pool","sub":"memory-bound, many streams","role":"model","x":350,"y":72,"w":160,"h":60},
+{"id":"user","label":"Stream","role":"human","x":540,"y":80,"w":100,"h":44}],
 "edges":[{"from":"router","to":"prefill"},{"from":"prefill","to":"xfer","label":"KV cache"},{"from":"xfer","to":"decode"},{"from":"decode","to":"user"}]}
 ```
 

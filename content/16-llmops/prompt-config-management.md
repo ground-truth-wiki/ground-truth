@@ -22,13 +22,13 @@ A one-word prompt change can move quality more than a week of code changes, and 
 Prompts are like recipes in a restaurant chain. A head office keeps the master versions, tests changes in one kitchen before rolling them out, and every dish served can be traced to the recipe version that made it.
 
 ```viz
-{"id":"prompt-registry","component":"diagram","title":"A prompt version moves from a pull request through eval gates to production, and every trace remembers it","caption":"Click a stage for the chapter behind it. Rollback is changing which version an environment points at.","alt":"Diagram of a prompt lifecycle: authored in a repository or registry, evaluated, promoted through environments, fetched at runtime and recorded on traces.","data":"illustrative","w":600,"h":210,"nodes":[
-{"id":"repo","label":"Repository or registry","sub":"templates, models, params","role":"data","x":0,"y":0,"w":170,"h":56},
-{"id":"eval","label":"Eval gate","sub":"offline suite","role":"tool","x":215,"y":0,"w":170,"h":56,"link":"#ci-cd-for-ai"},
-{"id":"staging","label":"Staging","sub":"answer-v15","role":"agent","x":430,"y":0,"w":170,"h":56},
-{"id":"prod","label":"Production","sub":"answer-v14, canary v15","role":"agent","x":430,"y":150,"w":170,"h":56,"link":"#online-evaluation"},
-{"id":"runtime","label":"Runtime fetch","sub":"cached, version pinned","role":"model","x":215,"y":150,"w":170,"h":56},
-{"id":"traces","label":"Traces","sub":"tagged with version","role":"data","x":0,"y":150,"w":170,"h":56,"link":"#observability-tracing"}],
+{"id":"prompt-registry","component":"diagram","title":"A prompt version moves from a pull request through eval gates to production, and every trace remembers it","caption":"Click a stage for the chapter behind it. Rollback is changing which version an environment points at.","alt":"Diagram of a prompt lifecycle: authored in a repository or registry, evaluated, promoted through environments, fetched at runtime and recorded on traces.","data":"illustrative","w":660,"h":210,"nodes":[
+{"id":"repo","label":"Repository or registry","sub":"templates, models, params","role":"data","x":0,"y":0,"w":190,"h":56},
+{"id":"eval","label":"Eval gate","sub":"offline suite","role":"tool","x":235,"y":0,"w":190,"h":56,"link":"#ci-cd-for-ai"},
+{"id":"staging","label":"Staging","sub":"answer-v15","role":"agent","x":470,"y":0,"w":190,"h":56},
+{"id":"prod","label":"Production","sub":"answer-v14, canary v15","role":"agent","x":470,"y":150,"w":190,"h":56,"link":"#online-evaluation"},
+{"id":"runtime","label":"Runtime fetch","sub":"cached, version pinned","role":"model","x":235,"y":150,"w":190,"h":56},
+{"id":"traces","label":"Traces","sub":"tagged with version","role":"data","x":0,"y":150,"w":190,"h":56,"link":"#observability-tracing"}],
 "edges":[{"from":"repo","to":"eval"},{"from":"eval","to":"staging","label":"pass"},{"from":"staging","to":"prod","label":"promote"},{"from":"prod","to":"runtime"},{"from":"runtime","to":"traces"}]}
 ```
 

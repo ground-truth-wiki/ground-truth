@@ -22,11 +22,11 @@ Science is where AI’s value may be largest, and its methods (verifiers, simula
 AI for science works best where nature or mathematics grades the answer: a protein structure can be checked against experiments, a proof can be checked by a proof assistant, a forecast can be checked tomorrow.
 
 ```viz
-{"id":"science-map","component":"diagram","title":"The common pattern: a model proposes, a checker verifies, scientists decide","caption":"Simplified. The checker can be an experiment, a simulator or a proof assistant.","alt":"Diagram of AI for science: data trains a model that proposes candidates, a checker verifies them, and scientists interpret and act.","data":"illustrative","w":600,"h":150,"nodes":[
+{"id":"science-map","component":"diagram","title":"The common pattern: a model proposes, a checker verifies, scientists decide","caption":"Simplified. The checker can be an experiment, a simulator or a proof assistant.","alt":"Diagram of AI for science: data trains a model that proposes candidates, a checker verifies them, and scientists interpret and act.","data":"illustrative","w":700,"h":150,"nodes":[
 {"id":"data","label":"Data and simulators","role":"data","x":0,"y":47,"w":140,"h":56},
-{"id":"model","label":"Model proposes","sub":"structures, proofs, candidates","role":"model","x":160,"y":47,"w":150,"h":56},
-{"id":"check","label":"Checker","sub":"experiment, proof assistant","role":"tool","x":330,"y":47,"w":130,"h":56,"link":"#rlvr-reasoning"},
-{"id":"sci","label":"Scientists","role":"human","x":480,"y":47,"w":120,"h":56}],
+{"id":"model","label":"Model proposes","sub":"structures, proofs, candidates","role":"model","x":165,"y":47,"w":180,"h":56},
+{"id":"check","label":"Checker","sub":"experiment, proof assistant","role":"tool","x":370,"y":47,"w":180,"h":56,"link":"#rlvr-reasoning"},
+{"id":"sci","label":"Scientists","role":"human","x":575,"y":47,"w":125,"h":56}],
 "edges":[{"from":"data","to":"model"},{"from":"model","to":"check"},{"from":"check","to":"sci"},{"from":"check","to":"model","label":"feedback","curve":40}]}
 ```
 

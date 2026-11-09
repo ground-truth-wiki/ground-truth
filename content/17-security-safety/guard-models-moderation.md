@@ -25,15 +25,15 @@ Any product that takes content from people, or shows them model output, must dec
 Think of airport security. The metal detector is a rule: fast, and blind to anything it was not built for. The X-ray screener is the guard model, judging each bag against a rulebook. Unclear bags go to a person, and passengers can complain. The system is designed around the screener’s errors.
 
 ```viz
-{"id":"guard-models-moderation-checkpoints","component":"diagram","title":"Guards can check four places: what comes in, what goes out, what the agent does, and the whole trajectory","caption":"A concept diagram. Rules and block lists run beside the guards, cheaper and narrower. Tool results are untrusted input, so screen them like user input. Click a box for its chapter.","alt":"Diagram: user input passes an input guard to the model; the model's reply passes an output guard; the model's tool calls pass a tool-call guard before reaching tools, whose untrusted results flow back to the model; rules and block lists feed the input guard; a trajectory monitor watches the whole conversation and agent trace.","data":"illustrative","try":"Click the trajectory monitor, then name an attack that a guard checking one message at a time would miss.","w":600,"h":250,"nodes":[
-{"id":"user","label":"User","sub":"prompt, files, images","role":"human","x":0,"y":0,"w":120,"h":52},
-{"id":"in","label":"Input guard","sub":"harm, jailbreak, injection","role":"tool","x":160,"y":0,"w":140,"h":52,"link":"#jailbreaks-misuse"},
-{"id":"model","label":"Model","sub":"your LLM or agent","role":"model","x":340,"y":0,"w":110,"h":52},
-{"id":"out","label":"Output guard","sub":"harm, leaks, while streaming","role":"tool","x":480,"y":0,"w":120,"h":52,"link":"#streaming"},
-{"id":"rules","label":"Rules and lists","sub":"regex, hashes, allowlists","role":"data","x":0,"y":110,"w":140,"h":52},
-{"id":"toolg","label":"Tool-call guard","sub":"arguments, policy","role":"tool","x":320,"y":110,"w":150,"h":52,"link":"#guardrails-control"},
-{"id":"tool","label":"Tool results","sub":"web, email, files","role":"untrusted","x":490,"y":110,"w":110,"h":52,"link":"#prompt-injection"},
-{"id":"traj","label":"Trajectory monitor","sub":"the whole conversation and agent trace","role":"agent","x":0,"y":200,"w":600,"h":46,"link":"#secure-agent-design"}],
+{"id":"guard-models-moderation-checkpoints","component":"diagram","title":"Guards can check four places: what comes in, what goes out, what the agent does, and the whole trajectory","caption":"A concept diagram. Rules and block lists run beside the guards, cheaper and narrower. Tool results are untrusted input, so screen them like user input. Click a box for its chapter.","alt":"Diagram: user input passes an input guard to the model; the model's reply passes an output guard; the model's tool calls pass a tool-call guard before reaching tools, whose untrusted results flow back to the model; rules and block lists feed the input guard; a trajectory monitor watches the whole conversation and agent trace.","data":"illustrative","try":"Click the trajectory monitor, then name an attack that a guard checking one message at a time would miss.","w":720,"h":250,"nodes":[
+{"id":"user","label":"User","sub":"prompt, files, images","role":"human","x":0,"y":0,"w":130,"h":52},
+{"id":"in","label":"Input guard","sub":"harm, jailbreak, injection","role":"tool","x":165,"y":0,"w":160,"h":52,"link":"#jailbreaks-misuse"},
+{"id":"model","label":"Model","sub":"your LLM or agent","role":"model","x":360,"y":0,"w":130,"h":52},
+{"id":"out","label":"Output guard","sub":"harm, leaks, while streaming","role":"tool","x":525,"y":0,"w":195,"h":52,"link":"#streaming"},
+{"id":"rules","label":"Rules and lists","sub":"regex, hashes, allowlists","role":"data","x":0,"y":110,"w":160,"h":52},
+{"id":"toolg","label":"Tool-call guard","sub":"arguments, policy","role":"tool","x":345,"y":110,"w":160,"h":52,"link":"#guardrails-control"},
+{"id":"tool","label":"Tool results","sub":"web, email, files","role":"untrusted","x":540,"y":110,"w":180,"h":52,"link":"#prompt-injection"},
+{"id":"traj","label":"Trajectory monitor","sub":"the whole conversation and agent trace","role":"agent","x":0,"y":200,"w":720,"h":46,"link":"#secure-agent-design"}],
 "edges":[{"from":"user","to":"in"},{"from":"in","to":"model"},{"from":"model","to":"out"},{"from":"model","to":"toolg"},{"from":"toolg","to":"tool"},{"from":"tool","to":"model","label":"untrusted"},{"from":"rules","to":"in","style":"dashed"},{"from":"model","to":"traj","style":"dashed"}]}
 ```
 

@@ -22,14 +22,14 @@ Users increasingly send photos, files, voice notes and screens rather than typed
 A multimodal app is a reception desk that accepts letters, parcels, phone calls and visitors, and routes each to the right department while keeping one record of the conversation.
 
 ```viz
-{"id":"multimodal-arch","component":"diagram","title":"Route each input modality, then reason over one combined context","caption":"A common architecture. Click a component for its chapter.","alt":"Diagram of a multimodal application: text, image, document and audio inputs routed through specialist or multimodal models into a shared context and outputs.","data":"illustrative","w":600,"h":230,"nodes":[
-{"id":"text","label":"Text","role":"human","x":0,"y":0,"w":120,"h":44},
-{"id":"img","label":"Images, screens","role":"data","x":0,"y":62,"w":120,"h":44,"link":"#vision-language-models"},
-{"id":"doc","label":"Documents","role":"data","x":0,"y":124,"w":120,"h":44,"link":"#document-screen-understanding"},
-{"id":"aud","label":"Audio","role":"data","x":0,"y":186,"w":120,"h":44,"link":"#speech-audio"},
-{"id":"route","label":"Router and converters","role":"tool","x":170,"y":86,"w":150,"h":56},
-{"id":"llm","label":"Multimodal model","sub":"shared context","role":"model","x":360,"y":86,"w":130,"h":56},
-{"id":"out","label":"Text, images, speech","role":"agent","x":520,"y":86,"w":80,"h":56,"link":"#image-generation"}],
+{"id":"multimodal-arch","component":"diagram","title":"Route each input modality, then reason over one combined context","caption":"A common architecture. Click a component for its chapter.","alt":"Diagram of a multimodal application: text, image, document and audio inputs routed through specialist or multimodal models into a shared context and outputs.","data":"illustrative","w":690,"h":230,"nodes":[
+{"id":"text","label":"Text","role":"human","x":0,"y":0,"w":130,"h":44},
+{"id":"img","label":"Images, screens","role":"data","x":0,"y":62,"w":130,"h":44,"link":"#vision-language-models"},
+{"id":"doc","label":"Documents","role":"data","x":0,"y":124,"w":130,"h":44,"link":"#document-screen-understanding"},
+{"id":"aud","label":"Audio","role":"data","x":0,"y":186,"w":130,"h":44,"link":"#speech-audio"},
+{"id":"route","label":"Router and converters","role":"tool","x":165,"y":86,"w":150,"h":56},
+{"id":"llm","label":"Multimodal model","sub":"shared context","role":"model","x":350,"y":86,"w":160,"h":56},
+{"id":"out","label":"Text, images, speech","role":"agent","x":545,"y":86,"w":145,"h":56,"link":"#image-generation"}],
 "edges":[{"from":"text","to":"route"},{"from":"img","to":"route"},{"from":"doc","to":"route"},{"from":"aud","to":"route"},{"from":"route","to":"llm"},{"from":"llm","to":"out"}]}
 ```
 

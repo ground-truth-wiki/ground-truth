@@ -22,13 +22,13 @@ Evaluations tell you what a model does; interpretability tries to explain how. T
 A model’s neurons are like a crowded radio band: many stations broadcast on overlapping frequencies. A sparse autoencoder is a better receiver that separates the stations, so you can hear one concept at a time.
 
 ```viz
-{"id":"superposition-viz","component":"diagram","title":"A sparse autoencoder turns dense, mixed activations into many sparse, nameable features","caption":"A simplified view of dictionary learning on a model’s residual stream. Click a box for related chapters.","alt":"Diagram of a sparse autoencoder: model activations encoded into many sparse features, each with an interpretable label, then decoded back to reconstruct the activations.","data":"illustrative","w":600,"h":200,"nodes":[
+{"id":"superposition-viz","component":"diagram","title":"A sparse autoencoder turns dense, mixed activations into many sparse, nameable features","caption":"A simplified view of dictionary learning on a model’s residual stream. Click a box for related chapters.","alt":"Diagram of a sparse autoencoder: model activations encoded into many sparse features, each with an interpretable label, then decoded back to reconstruct the activations.","data":"illustrative","w":660,"h":200,"nodes":[
 {"id":"act","label":"Activations","sub":"4,096 dense numbers","role":"context","x":0,"y":72,"w":140,"h":56,"link":"#transformer-block"},
-{"id":"enc","label":"Encoder","role":"model","x":175,"y":72,"w":100,"h":56},
-{"id":"f1","label":"Feature: Golden Gate Bridge","role":"data","x":310,"y":0,"w":170,"h":44},
-{"id":"f2","label":"Feature: code in Python","role":"data","x":310,"y":78,"w":170,"h":44},
-{"id":"f3","label":"Feature: sarcasm","role":"data","x":310,"y":156,"w":170,"h":44},
-{"id":"dec","label":"Reconstruction","role":"model","x":500,"y":72,"w":100,"h":56}],
+{"id":"enc","label":"Encoder","role":"model","x":165,"y":72,"w":105,"h":56},
+{"id":"f1","label":"Feature: Golden Gate Bridge","role":"data","x":295,"y":0,"w":180,"h":44},
+{"id":"f2","label":"Feature: code in Python","role":"data","x":295,"y":78,"w":180,"h":44},
+{"id":"f3","label":"Feature: sarcasm","role":"data","x":295,"y":156,"w":180,"h":44},
+{"id":"dec","label":"Reconstruction","role":"model","x":500,"y":72,"w":160,"h":56}],
 "edges":[{"from":"act","to":"enc"},{"from":"enc","to":"f1"},{"from":"enc","to":"f2"},{"from":"enc","to":"f3"},{"from":"f1","to":"dec","style":"dashed"},{"from":"f2","to":"dec","style":"dashed"},{"from":"f3","to":"dec","style":"dashed"}]}
 ```
 
