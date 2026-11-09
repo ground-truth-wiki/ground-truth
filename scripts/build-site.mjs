@@ -8,7 +8,7 @@
 //   404.html                 the app, routing unknown and old addresses
 //   contributors/, wanted/, legal/impressum/, legal/privacy/
 //   assets/, vendor/         shared, content-hashed and versioned files
-//   sitemap.xml, robots.txt, llms.txt, llms-full.txt, og.png, apple-touch-icon.png, _headers, _redirects
+//   sitemap.xml, robots.txt, llms.txt, llms-full.txt, og.png, apple-touch-icon.png, icon-512.png, _headers, _redirects
 //   ground-truth.html        the offline single file
 //
 //   node scripts/build-site.mjs [--github]
@@ -103,8 +103,34 @@ for (const name of Object.keys(LIBRARIES)) copy(LIBRARIES[name].site, libraryFil
 put('vendor/LICENSES.txt', licensesText());
 copy('og.png', abs('docs/assets/social-preview.png'));
 copy('apple-touch-icon.png', abs('docs/assets/apple-touch-icon.png'));
+copy('icon-512.png', abs('docs/assets/icon-512.png'));
 
 // ----- Page heads -----
+// Structured data (schema.org JSON-LD) tells search engines that the pages
+// are articles of one site, with their dates, license and place in the site.
+const CONTENT_LICENSE = 'https://creativecommons.org/licenses/by-sa/4.0/';
+const publisher = { '@type': 'Organization', name: site.name, url: `${base}/`, logo: { '@type': 'ImageObject', url: `${base}/icon-512.png`, width: 512, height: 512 } };
+const ld = (obj) => `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
+const websiteLD = () => ld({ '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, alternateName: site.shortName, url: `${base}/`, description: site.description, inLanguage: 'en', license: CONTENT_LICENSE, publisher });
+function chapterLD(c, url, description) {
+  const book = books.books.find((b) => b.n === c.meta.book);
+  return ld([
+    { '@context': 'https://schema.org', '@type': 'TechArticle', headline: c.meta.title, description, url, mainEntityOfPage: url, image: `${base}/og.png`, inLanguage: 'en',
+      ...(updated[c.meta.id] ? { dateModified: updated[c.meta.id] } : {}),
+      keywords: c.meta.tags.join(', '), articleSection: book ? `Book ${book.n}: ${book.title}` : undefined,
+      license: CONTENT_LICENSE, isAccessibleForFree: true,
+      author: { '@type': 'Organization', name: `${site.name} contributors`, url: `${base}/contributors/` },
+      publisher, isPartOf: { '@type': 'WebSite', name: site.name, url: `${base}/` } },
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: site.name, item: `${base}/` },
+      { '@type': 'ListItem', position: 2, name: c.meta.title, item: url }] }
+  ]);
+}
+// Search engine ownership checks, from site.config.json ("verification").
+const verification = () => [
+  site.verification && site.verification.google ? `<meta name="google-site-verification" content="${esc(site.verification.google)}">` : null,
+  site.verification && site.verification.bing ? `<meta name="msvalidate.01" content="${esc(site.verification.bing)}">` : null
+].filter(Boolean);
 function head({ url, title, description, type = 'website', robots }) {
   return [
     '',
@@ -125,14 +151,14 @@ function head({ url, title, description, type = 'website', robots }) {
 const sitePage = (page) => renderPage(project, { mode: 'site', page, assets });
 
 // ----- The app and one page per chapter -----
-put('index.html', sitePage({ head: head({ url: `${base}/`, title: site.name, description: site.description }) }));
+put('index.html', sitePage({ head: [head({ url: `${base}/`, title: site.name, description: site.description }), ...verification(), websiteLD()].join('\n') }));
 for (const c of chapters) {
   const title = `${c.meta.title} · ${site.name}`;
   const description = shorten(tldrText(c.body) || site.description);
   const url = `${base}/${c.meta.id}/`;
   put(`${c.meta.id}/index.html`, sitePage({
     title, description, route: c.meta.id,
-    head: head({ url, title, description, type: 'article' }),
+    head: head({ url, title, description, type: 'article' }) + '\n' + chapterLD(c, url, description),
     main: chapterHTML(c, { isChapter: (id) => chapterIds.has(id) })
   }));
 }

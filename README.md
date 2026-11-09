@@ -8,7 +8,7 @@
 
 ![The agent loop chapter: navigation by book, the chapter with its TL;DR, and the outline, related chapters and backlinks on the right](docs/assets/screenshot.png)
 
-**Read it:** the live site opens soon. Until then, run it locally (below).
+**Read it:** [ground-truth-wiki.pages.dev](https://ground-truth-wiki.pages.dev), or run it locally (below).
 
 ## What's inside
 

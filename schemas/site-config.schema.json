@@ -17,6 +17,15 @@
       "required": ["content", "code"],
       "additionalProperties": false,
       "properties": { "content": { "type": "string" }, "code": { "type": "string" } }
+    },
+    "verification": {
+      "type": "object",
+      "description": "Optional site-ownership tokens for search engines, written as meta tags on the home page.",
+      "additionalProperties": false,
+      "properties": {
+        "google": { "type": "string", "description": "The content value of Google Search Console's HTML tag (google-site-verification)." },
+        "bing": { "type": "string", "description": "The content value of Bing Webmaster Tools' HTML tag (msvalidate.01)." }
+      }
     }
   }
 }
