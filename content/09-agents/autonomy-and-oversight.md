@@ -125,3 +125,4 @@ autonomy-and-oversight
 - [Guardrails and control](#guardrails-control)
 - [Governance, regulation and law](#governance-regulation)
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
+- [Playbook: Google data centre cooling under direct AI control](#deepmind-data-centre-cooling)

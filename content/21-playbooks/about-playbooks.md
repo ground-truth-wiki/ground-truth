@@ -135,6 +135,33 @@ Grouped by the industry of the organization. Each page says at the top whether i
 ### Public sector
 
 - [GOV.UK Chat: answering questions from government guidance](#gov-uk-chat)
+- [DfT's Consultation Analysis Tool: LLM thematic analysis of consultation responses](#dft-consultation-analysis-tool)
+- [ECMWF's AIFS: running a machine-learning weather model in operations](#ecmwf-aifs-operational)
+- [Japan's Digital Agency: testing generative AI on government work](#japan-digital-agency-genai-validation)
+
+### Legal and courts
+
+- [Ashurst's generative AI trials: measuring first drafts in a law firm](#ashurst-generative-ai-trials)
+- [Uber's Legal Redlining Agent: reviewing contract redlines inside Word](#uber-legal-redlining-agent)
+
+### Education and research
+
+- [AAAI-26: an AI review for every paper in full review](#aaai-26-ai-review-pilot)
+- [The CS50 Duck: an AI tutor built to guide students, not hand out answers](#cs50-ai-teaching-assistant)
+- [ICLR 2025: a randomized trial of LLM feedback on peer reviews](#iclr-2025-review-feedback-agent)
+- [NeurIPS 2024: an LLM assistant for the author checklist](#neurips-checklist-assistant)
+- [BTSbot: a CNN that scans sky-survey alerts and triggers spectroscopic follow-up](#ztf-btsbot)
+
+### Energy, telecom and industry
+
+- [Beko: an LLM code review bot on pull requests, measured in three projects](#beko-automated-code-review)
+- [Google data centre cooling under direct AI control](#deepmind-data-centre-cooling)
+- [Farmer.Chat: answering smallholder farmers' questions in Kenya](#digital-green-farmer-chat)
+- [Panasonic Connect's ConnectAI: one year of a company-wide AI assistant](#panasonic-connect-generative-ai)
+
+### Other
+
+- [Google's flood forecasting: from gauged rivers in India and Bangladesh to ungauged basins worldwide](#google-flood-forecasting)
 
 ## What belongs here
 

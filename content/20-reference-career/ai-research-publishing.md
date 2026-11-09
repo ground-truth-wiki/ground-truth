@@ -47,3 +47,6 @@ Researchers say a result is "on arXiv" (not yet reviewed) or "at NeurIPS" (accep
 - [Benchmark literacy](#benchmark-literacy)
 - [Talking shop](#talking-shop)
 - [Who’s who and where to learn](#whos-who)
+- [Playbook: AAAI-26: an AI review for every paper in full review](#aaai-26-ai-review-pilot)
+- [Playbook: ICLR 2025: a randomized trial of LLM feedback on peer reviews](#iclr-2025-review-feedback-agent)
+- [Playbook: NeurIPS 2024: an LLM assistant for the author checklist](#neurips-checklist-assistant)
