@@ -3,8 +3,8 @@
 // folder, with the next free order number.
 //
 //   npm run new -- chapter <id> --book <n> --title "Title" [--level practitioner] [--stability moving] [--full]
-//   npm run new -- playbook <id> --title "Title" [--stability moving]
-//   npm run new -- field-note <id> --title "Title" [--stability moving]
+//   npm run new -- playbook <id> --title "Title" [--stability moving] [--public-record]
+//   npm run new -- field-note <id> --title "Title" [--stability moving] [--public-record]
 //   npm run new -- term <id> --term "Name" [--abbr ABC]
 //
 // Every new file contains TODO: markers. npm run validate fails until all of
@@ -17,8 +17,8 @@ import { yamlScalar } from './lib/chapters.mjs';
 // Chapter types. Playbooks and field notes live in their own books.
 const KINDS = {
   chapter: { seed: 'seed-chapter.md', full: 'chapter.md' },
-  playbook: { full: 'playbook.md', type: 'playbook' },
-  'field-note': { full: 'field-note.md', type: 'field-note' }
+  playbook: { full: 'playbook.md', publicRecord: 'playbook-public-record.md', type: 'playbook' },
+  'field-note': { full: 'field-note.md', publicRecord: 'field-note-public-record.md', type: 'field-note' }
 };
 const LEVELS = ['foundation', 'practitioner', 'expert', 'frontier'];
 const STABILITIES = ['evergreen', 'moving', 'volatile'];
@@ -80,7 +80,9 @@ if (!folder) {
   folder = prefix + slug;
 }
 const file = `content/${folder}/${id}.md`;
-const templateName = spec.type || rest.includes('--full') ? spec.full : spec.seed;
+// gt: --public-record starts from the template for pages built from an organization's own published account
+if (rest.includes('--public-record') && !spec.publicRecord) fail('--public-record is only for playbooks and field notes');
+const templateName = rest.includes('--public-record') ? spec.publicRecord : spec.type || rest.includes('--full') ? spec.full : spec.seed;
 const templatePath = `templates/${templateName}`;
 if (!exists(templatePath)) fail(`${templatePath} does not exist yet`);
 let text = fill(readText(templatePath), { id, book: String(book), order, title: yamlScalar(title), level, stability, reviewed: month() });

@@ -66,19 +66,32 @@ A seed is a planned chapter that is not written in full yet. It holds a TL;DR, f
 
 ### Playbooks and field notes
 
-Books 21 and 22 hold first-hand accounts of real work, one per page:
+Books 21 and 22 hold accounts of real work, one per page:
 
 - A **playbook** (`type: playbook`) shows how a team used AI for one use case in one industry: the problem, why this approach, the approach, the stack, results and how they were measured, what failed, and what they would do differently. Start from [templates/playbook.md](templates/playbook.md) (`npm run new -- playbook <id> --title "…"`).
 - A **field note** (`type: field-note`) tells what happened when something was deployed: the context, what happened, the impact and how it was measured, why it happened, what changed afterwards, and the lessons. Start from [templates/field-note.md](templates/field-note.md) (`npm run new -- field-note <id> --title "…"`).
 
 Both carry `industry`, `use_case`, `outcome` and `measured_how` in their frontmatter, and may list `authors` (GitHub handles of the people whose work it describes, if they want to be named), `prerequisites` (chapters to read first) and `replications` (others who tried the same and reported back, with `by`, `date` and `result`). They need no quiz.
 
+Each page says in `account` what kind of account it is:
+
+- **First-hand** (`account: first-hand`, also the meaning when the field is missing): told by people who did the work, or approved by them.
+- **Public record** (`account: public-record`): built only from an account the organization published itself, such as its engineering blog, an official postmortem or statement, or a paper or talk by the team, or from an official record: an evaluation or audit a public body published, or a court or regulator decision. Start from the public-record template with `npm run new -- playbook <id> --title "…" --public-record` (the same works for `field-note`).
+
 Their rules are strict, because they describe real organizations:
 
 - **Real work only.** Never hypothetical, composite or invented cases, companies, numbers or results.
 - **Measured means measured.** Results state the metric, the baseline, the sample and the period; say what was not measured.
-- **Anonymize** unless the organization agreed to be named (rule 7), and **disclose** ties to vendors (rule 5).
+- **Anonymize** unless the organization agreed to be named (rule 7), and **disclose** ties to vendors (rule 5). A public-record page names the organization because the organization published the account itself, and names products and vendors as the account does; a page built from an official record names organizations as the record does.
 - **Blameless:** describe systems and decisions, not the people who made them.
+
+Public-record pages follow five more rules:
+
+- **The organization's own account carries the page.** News coverage may confirm a detail but never carries a page, and vendor customer stories never qualify (rule 6).
+- **Quote, don't improve.** Key results appear in the source's own words, in quotation marks. Every other number appears exactly as the source states it, never rounded, combined or extrapolated, and the page adds nothing the source does not say. Where the source gives no baseline, sample or period, the page says so.
+- **Label it.** Right after the TL;DR, a `> [!note] From the public record` callout names the account and invites the team to tell the first-hand story. A `## Sources` section links the account, and `authors` stays empty. `npm run validate` checks all three.
+- **Date it.** The page gives the date of the account and states the stack and the results as of that date.
+- **Correct it fast.** When the organization, or someone who worked on it, reports an error, fix it, or turn the page into a first-hand account together with them.
 
 ### Callouts
 
@@ -124,7 +137,7 @@ These rules (section 9 of the editorial masterprompt) apply to every page (rule 
 - **Name papers** by title, first author and year only when you are sure. Link only to stable official pages you are confident exist; otherwise give a search hint.
 - **On contested questions** (multi-agent systems, scaling, safety, regulation, timelines), present the strongest version of each side (rule 4).
 - **Code** is correct, minimal and idiomatic for current SDKs. Pseudocode is labeled as pseudocode; model ids and keys are placeholders.
-- **Case studies** come only from real, well-known public write-ups, summarized as lessons, with no invented metrics or quotes. Playbooks and field notes from contributors follow rule 7 (anonymized unless the organization agreed).
+- **Case studies** come only from real, well-known public write-ups, summarized as lessons, with no invented metrics or quotes. Playbooks and field notes follow rule 7: first-hand accounts are anonymized unless the organization agreed to be named, and public-record pages name only what the organization or an official record published (see [Playbooks and field notes](#playbooks-and-field-notes)).
 - **State the knowledge cutoff** in Book 19 and in the footer (`data/meta.json`). Before writing about volatile areas, check them against primary sources, and cite what you used.
 - **Legal and regulatory content** is information, not legal advice.
 

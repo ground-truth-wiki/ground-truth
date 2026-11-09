@@ -108,6 +108,10 @@
       "minLength": 1,
       "description": "Playbooks and field notes: how the outcome was measured (metric, baseline, sample, period)."
     },
+    "account": {
+      "enum": ["first-hand", "public-record"],
+      "description": "Playbooks and field notes: first-hand (the default: told or approved by people who did the work) or public-record (built only from the organization's own published account or an official public record, with every claim quoted and linked; see STYLE_GUIDE.md)."
+    },
     "authors": {
       "type": "array",
       "uniqueItems": true,

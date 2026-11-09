@@ -219,6 +219,15 @@ for (const c of chapters) {
   if (book && book.type && type !== book.type) err(file, c.fmLine('/type'), `pages in book ${meta.book} must have type: ${book.type}`);
   if (type !== 'chapter' && (!book || book.type !== type)) err(file, c.fmLine('/type'), `type ${type} belongs in the book whose type is ${type} (data/books.json)`);
   if (type !== 'chapter' && meta.status === 'full') for (const k of ['industry', 'use_case', 'outcome', 'measured_how']) if (!meta[k]) err(file, 1, `a full ${type} needs "${k}" in its frontmatter`);
+  if (meta.account && type === 'chapter') err(file, c.fmLine('/account'), 'account is only for playbooks and field notes');
+  // gt: a public-record page must say so on the page and link the published account it is built from
+  if (meta.account === 'public-record') {
+    if (!/^>\s*\[!note\]\s*From the public record/m.test(prose)) err(file, bodyLine, 'a public-record page needs a "> [!note] From the public record" callout right after the TL;DR');
+    const sources = prose.match(/^## Sources\s*\n([\s\S]*?)(?=^## |(?![\s\S]))/m);
+    if (!sources) err(file, bodyLine, 'a public-record page needs a "## Sources" section that links the published account');
+    else if (!/\]\(https?:\/\//.test(sources[1])) err(file, lineAt(sources.index), 'the "## Sources" section of a public-record page needs at least one link to the published account');
+    if ((meta.authors || []).length) err(file, c.fmLine('/authors'), 'a public-record page lists no authors; people who did the work can turn it into a first-hand page');
+  }
   (meta.prerequisites || []).forEach((id) => { const r = resolveRoute(id); if (r === 'wanted') warn(file, c.fmLine('/prerequisites'), `prerequisite "${id}" is a wanted page`, 'wanted page link'); else if (!isChapterId(id)) err(file, c.fmLine('/prerequisites'), `prerequisite "${id}" is not a chapter`); });
   if (meta.status === 'full' && type === 'chapter') {
     if (!blocks.some((b) => b.lang === 'quiz')) err(file, bodyLine, 'a full chapter needs a ```quiz block');

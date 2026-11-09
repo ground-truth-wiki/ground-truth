@@ -20,21 +20,24 @@ type: playbook
 - **The whole story:** the problem, why this approach, what was built, the stack, the results, what failed, and what the team would do differently.
 - **Results only as measured,** with the metric, the baseline, the sample and the period. "We did not measure this" is a fine answer; an estimate presented as a result is not.
 - **People and organizations protected:** a playbook names an organization only if it agreed to be named (rule 7), and every author discloses ties to the vendors they mention (rule 5).
+- **Two kinds of account.** Most playbooks are first-hand, told or approved by the people who did the work. A playbook can also come from the public record: built only from an account the organization published itself, such as an engineering blog post or a paper by the team, with every claim quoted and linked. A "From the public record" note at the top of such a page says so, and the team is always welcome to replace it with its own first-hand story.
 
 ## What does not belong here
 
 - Hypothetical or composite case studies, or anything invented to make a point.
 - Product announcements, vendor case studies written to sell, and benchmarks without a method (rule 6).
+- Stories retold from news coverage. A public-record playbook is built from the organization's own account, never from articles about it.
 - Tutorials without a real deployment behind them. Those belong in the chapters of Books 0 to 20.
 
 ## How to add a playbook
 
 - **With a coding agent:** give it the contribution prompt from [CONTRIBUTING.md](https://github.com/ground-truth-wiki/ground-truth/blob/main/CONTRIBUTING.md). It runs `npm run new -- playbook <id> --title "…"`, which starts from the playbook template, and you fill in each section.
 - **Without one:** fill in the "Share a playbook" form on GitHub. A maintainer turns it into a page with you, and nothing is published before you approve it.
+- **From the public record:** run `npm run new -- playbook <id> --title "…" --public-record` and follow the public-record rules in [STYLE_GUIDE.md](https://github.com/ground-truth-wiki/ground-truth/blob/main/STYLE_GUIDE.md#playbooks-and-field-notes).
 
 ## How playbooks are reviewed
 
-A steward reads every playbook like a careful editor: are the results measured as described, is the organization anonymized or did it agree to be named, are the claims about tools sourced and dated, and is anything selling rather than explaining? Other teams who try the same approach can add their result under `replications`, so a playbook grows stronger, or weaker, with evidence.
+A steward reads every playbook like a careful editor: are the results measured as described, is the organization anonymized or did it agree to be named, are the claims about tools sourced and dated, and is anything selling rather than explaining? On a public-record page, the steward also opens the published account and checks every quote and number against it. Other teams who try the same approach can add their result under `replications`, so a playbook grows stronger, or weaker, with evidence.
 
 ## Talk like an expert
 
