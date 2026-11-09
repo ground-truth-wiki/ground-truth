@@ -167,3 +167,5 @@ fairness-bias
 - [Playbook: Upstart's credit model under the CFPB's first No-Action Letter](#upstart-cfpb-fair-lending)
 - [Field note: Apple Card credit decisions under a New York regulator's review](#nydfs-apple-card-investigation)
 - [Field note: Rite Aid's in-store facial recognition: an FTC case on unmeasured false matches](#ftc-rite-aid-facial-recognition)
+- [Field note: DWP's Universal Credit advances fraud model under audit](#nao-dwp-fraud-model)
+- [Field note: Ofqual's 2020 grading model and the switch to teacher grades](#ofqual-2020-grading-algorithm)

@@ -94,6 +94,7 @@ voice-agents
 - [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)
 - [Playbook: DB Regio Bus: a phone voicebot that books on-demand buses](#db-regio-rufbus-voicebot)
 - [Field note: Presto Voice: an SEC order on drive-thru AI that relied on human agents](#sec-presto-voice-ordering)
+- [Field note: AI advisory for smallholder farmers: five voice and chat pilots in Kenya and Bihar](#gates-giz-farmer-advisory-learnings)
 
 ## Deep dives
 

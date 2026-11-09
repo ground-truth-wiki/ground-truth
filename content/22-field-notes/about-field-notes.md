@@ -63,6 +63,29 @@ Grouped by the industry of the organization. Each page says at the top whether i
 ### Public sector
 
 - [The New York City MyCity chatbot under audit](#nyc-mycity-chatbot-audit)
+- [Microsoft 365 Copilot at the Australian Treasury: a 14-week trial, evaluated](#australian-treasury-copilot-trial)
+- [Microsoft 365 Copilot in a UK government department: the pilot evaluation](#dbt-m365-copilot-pilot)
+- [A UK cross-government trial of AI coding assistants](#dsit-ai-coding-assistant-trial)
+- [ECMWF's AIFS 1.1.0: bounding the outputs to fix precipitation forecasts](#ecmwf-aifs-precipitation-fix)
+- [A three-month Microsoft 365 Copilot trial across UK government](#gds-m365-copilot-cross-government)
+- [Microsoft 365 Copilot at HMRC: a randomised licence trial](#hmrc-copilot-evaluation)
+- [AI summaries and policy search in UK asylum decisions: the Home Office pilots](#home-office-asylum-ai-trials)
+- [DWP's Universal Credit advances fraud model under audit](#nao-dwp-fraud-model)
+- [Ofqual's 2020 grading model and the switch to teacher grades](#ofqual-2020-grading-algorithm)
+
+### Legal and courts
+
+- [Fake case citations in two English cases: the High Court on lawyers and generative AI](#ayinde-high-court-fake-citations)
+- [Mata v. Avianca: a federal court imposes sanctions over a filing built on ChatGPT-invented case law](#mata-v-avianca-sanctions)
+
+### Education and research
+
+- [ICML 2026 detects LLM use in reviews with hidden PDF instructions](#icml-2026-llm-review-violations)
+- [Microsoft's SAS token exposure: an internal storage URL shared in a public AI repository](#microsoft-sas-token-exposure)
+
+### Energy, telecom and industry
+
+- [AI advisory for smallholder farmers: five voice and chat pilots in Kenya and Bihar](#gates-giz-farmer-advisory-learnings)
 
 ## What belongs here
 

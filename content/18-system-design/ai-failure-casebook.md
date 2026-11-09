@@ -51,3 +51,4 @@ Experts read a case for its **entry vector**, the **trust boundary** it crossed,
 - [Field note: a widely used sepsis model meets its first external validation](#epic-sepsis-model-validation)
 - [Field note: the New York City MyCity chatbot under audit](#nyc-mycity-chatbot-audit)
 - [Field note: Waymo's voluntary software recall: two vehicles mispredict the same towed pickup truck](#waymo-software-recall)
+- [Field note: Mata v. Avianca: a federal court imposes sanctions over a filing built on ChatGPT-invented case law](#mata-v-avianca-sanctions)
