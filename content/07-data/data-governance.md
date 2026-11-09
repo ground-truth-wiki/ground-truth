@@ -80,6 +80,8 @@ data-governance
 - [Building a web-scale text pipeline](#web-data-pipeline)
 - [Data lakes, warehouses and lakehouses](#data-lakehouses)
 - [Copyright and AI: training, outputs and litigation](#ai-copyright)
+- [Playbook: Grab Hubble: LLM-written table docs and a chatbot for data discovery](#grab-data-discovery-llm)
+- [Playbook: Grab: tagging sensitive data columns with an LLM](#grab-llm-data-classification)
 
 ## Deep dives
 

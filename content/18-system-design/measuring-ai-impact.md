@@ -49,3 +49,4 @@ The vocabulary: **unit of value**, **guardrail metric**, **acceptance rate**, **
 - [Measuring AI's economic impact](#economic-impact-evidence)
 - [Playbook: Google: a randomized trial of AI coding features and developer speed](#google-ai-development-speed-rct)
 - [Playbook: Zoominfo: a four-phase evaluation and rollout of GitHub Copilot](#zoominfo-copilot-study)
+- [Playbook: ANZ Bank: a controlled GitHub Copilot experiment before rollout](#anz-bank-copilot-study)

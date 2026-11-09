@@ -164,3 +164,4 @@ fairness-bias
 - [Classical ML essentials](#classical-ml)
 - [AI risk management](#ai-risk-management)
 - [US AI law and policy](#us-ai-law)
+- [Playbook: Upstart's credit model under the CFPB's first No-Action Letter](#upstart-cfpb-fair-lending)

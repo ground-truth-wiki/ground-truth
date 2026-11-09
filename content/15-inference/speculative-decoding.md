@@ -84,3 +84,4 @@ speculative-decoding
 - [Latency and throughput](#latency-throughput)
 - [Serving engines](#serving-engines)
 - [Batching and scheduling](#batching-scheduling)
+- [Playbook: Cursor's fast apply: a fine-tuned model and speculative edits for whole-file code edits](#cursor-fast-apply-speculative-edits)

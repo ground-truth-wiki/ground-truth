@@ -107,6 +107,7 @@ embeddings
 - [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
 - [Multilingual and low-resource language models](#multilingual-models)
 - [Retrieval benchmarks and test collections](#retrieval-test-collections)
+- [Playbook: Dropbox: choosing an embedding model for multilingual file search](#dropbox-semantic-search-model-selection)
 
 ## Deep dives
 

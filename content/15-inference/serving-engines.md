@@ -109,6 +109,8 @@ serving-engines
 - [Serving mixture-of-experts models](#moe-serving)
 - [GPU kernels and ML compilers](#gpu-kernels-compilers)
 - [Running models locally](#local-inference)
+- [Playbook: Cloudflare's Infire: an in-house inference engine in Rust for edge GPUs](#cloudflare-infire-inference-engine)
+- [Playbook: Grab's Catwalk: replacing a legacy ONNX server with NVIDIA Triton](#grab-triton-model-serving)
 
 ## Deep dives
 

@@ -116,6 +116,7 @@ llm-as-judge
 - [Label quality: agreement, aggregation and label errors](#label-quality)
 - [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
 - [Playbook: Notion's Auto: evaluating a model router on replayed real tasks](#notion-model-router)
+- [Playbook: Dropbox Dash: adapting an LLM relevance judge to cheaper models with DSPy](#dropbox-dash-relevance-judge-dspy)
 
 ## Deep dives
 
