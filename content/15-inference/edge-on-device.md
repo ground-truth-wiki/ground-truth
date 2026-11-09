@@ -95,6 +95,7 @@ edge-on-device
 - [Privacy-preserving machine learning](#privacy-preserving-ml)
 - [Playbook: Apple's on-device scene analysis: one shared vision backbone for many features](#apple-on-device-scene-analysis)
 - [Playbook: Apple Photos: recognizing people on the device](#apple-photos-people-recognition)
+- [Playbook: Antibiogo: a smartphone app that reads antibiotic susceptibility tests](#msf-antibiogo)
 
 ## Deep dives
 

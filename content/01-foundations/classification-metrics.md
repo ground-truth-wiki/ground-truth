@@ -144,3 +144,4 @@ classification-metrics
 - [Statistics for evals](#eval-statistics)
 - [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)
 - [Validation, tuning and leakage](#validation-tuning)
+- [Playbook: NYUTron: a language model trained on clinical notes predicts hospital readmissions](#nyu-langone-nyutron)

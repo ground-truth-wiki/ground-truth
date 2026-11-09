@@ -48,3 +48,4 @@ Experts talk about judgment lists, graded relevance, query groups, feature loggi
 - [Retrieval benchmarks and test collections](#retrieval-test-collections)
 - [Online evaluation](#online-evaluation)
 - [Classical ML essentials](#classical-ml)
+- [Playbook: PubMed Best Match: learning to rank for biomedical literature search](#pubmed-best-match)
