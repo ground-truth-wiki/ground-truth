@@ -48,3 +48,4 @@ Experts first ask where the model comes from (given rules, learned dynamics or a
 - [Planning and reasoning strategies](#planning-reasoning)
 - [Reasoning and test-time scaling](#test-time-scaling)
 - [Video, 3D and world models](#video-world-models)
+- [Playbook: Deep Inventory Management: reinforcement learning for inventory buying by Amazon researchers](#amazon-deep-inventory-management)

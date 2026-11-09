@@ -102,3 +102,4 @@ incidents-on-call
 - [Playbook: RCAgent: root cause analysis of Flink jobs with a locally hosted LLM agent](#alibaba-rcagent-root-cause)
 - [Playbook: Xpert: recommending the first incident query to Microsoft's on-call engineers](#microsoft-xpert-incident-queries)
 - [Playbook: Ramp Sheets: agents that write monitors, triage alerts and propose fixes](#ramp-sheets-self-maintaining)
+- [Playbook: Zalando: mining incident postmortems with a multi-stage LLM pipeline](#zalando-postmortem-analysis)

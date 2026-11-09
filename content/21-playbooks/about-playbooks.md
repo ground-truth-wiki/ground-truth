@@ -69,6 +69,26 @@ Grouped by the industry of the organization. Each page says at the top whether i
 - [Uber invoice processing: OCR and GPT-4 with human review](#uber-invoice-processing)
 - [Upstart's credit model under the CFPB's first No-Action Letter](#upstart-cfpb-fair-lending)
 
+### Commerce and marketplaces
+
+- [Adevinta: a four-week pilot to choose an AI coding assistant](#adevinta-se-ai-tooling-evaluation)
+- [Airbnb's content policy classifier: a fine-tuned small model against frontier APIs](#airbnb-llm-classifier-benchmark)
+- [Migrating Android dependency injection from Koin to Hilt at Allegro with an agent skill](#allegro-gradle-migration-agents)
+- [Allegro: judging search relevance with LLMs in four languages](#allegro-search-relevance-llm-judge)
+- [Deep Inventory Management: reinforcement learning for inventory buying by Amazon researchers](#amazon-deep-inventory-management)
+- [Booking.com's in-house neural machine translation, from one domain to many](#booking-com-neural-machine-translation)
+- [GetYourGuide's Automerge: an AI pipeline that fixes and merges dependency updates](#getyourguide-ai-pull-request-workflow)
+- [AI-drafted activity listings at GetYourGuide: a failed test, then a launch](#getyourguide-generative-listings)
+- [Shopify Sidekick: post-training an open model to take over a frontier model's subagent](#shopify-open-model-task-experts)
+- [Shopify Sidekick: tool sprawl, calibrated LLM judges and reward hacking in a merchant assistant](#shopify-sidekick-agentic-lessons)
+- [Wayfair Tarragon: spotting damaged packages on the sorter with YOLO](#wayfair-package-damage-detection)
+- [Validating product dimensions at Wayfair with a multimodal LLM](#wayfair-product-dimensions)
+- [Wayfair Wilma: flagging supplier transfer tickets that need an associate](#wayfair-supplier-transfer-intervention)
+- [Zalando: mining incident postmortems with a multi-stage LLM pipeline](#zalando-postmortem-analysis)
+- [Zalando: mapping supplier spreadsheets with a RAG flywheel](#zalando-rag-data-ingestion)
+- [Zalando: an LLM judge checks search quality before new markets launch](#zalando-search-quality-ai-judge)
+- [Zalando: migrating B2B apps between UI component libraries with GPT-4o](#zalando-ui-library-migration)
+
 ### Healthcare
 
 - [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

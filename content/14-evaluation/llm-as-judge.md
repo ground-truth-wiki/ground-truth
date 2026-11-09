@@ -117,6 +117,9 @@ llm-as-judge
 - [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
 - [Playbook: Notion's Auto: evaluating a model router on replayed real tasks](#notion-model-router)
 - [Playbook: Dropbox Dash: adapting an LLM relevance judge to cheaper models with DSPy](#dropbox-dash-relevance-judge-dspy)
+- [Playbook: Allegro: judging search relevance with LLMs in four languages](#allegro-search-relevance-llm-judge)
+- [Playbook: Shopify Sidekick: tool sprawl, calibrated LLM judges and reward hacking in a merchant assistant](#shopify-sidekick-agentic-lessons)
+- [Playbook: Zalando: an LLM judge checks search quality before new markets launch](#zalando-search-quality-ai-judge)
 
 ## Deep dives
 

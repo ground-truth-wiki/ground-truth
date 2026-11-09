@@ -159,3 +159,4 @@ in-context-learning
 - [Prompt caching and token economics](#prompt-caching)
 - [Fine-tuning in practice](#fine-tuning-practice)
 - [Mechanistic interpretability](#mech-interp)
+- [Playbook: Zalando: migrating B2B apps between UI component libraries with GPT-4o](#zalando-ui-library-migration)

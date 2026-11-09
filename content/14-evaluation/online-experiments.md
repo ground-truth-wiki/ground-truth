@@ -51,3 +51,4 @@ Experts say **OEC**, **guardrail metrics**, **minimum detectable effect**, **SRM
 - [Playbook: a randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)
 - [Playbook: Google: repairing broken builds with ML-suggested fixes](#google-build-repair-ml)
 - [Playbook: hybrid ML and semantic-engine code completion at Google](#google-ml-code-completion)
+- [Playbook: AI-drafted activity listings at GetYourGuide: a failed test, then a launch](#getyourguide-generative-listings)

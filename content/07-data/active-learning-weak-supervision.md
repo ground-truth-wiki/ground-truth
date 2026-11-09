@@ -48,3 +48,4 @@ Experts talk about the **oracle**, **pool-based** selection, **query strategies*
 - [The data flywheel](#data-flywheel)
 - [Classical ML essentials](#classical-ml)
 - [Data strategy](#data-strategy)
+- [Playbook: Wayfair Tarragon: spotting damaged packages on the sorter with YOLO](#wayfair-package-damage-detection)
