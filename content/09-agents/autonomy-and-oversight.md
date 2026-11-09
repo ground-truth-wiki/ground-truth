@@ -126,3 +126,4 @@ autonomy-and-oversight
 - [Governance, regulation and law](#governance-regulation)
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
 - [Playbook: Google data centre cooling under direct AI control](#deepmind-data-centre-cooling)
+- [Field note: Uber ATG's test vehicle crash in Tempe: what the NTSB found](#ntsb-uber-atg-tempe-crash)

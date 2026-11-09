@@ -76,6 +76,7 @@ long-horizon-autonomy
 - [State-of-the-art snapshot](#sota-snapshot)
 - [Agentic RL and environments](#agentic-rl)
 - [Measuring AI's economic impact](#economic-impact-evidence)
+- [Field note: Project Vend: a Claude agent runs a small office shop](#project-vend)
 
 ## Deep dives
 

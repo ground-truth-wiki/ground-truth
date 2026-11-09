@@ -60,3 +60,6 @@ The vocabulary: **unit of value**, **guardrail metric**, **acceptance rate**, **
 - [Playbook: testing an ambient AI scribe in a randomized trial before rollout at UW Health](#uw-ambient-documentation-studies)
 - [Playbook: Ashurst's generative AI trials: measuring first drafts in a law firm](#ashurst-generative-ai-trials)
 - [Playbook: Panasonic Connect's ConnectAI: one year of a company-wide AI assistant](#panasonic-connect-generative-ai)
+- [Field note: Experienced open-source developers took longer with early-2025 AI tools](#metr-developer-productivity-rct)
+- [Field note: Waymo's rider-only crash rates against human benchmarks, by crash type](#waymo-crash-rates-human-benchmarks)
+- [Field note: ambient AI documentation at Atrium Health: no efficiency gain for clinicians as a group](#atrium-health-ambient-documentation)

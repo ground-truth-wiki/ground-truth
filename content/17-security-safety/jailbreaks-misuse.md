@@ -96,6 +96,7 @@ jailbreaks-misuse
 - [How fine-tuning changes safety](#fine-tuning-and-safety)
 - [Guard models and content moderation](#guard-models-moderation)
 - [Adversarial machine learning](#adversarial-ml)
+- [Field note: GTG-1002: a cyber espionage campaign run largely through Claude Code](#anthropic-gtg-1002-espionage)
 
 ## Deep dives
 

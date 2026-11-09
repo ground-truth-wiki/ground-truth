@@ -108,3 +108,4 @@ agent-tools
 - [Web search and hosted retrieval services](#web-search-hosted-retrieval)
 - [Language agents: research lineage and the CoALA framework](#agent-research-lineage)
 - [Agent eval metrics and benchmark design](#agent-eval-metrics)
+- [Field note: Vercel's d0: a text-to-SQL agent cut down to bash and files](#vercel-agent-tools-removed)
