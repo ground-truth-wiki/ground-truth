@@ -95,6 +95,7 @@ coding-agents
 - [Security and vulnerability-research agents](#security-agents)
 - [Cloud agents, CI and review bots](#cloud-and-ci-coding-agents)
 - [Training environments for coding agents](#swe-training-environments)
+- [Playbook: migrating Android dependency injection from Koin to Hilt at Allegro with an agent skill](#allegro-gradle-migration-agents)
 
 ## Deep dives
 

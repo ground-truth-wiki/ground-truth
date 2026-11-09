@@ -90,6 +90,7 @@ support-agents
 - [Guardrails and control](#guardrails-control)
 - [Telephony and transport for voice agents](#voice-telephony)
 - [Playbook: Nubank: customer-support agents built around evaluation](#nubank-support-agents-evaluation)
+- [Playbook: Wayfair Wilma: flagging supplier transfer tickets that need an associate](#wayfair-supplier-transfer-intervention)
 
 ## Deep dives
 

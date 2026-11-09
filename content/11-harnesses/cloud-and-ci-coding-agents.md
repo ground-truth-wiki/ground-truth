@@ -51,3 +51,4 @@ Experts talk about **headless mode**, **setup steps**, **egress allowlists**, **
 - [Playbook: RovoDev Code Reviewer: LLM review comments on Atlassian's pull requests](#atlassian-rovodev-code-reviewer)
 - [Playbook: BitsAI-CR: two-stage LLM code review at ByteDance](#bytedance-bitsai-code-review)
 - [Playbook: AutoCommenter: LLM best-practice comments in Google's code review](#google-autocommenter-code-review)
+- [Playbook: GetYourGuide's Automerge: an AI pipeline that fixes and merges dependency updates](#getyourguide-ai-pull-request-workflow)

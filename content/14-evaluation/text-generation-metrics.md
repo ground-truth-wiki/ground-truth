@@ -48,3 +48,4 @@ Practitioners say **n-gram precision**, **brevity penalty**, **signature**, **se
 - [Statistics for evals](#eval-statistics)
 - [Task-specific recipes](#eval-recipes)
 - [Speech recognition models](#speech-recognition)
+- [Playbook: Booking.com's in-house neural machine translation, from one domain to many](#booking-com-neural-machine-translation)

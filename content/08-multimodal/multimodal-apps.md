@@ -85,3 +85,4 @@ multimodal-apps
 - [Image generation](#image-generation)
 - [Voice and realtime agents](#voice-agents)
 - [Video understanding](#video-understanding)
+- [Playbook: Validating product dimensions at Wayfair with a multimodal LLM](#wayfair-product-dimensions)
