@@ -48,3 +48,4 @@ Practitioners talk about **candidate generation** (retrieval), **ranking** and *
 - [Reranking](#reranking)
 - [Multi-armed and contextual bandits](#bandits)
 - [Representation learning and embeddings](#representation-learning)
+- [Playbook: Spotify GLIDE: generative retrieval with Semantic IDs for podcast discovery](#spotify-podcast-generative-retrieval)

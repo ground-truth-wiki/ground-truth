@@ -103,3 +103,7 @@ incidents-on-call
 - [Playbook: Xpert: recommending the first incident query to Microsoft's on-call engineers](#microsoft-xpert-incident-queries)
 - [Playbook: Ramp Sheets: agents that write monitors, triage alerts and propose fixes](#ramp-sheets-self-maintaining)
 - [Playbook: Zalando: mining incident postmortems with a multi-stage LLM pipeline](#zalando-postmortem-analysis)
+- [Playbook: RCACopilot: predicting root cause categories of cloud incidents at Microsoft](#microsoft-rcacopilot)
+- [Playbook: Uber Genie: a RAG copilot for on-call Slack channels](#uber-genie-on-call-copilot)
+- [Playbook: Root cause isolation at Meta with a fine-tuned Llama 2 ranker](#meta-ai-root-cause-isolation)
+- [Playbook: Meta's DrP: on-call investigation playbooks written as code](#meta-drp-investigations)

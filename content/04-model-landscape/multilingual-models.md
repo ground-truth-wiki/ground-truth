@@ -47,3 +47,4 @@ Experts say **high- and low-resource languages**, **token premium** or **fertili
 - [Embeddings](#embeddings)
 - [Jailbreaks and misuse](#jailbreaks-misuse)
 - [Pretraining data](#pretraining-data)
+- [Playbook: MinT: open machine translation on CPUs for Wikipedia translators](#wikimedia-mint-translation)

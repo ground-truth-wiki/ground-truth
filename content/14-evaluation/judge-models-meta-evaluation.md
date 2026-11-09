@@ -48,3 +48,4 @@ Experts talk about **pairwise versus pointwise**, **reference-guided grading**, 
 - [Reward models and preference data](#reward-modeling)
 - [Hallucination and factuality](#hallucination-factuality)
 - [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
+- [Playbook: Uber PerfInsights: finding Go performance antipatterns with LLMs](#uber-perfinsights)

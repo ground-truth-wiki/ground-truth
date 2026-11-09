@@ -165,3 +165,4 @@ guard-models-moderation
 - [Jailbreak attacks and defenses in depth](#jailbreak-techniques)
 - [Reference architectures](#reference-architectures)
 - [Fairness metrics and bias measurement](#fairness-bias)
+- [Playbook: Roblox's voice safety classifier: moderating live voice chat in 30 languages](#roblox-voice-safety-classifier)

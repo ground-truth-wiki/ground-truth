@@ -51,3 +51,4 @@ The vocabulary: **unit of value**, **guardrail metric**, **acceptance rate**, **
 - [Playbook: Zoominfo: a four-phase evaluation and rollout of GitHub Copilot](#zoominfo-copilot-study)
 - [Playbook: ANZ Bank: a controlled GitHub Copilot experiment before rollout](#anz-bank-copilot-study)
 - [Playbook: Adevinta: a four-week pilot to choose an AI coding assistant](#adevinta-se-ai-tooling-evaluation)
+- [Playbook: CodeCompose: fine-tuned code completion at Meta](#meta-codecompose)

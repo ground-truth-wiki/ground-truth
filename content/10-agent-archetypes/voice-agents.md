@@ -92,6 +92,7 @@ voice-agents
 - [Speech synthesis and voice cloning](#speech-synthesis)
 - [Neural audio codecs and audio tokens](#audio-codecs-tokens)
 - [Task-oriented dialogue: from intents and slots to LLM agents](#dialogue-systems)
+- [Playbook: DB Regio Bus: a phone voicebot that books on-demand buses](#db-regio-rufbus-voicebot)
 
 ## Deep dives
 
