@@ -109,6 +109,7 @@ evaluating-agents
 - [Coding-agent benchmarks: SWE-bench, Terminal-Bench and their harnesses](#coding-agent-benchmarks)
 - [Computer-use and web agent benchmarks](#computer-use-benchmarks)
 - [Measuring time horizons and AI R&D capability](#measuring-time-horizons)
+- [Playbook: Datadog Bits Investigation: evaluating an SRE agent on replayed incidents](#datadog-sre-agent-evaluation)
 
 ## Deep dives
 

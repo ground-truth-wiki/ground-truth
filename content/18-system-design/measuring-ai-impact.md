@@ -47,3 +47,5 @@ The vocabulary: **unit of value**, **guardrail metric**, **acceptance rate**, **
 - [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)
 - [AI pricing and unit economics](#ai-pricing-unit-economics)
 - [Measuring AI's economic impact](#economic-impact-evidence)
+- [Playbook: Google: a randomized trial of AI coding features and developer speed](#google-ai-development-speed-rct)
+- [Playbook: Zoominfo: a four-phase evaluation and rollout of GitHub Copilot](#zoominfo-copilot-study)

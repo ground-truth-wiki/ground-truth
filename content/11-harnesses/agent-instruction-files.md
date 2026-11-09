@@ -207,3 +207,4 @@ agent-instruction-files
 - [Skills, plugins and extension ecosystems](#skills-plugins)
 - [Context engineering](#context-engineering)
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
+- [Playbook: Cloudflare's internal AI engineering stack: gateway, MCP portal and AI code review](#cloudflare-internal-ai-engineering-stack)

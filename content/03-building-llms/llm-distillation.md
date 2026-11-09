@@ -48,3 +48,4 @@ Experts talk about teacher and student, soft labels, logit and sequence-level di
 - [Small and local models](#small-local-models)
 - [Post-training: from base model to assistant](#post-training-overview)
 - [Training reasoning models: cold starts, distillation and length control](#reasoning-training-recipes)
+- [Playbook: LinkedIn LANTERN: distilling LLMs into small models for job-fit ratings and explanations](#linkedin-lantern-distillation)

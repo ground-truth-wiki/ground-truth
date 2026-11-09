@@ -49,3 +49,5 @@ Experts say **OEC**, **guardrail metrics**, **minimum detectable effect**, **SRM
 - [Multi-armed and contextual bandits](#bandits)
 - [The data flywheel](#data-flywheel)
 - [Playbook: a randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)
+- [Playbook: Google: repairing broken builds with ML-suggested fixes](#google-build-repair-ml)
+- [Playbook: hybrid ML and semantic-engine code completion at Google](#google-ml-code-completion)

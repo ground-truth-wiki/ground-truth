@@ -115,6 +115,7 @@ llm-as-judge
 - [Arenas and leaderboards](#arenas-leaderboards)
 - [Label quality: agreement, aggregation and label errors](#label-quality)
 - [Scalable oversight: debate, amplification and weak-to-strong](#scalable-oversight)
+- [Playbook: Notion's Auto: evaluating a model router on replayed real tasks](#notion-model-router)
 
 ## Deep dives
 

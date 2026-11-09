@@ -93,6 +93,8 @@ edge-on-device
 - [GPU kernels and ML compilers](#gpu-kernels-compilers)
 - [Energy, power and AI data centers](#ai-energy)
 - [Privacy-preserving machine learning](#privacy-preserving-ml)
+- [Playbook: Apple's on-device scene analysis: one shared vision backbone for many features](#apple-on-device-scene-analysis)
+- [Playbook: Apple Photos: recognizing people on the device](#apple-photos-people-recognition)
 
 ## Deep dives
 

@@ -47,3 +47,4 @@ Experts talk about **execution accuracy**, **schema linking**, **grain**, **join
 - [Sandboxes and execution environments](#sandboxes)
 - [Deep research systems](#deep-research)
 - [Evaluating agents](#evaluating-agents)
+- [Playbook: Salesforce Horizon Agent: text-to-SQL in Slack with consensus voting](#salesforce-text-to-sql)

@@ -103,6 +103,7 @@ fine-tuning-practice
 - [Data selection and attribution](#data-selection-attribution)
 - [Image editing, control and personalization](#image-editing-control)
 - [Continual learning and test-time adaptation](#continual-learning)
+- [Playbook: GitHub secret scanning: a small classifier for generic secrets](#github-secret-detection-model)
 
 ## Deep dives
 
