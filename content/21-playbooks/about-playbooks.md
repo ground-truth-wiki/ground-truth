@@ -159,7 +159,7 @@ Grouped by the industry of the organization. Each page says at the top whether i
 - [Farmer.Chat: answering smallholder farmers' questions in Kenya](#digital-green-farmer-chat)
 - [Panasonic Connect's ConnectAI: one year of a company-wide AI assistant](#panasonic-connect-generative-ai)
 
-### Other
+### Disaster early warning
 
 - [Google's flood forecasting: from gauged rivers in India and Bangladesh to ungauged basins worldwide](#google-flood-forecasting)
 
