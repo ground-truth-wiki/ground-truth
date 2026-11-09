@@ -89,3 +89,4 @@ vector-databases
 - [Embeddings](#embeddings)
 - [Information retrieval foundations](#ir-foundations)
 - [Vector index internals](#vector-index-internals)
+- [Playbook: Notion: two years of scaling vector search for AI Q&A](#notion-vector-search-scale)

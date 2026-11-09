@@ -12,15 +12,56 @@ visuals: []
 type: playbook
 ---
 > [!tldr]
-> A playbook shows how one team used AI for one real use case in one industry: the problem, the approach, the stack, the results and how they were measured, and what failed. This book is new; this page explains what belongs here and how to add one.
+> A playbook shows how one team used AI for one real use case in one industry: the problem, the approach, the stack, the results and how they were measured, and what failed. This page explains what belongs here and how to add one, and lists the playbooks by industry.
+
+## The playbooks, by industry
+
+Grouped by the industry of the organization. Each page says at the top whether it is a first-hand account or built from the public record.
+
+### Software and developer tools
+
+- [Human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
+- [Apple's on-device scene analysis: one shared vision backbone for many features](#apple-on-device-scene-analysis)
+- [Apple Photos: recognizing people on the device](#apple-photos-people-recognition)
+- [RovoDev Code Reviewer: LLM review comments on Atlassian's pull requests](#atlassian-rovodev-code-reviewer)
+- [BitsAI-CR: two-stage LLM code review at ByteDance](#bytedance-bitsai-code-review)
+- [Cloudflare's internal AI engineering stack: gateway, MCP portal and AI code review](#cloudflare-internal-ai-engineering-stack)
+- [Datadog Bits Investigation: evaluating an SRE agent on replayed incidents](#datadog-sre-agent-evaluation)
+- [GitHub Copilot: training and evaluating a custom code-completion model](#github-copilot-completions-model)
+- [GitHub secret scanning: a small classifier for generic secrets](#github-secret-detection-model)
+- [Google: a randomized trial of AI coding features and developer speed](#google-ai-development-speed-rct)
+- [AutoCommenter: LLM best-practice comments in Google's code review](#google-autocommenter-code-review)
+- [Google: repairing broken builds with ML-suggested fixes](#google-build-repair-ml)
+- [Migrating int32 IDs to int64 at Google with an LLM](#google-code-migrations-llm)
+- [Google: drafting security incident summaries with an LLM](#google-incident-response-genai)
+- [Hybrid ML and semantic-engine code completion at Google](#google-ml-code-completion)
+- [ML-suggested edits that resolve code review comments at Google](#google-resolving-review-comments)
+- [Google: migrating TensorFlow models to JAX with a multi-agent system](#google-tensorflow-to-jax-migration-agents)
+- [Intercom Fin: a fine-tuned embedding model and an in-house reranker](#intercom-fin-retrieval)
+- [Intercom Fin: smaller fine-tuned models in place of one large-LLM prompt](#intercom-fin-small-llms)
+- [LinkedIn LANTERN: distilling LLMs into small models for job-fit ratings and explanations](#linkedin-lantern-distillation)
+- [RAG over a knowledge graph of support tickets at LinkedIn](#linkedin-rag-knowledge-graph-support)
+- [Notion's Auto: evaluating a model router on replayed real tasks](#notion-model-router)
+- [Notion: two years of scaling vector search for AI Q&A](#notion-vector-search-scale)
+- [Salesforce Horizon Agent: text-to-SQL in Slack with consensus voting](#salesforce-text-to-sql)
+- [Converting Enzyme tests to React Testing Library at Slack: an AST codemod plus an LLM](#slack-enzyme-to-rtl-migration)
+- [Zoominfo: a four-phase evaluation and rollout of GitHub Copilot](#zoominfo-copilot-study)
+
+### Healthcare
+
+- [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)
+
+### Public sector
+
+- [GOV.UK Chat: answering questions from government guidance](#gov-uk-chat)
 
 ## What belongs here
 
 - **One real use case per page,** from work that was actually done, in one industry: retail, healthcare, the public sector or any other.
 - **The whole story:** the problem, why this approach, what was built, the stack, the results, what failed, and what the team would do differently.
 - **Results only as measured,** with the metric, the baseline, the sample and the period. "We did not measure this" is a fine answer; an estimate presented as a result is not.
-- **People and organizations protected:** a playbook names an organization only if it agreed to be named (rule 7), and every author discloses ties to the vendors they mention (rule 5).
-- **Two kinds of account.** Most playbooks are first-hand, told or approved by the people who did the work. A playbook can also come from the public record: built only from an account the organization published itself, such as an engineering blog post or a paper by the team, with every claim quoted and linked. A "From the public record" note at the top of such a page says so, and the team is always welcome to replace it with its own first-hand story.
+- **People and organizations protected:** a playbook names an organization only if it agreed to be named (rule 7), and every author discloses ties to the vendors they mention (rule 5). A public-record playbook names the organization because the organization published the account itself.
+- **Two kinds of account.** A playbook is either first-hand, told or approved by the people who did the work, or it comes from the public record: built only from an account the organization published itself, such as an engineering blog post or a paper by the team, with every claim quoted and linked. A "From the public record" note at the top of such a page says so, and the team is always welcome to replace it with its own first-hand story.
 
 ## What does not belong here
 
@@ -49,6 +90,3 @@ Practitioners trust a playbook more for its "what failed" section than for its r
 - [Why evals are the core skill](#why-evals)
 - [Error analysis first](#error-analysis)
 - [Lessons from public engineering write-ups](#public-writeups)
-- [Human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
-- [GOV.UK Chat: answering questions from government guidance](#gov-uk-chat)
-- [A randomized trial of ambient AI scribes at UCLA Health](#ucla-ambient-scribes-trial)

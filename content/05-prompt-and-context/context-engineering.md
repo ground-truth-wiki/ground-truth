@@ -114,6 +114,7 @@ context-engineering
 - [Anatomy of an agent harness](#harness-anatomy)
 - [Agent memory architectures and benchmarks](#agent-memory-architectures)
 - [Instruction files: AGENTS.md, CLAUDE.md and rules](#agent-instruction-files)
+- [Playbook: converting Enzyme tests to React Testing Library at Slack: an AST codemod plus an LLM](#slack-enzyme-to-rtl-migration)
 
 ## Deep dives
 

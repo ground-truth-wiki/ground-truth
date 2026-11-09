@@ -100,6 +100,7 @@ human-in-the-loop
 - [Permissions, approvals and hooks in coding harnesses](#harness-permissions-hooks)
 - [Human-AI interaction guidelines in practice](#human-ai-interaction-guidelines)
 - [Playbook: human-in-the-loop coding agents in Jira at Atlassian](#atlassian-hula-jira-agents)
+- [Playbook: Google: drafting security incident summaries with an LLM](#google-incident-response-genai)
 
 ## Deep dives
 

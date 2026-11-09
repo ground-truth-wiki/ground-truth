@@ -48,3 +48,4 @@ Experts separate **local questions** about specific entities from **global** or 
 - [LLM-as-judge done right](#llm-as-judge)
 - [Chunking](#chunking)
 - [Deep research systems](#deep-research)
+- [Playbook: RAG over a knowledge graph of support tickets at LinkedIn](#linkedin-rag-knowledge-graph-support)

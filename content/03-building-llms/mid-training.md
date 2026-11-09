@@ -87,6 +87,7 @@ mid-training
 - [RoPE scaling and context extension](#rope-scaling)
 - [The pretraining run, end to end](#pretraining-run)
 - [Data mixtures, repetition and curricula](#data-mixing)
+- [Playbook: GitHub Copilot: training and evaluating a custom code-completion model](#github-copilot-completions-model)
 
 ## Deep dives
 

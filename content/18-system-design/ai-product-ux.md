@@ -80,6 +80,7 @@ ai-product-ux
 - [Uncertainty and confidence estimation for LLMs](#llm-uncertainty)
 - [Scoping AI features: when to use AI and what success means](#ai-use-case-scoping)
 - [Measuring the impact and ROI of an AI feature](#measuring-ai-impact)
+- [Playbook: ML-suggested edits that resolve code review comments at Google](#google-resolving-review-comments)
 
 ## Deep dives
 

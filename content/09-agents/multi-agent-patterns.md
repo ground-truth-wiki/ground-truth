@@ -154,3 +154,4 @@ multi-agent-patterns
 - [Graph workflow runtimes](#graph-workflow-runtimes)
 - [Agent failure modes](#agent-failure-modes)
 - [A2A](#a2a)
+- [Playbook: Google: migrating TensorFlow models to JAX with a multi-agent system](#google-tensorflow-to-jax-migration-agents)

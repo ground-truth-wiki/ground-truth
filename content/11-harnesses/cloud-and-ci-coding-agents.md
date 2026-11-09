@@ -48,3 +48,6 @@ Experts talk about **headless mode**, **setup steps**, **egress allowlists**, **
 - [Sandboxes and execution environments](#sandboxes)
 - [Working effectively with coding agents](#working-with-coding-agents)
 - [Long-running and durable agents](#long-running-agents)
+- [Playbook: RovoDev Code Reviewer: LLM review comments on Atlassian's pull requests](#atlassian-rovodev-code-reviewer)
+- [Playbook: BitsAI-CR: two-stage LLM code review at ByteDance](#bytedance-bitsai-code-review)
+- [Playbook: AutoCommenter: LLM best-practice comments in Google's code review](#google-autocommenter-code-review)

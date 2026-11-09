@@ -86,3 +86,4 @@ small-local-models
 - [Quantization methods in depth](#quantization-methods)
 - [Running models locally](#local-inference)
 - [Open models: history, communities and the release debate](#open-model-communities)
+- [Playbook: Intercom Fin: smaller fine-tuned models in place of one large-LLM prompt](#intercom-fin-small-llms)

@@ -88,6 +88,7 @@ reranking
 - [LLM-as-judge done right](#llm-as-judge)
 - [Recommender systems](#recommender-systems)
 - [Encoders, decoders and encoder-decoders](#encoders-and-decoders)
+- [Playbook: Intercom Fin: a fine-tuned embedding model and an in-house reranker](#intercom-fin-retrieval)
 
 ## Deep dives
 

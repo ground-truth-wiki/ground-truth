@@ -48,3 +48,4 @@ Experts talk about **fault localization**, **repository maps**, **edit formats**
 - [Tool use and tool design](#agent-tools)
 - [Structured and code retrieval](#structured-code-retrieval)
 - [Training environments for coding agents](#swe-training-environments)
+- [Playbook: migrating int32 IDs to int64 at Google with an LLM](#google-code-migrations-llm)
